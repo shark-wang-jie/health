@@ -9,6 +9,7 @@
 - `fitness_logs/current_plan.json`：当前饮食与训练计划
 - `fitness_logs/daily/`：每日源数据
 - `fitness_logs/record_tools.py`：日志新建、重算、校验和回顾工具
+- `fitness_logs/automation/`：每日确定性维护、Codex 语义复核和 LaunchAgent 模板
 - `handoffs/`：按日期保存的交接快照
 
 ## 协作约定
@@ -16,3 +17,7 @@
 修改记录前先阅读 `fitness_logs/AGENTS.md`、`fitness_logs/README.md`和当前交接摘要。每次修改前同步最新的 `main`，修改后提交并推送，避免 ChatGPT 和 Codex 同时改动同一文件。
 
 项目中的部分历史文件保留了本机绝对路径 `/Users/wangjie/Documents/health/fitness_logs/`。在本仓库中阅读时，将该前缀对应为 `fitness_logs/`。
+
+## 每日自动复核
+
+Mac 通过 LaunchAgent `com.wangjie.health.daily-review` 每天本地时间 00:00 运行 `fitness_logs/automation/daily_review.sh`，复核刚结束的前一上海自然日。任务先同步 `origin/main`，执行确定性重算与校验，再调用本机 Codex CLI 做受限语义复核；只有产生合法实际修改时才提交并非强制推送。运行日志保存在 `~/Library/Logs/health/`，不进入仓库。

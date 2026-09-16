@@ -81,3 +81,11 @@
 交接摘要只保留当前状态、有效规则入口、关键默认口径入口、待确认项。历史详单查对应JSON。每天22:00（亚洲/上海）保留更新交接的约定；用户在接近或超过22:00提出要求时更新。当前文件规则本身不是后台定时任务，不宣称已配置自动触发。
 
 修改规则同步README、交接和相关模板/脚本。回归检查：`python3 -m unittest discover -s fitness_logs/tests -v`。
+
+## 每日自动复核
+
+`automation/daily_review.sh`是Mac每日复核的统一入口。LaunchAgent在系统本地时间00:00启动；脚本固定用`Asia/Shanghai`计算前一自然日，目标文件不存在时只记录“目标日无记录文件”并退出，不创建虚构记录。
+
+阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex exec --ephemeral --sandbox workspace-write --ask-for-approval never`读取规则和目标日，做受限语义复核。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
+
+脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
