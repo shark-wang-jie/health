@@ -86,7 +86,7 @@
 
 `automation/daily_review.sh`是Mac每日复核的统一入口。LaunchAgent在系统本地时间00:00启动；脚本固定用`Asia/Shanghai`计算前一自然日，目标文件不存在时只记录“目标日无记录文件”并退出，不创建虚构记录。
 
-阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex exec --ephemeral --sandbox workspace-write --ask-for-approval never`读取规则和目标日，做受限语义复核。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
+阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex -s workspace-write -a never -C 仓库 exec --ephemeral`读取规则和目标日，做受限语义复核。当前CLI要求沙箱、审批与工作目录选项放在`exec`之前。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
 
 脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
 

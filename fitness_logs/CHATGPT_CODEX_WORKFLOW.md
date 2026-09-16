@@ -213,7 +213,7 @@ Mac 上的统一入口是 `fitness_logs/automation/daily_review.sh`，由 Launch
 自动任务分两层：
 
 1. 阶段A确定性维护：要求干净 `main`，执行 `fetch`、`pull --rebase`、目标文件存在性检查、`recalculate`、`validate`、`report` 和 `jq empty`。
-2. 阶段B语义复核：使用本机实际安装的 Codex CLI 非交互命令 `codex exec --ephemeral --sandbox workspace-write --ask-for-approval never`，按 `automation/daily_codex_prompt.md` 读取规则和目标日。它可修正已有事实能证明的重复、累计、状态和更正应用错误，不得补造用户事实。阶段B结束后再次运行阶段A校验。
+2. 阶段B语义复核：使用本机实际安装的 Codex CLI 非交互命令 `codex -s workspace-write -a never -C 仓库 exec --ephemeral`，按 `automation/daily_codex_prompt.md` 读取规则和目标日。当前CLI要求沙箱、审批与工作目录选项放在`exec`之前。它可修正已有事实能证明的重复、累计、状态和更正应用错误，不得补造用户事实。阶段B结束后再次运行阶段A校验。
 
 任务以原子目录锁避免并发，完整日志位于 `~/Library/Logs/health/`。工作区已有修改、pull冲突、Codex失败、验证失败或远端竞态都会停止任务。只有 `fitness_logs/` 下存在合法实际修改时才提交 `fitness: automated review YYYY-MM-DD` 并普通推送；无变化时不产生空提交。
 
