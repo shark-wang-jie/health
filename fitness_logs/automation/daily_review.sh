@@ -171,7 +171,7 @@ log "stage B Codex semantic review: start"
 if ! {
   $CAT "$PROMPT_FILE"
   printf '\n\nRuntime values:\n- repository: %s\n- target date: %s\n- target JSON: %s\n' "$REPO_ROOT" "$TARGET_DATE" "$TARGET_FILE"
-} | "$CODEX" exec --ephemeral --color never --sandbox workspace-write --ask-for-approval never --cd "$REPO_ROOT" --output-last-message "$CODEX_LAST_MESSAGE" -; then
+} | "$CODEX" exec --ephemeral --color never -s workspace-write -a never -C "$REPO_ROOT" -o "$CODEX_LAST_MESSAGE" -; then
   log "Codex semantic review result: failed"
   exit 67
 fi
