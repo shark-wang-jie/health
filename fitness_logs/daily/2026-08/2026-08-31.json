@@ -1,0 +1,241 @@
+{
+  "date": "2026-08-31",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1877,
+    "bmr_note": "按2026-08-31早晨空腹体重92.55千克，用米夫林-圣乔尔公式10×92.55 + 6.25×173 - 5×27 + 5 = 1876.75千卡估算。"
+  },
+  "morning_weight_kg": 92.55,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1877千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭，与2026-08-28和2026-08-29午餐相同：鸡腿2只去皮食用；土豆丝和炒白菜各约一半并全部吃完；米饭吃原份量的一半；卤蛋和豆腐干全部吃完",
+      "kcal_estimate": 950,
+      "kcal_range": [
+        760,
+        1200
+      ],
+      "protein_g_estimate": 80.0,
+      "protein_g_range": [
+        65.0,
+        94.0
+      ],
+      "fat_g_estimate": 35.0,
+      "fat_g_range": [
+        25.0,
+        49.0
+      ],
+      "carbs_g_estimate": 80.0,
+      "carbs_g_range": [
+        65.0,
+        105.0
+      ],
+      "estimation_note": "沿用2026-08-28和2026-08-29同款沙县鸡腿饭及实际食用份量的估算口径。"
+    },
+    {
+      "meal": "练后餐",
+      "description": "照片同款零脂酸奶一杯300克、五香牛肉200克",
+      "kcal_estimate": 560,
+      "kcal_range": [
+        520,
+        610
+      ],
+      "protein_g_estimate": 76.0,
+      "protein_g_range": [
+        70.0,
+        82.0
+      ],
+      "fat_g_estimate": 18.0,
+      "fat_g_range": [
+        12.0,
+        26.0
+      ],
+      "carbs_g_estimate": 26.8,
+      "carbs_g_range": [
+        22.8,
+        28.8
+      ],
+      "components": [
+        {
+          "food": "零脂酸奶",
+          "amount": "一杯300克",
+          "kcal_estimate": 190,
+          "protein_g_estimate": 24.0,
+          "fat_g_estimate": 0.0,
+          "carbs_g_estimate": 22.8,
+          "sodium_mg_estimate": 240,
+          "calcium_mg_estimate": 600,
+          "nutrition_basis": "包装每100克能量265千焦、蛋白质8.0克、脂肪0克、碳水7.6克、钠80毫克、钙200毫克；按300克换算。",
+          "photo_path": "/tmp/codex-remote-attachments/01a04390-45e4-78c3-bc51-380cfd02f601/C2E0C9E6-3915-4C3A-95EE-F3EEA9FA9937/1-照片-1.jpg"
+        },
+        {
+          "food": "五香牛肉",
+          "amount": "200克",
+          "kcal_estimate": 370,
+          "kcal_range": [
+            330,
+            420
+          ],
+          "protein_g_estimate": 52.0,
+          "protein_g_range": [
+            46.0,
+            58.0
+          ],
+          "fat_g_estimate": 18.0,
+          "fat_g_range": [
+            12.0,
+            26.0
+          ],
+          "carbs_g_estimate": 4.0,
+          "estimation_note": "暂按此前盒马五香牛肉同款口径每100克约165-210千卡、蛋白质约23-29克估算。"
+        }
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "此前同款荞麦锅巴60克",
+      "kcal_estimate": 239,
+      "protein_g_estimate": 3.4,
+      "fat_g_estimate": 1.7,
+      "carbs_g_estimate": 50.1,
+      "dietary_fiber_g_estimate": 3.7,
+      "sodium_mg_estimate": 189,
+      "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "无氧训练（练胸）",
+      "duration": "约50分钟",
+      "active_kcal": 330,
+      "active_kcal_range": [
+        280,
+        380
+      ],
+      "calorie_accounting_basis": "用户未提供本次Apple Watch数据；参考2026-08-26传统力量训练50分30秒动态消耗331千卡，今天按约330动态千卡估算。",
+      "confidence": "估算值；实际消耗会受组间休息、动作密度、负重和心率影响。如补充手表数据，应以本次动态千卡替换。"
+    },
+    {
+      "type": "室内骑行",
+      "duration": "34分00秒",
+      "elapsed_duration": "34分01秒",
+      "distance_km": 10.06,
+      "active_kcal": 342,
+      "maximum_power_w": 205,
+      "average_power_w": 145,
+      "average_speed_kmh": 17.3,
+      "average_cadence_rpm": 59,
+      "average_resistance": 13,
+      "training_load": 53,
+      "calorie_accounting_basis": "采用本次骑行应用截图显示的342千卡作为运动消耗；未提供Apple Watch动态/总千卡拆分，因此保留设备估算属性。",
+      "photo_path": "/tmp/codex-remote-attachments/01a04390-45e4-78c3-bc51-380cfd02f601/DF55308B-ACE8-4252-91E3-A36B69C1AD12/1-照片-1.jpg"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1932,
+    "intake_kcal_range": [
+      1702,
+      2232
+    ],
+    "protein_g_estimate": 167.4,
+    "protein_g_range": [
+      146.4,
+      187.4
+    ],
+    "fat_g_estimate": 64.1,
+    "fat_g_range": [
+      48.1,
+      86.1
+    ],
+    "carbs_g_estimate": 169.4,
+    "carbs_g_range": [
+      150.4,
+      196.4
+    ],
+    "exercise_active_kcal": 672,
+    "exercise_active_kcal_range": [
+      622,
+      722
+    ],
+    "net_intake_after_exercise_kcal": 1260,
+    "net_intake_after_exercise_kcal_range": [
+      980,
+      1610
+    ],
+    "provisional_conservative_deficit_kcal": 617,
+    "provisional_conservative_deficit_kcal_range": [
+      267,
+      897
+    ],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [
+      0,
+      178
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      0,
+      155
+    ],
+    "remaining_to_protein_target_g": 2.6,
+    "remaining_to_protein_target_g_range": [
+      0.0,
+      23.6
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0.0,
+      10.6
+    ],
+    "intake_above_target_kcal": 52,
+    "status": "全天最终：累计摄入中位约1932千卡，合理范围约1702-2232千卡；蛋白质约167.4克、脂肪约64.1克、碳水约169.4克。碳水处于150-180克执行区间。练胸约50分钟暂估动态消耗330千卡，室内骑行设备记录342千卡，合计672千卡；中位保守缺口约617千卡，处于400-700千卡目标范围。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 93.2,
+    "day_over_day_change_kg": -0.65,
+    "seven_day_average_kg": 92.68,
+    "seven_day_period": "2026-08-25至2026-08-31",
+    "previous_seven_day_average_kg": 92.81,
+    "previous_seven_day_period": "2026-08-24至2026-08-30",
+    "seven_day_average_change_kg": -0.13,
+    "interpretation": "单日回落0.65千克，基本消化前一日的短期水分波动；7日均重继续缓慢下降。"
+  },
+  "notes": [
+    "空腹体重92.55千克，较前一日回落0.65千克。",
+    "2026-08-25至08-31的7日均重约92.68千克，较上一窗口约92.81千克下降约0.13千克；减脂趋势仍在。",
+    "按92.55千克计算基础代谢约1877千卡，今日固定饮食上限1880千卡。",
+    "早餐一瓶默认纯牛奶约260毫升，约183千卡、蛋白质约8克。",
+    "午餐沙县鸡腿饭与2026-08-28和08-29相同，沿用两只鸡腿去皮、蔬菜吃完、米饭一半、卤蛋和豆腐干吃完的口径；中位约950千卡、蛋白质约80克。",
+    "完成约50分钟无氧练胸；因未提供本次手表数据，参考2026-08-26同等时长传统力量训练的动态331千卡，暂按动态约330千卡、合理范围280-380千卡记录。",
+    "练后吃照片同款零脂酸奶一杯300克和五香牛肉200克；中位约560千卡、蛋白质约76克。牛肉暂按此前盒马五香牛肉同款口径。",
+    "晚间加餐此前同款荞麦锅巴60克，约239千卡、碳水约50.1克；加入后全天碳水中位约169.4克，进入执行区间。",
+    "室内骑行34分00秒，10.06公里，设备显示消耗342千卡；最大功率205瓦、平均功率145瓦、平均速度17.3公里/小时、平均踏频59转/分、平均阻力13、运动负荷53。",
+    "用户确认今日饮食与训练全部结束，2026-08-31记录据此封账。",
+    "8月最后一天仍在记录中，暂不生成最终月总结。"
+  ]
+}

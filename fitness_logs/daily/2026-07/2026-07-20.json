@@ -1,0 +1,274 @@
+{
+  "date": "2026-07-20",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1913,
+    "bmr_note": "按 2026-07-20 早晨体重 96.15 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 96.15,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "墨虾丸 6 颗（整袋 250 克共 9 颗）、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 331,
+      "protein_g_estimate": 32.3,
+      "fat_g_estimate": 9.2,
+      "carbs_g_estimate": 22,
+      "sodium_mg_estimate": 847,
+      "confidence": "墨虾丸沿用 2026-07-17 包装标签并按 6/9 袋计算；牛奶沿用此前同款标签和常见蛋白质估算",
+      "components": [
+        {
+          "food": "墨虾丸",
+          "amount": "6 颗，约 166.7 克",
+          "kcal_estimate": 148,
+          "protein_g_estimate": 24.3,
+          "fat_g_estimate": 1.2,
+          "carbs_g_estimate": 9.5,
+          "sodium_mg_estimate": 847,
+          "label_per_100g": {
+            "energy_kj": 371,
+            "protein_g": 14.6,
+            "fat_g": 0.7,
+            "carbs_g": 5.7,
+            "sodium_mg": 508
+          }
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 8,
+          "carbs_g_estimate": 12.5
+        }
+      ],
+      "notes": [
+        "整袋墨虾丸 250 克共 9 颗，按吃下 6 颗即整袋的三分之二计算；剩余 3 颗不计入摄入。",
+        "牛奶沿用每 100 毫升 294 千焦的数据，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：白米饭、油炸后烧酸菜的肉圆、豆腐干炒芹菜等蔬菜、酸豆角和清汤；餐后仍剩部分肉圆、米饭及配菜",
+      "kcal_estimate": 730,
+      "kcal_range": [
+        620,
+        880
+      ],
+      "protein_g_range": [
+        27,
+        36
+      ],
+      "confidence": "根据餐前、餐后照片及用户确认菜品为先油炸再烧酸菜的肉圆估算；肉圆肥瘦比例、淀粉比例和实际吸油量不明确",
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "估计吃下约 130-160 克熟饭",
+          "kcal_estimate": 190,
+          "kcal_range": [
+            165,
+            210
+          ],
+          "protein_g_estimate": 3.5
+        },
+        {
+          "food": "油炸肉圆烧酸菜",
+          "amount": "按餐前餐后差异估算，餐后仍剩部分肉圆",
+          "kcal_estimate": 380,
+          "kcal_range": [
+            300,
+            500
+          ],
+          "protein_g_range": [
+            17,
+            25
+          ]
+        },
+        {
+          "food": "豆腐干炒芹菜、浅色瓜类蔬菜和酸豆角",
+          "amount": "吃下部分，餐后仍剩约一半左右",
+          "kcal_estimate": 135,
+          "kcal_range": [
+            105,
+            160
+          ],
+          "protein_g_range": [
+            6,
+            9
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "一碗，基本喝完",
+          "kcal_estimate": 25
+        }
+      ],
+      "notes": [
+        "餐后照片显示米饭仍剩较多，暂估实际吃下约 130-160 克熟饭。",
+        "用户确认肉菜为肉圆烧酸菜，没有红烧肉或带骨肉。",
+        "用户进一步确认肉圆先油炸再烧，较原估算上调约 80 千卡，并扩大热量上限。",
+        "餐后照片显示仍剩部分肉圆，按实际吃下的部分估算。",
+        "肉圆含肥肉和淀粉且经过油炸，不能按等重量纯瘦肉计算。",
+        "豆腐干和蔬菜仍剩较多，按餐前餐后差异估算实际摄入。",
+        "肉圆实际配方和单个重量不明确，因此保留较宽热量范围。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "中等大小糯玉米一根、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 403,
+      "kcal_range": [
+        375,
+        425
+      ],
+      "protein_g_range": [
+        12,
+        14
+      ],
+      "confidence": "牛奶沿用同款 260 毫升数据；用户确认是糯玉米，按中等大小熟糯玉米估算",
+      "components": [
+        {
+          "food": "熟糯玉米",
+          "amount": "中等大小 1 根",
+          "kcal_estimate": 220,
+          "kcal_range": [
+            190,
+            240
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ]
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "用户确认是糯玉米，热量按原区间上端修正。",
+        "牛奶按与此前相同的 260 毫升瓶装纯牛奶记录。"
+      ]
+    },
+    {
+      "meal": "晚间训练后进食",
+      "description": "腌制鸡胸肉一片 100 克、七个偏小鸡蛋的蛋清",
+      "kcal_estimate": 197,
+      "protein_g_range": [
+        36,
+        37
+      ],
+      "fat_g_estimate": 1.4,
+      "carbs_g_estimate": 5.9,
+      "sodium_mg_estimate": 515,
+      "confidence": "鸡胸肉按包装标签；蛋清沿用此前同批偏小鸡蛋口径",
+      "components": [
+        {
+          "food": "腌制鸡胸肉",
+          "amount": "1 片，100 克",
+          "kcal_estimate": 99,
+          "protein_g_estimate": 15.3,
+          "fat_g_estimate": 1.4,
+          "carbs_g_estimate": 5.9,
+          "sodium_mg_estimate": 515,
+          "label_per_100g": {
+            "energy_kj": 412,
+            "protein_g": 15.3,
+            "fat_g": 1.4,
+            "carbs_g": 5.9,
+            "sodium_mg": 515
+          }
+        },
+        {
+          "food": "鸡蛋清",
+          "amount": "7 个偏小蛋清",
+          "kcal_estimate": 98,
+          "protein_g_range": [
+            21,
+            22
+          ]
+        }
+      ],
+      "notes": [
+        "七个蛋黄未吃，不计入摄入。",
+        "用户表示无法吃下原建议份量，按实际能吃下的一片鸡胸肉和七个蛋清记录，不要求强行进食。",
+        "鸡胸肉未额外加酱料或油。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:41",
+      "end_time": "18:25",
+      "duration_min": 43.12,
+      "elapsed_duration_min": 43.18,
+      "active_kcal": 351,
+      "total_kcal": 430,
+      "avg_heart_rate_bpm": 125,
+      "kcal_estimate": 351,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "21:35",
+      "end_time": "22:07",
+      "duration_min": 31.3,
+      "active_kcal": 293,
+      "total_kcal": 351,
+      "avg_heart_rate_bpm": 140,
+      "kcal_estimate": 293,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1661,
+    "protein_g_range": [
+      107,
+      120
+    ],
+    "exercise_kcal_estimate": 644,
+    "remaining_intake_kcal": 239,
+    "intake_vs_target_kcal": -239,
+    "net_intake_after_exercise_kcal": 1017,
+    "conservative_deficit_kcal": 896
+  },
+  "notes": [
+    "报告空腹体重 96.15 千克。",
+    "较最近一次 2026-07-18 的 96.05 千克上涨 0.10 千克；2026-07-19 未报告体重。结合前一晚泡面、火腿肠、零食和鱼头汤汁的高钠摄入，优先按水分和胃肠内容物波动解读，不视为脂肪增长。",
+    "早餐约 331 千卡、蛋白质约 32-33 克。",
+    "早餐蛋白质比前几日更合理，但墨虾丸仍属于高钠加工食品。",
+    "用户确认午餐肉菜为先油炸再烧酸菜的肉圆，没有红烧肉；因油炸吸油，在原估算上调约 80 千卡，午餐修正为约 730 千卡、蛋白质约 27-36 克，米饭、肉圆和配菜均有剩余。",
+    "截至午餐后累计约 1061 千卡、蛋白质约 59-69 克，剩余摄入额度约 839 千卡。",
+    "傍晚完成传统力量训练 43 分 07 秒，苹果手表记录动态消耗 351 千卡、总消耗 430 千卡、平均心率 125 次/分；汇总仅采用动态千卡。",
+    "训练后吃中等大小糯玉米一根和纯牛奶 260 毫升，修正为约 403 千卡、蛋白质约 12-14 克。",
+    "截至训练后累计摄入约 1464 千卡、蛋白质约 71-83 克，剩余摄入额度约 436 千卡；运动后净摄入约 1113 千卡。",
+    "晚间完成室内单车 31 分 18 秒，苹果手表记录动态消耗 293 千卡、总消耗 351 千卡、平均心率 140 次/分；汇总仅采用动态千卡。",
+    "全天已记录运动动态消耗合计 644 千卡；当前运动后净摄入约 820 千卡，晚间进食前保守缺口约 1093 千卡。",
+    "为落入 400-700 千卡缺口目标且不突破 1900 千卡摄入上限，后续适合摄入约 393-436 千卡。",
+    "晚间实际只能吃下一片腌制鸡胸肉 100 克和七个偏小蛋清，合计约 197 千卡、蛋白质约 36-37 克。",
+    "截至当前全天摄入约 1661 千卡、蛋白质约 107-120 克，运动后净摄入约 1017 千卡；保守缺口约 896 千卡，高于 400-700 千卡目标。",
+    "蛋白质仍比 170 克目标少约 50-63 克；不强迫继续进食，也不追加运动，次日必须将蛋白质提前分配到早餐和午餐。"
+  ]
+}

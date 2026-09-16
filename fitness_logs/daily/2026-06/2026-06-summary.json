@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "record_type": "monthly_summary",
+  "month": "2026-06",
+  "summary_type": "月度饮食与运动总结",
+  "period": {
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "timezone": "亚洲/上海"
+  },
+  "month_end_date": "2026-06-30",
+  "generated_at": "2026-08-02T23:09:04+08:00",
+  "finalized": true,
+  "coverage": {
+    "calendar_days": 30,
+    "recorded_days": 1,
+    "is_complete_calendar_coverage": false,
+    "missing_dates": [
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-05",
+      "2026-06-06",
+      "2026-06-07",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-13",
+      "2026-06-14",
+      "2026-06-15",
+      "2026-06-16",
+      "2026-06-17",
+      "2026-06-18",
+      "2026-06-19",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-06-22",
+      "2026-06-23",
+      "2026-06-24",
+      "2026-06-25",
+      "2026-06-26",
+      "2026-06-27",
+      "2026-06-28",
+      "2026-06-29"
+    ],
+    "final_dates": [
+      "2026-06-30"
+    ],
+    "partial_dates": [],
+    "open_dates": [],
+    "unknown_completion_dates": [],
+    "weight_missing_dates": []
+  },
+  "aggregation_policy": {
+    "daily_summary_precedence": [
+      "daily_summary",
+      "daily_totals"
+    ],
+    "reported_data_policy": "月度总量包含所有日文件中已报告的数据；partial/open 日期会单独标出，不能视为完整全天。",
+    "range_central_value": "每日 intake_kcal_estimate 使用原记录点估算；蛋白质同时汇总上下限。",
+    "exercise_kcal": "优先 active_kcal，否则使用 kcal_estimate；不使用 total_kcal。",
+    "energy_balance_formula": "bmr_kcal + active_or_estimated_exercise_kcal - intake_kcal_estimate",
+    "target_evaluation": "按每个日文件自身 targets 判断，不使用单一月度目标。"
+  },
+  "weight_summary": {
+    "recorded_days": 1,
+    "first": {
+      "date": "2026-06-30",
+      "weight_kg": 98.25
+    },
+    "last": {
+      "date": "2026-06-30",
+      "weight_kg": 98.25
+    },
+    "first_to_last_change_kg": 0,
+    "average_kg": 98.25,
+    "minimum": {
+      "date": "2026-06-30",
+      "weight_kg": 98.25
+    },
+    "maximum": {
+      "date": "2026-06-30",
+      "weight_kg": 98.25
+    }
+  },
+  "nutrition_summary": {
+    "days_with_intake_summary": 1,
+    "total_intake_kcal_estimate": 2371,
+    "average_intake_kcal_per_recorded_day": 2371,
+    "lowest_intake_day": {
+      "date": "2026-06-30",
+      "value": 2371
+    },
+    "highest_intake_day": {
+      "date": "2026-06-30",
+      "value": 2371
+    },
+    "intake_limit_adherence": {
+      "days_definitely_at_or_below_limit": 0,
+      "days_estimate_at_or_below_limit": 0,
+      "days_possibly_at_or_below_limit": 0,
+      "days_definitely_above_limit": 1
+    },
+    "total_meal_entries": 7,
+    "meal_category_counts": {
+      "上午加餐": 1,
+      "下午加餐": 1,
+      "加餐": 2,
+      "午餐": 1,
+      "早餐": 1,
+      "晚餐": 1
+    },
+    "protein_days_with_summary": 1,
+    "total_protein_g_range": [
+      132,
+      147
+    ],
+    "average_protein_g_range_per_recorded_day": [
+      132,
+      147
+    ],
+    "protein_target_days_definitely_met": 0,
+    "protein_target_days_midpoint_met": 0,
+    "protein_target_days_possibly_met": 0,
+    "protein_target_days_definitely_below": 1
+  },
+  "exercise_summary": {
+    "exercise_days": 1,
+    "days_without_exercise_entries": 0,
+    "total_sessions": 2,
+    "sessions_with_duration": 2,
+    "sessions_with_kcal": 2,
+    "total_active_or_estimated_kcal_from_daily_summaries": 730,
+    "highest_exercise_kcal_day": {
+      "date": "2026-06-30",
+      "value": 730
+    },
+    "by_normalized_type": {
+      "indoor_cycling": {
+        "sessions": 1,
+        "recorded_duration_min": 31.2,
+        "active_or_estimated_kcal": 280
+      },
+      "strength": {
+        "sessions": 1,
+        "recorded_duration_min": 60,
+        "active_or_estimated_kcal": 450
+      }
+    },
+    "type_aliases": {
+      "strength": [
+        "力量训练",
+        "传统力量训练"
+      ],
+      "indoor_cycling": [
+        "骑行",
+        "室内骑行",
+        "室内单车"
+      ]
+    },
+    "energy_basis": "每次运动优先采用 active_kcal；没有该字段时沿用 kcal_estimate。Apple Watch 总千卡不计入。"
+  },
+  "conservative_deficit_summary": {
+    "days_with_calculable_deficit": 1,
+    "total_conservative_deficit_kcal": 293,
+    "average_conservative_deficit_kcal_per_recorded_day": 293,
+    "days_within_that_days_recorded_target": 0,
+    "days_below_that_days_recorded_target": 1,
+    "days_above_that_days_recorded_target": 0,
+    "surplus_days": 0,
+    "lowest_deficit_day": {
+      "date": "2026-06-30",
+      "value": 293
+    },
+    "highest_deficit_day": {
+      "date": "2026-06-30",
+      "value": 293
+    },
+    "formula": "当日基础代谢 + 已记录运动动态或估算千卡 - 当日摄入估算"
+  },
+  "notable_days": {
+    "highest_intake": {
+      "date": "2026-06-30",
+      "value": 2371
+    },
+    "lowest_intake": {
+      "date": "2026-06-30",
+      "value": 2371
+    },
+    "highest_exercise": {
+      "date": "2026-06-30",
+      "value": 730
+    },
+    "highest_conservative_deficit": {
+      "date": "2026-06-30",
+      "value": 293
+    },
+    "lowest_conservative_deficit": {
+      "date": "2026-06-30",
+      "value": 293
+    }
+  },
+  "assessment": [
+    "本月只保存 1/30 天日记录，月度均值和总量不能代表完整月份。",
+    "本月首次至末次有记录体重变化 +0.00 千克。",
+    "有蛋白质汇总的 1 天中，确定达到当日目标 0 天；另分别统计按中位估算和可能达到的天数。",
+    "记录到 1 个运动日、2 次训练。",
+    "热量缺口按统一保守公式重算；该结果不包含未单独记录的日常活动和食物热效应。"
+  ],
+  "daily_metrics": [
+    {
+      "date": "2026-06-30",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 98.25,
+      "bmr_kcal": 1934,
+      "intake_kcal_estimate": 2371,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        132,
+        147
+      ],
+      "exercise_active_or_estimated_kcal": 730,
+      "conservative_deficit_kcal": 293,
+      "intake_limit_kcal": 2000,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 7,
+      "exercise_sessions": 2,
+      "source_summary_status": "部分高于目标范围"
+    }
+  ],
+  "source_files": [
+    "daily/2026-06/2026-06-30.json"
+  ],
+  "methodology_notes": [
+    "月度总量和均值只按现有每日 JSON 计算；缺失日期不按零摄入或零运动处理。",
+    "每日摄入使用当日汇总中的中位或点估算；有合理范围时同时保留范围。",
+    "蛋白质区间按逐日上下限分别汇总；点估算视为上下限相同。",
+    "运动总消耗优先采用 Apple Watch 动态千卡；没有动态千卡时沿用设备或人工估算。",
+    "保守缺口统一按基础代谢加已记录运动、减摄入计算；真实 TDEE 通常更高。",
+    "没有运动条目的日期仅表示无运动记录；若当日记录不完整，不能据此确认是休息日。"
+  ]
+}

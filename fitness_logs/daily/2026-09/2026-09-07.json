@@ -1,0 +1,141 @@
+{
+  "date": "2026-09-07",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1873,
+    "bmr_note": "按2026-09-07早晨空腹体重92.15千克，用米夫林-圣乔尔公式10×92.15 + 6.25×173 - 5×27 + 5 = 1872.75千卡估算。"
+  },
+  "morning_weight_kg": 92.15,
+  "targets": {
+    "intake_kcal": 1870,
+    "intake_target_basis": "按当日基础代谢1873千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "午餐",
+      "description": "默认沙县鸡腿饭：鸡腿2只去皮食用；米饭、炒白菜和卤蛋全部吃完；土豆丝未吃；未见豆腐干，未计入",
+      "kcal_estimate": 885,
+      "kcal_range": [710, 1080],
+      "protein_g_estimate": 70.5,
+      "protein_g_range": [57.0, 84.0],
+      "fat_g_estimate": 27.0,
+      "fat_g_range": [18.0, 41.0],
+      "carbs_g_estimate": 91.0,
+      "carbs_g_range": [73.0, 118.0],
+      "estimation_note": "沿用当前默认沙县鸡腿饭口径：土豆丝默认不吃；明确剩余或吃了土豆丝时以实际吃下为准。"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "此前同款青芥蟹饭团1个，净重105克",
+      "kcal_estimate": 95,
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "sodium_mg_estimate": 386,
+      "nutrition_basis": "沿用此前同款包装每100克能量378千焦、蛋白质1.8克、脂肪3.5克、碳水12.8克、钠368毫克；按105克换算。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "小香蕉1根、大桶原味发酵乳300克、鸡蛋清7个",
+      "kcal_estimate": 439,
+      "protein_g_estimate": 38.1,
+      "fat_g_estimate": 15.4,
+      "carbs_g_estimate": 36.7,
+      "sodium_mg_estimate": 120,
+      "calcium_mg_estimate": 375,
+      "components": [
+        {
+          "food": "小香蕉",
+          "amount": "1根，可食部分约80克",
+          "kcal_estimate": 71,
+          "protein_g_estimate": 0.9,
+          "fat_g_estimate": 0.2,
+          "carbs_g_estimate": 18.5
+        },
+        {
+          "food": "大桶原味发酵乳",
+          "amount": "300克",
+          "kcal_estimate": 249,
+          "protein_g_estimate": 12.0,
+          "fat_g_estimate": 15.0,
+          "carbs_g_estimate": 16.8,
+          "sodium_mg_estimate": 120,
+          "calcium_mg_estimate": 375,
+          "nutrition_basis": "按具体克数酸奶默认大桶原味发酵乳标签：每100克348千焦（约83千卡）、蛋白质4.0克、脂肪5.0克、碳水5.6克、钠40毫克、钙125毫克换算。"
+        },
+        {
+          "food": "鸡蛋清",
+          "amount": "7个普通大小",
+          "kcal_estimate": 119,
+          "protein_g_estimate": 25.2,
+          "fat_g_estimate": 0.2,
+          "carbs_g_estimate": 1.4,
+          "nutrition_basis": "按每个约17千卡、蛋白质3.6克估算。"
+        }
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "time": "17:59–18:36",
+      "duration": "37分00秒",
+      "active_kcal": 263,
+      "total_kcal": 328,
+      "average_heart_rate_bpm": 122,
+      "heart_rate_range_bpm": [92, 149],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/B3373528-73F8-489F-A2C4-66FD8E646881/1-照片-1.jpg",
+      "note": "Apple Watch记录；只将动态千卡计入运动消耗，总千卡仅保存。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1419,
+    "intake_kcal_range": [1244, 1614],
+    "protein_g_estimate": 110.5,
+    "protein_g_range": [97.0, 124.0],
+    "fat_g_estimate": 46.1,
+    "fat_g_range": [37.1, 60.1],
+    "carbs_g_estimate": 141.1,
+    "carbs_g_range": [123.1, 168.1],
+    "exercise_active_kcal": 263,
+    "net_intake_after_exercise_kcal": 1156,
+    "net_intake_after_exercise_kcal_range": [981, 1351],
+    "provisional_conservative_deficit_kcal": 717,
+    "provisional_conservative_deficit_kcal_range": [522, 892],
+    "remaining_to_intake_target_kcal": 451,
+    "remaining_to_intake_target_kcal_range": [256, 626],
+    "remaining_while_preserving_min_deficit_kcal": 317,
+    "remaining_while_preserving_min_deficit_kcal_range": [122, 492],
+    "remaining_to_protein_target_g": 59.5,
+    "remaining_to_protein_target_g_range": [46.0, 73.0],
+    "remaining_to_carbohydrate_practical_target_g_range": [0.0, 56.9],
+    "intake_above_target_kcal": 0,
+    "status": "全天最终：累计摄入中位约1419千卡，蛋白质约110.5克、脂肪约46.1克、碳水约141.1克；传统力量训练动态消耗263千卡，保守缺口约717千卡。"
+  },
+  "weight_trend": {
+    "previous_measured_weight_kg": 92.65,
+    "previous_measured_date": "2026-09-05",
+    "change_since_previous_measurement_kg": -0.5,
+    "interpretation": "较上次测量下降0.50千克；09-06未称重，不能将其视为严格日环比。前一日高钠高碳水后的水分波动可放大短期变化，继续看连续空腹体重趋势。"
+  },
+  "notes": [
+    "空腹体重92.15千克，较上次09-05测量的92.65千克下降0.50千克；BMI约30.8。09-06未称重，故不作严格日环比。",
+    "按92.15千克计算基础代谢约1873千卡，今日固定饮食上限1870千卡。",
+    "午餐按默认沙县鸡腿饭口径记录：两只鸡腿去皮，米饭、炒白菜、卤蛋吃完，土豆丝未吃，未见豆腐干；中位约885千卡、蛋白质约70.5克。",
+    "17:59–18:36完成传统力量训练37分00秒；Apple Watch动态消耗263千卡、总消耗328千卡、平均心率122次/分、心率范围92–149次/分；只将动态263千卡计入消耗。",
+    "练后吃此前同款青芥蟹饭团105克一个，约95千卡、碳水约13.4克。",
+    "晚间加餐：小香蕉1根、大桶原味发酵乳300克、鸡蛋清7个，合计约439千卡、蛋白质约38.1克。",
+    "09-06已在补记排骨和掌中宝后封账：摄入约2592千卡，无运动记录，中位保守盈余约714千卡；今天恢复正常减脂餐，不采用断食或惩罚性运动补偿。",
+    "2026-09-08已开始报告新一天；据此将09-07在无新增食物或训练报告的情况下封账。"
+  ]
+}

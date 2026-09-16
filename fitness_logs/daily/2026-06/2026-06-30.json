@@ -1,0 +1,145 @@
+{
+  "date": "2026-06-30",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1934
+  },
+  "morning_weight_kg": 98.25,
+  "targets": {
+    "intake_kcal": 2000,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "2 个鸡蛋、一个拳头大小菜包、260 毫升全脂牛奶",
+      "kcal_estimate": 560,
+      "protein_g_range": [
+        27,
+        30
+      ],
+      "carbs_g_range": [
+        55,
+        65
+      ],
+      "fat_g_range": [
+        22,
+        25
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "上午加餐",
+      "description": "2 小包芝士饼干和约 30 克原味薯片",
+      "kcal_estimate": 400,
+      "protein_g_range": [
+        6,
+        8
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐按剩余量重新估算：米饭、肉类、黄瓜/白菜沙拉和小咸菜",
+      "kcal_estimate": 500,
+      "protein_g_range": [
+        22,
+        30
+      ],
+      "confidence": "根据照片和剩余量估算"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "小零食，比上午加餐多约 20 克",
+      "kcal_estimate": 510,
+      "confidence": "估算"
+    },
+    {
+      "meal": "加餐",
+      "description": "20 克酸奶，标签每 100 克：1046 千焦、蛋白质 14.8 克、脂肪 20.6 克",
+      "kcal_estimate": 50,
+      "protein_g_estimate": 3.0,
+      "carbs_g_estimate": 0.1,
+      "fat_g_estimate": 4.1,
+      "confidence": "按营养标签"
+    },
+    {
+      "meal": "晚餐",
+      "description": "1 片鸡胸肉和 20 克牛肉干",
+      "kcal_estimate": 167,
+      "protein_g_estimate": 29.0,
+      "fat_g_estimate": 2.7,
+      "carbs_g_estimate": 0.1,
+      "confidence": "按标签和估算",
+      "components": [
+        {
+          "description": "腌制鸡胸肉按产品标签折算，100 克约 407 千焦、蛋白质 15.4 克。",
+          "kcal_estimate": 98,
+          "protein_g_estimate": 15.4,
+          "fat_g_estimate": 1.2
+        },
+        {
+          "description": "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+          "kcal_estimate": 69,
+          "protein_g_estimate": 13.5,
+          "fat_g_estimate": 1.5,
+          "carbs_g_estimate": 0.1
+        }
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "130 克牛肉，标签每 100 克：592 千焦、蛋白质 28.3 克、脂肪 3 克",
+      "kcal_estimate": 184,
+      "protein_g_estimate": 36.8,
+      "fat_g_estimate": 3.9,
+      "confidence": "按营养标签"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "力量训练",
+      "description": "背部训练：辅助引体向上辅助 30 千克，高位下拉 52 千克，坐姿划船 52 千克，绳索直臂/下拉 42 千克，反握下拉 52 千克；各 4 组，共 20 组",
+      "duration_min": 60,
+      "kcal_estimate": 450,
+      "confidence": "估算"
+    },
+    {
+      "type": "室内单车",
+      "description": "如实际份量或标签不同，需要修正本条。",
+      "duration_min": 31.2,
+      "kcal_estimate": 280,
+      "confidence": "应用记录"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 2371,
+    "protein_g_range": [
+      132,
+      147
+    ],
+    "exercise_kcal_estimate": 730,
+    "estimated_tdee_kcal_range": [
+      3160,
+      3360
+    ],
+    "estimated_deficit_kcal_range": [
+      789,
+      989
+    ],
+    "intake_vs_target_kcal": 371,
+    "deficit_status": "部分高于目标范围"
+  },
+  "notes": [
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "蛋白质低于每日 170 克目标。",
+    "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+  ]
+}

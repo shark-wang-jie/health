@@ -1,0 +1,164 @@
+{
+  "date": "2026-07-08",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1923,
+    "bmr_note": "按 2026-07-08 早晨体重 97.15 千克用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 97.15,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "3 个鸡蛋、一瓶普通牛奶和 100 克香蕉",
+      "kcal_estimate": 482,
+      "protein_g_range": [
+        28,
+        30
+      ],
+      "carbs_g_range": [
+        37,
+        41
+      ],
+      "fat_g_range": [
+        25,
+        28
+      ],
+      "confidence": "部分按标签，部分估算",
+      "notes": [
+        "鸡蛋按 3 个中大号估算，约 210 千卡，蛋白质 18-19 克。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "香蕉按常用参考值估算：每 100 克可食部分约 89 千卡、蛋白质约 1.1 克、碳水约 23 克。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "绿色面条一碗：肉丝辣椒、花生、青菜、咸菜、深色肉/血制品，面下有约 20 克含油肉末花生酱",
+      "kcal_estimate": 760,
+      "protein_g_range": [
+        28,
+        38
+      ],
+      "carbs_g_range": [
+        85,
+        105
+      ],
+      "fat_g_range": [
+        28,
+        40
+      ],
+      "confidence": "根据照片和用户描述估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。"
+      ]
+    },
+    {
+      "meal": "训练前加餐",
+      "description": "一根香蕉，约 100 克",
+      "kcal_estimate": 89,
+      "protein_g_estimate": 1.1,
+      "carbs_g_estimate": 23,
+      "fat_g_estimate": 0.3,
+      "confidence": "根据报告重量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "100 克饭团 1 个和原味牛肉干 3 根",
+      "kcal_estimate": 407,
+      "protein_g_estimate": 50.9,
+      "carbs_g_estimate": 27.9,
+      "fat_g_estimate": 9.7,
+      "sodium_mg_estimate": 1221,
+      "confidence": "营养标签和既往牛肉干记录",
+      "notes": [
+        "饭团按营养标签折算，热量、蛋白质、脂肪、碳水和钠已计入。",
+        "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "focus": "肩部",
+      "description": "苹果手表 记录的肩部力量训练",
+      "start_time": "17:38",
+      "end_time": "18:47",
+      "duration_min": 68.4,
+      "active_kcal": 443,
+      "total_kcal": 562,
+      "avg_heart_rate_bpm": 122,
+      "kcal_estimate": 443,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "苹果手表 记录的轻度室内单车",
+      "start_time": "22:39",
+      "end_time": "22:56",
+      "duration_min": 16.8,
+      "active_kcal": 118,
+      "total_kcal": 149,
+      "avg_heart_rate_bpm": 122,
+      "effort": "轻度",
+      "kcal_estimate": 118,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "下午",
+      "focus": "肩部",
+      "description": "肩部训练",
+      "status": "已完成"
+    },
+    {
+      "time": "夜间",
+      "focus": "有氧",
+      "description": "22:39-22:56 轻度室内单车",
+      "status": "已完成"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1738,
+    "protein_g_range": [
+      108,
+      120
+    ],
+    "exercise_kcal_estimate": 561,
+    "remaining_intake_kcal": 162,
+    "intake_vs_target_kcal": -162,
+    "net_intake_after_exercise_kcal": 1177
+  },
+  "notes": [
+    "新一天从空腹体重和早餐记录开始。",
+    "报告空腹体重：97.15 千克。",
+    "与 2026-07-07 早晨体重 96.70 千克相比，今天早晨体重上升 0.45 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+    "香蕉按常用参考值估算：每 100 克可食部分约 89 千卡、蛋白质约 1.1 克、碳水约 23 克。",
+    "饭团按营养标签折算，热量、蛋白质、脂肪、碳水和钠已计入。",
+    "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

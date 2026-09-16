@@ -1,0 +1,193 @@
+{
+  "date": "2026-07-27",
+  "timezone": "亚洲/上海",
+  "record_status": "partial",
+  "missing_sections": [
+    "晚餐",
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1911,
+    "bmr_note": "按 2026-07-27 早晨空腹体重 95.95 千克用米夫林-圣乔尔公式估算。用户原文为 05.95，按明显漏写首位的 95.95 处理，待必要时修正。"
+  },
+  "morning_weight_kg": 95.95,
+  "targets": {
+    "intake_kcal": 1910,
+    "intake_target_basis": "按当日基础代谢 1911 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "五个普通大小鸡蛋的蛋清、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 268,
+      "protein_g_estimate": 26,
+      "confidence": "鸡蛋沿用普通大小口径；牛奶沿用同款包装标签",
+      "components": [
+        {
+          "food": "鸡蛋清",
+          "amount": "5 个，普通大小",
+          "kcal_estimate": 85,
+          "protein_g_estimate": 18
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "五个蛋黄未吃，不计入摄入。",
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：猪脊骨炖酸菜或白菜、青椒干豆腐丝、白米饭及清汤；按餐前餐后照片计算实际吃下部分",
+      "kcal_estimate": 650,
+      "kcal_range": [
+        520,
+        800
+      ],
+      "protein_g_range": [
+        32,
+        44
+      ],
+      "confidence": "根据餐前餐后照片估算；猪脊骨实际可食肉量、米饭重量、配菜用油量和汤汁摄入量不明确",
+      "components": [
+        {
+          "food": "猪脊骨炖酸菜或白菜",
+          "amount": "吃下大部分可食肉，餐后剩骨头、部分附着肉及较多汤汁",
+          "kcal_estimate": 330,
+          "kcal_range": [
+            250,
+            430
+          ],
+          "protein_g_range": [
+            27,
+            37
+          ]
+        },
+        {
+          "food": "白米饭",
+          "amount": "按照片估计吃下约 130-170 克熟饭",
+          "kcal_estimate": 195,
+          "kcal_range": [
+            170,
+            220
+          ],
+          "protein_g_estimate": 3.8
+        },
+        {
+          "food": "白菜、青椒和干豆腐丝",
+          "amount": "吃下部分，餐后仍剩较多白菜和少量青椒干豆腐丝",
+          "kcal_estimate": 105,
+          "kcal_range": [
+            80,
+            135
+          ],
+          "protein_g_range": [
+            3,
+            6
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "基本喝完",
+          "kcal_estimate": 20
+        }
+      ],
+      "notes": [
+        "餐后照片中的骨头、附着肉和主菜剩余汤汁不计入实际摄入。",
+        "米饭约吃四到五成，暂估约 130-170 克熟饭；若有称重数据可修正。",
+        "主菜暂识别为猪脊骨炖酸菜或白菜，如菜名不同需修正。"
+      ]
+    },
+    {
+      "meal": "练后加餐",
+      "description": "水果玉米一根",
+      "kcal_estimate": 160,
+      "kcal_range": [
+        130,
+        190
+      ],
+      "protein_g_estimate": 5,
+      "confidence": "未称重，按中等大小熟水果玉米一根估算",
+      "notes": [
+        "水果玉米主要补充碳水化合物，不能替代练后低脂蛋白。",
+        "若补充去芯可食重量可进一步修正。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:38",
+      "end_time": "18:24",
+      "duration_min": 45.98,
+      "active_kcal": 236,
+      "total_kcal": 318,
+      "avg_heart_rate_bpm": 103,
+      "kcal_estimate": 236,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "21:07",
+      "end_time": "21:44",
+      "duration_min": 36.97,
+      "active_kcal": 331,
+      "total_kcal": 399,
+      "avg_heart_rate_bpm": 130,
+      "kcal_estimate": 331,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1078,
+    "intake_kcal_range": [
+      918,
+      1258
+    ],
+    "protein_g_range": [
+      63,
+      75
+    ],
+    "exercise_active_kcal": 567,
+    "net_intake_after_exercise_kcal": 511,
+    "conservative_deficit_kcal": 1400,
+    "remaining_to_intake_target_kcal": 832,
+    "remaining_to_protein_target_g_range": [
+      95,
+      107
+    ],
+    "status": "截至 21:44 室内单车后；按中位估算已摄入约 1078 千卡，全天运动动态消耗 567 千卡，当前保守缺口约 1400 千卡，明显过大；仍应在 1910 千卡上限内正常吃低脂高蛋白晚餐。"
+  },
+  "notes": [
+    "用户原文空腹体重为 05.95，按明显笔误记录为 95.95 千克；如实际数值不同需立即修正。",
+    "空腹体重较 2026-07-26 的 96.45 千克下降 0.50 千克，主要按前期高钠饮食后的水分回落解读。",
+    "当日基础代谢约 1911 千卡，饮食上限四舍五入到十位为 1910 千卡。",
+    "早餐蛋白质约 26 克，仍偏少；午餐应安排至少 40-50 克天然低脂蛋白。",
+    "午餐按餐前餐后照片估算约 650 千卡、蛋白质约 32-44 克；主菜和米饭份量存在较大误差。",
+    "傍晚传统力量训练按苹果手表动态消耗 236 千卡记录；总消耗 318 千卡不重复加入。",
+    "练后吃一根水果玉米，暂估约 160 千卡、蛋白质约 5 克。",
+    "晚间室内单车按苹果手表动态消耗 331 千卡记录；两次训练动态消耗合计 567 千卡。",
+    "截至 21:44 尚未报告晚餐，当前保守缺口约 1400 千卡，明显过大；晚餐应在剩余约 832 千卡上限内安排约 700-800 千卡，以天然低脂蛋白为主。"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "date": "2026-07-03",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1927,
+    "bmr_note": "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+  },
+  "morning_weight_kg": 97.55,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "2 个鸡蛋、一个拳头大小菜包、260 毫升普通牛奶",
+      "kcal_estimate": 583,
+      "protein_g_range": [
+        29,
+        32
+      ],
+      "carbs_g_range": [
+        45,
+        58
+      ],
+      "fat_g_range": [
+        25,
+        33
+      ],
+      "confidence": "部分按标签，部分估算",
+      "notes": [
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "鸡蛋按 2 个中大号估算，约 140 千卡，蛋白质 12-13 克。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂午餐：芹菜炒牛肉、油渣白菜、清炒黄瓜、米饭和清汤，按前后对比照片估算",
+      "kcal_estimate": 760,
+      "protein_g_range": [
+        35,
+        45
+      ],
+      "carbs_g_range": [
+        75,
+        95
+      ],
+      "fat_g_range": [
+        28,
+        42
+      ],
+      "confidence": "根据前后对比照片估算",
+      "notes": [
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "200 毫升普通牛奶",
+      "kcal_estimate": 141,
+      "protein_g_estimate": 7.2,
+      "carbs_g_estimate": 10.0,
+      "fat_g_estimate": 8.0,
+      "confidence": "标签能量和估算宏量营养素",
+      "notes": [
+        "牛奶按既有标签折算，热量和宏量营养素已计入。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "半盒绿色小番茄和一个拳头大小黄桃",
+      "kcal_estimate": 160,
+      "protein_g_estimate": 3,
+      "carbs_g_estimate": 36,
+      "fat_g_estimate": 1,
+      "confidence": "根据照片和报告份量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "水果估算会随桃子实际大小和甜度变化。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "原味牛肉干 3 根；整罐 440 克 12 根，总量约 110 克",
+      "kcal_estimate": 246,
+      "protein_g_estimate": 47.5,
+      "carbs_g_estimate": 0,
+      "fat_g_estimate": 5.9,
+      "sodium_mg_estimate": 963,
+      "confidence": "营养标签和报告数量",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。",
+        "牛肉干按整罐 440 克 12 根折算，每根约 36.7 克。",
+        "钠摄入较高，可能通过水分潴留影响次日晨重。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "training_plan": [],
+  "daily_totals": {
+    "intake_kcal_estimate": 1890,
+    "protein_g_range": [
+      122,
+      135
+    ],
+    "exercise_kcal_estimate": 0,
+    "remaining_intake_kcal": 10,
+    "intake_vs_target_kcal": -10,
+    "net_intake_after_exercise_kcal": 1890
+  },
+  "notes": [
+    "新一天从空腹体重记录开始。",
+    "与 2026-07-02 早晨体重 97.15 千克相比，今天早晨体重上升 0.40 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "如实际份量或标签不同，需要修正本条。",
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "用户表示今晚停止进食。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

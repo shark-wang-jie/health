@@ -1,0 +1,476 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-14",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确晚饭没吃、今天训练饮食结束，已记录单车；后续确认炸鸡无骨、排骨带骨、掌中宝无骨，份量假设已修正，按完整记录结算。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早起空腹93.10公斤；此前凌晨有进食，进食至称重间隔未说明，保留原读数，不推断等同于标准隔夜空腹条件。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 93.1,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 93.1,
+    "bmr_weight_date": "2026-09-14",
+    "bmr_kcal": 1882.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "2026-09-14-overnight-nongtang-chicken-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "弄堂无骨炸鸡一份约300克，按可食熟重",
+      "reported_text": "弄堂炸鸡大概300g；后续确认不带骨",
+      "source_kind": "database_estimate",
+      "basis": "用户确认300克炸鸡不带骨，按约300克可食油炸成品计算。原估算以300克带骨、225克可食部分计750千卡；保持同一配方能量密度，改为300克可食部分，基础750×300/225=1000千卡，记账1100千卡。无品牌标签，份量、裹粉与吸油量仍有误差。",
+      "quantity_g_estimate": 300,
+      "kcal_base_estimate": 1000,
+      "kcal_booked": 1100,
+      "kcal_range": [
+        750,
+        1350
+      ],
+      "protein_g_estimate": 66.66666666666667,
+      "fat_g_estimate": 75.11111111111111,
+      "carbs_g_estimate": 40,
+      "margin": {
+        "added_fat_g": 11.11111111111111,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无骨可食份量修正后，仍只保留一次10%油脂记账余量。"
+      },
+      "uncertainty": "无骨已确认，约300克为用户估计；能量及宏量来自一般炸鸡配方，非同店官方营养值。范围非统计置信区间。",
+      "bone_in": false
+    },
+    {
+      "id": "2026-09-14-overnight-qiaotou-ribs-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "桥头排骨大份，暂按150克带骨熟重",
+      "reported_text": "大份桥头排骨；后续确认带骨",
+      "source_kind": "database_estimate",
+      "basis": "沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。 用户后续确认带骨，与此前估算一致，热量保持。",
+      "quantity_g_estimate": 150,
+      "kcal_base_estimate": 390,
+      "kcal_booked": 429.00000000000006,
+      "kcal_range": [
+        280,
+        600
+      ],
+      "protein_g_estimate": 23,
+      "fat_g_estimate": 29.333333333333332,
+      "carbs_g_estimate": 15,
+      "margin": {
+        "added_fat_g": 4.333333333333333,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+      },
+      "uncertainty": "重量或骨重及裹粉、吸油量存在误差；范围为操作性估算，非实测或统计置信区间。 沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。",
+      "bone_in": true
+    },
+    {
+      "id": "2026-09-14-overnight-chicken-cartilage-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "大份掌中宝，暂按油炸成品180克",
+      "reported_text": "大份掌中宝；后续确认不带骨",
+      "source_kind": "database_estimate",
+      "basis": "沿用09-06大份掌中宝基础估算580千卡、份量180克油炸成品；本次只报告大份，180克不是本次称量或品牌统一规格。未假定本次口味与此前相同。 用户后续确认不带骨；原已按可食油炸成品估算，无需扣除骨重，热量保持。",
+      "quantity_g_estimate": 180,
+      "kcal_base_estimate": 580,
+      "kcal_booked": 638.0,
+      "kcal_range": [
+        450,
+        850
+      ],
+      "protein_g_estimate": 30,
+      "fat_g_estimate": 45.44444444444444,
+      "carbs_g_estimate": 30,
+      "margin": {
+        "added_fat_g": 6.444444444444445,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+      },
+      "uncertainty": "无骨已确认；180克仅沿用大份暂估重量，本次未称重。裹粉、吸油量与实际大份份量仍有误差。",
+      "bone_in": false
+    },
+    {
+      "description": "默认纯牛奶260毫升",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "默认纯牛奶260毫升",
+      "kcal_base_estimate": 183.0,
+      "kcal_booked": 183.0,
+      "kcal_range": [
+        183.0,
+        183.0
+      ],
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "id": "2026-09-14-breakfast-milk-1",
+      "status": "consumed_estimated",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "早饭一瓶牛奶"
+    },
+    {
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "meal": "午餐",
+      "source_kind": "matched_default",
+      "basis": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "kcal_base_estimate": 885.0,
+      "kcal_booked": 973.5000000000001,
+      "kcal_range": [
+        710.0,
+        1080.0
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91.0,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "protein_g_range": [
+        57.0,
+        84.0
+      ],
+      "fat_g_range": [
+        18.0,
+        51.0
+      ],
+      "carbs_g_range": [
+        73.0,
+        118.0
+      ],
+      "id": "2026-09-14-lunch-shaxian-1",
+      "status": "consumed_estimated",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "午饭啥沙县鸡腿饭"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "2026-09-14-cycling-1",
+      "event_id": "2026-09-14-cycling-1",
+      "type": "室内单车",
+      "time": "22:01–22:42",
+      "duration": "40分50秒",
+      "duration_seconds": 2450,
+      "energy_scope": "session_active",
+      "source": "Apple Watch训练总结截图",
+      "active_kcal": 399,
+      "total_kcal": 474,
+      "average_heart_rate_bpm": 142,
+      "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/3B0505C8-A36C-48F7-A0AE-9A76A0064645/1-照片-1.jpg",
+      "note": "截图日期09-14；仅动态399千卡参与75%折算，总474千卡保留不叠加。"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-09-14T22:50:09.252463+08:00",
+      "entry_id": "2026-09-14-overnight-nongtang-chicken-1",
+      "reason": "用户确认炸鸡无骨、桥头排骨带骨、掌中宝无骨。",
+      "old": {
+        "id": "2026-09-14-overnight-nongtang-chicken-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "弄堂炸鸡一份约300克，暂按带骨熟重",
+        "reported_text": "弄堂炸鸡一份约300克，暂按带骨熟重",
+        "source_kind": "database_estimate",
+        "basis": "未找到同店固定记录。暂按300克带骨炸鸡、可食部分约225克及常见裹粉带皮油炸鸡肉估算；是否带骨待确认。若300克实际为无骨可食重量应上调，不把750千卡当作品牌官方值。",
+        "quantity_g_estimate": 300,
+        "kcal_base_estimate": 750,
+        "kcal_booked": 825.0000000000001,
+        "kcal_range": [
+          500,
+          1100
+        ],
+        "protein_g_estimate": 50,
+        "fat_g_estimate": 56.333333333333336,
+        "carbs_g_estimate": 30,
+        "margin": {
+          "added_fat_g": 8.333333333333334,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+        },
+        "uncertainty": "重量或骨重及裹粉、吸油量存在误差；范围为操作性估算，非实测或统计置信区间。 未找到同店固定记录。暂按300克带骨炸鸡、可食部分约225克及常见裹粉带皮油炸鸡肉估算；是否带骨待确认。若300克实际为无骨可食重量应上调，不把750千卡当作品牌官方值。"
+      },
+      "new": {
+        "id": "2026-09-14-overnight-nongtang-chicken-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "弄堂无骨炸鸡一份约300克，按可食熟重",
+        "reported_text": "弄堂炸鸡大概300g；后续确认不带骨",
+        "source_kind": "database_estimate",
+        "basis": "用户确认300克炸鸡不带骨，按约300克可食油炸成品计算。原估算以300克带骨、225克可食部分计750千卡；保持同一配方能量密度，改为300克可食部分，基础750×300/225=1000千卡，记账1100千卡。无品牌标签，份量、裹粉与吸油量仍有误差。",
+        "quantity_g_estimate": 300,
+        "kcal_base_estimate": 1000,
+        "kcal_booked": 1100,
+        "kcal_range": [
+          750,
+          1350
+        ],
+        "protein_g_estimate": 66.66666666666667,
+        "fat_g_estimate": 75.11111111111111,
+        "carbs_g_estimate": 40,
+        "margin": {
+          "added_fat_g": 11.11111111111111,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "无骨可食份量修正后，仍只保留一次10%油脂记账余量。"
+        },
+        "uncertainty": "无骨已确认，约300克为用户估计；能量及宏量来自一般炸鸡配方，非同店官方营养值。范围非统计置信区间。",
+        "bone_in": false
+      }
+    },
+    {
+      "timestamp": "2026-09-14T22:50:09.252463+08:00",
+      "entry_id": "2026-09-14-overnight-qiaotou-ribs-1",
+      "reason": "用户确认炸鸡无骨、桥头排骨带骨、掌中宝无骨。",
+      "old": {
+        "id": "2026-09-14-overnight-qiaotou-ribs-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "桥头排骨大份，暂按150克带骨熟重",
+        "reported_text": "桥头排骨大份，暂按150克带骨熟重",
+        "source_kind": "database_estimate",
+        "basis": "沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。",
+        "quantity_g_estimate": 150,
+        "kcal_base_estimate": 390,
+        "kcal_booked": 429.00000000000006,
+        "kcal_range": [
+          280,
+          600
+        ],
+        "protein_g_estimate": 23,
+        "fat_g_estimate": 29.333333333333332,
+        "carbs_g_estimate": 15,
+        "margin": {
+          "added_fat_g": 4.333333333333333,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+        },
+        "uncertainty": "重量或骨重及裹粉、吸油量存在误差；范围为操作性估算，非实测或统计置信区间。 沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。"
+      },
+      "new": {
+        "id": "2026-09-14-overnight-qiaotou-ribs-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "桥头排骨大份，暂按150克带骨熟重",
+        "reported_text": "大份桥头排骨；后续确认带骨",
+        "source_kind": "database_estimate",
+        "basis": "沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。 用户后续确认带骨，与此前估算一致，热量保持。",
+        "quantity_g_estimate": 150,
+        "kcal_base_estimate": 390,
+        "kcal_booked": 429.00000000000006,
+        "kcal_range": [
+          280,
+          600
+        ],
+        "protein_g_estimate": 23,
+        "fat_g_estimate": 29.333333333333332,
+        "carbs_g_estimate": 15,
+        "margin": {
+          "added_fat_g": 4.333333333333333,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+        },
+        "uncertainty": "重量或骨重及裹粉、吸油量存在误差；范围为操作性估算，非实测或统计置信区间。 沿用09-06大份排骨的基础估算390千卡、份量150克带骨熟重；本次只报告大份，150克不是本次称量或品牌统一规格。骨头不计可食部分；无本次照片或标签。",
+        "bone_in": true
+      }
+    },
+    {
+      "timestamp": "2026-09-14T22:50:09.252463+08:00",
+      "entry_id": "2026-09-14-overnight-chicken-cartilage-1",
+      "reason": "用户确认炸鸡无骨、桥头排骨带骨、掌中宝无骨。",
+      "old": {
+        "id": "2026-09-14-overnight-chicken-cartilage-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "大份掌中宝，暂按油炸成品180克",
+        "reported_text": "大份掌中宝，暂按油炸成品180克",
+        "source_kind": "database_estimate",
+        "basis": "沿用09-06大份掌中宝基础估算580千卡、份量180克油炸成品；本次只报告大份，180克不是本次称量或品牌统一规格。未假定本次口味与此前相同。",
+        "quantity_g_estimate": 180,
+        "kcal_base_estimate": 580,
+        "kcal_booked": 638.0,
+        "kcal_range": [
+          450,
+          850
+        ],
+        "protein_g_estimate": 30,
+        "fat_g_estimate": 45.44444444444444,
+        "carbs_g_estimate": 30,
+        "margin": {
+          "added_fat_g": 6.444444444444445,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+        },
+        "uncertainty": "重量或骨重及裹粉、吸油量存在误差；范围为操作性估算，非实测或统计置信区间。 沿用09-06大份掌中宝基础估算580千卡、份量180克油炸成品；本次只报告大份，180克不是本次称量或品牌统一规格。未假定本次口味与此前相同。"
+      },
+      "new": {
+        "id": "2026-09-14-overnight-chicken-cartilage-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "大份掌中宝，暂按油炸成品180克",
+        "reported_text": "大份掌中宝；后续确认不带骨",
+        "source_kind": "database_estimate",
+        "basis": "沿用09-06大份掌中宝基础估算580千卡、份量180克油炸成品；本次只报告大份，180克不是本次称量或品牌统一规格。未假定本次口味与此前相同。 用户后续确认不带骨；原已按可食油炸成品估算，无需扣除骨重，热量保持。",
+        "quantity_g_estimate": 180,
+        "kcal_base_estimate": 580,
+        "kcal_booked": 638.0,
+        "kcal_range": [
+          450,
+          850
+        ],
+        "protein_g_estimate": 30,
+        "fat_g_estimate": 45.44444444444444,
+        "carbs_g_estimate": 30,
+        "margin": {
+          "added_fat_g": 6.444444444444445,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础包含常见油炸成品配方，另留10%未知吸油/酱料脂肪余量；不重复追加。"
+        },
+        "uncertainty": "无骨已确认；180克仅沿用大份暂估重量，本次未称重。裹粉、吸油量与实际大份份量仍有误差。",
+        "bone_in": false
+      }
+    }
+  ],
+  "notes": [
+    "用户明确09-14晚饭没吃，不增加晚餐摄入；09-14全天饮食训练结束。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 3038.0,
+    "intake_kcal_booked": 3323.5,
+    "protein_g_estimate": 198.16666666666669,
+    "fat_g_estimate": 196.12222222222223,
+    "carbs_g_estimate": 188.5,
+    "intake_kcal_estimate": 3323.5,
+    "food_margin_kcal": 285.5,
+    "base_macro_estimates": {
+      "protein_g": 198.16666666666669,
+      "fat_g": 164.4,
+      "carbs_g": 188.5
+    },
+    "completed_day_base_intake_balance_kcal": -480.0500000000002,
+    "training_discount_kcal": 99.75,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      2373.0,
+      4063.0
+    ],
+    "exercise_active_kcal": 399.0,
+    "exercise_adjusted_kcal": 299.25,
+    "tdee_kcal_estimate": 2557.95,
+    "estimated_deficit_kcal": -765.5500000000002,
+    "completed_day_estimated_deficit_kcal": -765.5500000000002,
+    "energy_balance_scope": "completed_day_estimate",
+    "intake_target_kcal_range": [
+      1900.0,
+      2000.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 5,
+    "protein_by_meal_g": {
+      "凌晨夜宵": 119.66666666666667,
+      "午餐": 70.5,
+      "早餐": 8.0
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 1,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 1,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 1,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "weight_trend": {
+    "previous_measured_date": "2026-09-12",
+    "previous_measured_weight_kg": 91.8,
+    "change_since_previous_measurement_kg": 1.3,
+    "days_since_previous_measurement": 2,
+    "change_since_first_record_kg": -5.15,
+    "window_start": "2026-09-08",
+    "window_end": "2026-09-14",
+    "valid_measurements": 6,
+    "mean_weight_kg": 91.7,
+    "interpretation": "09-13缺测；比两天前最新有效体重增加1.30公斤，不能称为较昨日。近期夜间进食、盐分及胃肠内容物可能影响读数，短期变化不等同于脂肪变化。"
+  }
+}

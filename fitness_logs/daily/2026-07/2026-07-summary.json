@@ -1,0 +1,1096 @@
+{
+  "schema_version": 1,
+  "record_type": "monthly_summary",
+  "month": "2026-07",
+  "summary_type": "月度饮食与运动总结",
+  "period": {
+    "start_date": "2026-07-01",
+    "end_date": "2026-07-31",
+    "timezone": "亚洲/上海"
+  },
+  "month_end_date": "2026-07-31",
+  "generated_at": "2026-08-02T23:09:04+08:00",
+  "finalized": true,
+  "coverage": {
+    "calendar_days": 31,
+    "recorded_days": 31,
+    "is_complete_calendar_coverage": true,
+    "missing_dates": [],
+    "final_dates": [
+      "2026-07-31"
+    ],
+    "partial_dates": [
+      "2026-07-18",
+      "2026-07-23",
+      "2026-07-27"
+    ],
+    "open_dates": [
+      "2026-07-24",
+      "2026-07-29",
+      "2026-07-30"
+    ],
+    "unknown_completion_dates": [
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-04",
+      "2026-07-05",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-11",
+      "2026-07-12",
+      "2026-07-13",
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-28"
+    ],
+    "weight_missing_dates": [
+      "2026-07-19"
+    ]
+  },
+  "aggregation_policy": {
+    "daily_summary_precedence": [
+      "daily_summary",
+      "daily_totals"
+    ],
+    "reported_data_policy": "月度总量包含所有日文件中已报告的数据；partial/open 日期会单独标出，不能视为完整全天。",
+    "range_central_value": "每日 intake_kcal_estimate 使用原记录点估算；蛋白质同时汇总上下限。",
+    "exercise_kcal": "优先 active_kcal，否则使用 kcal_estimate；不使用 total_kcal。",
+    "energy_balance_formula": "bmr_kcal + active_or_estimated_exercise_kcal - intake_kcal_estimate",
+    "target_evaluation": "按每个日文件自身 targets 判断，不使用单一月度目标。"
+  },
+  "weight_summary": {
+    "recorded_days": 30,
+    "first": {
+      "date": "2026-07-01",
+      "weight_kg": 97.2
+    },
+    "last": {
+      "date": "2026-07-31",
+      "weight_kg": 94.4
+    },
+    "first_to_last_change_kg": -2.8,
+    "average_kg": 96.12,
+    "minimum": {
+      "date": "2026-07-31",
+      "weight_kg": 94.4
+    },
+    "maximum": {
+      "date": "2026-07-03",
+      "weight_kg": 97.55
+    }
+  },
+  "nutrition_summary": {
+    "days_with_intake_summary": 31,
+    "total_intake_kcal_estimate": 63930,
+    "average_intake_kcal_per_recorded_day": 2062.3,
+    "lowest_intake_day": {
+      "date": "2026-07-18",
+      "value": 926
+    },
+    "highest_intake_day": {
+      "date": "2026-07-25",
+      "value": 5859
+    },
+    "intake_limit_adherence": {
+      "days_definitely_at_or_below_limit": 15,
+      "days_estimate_at_or_below_limit": 20,
+      "days_possibly_at_or_below_limit": 21,
+      "days_definitely_above_limit": 10
+    },
+    "total_meal_entries": 144,
+    "meal_category_counts": {
+      "上午加餐": 4,
+      "下午加餐": 7,
+      "下午和晚间加餐": 1,
+      "加餐": 7,
+      "午餐": 29,
+      "午饭后加餐": 1,
+      "放纵餐加餐": 1,
+      "早餐": 28,
+      "早餐补记": 1,
+      "晚间加餐": 17,
+      "晚间放纵餐": 1,
+      "晚间训练后进食": 1,
+      "晚间进食": 3,
+      "晚餐": 16,
+      "晚餐追加": 1,
+      "晚饭及夜宵": 1,
+      "练前加餐": 5,
+      "练后加餐": 6,
+      "补充进食": 1,
+      "训练前加餐": 7,
+      "训练后加餐": 5,
+      "餐食（时间未说明）": 1
+    },
+    "protein_days_with_summary": 31,
+    "total_protein_g_range": [
+      3457.3,
+      3960.8
+    ],
+    "average_protein_g_range_per_recorded_day": [
+      111.5,
+      127.8
+    ],
+    "protein_target_days_definitely_met": 3,
+    "protein_target_days_midpoint_met": 3,
+    "protein_target_days_possibly_met": 3,
+    "protein_target_days_definitely_below": 28
+  },
+  "exercise_summary": {
+    "exercise_days": 24,
+    "days_without_exercise_entries": 7,
+    "total_sessions": 40,
+    "sessions_with_duration": 40,
+    "sessions_with_kcal": 40,
+    "total_active_or_estimated_kcal_from_daily_summaries": 11743,
+    "highest_exercise_kcal_day": {
+      "date": "2026-07-31",
+      "value": 786
+    },
+    "by_normalized_type": {
+      "indoor_cycling": {
+        "sessions": 18,
+        "recorded_duration_min": 621.3,
+        "active_or_estimated_kcal": 5402
+      },
+      "strength": {
+        "sessions": 22,
+        "recorded_duration_min": 976.5,
+        "active_or_estimated_kcal": 6341
+      }
+    },
+    "type_aliases": {
+      "strength": [
+        "力量训练",
+        "传统力量训练"
+      ],
+      "indoor_cycling": [
+        "骑行",
+        "室内骑行",
+        "室内单车"
+      ]
+    },
+    "energy_basis": "每次运动优先采用 active_kcal；没有该字段时沿用 kcal_estimate。Apple Watch 总千卡不计入。"
+  },
+  "conservative_deficit_summary": {
+    "days_with_calculable_deficit": 31,
+    "total_conservative_deficit_kcal": 7105,
+    "average_conservative_deficit_kcal_per_recorded_day": 229.2,
+    "days_within_that_days_recorded_target": 9,
+    "days_below_that_days_recorded_target": 12,
+    "days_above_that_days_recorded_target": 10,
+    "surplus_days": 6,
+    "lowest_deficit_day": {
+      "date": "2026-07-25",
+      "value": -3961
+    },
+    "highest_deficit_day": {
+      "date": "2026-07-27",
+      "value": 1400
+    },
+    "formula": "当日基础代谢 + 已记录运动动态或估算千卡 - 当日摄入估算"
+  },
+  "notable_days": {
+    "highest_intake": {
+      "date": "2026-07-25",
+      "value": 5859
+    },
+    "lowest_intake": {
+      "date": "2026-07-18",
+      "value": 926
+    },
+    "highest_exercise": {
+      "date": "2026-07-31",
+      "value": 786
+    },
+    "highest_conservative_deficit": {
+      "date": "2026-07-27",
+      "value": 1400
+    },
+    "lowest_conservative_deficit": {
+      "date": "2026-07-25",
+      "value": -3961
+    }
+  },
+  "assessment": [
+    "明确不完整的日记录：2026-07-18, 2026-07-23, 2026-07-27；其已报告数值仍保留，但不能视为完整全天。",
+    "缺少当日结束确认的记录：2026-07-24, 2026-07-29, 2026-07-30；月度统计按已报告内容计算。",
+    "本月首次至末次有记录体重变化 -2.80 千克。",
+    "有蛋白质汇总的 31 天中，确定达到当日目标 3 天；另分别统计按中位估算和可能达到的天数。",
+    "记录到 24 个运动日、40 次训练。",
+    "热量缺口按统一保守公式重算；该结果不包含未单独记录的日常活动和食物热效应。"
+  ],
+  "daily_metrics": [
+    {
+      "date": "2026-07-01",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.2,
+      "bmr_kcal": 1923,
+      "intake_kcal_estimate": 2520,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        123,
+        154
+      ],
+      "exercise_active_or_estimated_kcal": 180,
+      "conservative_deficit_kcal": -417,
+      "intake_limit_kcal": 2000,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-02",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.15,
+      "bmr_kcal": 1923,
+      "intake_kcal_estimate": 2832,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        133,
+        160
+      ],
+      "exercise_active_or_estimated_kcal": 641,
+      "conservative_deficit_kcal": -268,
+      "intake_limit_kcal": 2000,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-03",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.55,
+      "bmr_kcal": 1927,
+      "intake_kcal_estimate": 1890,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        122,
+        135
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 37,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-04",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.85,
+      "bmr_kcal": 1919,
+      "intake_kcal_estimate": 2298,
+      "intake_kcal_range": null,
+      "protein_g_estimate": 150.3,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 593,
+      "conservative_deficit_kcal": 214,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-05",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.85,
+      "bmr_kcal": 1919,
+      "intake_kcal_estimate": 2970,
+      "intake_kcal_range": null,
+      "protein_g_estimate": 103.7,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -1051,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        500,
+        800
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-06",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.25,
+      "bmr_kcal": 1924,
+      "intake_kcal_estimate": 2159,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        132,
+        150
+      ],
+      "exercise_active_or_estimated_kcal": 759,
+      "conservative_deficit_kcal": 524,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-07",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.7,
+      "bmr_kcal": 1924,
+      "intake_kcal_estimate": 1828,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        127,
+        144
+      ],
+      "exercise_active_or_estimated_kcal": 241,
+      "conservative_deficit_kcal": 337,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-08",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.15,
+      "bmr_kcal": 1923,
+      "intake_kcal_estimate": 1738,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        108,
+        120
+      ],
+      "exercise_active_or_estimated_kcal": 561,
+      "conservative_deficit_kcal": 746,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-09",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.0,
+      "bmr_kcal": 1921,
+      "intake_kcal_estimate": 1636,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        92,
+        104
+      ],
+      "exercise_active_or_estimated_kcal": 433,
+      "conservative_deficit_kcal": 718,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-10",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.65,
+      "bmr_kcal": 1917,
+      "intake_kcal_estimate": 1563,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        100,
+        112
+      ],
+      "exercise_active_or_estimated_kcal": 230,
+      "conservative_deficit_kcal": 584,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-11",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.65,
+      "bmr_kcal": 1908,
+      "intake_kcal_estimate": 1805,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        107,
+        123
+      ],
+      "exercise_active_or_estimated_kcal": 293,
+      "conservative_deficit_kcal": 396,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-12",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.9,
+      "bmr_kcal": 1910,
+      "intake_kcal_estimate": 5087,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        177,
+        220
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -3177,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-13",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.45,
+      "bmr_kcal": 1926,
+      "intake_kcal_estimate": 1198,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        68,
+        79
+      ],
+      "exercise_active_or_estimated_kcal": 507,
+      "conservative_deficit_kcal": 1235,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-14",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 97.2,
+      "bmr_kcal": 1923,
+      "intake_kcal_estimate": 1906,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        98,
+        112
+      ],
+      "exercise_active_or_estimated_kcal": 618,
+      "conservative_deficit_kcal": 635,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-15",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.8,
+      "bmr_kcal": 1919,
+      "intake_kcal_estimate": 1660,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        126,
+        146
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 259,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-16",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96,
+      "bmr_kcal": 1911,
+      "intake_kcal_estimate": 1783,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        100,
+        114
+      ],
+      "exercise_active_or_estimated_kcal": 587,
+      "conservative_deficit_kcal": 715,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 8,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-17",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.85,
+      "bmr_kcal": 1910,
+      "intake_kcal_estimate": 1991,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        142,
+        151
+      ],
+      "exercise_active_or_estimated_kcal": 539,
+      "conservative_deficit_kcal": 458,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-18",
+      "record_status": "partial",
+      "missing_sections": [
+        "午餐及其他未报告餐食",
+        "当日运动确认",
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 96.05,
+      "bmr_kcal": 1912,
+      "intake_kcal_estimate": 926,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        67.9,
+        68.9
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 986,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-19",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": null,
+      "bmr_kcal": 1912,
+      "intake_kcal_estimate": 2105,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        89,
+        107
+      ],
+      "exercise_active_or_estimated_kcal": 306,
+      "conservative_deficit_kcal": 113,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-20",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.15,
+      "bmr_kcal": 1913,
+      "intake_kcal_estimate": 1661,
+      "intake_kcal_range": null,
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        107,
+        120
+      ],
+      "exercise_active_or_estimated_kcal": 644,
+      "conservative_deficit_kcal": 896,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "date": "2026-07-21",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.25,
+      "bmr_kcal": 1904,
+      "intake_kcal_estimate": 1772,
+      "intake_kcal_range": [
+        1642,
+        1942
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        101.5,
+        112.5
+      ],
+      "exercise_active_or_estimated_kcal": 555,
+      "conservative_deficit_kcal": 687,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 22:47；按中位估算全天摄入约 1772 千卡，距离 1900 千卡饮食上限约 128 千卡；保守缺口约 687 千卡，位于 400-700 千卡目标范围上沿，今晚应停止进食。"
+    },
+    {
+      "date": "2026-07-22",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.1,
+      "bmr_kcal": 1902,
+      "intake_kcal_estimate": 1795,
+      "intake_kcal_range": [
+        1571,
+        2043
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        85,
+        101
+      ],
+      "exercise_active_or_estimated_kcal": 365,
+      "conservative_deficit_kcal": 472,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 1,
+      "source_summary_status": "截至练后加餐；按中位估算全天摄入约 1795 千卡，距离 1900 千卡饮食上限仅约 105 千卡；当前保守缺口约 472 千卡，位于 400-700 千卡目标范围，后续应停止进食。"
+    },
+    {
+      "date": "2026-07-23",
+      "record_status": "partial",
+      "missing_sections": [
+        "完整训练后晚餐",
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 95.05,
+      "bmr_kcal": 1902,
+      "intake_kcal_estimate": 1292,
+      "intake_kcal_range": [
+        1098,
+        1488
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        54.2,
+        67.2
+      ],
+      "exercise_active_or_estimated_kcal": 405,
+      "conservative_deficit_kcal": 1015,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 1,
+      "source_summary_status": "截至晚餐饭团；按中位估算距离 1900 千卡饮食上限约 608 千卡，当前保守缺口约 1015 千卡；饭团蛋白质极低，仍需在上限内补充低脂蛋白。"
+    },
+    {
+      "date": "2026-07-24",
+      "record_status": "open",
+      "missing_sections": [
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 94.75,
+      "bmr_kcal": 1899,
+      "intake_kcal_estimate": 1568,
+      "intake_kcal_range": [
+        1343,
+        1798
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        77.2,
+        91.2
+      ],
+      "exercise_active_or_estimated_kcal": 205,
+      "conservative_deficit_kcal": 536,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 1,
+      "source_summary_status": "截至练后苹果；按中位估算距离 1900 千卡饮食上限约 332 千卡，当前保守缺口约 536 千卡；为保持至少 400 千卡保守缺口，最多再摄入约 136 千卡。"
+    },
+    {
+      "date": "2026-07-25",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 94.65,
+      "bmr_kcal": 1898,
+      "intake_kcal_estimate": 5859,
+      "intake_kcal_range": [
+        4898,
+        6978
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        192,
+        252
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -3961,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "补记晚间放纵餐后，全天中位估算摄入约 5859 千卡，超过 1900 千卡饮食上限约 3959 千卡；按基础代谢口径为约 3961 千卡热量盈余，明显偏离减脂目标。"
+    },
+    {
+      "date": "2026-07-26",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 96.45,
+      "bmr_kcal": 1916,
+      "intake_kcal_estimate": 1977,
+      "intake_kcal_range": [
+        1727,
+        2197
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        174.5,
+        197
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -61,
+      "intake_limit_kcal": 1920,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 0,
+      "source_summary_status": "截至晚餐；按中位估算全天摄入约 1977 千卡，超过 1920 千卡饮食上限约 57 千卡；未记录运动，按基础代谢口径约为 61 千卡热量盈余，今晚停止进食。"
+    },
+    {
+      "date": "2026-07-27",
+      "record_status": "partial",
+      "missing_sections": [
+        "晚餐",
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 95.95,
+      "bmr_kcal": 1911,
+      "intake_kcal_estimate": 1078,
+      "intake_kcal_range": [
+        918,
+        1258
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        63,
+        75
+      ],
+      "exercise_active_or_estimated_kcal": 567,
+      "conservative_deficit_kcal": 1400,
+      "intake_limit_kcal": 1910,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 21:44 室内单车后；按中位估算已摄入约 1078 千卡，全天运动动态消耗 567 千卡，当前保守缺口约 1400 千卡，明显过大；仍应在 1910 千卡上限内正常吃低脂高蛋白晚餐。"
+    },
+    {
+      "date": "2026-07-28",
+      "record_status": "unknown",
+      "missing_sections": [],
+      "morning_weight_kg": 95.05,
+      "bmr_kcal": 1902,
+      "intake_kcal_estimate": 1778,
+      "intake_kcal_range": [
+        1542,
+        2047
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        111.2,
+        126.2
+      ],
+      "exercise_active_or_estimated_kcal": 511,
+      "conservative_deficit_kcal": 635,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 22:28；按中位估算已摄入约 1778 千卡，力量训练与室内单车合计动态消耗 511 千卡，保守热量缺口约 635 千卡。距离 1900 千卡饮食上限约 122 千卡；运动不提高饮食上限。"
+    },
+    {
+      "date": "2026-07-29",
+      "record_status": "open",
+      "missing_sections": [
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 95,
+      "bmr_kcal": 1901,
+      "intake_kcal_estimate": 1776,
+      "intake_kcal_range": [
+        1589,
+        1969
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        137.7,
+        152.7
+      ],
+      "exercise_active_or_estimated_kcal": 682,
+      "conservative_deficit_kcal": 807,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 20:32；已摄入约 1776 千卡、蛋白质约 138-153 克，力量训练与室内单车合计动态消耗 682 千卡，当前保守热量缺口约 807 千卡。距离 1900 千卡饮食上限约 124 千卡。"
+    },
+    {
+      "date": "2026-07-30",
+      "record_status": "open",
+      "missing_sections": [
+        "当日结束确认"
+      ],
+      "morning_weight_kg": 94.7,
+      "bmr_kcal": 1898,
+      "intake_kcal_estimate": 1773,
+      "intake_kcal_range": [
+        1438,
+        2023
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        61.2,
+        73.2
+      ],
+      "exercise_active_or_estimated_kcal": 535,
+      "conservative_deficit_kcal": 660,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 21:22；按偏保守中位估算已摄入约 1773 千卡、蛋白质约 61-73 克，力量训练与室内单车合计动态消耗 535 千卡，当前保守热量缺口约 660 千卡。距离 1900 千卡饮食上限约 127 千卡；如仍进食，只能补不超过 7 个正常大小蛋清。"
+    },
+    {
+      "date": "2026-07-31",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.4,
+      "bmr_kcal": 1895,
+      "intake_kcal_estimate": 1706,
+      "intake_kcal_range": [
+        1576,
+        1856
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        126.9,
+        138.9
+      ],
+      "exercise_active_or_estimated_kcal": 786,
+      "conservative_deficit_kcal": 975,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "截至 21:16：摄入中位估算约 1706 千卡，合理范围约 1576-1856 千卡；蛋白质约 127-139 克。力量训练与室内单车合计动态消耗 786 千卡，按中位估算的保守缺口约 975 千卡，高于 400-700 千卡目标。距离固定饮食上限仅约 194 千卡，且午餐存在估算误差；运动不增加饮食上限，今晚停止进食，不用额外食物抵消本次骑行。"
+    }
+  ],
+  "source_files": [
+    "daily/2026-07/2026-07-01.json",
+    "daily/2026-07/2026-07-02.json",
+    "daily/2026-07/2026-07-03.json",
+    "daily/2026-07/2026-07-04.json",
+    "daily/2026-07/2026-07-05.json",
+    "daily/2026-07/2026-07-06.json",
+    "daily/2026-07/2026-07-07.json",
+    "daily/2026-07/2026-07-08.json",
+    "daily/2026-07/2026-07-09.json",
+    "daily/2026-07/2026-07-10.json",
+    "daily/2026-07/2026-07-11.json",
+    "daily/2026-07/2026-07-12.json",
+    "daily/2026-07/2026-07-13.json",
+    "daily/2026-07/2026-07-14.json",
+    "daily/2026-07/2026-07-15.json",
+    "daily/2026-07/2026-07-16.json",
+    "daily/2026-07/2026-07-17.json",
+    "daily/2026-07/2026-07-18.json",
+    "daily/2026-07/2026-07-19.json",
+    "daily/2026-07/2026-07-20.json",
+    "daily/2026-07/2026-07-21.json",
+    "daily/2026-07/2026-07-22.json",
+    "daily/2026-07/2026-07-23.json",
+    "daily/2026-07/2026-07-24.json",
+    "daily/2026-07/2026-07-25.json",
+    "daily/2026-07/2026-07-26.json",
+    "daily/2026-07/2026-07-27.json",
+    "daily/2026-07/2026-07-28.json",
+    "daily/2026-07/2026-07-29.json",
+    "daily/2026-07/2026-07-30.json",
+    "daily/2026-07/2026-07-31.json"
+  ],
+  "methodology_notes": [
+    "月度总量和均值只按现有每日 JSON 计算；缺失日期不按零摄入或零运动处理。",
+    "每日摄入使用当日汇总中的中位或点估算；有合理范围时同时保留范围。",
+    "蛋白质区间按逐日上下限分别汇总；点估算视为上下限相同。",
+    "运动总消耗优先采用 Apple Watch 动态千卡；没有动态千卡时沿用设备或人工估算。",
+    "保守缺口统一按基础代谢加已记录运动、减摄入计算；真实 TDEE 通常更高。",
+    "没有运动条目的日期仅表示无运动记录；若当日记录不完整，不能据此确认是休息日。"
+  ]
+}

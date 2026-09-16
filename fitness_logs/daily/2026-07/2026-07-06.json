@@ -1,0 +1,169 @@
+{
+  "date": "2026-07-06",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1924,
+    "bmr_note": "按 2026-07-06 早晨体重用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 97.25,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "2 个鸡蛋、一个拳头大小菜包、260 毫升普通牛奶",
+      "kcal_estimate": 583,
+      "protein_g_range": [
+        29,
+        32
+      ],
+      "carbs_g_range": [
+        45,
+        58
+      ],
+      "fat_g_range": [
+        25,
+        33
+      ],
+      "confidence": "部分按标签，部分估算",
+      "notes": [
+        "早餐模式同 2026-07-03 既往记录。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "鸡蛋按 2 个中大号估算，约 140 千卡，蛋白质 12-13 克。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：带骨肉配酸菜、米饭、豆芽、白菜和清汤；肉基本吃完，剩少量骨头/米饭/蔬菜",
+      "kcal_estimate": 850,
+      "protein_g_range": [
+        45,
+        60
+      ],
+      "carbs_g_range": [
+        55,
+        75
+      ],
+      "fat_g_range": [
+        40,
+        55
+      ],
+      "confidence": "根据前后对比照片估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "一个黄桃，比拳头大一圈左右",
+      "kcal_estimate": 170,
+      "protein_g_estimate": 2,
+      "carbs_g_estimate": 40,
+      "fat_g_estimate": 0.5,
+      "confidence": "估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "一根糯玉米",
+      "kcal_estimate": 220,
+      "protein_g_estimate": 6,
+      "carbs_g_estimate": 46,
+      "fat_g_estimate": 2,
+      "confidence": "估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "20 克光头娃娃零食和 3 根原味牛肉干",
+      "kcal_estimate": 336,
+      "protein_g_estimate": 49.7,
+      "carbs_g_estimate": 13.4,
+      "fat_g_estimate": 9.0,
+      "sodium_mg_estimate": 1121,
+      "confidence": "营养标签和既往牛肉干记录",
+      "notes": [
+        "如实际份量或标签不同，需要修正本条。",
+        "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+        "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "力量训练",
+      "focus": "胸部",
+      "description": "健身房胸部训练，苹果手表 未启动记录",
+      "duration_min": 30,
+      "active_kcal": 200,
+      "kcal_estimate": 200,
+      "confidence": "用户估算，无手表记录",
+      "notes": [
+        "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。",
+        "用户表示下次会开启训练记录。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "苹果手表 室内单车训练",
+      "start_time": "21:35",
+      "end_time": "22:35",
+      "duration_min": 60.3,
+      "active_kcal": 559,
+      "total_kcal": 670,
+      "avg_heart_rate_bpm": 151,
+      "effort": "中等强度",
+      "kcal_estimate": 559,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "晚上",
+      "focus": "胸部",
+      "description": "健身房胸部训练约 30 分钟",
+      "status": "已完成"
+    },
+    {
+      "time": "夜间",
+      "focus": "有氧",
+      "description": "21:35-22:35 完成室内单车",
+      "status": "已完成"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 2159,
+    "protein_g_range": [
+      132,
+      150
+    ],
+    "exercise_kcal_estimate": 759,
+    "remaining_intake_kcal": -259,
+    "intake_vs_target_kcal": 259,
+    "net_intake_after_exercise_kcal": 1400
+  },
+  "notes": [
+    "新一天从空腹体重记录开始。",
+    "与 2026-07-05 早晨体重 96.85 千克相比，今天早晨体重上升 0.40 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "用户要求更严格监督，以维持每日 400-700 千卡热量缺口。",
+    "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

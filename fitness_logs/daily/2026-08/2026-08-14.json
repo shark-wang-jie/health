@@ -1,0 +1,341 @@
+{
+  "date": "2026-08-14",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1887,
+    "bmr_note": "按 2026-08-14 早晨空腹体重 93.60 千克，用米夫林-圣乔尔公式 10×93.60 + 6.25×173 - 5×27 + 5 = 1887.25 千卡估算。"
+  },
+  "morning_weight_kg": 93.6,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1887 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "一瓶此前同款纯牛奶约 260 毫升和一根中等大小香蕉",
+      "kcal_estimate": 290,
+      "protein_g_estimate": 9.3,
+      "fat_g_estimate": 9.8,
+      "carbs_g_estimate": 39.5,
+      "confidence": "牛奶暂按此前同款 260 毫升计算；香蕉未称重，暂按中等大小、可食部分约 120 克估算。若容量、标签或香蕉大小不同需修正。",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "约 260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦的标签。"
+        },
+        {
+          "food": "香蕉",
+          "amount": "中等大小 1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27
+        }
+      ],
+      "notes": "早餐蛋白质仅约 9.3 克，明显低于工作日早餐 60-70 克的分配目标。"
+    },
+    {
+      "meal": "午餐",
+      "description": "甜口回锅肉、白米饭、拍黄瓜、花菜和西兰花等蔬菜及清汤；回锅肉连肥肉全部吃完，米饭和蔬菜有明显剩余，盘底油汁未喝",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/561C6738-F813-4BBC-8FF0-32237C1DAC10/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/561C6738-F813-4BBC-8FF0-32237C1DAC10/2-照片-2.jpg"
+      ],
+      "kcal_estimate": 900,
+      "kcal_range": [
+        750,
+        1100
+      ],
+      "protein_g_range": [
+        30,
+        45
+      ],
+      "fat_g_range": [
+        32,
+        55
+      ],
+      "carbs_g_range": [
+        75,
+        105
+      ],
+      "confidence": "依据餐前餐后照片及用户说明估算。回锅肉和肥肉按全部吃完，甜口调味糖及附着油汁计入；碗内剩余米饭、蔬菜和盘底游离油汁扣除。主要误差来自回锅肉净重、肥瘦比例、炒制用油和实际入口米饭重量。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "按餐前餐后差额暂估实际吃下约 180-230 克",
+          "kcal_estimate": 265,
+          "kcal_range": [
+            235,
+            300
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ],
+          "fat_g_range": [
+            0.4,
+            0.8
+          ],
+          "carbs_g_range": [
+            50,
+            64
+          ]
+        },
+        {
+          "food": "甜口回锅肉",
+          "amount": "照片所示肉片全部吃完，包括肥肉，暂估熟制肉及附着配料约 140-190 克",
+          "kcal_estimate": 525,
+          "kcal_range": [
+            410,
+            675
+          ],
+          "protein_g_range": [
+            24,
+            37
+          ],
+          "fat_g_range": [
+            29,
+            51
+          ],
+          "carbs_g_range": [
+            10,
+            22
+          ],
+          "notes": "肥肉全部吃下，按偏高脂肪口径；甜口酱汁中的糖计入碳水，盘底未入口的游离油汁不全额计入。"
+        },
+        {
+          "food": "拍黄瓜、花菜、西兰花等蔬菜及实际入口附着油汁",
+          "amount": "按餐前餐后照片扣除明显剩余部分",
+          "kcal_estimate": 85,
+          "kcal_range": [
+            65,
+            100
+          ],
+          "protein_g_range": [
+            2,
+            3
+          ],
+          "fat_g_range": [
+            2,
+            3
+          ],
+          "carbs_g_range": [
+            12,
+            17
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "一小碗，基本喝完",
+          "kcal_estimate": 25,
+          "kcal_range": [
+            15,
+            35
+          ],
+          "protein_g_range": [
+            0,
+            1
+          ],
+          "fat_g_range": [
+            0.5,
+            1.5
+          ],
+          "carbs_g_range": [
+            1,
+            3
+          ]
+        }
+      ],
+      "notes": [
+        "回锅肉肥肉全部吃完，午餐脂肪明显偏高。",
+        "餐后剩余的米饭、黄瓜、花菜和盘底油汁已扣除，不按整份计算。"
+      ]
+    },
+    {
+      "meal": "训练前后及晚间进食",
+      "description": "训练前一根中等香蕉；训练后吃一根中等普通甜玉米或水果玉米的三分之二、一包墨虾丸250克和一包黄花鱼丸200克",
+      "kcal_estimate": 677,
+      "kcal_range": [
+        660,
+        695
+      ],
+      "protein_g_estimate": 78.7,
+      "protein_g_range": [
+        78,
+        79.5
+      ],
+      "fat_g_estimate": 13.2,
+      "fat_g_range": [
+        12.7,
+        14
+      ],
+      "carbs_g_estimate": 64,
+      "carbs_g_range": [
+        61,
+        67
+      ],
+      "sodium_mg_known_minimum": 1462,
+      "confidence": "香蕉未称重，按中等大小估算；用户只说中等大小玉米，暂按普通甜玉米或水果玉米而非糯玉米，并按吃下三分之二估算；两包丸类沿用此前同款包装标签和整包规格。若本次玉米为糯玉米需上调。",
+      "components": [
+        {
+          "food": "香蕉",
+          "timing": "训练前",
+          "amount": "中等大小1根，暂按可食部分约120克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27
+        },
+        {
+          "food": "普通甜玉米或水果玉米",
+          "timing": "训练后",
+          "amount": "中等大小1根的三分之二",
+          "kcal_estimate": 107,
+          "kcal_range": [
+            90,
+            125
+          ],
+          "protein_g_range": [
+            2.6,
+            4.1
+          ],
+          "fat_g_range": [
+            0.5,
+            1.8
+          ],
+          "carbs_g_range": [
+            19.7,
+            25.7
+          ],
+          "notes": "暂按非糯玉米估算；若为糯玉米，热量和碳水需要上调。"
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "1包，250克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "nutrition_basis": "沿用此前同款每100克371千焦、蛋白质14.6克、脂肪0.7克、碳水5.7克、钠508毫克的标签。"
+        },
+        {
+          "food": "黄花鱼丸",
+          "amount": "1包，200克",
+          "kcal_estimate": 241,
+          "protein_g_estimate": 37.6,
+          "fat_g_estimate": 10,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 192,
+          "nutrition_basis": "沿用此前同款每100克505千焦、蛋白质18.8克、脂肪5克、碳水0克、钠96毫克的标签。"
+        }
+      ],
+      "notes": [
+        "两包丸类合计约463千卡、蛋白质74.1克、脂肪11.8克、碳水14.3克、已知钠至少1462毫克。",
+        "本次蛋白质较高，但主要来自加工丸类；不作为日常天然蛋白质来源的替代。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:57",
+      "end_time": "18:38",
+      "duration_min": 40.93,
+      "active_kcal": 305,
+      "total_kcal_reference_only": 378,
+      "average_heart_rate_bpm": 123,
+      "heart_rate_range_bpm": [
+        88,
+        161
+      ],
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/3C35C656-101C-4E31-8A98-BC219B174D07/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态305千卡；总千卡378仅作参考，避免重复计入训练期间静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1867,
+    "intake_kcal_range": [
+      1700,
+      2085
+    ],
+    "protein_g_range": [
+      117.3,
+      133.8
+    ],
+    "fat_g_range": [
+      54.5,
+      78.8
+    ],
+    "carbs_g_range": [
+      175.5,
+      211.5
+    ],
+    "known_sodium_mg_minimum": 1462,
+    "exercise_active_kcal": 305,
+    "net_intake_after_exercise_kcal": 1562,
+    "net_intake_after_exercise_kcal_range": [
+      1395,
+      1780
+    ],
+    "conservative_deficit_kcal": 325,
+    "conservative_deficit_kcal_range": [
+      107,
+      492
+    ],
+    "remaining_to_intake_target_kcal": 23,
+    "remaining_to_intake_target_kcal_range": [
+      -195,
+      190
+    ],
+    "remaining_while_preserving_min_deficit_kcal": -75,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -293,
+      92
+    ],
+    "remaining_to_protein_target_g_range": [
+      36.2,
+      52.7
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      4.5
+    ],
+    "status": "全天最终：累计摄入中位约1867千卡，合理范围约1700-2085千卡；蛋白质约117.3-133.8克、脂肪约54.5-78.8克、碳水约175.5-211.5克。力量训练动态消耗305千卡，保守缺口中位约325千卡，合理范围约107-492千卡；中位低于400-700千卡目标。"
+  },
+  "notes": [
+    "空腹体重 93.60 千克，较 2026-08-13 的 93.80 千克下降 0.20 千克；相较 2026-08-12 的 93.15 千克仍高 0.45 千克。",
+    "短期体重没有按估算热量缺口线性下降，优先按高钠高碳水后的水分与糖原、连续力量及单车训练后的肌肉液体变化、胃肠内容物和测量误差解释；不据两天秤重调整计划。",
+    "2026-08-12 和 2026-08-13 的保守缺口中位合计约 1734 千卡，但该数值包含食物份量估算及 Apple Watch 运动消耗误差，不能视为精确能量账本。",
+    "按 93.60 千克计算当日基础代谢约 1887 千卡，固定饮食上限为 1890 千卡。",
+    "早餐在牛奶基础上加一根中等香蕉；早餐合计约 290 千卡、蛋白质约 9.3 克、脂肪约 9.8 克、碳水约 39.5 克。",
+    "午餐为甜口回锅肉、白米饭、拍黄瓜、花菜和西兰花等蔬菜及清汤；回锅肉连肥肉全部吃完，按餐后照片扣除剩余米饭、蔬菜和盘底油汁。",
+    "午餐中位估算约 900 千卡，合理范围约 750-1100 千卡；蛋白质约 30-45 克、脂肪约 32-55 克、碳水约 75-105 克。肥肉和甜口酱汁使脂肪、糖及总热量明显上升。"
+    ,"训练前吃一根中等香蕉；训练后吃一根中等普通甜玉米或水果玉米的三分之二、一包250克墨虾丸和一包200克黄花鱼丸。训练前后及晚间进食合计约677千卡、蛋白质约78.7克、脂肪约13.2克、碳水约64克。"
+    ,"17:57-18:38完成传统力量训练40分56秒；Apple Watch动态消耗305千卡、总消耗378千卡、平均心率123次/分，心率范围约88-161次/分。结算只采用动态千卡。"
+    ,"力量训练及练后进食后累计中位约1867千卡，蛋白质约117.3-133.8克、脂肪约54.5-78.8克、碳水约175.5-211.5克；当前保守缺口中位约325千卡，低于目标。固定上限中位只剩约23千卡，今晚停止进食。"
+    ,"2026-08-15已开始报告新一天，据此按丸类及玉米后没有新增摄入或运动正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

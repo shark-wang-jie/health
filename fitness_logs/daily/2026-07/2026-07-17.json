@@ -1,0 +1,288 @@
+{
+  "date": "2026-07-17",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1910,
+    "bmr_note": "按 2026-07-17 早晨体重 95.85 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 95.85,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "普通牛奶一瓶 260 毫升、五个鸡蛋清、小红薯一根 120 克",
+      "kcal_estimate": 400,
+      "kcal_range": [
+        385,
+        415
+      ],
+      "protein_g_range": [
+        27,
+        29
+      ],
+      "confidence": "牛奶沿用既有营养标签；鸡蛋清按常见大小估算；红薯按熟重且未加油糖估算",
+      "components": [
+        {
+          "food": "普通牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        },
+        {
+          "food": "鸡蛋清",
+          "amount": "5 个",
+          "kcal_estimate": 85,
+          "kcal_range": [
+            70,
+            85
+          ],
+          "protein_g_range": [
+            16,
+            18
+          ]
+        },
+        {
+          "food": "小红薯",
+          "amount": "120 克",
+          "kcal_estimate": 132,
+          "kcal_range": [
+            115,
+            145
+          ],
+          "protein_g_estimate": 2
+        }
+      ],
+      "notes": [
+        "五个蛋黄未吃，不计入摄入。",
+        "红薯暂按熟重 120 克、未额外加油糖计算；若 120 克是生重可再修正。"
+      ]
+    },
+    {
+      "meal": "上午加餐",
+      "description": "香蕉 100 克、冬枣 20 克",
+      "kcal_estimate": 112,
+      "protein_g_estimate": 1.3,
+      "confidence": "按报告重量和常见食物成分估算",
+      "components": [
+        {
+          "food": "香蕉",
+          "amount": "100 克可食部分",
+          "kcal_estimate": 89,
+          "protein_g_estimate": 1.1
+        },
+        {
+          "food": "鲜冬枣",
+          "amount": "20 克",
+          "kcal_estimate": 23,
+          "protein_g_estimate": 0.2
+        }
+      ],
+      "notes": [
+        "香蕉按 100 克可食部分计算。",
+        "冬枣按鲜果计算，不按干红枣计算。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：白米饭、红烧肉类、炒西葫芦、炒包菜、酸豆角和蛋花清汤；肥肉和油豆腐未吃",
+      "kcal_estimate": 700,
+      "kcal_range": [
+        600,
+        800
+      ],
+      "protein_g_range": [
+        35,
+        42
+      ],
+      "confidence": "根据餐前、餐后照片及用户说明估算",
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "估计吃下约 220-250 克熟饭",
+          "kcal_estimate": 285,
+          "kcal_range": [
+            255,
+            325
+          ],
+          "protein_g_estimate": 5
+        },
+        {
+          "food": "红烧瘦肉及附着酱汁",
+          "amount": "按餐前餐后差异估算",
+          "kcal_estimate": 275,
+          "kcal_range": [
+            225,
+            330
+          ],
+          "protein_g_range": [
+            28,
+            35
+          ]
+        },
+        {
+          "food": "炒西葫芦、炒包菜、酸豆角",
+          "amount": "吃下部分",
+          "kcal_estimate": 115,
+          "kcal_range": [
+            85,
+            140
+          ],
+          "protein_g_estimate": 2
+        },
+        {
+          "food": "蛋花清汤",
+          "amount": "一碗，基本喝完",
+          "kcal_estimate": 25
+        }
+      ],
+      "notes": [
+        "餐后照片显示米饭仍剩约两至三成，暂估实际吃下约 220-250 克熟饭。",
+        "用户明确说明肥肉和油豆腐未吃，已从摄入估算中剔除。",
+        "瘦肉表面附着的红烧汁以及蔬菜烹调油仍计入摄入。",
+        "餐后仍剩部分红烧肉类和蔬菜，按餐前餐后差异估算实际吃下的份量。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "花生 10 克",
+      "kcal_estimate": 57,
+      "protein_g_estimate": 2.5,
+      "confidence": "按去壳可食重量和常见花生营养数据估算",
+      "notes": [
+        "花生热量密度高，10 克已经计入；不建议随手续吃。"
+      ]
+    },
+    {
+      "meal": "训练前加餐",
+      "description": "香蕉 120 克",
+      "kcal_estimate": 107,
+      "protein_g_estimate": 1.3,
+      "confidence": "按 120 克可食部分估算",
+      "notes": [
+        "若 120 克包含香蕉皮，实际摄入会低于本记录。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "墨虾丸 250 克、台式无骨鸡柳 300 克",
+      "kcal_estimate": 615,
+      "protein_g_estimate": 74.9,
+      "fat_g_estimate": 8.1,
+      "carbs_g_estimate": 58.7,
+      "sodium_mg_estimate": 3037,
+      "confidence": "按用户提供的包装营养标签和报告重量计算",
+      "components": [
+        {
+          "food": "墨虾丸",
+          "amount": "250 克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "label_per_100g": {
+            "energy_kj": 371,
+            "protein_g": 14.6,
+            "fat_g": 0.7,
+            "carbs_g": 5.7,
+            "sodium_mg": 508
+          }
+        },
+        {
+          "food": "台式无骨鸡柳",
+          "amount": "300 克",
+          "kcal_estimate": 393,
+          "protein_g_estimate": 38.4,
+          "fat_g_estimate": 6.3,
+          "carbs_g_estimate": 44.4,
+          "sodium_mg_estimate": 1767,
+          "label_per_100g": {
+            "energy_kcal": 131,
+            "protein_g": 12.8,
+            "fat_g": 2.1,
+            "carbs_g": 14.8,
+            "sodium_mg": 589
+          }
+        }
+      ],
+      "notes": [
+        "按未额外加油、糖、蜂蜜或蘸酱计算。",
+        "鸡柳每 100 克含碳水 14.8 克、蛋白质 12.8 克，属于裹粉调制品，不等同于纯鸡胸肉。",
+        "本餐仅两种加工食品的钠已约 3037 毫克，次日体重可能因水分潴留短暂上升。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚腿部力量训练",
+      "start_time": "17:57",
+      "end_time": "18:40",
+      "duration_min": 43.3,
+      "active_kcal": 224,
+      "total_kcal": 298,
+      "avg_heart_rate_bpm": 106,
+      "kcal_estimate": 224,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "用户说明本次为腿部训练。",
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "20:40",
+      "end_time": "21:15",
+      "duration_min": 35.47,
+      "active_kcal": 315,
+      "total_kcal": 381,
+      "avg_heart_rate_bpm": 138,
+      "kcal_estimate": 315,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1991,
+    "protein_g_range": [
+      142,
+      151
+    ],
+    "exercise_kcal_estimate": 539,
+    "remaining_intake_kcal": -91,
+    "intake_vs_target_kcal": 91,
+    "net_intake_after_exercise_kcal": 1452,
+    "conservative_deficit_kcal": 458
+  },
+  "notes": [
+    "报告空腹体重 95.85 千克。",
+    "比 2026-07-16 早晨的 96.00 千克下降 0.15 千克；属于正常短期波动，继续看趋势。",
+    "早餐及上午加餐累计约 512 千卡、蛋白质约 28-30 克。",
+    "午餐根据餐前餐后照片以及用户说明估算约 700 千卡、蛋白质约 35-42 克；肥肉和油豆腐未吃，不计入摄入。",
+    "傍晚完成腿部传统力量训练 43 分 18 秒，苹果手表记录动态消耗 224 千卡、总消耗 298 千卡、平均心率 106 次/分；汇总仅采用动态千卡。",
+    "下午加餐花生 10 克，约 57 千卡、蛋白质约 2.5 克。",
+    "训练前加餐香蕉 120 克，约 107 千卡、蛋白质约 1.3 克。",
+    "截至训练前累计约 1376 千卡、蛋白质约 67-76 克，剩余摄入额度约 524 千卡。",
+    "截至训练后摄入约 1376 千卡、运动动态消耗 224 千卡，运动后净摄入约 1152 千卡；当前保守缺口约 758 千卡，但这只是晚餐前临时值。",
+    "今日距离 170 克蛋白质目标仍差约 94-103 克；晚餐热量空间已经有限，必须选择极低脂高蛋白食物，停止添加花生、零食、大份主食和高脂加工肉。",
+    "力量训练消耗不用于提高 1900 千卡摄入目标，不把本次运动当作额外进食许可。",
+    "晚餐吃墨虾丸 250 克和台式无骨鸡柳 300 克，按标签合计约 615 千卡、蛋白质约 74.9 克、钠约 3037 毫克；默认未额外加油或酱料。",
+    "截至晚餐后全天摄入约 1991 千卡，超过 1900 千卡目标约 91 千卡；蛋白质约 142-151 克，仍比 170 克目标少约 19-28 克。",
+    "晚间完成室内单车 35 分 28 秒，苹果手表记录动态消耗 315 千卡、总消耗 381 千卡、平均心率 138 次/分；汇总仅采用动态千卡。",
+    "全天已记录运动动态消耗合计 539 千卡，运动后净摄入约 1452 千卡；按基础代谢加已记录运动的保守算法，当前缺口约 458 千卡，处于 400-700 千卡目标范围。",
+    "今晚停止进食，不再为了补足蛋白质追加食物；明天需要从早餐和午餐提前安排更高蛋白密度的天然瘦肉蛋白。"
+  ]
+}

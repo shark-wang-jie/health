@@ -1,0 +1,38 @@
+{
+  "version": "2026-09-08-v3.1",
+  "effective_from": "2026-09-09",
+  "profile": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "change_reason": "集中保存已接受计划；后续新日复制快照，不自动覆盖历史目标。",
+  "revision": 1
+}

@@ -1,0 +1,274 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-15",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确表示“今日饮食训练结束”，确认全天饮食及训练记录完成。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告空腹体重91.70公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 91.7,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 91.7,
+    "bmr_weight_date": "2026-09-15",
+    "bmr_kcal": 1868.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "description": "默认纯牛奶260毫升",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "默认纯牛奶260毫升",
+      "kcal_base_estimate": 183.0,
+      "kcal_booked": 183.0,
+      "kcal_range": [
+        183.0,
+        183.0
+      ],
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "id": "breakfast_milk_260ml",
+      "status": "consumed",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0
+    },
+    {
+      "id": "lunch_chicken_panini_150g",
+      "meal": "午餐",
+      "description": "鸡肉帕尼尼1个，150克",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "basis": "用户确认150克；照片标签每100克：939千焦、蛋白质11.4克、脂肪6.9克、碳水28.8克、钠521毫克、反式脂肪酸0克。能量按4.184千焦/千卡换算。",
+      "weight_g": 150,
+      "kcal_base_estimate": 336.64,
+      "kcal_booked": 336.64,
+      "kcal_range": [
+        336.64,
+        336.64
+      ],
+      "protein_g_estimate": 17.1,
+      "fat_g_estimate": 10.35,
+      "carbs_g_estimate": 43.2,
+      "sodium_mg_estimate": 781.5,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签及食用量明确，不额外加余量"
+      },
+      "source_image": "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-15_chicken_panini_label.jpg"
+    },
+    {
+      "id": "postworkout_wasabi_crab_rice_ball_105g",
+      "meal": "练后加餐",
+      "description": "青芥蟹味柳饭团1个，105克",
+      "status": "consumed",
+      "source_kind": "matched_default",
+      "basis": "照片正面净含量105克；营养沿用09-07及08-27同款历史标签每100克378千焦、蛋白质1.8克、脂肪3.5克、碳水12.8克、钠368毫克。本次照片可见营养表按用户说明属于烤肥牛饭团，不挪用至青芥蟹饭团。",
+      "kcal_base_estimate": 95,
+      "kcal_booked": 95,
+      "kcal_range": [
+        95,
+        95
+      ],
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按明确份量与本次标签或同款历史标签，不额外加成"
+      },
+      "source_image": "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-15_rice_balls.jpg",
+      "sodium_mg_estimate": 386,
+      "uncertainty": "沿用同款历史标签，本次未展示青芥蟹饭团背面营养表。"
+    },
+    {
+      "id": "postworkout_roast_beef_rice_ball_100g",
+      "meal": "练后加餐",
+      "description": "烤肥牛饭团1个，100克",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "basis": "用户确认100克，并明确本次照片营养表属于烤肥牛饭团；每100克590千焦、蛋白质3.3克、脂肪2.5克、碳水26.0克、钠212毫克。",
+      "kcal_base_estimate": 141.01,
+      "kcal_booked": 141.01,
+      "kcal_range": [
+        141.01,
+        141.01
+      ],
+      "protein_g_estimate": 3.3,
+      "fat_g_estimate": 2.5,
+      "carbs_g_estimate": 26,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按明确份量与本次标签或同款历史标签，不额外加成"
+      },
+      "source_image": "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-15_rice_balls.jpg",
+      "sodium_mg_estimate": 212
+    },
+    {
+      "description": "一杯浓缩原味发酵乳120克",
+      "meal": "晚餐",
+      "source_kind": "matched_default",
+      "basis": "一杯浓缩原味发酵乳120克",
+      "kcal_base_estimate": 145.0,
+      "kcal_booked": 145.0,
+      "kcal_range": [
+        145.0,
+        145.0
+      ],
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "id": "evening_concentrated_yogurt_120g",
+      "status": "consumed",
+      "catalog_id": "yogurt_concentrated_120g",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "2026-09-15-strength-1741",
+      "event_id": "2026-09-15-strength-1741",
+      "type": "传统力量训练",
+      "time": "17:41–18:22",
+      "duration": "41分42秒",
+      "duration_seconds": 2502,
+      "elapsed_seconds": 2506,
+      "energy_scope": "session_active",
+      "source": "Apple Watch训练总结截图",
+      "active_kcal": 257,
+      "total_kcal": 329,
+      "average_heart_rate_bpm": 116,
+      "photo_path": "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-15_strength_1741.jpg",
+      "note": "截图日期09-15；动态257千卡按75%计入192.75千卡，总329千卡仅保留不叠加。"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "用户咨询汉堡王三层皇堡热量，尚未确认食用，不计入摄入。",
+    "09-15全天按已确认记录摄入明显低于训练日安排，蛋白质偏低；后续支持规律完整正餐、留意饥饿与恢复，不推断有意补偿，不自动调整目标。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 900.65,
+    "intake_kcal_booked": 900.65,
+    "protein_g_estimate": 39.9,
+    "fat_g_estimate": 34.35,
+    "carbs_g_estimate": 102.9,
+    "intake_kcal_estimate": 900.65,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 39.9,
+      "fat_g": 34.35,
+      "carbs_g": 102.9
+    },
+    "completed_day_base_intake_balance_kcal": 1534.0,
+    "training_discount_kcal": 64.25,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      900.65,
+      900.65
+    ],
+    "exercise_active_kcal": 257.0,
+    "exercise_adjusted_kcal": 192.75,
+    "tdee_kcal_estimate": 2434.65,
+    "estimated_deficit_kcal": 1534.0,
+    "completed_day_estimated_deficit_kcal": 1534.0,
+    "energy_balance_scope": "completed_day_estimate",
+    "intake_target_kcal_range": [
+      1900.0,
+      2000.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 5,
+    "protein_by_meal_g": {
+      "午餐": 17.1,
+      "早餐": 8.0,
+      "晚餐": 9.6,
+      "练后加餐": 5.199999999999999
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1379.5,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}

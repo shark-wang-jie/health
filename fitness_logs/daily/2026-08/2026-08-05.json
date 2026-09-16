@@ -1,0 +1,237 @@
+{
+  "date": "2026-08-05",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1896,
+    "bmr_note": "按 2026-08-05 早晨空腹体重 94.45 千克，用米夫林-圣乔尔公式 10×94.45 + 6.25×173 - 5×27 + 5 = 1895.75 千卡估算。"
+  },
+  "morning_weight_kg": 94.45,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1896 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按 1900 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶约 260 毫升、原味发酵乳约 140 克",
+      "kcal_estimate": 299,
+      "protein_g_estimate": 13.6,
+      "fat_g_estimate": 16.4,
+      "carbs_g_estimate": 20.3,
+      "confidence": "牛奶暂按此前同款 260 毫升一瓶计算；酸奶按此前同款原味发酵乳营养标签换算。牛奶脂肪和碳水没有本次包装照片，按同类全脂纯牛奶估算。",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "一瓶，暂按此前同款 260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦；260 毫升约 183 千卡、蛋白质约 8 克。脂肪与碳水为同类全脂纯牛奶估算值，若本次规格或标签不同需修正。"
+        },
+        {
+          "food": "原味发酵乳",
+          "amount": "约 140 克",
+          "kcal_estimate": 116,
+          "protein_g_estimate": 5.6,
+          "fat_g_estimate": 7,
+          "carbs_g_estimate": 7.8,
+          "sodium_mg_estimate": 56,
+          "calcium_mg_estimate": 175,
+          "nutrition_basis": "沿用此前同款包装每 100 克：348 千焦、蛋白质 4.0 克、脂肪 5.0 克、碳水化合物 5.6 克、钠 40 毫克、钙 125 毫克。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：较大一份带骨卤鸡腿，用户明确去皮；配熟米饭和青菜",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/11DAEEB2-C75B-404E-A555-3351B8228EB0/1-照片-1.jpg",
+      "consumption_status": "按鸡皮和鸡骨不吃、其余米饭鸡肉蔬菜全部吃完处理；如以后补充剩余再修正",
+      "kcal_estimate": 1000,
+      "kcal_range": [
+        850,
+        1180
+      ],
+      "protein_g_range": [
+        55,
+        70
+      ],
+      "carbs_g_range": [
+        95,
+        120
+      ],
+      "confidence": "根据餐前照片和用户确认去皮估算；主要误差来自米饭实际重量、去骨后的鸡肉可食重量、食物吸附油汁以及是否全部吃完。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "照片估计约 300-360 克，暂按全部吃完",
+          "kcal_estimate": 430,
+          "kcal_range": [
+            390,
+            470
+          ],
+          "protein_g_range": [
+            8,
+            10
+          ],
+          "carbs_g_range": [
+            84,
+            101
+          ]
+        },
+        {
+          "food": "去皮卤鸡腿肉",
+          "amount": "照片所示较大的完整带骨鸡腿，去皮、鸡骨不计可食重量",
+          "kcal_estimate": 390,
+          "kcal_range": [
+            330,
+            470
+          ],
+          "protein_g_range": [
+            45,
+            58
+          ],
+          "carbs_g_range": [
+            1,
+            4
+          ]
+        },
+        {
+          "food": "青菜及其他蔬菜",
+          "amount": "照片所示一份，暂按全部吃完",
+          "kcal_estimate": 50,
+          "kcal_range": [
+            30,
+            70
+          ],
+          "protein_g_range": [
+            2,
+            3
+          ],
+          "carbs_g_range": [
+            5,
+            9
+          ]
+        },
+        {
+          "food": "食物吸附的卤汁和油脂",
+          "amount": "按照片表面附着及米饭、蔬菜可能吸附量估算",
+          "kcal_estimate": 130,
+          "kcal_range": [
+            80,
+            170
+          ],
+          "carbs_g_range": [
+            2,
+            6
+          ]
+        }
+      ],
+      "notes": [
+        "鸡皮明确不吃，因此鸡皮热量不计；鸡骨同样不计可食重量。",
+        "去皮能减少一部分脂肪，但大份米饭、鸡腿肉和吸附油汁仍使整餐热量接近 1000 千卡。"
+      ]
+    },
+    {
+      "meal": "早餐补记",
+      "description": "原味牛肉干 2 根；沿用此前同款整罐 440 克共 12 根的规格",
+      "amount": "约 73 克",
+      "kcal_estimate": 164,
+      "protein_g_estimate": 31.7,
+      "fat_g_estimate": 4,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 642,
+      "confidence": "按 2026-07-02 已记录的同款牛肉干标签和每根约 36.7 克折算；若本次不是同款需修正。",
+      "notes": [
+        "牛肉干蛋白质较高，但属于高钠加工食品，不作为常规早餐蛋白质主力。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "台式无骨鸡柳两包",
+      "amount": "按此前同款每包 300 克，共 600 克",
+      "kcal_estimate": 786,
+      "protein_g_estimate": 76.8,
+      "fat_g_estimate": 12.6,
+      "carbs_g_estimate": 88.8,
+      "sodium_mg_estimate": 3534,
+      "confidence": "沿用此前同款包装每 100 克 131 千卡、蛋白质 12.8 克、脂肪 2.1 克、碳水化合物 14.8 克、钠 589 毫克；若本次品牌或每包净含量不同需修正。",
+      "notes": [
+        "两包虽提供约 76.8 克蛋白质，但同时带来约 88.8 克裹粉碳水和 3534 毫克钠，不能视为低脂天然蛋白质。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 2249,
+    "intake_kcal_range": [
+      2099,
+      2429
+    ],
+    "protein_g_range": [
+      177.1,
+      192.1
+    ],
+    "carbs_g_range": [
+      204.1,
+      229.1
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 2249,
+    "net_intake_after_exercise_kcal_range": [
+      2099,
+      2429
+    ],
+    "conservative_deficit_kcal": -353,
+    "conservative_deficit_kcal_range": [
+      -533,
+      -203
+    ],
+    "remaining_to_intake_target_kcal": -349,
+    "remaining_to_intake_target_kcal_range": [
+      -529,
+      -199
+    ],
+    "remaining_while_preserving_min_deficit_kcal_without_exercise": -753,
+    "remaining_while_preserving_min_deficit_kcal_without_exercise_range": [
+      -933,
+      -603
+    ],
+    "protein_over_target_g_range": [
+      7.1,
+      22.1
+    ],
+    "carbohydrate_over_upper_target_g_range": [
+      24.1,
+      49.1
+    ],
+    "status": "全天最终：累计摄入中位估算约 2249 千卡，合理范围约 2099-2429 千卡；蛋白质约 177.1-192.1 克、碳水约 204.1-229.1 克。没有收到运动记录，最终按运动 0 千卡结算；按基础代谢口径为中位约 353 千卡保守盈余，固定饮食上限超过中位约 349 千卡。"
+  },
+  "notes": [
+    "空腹体重 94.45 千克，较 2026-08-04 的 94.75 千克下降 0.30 千克；单日变化仍可能受到水分、糖原、钠、训练后炎症和胃肠内容物影响，不单独视为脂肪变化。",
+    "当日基础代谢约 1896 千卡，固定饮食上限为 1900 千卡。",
+    "早餐约 299 千卡、蛋白质仅 13.6 克；牛奶和当前这款酸奶可以作为乳制品，但都不是高蛋白食品。早餐仍明显低于工作日 60-70 克蛋白质分配框架。",
+    "今天午餐蛋白质难以保证时，晚餐仍需优先天然低脂蛋白质；不要再次依赖高脂加工丸类或用额外训练补偿饮食。",
+    "午餐沙县鸡腿饭暂按除鸡皮和鸡骨外整份吃完估算，中位约 1000 千卡，合理范围约 850-1180 千卡，蛋白质约 55-70 克、碳水约 95-120 克。",
+    "截至午餐累计中位约 1299 千卡，距离固定饮食上限约 601 千卡，蛋白质仍少约 86.4-101.4 克。晚餐需要选择高蛋白密度、低脂且易称量的食物，不再安排大量主食、油炸、高脂肉或甜食。",
+    "早餐补记两根此前同款原味牛肉干约 73 克，约 164 千卡、蛋白质 31.7 克、脂肪 4 克、钠 642 毫克。",
+    "晚餐两包此前同款台式无骨鸡柳共约 600 克，约 786 千卡、蛋白质 76.8 克、脂肪 12.6 克、碳水 88.8 克、钠 3534 毫克。",
+    "晚餐后累计中位约 2249 千卡，超过 1900 千卡固定上限约 349 千卡；未报告运动时按基础代谢口径约为 353 千卡保守盈余。蛋白质虽然达到目标，但主要追加来源是高钠加工食品，饮食结构不合格。",
+    "仅牛肉干和两包鸡柳钠就约 4176 毫克，尚未计入牛奶、酸奶、鸡腿饭和其他调味；次日体重可能因钠和碳水引起明显储水。今晚停止进食，只正常饮水，不做惩罚性运动，次日正常吃饭。",
+    "2026-08-06 早晨开始报告新一天，按 2026-08-05 此后没有继续进食且没有运动处理并正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

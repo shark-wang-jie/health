@@ -1,0 +1,150 @@
+{
+  "date": "2026-07-09",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1921,
+    "bmr_note": "按 2026-07-09 早晨体重 97.0 千克用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 97.0,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "同 2026-07-08 早餐：3 个鸡蛋、一瓶普通牛奶和 100 克香蕉",
+      "kcal_estimate": 482,
+      "protein_g_range": [
+        28,
+        30
+      ],
+      "carbs_g_range": [
+        37,
+        41
+      ],
+      "fat_g_range": [
+        25,
+        28
+      ],
+      "confidence": "部分按标签，部分估算",
+      "notes": [
+        "用户报告早餐与昨天相同。",
+        "鸡蛋按 3 个中大号估算，约 210 千卡，蛋白质 18-19 克。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "香蕉按常用参考值估算：每 100 克可食部分约 89 千卡、蛋白质约 1.1 克、碳水约 23 克。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：部分白米饭、带骨炖鸡、豆皮、绿叶菜、芹菜/青菜、咸菜和带油炖汁；剩鸡骨、部分米饭和汤",
+      "kcal_estimate": 610,
+      "protein_g_range": [
+        38,
+        48
+      ],
+      "carbs_g_range": [
+        55,
+        75
+      ],
+      "fat_g_range": [
+        22,
+        32
+      ],
+      "confidence": "根据前后对比照片估算",
+      "notes": [
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "下午和晚间加餐",
+      "description": "下午和晚上共吃 3 根香蕉，报告总量约 500 克",
+      "kcal_estimate": 445,
+      "protein_g_estimate": 5.5,
+      "carbs_g_estimate": 115,
+      "fat_g_estimate": 1.5,
+      "confidence": "根据报告重量估算",
+      "notes": [
+        "香蕉按常用参考值估算：每 100 克可食部分约 89 千卡、蛋白质约 1.1 克、碳水约 23 克。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "70 克酱牛腱子",
+      "kcal_estimate": 99,
+      "protein_g_estimate": 19.8,
+      "carbs_g_estimate": 0,
+      "fat_g_estimate": 2.1,
+      "sodium_mg_estimate": 550,
+      "confidence": "营养标签",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "苹果手表 记录的传统力量训练",
+      "start_time": "20:10",
+      "end_time": "20:42",
+      "duration_min": 32.3,
+      "active_kcal": 172,
+      "total_kcal": 230,
+      "avg_heart_rate_bpm": 110,
+      "kcal_estimate": 172,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "苹果手表 记录的室内单车",
+      "start_time": "21:41",
+      "end_time": "22:12",
+      "duration_min": 31.1,
+      "active_kcal": 261,
+      "total_kcal": 318,
+      "avg_heart_rate_bpm": 136,
+      "effort": "中等强度",
+      "kcal_estimate": 261,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1636,
+    "protein_g_range": [
+      92,
+      104
+    ],
+    "exercise_kcal_estimate": 433,
+    "remaining_intake_kcal": 264,
+    "intake_vs_target_kcal": -264,
+    "net_intake_after_exercise_kcal": 1203,
+    "conservative_deficit_kcal": 718
+  },
+  "notes": [
+    "新一天从空腹体重和早餐记录开始。",
+    "报告空腹体重：97.0 千克。",
+    "与 2026-07-08 早晨体重 97.15 千克相比，今天早晨体重下降 0.15 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。",
+    "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+    "香蕉按常用参考值估算：每 100 克可食部分约 89 千卡、蛋白质约 1.1 克、碳水约 23 克。",
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

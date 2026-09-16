@@ -1,0 +1,47 @@
+{
+  "start": "2026-08-12",
+  "end": "2026-09-08",
+  "recorded_days": 28,
+  "weeks": [
+    {
+      "start": "2026-08-12",
+      "end": "2026-08-18",
+      "valid_measurements": 7,
+      "mean_weight_kg": 93.62857142857142
+    },
+    {
+      "start": "2026-08-19",
+      "end": "2026-08-25",
+      "valid_measurements": 7,
+      "mean_weight_kg": 93.37857142857142
+    },
+    {
+      "start": "2026-08-26",
+      "end": "2026-09-01",
+      "valid_measurements": 7,
+      "mean_weight_kg": 92.60714285714286
+    },
+    {
+      "start": "2026-09-02",
+      "end": "2026-09-08",
+      "valid_measurements": 6,
+      "mean_weight_kg": 92.16666666666667
+    }
+  ],
+  "calibration_eligible": false,
+  "reasons": [
+    "估算方法不统一或无可用新口径记录",
+    "包含旧口径记录"
+  ],
+  "trend_context": [],
+  "weight_trend": {
+    "available": true,
+    "valid_measurements": 27,
+    "span_days": 27,
+    "weekly_weight_loss_kg_approx": 0.4869285056765873,
+    "interpretation": "实际日期线性趋势，仅描述体重变化，不等于脂肪变化；4次/7天是报告门槛，非医学阈值"
+  },
+  "exercise_model_comparison_available": false,
+  "recovery_reports": [],
+  "note": "跨月读取；缺测不插补。趋势用于复核，不自动修改目标。7700换算仅为多周粗估，水分与估餐偏差仍可能显著。"
+}

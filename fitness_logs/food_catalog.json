@@ -1,0 +1,258 @@
+{
+  "version": "2026-09-08-v1",
+  "policy": "固定同款；历史参考不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
+  "foods": {
+    "shaxian_two_skinless_legs": {
+      "entry": {
+        "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+        "kcal_base_estimate": 885,
+        "kcal_booked": 973.5000000000001,
+        "kcal_range": [
+          710,
+          1080
+        ],
+        "protein_g_estimate": 70.5,
+        "fat_g_estimate": 36.83333333333334,
+        "carbs_g_estimate": 91,
+        "margin": {
+          "added_fat_g": 9.833333333333346,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "未知烹调用油增加约10%热量记账余量"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+        "protein_g_range": [
+          57,
+          84
+        ],
+        "fat_g_range": [
+          18,
+          51
+        ],
+        "carbs_g_range": [
+          73,
+          118
+        ]
+      }
+    },
+    "milk_260ml": {
+      "entry": {
+        "description": "默认纯牛奶260毫升",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "默认纯牛奶260毫升",
+        "kcal_base_estimate": 183,
+        "kcal_booked": 183,
+        "kcal_range": [
+          183,
+          183
+        ],
+        "protein_g_estimate": 8,
+        "fat_g_estimate": 9.4,
+        "carbs_g_estimate": 12.5,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "yogurt_concentrated_120g": {
+      "entry": {
+        "description": "一杯浓缩原味发酵乳120克",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "一杯浓缩原味发酵乳120克",
+        "kcal_base_estimate": 145,
+        "kcal_booked": 145,
+        "kcal_range": [
+          145,
+          145
+        ],
+        "protein_g_estimate": 9.6,
+        "fat_g_estimate": 8.4,
+        "carbs_g_estimate": 7.8,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "yogurt_zero_fat_300g": {
+      "entry": {
+        "description": "已确认同款零脂酸奶300克",
+        "meal": "未分类",
+        "source_kind": "label_known_quantity",
+        "basis": "历史同款标签每100克265千焦，蛋白质8克、脂肪0克、碳水7.6克；同款整杯300克",
+        "kcal_base_estimate": 190.0095602294455,
+        "kcal_booked": 190.0095602294455,
+        "kcal_range": [
+          190.0095602294455,
+          190.0095602294455
+        ],
+        "protein_g_estimate": 24,
+        "fat_g_estimate": 0.0,
+        "carbs_g_estimate": 22.8,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "yogurt_bucket_100g": {
+      "entry": {
+        "description": "大桶原味发酵乳每100克",
+        "meal": "未分类",
+        "source_kind": "label_known_quantity",
+        "basis": "已确认同款每100克348千焦、蛋白质4克、脂肪5克、碳水5.6克；份数须为实际已知克数/100",
+        "kcal_base_estimate": 83.17399617590821,
+        "kcal_booked": 83.17399617590821,
+        "kcal_range": [
+          83.17399617590821,
+          83.17399617590821
+        ],
+        "protein_g_estimate": 4,
+        "fat_g_estimate": 5.0,
+        "carbs_g_estimate": 5.6,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "buckwheat_cracker_100g": {
+      "entry": {
+        "description": "荞麦锅巴每100克",
+        "meal": "未分类",
+        "source_kind": "label_known_quantity",
+        "basis": "历史同款标签每100克1667千焦；实际重量明确时才可按此缩放",
+        "kcal_base_estimate": 398.42256214149137,
+        "kcal_booked": 398.42256214149137,
+        "kcal_range": [
+          398.42256214149137,
+          398.42256214149137
+        ],
+        "protein_g_estimate": 5.6,
+        "fat_g_estimate": 2.8,
+        "carbs_g_estimate": 83.5,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "chips_original_20g": {
+      "entry": {
+        "description": "乐事原味薯片20克暂估",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "用户指定口味；营养为匹配默认数据，非本次实测标签；已知20克，不机械加成",
+        "kcal_base_estimate": 108,
+        "kcal_booked": 108,
+        "kcal_range": [
+          95,
+          125
+        ],
+        "protein_g_estimate": 1.3,
+        "fat_g_estimate": 7.0,
+        "carbs_g_estimate": 10.18,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "soda_cracker_small_assumed": {
+      "entry": {
+        "description": "苏打饼干一小包，条件假设15克、口味未确认",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "仅在明确按15克小包暂估时使用；品牌口味未确认，合理上端已留余量",
+        "kcal_base_estimate": 75,
+        "kcal_booked": 75,
+        "kcal_range": [
+          60,
+          95
+        ],
+        "protein_g_estimate": 1.5,
+        "fat_g_estimate": 3.5,
+        "carbs_g_estimate": 11,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "egg_white_one": {
+      "entry": {
+        "description": "普通鸡蛋蛋清1个",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "按普通鸡蛋大小和已吃个数估算，不重复增加用油余量",
+        "kcal_base_estimate": 17,
+        "kcal_booked": 17,
+        "kcal_range": [
+          14,
+          20
+        ],
+        "protein_g_estimate": 3.6,
+        "fat_g_estimate": 0.06,
+        "carbs_g_estimate": 0.24,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "banana_small": {
+      "entry": {
+        "description": "小香蕉可食部分约80克",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "无烹调用油；份量范围表达误差，不机械加成",
+        "kcal_base_estimate": 71,
+        "kcal_booked": 71,
+        "kcal_range": [
+          55,
+          90
+        ],
+        "protein_g_estimate": 0.9,
+        "fat_g_estimate": 0.2,
+        "carbs_g_estimate": 18.2,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    }
+  }
+}

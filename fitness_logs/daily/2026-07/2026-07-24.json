@@ -1,0 +1,211 @@
+{
+  "date": "2026-07-24",
+  "timezone": "亚洲/上海",
+  "record_status": "open",
+  "missing_sections": [
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1899,
+    "bmr_note": "按 2026-07-24 早晨空腹体重 94.75 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 94.75,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1899 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "烤红薯 130 克、六个普通大小鸡蛋的蛋清、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 428,
+      "protein_g_range": [
+        31,
+        32
+      ],
+      "confidence": "红薯按烤后重量及既有口径估算；鸡蛋沿用普通大小口径；牛奶沿用同款包装标签",
+      "components": [
+        {
+          "food": "烤红薯",
+          "amount": "130 克",
+          "kcal_estimate": 143,
+          "protein_g_estimate": 1.6
+        },
+        {
+          "food": "鸡蛋清",
+          "amount": "6 个，普通大小",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "六个蛋黄未吃，不计入摄入。",
+        "烤红薯按约 110 千卡/100 克计算。",
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "上午加餐",
+      "description": "蟠桃一个",
+      "kcal_estimate": 55,
+      "kcal_range": [
+        40,
+        75
+      ],
+      "protein_g_estimate": 1,
+      "confidence": "未称重，暂按中等大小蟠桃可食部分约 140 克估算",
+      "notes": [
+        "若补充去核后的可食重量可进一步修正。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：肥皮南京烤鸭及甜口卤汁、白米饭、豆芽、白菜和蛋花清汤；按餐前餐后照片计算实际吃下部分",
+      "kcal_estimate": 1050,
+      "kcal_range": [
+        850,
+        1250
+      ],
+      "protein_g_range": [
+        45,
+        58
+      ],
+      "confidence": "根据餐前餐后照片及用户说明鸭皮较肥、南京烤鸭卤汁为甜口估算；鸭肉可食重量、皮下脂肪、卤汁糖油含量和米饭实际重量不明确",
+      "components": [
+        {
+          "food": "肥皮南京烤鸭",
+          "amount": "吃下大部分可食肉和鸭皮，餐后剩骨头、少量附着肉和脂肪",
+          "kcal_estimate": 620,
+          "kcal_range": [
+            500,
+            780
+          ],
+          "protein_g_range": [
+            38,
+            49
+          ]
+        },
+        {
+          "food": "白米饭",
+          "amount": "按照片估计吃下约 200-240 克熟饭",
+          "kcal_estimate": 280,
+          "kcal_range": [
+            260,
+            315
+          ],
+          "protein_g_estimate": 5
+        },
+        {
+          "food": "豆芽和白菜",
+          "amount": "吃下部分，餐后仍剩较多白菜及少量豆芽",
+          "kcal_estimate": 90,
+          "kcal_range": [
+            65,
+            120
+          ],
+          "protein_g_range": [
+            2,
+            4
+          ]
+        },
+        {
+          "food": "南京烤鸭甜口卤汁",
+          "amount": "随鸭肉和配菜吃下部分，餐后仍剩较多",
+          "kcal_estimate": 45,
+          "kcal_range": [
+            25,
+            75
+          ]
+        },
+        {
+          "food": "蛋花清汤",
+          "amount": "基本喝完",
+          "kcal_estimate": 15
+        }
+      ],
+      "notes": [
+        "用户明确说明本次烤鸭皮较肥，已将皮下脂肪导致的额外热量计入并上调估算。",
+        "南京烤鸭卤汁为甜口，已额外计入糖和油的热量；餐后剩余卤汁不计入。",
+        "餐后鸭骨、少量附着肉和脂肪未计入实际摄入。",
+        "米饭约剩三成左右，暂估实际吃下约 200-240 克熟饭。",
+        "烤鸭肥瘦和甜卤汁配方不明确，因此保留较宽热量范围。"
+      ]
+    },
+    {
+      "meal": "练后加餐",
+      "description": "苹果约半个拳头大小",
+      "kcal_estimate": 35,
+      "kcal_range": [
+        25,
+        45
+      ],
+      "protein_g_estimate": 0.2,
+      "confidence": "未称重，按可食部分约 65-70 克估算",
+      "notes": [
+        "份量描述为半个拳头大小，若补充实际重量可进一步修正。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:44",
+      "end_time": "18:18",
+      "duration_min": 33.72,
+      "elapsed_duration_min": 33.75,
+      "active_kcal": 205,
+      "total_kcal": 264,
+      "avg_heart_rate_bpm": 114,
+      "kcal_estimate": 205,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1568,
+    "intake_kcal_range": [
+      1343,
+      1798
+    ],
+    "protein_g_range": [
+      77.2,
+      91.2
+    ],
+    "exercise_active_kcal": 205,
+    "net_intake_after_exercise_kcal": 1363,
+    "conservative_deficit_kcal": 536,
+    "remaining_to_intake_target_kcal": 332,
+    "remaining_to_preserve_min_deficit_kcal": 136,
+    "remaining_to_protein_target_g_range": [
+      78.8,
+      92.8
+    ],
+    "status": "截至练后苹果；按中位估算距离 1900 千卡饮食上限约 332 千卡，当前保守缺口约 536 千卡；为保持至少 400 千卡保守缺口，最多再摄入约 136 千卡。"
+  },
+  "notes": [
+    "空腹体重较 2026-07-23 的 95.05 千克下降 0.30 千克；短期变化仍受水分、糖原和胃肠内容物影响，继续看 3-7 天趋势。",
+    "当日基础代谢约 1899 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐蛋白质约 31-32 克，较单纯牛奶水果早餐明显改善；午餐仍需安排足量天然低脂蛋白。",
+    "午餐肥皮南京烤鸭和甜口卤汁已按偏高热量记录；餐后热量空间明显收紧。",
+    "截至午餐蛋白质约 77-91 克，仍少约 79-93 克；晚餐只能选择低脂高蛋白食物并控制在约 300-350 千卡。",
+    "傍晚传统力量训练按苹果手表动态消耗 205 千卡记录；总消耗 264 千卡不重复加入。",
+    "训练后吃了约半个拳头大小的苹果，暂估约 35 千卡。",
+    "加入苹果后当前保守缺口约 536 千卡；若继续进食，为保住至少 400 千卡保守缺口，最多再摄入约 136 千卡并只选低脂蛋白。"
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "date": "2026-08-08",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1887,
+    "bmr_note": "按 2026-08-08 早晨空腹体重 93.60 千克，用米夫林-圣乔尔公式 10×93.60 + 6.25×173 - 5×27 + 5 = 1887.25 千卡估算。"
+  },
+  "morning_weight_kg": 93.6,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1887 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶约 260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "confidence": "暂按此前同款 260 毫升一瓶计算；若本次容量或标签不同需修正。",
+      "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦；260 毫升约 183 千卡、蛋白质约 8 克。"
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：鸡腿去皮后鸡肉和蔬菜吃完，米饭大部分吃下；餐后剩少量米饭和碗底液体",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/7CD8B2BC-6257-4A8A-90DC-D9AC3243CB9F/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/7CD8B2BC-6257-4A8A-90DC-D9AC3243CB9F/2-照片-2.jpg"
+      ],
+      "kcal_estimate": 970,
+      "kcal_range": [
+        800,
+        1170
+      ],
+      "protein_g_range": [
+        55,
+        74
+      ],
+      "carbs_g_range": [
+        75,
+        105
+      ],
+      "confidence": "根据餐前、餐后照片及用户说明估算：鸡皮和鸡骨不计，鸡肉与蔬菜按吃完；餐后只剩少量米饭，因此按实际吃下约 270-330 克熟米饭计算。碗底剩余液体按未喝下处理，只计食物和已吃米饭表面附着的油汁。主要误差来自去骨后的鸡肉可食重量、原始米饭量和附着油汁。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "按餐前总量减去餐后剩余量估计吃下约 270-330 克",
+          "kcal_estimate": 390,
+          "kcal_range": [
+            350,
+            430
+          ],
+          "protein_g_range": [
+            5,
+            8
+          ],
+          "carbs_g_range": [
+            70,
+            86
+          ]
+        },
+        {
+          "food": "去皮卤鸡腿肉",
+          "amount": "照片所示带骨鸡腿的肉全部吃完；鸡皮和鸡骨不计",
+          "kcal_estimate": 400,
+          "kcal_range": [
+            330,
+            480
+          ],
+          "protein_g_range": [
+            48,
+            62
+          ]
+        },
+        {
+          "food": "蔬菜",
+          "amount": "照片所示青菜及少量配菜全部吃完",
+          "kcal_estimate": 60,
+          "kcal_range": [
+            35,
+            85
+          ],
+          "protein_g_range": [
+            2,
+            4
+          ],
+          "carbs_g_range": [
+            5,
+            12
+          ]
+        },
+        {
+          "food": "食物表面附着油汁",
+          "amount": "只计鸡肉、蔬菜和已吃米饭附着部分；碗底剩余液体不计",
+          "kcal_estimate": 120,
+          "kcal_range": [
+            70,
+            175
+          ],
+          "carbs_g_range": [
+            0,
+            7
+          ]
+        }
+      ],
+      "notes": [
+        "鸡皮未吃，已明显降低鸡腿部分脂肪；鸡肉仍是本餐主要蛋白质来源。",
+        "餐后只剩少量米饭，本次实际米饭摄入明显高于 2026-08-07 午餐。",
+        "碗底剩余液体暂按没有喝下记录；若实际喝了，需要追加修正。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "油炸方便面面饼两块共 140 克、方便调料一份 15 克、黄花鱼丸一包 200 克",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/4CA32B5C-8714-41FF-8B52-9330411FD9E4/1-照片-1.jpg",
+      "kcal_estimate": 969,
+      "protein_g_estimate": 53.5,
+      "fat_g_estimate": 42.6,
+      "carbs_g_estimate": 92.3,
+      "sodium_mg_estimate": 1482,
+      "components": [
+        {
+          "food": "油炸方便面面饼",
+          "amount": "两块，每块 70 克，共 140 克",
+          "kcal_estimate": 661,
+          "protein_g_estimate": 15.4,
+          "fat_g_estimate": 27.7,
+          "carbs_g_estimate": 86.9,
+          "sodium_mg_estimate": 489,
+          "label_per_100g": {
+            "energy_kj": 1975,
+            "protein_g": 11,
+            "fat_g": 19.8,
+            "carbs_g": 62.1,
+            "sodium_mg": 349
+          },
+          "nutrition_basis": "按照片营养表每 100 克数据乘以 1.4；1975 千焦/100 克按 4.184 千焦=1 千卡换算。"
+        },
+        {
+          "food": "方便调料",
+          "amount": "一份 15 克",
+          "kcal_estimate": 67,
+          "protein_g_estimate": 0.5,
+          "fat_g_estimate": 4.9,
+          "carbs_g_estimate": 5.3,
+          "sodium_mg_estimate": 801,
+          "label_per_100g": {
+            "energy_kj": 1859,
+            "protein_g": 3.1,
+            "fat_g": 32.5,
+            "carbs_g": 35.5,
+            "sodium_mg": 5340
+          },
+          "nutrition_basis": "按照片营养表每 100 克数据乘以 0.15；1859 千焦/100 克按 4.184 千焦=1 千卡换算。"
+        },
+        {
+          "food": "黄花鱼丸",
+          "amount": "一包 200 克",
+          "kcal_estimate": 241,
+          "protein_g_estimate": 37.6,
+          "fat_g_estimate": 10,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 192,
+          "nutrition_basis": "沿用此前同款包装每 100 克：505 千焦、蛋白质 18.8 克、脂肪 5 克、碳水 0 克、钠 96 毫克。"
+        }
+      ],
+      "notes": [
+        "两块面饼只配一份 15 克调味料，未按两整包调味料计算。",
+        "晚餐脂肪约 42.6 克，其中大部分来自油炸面饼；虽然黄花鱼丸提供 37.6 克蛋白质，整餐蛋白质密度仍不理想。",
+        "晚餐钠约 1482 毫克，次日体重可能因钠、碳水和胃肠内容物短期上升。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "原味发酵乳一斤约 500 克、中等大小香蕉一根",
+      "kcal_estimate": 523,
+      "protein_g_estimate": 21.3,
+      "fat_g_estimate": 25.4,
+      "carbs_g_estimate": 55.4,
+      "sodium_mg_estimate": 200,
+      "components": [
+        {
+          "food": "原味发酵乳",
+          "amount": "一斤，按 500 克",
+          "kcal_estimate": 416,
+          "protein_g_estimate": 20,
+          "fat_g_estimate": 25,
+          "carbs_g_estimate": 28,
+          "sodium_mg_estimate": 200,
+          "nutrition_basis": "暂沿用此前同款原味发酵乳每 100 克：348 千焦、蛋白质 4 克、脂肪 5 克、碳水 5.6 克、钠 40 毫克。若本次并非同款需修正。"
+        },
+        {
+          "food": "香蕉",
+          "amount": "中等大小一根，按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27.4,
+          "confidence": "未称重，按中等香蕉估算。"
+        }
+      ],
+      "notes": [
+        "500 克此前同款酸奶约 416 千卡，并非低热量加餐；其中脂肪约 25 克。",
+        "用户确认今晚此后不再进食，饮食记录已封口；如后来仍有摄入需重新打开并追补。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 2645,
+    "intake_kcal_range": [
+      2475,
+      2845
+    ],
+    "protein_g_range": [
+      137.8,
+      156.8
+    ],
+    "carbs_g_range": [
+      235.2,
+      265.2
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 2645,
+    "net_intake_after_exercise_kcal_range": [
+      2475,
+      2845
+    ],
+    "conservative_deficit_kcal": -758,
+    "conservative_deficit_kcal_range": [
+      -958,
+      -588
+    ],
+    "conservative_calorie_surplus_kcal": 758,
+    "conservative_calorie_surplus_kcal_range": [
+      588,
+      958
+    ],
+    "remaining_to_intake_target_kcal": -755,
+    "remaining_to_intake_target_kcal_range": [
+      -955,
+      -585
+    ],
+    "remaining_to_protein_target_g_range": [
+      13.2,
+      32.2
+    ],
+    "carbohydrate_target_assessment": "碳水约 235.2-265.2 克，超过 150-180 克执行区间上沿约 55.2-85.2 克。",
+    "status": "全天最终：累计摄入中位估算约 2645 千卡，合理范围约 2475-2845 千卡；蛋白质约 137.8-156.8 克、碳水约 235.2-265.2 克。没有收到运动记录，最终按运动 0 千卡结算；中位摄入超过 1890 千卡固定上限约 755 千卡，按基础代谢口径约为 758 千卡保守盈余。"
+  },
+  "notes": [
+    "空腹体重 93.60 千克，较 2026-08-07 的 94.50 千克下降 0.90 千克并创本轮记录新低；单日变化不可能全部来自脂肪，仍需结合水分、糖原、胃肠内容物及 3-7 天趋势判断。",
+    "按 93.60 千克计算当日基础代谢约 1887 千卡，固定饮食上限为 1890 千卡。",
+    "早餐只有一瓶牛奶，约 183 千卡、蛋白质约 8 克，蛋白质明显不足。",
+    "午餐按餐前餐后照片和用户说明估算约 970 千卡，合理范围约 800-1170 千卡；蛋白质约 55-74 克、碳水约 75-105 克。鸡皮未吃、碗底液体未喝，米饭按实际吃下约 270-330 克熟重计。",
+    "截至午餐累计中位约 1153 千卡，距离 1890 千卡固定饮食上限约 737 千卡；蛋白质仍少约 88-107 克。晚餐必须以天然低脂蛋白质为核心，主食和油脂需要控制。",
+    "晚餐吃两块油炸方便面面饼共 140 克、一份调味料 15 克和一包黄花鱼丸 200 克，合计约 969 千卡、蛋白质 53.5 克、脂肪 42.6 克、碳水 92.3 克、钠约 1482 毫克。",
+    "晚餐后累计中位约 2122 千卡，超过 1890 千卡固定饮食上限约 232 千卡；蛋白质仍少约 34.5-53.5 克。尚未记录运动时按基础代谢口径中位约为 235 千卡保守盈余。今晚停止进食，不用额外高强度训练或次日断食补偿。",
+    "晚间又吃约 500 克此前同款原味发酵乳和一根中等香蕉，合计约 523 千卡、蛋白质 21.3 克、脂肪 25.4 克、碳水 55.4 克。",
+    "晚间加餐后累计中位约 2645 千卡，超过固定饮食上限约 755 千卡；蛋白质仍少约 13.2-32.2 克，说明额外热量并没有有效解决蛋白质目标。用户确认今晚此后不再进食，饮食部分封口；不做惩罚性运动，次日不断食。",
+    "2026-08-09 已开始报告新一天，据此按 2026-08-08 此后没有进食或运动处理并正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

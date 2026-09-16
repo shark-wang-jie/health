@@ -1,0 +1,370 @@
+{
+  "date": "2026-08-07",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1896,
+    "bmr_note": "按 2026-08-07 早晨空腹体重 94.50 千克，用米夫林-圣乔尔公式 10×94.50 + 6.25×173 - 5×27 + 5 = 1896.25 千卡估算。"
+  },
+  "morning_weight_kg": 94.5,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1896 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按 1900 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "原味牛肉干一根、中等大小香蕉一根、纯牛奶一瓶约 260 毫升",
+      "kcal_estimate": 372,
+      "protein_g_estimate": 25.2,
+      "fat_g_estimate": 11.8,
+      "carbs_g_estimate": 39.9,
+      "components": [
+        {
+          "food": "原味牛肉干",
+          "amount": "一根，按此前同款约 36.7 克",
+          "kcal_estimate": 82,
+          "protein_g_estimate": 15.9,
+          "fat_g_estimate": 2,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 321,
+          "confidence": "沿用此前同款整罐 440 克共 12 根的规格及营养标签；若本次不是同款需修正。"
+        },
+        {
+          "food": "香蕉",
+          "amount": "中等大小一根，按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27.4,
+          "confidence": "未称重，按中等香蕉估算。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "一瓶，暂按此前同款 260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦；若本次容量或标签不同需修正。"
+        }
+      ],
+      "notes": [
+        "牛肉干使早餐蛋白质高于单喝牛奶，但仍属于高钠加工食品，不作为常规早餐蛋白质主力。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：鸡腿去皮后鸡肉和蔬菜吃完，米饭只吃部分；餐后剩余较多米饭和碗底液体",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/E7597244-E71C-45D2-8DA6-142B15F732D8/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/E7597244-E71C-45D2-8DA6-142B15F732D8/2-照片-2.jpg"
+      ],
+      "kcal_estimate": 800,
+      "kcal_range": [
+        650,
+        1000
+      ],
+      "protein_g_range": [
+        54,
+        72
+      ],
+      "carbs_g_range": [
+        45,
+        72
+      ],
+      "confidence": "根据餐前、餐后照片及用户说明估算：鸡皮和鸡骨不计，鸡肉与蔬菜按吃完；餐后仍有明显米饭，且用户说明蔬菜下面只有浅浅一层米饭，因此按实际吃下约 140-210 克熟米饭计算。碗底可见剩余液体按未喝下处理，只计食物和已吃米饭表面附着的油汁。主要误差来自去骨后的鸡肉可食重量和米饭剩余量。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "按餐前总量减去餐后剩余量估计吃下约 140-210 克；蔬菜下仅浅浅一层",
+          "kcal_estimate": 230,
+          "kcal_range": [
+            180,
+            275
+          ],
+          "protein_g_range": [
+            3.5,
+            5.5
+          ],
+          "carbs_g_range": [
+            36,
+            55
+          ]
+        },
+        {
+          "food": "去皮卤鸡腿肉",
+          "amount": "照片所示带骨鸡腿的肉全部吃完；鸡皮和鸡骨不计",
+          "kcal_estimate": 400,
+          "kcal_range": [
+            330,
+            480
+          ],
+          "protein_g_range": [
+            48,
+            62
+          ]
+        },
+        {
+          "food": "蔬菜",
+          "amount": "照片所示白菜等蔬菜全部吃完",
+          "kcal_estimate": 60,
+          "kcal_range": [
+            35,
+            85
+          ],
+          "protein_g_range": [
+            2,
+            4
+          ],
+          "carbs_g_range": [
+            5,
+            12
+          ]
+        },
+        {
+          "food": "食物表面附着油汁",
+          "amount": "只计鸡肉、蔬菜和已吃米饭附着部分；碗底剩余液体不计",
+          "kcal_estimate": 110,
+          "kcal_range": [
+            60,
+            160
+          ],
+          "carbs_g_range": [
+            0,
+            5
+          ]
+        }
+      ],
+      "notes": [
+        "与把整份米饭全部吃完相比，本次剩下较多米饭，已按实际吃下部分下调热量和碳水。",
+        "去掉鸡皮明显减少脂肪；鸡肉本身仍是本餐主要蛋白质来源。",
+        "碗底剩余液体暂按没有喝下记录；若实际喝了，需要追加修正。"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "海盐苏打饼干一小包",
+      "kcal_estimate": 75,
+      "kcal_range": [
+        60,
+        95
+      ],
+      "protein_g_range": [
+        1,
+        2
+      ],
+      "fat_g_range": [
+        2.5,
+        4.5
+      ],
+      "carbs_g_range": [
+        9,
+        13
+      ],
+      "confidence": "未提供净含量和营养标签，暂按常见独立小包约 15 克估算；若包装重量不是约 15 克需修正。",
+      "notes": [
+        "该估算误差主要来自小包实际净含量；补充包装重量或营养表后可精确换算。"
+      ]
+    },
+    {
+      "meal": "练后餐（按晚餐计）",
+      "description": "重庆小面原包 120 克，最终约吃一半；墨虾丸一包 250 克吃完，另加小面调味料 15 克",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/658F9710-DF8C-4C4E-AB9B-896A64C755A7/2-照片-2.jpg",
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/BE1326BB-AEC4-4C0D-B14F-428535141B4E/1-照片-1.jpg"
+      ],
+      "kcal_estimate": 527,
+      "kcal_range": [
+        479,
+        574
+      ],
+      "protein_g_estimate": 43.3,
+      "protein_g_range": [
+        41.8,
+        44.9
+      ],
+      "fat_g_estimate": 14.4,
+      "fat_g_range": [
+        14.2,
+        14.7
+      ],
+      "carbs_g_estimate": 55,
+      "carbs_g_range": [
+        45.3,
+        64.8
+      ],
+      "sodium_mg_estimate": 2208,
+      "sodium_mg_range": [
+        2156,
+        2260
+      ],
+      "components": [
+        {
+          "food": "重庆小面",
+          "amount": "原包 120 克，最终约吃一半，按约 60 克估算；合理范围约 45-75 克",
+          "kcal_estimate": 191,
+          "kcal_range": [
+            143,
+            238
+          ],
+          "protein_g_estimate": 6.1,
+          "protein_g_range": [
+            4.6,
+            7.7
+          ],
+          "fat_g_estimate": 0.8,
+          "fat_g_range": [
+            0.6,
+            1.1
+          ],
+          "carbs_g_estimate": 39,
+          "carbs_g_range": [
+            29.3,
+            48.8
+          ],
+          "sodium_mg_estimate": 207,
+          "sodium_mg_range": [
+            155,
+            259
+          ],
+          "label_per_100g": {
+            "energy_kj": 1330,
+            "protein_g": 10.2,
+            "fat_g": 1.4,
+            "carbs_g": 65,
+            "sodium_mg": 345
+          },
+          "nutrition_basis": "按照片中营养表和实际吃下约半包换算；中位按 60 克、合理范围按 45-75 克。1330 千焦/100 克按 4.184 千焦=1 千卡换算。"
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "一包 250 克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "label_per_100g": {
+            "energy_kj": 371,
+            "protein_g": 14.6,
+            "fat_g": 0.7,
+            "carbs_g": 5.7,
+            "sodium_mg": 508
+          },
+          "nutrition_basis": "沿用此前同款整包 250 克及包装营养表。"
+        },
+        {
+          "food": "小面调味料",
+          "amount": "15 克",
+          "kcal_estimate": 114,
+          "protein_g_estimate": 0.7,
+          "fat_g_estimate": 11.8,
+          "saturated_fat_g_estimate": 0.9,
+          "carbs_g_estimate": 1.7,
+          "sugar_g_estimate": 0,
+          "sodium_mg_estimate": 731,
+          "label_per_100g": {
+            "energy_kj": 3186,
+            "protein_g": 4.7,
+            "fat_g": 78.9,
+            "saturated_fat_g": 6.1,
+            "trans_fat_g": 0,
+            "carbs_g": 11,
+            "sugar_g": 0,
+            "sodium_mg": 4873
+          },
+          "nutrition_basis": "按照片中营养表每 100 克数据乘以 0.15；3186 千焦/100 克按 4.184 千焦=1 千卡换算。"
+        }
+      ],
+      "notes": [
+        "用户补充最终面条约吃一半；已将面条从 120 克修正为中位约 60 克，合理范围约 45-75 克。",
+        "约半包小面提供中位约 39 克碳水、6.1 克蛋白质；墨虾丸补充约 36.5 克蛋白质，但属于加工食品且钠较高。",
+        "15 克调味料约增加 114 千卡、11.8 克脂肪和 731 毫克钠；它是高油高钠调料，不能按普通少量酱油忽略。",
+        "目前仍按 15 克调味料全部吃下计算；若剩面同时带走较多可见油料，可再下调。练后餐钠中位约 2208 毫克，次日体重仍可能因储水而短期上升。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:33",
+      "end_time": "18:37",
+      "duration": "1:03:27",
+      "elapsed_time": "1:03:30",
+      "active_kcal": 494,
+      "total_kcal": 601,
+      "average_heart_rate_bpm": 123,
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/658F9710-DF8C-4C4E-AB9B-896A64C755A7/1-照片-1.jpg",
+      "notes": "能量结算只采用动态千卡 494；总千卡 601 仅作参考，避免重复计算静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1774,
+    "intake_kcal_range": [
+      1561,
+      2041
+    ],
+    "protein_g_range": [
+      122,
+      144.1
+    ],
+    "carbs_g_range": [
+      139.2,
+      189.7
+    ],
+    "exercise_active_kcal": 494,
+    "net_intake_after_exercise_kcal": 1280,
+    "net_intake_after_exercise_kcal_range": [
+      1067,
+      1547
+    ],
+    "conservative_deficit_kcal": 616,
+    "conservative_deficit_kcal_range": [
+      349,
+      829
+    ],
+    "remaining_to_intake_target_kcal": 126,
+    "remaining_to_intake_target_kcal_range": [
+      -141,
+      339
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 216,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -51,
+      429
+    ],
+    "remaining_to_protein_target_g_range": [
+      25.9,
+      48
+    ],
+    "carbohydrate_target_assessment": "碳水中位估算约 164 克，位于 150-180 克执行区间；因午餐和剩面份量误差，合理范围约 139.2-189.7 克。",
+    "status": "全天最终：累计摄入中位估算约 1774 千卡，合理范围约 1561-2041 千卡；蛋白质约 122.0-144.1 克、碳水约 139.2-189.7 克。传统力量训练动态消耗 494 千卡，保守缺口中位约 616 千卡，位于 400-700 千卡目标范围；蛋白质仍少约 25.9-48.0 克。"
+  },
+  "notes": [
+    "空腹体重 94.50 千克，与 2026-08-06 持平；单日持平不代表脂肪没有变化，继续观察 3-7 天趋势。",
+    "当日基础代谢约 1896 千卡，固定饮食上限为 1900 千卡。",
+    "早餐约 372 千卡、蛋白质 25.2 克，较前几天改善，但仍明显低于工作日早餐 60-70 克分配框架。牛肉干钠较高，后续蛋白质优先来自鸡胸、鱼虾、蛋清、低脂奶制品或豆制品。",
+    "午餐按餐前餐后照片和用户说明估算约 800 千卡，合理范围约 650-1000 千卡；蛋白质约 54-72 克、碳水约 45-72 克。鸡皮未吃、碗底液体未喝，米饭按实际吃下约 140-210 克熟重计。",
+    "截至午餐累计中位约 1172 千卡，距离 1900 千卡固定饮食上限约 728 千卡；蛋白质仍少约 72.8-90.8 克。晚餐应优先天然低脂蛋白质，避免用高脂丸类、炸物或甜点填补蛋白质。",
+    "练前一小包海盐苏打饼干因缺少净含量和标签，暂按约 15 克估算 75 千卡，合理范围约 60-95 千卡。",
+    "17:33-18:37 传统力量训练 1 小时 03 分 27 秒，Apple Watch 动态消耗 494 千卡、总消耗 601 千卡、平均心率 123 次/分；结算只采用动态千卡。",
+    "练后吃一包 250 克墨虾丸和约半包重庆小面；原面条 120 克，最终按约 60 克、合理范围 45-75 克计。15 克小面调味料暂仍按全部吃下计算。练后餐修正为中位约 527 千卡，合理范围约 479-574 千卡；蛋白质约 41.8-44.9 克、碳水约 45.3-64.8 克、钠约 2156-2260 毫克。",
+    "面条修正后，全天累计中位约 1774 千卡，合理范围约 1561-2041 千卡；蛋白质仍少约 25.9-48.0 克。当前保守缺口中位约 616 千卡，位于目标范围；距离固定饮食上限中位约 126 千卡，但考虑估算上沿可能已经超标，今晚仍不建议继续进食。",
+    "2026-08-08 已开始报告新一天，据此按 2026-08-07 练后餐后没有继续进食或运动处理并正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

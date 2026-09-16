@@ -1,0 +1,328 @@
+{
+  "date": "2026-08-11",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1886,
+    "bmr_note": "按 2026-08-11 早晨空腹体重 93.45 千克，用米夫林-圣乔尔公式 10×93.45 + 6.25×173 - 5×27 + 5 = 1885.75 千卡估算。"
+  },
+  "morning_weight_kg": 93.45,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1886 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "六个普通大小蛋白、两根此前同款原味牛肉干、一瓶此前同款纯牛奶约 260 毫升",
+      "kcal_estimate": 449,
+      "protein_g_estimate": 61.3,
+      "fat_g_estimate": 13.4,
+      "carbs_g_estimate": 12.5,
+      "sodium_mg_known_minimum": 642,
+      "confidence": "蛋白按普通大小计算；牛肉干沿用此前同款整罐 440 克共 12 根的标签和每根约 36.7 克折算；牛奶沿用此前同款 260 毫升数据。若牛肉干或牛奶并非同款需修正。",
+      "components": [
+        {
+          "food": "蛋白",
+          "amount": "普通大小 6 个",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6
+        },
+        {
+          "food": "原味牛肉干",
+          "amount": "2 根，合计约 73 克",
+          "kcal_estimate": 164,
+          "protein_g_estimate": 31.7,
+          "fat_g_estimate": 4,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 642,
+          "nutrition_basis": "沿用 2026-07-02 已记录的同款标签及整罐 440 克共 12 根的规格。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "约 260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦的标签。"
+        }
+      ],
+      "notes": [
+        "早餐蛋白质约 61.3 克，达到工作日早餐 60-70 克的分配目标。",
+        "牛肉干属于高钠加工食品；午餐和晚餐优先天然低脂蛋白质，不再依赖加工肉制品补蛋白。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：鸡腿去皮后鸡肉和蔬菜吃完，米饭只吃上层未被油浸泡的部分；餐后剩余油泡米饭和碗底油汁",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/6B67B776-D94F-46F7-9C5F-19DC703BCB23/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/6B67B776-D94F-46F7-9C5F-19DC703BCB23/2-照片-2.jpg"
+      ],
+      "kcal_estimate": 720,
+      "kcal_range": [
+        580,
+        930
+      ],
+      "protein_g_range": [
+        50,
+        69
+      ],
+      "carbs_g_range": [
+        49,
+        68
+      ],
+      "confidence": "根据餐前、餐后照片及用户说明估算：鸡皮和鸡骨不计，鸡肉与蔬菜按吃完；米饭按餐前餐后差额及未吃油泡底层修正为约 170-220 克熟重；碗底剩余油汁和油泡米饭不计，只计算实际入口食物表面附着的卤汁与油。主要误差来自去骨后的鸡腿肉净重、餐前米饭总量和实际附着油量。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "实际吃下约 170-220 克；油泡底层剩饭不计",
+          "kcal_estimate": 245,
+          "kcal_range": [
+            220,
+            285
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ],
+          "carbs_g_range": [
+            44,
+            57
+          ]
+        },
+        {
+          "food": "去皮去骨卤鸡腿肉",
+          "amount": "照片所示鸡腿肉吃完；鸡皮和鸡骨排除",
+          "kcal_estimate": 360,
+          "kcal_range": [
+            300,
+            450
+          ],
+          "protein_g_range": [
+            45,
+            60
+          ]
+        },
+        {
+          "food": "白菜及青菜等蔬菜",
+          "amount": "照片所示蔬菜基本吃完",
+          "kcal_estimate": 45,
+          "kcal_range": [
+            25,
+            65
+          ],
+          "protein_g_range": [
+            1,
+            3
+          ],
+          "carbs_g_range": [
+            5,
+            10
+          ]
+        },
+        {
+          "food": "实际入口食物表面附着卤汁和油",
+          "amount": "只计随鸡肉、蔬菜和上层米饭入口的部分；碗底油汁及油泡剩饭不计",
+          "kcal_estimate": 70,
+          "kcal_range": [
+            35,
+            130
+          ],
+          "carbs_g_range": [
+            0,
+            1
+          ]
+        }
+      ],
+      "notes": [
+        "去掉鸡皮明显减少了鸡腿部分脂肪，但鸡腿肉本身仍含一定脂肪。",
+        "餐后照片中的油泡米饭和游离油汁已排除，没有按整份米饭或全部油汁计算。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "饭团 100 克、香蕉一根、此前同款原味牛肉干两根",
+      "kcal_estimate": 440,
+      "protein_g_estimate": 36.8,
+      "fat_g_estimate": 8.7,
+      "carbs_g_estimate": 55.5,
+      "sodium_mg_known_minimum": 925,
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/DD95C5B1-E4FE-428D-B4B3-2391526EBE3F/1-照片-1.jpg"
+      ],
+      "confidence": "饭团按本次包装每 100 克标签实算；香蕉未称重，沿用中等大小、可食部分约 120 克的估算；牛肉干沿用早餐同款两根合计约 73 克的数据。",
+      "components": [
+        {
+          "food": "饭团",
+          "amount": "100 克",
+          "kcal_estimate": 169,
+          "protein_g_estimate": 3.8,
+          "fat_g_estimate": 4.3,
+          "carbs_g_estimate": 28.5,
+          "sodium_mg_estimate": 283,
+          "nutrition_basis": "包装每 100 克：能量 708 千焦、蛋白质 3.8 克、脂肪 4.3 克、碳水化合物 28.5 克、钠 283 毫克。"
+        },
+        {
+          "food": "香蕉",
+          "amount": "中等大小 1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27
+        },
+        {
+          "food": "原味牛肉干",
+          "amount": "2 根，合计约 73 克",
+          "kcal_estimate": 164,
+          "protein_g_estimate": 31.7,
+          "fat_g_estimate": 4,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 642,
+          "nutrition_basis": "沿用早餐及 2026-07-02 已记录的同款标签和每根约 36.7 克规格。"
+        }
+      ],
+      "notes": [
+        "饭团和香蕉主要补充训练后碳水，蛋白质主要来自牛肉干。",
+        "当天牛肉干累计四根，牛肉干本身已知钠约 1284 毫克；后续不再追加加工肉制品。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "中等大小普通甜玉米或水果玉米半根，明确不是糯玉米",
+      "kcal_estimate": 80,
+      "kcal_range": [
+        65,
+        95
+      ],
+      "protein_g_range": [
+        2,
+        3
+      ],
+      "carbs_g_range": [
+        15,
+        20
+      ],
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/6F4191D6-C9A0-4DD3-9249-854B4C85ECD4/1-照片-1.jpg",
+      "confidence": "用户后续明确整根为中等大小且最终只吃半根；按中等熟甜玉米整根约 160 千卡的一半估算。没有称可食玉米粒重量。明确不是糯玉米，因此不沿用糯玉米约 220 千卡的口径。冷却可能形成少量回生抗性淀粉，但不据此扣减本次记录热量或碳水。",
+      "notes": [
+        "冷却后可能产生少量 RS3 型回生抗性淀粉，但实际增量取决于玉米品种、淀粉组成、烹煮方式及冷藏时间；普通放凉不等同于显著降低热量。",
+        "本次按中等普通甜玉米半根的常规营养值记录，不给予抗性淀粉热量折扣。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:40",
+      "end_time": "18:26",
+      "duration_min": 45.27,
+      "active_kcal": 341,
+      "total_kcal_reference_only": 423,
+      "average_heart_rate_bpm": 122,
+      "heart_rate_range_bpm": [
+        87,
+        153
+      ],
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/DD95C5B1-E4FE-428D-B4B3-2391526EBE3F/2-照片-2.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 341 千卡；总千卡 423 仅作参考，避免重复计入训练期间静息消耗。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:25",
+      "end_time": "21:57",
+      "duration_min": 32.02,
+      "active_kcal": 308,
+      "total_kcal_reference_only": 367,
+      "average_heart_rate_bpm": 142,
+      "heart_rate_range_bpm": [
+        96,
+        161
+      ],
+      "perceived_exertion": 6,
+      "perceived_exertion_label": "适中",
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/BA944435-4D0F-4E49-9E62-11C3A7F861DD/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 308 千卡；总千卡 367 仅作参考，避免重复计入训练期间静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1689,
+    "intake_kcal_range": [
+      1534,
+      1914
+    ],
+    "protein_g_range": [
+      150.1,
+      170.1
+    ],
+    "carbs_g_range": [
+      132,
+      156
+    ],
+    "known_sodium_mg_minimum": 1567,
+    "exercise_active_kcal": 649,
+    "net_intake_after_exercise_kcal": 1040,
+    "net_intake_after_exercise_kcal_range": [
+      885,
+      1265
+    ],
+    "conservative_deficit_kcal": 846,
+    "conservative_deficit_kcal_range": [
+      621,
+      1001
+    ],
+    "remaining_to_intake_target_kcal": 201,
+    "remaining_to_intake_target_kcal_range": [
+      -24,
+      356
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 446,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      221,
+      601
+    ],
+    "remaining_to_protein_target_g_range": [
+      0,
+      19.9
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      48
+    ],
+    "status": "全天最终：累计摄入中位估算约 1689 千卡，合理范围约 1534-1914 千卡；蛋白质约 150.1-170.1 克、碳水约 132-156 克。传统力量训练动态消耗 341 千卡，室内单车动态消耗 308 千卡，合计 649 千卡。按基础代谢口径的保守缺口中位约 846 千卡，合理范围约 621-1001 千卡，中位高于目标范围；蛋白质接近或达到目标。"
+  },
+  "notes": [
+    "空腹体重 93.45 千克，较 2026-08-10 的 93.65 千克下降 0.20 千克并创当前记录新低；属于正常短期变化，不能全部视为脂肪下降，继续观察 3-7 天趋势。",
+    "按 93.45 千克计算当日基础代谢约 1886 千卡，固定饮食上限为 1890 千卡。",
+    "早餐约 449 千卡、蛋白质约 61.3 克，蛋白质分配明显好于前一日早餐；但两根牛肉干钠约 642 毫克，后续餐食应优先新鲜瘦肉、鱼虾、蛋类或低脂奶制品。",
+    "午餐鸡腿去皮，鸡肉和蔬菜按吃完；实际吃下米饭约 170-220 克熟重，油泡底层米饭和碗底游离油汁不计。午餐中位约 720 千卡，合理范围约 580-930 千卡，蛋白质约 50-69 克、碳水约 49-68 克。",
+    "午餐后蛋白质仍少约 39.7-58.7 克；若当日不运动，晚餐按中位口径宜控制在约 250-320 千卡并优先天然低脂蛋白质。若之后有训练，再按实际动态千卡重新计算，但不提高 1890 千卡固定饮食上限。",
+    "17:40-18:26 完成传统力量训练 45 分 16 秒；Apple Watch 动态消耗 341 千卡、总消耗 423 千卡、平均心率 122 次/分。结算只采用动态千卡。",
+    "训练后吃 100 克饭团、一根香蕉和两根同款牛肉干，合计约 440 千卡、蛋白质约 36.8 克、碳水约 55.5 克。饭团按本次标签实算约 169 千卡。",
+    "当天牛肉干累计四根，牛肉干已知钠约 1284 毫克；连同饭团钠 283 毫克，早餐和训练后加工食品已知钠至少约 1567 毫克，尚不含午餐及牛奶。",
+    "训练后加餐后中位保守缺口约 618 千卡，位于目标范围；蛋白质已接近目标。考虑午餐估算上沿，练后加餐可直接作为晚间主餐，今晚不再追加常规晚餐或加工食品。",
+    "晚间加餐一根明确非糯玉米的普通甜玉米或水果玉米，用户后续修正确认为中等大小且最终只吃半根；修正为约 80 千卡，合理范围约 65-95 千卡，蛋白质约 2-3 克、碳水约 15-20 克。冷却形成的少量抗性淀粉不作为热量折扣。",
+    "半根玉米后累计中位约 1689 千卡，中位保守缺口约 538 千卡，位于目标范围；考虑午餐估算上沿，今晚仍应停止进食。",
+    "21:25-21:57 完成室内单车 32 分 01 秒；Apple Watch 动态消耗 308 千卡、总消耗 367 千卡、平均心率 142 次/分、体感强度 6（适中）。结算只采用动态千卡。",
+    "力量训练与室内单车动态消耗合计 649 千卡；当前中位保守缺口约 846 千卡，高于目标上沿。运动不提高固定饮食上限，也不作为继续加餐的理由。",
+    "2026-08-12 已开始报告新一天，据此按室内单车后没有继续进食或运动正式封账；训练后加餐和半根玉米构成最终晚间摄入，不另补记未报告的晚餐。"
+  ]
+}

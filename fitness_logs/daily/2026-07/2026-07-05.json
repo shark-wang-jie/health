@@ -1,0 +1,87 @@
+{
+  "date": "2026-07-05",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1919,
+    "bmr_note": "按 2026-07-05 早晨体重用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 96.85,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "加餐",
+      "description": "一根随变雪糕，75 克",
+      "kcal_estimate": 210,
+      "protein_g_estimate": 1.7,
+      "carbs_g_estimate": 14.2,
+      "fat_g_estimate": 16.4,
+      "sodium_mg_estimate": 49,
+      "confidence": "营养标签",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "米饭和炒小白菜吃完；小炒牛肉只吃牛肉，芹菜大多剩下；蒸蛋未吃",
+      "kcal_estimate": 720,
+      "protein_g_estimate": 36,
+      "carbs_g_estimate": 83,
+      "fat_g_estimate": 25,
+      "confidence": "根据照片和报告剩余量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。"
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "吃完红烧肉和 3 个鹌鹑蛋，吃了五分之四米饭、三分之一豌豆肉末",
+      "kcal_estimate": 1360,
+      "protein_g_estimate": 42,
+      "carbs_g_estimate": 115,
+      "fat_g_estimate": 78,
+      "confidence": "根据照片和报告份量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "剩余豌豆肉末和一整盒米饭",
+      "kcal_estimate": 680,
+      "protein_g_estimate": 24,
+      "carbs_g_estimate": 110,
+      "fat_g_estimate": 16,
+      "confidence": "根据此前照片和报告剩余量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "training_plan": [],
+  "daily_totals": {
+    "intake_kcal_estimate": 2970,
+    "protein_g_estimate": 103.7,
+    "exercise_kcal_estimate": 0,
+    "remaining_intake_kcal": -1070,
+    "intake_vs_target_kcal": 1070,
+    "net_intake_after_exercise_kcal": 2970
+  },
+  "notes": [
+    "新一天从空腹体重记录开始。",
+    "晨重与 2026-07-04 相同，均为 96.85 千克。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

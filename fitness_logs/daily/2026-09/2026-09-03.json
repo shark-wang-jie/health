@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-03",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1868,
+    "bmr_note": "按2026-09-03早晨空腹体重91.70千克，用米夫林-圣乔尔公式10×91.70 + 6.25×173 - 5×27 + 5 = 1868.25千卡估算。"
+  },
+  "morning_weight_kg": 91.7,
+  "targets": {
+    "intake_kcal": 1870,
+    "intake_target_basis": "按当日基础代谢1868千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升、张君雅干脆面40克",
+      "kcal_estimate": 384,
+      "protein_g_estimate": 11.6,
+      "fat_g_estimate": 19.0,
+      "carbs_g_estimate": 37.5,
+      "saturated_fat_g_estimate": 7.8,
+      "sodium_mg_estimate": 300,
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8.0,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        },
+        {
+          "food": "张君雅干脆面",
+          "amount": "40克",
+          "kcal_estimate": 201,
+          "protein_g_estimate": 3.6,
+          "fat_g_estimate": 9.6,
+          "saturated_fat_g_estimate": 7.8,
+          "carbs_g_estimate": 25.0,
+          "sugar_g_estimate": 3.2,
+          "sodium_mg_estimate": 300,
+          "nutrition_basis": "按照片包装每100克：能量2102千焦、蛋白质8.9克、脂肪24.0克、饱和脂肪19.4克、碳水62.5克、糖8.1克、钠750毫克换算。"
+        }
+      ],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/2D87F469-807E-417B-BD4D-4A8B7D57E055/1-照片-1.jpg"
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：鸡腿2只去皮食用；米饭、炒白菜和卤蛋全部吃完；土豆丝未吃；未见豆腐干，未计入",
+      "kcal_estimate": 885,
+      "kcal_range": [710, 1080],
+      "protein_g_estimate": 70.5,
+      "protein_g_range": [57.0, 84.0],
+      "fat_g_estimate": 27.0,
+      "fat_g_range": [18.0, 41.0],
+      "carbs_g_estimate": 91.0,
+      "carbs_g_range": [73.0, 118.0],
+      "components": [
+        {
+          "food": "鸡腿",
+          "amount": "2只，去皮食用",
+          "kcal_estimate": 380,
+          "protein_g_estimate": 55.0,
+          "fat_g_estimate": 17.0,
+          "carbs_g_estimate": 3.0,
+          "estimation_note": "按两只带骨熟鸡腿、去皮后实际吃下的肉量估算；骨重和卤汁含油量未知。"
+        },
+        {
+          "food": "米饭",
+          "amount": "原份量，全部吃完",
+          "kcal_estimate": 360,
+          "protein_g_estimate": 7.0,
+          "fat_g_estimate": 1.0,
+          "carbs_g_estimate": 80.0,
+          "estimation_note": "按熟米饭约300克估算；未称重。"
+        },
+        {
+          "food": "炒白菜",
+          "amount": "原份量，全部吃完",
+          "kcal_estimate": 70,
+          "protein_g_estimate": 2.0,
+          "fat_g_estimate": 4.0,
+          "carbs_g_estimate": 7.0
+        },
+        {
+          "food": "卤蛋",
+          "amount": "1个，全部吃完",
+          "kcal_estimate": 75,
+          "protein_g_estimate": 6.5,
+          "fat_g_estimate": 5.0,
+          "carbs_g_estimate": 1.0
+        }
+      ],
+      "estimation_note": "土豆丝本次未吃，未计入。以后用户只说“沙县鸡腿饭”或同款沙县套餐且未说明土豆丝份量时，默认不吃土豆丝；明确吃了时再按实际份量补记。"
+    },
+    {
+      "meal": "练后餐",
+      "description": "照片中全部把子肉、米饭1份；照片中其余肉类未说明食用，不计入",
+      "kcal_estimate": 1390,
+      "kcal_range": [1080, 1840],
+      "protein_g_estimate": 36.8,
+      "protein_g_range": [27.0, 53.2],
+      "fat_g_estimate": 97.8,
+      "fat_g_range": [71.4, 130.8],
+      "carbs_g_estimate": 80.4,
+      "carbs_g_range": [61.0, 106.4],
+      "components": [
+        {
+          "food": "把子肉",
+          "amount": "照片中全部把子肉，视觉估计约2块、可食部分约220克",
+          "kcal_estimate": 1100,
+          "kcal_range": [880, 1540],
+          "protein_g_estimate": 30.8,
+          "protein_g_range": [22.0, 46.2],
+          "fat_g_estimate": 96.8,
+          "fat_g_range": [70.4, 129.8],
+          "carbs_g_estimate": 15.4,
+          "carbs_g_range": [11.0, 26.4],
+          "estimation_note": "用户确认照片中全部把子肉均吃完；按视觉约2块、可食部分约220克估算。把子肉通常为带皮五花肉，肥瘦、实际重量及卤汁含糖量不明，是本餐热量误差主要来源。"
+        },
+        {
+          "food": "米饭",
+          "amount": "1份，未称重，暂按熟米饭约250克估算",
+          "kcal_estimate": 290,
+          "kcal_range": [200, 300],
+          "protein_g_estimate": 6.0,
+          "protein_g_range": [5.0, 7.0],
+          "fat_g_estimate": 1.0,
+          "fat_g_range": [1.0, 1.0],
+          "carbs_g_estimate": 65.0,
+          "carbs_g_range": [50.0, 80.0]
+        }
+      ],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/39CCFBD9-E687-404C-B3F8-ECFED1FCE428/1-照片-1.jpg",
+      "estimation_note": "仅记录用户明确说明的全部把子肉和米饭；若补充把子肉重量、包装标签或实际剩余，可进一步修正。"
+    },
+    {
+      "meal": "加餐",
+      "description": "达美乐金沙咸蛋黄披萨9寸，未吃卷边，仅吃中间部分",
+      "kcal_estimate": 850,
+      "kcal_range": [650, 1100],
+      "protein_g_estimate": 33.0,
+      "protein_g_range": [25.0, 45.0],
+      "fat_g_estimate": 47.0,
+      "fat_g_range": [35.0, 65.0],
+      "carbs_g_estimate": 95.0,
+      "carbs_g_range": [75.0, 120.0],
+      "estimation_note": "未提供重量或官方营养标签；按9寸高脂奶酪/咸蛋黄风味披萨估算，并因未吃卷边下调。馅料、芝士和实际饼底保留量不明，故范围较宽。"
+    },
+    {
+      "meal": "放纵餐",
+      "description": "榴莲千层300克",
+      "kcal_estimate": 1080,
+      "kcal_range": [900, 1250],
+      "protein_g_estimate": 12.0,
+      "protein_g_range": [9.0, 18.0],
+      "fat_g_estimate": 72.0,
+      "fat_g_range": [55.0, 90.0],
+      "carbs_g_estimate": 96.0,
+      "carbs_g_range": [75.0, 120.0],
+      "estimation_note": "未提供品牌或营养标签；按榴莲果肉、奶油与可丽饼皮构成的千层蛋糕每100克约300–417千卡估算。奶油和糖用量是主要误差来源。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 4589,
+    "intake_kcal_range": [3724, 5654],
+    "protein_g_estimate": 163.9,
+    "protein_g_range": [129.6, 211.8],
+    "fat_g_estimate": 262.8,
+    "fat_g_range": [198.4, 345.8],
+    "carbs_g_estimate": 399.9,
+    "carbs_g_range": [321.5, 501.9],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 4589,
+    "net_intake_after_exercise_kcal_range": [3724, 5654],
+    "provisional_conservative_deficit_kcal": -2721,
+    "provisional_conservative_deficit_kcal_range": [-3786, -1856],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [0, 0],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 0],
+    "remaining_to_protein_target_g": 6.1,
+    "remaining_to_protein_target_g_range": [0, 40.4],
+    "remaining_to_carbohydrate_practical_target_g_range": [0.0, 0.0],
+    "intake_above_target_kcal": 2719,
+    "status": "全天最终：累计摄入中位约4589千卡，合理范围约3724–5654千卡；蛋白质约163.9克、脂肪约262.8克、碳水约399.9克。用户提到练后餐但未提供训练数据，运动动态消耗未计入；按已记录消耗0计算，中位保守盈余约2721千卡。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 91.7,
+    "day_over_day_change_kg": 0.0,
+    "seven_day_average_kg": 92.35,
+    "seven_day_period": "2026-08-28至2026-09-03",
+    "previous_seven_day_average_kg": 92.48,
+    "previous_seven_day_period": "2026-08-27至2026-09-02",
+    "seven_day_average_change_kg": -0.13,
+    "interpretation": "空腹体重与前一日持平，7日均重继续下降；按既定计划执行。"
+  },
+  "notes": [
+    "空腹体重91.70千克，与前一日持平；BMI约30.6。",
+    "2026-08-28至09-03的7日均重约92.35千克，较上一窗口约92.48千克下降约0.13千克。",
+    "按91.70千克计算基础代谢约1868千卡，今日固定饮食上限1870千卡。",
+    "早餐喝此前同款纯牛奶一瓶约260毫升，并吃张君雅干脆面40克；合计约384千卡、蛋白质约11.6克。"
+    ,"午餐吃沙县鸡腿饭：两只鸡腿去皮，米饭、炒白菜和卤蛋吃完，土豆丝未吃；中位约885千卡、蛋白质约70.5克。以后同款默认不吃土豆丝。"
+    ,"练后吃照片中全部把子肉和米饭1份；按视觉约2块、可食部分约220克估算，整餐约1390千卡、蛋白质约36.8克。照片内其他肉类未计入，训练消耗未提供。"
+    ,"加餐吃达美乐金沙咸蛋黄披萨9寸，未吃卷边、仅吃中间部分；未称重且无官方标签，暂估约850千卡，范围650–1100千卡。"
+    ,"放纵餐吃榴莲千层300克；未提供品牌或标签，暂估约1080千卡，合理范围900–1250千卡。"
+    ,"用户确认今日饮食与训练全部结束；用户提示当日仍为2026-09-03，据此封账。明日正常恢复减脂餐，不用断食或惩罚性运动补偿。"
+  ]
+}

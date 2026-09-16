@@ -1,0 +1,130 @@
+{
+  "date": "2026-07-10",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1917,
+    "bmr_note": "按 2026-07-10 早晨体重 96.65 千克用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 96.65,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "3 个鸡蛋和一瓶普通牛奶",
+      "kcal_estimate": 393,
+      "protein_g_range": [
+        27,
+        29
+      ],
+      "carbs_g_range": [
+        13,
+        18
+      ],
+      "fat_g_range": [
+        25,
+        28
+      ],
+      "confidence": "部分按标签，部分估算",
+      "notes": [
+        "鸡蛋按 3 个中大号估算，约 210 千卡，蛋白质 18-19 克。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：部分白米饭、带骨炖肉、黄瓜、白菜/咸菜、带油酸汤/绿汤和一小碗番茄蛋汤",
+      "kcal_estimate": 720,
+      "protein_g_range": [
+        35,
+        45
+      ],
+      "carbs_g_range": [
+        70,
+        90
+      ],
+      "fat_g_range": [
+        30,
+        42
+      ],
+      "confidence": "根据前后对比照片估算",
+      "notes": [
+        "米饭按照片/报告份量估算，已按实际吃下的部分计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "1 根原味牛肉干和 1 片此前记录过的腌制鸡胸肉",
+      "kcal_estimate": 180,
+      "protein_g_estimate": 31.2,
+      "carbs_g_estimate": 5.9,
+      "fat_g_estimate": 3.2,
+      "sodium_mg_estimate": 738,
+      "confidence": "营养标签和既往牛肉干记录",
+      "notes": [
+        "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "60 克小零食，与 2026-07-07 晚间记录的 20 克零食为同类型",
+      "kcal_estimate": 270,
+      "protein_g_estimate": 6.9,
+      "carbs_g_estimate": 40.2,
+      "fat_g_estimate": 9,
+      "sodium_mg_estimate": 474,
+      "confidence": "按 2026-07-07 同类零食记录等比例折算",
+      "notes": [
+        "2026-07-07 同类零食 20 克约 90 千卡，本次 60 克按三倍折算。",
+        "营养素和钠同样按既往记录等比例估算；如包装标签不同，需要修正。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "室内单车",
+      "description": "晚间单车骑行",
+      "duration_min": 25,
+      "active_kcal": 230,
+      "kcal_estimate": 230,
+      "confidence": "用户报告",
+      "notes": [
+        "按报告的约 230 千卡作为主动运动消耗记录。",
+        "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1563,
+    "protein_g_range": [
+      100,
+      112
+    ],
+    "exercise_kcal_estimate": 230,
+    "remaining_intake_kcal": 337,
+    "intake_vs_target_kcal": -337,
+    "net_intake_after_exercise_kcal": 1333,
+    "conservative_deficit_kcal": 584
+  },
+  "notes": [
+    "新一天从空腹体重和早餐记录开始。",
+    "报告空腹体重：96.65 千克。",
+    "与 2026-07-09 早晨体重 97.0 千克相比，今天早晨体重下降 0.35 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。",
+    "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "晚间 60 克小零食按 2026-07-07 同类零食每 20 克约 90 千卡等比例折算，共约 270 千卡。",
+    "晚间完成 25 分钟室内单车骑行，按报告记录主动消耗约 230 千卡。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

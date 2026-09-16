@@ -1,0 +1,398 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-16",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确确认“今日饮食训练结束”，并要求生成交接摘要。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重90.85公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 90.85,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.85,
+    "bmr_weight_date": "2026-09-16",
+    "bmr_kcal": 1859.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "description": "默认纯牛奶260毫升",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "默认纯牛奶260毫升",
+      "kcal_base_estimate": 183.0,
+      "kcal_booked": 183.0,
+      "kcal_range": [
+        183.0,
+        183.0
+      ],
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "id": "breakfast_milk_260ml",
+      "status": "consumed",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0
+    },
+    {
+      "id": "breakfast_banana_1",
+      "meal": "早餐",
+      "description": "香蕉1根，中等大小暂估可食部分120克",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "basis": "按交接摘要中等香蕉默认120克约107千卡，不套小香蕉80克。",
+      "kcal_base_estimate": 107,
+      "kcal_booked": 107,
+      "kcal_range": [
+        85,
+        135
+      ],
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 27.6,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "单一食物主要以份量范围表示不确定性，不机械加成"
+      },
+      "uncertainty": "未称重，沿用中等香蕉可食部分120克，实际大小可能不同。"
+    },
+    {
+      "id": "lunch_gailan_beef_rice",
+      "meal": "午餐",
+      "description": "芥兰牛肉饭1份，结合米饭深度与整份照片估算",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "暂按整份吃完；图1挖开用于展示米饭厚度，不作为剩饭扣除。结合两张照片，熟米饭暂估270克（250–320克），熟牛肉150克（120–180克），芥兰150克；入口烹调油暂估15克、另计少量勾芡糖和酱汁。基础850千卡，另留10%用油不确定余量85千卡。照片缺少尺度，所有克数均非称重。",
+      "kcal_base_estimate": 850,
+      "kcal_booked": 935,
+      "kcal_range": [
+        700,
+        1050
+      ],
+      "protein_g_estimate": 48.5,
+      "fat_g_estimate": 41.74444444444444,
+      "carbs_g_estimate": 93,
+      "protein_g_range": [
+        38,
+        60
+      ],
+      "fat_g_range": [
+        23,
+        55
+      ],
+      "carbs_g_range": [
+        80,
+        115
+      ],
+      "margin": {
+        "added_fat_g": 9.444444444444445,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "餐馆用油及附着酱汁不明确，在基础估算上增加约10%记账余量；基础已包含常规用油，新增仅为不确定性余量"
+      },
+      "uncertainty": "米饭、牛肉份量及实际入口油酱为照片估算，暂按整份吃完，实际剩余可更正。",
+      "photo_paths": [
+        "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_gailan_beef_rice_1.jpg",
+        "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_gailan_beef_rice_2.jpg"
+      ],
+      "components": [
+        {
+          "description": "熟米饭暂估270克（250–320克）",
+          "kcal_base_estimate": 350
+        },
+        {
+          "description": "熟牛肉暂估150克（120–180克）",
+          "kcal_base_estimate": 300
+        },
+        {
+          "description": "芥兰暂估150克",
+          "kcal_base_estimate": 35
+        },
+        {
+          "description": "基础入口烹调油暂估15克",
+          "kcal_base_estimate": 135
+        },
+        {
+          "description": "勾芡、糖及其他酱汁，不重复计油",
+          "kcal_base_estimate": 30
+        }
+      ]
+    },
+    {
+      "id": "postworkout_banana_1",
+      "meal": "练后加餐",
+      "description": "香蕉1根，中等大小暂估可食部分120克",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "basis": "按交接摘要中等香蕉默认120克约107千卡，不套小香蕉80克。",
+      "kcal_base_estimate": 107,
+      "kcal_booked": 107,
+      "kcal_range": [
+        85,
+        135
+      ],
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 27.6,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "单一食物主要以份量范围表示不确定性，不机械加成"
+      },
+      "uncertainty": "未称重，沿用中等香蕉可食部分120克，实际大小可能不同。"
+    },
+    {
+      "id": "dinner_sea_urchin_shrimp_dumplings_240g",
+      "meal": "晚餐",
+      "description": "海胆大虾水饺1包，240克/12只",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "basis": "照片包装净含量240克、12只；每100克800千焦，蛋白质10.1克、脂肪6.6克、碳水22.6克、钠409毫克，整包乘2.4。",
+      "kcal_base_estimate": 458.89,
+      "kcal_booked": 458.89,
+      "kcal_range": [
+        458.89,
+        458.89
+      ],
+      "protein_g_estimate": 24.24,
+      "fat_g_estimate": 15.84,
+      "carbs_g_estimate": 54.24,
+      "sodium_mg_estimate": 981.6,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签及份量明确，不额外加成"
+      },
+      "source_image": "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_sea_urchin_shrimp_dumplings_label.jpg"
+    },
+    {
+      "id": "dinner_extra_chili_oil_1spoon",
+      "meal": "晚餐",
+      "description": "水饺附着入口的辣椒油和少量辣椒渣，汤未喝完",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "用户补充两张照片说明本次总共加入的辣椒油，并明确“最后没有喝完汤，只吃了水饺”；视作同餐修正而非新增油。照片显示剩汤仍有油和辣椒渣，只估随12只水饺入口的附着油/辣椒渣，暂记60千卡，粗略范围30–100；无法从照片精确算出油量或入口比例。",
+      "kcal_base_estimate": 60,
+      "kcal_booked": 60,
+      "kcal_range": [
+        30,
+        100
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 6.2,
+      "carbs_g_estimate": 1.0,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "只估入口的油与少量辣椒渣；范围已表达不确定性，不额外加成或另加一份油。"
+      },
+      "uncertainty": "附着入口量及辣椒渣组成未知；宏量为粗估，不把放入碗里的全部油计为吃下，也不把附着油记为零。",
+      "photo_paths": [
+        "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_chili_oil_added.jpg",
+        "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_soup_leftover.jpg"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "2026-09-16-strength-1",
+      "event_id": "2026-09-16-strength-1",
+      "type": "传统力量训练",
+      "duration": "45分钟",
+      "duration_seconds": 2700,
+      "energy_scope": "session_active",
+      "source": "用户报告训练45分钟，未带手表；经用户授权参考此前周三训练动态消耗估算",
+      "active_kcal": 350,
+      "active_kcal_range": [
+        280,
+        420
+      ],
+      "total_kcal": null,
+      "average_heart_rate_bpm": null,
+      "is_estimated": true,
+      "reference_date": "2026-09-09",
+      "reference_event_id": "2026-09-09-strength-1",
+      "estimation_basis": {
+        "reference_active_kcal": 412,
+        "reference_duration_seconds": 3166,
+        "calculation": "412 × 2700 / 3166 ≈ 351，取整暂记350千卡；按原计划75%折算262.5千卡",
+        "range_note": "280–420千卡为粗略不确定范围，非实测或统计置信区间。"
+      },
+      "note": "按用户“参考之前周三的强度”暂按传统力量训练记录；不把参考日心率、动作或重量当作本次实测，不计入参考日单车。"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-09-16T19:49:46.140217+08:00",
+      "entry_id": "dinner_extra_chili_oil_1spoon",
+      "reason": "用户补充加入辣椒油总量及剩汤照片，说明只吃水饺、汤未喝完；修正实际入口估算。",
+      "old_entry": {
+        "id": "dinner_extra_chili_oil_1spoon",
+        "meal": "晚餐",
+        "description": "额外辣椒油1勺，暂按入口油量约10克估算",
+        "status": "consumed_estimated",
+        "source_kind": "database_estimate",
+        "basis": "用户报告额外加一勺辣椒油，勺大小与实际入口比例未说明；暂估实际入口油量10克约90千卡，粗略范围45–135千卡。未确认喝汤或整勺油全部入口，不套用其他日期的汤与调料口径。",
+        "kcal_base_estimate": 90,
+        "kcal_booked": 90,
+        "kcal_range": [
+          45,
+          135
+        ],
+        "protein_g_estimate": 0,
+        "fat_g_estimate": 10,
+        "carbs_g_estimate": 0,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "辣椒油作为单独摄入条目，仅计一次，以范围表达不确定性"
+        },
+        "uncertainty": "勺大小、油渣比例与剩在碗内/汤中油量未知，实际入口暂估，并非确认全部吃下。"
+      },
+      "new_entry": {
+        "id": "dinner_extra_chili_oil_1spoon",
+        "meal": "晚餐",
+        "description": "水饺附着入口的辣椒油和少量辣椒渣，汤未喝完",
+        "status": "consumed_estimated",
+        "source_kind": "photo_estimate",
+        "basis": "用户补充两张照片说明本次总共加入的辣椒油，并明确“最后没有喝完汤，只吃了水饺”；视作同餐修正而非新增油。照片显示剩汤仍有油和辣椒渣，只估随12只水饺入口的附着油/辣椒渣，暂记60千卡，粗略范围30–100；无法从照片精确算出油量或入口比例。",
+        "kcal_base_estimate": 60,
+        "kcal_booked": 60,
+        "kcal_range": [
+          30,
+          100
+        ],
+        "protein_g_estimate": 0,
+        "fat_g_estimate": 6.2,
+        "carbs_g_estimate": 1.0,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "只估入口的油与少量辣椒渣；范围已表达不确定性，不额外加成或另加一份油。"
+        },
+        "uncertainty": "附着入口量及辣椒渣组成未知；宏量为粗估，不把放入碗里的全部油计为吃下，也不把附着油记为零。",
+        "photo_paths": [
+          "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_chili_oil_added.jpg",
+          "/Users/wangjie/Documents/health/fitness_logs/attachments/2026-09/2026-09-16_soup_leftover.jpg"
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 1765.8899999999999,
+    "intake_kcal_booked": 1850.8899999999999,
+    "protein_g_estimate": 83.33999999999999,
+    "fat_g_estimate": 73.98444444444443,
+    "carbs_g_estimate": 215.94,
+    "intake_kcal_estimate": 1850.8899999999999,
+    "food_margin_kcal": 85.0,
+    "base_macro_estimates": {
+      "protein_g": 83.33999999999999,
+      "fat_g": 64.53999999999999,
+      "carbs_g": 215.94
+    },
+    "completed_day_base_intake_balance_kcal": 728.31,
+    "training_discount_kcal": 87.5,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      1541.8899999999999,
+      2061.89
+    ],
+    "exercise_active_kcal": 350.0,
+    "exercise_adjusted_kcal": 262.5,
+    "tdee_kcal_estimate": 2494.2,
+    "estimated_deficit_kcal": 643.31,
+    "completed_day_estimated_deficit_kcal": 643.31,
+    "energy_balance_scope": "completed_day_estimate",
+    "intake_target_kcal_range": [
+      1900.0,
+      2000.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 6,
+    "protein_by_meal_g": {
+      "午餐": 48.5,
+      "早餐": 9.3,
+      "晚餐": 24.24,
+      "练后加餐": 1.3
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 1,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 1,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 1,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 981.6,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}

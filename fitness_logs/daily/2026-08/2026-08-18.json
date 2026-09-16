@@ -1,0 +1,213 @@
+{
+  "date": "2026-08-18",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1879,
+    "bmr_note": "按2026-08-18早晨空腹体重92.80千克，用米夫林-圣乔尔公式10×92.80 + 6.25×173 - 5×27 + 5 = 1879.25千卡估算。"
+  },
+  "morning_weight_kg": 92.8,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1879千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1880千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶，暂按约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "confidence": "沿用此前同款纯牛奶每100毫升294千焦及一瓶约260毫升的记录；如本次品牌或容量不同需修正。"
+    },
+    {
+      "meal": "午餐",
+      "description": "鸡腿饭：按默认两只鸡腿去皮，米饭和配菜全部吃完",
+      "kcal_estimate": 850,
+      "kcal_range": [
+        680,
+        1050
+      ],
+      "protein_g_estimate": 60,
+      "protein_g_range": [
+        50,
+        72
+      ],
+      "fat_g_estimate": 34,
+      "fat_g_range": [
+        23,
+        48
+      ],
+      "carbs_g_estimate": 85,
+      "carbs_g_range": [
+        70,
+        105
+      ],
+      "confidence": "沿用默认鸡腿饭为两只鸡腿的约定；用户明确鸡腿去皮、米饭和菜吃完，因此较默认只吃约半份米饭的版本上调。未提供照片或称重，主要误差来自鸡腿大小、去骨净肉、整份米饭重量和菜品用油。"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "饭团100克",
+      "kcal_estimate": 161,
+      "protein_g_estimate": 3.4,
+      "fat_g_estimate": 3.8,
+      "carbs_g_estimate": 27.9,
+      "sodium_mg_estimate": 258,
+      "nutrition_basis": "按包装每100克能量673千焦、蛋白质3.4克、脂肪3.8克、碳水27.9克、钠258毫克换算。",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/C9EFFD01-800F-41A4-A6E7-CFFE6D5BE7BF/2-照片-2.jpg"
+    },
+    {
+      "meal": "晚饭加餐",
+      "description": "中等大小玉米三分之一、五个普通大小蛋清和1.5个蛋黄",
+      "kcal_estimate": 228,
+      "kcal_range": [
+        215,
+        245
+      ],
+      "protein_g_estimate": 24,
+      "protein_g_range": [
+        23,
+        25
+      ],
+      "fat_g_estimate": 7.9,
+      "fat_g_range": [
+        7.5,
+        9
+      ],
+      "carbs_g_estimate": 15.1,
+      "carbs_g_range": [
+        13,
+        16
+      ],
+      "components": [
+        {
+          "food": "玉米",
+          "amount": "中等大小一根的三分之一",
+          "kcal_estimate": 60,
+          "kcal_range": [
+            50,
+            75
+          ],
+          "protein_g_estimate": 2,
+          "fat_g_estimate": 0.8,
+          "carbs_g_estimate": 13,
+          "confidence": "品种未说明，按普通水果玉米到偏黏玉米之间估算。"
+        },
+        {
+          "food": "鸡蛋",
+          "amount": "五个普通大小蛋清和1.5个蛋黄",
+          "kcal_estimate": 168,
+          "protein_g_estimate": 22,
+          "fat_g_estimate": 7.1,
+          "carbs_g_estimate": 2.1
+        }
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:42",
+      "end_time": "18:31",
+      "duration": "49分06秒",
+      "elapsed_time": "49分12秒",
+      "active_kcal": 315,
+      "total_kcal": 402,
+      "average_heart_rate_bpm": 111,
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/C9EFFD01-800F-41A4-A6E7-CFFE6D5BE7BF/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量315千卡，不重复加入总热量402千卡。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:58",
+      "end_time": "22:31",
+      "duration": "32分44秒",
+      "active_kcal": 288,
+      "total_kcal": 348,
+      "average_heart_rate_bpm": 135,
+      "perceived_effort": "4/10，适中",
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/4AFC61BF-3AE4-48F3-9FFE-0E4A8D941FE1/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量288千卡，不重复加入总热量348千卡。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1422,
+    "intake_kcal_range": [
+      1239,
+      1639
+    ],
+    "protein_g_estimate": 95.4,
+    "protein_g_range": [
+      84.4,
+      108.4
+    ],
+    "fat_g_estimate": 55.1,
+    "fat_g_range": [
+      43.7,
+      70.2
+    ],
+    "carbs_g_estimate": 140.5,
+    "carbs_g_range": [
+      123.4,
+      161.4
+    ],
+    "exercise_active_kcal": 603,
+    "net_intake_after_exercise_kcal": 819,
+    "net_intake_after_exercise_kcal_range": [
+      636,
+      1036
+    ],
+    "provisional_conservative_deficit_kcal": 1060,
+    "provisional_conservative_deficit_kcal_range": [
+      843,
+      1243
+    ],
+    "remaining_to_intake_target_kcal": 458,
+    "remaining_to_intake_target_kcal_range": [
+      241,
+      641
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 660,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      443,
+      843
+    ],
+    "remaining_to_protein_target_g": 74.6,
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      9.5,
+      39.5
+    ],
+    "status": "全天最终：累计摄入中位约1422千卡，合理范围约1239-1639千卡；蛋白质约84.4-108.4克、脂肪约43.7-70.2克、碳水约123.4-161.4克。力量训练与室内单车动态消耗合计603千卡；保守缺口中位约1060千卡，合理范围约843-1243千卡，明显高于400-700千卡目标。"
+  },
+  "notes": [
+    "空腹体重92.80千克，较2026-08-17的94.20千克下降1.40千克并创当前记录新低。单日变化远大于可能的脂肪变化，主要按前期水分、糖原和胃肠内容物回落解读。",
+    "按92.80千克计算当日基础代谢约1879千卡，固定饮食上限为1880千卡。",
+    "早餐一瓶此前同款纯牛奶暂按约183千卡、蛋白质8克、脂肪9.4克、碳水12.5克记录。",
+    "午餐鸡腿饭按默认两只鸡腿记录；鸡腿去皮，米饭和菜全部吃完，中位约850千卡，合理范围约680-1050千卡。",
+    "早餐和午餐后累计中位约1033千卡，合理范围约863-1233千卡；蛋白质约58-80克、脂肪约32.4-57.4克、碳水约82.5-117.5克。",
+    "17:42-18:31完成传统力量训练49分06秒，动态消耗315千卡、总消耗402千卡、平均心率111次/分；缺口只计动态热量。",
+    "练后吃100克饭团，按包装约161千卡、蛋白质3.4克、脂肪3.8克、碳水27.9克、钠258毫克。",
+    "计入训练和饭团后累计中位约1194千卡，合理范围约1024-1394千卡；当前临时缺口中位约1000千卡，合理范围约800-1170千卡。",
+    "晚饭加餐为中等大小玉米三分之一、五个普通大小蛋清和1.5个蛋黄，约228千卡，合理范围约215-245千卡；蛋白质约24克、脂肪约7.9克、碳水约15.1克。",
+    "加餐后累计摄入中位约1422千卡，合理范围约1239-1639千卡；蛋白质约84.4-108.4克、脂肪约43.7-70.2克、碳水约123.4-161.4克。当前临时缺口中位约772千卡，合理范围约555-955千卡。",
+    "21:58-22:31完成室内单车32分44秒，动态消耗288千卡、总消耗348千卡、平均心率135次/分，主观强度4/10适中；缺口只计动态热量。",
+    "力量训练与室内单车动态消耗合计603千卡；当前临时缺口中位约1060千卡，合理范围约843-1243千卡，明显高于400-700千卡目标。",
+    "用户已明确确认今日结束，按当前内容正式封账。"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "date": "2026-07-21",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1904,
+    "bmr_note": "按 2026-07-21 早晨体重 95.25 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 95.25,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1904 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "烤红薯 120 克、六个偏小鸡蛋的蛋清、一个蛋黄、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 449,
+      "protein_g_range": [
+        30,
+        31
+      ],
+      "confidence": "红薯按烤后重量及既有口径估算；鸡蛋沿用此前偏小鸡蛋口径；牛奶沿用同款包装标签",
+      "components": [
+        {
+          "food": "烤红薯",
+          "amount": "120 克",
+          "kcal_estimate": 132,
+          "protein_g_estimate": 1.5
+        },
+        {
+          "food": "鸡蛋清和蛋黄",
+          "amount": "6 个偏小蛋清、1 个蛋黄",
+          "kcal_estimate": 134,
+          "protein_g_range": [
+            20.5,
+            21.5
+          ]
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "其余五个蛋黄未吃，不计入摄入。",
+        "烤红薯按约 110 千卡/100 克计算。",
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：带皮烤鸭、白米饭、白菜、冬瓜、酸豆角及清汤；按餐前餐后照片计算实际吃下部分，鸭皮已全部吃下",
+      "kcal_estimate": 880,
+      "kcal_range": [
+        750,
+        1050
+      ],
+      "protein_g_range": [
+        35,
+        45
+      ],
+      "confidence": "根据餐前餐后照片及用户确认鸭皮已吃估算；鸭肉可食重量、带骨比例、鸭皮脂肪量和菜品用油量不明确",
+      "components": [
+        {
+          "food": "带皮烤鸭",
+          "amount": "大部分鸭肉及全部鸭皮；剩余骨头和少量附着肉未计入",
+          "kcal_estimate": 560,
+          "kcal_range": [
+            460,
+            700
+          ],
+          "protein_g_range": [
+            31,
+            40
+          ]
+        },
+        {
+          "food": "白米饭",
+          "amount": "按照片估计吃下约 170-210 克熟饭",
+          "kcal_estimate": 240,
+          "kcal_range": [
+            220,
+            275
+          ],
+          "protein_g_estimate": 4
+        },
+        {
+          "food": "白菜、冬瓜和酸豆角",
+          "amount": "吃下部分，餐后仍剩较多",
+          "kcal_estimate": 70,
+          "kcal_range": [
+            50,
+            100
+          ],
+          "protein_g_range": [
+            1,
+            2
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "少量",
+          "kcal_estimate": 10
+        }
+      ],
+      "notes": [
+        "餐后照片显示烤鸭主要剩骨头和少量附着肉，按吃下大部分可食肉计算。",
+        "用户明确说明烤鸭皮也吃掉了；鸭皮热量已完整计入，不能按去皮鸭肉估算。",
+        "米饭餐后约剩三至四成，暂估实际吃下约 170-210 克熟饭。",
+        "白菜、冬瓜、酸豆角及较多菜汁仍有剩余，仅按餐前餐后差异计算。",
+        "烤鸭的带骨比例和皮下脂肪量不明确，因此保留较宽热量范围。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "饭团一个，100 克",
+      "kcal_estimate": 141,
+      "protein_g_estimate": 3.3,
+      "fat_g_estimate": 2.5,
+      "carbs_g_estimate": 26,
+      "sodium_mg_estimate": 212,
+      "confidence": "按包装营养成分表及用户报告的 100 克重量记录",
+      "label_per_100g": {
+        "energy_kj": 590,
+        "protein_g": 3.3,
+        "fat_g": 2.5,
+        "carbs_g": 26,
+        "sodium_mg": 212
+      },
+      "notes": [
+        "590 千焦折合约 141 千卡。",
+        "该饭团以碳水化合物为主，蛋白质含量较低。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "纯牛奶一瓶，260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "confidence": "沿用此前同款包装标签",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "晚间进食",
+      "description": "七个普通大小鸡蛋的蛋清",
+      "kcal_estimate": 119,
+      "protein_g_estimate": 25.2,
+      "confidence": "按普通大小鸡蛋的蛋清常见营养值估算",
+      "components": [
+        {
+          "food": "鸡蛋清",
+          "amount": "7 个，普通大小",
+          "kcal_estimate": 119,
+          "protein_g_estimate": 25.2
+        }
+      ],
+      "notes": [
+        "按每个普通大小蛋清约 17 千卡、蛋白质约 3.6 克计算。",
+        "蛋黄未吃，不计入摄入。",
+        "用户本次未报告吃鸡排，因此鸡排暂不计入。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:51",
+      "end_time": "18:32",
+      "duration_min": 41.07,
+      "active_kcal": 306,
+      "total_kcal": 380,
+      "avg_heart_rate_bpm": 122,
+      "kcal_estimate": 306,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "22:15",
+      "end_time": "22:47",
+      "duration_min": 31.77,
+      "elapsed_duration_min": 31.83,
+      "active_kcal": 249,
+      "total_kcal": 308,
+      "avg_heart_rate_bpm": 128,
+      "kcal_estimate": 249,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1772,
+    "intake_kcal_range": [
+      1642,
+      1942
+    ],
+    "protein_g_range": [
+      101.5,
+      112.5
+    ],
+    "exercise_active_kcal": 555,
+    "net_intake_after_exercise_kcal": 1217,
+    "conservative_deficit_kcal": 687,
+    "remaining_to_intake_target_kcal": 128,
+    "remaining_to_protein_target_g_range": [
+      57.5,
+      68.5
+    ],
+    "status": "截至 22:47；按中位估算全天摄入约 1772 千卡，距离 1900 千卡饮食上限约 128 千卡；保守缺口约 687 千卡，位于 400-700 千卡目标范围上沿，今晚应停止进食。"
+  },
+  "notes": [
+    "空腹体重较 2026-07-20 的 96.15 千克下降 0.90 千克，主要按水分、糖原和胃肠内容物变化解读，不视为单日脂肪下降。",
+    "当日基础代谢约 1904 千卡，饮食上限四舍五入到十位为 1900 千卡；不因体重快速回落而额外进食或刻意降低摄入。",
+    "早餐蛋白质约 30-31 克，午餐带皮烤鸭提供部分蛋白质，但同时带来较多脂肪。",
+    "午餐带皮烤鸭脂肪和热量较高；晚餐必须控制油脂和主食，优先选择不额外加油的鸡胸肉、虾仁、低脂鱼或蛋清。",
+    "传统力量训练按苹果手表动态消耗 306 千卡记录；总消耗 380 千卡不重复加入。",
+    "训练后饭团主要补充碳水，蛋白质仅 3.3 克；随后一瓶 260 毫升纯牛奶增加约 8 克蛋白质。",
+    "晚间实际吃七个普通大小蛋清，约 119 千卡、蛋白质约 25.2 克；未报告吃鸡排，鸡排未计入。",
+    "全天蛋白质约 102-113 克，仍低于 170 克目标约 58-69 克；次日必须继续把天然低脂蛋白提前安排到早餐和午餐。",
+    "晚间室内单车按苹果手表动态消耗 249 千卡记录；全天两次训练动态消耗合计 555 千卡。",
+    "当前保守缺口已接近目标上沿，今晚停止进食，不追加运动。"
+  ]
+}

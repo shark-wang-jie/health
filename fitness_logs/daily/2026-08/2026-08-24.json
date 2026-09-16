@@ -1,0 +1,290 @@
+{
+  "date": "2026-08-24",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1886,
+    "bmr_note": "按2026-08-24空腹体重93.50千克，用米夫林-圣乔尔公式10×93.50 + 6.25×173 - 5×27 + 5 = 1886.25千卡估算。"
+  },
+  "morning_weight_kg": 93.5,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢1886千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ]
+  },
+  "intake_entries": [
+    {
+      "meal": "凌晨加餐",
+      "description": "荞麦锅巴200克、盒马鸡腿2个",
+      "kcal_estimate": 986,
+      "kcal_range": [
+        966,
+        1016
+      ],
+      "protein_g_estimate": 36.2,
+      "protein_g_range": [
+        33.2,
+        40.2
+      ],
+      "fat_g_estimate": 14.6,
+      "fat_g_range": [
+        12.6,
+        16.6
+      ],
+      "carbs_g_estimate": 169,
+      "carbs_g_range": [
+        168,
+        172
+      ],
+      "components": [
+        {
+          "food": "荞麦锅巴",
+          "amount": "200克",
+          "kcal_estimate": 796,
+          "protein_g_estimate": 11.2,
+          "fat_g_estimate": 5.6,
+          "carbs_g_estimate": 167,
+          "dietary_fiber_g_estimate": 12.2,
+          "sodium_mg_estimate": 630,
+          "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+        },
+        {
+          "food": "盒马鸡腿",
+          "amount": "2个，带皮带骨约170克，食用时去皮",
+          "kcal_estimate": 190,
+          "kcal_range": [
+            170,
+            220
+          ],
+          "protein_g_estimate": 25,
+          "protein_g_range": [
+            22,
+            29
+          ],
+          "fat_g_estimate": 9,
+          "fat_g_range": [
+            7,
+            11
+          ],
+          "carbs_g_estimate": 2,
+          "carbs_g_range": [
+            1,
+            5
+          ],
+          "estimation_note": "用户确认食用时去皮；骨头不计入口，按此前同规格去皮口径记录。"
+        }
+      ]
+    },
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。脂肪与碳水按此前记录口径估算。"
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：两个鸡腿去皮、熟米饭约20克、白菜青菜吃完、小咸菜萝卜干吃完",
+      "kcal_estimate": 540,
+      "kcal_range": [
+        430,
+        680
+      ],
+      "protein_g_estimate": 58,
+      "protein_g_range": [
+        48,
+        68
+      ],
+      "fat_g_estimate": 27,
+      "fat_g_range": [
+        18,
+        40
+      ],
+      "carbs_g_estimate": 20,
+      "carbs_g_range": [
+        12,
+        30
+      ],
+      "components": [
+        {
+          "food": "去皮卤鸡腿",
+          "amount": "2个",
+          "kcal_estimate": 400,
+          "kcal_range": [
+            340,
+            500
+          ],
+          "protein_g_estimate": 54,
+          "protein_g_range": [
+            46,
+            64
+          ],
+          "fat_g_estimate": 22,
+          "fat_g_range": [
+            15,
+            32
+          ]
+        },
+        {
+          "food": "熟米饭",
+          "amount": "约20克，两小口",
+          "kcal_estimate": 23,
+          "protein_g_estimate": 0.5,
+          "fat_g_estimate": 0.1,
+          "carbs_g_estimate": 5.1
+        },
+        {
+          "food": "白菜、青菜和萝卜干",
+          "amount": "蔬菜及小咸菜吃完",
+          "kcal_estimate": 117,
+          "kcal_range": [
+            67,
+            157
+          ],
+          "protein_g_estimate": 3.5,
+          "protein_g_range": [
+            2,
+            5
+          ],
+          "fat_g_estimate": 4.9,
+          "fat_g_range": [
+            3,
+            8
+          ],
+          "carbs_g_estimate": 14.9,
+          "carbs_g_range": [
+            7,
+            25
+          ]
+        }
+      ],
+      "estimation_note": "米饭按用户估计的20克熟重计算；两只鸡腿未称重，蔬菜用油不可见，因此鸡腿和用油构成主要误差。萝卜干钠含量较高。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "好丽友呀！土豆一包70克",
+      "kcal_estimate": 162,
+      "protein_g_estimate": 1.2,
+      "protein_g_range": [
+        0.8,
+        1.5
+      ],
+      "fat_g_estimate": 9.3,
+      "fat_g_range": [
+        8,
+        11
+      ],
+      "carbs_g_estimate": 18.4,
+      "carbs_g_range": [
+        17,
+        20
+      ],
+      "nutrition_basis": "用户补充本包装每份70克能量678千焦，换算约162千卡，以包装为准。蛋白质、脂肪和碳水暂按此前公开数据同比缩放至该热量，仅作占位估算；收到完整营养表后再修正。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "棒棒鸡一根110克",
+      "kcal_estimate": 291,
+      "protein_g_estimate": 7.5,
+      "fat_g_estimate": 18,
+      "carbs_g_estimate": 24.9,
+      "sodium_mg_estimate": 545,
+      "nutrition_basis": "按包装每100克能量1107千焦、蛋白质6.8克、脂肪16.4克、碳水22.6克、钠495毫克，换算110克。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/C72147DA-ED2D-455C-AED9-75583CBD39F8/1-照片-1.jpg"
+    },
+    {
+      "meal": "晚间加餐（饮食结束）",
+      "description": "默认浓缩原味发酵乳一杯120克",
+      "kcal_estimate": 145,
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "sodium_mg_estimate": 96,
+      "calcium_mg_estimate": 240,
+      "nutrition_basis": "沿用2026-08-23建立的默认一杯酸奶规格：120克；每100克506千焦、蛋白质8克、脂肪7克、碳水6.5克。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 2307,
+    "intake_kcal_range": [
+      2177,
+      2477
+    ],
+    "protein_g_estimate": 120.5,
+    "protein_g_range": [
+      107.1,
+      134.8
+    ],
+    "fat_g_estimate": 86.7,
+    "fat_g_range": [
+      74.4,
+      103.4
+    ],
+    "carbs_g_estimate": 252.6,
+    "carbs_g_range": [
+      242.2,
+      267.2
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 2307,
+    "net_intake_after_exercise_kcal_range": [
+      2177,
+      2477
+    ],
+    "provisional_conservative_deficit_kcal": -421,
+    "provisional_conservative_deficit_kcal_range": [
+      -591,
+      -291
+    ],
+    "remaining_to_intake_target_kcal": -417,
+    "remaining_to_intake_target_kcal_range": [
+      -587,
+      -287
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      0,
+      0
+    ],
+    "remaining_to_protein_target_g": 49.5,
+    "remaining_to_protein_target_g_range": [
+      35.2,
+      62.9
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      0
+    ],
+    "status": "全天最终：累计摄入中位约2307千卡，合理范围约2177-2477千卡；蛋白质约107.1-134.8克、脂肪约74.4-103.4克、碳水约242.2-267.2克。无运动记录；中位超过1890千卡固定饮食上限约417千卡，按基础代谢口径为中位约421千卡盈余。"
+  },
+  "notes": [
+    "用户凌晨睡不着时进食，本笔按自然日2026-08-24记录，不追溯计入已封账的2026-08-23。",
+    "200克荞麦锅巴单项约796千卡、碳水167克，已经基本达到全天150-180克碳水执行区间。",
+    "不建议因凌晨进食而全天断食或进行惩罚性训练；后续正常吃低脂高蛋白正餐，但不再安排锅巴、主食、水果、甜食或高脂零食。",
+    "睡眠不足会增加饥饿感和高热量食物冲动；今日重点是恢复正常作息和饮食结构，而不是极端补偿。",
+    "用户确认两个盒马鸡腿均去皮食用，已从含皮暂估约240千卡修正为约190千卡。",
+    "用户起初因凌晨进食后睡眠而表示不称非标准体重，之后明确报告空腹体重93.50千克；现按该值作为今日晨重并重算基础代谢及上限。饮食和训练照常记录。",
+    "早餐一瓶此前同款纯牛奶约260毫升，约183千卡、蛋白质8克；截至早餐蛋白质仍不足，碳水已达到并略超全天执行区间。",
+    "午餐沙县鸡腿饭：两个鸡腿去皮，米饭只吃约20克，白菜青菜和萝卜干吃完；估算中位约540千卡。米饭控制到位，但凌晨200克锅巴已经造成全天碳水超标。",
+    "截至午餐中位摄入约1709千卡，距离1890千卡固定上限仅约181千卡；蛋白质仍不足，但不应为补足170克目标而突破上限。",
+    "下午加餐好丽友呀！土豆70克；最初按公开数据库暂估374千卡，用户后续提供本包装每份70克能量678千焦，已以包装为准修正为约162千卡。宏量营养素尚待完整标签确认。",
+    "晚间吃棒棒鸡110克，按包装约291千卡、蛋白质7.5克、脂肪18克、碳水24.9克、钠约545毫克。该食品蛋白质密度低，不适合作为补蛋白食物。",
+    "按呀！土豆包装热量修正后，截至棒棒鸡中位摄入约2162千卡，超过1890千卡固定上限约272千卡；不再进食，也不安排惩罚性训练。",
+    "最后一杯默认酸奶120克，约145千卡、蛋白质9.6克、脂肪8.4克、碳水7.8克。用户确认今日饮食结束，饮食封账；运动记录仍可后补。",
+    "2026-08-25已开始报告新一天，据此按8月24日饮食结束后无新增摄入或运动正式封账。次日正常执行固定上限，不断食、不进行惩罚性训练。"
+  ]
+}

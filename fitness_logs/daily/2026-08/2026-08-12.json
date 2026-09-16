@@ -1,0 +1,346 @@
+{
+  "date": "2026-08-12",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1883,
+    "bmr_note": "按 2026-08-12 早晨空腹体重 93.15 千克，用米夫林-圣乔尔公式 10×93.15 + 6.25×173 - 5×27 + 5 = 1882.75 千卡估算。"
+  },
+  "morning_weight_kg": 93.15,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢 1883 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1880 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶约 260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "confidence": "暂按此前同款 260 毫升一瓶计算；若本次容量或标签不同需修正。",
+      "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦；260 毫升约 183 千卡、蛋白质约 8 克、脂肪约 9.4 克、碳水约 12.5 克。"
+    },
+    {
+      "meal": "午餐",
+      "description": "与 2026-08-11 午餐基本相同：两只鸡腿去皮后吃完鸡肉、一些蔬菜和约半份米饭",
+      "kcal_estimate": 720,
+      "kcal_range": [
+        580,
+        930
+      ],
+      "protein_g_range": [
+        50,
+        69
+      ],
+      "carbs_g_range": [
+        49,
+        68
+      ],
+      "confidence": "用户说明与前一日相同，沿用 2026-08-11 两只去皮鸡腿、一些蔬菜及约半份米饭的估算口径。米饭暂按约 170-220 克熟重；没有本次餐前餐后照片，实际米饭重量、鸡腿净肉和附着油汁仍是主要误差来源。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "约半份，暂按 170-220 克熟重",
+          "kcal_estimate": 245,
+          "kcal_range": [
+            220,
+            285
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ],
+          "carbs_g_range": [
+            44,
+            57
+          ]
+        },
+        {
+          "food": "去皮去骨鸡腿肉",
+          "amount": "两只鸡腿的可食肉；鸡皮和鸡骨排除",
+          "kcal_estimate": 360,
+          "kcal_range": [
+            300,
+            450
+          ],
+          "protein_g_range": [
+            45,
+            60
+          ]
+        },
+        {
+          "food": "蔬菜及实际入口的附着油汁",
+          "amount": "一些蔬菜；附着油汁沿用前一日口径",
+          "kcal_estimate": 115,
+          "kcal_range": [
+            60,
+            195
+          ],
+          "protein_g_range": [
+            1,
+            3
+          ],
+          "carbs_g_range": [
+            5,
+            11
+          ]
+        }
+      ],
+      "notes": [
+        "鸡皮不计，但鸡腿肉本身仍含一定脂肪。",
+        "若本次半份米饭明显少于或多于前一日实际吃下的约 170-220 克熟重，需要再修正。"
+      ]
+    },
+    {
+      "meal": "训练前后加餐",
+      "description": "训练前一根小香蕉，训练后一根小香蕉",
+      "kcal_estimate": 160,
+      "kcal_range": [
+        140,
+        180
+      ],
+      "protein_g_range": [
+        1.7,
+        2.2
+      ],
+      "carbs_g_range": [
+        36.5,
+        45.7
+      ],
+      "confidence": "未称重，按每根小香蕉可食部分约 80-100 克估算；两根合计可食部分约 160-200 克。",
+      "components": [
+        {
+          "food": "小香蕉",
+          "timing": "训练前",
+          "amount": "1 根，可食部分暂按约 80-100 克",
+          "kcal_estimate": 80,
+          "kcal_range": [
+            70,
+            90
+          ],
+          "protein_g_range": [
+            0.8,
+            1.1
+          ],
+          "carbs_g_range": [
+            18.2,
+            22.9
+          ]
+        },
+        {
+          "food": "小香蕉",
+          "timing": "训练后",
+          "amount": "1 根，可食部分暂按约 80-100 克",
+          "kcal_estimate": 80,
+          "kcal_range": [
+            70,
+            90
+          ],
+          "protein_g_range": [
+            0.8,
+            1.1
+          ],
+          "carbs_g_range": [
+            18.2,
+            22.9
+          ]
+        }
+      ],
+      "notes": "香蕉主要补充训练前后碳水，蛋白质很少，不能替代训练后的蛋白质来源。"
+    },
+    {
+      "meal": "晚餐",
+      "description": "两包泡面面饼、一份酱料、一斤带头带壳活虾和两根鸡腿",
+      "kcal_estimate": 1305,
+      "kcal_range": [
+        1205,
+        1425
+      ],
+      "protein_g_range": [
+        107.4,
+        144.4
+      ],
+      "fat_g_range": [
+        24,
+        31
+      ],
+      "carbs_g_range": [
+        135,
+        137
+      ],
+      "sodium_mg_known_minimum": 2655,
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/54784F6D-380A-49A7-9DBF-092A1E44FDC2/1-照片-1.jpg",
+      "confidence": "泡面按本次包装标签精确换算；活虾按 500 克带头带壳活重、可食虾肉约 45%-55%估算；用户确认两根鸡腿去皮食用，暂按普通熟鸡小腿去皮后的可食肉约 160-220 克估算。未报告额外用油，因此暂不计烹调油。鸡腿大小和烹调方式仍是主要误差来源。",
+      "components": [
+        {
+          "food": "泡面面饼",
+          "amount": "2 份，每份 80 克，共 160 克",
+          "kcal_estimate": 595,
+          "protein_g_estimate": 14.2,
+          "fat_g_estimate": 1.2,
+          "carbs_g_estimate": 129.6,
+          "sodium_mg_estimate": 1430,
+          "nutrition_basis": "包装每份 80 克：能量 1245 千焦、蛋白质 7.1 克、脂肪 0.6 克、碳水 64.8 克、钠 715 毫克。"
+        },
+        {
+          "food": "泡面酱料",
+          "amount": "1 份 28 克",
+          "kcal_estimate": 140,
+          "protein_g_estimate": 3.2,
+          "fat_g_estimate": 11.9,
+          "carbs_g_estimate": 5.3,
+          "sodium_mg_estimate": 1225,
+          "nutrition_basis": "包装每份 28 克：能量 585 千焦、蛋白质 3.2 克、脂肪 11.9 克、碳水 5.3 克、钠 1225 毫克。"
+        },
+        {
+          "food": "活虾",
+          "amount": "一斤，按带头带壳活重 500 克",
+          "kcal_estimate": 240,
+          "kcal_range": [
+            190,
+            300
+          ],
+          "protein_g_range": [
+            45,
+            65
+          ],
+          "confidence": "按可食虾肉约 45%-55%估算；虾头和虾壳不计。"
+        },
+        {
+          "food": "鸡腿",
+          "amount": "2 根，去皮食用，暂按普通熟鸡小腿",
+          "kcal_estimate": 330,
+          "kcal_range": [
+            280,
+            390
+          ],
+          "protein_g_range": [
+            45,
+            62
+          ],
+          "fat_g_range": [
+            9,
+            13
+          ],
+          "confidence": "用户确认鸡皮未吃；按去皮熟可食肉约 160-220 克估算，鸡骨不计。"
+        }
+      ],
+      "notes": [
+        "泡面面饼和一份酱料合计约 735 千卡、蛋白质 17.4 克、脂肪 13.1 克、碳水 134.9 克、钠 2655 毫克。",
+        "两根鸡腿已按去皮食用修正；若存在额外烹调油，需要据实追加。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:35",
+      "end_time": "18:32",
+      "duration_min": 56.68,
+      "active_kcal": 476,
+      "total_kcal_reference_only": 577,
+      "average_heart_rate_bpm": 126,
+      "heart_rate_range_bpm": [
+        81,
+        160
+      ],
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/27E43E0B-3764-4015-A310-BEF628948AC8/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 476 千卡；总千卡 577 仅作参考，避免重复计入训练期间静息消耗。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:30",
+      "end_time": "22:30",
+      "duration_min": 60.53,
+      "active_kcal": 705,
+      "total_kcal_reference_only": 817,
+      "average_heart_rate_bpm": 151,
+      "heart_rate_range_bpm": [
+        107,
+        163
+      ],
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/63D84CBE-8AD8-4765-9319-C0DB77168252/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 705 千卡；总千卡 817 仅作参考，避免重复计入训练期间静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 2368,
+    "intake_kcal_range": [
+      2108,
+      2718
+    ],
+    "protein_g_range": [
+      167.1,
+      223.6
+    ],
+    "carbs_g_range": [
+      233,
+      263.2
+    ],
+    "exercise_active_kcal": 1181,
+    "net_intake_after_exercise_kcal": 1187,
+    "net_intake_after_exercise_kcal_range": [
+      927,
+      1537
+    ],
+    "conservative_deficit_kcal": 696,
+    "conservative_deficit_kcal_range": [
+      346,
+      956
+    ],
+    "remaining_to_intake_target_kcal": -488,
+    "remaining_to_intake_target_kcal_range": [
+      -838,
+      -228
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 296,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -54,
+      556
+    ],
+    "remaining_to_protein_target_g_range": [
+      0,
+      2.9
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      0
+    ],
+    "status": "全天最终：累计摄入中位约 2368 千卡，合理范围约 2108-2718 千卡；蛋白质约 167.1-223.6 克、碳水约 233-263.2 克。传统力量训练动态消耗 476 千卡，室内单车动态消耗 705 千卡，合计 1181 千卡。按基础代谢加动态运动口径，保守缺口中位约 696 千卡，合理范围约 346-956 千卡；中位位于目标上沿。中位摄入超过 1880 千卡固定饮食上限约 488 千卡。"
+  },
+  "notes": [
+    "早餐仅一瓶牛奶，约 183 千卡、蛋白质约 8 克；蛋白质明显不足，后续餐食应优先鸡胸、鱼虾、鸡蛋或蛋清、瘦肉及低脂奶制品。",
+    "空腹体重 93.15 千克，较 2026-08-11 的 93.45 千克下降 0.30 千克并创当前记录新低；单日变化不能全部视为脂肪下降，继续观察 3-7 天趋势。",
+    "按 93.15 千克计算当日基础代谢约 1883 千卡，固定饮食上限为 1880 千卡。",
+    "午餐与前一日基本相同：两只去皮鸡腿、一些蔬菜和约半份米饭；沿用前一日口径估算约 720 千卡，合理范围约 580-930 千卡，蛋白质约 50-69 克、碳水约 49-68 克。",
+    "早餐加午餐累计中位约 903 千卡；午餐后蛋白质仍少约 93-112 克。尚未记录运动时，为保留至少 400 千卡保守缺口，晚间中位可用约 580 千卡，应优先低脂蛋白质。",
+    "训练前和训练后各吃一根小香蕉，两根合计暂估约 160 千卡，合理范围约 140-180 千卡，碳水约 36.5-45.7 克；香蕉不能替代训练后蛋白质。",
+    "17:35-18:32 完成传统力量训练 56 分 41 秒；Apple Watch 动态消耗 476 千卡、总消耗 577 千卡、平均心率 126 次/分，截图心率范围约 81-160 次/分。结算只采用动态千卡。",
+    "训练及两根小香蕉后累计中位约 1063 千卡、蛋白质约 59.7-79.2 克；晚餐尚未记录，固定饮食上限中位尚余约 817 千卡，应以天然低脂蛋白质为主。",
+    "晚餐两份 80 克泡面面饼和一份 28 克酱料按标签实算约 735 千卡、碳水 134.9 克、钠 2655 毫克；另吃一斤带壳活虾和两根去皮鸡腿。修正后整顿晚餐中位约 1305 千卡，合理范围约 1205-1425 千卡，蛋白质约 107.4-144.4 克。",
+    "晚餐后全天累计中位约 2368 千卡，超过 1880 千卡固定饮食上限约 488 千卡；计入力量训练后中位约为 9 千卡保守盈余。今晚停止进食，不用额外运动或次日断食补偿。",
+    "21:30-22:30 完成室内单车 1 小时 00 分 32 秒；Apple Watch 动态消耗 705 千卡、总消耗 817 千卡、平均心率 151 次/分，截图心率范围约 107-163 次/分。结算只采用动态千卡。",
+    "力量训练与室内单车动态消耗合计 1181 千卡；计入两次训练后，临时保守缺口中位约 696 千卡，合理范围约 346-956 千卡。固定饮食上限仍已超过约 488 千卡，今晚停止进食和运动，次日正常饮食。",
+    "2026-08-11 的运动消耗不结转为今日额外进食额度。",
+    "2026-08-13 已开始报告新一天，据此按室内单车后没有新增摄入或运动正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

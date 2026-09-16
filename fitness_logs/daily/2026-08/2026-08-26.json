@@ -1,0 +1,203 @@
+{
+  "date": "2026-08-26",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1877,
+    "bmr_note": "按2026-08-26早晨空腹体重92.60千克，用米夫林-圣乔尔公式10×92.60 + 6.25×173 - 5×27 + 5 = 1877.25千卡估算。"
+  },
+  "morning_weight_kg": 92.6,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1877千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "空气炸锅无油烤熟蜜薯100克、此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 318,
+      "kcal_range": [303, 333],
+      "protein_g_estimate": 9.9,
+      "protein_g_range": [9.4, 10.4],
+      "fat_g_estimate": 9.6,
+      "fat_g_range": [9.6, 9.7],
+      "carbs_g_estimate": 44,
+      "carbs_g_range": [40.6, 46.9],
+      "components": [
+        {
+          "food": "蜜薯",
+          "amount": "烤熟可食重100克，空气炸锅无油",
+          "kcal_estimate": 135,
+          "kcal_range": [120, 150],
+          "protein_g_estimate": 1.9,
+          "protein_g_range": [1.4, 2.4],
+          "fat_g_estimate": 0.2,
+          "carbs_g_estimate": 31.5,
+          "carbs_g_range": [28.1, 34.4],
+          "estimation_note": "沿用近期同款无油烤熟蜜薯每100克约120-150千卡、中位135千卡的口径；熟重含水量差异是主要误差。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "兰州拉面一份（含图片中自带牛肉，汤未喝），另有单独称重的卤牛肉约260克",
+      "kcal_estimate": 1000,
+      "kcal_range": [830, 1200],
+      "protein_g_estimate": 95.5,
+      "protein_g_range": [81, 109],
+      "fat_g_estimate": 35.5,
+      "fat_g_range": [25, 49],
+      "carbs_g_estimate": 82,
+      "carbs_g_range": [68, 98],
+      "components": [
+        {
+          "food": "兰州拉面",
+          "amount": "面条、萝卜、香菜、葱及图片中自带牛肉均吃；汤未喝",
+          "kcal_estimate": 520,
+          "kcal_range": [400, 650],
+          "protein_g_estimate": 28,
+          "protein_g_range": [22, 34],
+          "fat_g_estimate": 12,
+          "fat_g_range": [7, 19],
+          "carbs_g_estimate": 82,
+          "carbs_g_range": [68, 98],
+          "estimation_note": "拉面自带的图片中牛肉另计在本组件内；汤未喝，基本不计汤中油脂。主要误差来自面条熟重和自带牛肉的实际重量。"
+        },
+        {
+          "food": "卤牛肉",
+          "amount": "单独称重的可食重约260克，不包含拉面图片中的自带牛肉",
+          "kcal_estimate": 480,
+          "kcal_range": [430, 550],
+          "protein_g_estimate": 67.5,
+          "protein_g_range": [59, 75],
+          "fat_g_estimate": 23.5,
+          "fat_g_range": [18, 30],
+          "carbs_g_estimate": 0,
+          "carbs_g_range": [0, 3],
+          "estimation_note": "按图片中较瘦的熟制卤牛肉每100克约165-210千卡、蛋白质约23-29克估算。"
+        }
+      ],
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/9D6AE906-B9B9-4B31-A489-A86D2272CCC8/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/9D6AE906-B9B9-4B31-A489-A86D2272CCC8/2-照片-2.jpg"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "空气炸锅无油烤熟蜜薯200克",
+      "kcal_estimate": 270,
+      "kcal_range": [240, 300],
+      "protein_g_estimate": 3.8,
+      "protein_g_range": [2.8, 4.8],
+      "fat_g_estimate": 0.4,
+      "fat_g_range": [0.3, 0.6],
+      "carbs_g_estimate": 63,
+      "carbs_g_range": [56.2, 68.8],
+      "estimation_note": "沿用近期同款无油烤熟蜜薯每100克约120-150千卡、中位135千卡的口径；按烤熟可食重200克换算。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "此前同款荞麦锅巴30克",
+      "kcal_estimate": 119,
+      "protein_g_estimate": 1.7,
+      "fat_g_estimate": 0.8,
+      "carbs_g_estimate": 25.1,
+      "dietary_fiber_g_estimate": 1.8,
+      "sodium_mg_estimate": 95,
+      "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "普通大小鸡蛋的7个蛋清和1个蛋黄",
+      "kcal_estimate": 174,
+      "kcal_range": [160, 185],
+      "protein_g_estimate": 27.9,
+      "protein_g_range": [25, 30],
+      "fat_g_estimate": 4.9,
+      "fat_g_range": [4.5, 5.5],
+      "carbs_g_estimate": 2.3,
+      "carbs_g_range": [1.5, 3],
+      "nutrition_basis": "沿用普通大小鸡蛋蛋清约17千卡、蛋白质3.6克/个，1个蛋黄约55千卡、蛋白质约2.7克、脂肪约4.5克的口径。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:38",
+      "end_time": "18:29",
+      "duration": "50分30秒",
+      "active_kcal": 331,
+      "total_kcal": 419,
+      "average_heart_rate_bpm": 117,
+      "heart_rate_range_bpm": [77, 144],
+      "calorie_accounting_basis": "只将Apple Watch动态千卡331计入运动消耗；总千卡419不重复计入。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/A0262BC3-F114-486F-A946-C648BB630BC6/1-照片-1.jpg"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "19:41",
+      "end_time": "20:15",
+      "duration": "33分26秒",
+      "elapsed_duration": "33分29秒",
+      "active_kcal": 283,
+      "total_kcal": 345,
+      "average_heart_rate_bpm": 136,
+      "heart_rate_range_bpm": [93, 148],
+      "calorie_accounting_basis": "只将Apple Watch动态千卡283计入运动消耗；总千卡345不重复计入。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/0D27D61A-1DB2-4E2D-A0C2-C049C8F4E22D/1-照片-1.jpg"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1881,
+    "intake_kcal_range": [1652, 2137],
+    "protein_g_estimate": 138.8,
+    "protein_g_range": [119.9, 155.9],
+    "fat_g_estimate": 51.2,
+    "fat_g_range": [40.2, 65.6],
+    "carbs_g_estimate": 216.4,
+    "carbs_g_range": [191.4, 241.8],
+    "exercise_active_kcal": 614,
+    "net_intake_after_exercise_kcal": 1267,
+    "net_intake_after_exercise_kcal_range": [1038, 1523],
+    "provisional_conservative_deficit_kcal": 610,
+    "provisional_conservative_deficit_kcal_range": [354, 839],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [0, 228],
+    "remaining_while_preserving_min_deficit_kcal": 210,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 439],
+    "remaining_to_protein_target_g": 31.2,
+    "remaining_to_protein_target_g_range": [14.1, 50.1],
+    "remaining_to_carbohydrate_practical_target_g_range": [0, 0],
+    "status": "全天最终：累计摄入中位约1881千卡，合理范围约1652-2137千卡；蛋白质约138.8克、脂肪约51.2克、碳水约216.4克。力量训练与室内单车动态消耗合计614千卡，中位保守缺口约610千卡，处于400-700千卡目标范围。"
+  },
+  "notes": [
+    "空腹体重92.60千克，与前一日持平；基础代谢约1877千卡，固定饮食上限1880千卡。",
+    "早餐为无油烤熟蜜薯100克和一瓶此前同款纯牛奶，中位约318千卡；蛋白质仅约9.9克，后续餐食优先安排天然低脂蛋白质。",
+    "前一日中位缺口约702千卡，今日正常饮食，不断食，也不安排补偿性运动。"
+    ,"午餐一份兰州拉面（图片中的牛肉为拉面自带，汤未喝），另有单独称重卤牛肉约260克；中位约1000千卡、蛋白质约95.5克。主要误差来自面条实际熟重、拉面自带牛肉重量和卤制失水。"
+    ,"练前吃无油烤熟蜜薯200克，中位约270千卡、碳水约63克。"
+    ,"17:38-18:29完成传统力量训练50分30秒；Apple Watch动态消耗331千卡、总消耗419千卡、平均心率117次/分，心率范围约77-144次/分。只将动态331千卡计入消耗。"
+    ,"晚间吃此前同款荞麦锅巴30克，约119千卡、蛋白质1.7克、脂肪0.8克、碳水25.1克。"
+    ,"19:41-20:15完成室内单车33分26秒；Apple Watch动态消耗283千卡、总消耗345千卡、平均心率136次/分，心率范围约93-148次/分。只将动态283千卡计入消耗。"
+    ,"练后吃7个普通大小蛋清和1个蛋黄，约174千卡、蛋白质27.9克、脂肪4.9克。两次训练动态消耗合计614千卡；加餐后中位保守缺口约610千卡。"
+    ,"2026-08-27开始报告新一天，据此按练后蛋类加餐后没有新增摄入或运动正式封账。"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-05",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1878,
+    "bmr_note": "按2026-09-05早晨空腹体重92.65千克，用米夫林-圣乔尔公式10×92.65 + 6.25×173 - 5×27 + 5 = 1877.75千卡估算。"
+  },
+  "morning_weight_kg": 92.65,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1878千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "未进食",
+      "kcal_estimate": 0,
+      "protein_g_estimate": 0.0,
+      "fat_g_estimate": 0.0,
+      "carbs_g_estimate": 0.0
+    },
+    {
+      "meal": "午餐",
+      "description": "食其家牛丼饭：分装肥牛及米饭；汤未喝，肥牛为甜口",
+      "kcal_estimate": 960,
+      "kcal_range": [820, 1120],
+      "protein_g_estimate": 42.0,
+      "protein_g_range": [34.0, 53.0],
+      "fat_g_estimate": 40.0,
+      "fat_g_range": [30.0, 54.0],
+      "carbs_g_estimate": 118.0,
+      "carbs_g_range": [98.0, 140.0],
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/A5957E8C-504F-4C4A-8C52-4C64DE044D63/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/A5957E8C-504F-4C4A-8C52-4C64DE044D63/2-照片-2.jpg"
+      ],
+      "estimation_note": "按照片目测：肥牛熟制可食部分约200–220克，米饭约300–350克；甜口酱汁按附着在牛肉和洋葱上的部分计入，未喝的汤不计入。未提供秤重或小票，仍保留合理范围。"
+    },
+    {
+      "meal": "晚餐",
+      "description": "零脂酸奶实际约50克、浓缩原味发酵乳一杯120克、墨虾丸一包250克",
+      "kcal_estimate": 399,
+      "protein_g_estimate": 50.1,
+      "fat_g_estimate": 10.2,
+      "carbs_g_estimate": 25.9,
+      "sodium_mg_estimate": 1310,
+      "calcium_mg_estimate": 100,
+      "components": [
+        {
+          "food": "零脂酸奶",
+          "amount": "实际约50克",
+          "kcal_estimate": 32,
+          "protein_g_estimate": 4.0,
+          "fat_g_estimate": 0.0,
+          "carbs_g_estimate": 3.8,
+          "sodium_mg_estimate": 40,
+          "calcium_mg_estimate": 100
+        },
+        {
+          "food": "浓缩原味发酵乳",
+          "amount": "1杯，120克",
+          "kcal_estimate": 145,
+          "protein_g_estimate": 9.6,
+          "fat_g_estimate": 8.4,
+          "carbs_g_estimate": 7.8
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "1包，250克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "nutrition_basis": "沿用此前同款包装：每100克371千焦、蛋白质14.6克、脂肪0.7克、碳水5.7克、钠508毫克。"
+        }
+      ],
+      "estimation_note": "零脂酸奶按实际约50克、其余两项按既有同款规格和包装口径计算；墨虾丸为高钠加工食品，未额外计入蘸料或烹调用油。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "黄花鱼丸一包200克",
+      "kcal_estimate": 241,
+      "protein_g_estimate": 37.6,
+      "fat_g_estimate": 10.0,
+      "carbs_g_estimate": 0.0,
+      "sodium_mg_estimate": 192,
+      "nutrition_basis": "沿用此前同款包装：每100克505千焦、蛋白质18.8克、脂肪5.0克、碳水0克、钠96毫克。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1600,
+    "intake_kcal_range": [1460, 1760],
+    "protein_g_estimate": 129.7,
+    "protein_g_range": [121.7, 140.7],
+    "fat_g_estimate": 60.2,
+    "fat_g_range": [50.2, 74.2],
+    "carbs_g_estimate": 143.9,
+    "carbs_g_range": [123.9, 165.9],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1600,
+    "net_intake_after_exercise_kcal_range": [1460, 1760],
+    "provisional_conservative_deficit_kcal": 278,
+    "provisional_conservative_deficit_kcal_range": [118, 418],
+    "remaining_to_intake_target_kcal": 280,
+    "remaining_to_intake_target_kcal_range": [120, 420],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 18],
+    "remaining_to_protein_target_g": 40.3,
+    "remaining_to_protein_target_g_range": [29.3, 48.3],
+    "remaining_to_carbohydrate_practical_target_g_range": [6.1, 56.1],
+    "intake_above_target_kcal": 0,
+    "status": "全天最终：累计摄入中位约1600千卡，蛋白质约129.7克、脂肪约60.2克、碳水约143.9克；无运动记录，保守缺口约278千卡。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 93.0,
+    "day_over_day_change_kg": -0.35,
+    "seven_day_average_kg": 92.41,
+    "seven_day_period": "2026-08-30至2026-09-05",
+    "previous_seven_day_average_kg": 92.41,
+    "previous_seven_day_period": "2026-08-29至2026-09-04",
+    "seven_day_average_change_kg": 0.0,
+    "interpretation": "较前一日下降0.35千克，符合前日高盐高碳水后水分波动的回落；7日均重与上一窗口基本持平，继续以连续趋势而非单日变化判断。"
+  },
+  "notes": [
+    "空腹体重92.65千克，较前一日下降0.35千克；BMI约31.0。",
+    "按92.65千克计算基础代谢约1878千卡，今日固定饮食上限1880千卡。",
+    "早餐未进食。",
+    "午餐照片显示食其家牛丼饭为肥牛和米饭分装；肥牛熟制可食部分约200–220克，米饭约300–350克；肥牛甜口，酱汁按附着部分计入，汤未喝不计入。整餐中位约960千卡、蛋白质约42克。",
+    "晚餐：零脂酸奶实际约50克、浓缩原味发酵乳120克、墨虾丸250克，合计约399千卡、蛋白质约50.1克；另加餐黄花鱼丸200克约241千卡、蛋白质37.6克。两包丸子合计钠约1462毫克，后续避免其他高钠加工食品。",
+    "09-04在无新增食物或训练报告的情况下已封账：摄入约1895千卡、力量训练动态313千卡、中位保守缺口约299千卡。",
+    "2026-09-06已开始报告新一天；据此将09-05在无新增食物或训练报告的情况下封账。"
+  ]
+}

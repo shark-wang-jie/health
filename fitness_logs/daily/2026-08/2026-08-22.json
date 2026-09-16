@@ -1,0 +1,187 @@
+{
+  "date": "2026-08-22",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1897,
+    "bmr_note": "按2026-08-22早晨空腹体重94.55千克，用米夫林-圣乔尔公式10×94.55 + 6.25×173 - 5×27 + 5 = 1896.75千卡估算。"
+  },
+  "morning_weight_kg": 94.55,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢1897千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1900千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "中等大小香蕉一根、此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 290,
+      "protein_g_estimate": 9.3,
+      "fat_g_estimate": 9.8,
+      "carbs_g_estimate": 39.5,
+      "components": [
+        {
+          "food": "香蕉",
+          "amount": "中等大小一根",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27,
+          "confidence": "未称重，按可食部分约120克估算。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "一瓶，暂按此前同款260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "confidence": "沿用此前同款纯牛奶记录；如本次品牌、容量或标签不同需修正。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "鸡腿饭：按默认两只鸡腿去皮、一些蔬菜和约半份米饭",
+      "kcal_estimate": 720,
+      "kcal_range": [
+        580,
+        930
+      ],
+      "protein_g_estimate": 59.5,
+      "protein_g_range": [
+        50,
+        69
+      ],
+      "fat_g_estimate": 30,
+      "fat_g_range": [
+        20,
+        45
+      ],
+      "carbs_g_estimate": 58.5,
+      "carbs_g_range": [
+        49,
+        68
+      ],
+      "confidence": "用户只说鸡腿饭，沿用既有默认约定：两只鸡腿去皮、一些蔬菜和约半份米饭；如当天实际不同需修正。"
+    },
+    {
+      "meal": "晚餐",
+      "description": "此前同款荞麦锅巴100克、中等大小香蕉一根、此前同款原味发酵乳500克",
+      "kcal_estimate": 921,
+      "protein_g_estimate": 26.9,
+      "fat_g_estimate": 28.2,
+      "carbs_g_estimate": 138.5,
+      "components": [
+        {
+          "food": "荞麦锅巴",
+          "amount": "100克",
+          "kcal_estimate": 398,
+          "protein_g_estimate": 5.6,
+          "fat_g_estimate": 2.8,
+          "carbs_g_estimate": 83.5,
+          "dietary_fiber_g_estimate": 6.1,
+          "sodium_mg_estimate": 315,
+          "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+        },
+        {
+          "food": "香蕉",
+          "amount": "中等大小一根",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27,
+          "confidence": "未称重，按可食部分约120克估算。"
+        },
+        {
+          "food": "原味发酵乳",
+          "amount": "500克",
+          "kcal_estimate": 416,
+          "protein_g_estimate": 20,
+          "fat_g_estimate": 25,
+          "carbs_g_estimate": 28,
+          "nutrition_basis": "沿用此前同款每100克348千焦、蛋白质4克、脂肪5克、碳水5.6克的标签；如本次不是同款需修正。"
+        }
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1931,
+    "intake_kcal_range": [
+      1791,
+      2141
+    ],
+    "protein_g_estimate": 95.7,
+    "protein_g_range": [
+      86.2,
+      105.2
+    ],
+    "fat_g_estimate": 68,
+    "fat_g_range": [
+      58,
+      83
+    ],
+    "carbs_g_estimate": 236.5,
+    "carbs_g_range": [
+      227,
+      246
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1931,
+    "net_intake_after_exercise_kcal_range": [
+      1791,
+      2141
+    ],
+    "provisional_conservative_deficit_kcal": -34,
+    "provisional_conservative_deficit_kcal_range": [
+      -244,
+      106
+    ],
+    "remaining_to_intake_target_kcal": -31,
+    "remaining_to_intake_target_kcal_range": [
+      -241,
+      109
+    ],
+    "remaining_while_preserving_min_deficit_kcal": -434,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -644,
+      -294
+    ],
+    "remaining_to_protein_target_g": 74.3,
+    "remaining_to_protein_target_g_range": [
+      64.8,
+      83.8
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      -86.5,
+      -56.5
+    ],
+    "status": "全天最终：累计摄入中位约1931千卡，合理范围约1791-2141千卡；蛋白质约86.2-105.2克、脂肪约58-83克、碳水约227-246克。无运动记录；按基础代谢口径为中位约34千卡保守盈余，合理范围约106千卡缺口至244千卡盈余。"
+  },
+  "notes": [
+    "空腹体重94.55千克，较2026-08-21的93.70千克上升0.85千克。结合前一日晚间高钠、高碳水、高脂聚餐，主要按糖原与伴随水分、钠潴留和胃肠内容物增加解读，不视为隔夜增加0.85千克脂肪。",
+    "按94.55千克计算基础代谢约1897千卡，今日固定饮食上限为1900千卡。",
+    "早餐中等大小香蕉一根和一瓶此前同款纯牛奶，合计约290千卡、蛋白质9.3克、脂肪9.8克、碳水39.5克。",
+    "早餐蛋白质明显不足。今天正常执行1900千卡固定上限，不因昨日聚餐断食或惩罚性运动；午餐和晚餐必须优先天然低脂蛋白质。",
+    "午餐鸡腿饭沿用默认口径：两只鸡腿去皮、一些蔬菜和约半份米饭；中位约720千卡，合理范围约580-930千卡。",
+    "截至午餐累计中位约1010千卡，合理范围约870-1220千卡；蛋白质约59.3-78.3克、脂肪约29.8-54.8克、碳水约88.5-107.5克。晚餐继续优先天然低脂蛋白质。"
+    ,"晚餐吃此前同款荞麦锅巴100克、中等大小香蕉一根和此前同款原味发酵乳500克，合计约921千卡、蛋白质26.9克、脂肪28.2克、碳水138.5克。"
+    ,"晚餐后累计中位约1931千卡，合理范围约1791-2141千卡；蛋白质约86.2-105.2克、脂肪约58-83克、碳水约227-246克。中位超过1900千卡固定上限约31千卡，蛋白质仍明显不足。"
+    ,"晚餐结构不合格：锅巴和香蕉造成大量碳水，500克全脂发酵乳增加约25克脂肪，却没有补足蛋白质。今晚停止进食，不再追补蛋白质。"
+    ,"2026-08-23已开始报告新一天，据此按晚餐后没有新增摄入或运动正式封账。"
+  ]
+}

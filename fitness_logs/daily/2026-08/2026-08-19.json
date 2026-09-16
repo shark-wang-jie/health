@@ -1,0 +1,287 @@
+{
+  "date": "2026-08-19",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1876,
+    "bmr_note": "按2026-08-19早晨空腹体重92.50千克，用米夫林-圣乔尔公式10×92.50 + 6.25×173 - 5×27 + 5 = 1876.25千卡估算。"
+  },
+  "morning_weight_kg": 92.5,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1876千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1880千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升、此前同款墨虾丸一包250克",
+      "kcal_estimate": 405,
+      "protein_g_estimate": 44.5,
+      "fat_g_estimate": 11.2,
+      "carbs_g_estimate": 26.8,
+      "sodium_mg_estimate": 1270,
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "一瓶，暂按此前同款260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "confidence": "沿用此前同款纯牛奶记录；如本次品牌、容量或标签不同需修正。"
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "一包，沿用此前同款250克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "nutrition_basis": "沿用此前同款每100克371千焦、蛋白质14.6克、脂肪0.7克、碳水5.7克、钠508毫克的标签。"
+        }
+      ],
+      "confidence": "牛奶与墨虾丸均按此前同款及既有规格记录；墨虾丸属于高钠加工食品。"
+    },
+    {
+      "meal": "午餐",
+      "description": "鸡腿饭：按默认两只鸡腿去皮、一些蔬菜，米饭实际吃约三分之二",
+      "kcal_estimate": 780,
+      "kcal_range": [
+        620,
+        990
+      ],
+      "protein_g_estimate": 60.5,
+      "protein_g_range": [
+        51,
+        70
+      ],
+      "fat_g_estimate": 30,
+      "fat_g_range": [
+        20,
+        43
+      ],
+      "carbs_g_estimate": 70,
+      "carbs_g_range": [
+        58,
+        82
+      ],
+      "confidence": "用户只说明鸡腿饭及米饭吃了三分之二，鸡腿数量与是否去皮按既有默认约定记录为两只去皮鸡腿；未提供照片或称重，误差主要来自鸡腿净肉量、菜品用油和整份米饭初始重量。如本次并非两只去皮鸡腿需修正。"
+    },
+    {
+      "meal": "练后餐",
+      "description": "两盒米饭每盒约350克，青椒毛豆炒肉丝全部吃完，传统东坡把子肉和长条把子肉按餐后照片扣除剩余肉块及大量汤汁",
+      "kcal_estimate": 1720,
+      "kcal_range": [
+        1500,
+        1950
+      ],
+      "protein_g_estimate": 77,
+      "protein_g_range": [
+        60,
+        95
+      ],
+      "fat_g_estimate": 119,
+      "fat_g_range": [
+        90,
+        150
+      ],
+      "carbs_g_estimate": 153,
+      "carbs_g_range": [
+        135,
+        175
+      ],
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "两盒餐前各约350克，共约700克；按餐后照片估算合计剩约200-280克，实际吃下约420-500克",
+          "kcal_estimate": 535,
+          "kcal_range": [
+            490,
+            580
+          ],
+          "protein_g_estimate": 11,
+          "fat_g_estimate": 1.5,
+          "carbs_g_estimate": 118,
+          "confidence": "起始重量由用户明确；实际入口量根据两盒餐后剩余照片估算。"
+        },
+        {
+          "food": "青椒毛豆炒肉丝",
+          "amount": "一份，用户确认全部吃完",
+          "kcal_estimate": 450,
+          "kcal_range": [
+            350,
+            600
+          ],
+          "protein_g_estimate": 28,
+          "protein_g_range": [
+            22,
+            35
+          ],
+          "fat_g_estimate": 30,
+          "fat_g_range": [
+            20,
+            43
+          ],
+          "carbs_g_estimate": 25,
+          "carbs_g_range": [
+            18,
+            35
+          ],
+          "confidence": "整份吃完；主要误差来自肉丝肥瘦和餐馆用油。"
+        },
+        {
+          "food": "传统东坡把子肉、长条把子肉和辣椒",
+          "amount": "按餐前与餐后照片差额估算实际吃下部分；剩余肉块及大量汤汁不计",
+          "kcal_estimate": 735,
+          "kcal_range": [
+            560,
+            880
+          ],
+          "protein_g_estimate": 38,
+          "protein_g_range": [
+            27,
+            49
+          ],
+          "fat_g_estimate": 87.5,
+          "fat_g_range": [
+            69,
+            107
+          ],
+          "carbs_g_estimate": 10,
+          "carbs_g_range": [
+            5,
+            20
+          ],
+          "confidence": "传统东坡把子肉标注生肉约150克，另有一条长条把子肉；两者肥瘦、熟制失水和实际剩余重量均不明确，误差较大。照片中的剩余肉块和未喝汤汁已扣除。"
+        }
+      ],
+      "photo_paths": {
+        "final_leftovers": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/A9F2B0C6-2562-48FE-8504-64519934F940/1-照片-1.jpg",
+        "before_meal_overview": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/A9F2B0C6-2562-48FE-8504-64519934F940/2-照片-2.jpg",
+        "before_meal_pork": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/A9F2B0C6-2562-48FE-8504-64519934F940/3-照片-3.jpg"
+      },
+      "confidence": "按用户确认的米饭起始重量、全部吃完的青椒毛豆肉丝和餐前餐后照片差额估算；把子肉脂肪含量和剩余净重是主要误差来源。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:36",
+      "end_time": "18:33",
+      "duration": "57分01秒",
+      "elapsed_time": "57分06秒",
+      "active_kcal": 425,
+      "total_kcal": 525,
+      "average_heart_rate_bpm": 122,
+      "heart_rate_range_bpm": [
+        83,
+        157
+      ],
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/D5AB755E-482A-47FE-A988-2D3F743B1FD5/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量425千卡，不重复加入总热量525千卡。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "22:06",
+      "end_time": "23:09",
+      "duration": "1小时03分23秒",
+      "elapsed_time": "1小时03分27秒",
+      "active_kcal": 661,
+      "total_kcal": 779,
+      "average_heart_rate_bpm": 148,
+      "heart_rate_range_bpm": [
+        99,
+        160
+      ],
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/07694205-B0FD-4C33-8856-2624E868DE51/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量661千卡，不重复加入总热量779千卡。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 2905,
+    "intake_kcal_range": [
+      2525,
+      3345
+    ],
+    "protein_g_estimate": 182,
+    "protein_g_range": [
+      155.5,
+      209.5
+    ],
+    "fat_g_estimate": 160.2,
+    "fat_g_range": [
+      121.2,
+      204.2
+    ],
+    "carbs_g_estimate": 249.8,
+    "carbs_g_range": [
+      219.8,
+      283.8
+    ],
+    "exercise_active_kcal": 1086,
+    "net_intake_after_exercise_kcal": 1819,
+    "net_intake_after_exercise_kcal_range": [
+      1439,
+      2259
+    ],
+    "provisional_conservative_deficit_kcal": 57,
+    "provisional_conservative_deficit_kcal_range": [
+      -383,
+      437
+    ],
+    "remaining_to_intake_target_kcal": -1025,
+    "remaining_to_intake_target_kcal_range": [
+      -1465,
+      -645
+    ],
+    "remaining_while_preserving_min_deficit_kcal": -1429,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -1869,
+      -1049
+    ],
+    "remaining_to_protein_target_g": -12,
+    "remaining_to_protein_target_g_range": [
+      -39.5,
+      14.5
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      -99.8,
+      -69.8
+    ],
+    "status": "全天最终：累计摄入中位约2905千卡，合理范围约2525-3345千卡；蛋白质约155.5-209.5克、脂肪约121.2-204.2克、碳水约219.8-283.8克。力量训练与室内单车动态消耗合计1086千卡；按基础代谢口径保守缺口中位约57千卡，合理范围约383千卡盈余至437千卡缺口，未达到400-700千卡目标。"
+  },
+  "notes": [
+    "空腹体重92.50千克，较2026-08-18的92.80千克下降0.30千克；属于短期波动，继续结合3-7天趋势判断。",
+    "按92.50千克计算基础代谢约1876千卡，今日固定饮食上限为1880千卡。",
+    "早餐牛奶和墨虾丸合计约405千卡、蛋白质44.5克、脂肪11.2克、碳水26.8克。早餐蛋白质明显好于此前仅喝牛奶，但仍未达到工作日早餐60-70克分配框架。",
+    "墨虾丸约含钠1270毫克，属于加工食品，不建议今天后续继续依靠高钠丸类或加工肉制品补蛋白。",
+    "午餐鸡腿饭按默认两只鸡腿去皮记录，米饭实际吃约三分之二；中位约780千卡，合理范围约620-990千卡。",
+    "截至午餐累计中位约1185千卡，合理范围约1025-1395千卡；蛋白质约95.5-114.5克、脂肪约31.2-54.2克、碳水约84.8-108.8克。",
+    "未记录运动时，为保留至少400千卡保守缺口，晚间中位口径原本还可摄入约291千卡；考虑午餐误差约81-451千卡。",
+    "力量训练后吃外卖练后餐：两盒米饭餐前各约350克，共约700克；按最终剩余照片估算实际吃下约420-500克。青椒毛豆炒肉丝全部吃完；传统东坡把子肉和长条把子肉按餐后照片扣除剩余肉块及大量汤汁。",
+    "练后餐中位估算约1720千卡，合理范围约1500-1950千卡；蛋白质约60-95克、脂肪约90-150克、碳水约135-175克。",
+    "练后餐后全天累计中位约2905千卡，合理范围约2525-3345千卡；超过1880千卡固定上限中位约1025千卡。未记录运动时，按基础代谢口径为约1029千卡保守盈余。",
+    "17:36-18:33完成传统力量训练57分01秒；Apple Watch动态消耗425千卡、总消耗525千卡、平均心率122次/分，心率范围约83-157次/分。缺口只计动态热量。",
+    "计入力量训练后，当前运动后净摄入中位约2480千卡，合理范围约2100-2920千卡；按基础代谢口径仍为中位约604千卡保守盈余，合理范围约224-1044千卡盈余。",
+    "22:06-23:09完成室内单车1小时03分23秒；Apple Watch动态消耗661千卡、总消耗779千卡、平均心率148次/分，心率范围约99-160次/分。缺口只计动态热量。",
+    "力量训练与室内单车动态消耗合计1086千卡；运动后净摄入中位约1819千卡，合理范围约1439-2259千卡；按基础代谢口径最终保守缺口中位约57千卡，合理范围约383千卡盈余至437千卡缺口，未达到400-700千卡目标。",
+    "用户于23:09后确认今天运动和饮食全部结束，正式封账。",
+    "当日热量、脂肪和碳水均明显超标；两次训练不改变固定饮食上限，也不把这次执行判定为达标。次日正常吃饭，不断食、不做补偿性运动。"
+  ]
+}

@@ -1,0 +1,665 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-10",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户已开始09-11并报告空腹体重及早餐，按跨日规则封存09-10；非用户明确确认全部饮食训练完整。",
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 90.8,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.8,
+    "bmr_weight_date": "2026-09-10",
+    "bmr_kcal": 1859.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "description": "默认纯牛奶260毫升",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "默认纯牛奶260毫升",
+      "kcal_base_estimate": 183.0,
+      "kcal_booked": 183.0,
+      "kcal_range": [
+        183.0,
+        183.0
+      ],
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "id": "2026-09-10-breakfast-milk-1",
+      "status": "consumed_estimated",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "早饭一瓶牛奶"
+    },
+    {
+      "id": "2026-09-10-breakfast-pork-liver-1",
+      "status": "consumed_estimated",
+      "meal": "早餐",
+      "description": "包装猪肝1包，用户估计约50克",
+      "reported_text": "一包猪肝重量大概五十克",
+      "source_kind": "matched_default",
+      "basis": "采用本次照片清晰标签：每100克844千焦、蛋白质23.8克、脂肪8.8克、饱和脂肪2.5克、碳水6.7克、糖2.8克、钠1220毫克。包装为计量称重，照片未见本包净重；按用户约50克估算，不把50克当作包装标注。",
+      "quantity_g_estimate": 50,
+      "quantity_g_range": [
+        40,
+        60
+      ],
+      "kcal_base_estimate": 100.8604206500956,
+      "kcal_booked": 100.8604206500956,
+      "kcal_range": [
+        80.68833652007649,
+        121.0325047801147
+      ],
+      "protein_g_estimate": 11.9,
+      "protein_g_range": [
+        9.52,
+        14.28
+      ],
+      "fat_g_estimate": 4.4,
+      "fat_g_range": [
+        3.52,
+        5.28
+      ],
+      "carbs_g_estimate": 3.35,
+      "carbs_g_range": [
+        2.68,
+        4.02
+      ],
+      "saturated_fat_g_estimate": 1.25,
+      "sugars_g_estimate": 1.4,
+      "sodium_mg_estimate": 610,
+      "nutrition_per_100g": {
+        "energy_kj": 844,
+        "protein_g": 23.8,
+        "fat_g": 8.8,
+        "saturated_fat_g": 2.5,
+        "carbs_g": 6.7,
+        "sugars_g": 2.8,
+        "sodium_mg": 1220
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "有本次营养标签，使用用户份量估计；份量误差以40–60克条件范围体现，不额外假设烹调用油。"
+      },
+      "uncertainty": "用户估计约50克、非实测；40–60克为操作性份量范围，非照片测量。",
+      "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/4D42FAE9-CD29-4B0F-81AA-93129672643F/1-照片-1.jpg"
+    },
+    {
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "meal": "午餐",
+      "source_kind": "matched_default",
+      "basis": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "kcal_base_estimate": 885.0,
+      "kcal_booked": 973.5000000000001,
+      "kcal_range": [
+        710.0,
+        1080.0
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91.0,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+      "protein_g_range": [
+        57.0,
+        84.0
+      ],
+      "fat_g_range": [
+        18.0,
+        51.0
+      ],
+      "carbs_g_range": [
+        73.0,
+        118.0
+      ],
+      "id": "2026-09-10-lunch-shaxian-1",
+      "status": "consumed_estimated",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "午饭沙县鸡腿饭"
+    },
+    {
+      "id": "2026-09-10-afternoon-broad-beans-1",
+      "status": "consumed_estimated",
+      "meal": "下午加餐",
+      "description": "蚕豆小零食约20克，暂按常见油炸款",
+      "reported_text": "下午吃了一小包蚕豆小零食 大概20g",
+      "source_kind": "database_estimate",
+      "basis": "无品牌或营养标签，使用常见油炸蚕豆零食的一般估算：约500千卡/100克；20克基础约100千卡，额外10千卡为用油不确定性的记账余量，非实测。",
+      "quantity_g_estimate": 20,
+      "quantity_g_range": [
+        15,
+        25
+      ],
+      "kcal_base_estimate": 100,
+      "kcal_booked": 110,
+      "kcal_range": [
+        75,
+        140
+      ],
+      "protein_g_estimate": 4.5,
+      "fat_g_estimate": 6.111111111111111,
+      "carbs_g_estimate": 9.3,
+      "margin": {
+        "added_fat_g": 1.1111111111111112,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无标签油炸零食，基础值上保留约10%用油估算余量"
+      },
+      "uncertainty": "20克为用户估计；暂按15–25克及常见油炸款估算，范围并非测量或统计置信区间，有标签可修正。"
+    },
+    {
+      "id": "2026-09-10-afternoon-banana-1",
+      "status": "consumed_estimated",
+      "meal": "下午加餐",
+      "description": "中等大小香蕉1根，可食部分暂估120克",
+      "reported_text": "又吃了一根中等大小香蕉",
+      "source_kind": "database_estimate",
+      "basis": "沿用中等香蕉估算：可食部分约120克；常见生香蕉每100克约89千卡、蛋白质1.1克、脂肪0.3克、碳水22.8克。",
+      "quantity_g_estimate": 120,
+      "quantity_g_range": [
+        100,
+        140
+      ],
+      "kcal_base_estimate": 107,
+      "kcal_booked": 107,
+      "kcal_range": [
+        89,
+        125
+      ],
+      "protein_g_estimate": 1.3,
+      "protein_g_range": [
+        1.1,
+        1.5
+      ],
+      "fat_g_estimate": 0.4,
+      "fat_g_range": [
+        0.3,
+        0.5
+      ],
+      "carbs_g_estimate": 27.4,
+      "carbs_g_range": [
+        22.8,
+        31.9
+      ],
+      "fiber_g_estimate": 3.1,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "单一水果不机械加成，以份量范围体现误差"
+      },
+      "uncertainty": "用户报告中等大小，未称重；100–140克为可食部分操作性估算范围。",
+      "fruit_vegetable_g_estimate": 120
+    },
+    {
+      "id": "2026-09-10-dinner-pizza-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "达美乐培根土豆薄脆披萨9寸一整个",
+      "reported_text": "一整个达美乐培根土豆薄脆披萨；后续确认9寸",
+      "source_kind": "database_estimate",
+      "basis": "用户确认9寸整张薄脆披萨，按饼底与配料全吃估算；基础1050千卡及10%记账余量沿用。无官方标签，按一般培根土豆奶酪薄底披萨估算。",
+      "kcal_base_estimate": 1050,
+      "kcal_booked": 1155.0,
+      "kcal_range": [
+        750,
+        1400
+      ],
+      "protein_g_estimate": 40,
+      "fat_g_estimate": 61.666666666666664,
+      "carbs_g_estimate": 110,
+      "margin": {
+        "added_fat_g": 11.666666666666666,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+      },
+      "uncertainty": "9寸已确认；具体配料、芝士及饼底重量未测，热量仍为估算，范围不是统计置信区间。",
+      "diameter_inches": 9
+    },
+    {
+      "id": "2026-09-10-dinner-kfc-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "KFC吮指原味鸡两块",
+      "reported_text": "KFC吮指原味鸡两块",
+      "source_kind": "database_estimate",
+      "basis": "部位未说明，按带皮及裹粉均吃、扣除骨头的两块中等炸鸡估算；每块基础约300千卡，实际胸/腿/翅部位及大小影响较大，非本次官方标签值。",
+      "kcal_base_estimate": 600,
+      "kcal_booked": 660.0,
+      "kcal_range": [
+        400,
+        800
+      ],
+      "protein_g_estimate": 45,
+      "fat_g_estimate": 46.666666666666664,
+      "carbs_g_estimate": 15,
+      "margin": {
+        "added_fat_g": 6.666666666666667,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+      },
+      "uncertainty": "部位未说明，按带皮及裹粉均吃、扣除骨头的两块中等炸鸡估算；每块基础约300千卡，实际胸/腿/翅部位及大小影响较大，非本次官方标签值。 所列范围是操作性估算范围，并非统计置信区间。"
+    },
+    {
+      "id": "2026-09-10-dinner-pistol-leg-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "德克士手枪腿一个",
+      "reported_text": "德克士手枪腿一个",
+      "source_kind": "database_estimate",
+      "basis": "按一个大号带皮裹粉炸全腿、可食部分约200克估算，骨头不计；无本次重量或官方标签。",
+      "kcal_base_estimate": 550,
+      "kcal_booked": 605.0,
+      "kcal_range": [
+        400,
+        750
+      ],
+      "protein_g_estimate": 40,
+      "fat_g_estimate": 44.111111111111114,
+      "carbs_g_estimate": 12,
+      "margin": {
+        "added_fat_g": 6.111111111111111,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+      },
+      "uncertainty": "按一个大号带皮裹粉炸全腿、可食部分约200克估算，骨头不计；无本次重量或官方标签。 所列范围是操作性估算范围，并非统计置信区间。"
+    },
+    {
+      "id": "2026-09-10-dinner-drumstick-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "琵琶腿一个",
+      "reported_text": "琵琶腿一个",
+      "source_kind": "database_estimate",
+      "basis": "品牌和做法未明确，结合本餐暂按一个带皮炸琵琶腿估算，可食部分约80克、骨头不计；如为卤制或去皮需修正。",
+      "kcal_base_estimate": 220,
+      "kcal_booked": 242.00000000000003,
+      "kcal_range": [
+        150,
+        350
+      ],
+      "protein_g_estimate": 18,
+      "fat_g_estimate": 16.444444444444443,
+      "carbs_g_estimate": 6,
+      "margin": {
+        "added_fat_g": 2.4444444444444446,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+      },
+      "uncertainty": "品牌和做法未明确，结合本餐暂按一个带皮炸琵琶腿估算，可食部分约80克、骨头不计；如为卤制或去皮需修正。 所列范围是操作性估算范围，并非统计置信区间。"
+    },
+    {
+      "id": "2026-09-10-dinner-dubai-cookies-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "迪拜软曲奇2枚，每枚60克，共120克；按此前同款标签",
+      "reported_text": "两个迪拜软曲奇；每个60g，沿用之前记录",
+      "source_kind": "matched_default",
+      "basis": "用户明确要求沿用此前同款；采用2026-08-03记录中迪拜软曲奇（树莓味）120克的标签换算及原取整值478千卡、蛋白质9.8克、脂肪32克、碳水37.8克、钠265毫克。原标签每100克1663千焦、蛋白质8.2克、脂肪26.7克、碳水31.5克、钠221毫克；本次不新增用油余量。",
+      "kcal_base_estimate": 478,
+      "kcal_booked": 478,
+      "kcal_range": [
+        478,
+        478
+      ],
+      "protein_g_estimate": 9.8,
+      "fat_g_estimate": 32,
+      "carbs_g_estimate": 37.8,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "已确认每枚60克并授权沿用此前同款标签，不额外加成。"
+      },
+      "uncertainty": "沿用历史同款标签与取整值，未重新核验本次包装；固定记账值不代表实际热量无误差。",
+      "quantity_g_estimate": 120,
+      "unit_weight_g": 60,
+      "units": 2,
+      "sodium_mg_estimate": 265,
+      "nutrition_per_100g": {
+        "energy_kj": 1663,
+        "protein_g": 8.2,
+        "fat_g": 26.7,
+        "carbs_g": 31.5,
+        "sodium_mg": 221
+      },
+      "reference_record": "fitness_logs/daily/2026-08/2026-08-03.json"
+    },
+    {
+      "id": "2026-09-10-dinner-kfc-egg-tarts-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "额外KFC蛋挞2个，暂按常规原味葡式蛋挞",
+      "reported_text": "还额外吃了两个kfc蛋挞",
+      "source_kind": "database_estimate",
+      "basis": "未提供本次口味或营养标签，暂按常规原味葡式蛋挞每个约200千卡估算；两个约400千卡。是一般同类食品估算，不是已核验的KFC官方营养值。",
+      "units": 2,
+      "kcal_base_estimate": 400,
+      "kcal_booked": 400,
+      "kcal_range": [
+        340,
+        460
+      ],
+      "protein_g_estimate": 6,
+      "fat_g_estimate": 24,
+      "carbs_g_estimate": 40,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "已知个数的常规规格食品，基础值含酥皮及馅料油糖，不机械追加10%；配方与大小误差用范围体现。"
+      },
+      "uncertainty": "暂按常规原味款，口味和标签未核验；每个约170–230千卡的操作性范围，非统计置信区间。"
+    },
+    {
+      "id": "2026-09-10-dinner-coca-cola-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "含糖可口可乐1罐330毫升",
+      "reported_text": "喝了一罐330ml的可口可乐 有糖的",
+      "source_kind": "database_estimate",
+      "basis": "按常见原味含糖可口可乐每100毫升约42千卡、糖约10.6克估算，330毫升取整约140千卡、碳水及糖约35克；未核验本罐营养标签。",
+      "quantity_ml": 330,
+      "kcal_base_estimate": 140,
+      "kcal_booked": 140,
+      "kcal_range": [
+        135,
+        145
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 0,
+      "carbs_g_estimate": 35,
+      "sugars_g_estimate": 35,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "品牌、含糖款和饮用容量明确，常规规格不额外加成。"
+      },
+      "uncertainty": "沿用常见配方估算，地区配方与标签取整可能略有差异。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-09-10T21:36:22.058686+08:00",
+      "entry_id": "2026-09-10-afternoon-banana-1",
+      "reason": "修正蔬果字段名称，使既有香蕉可食部分120克进入已知蔬果合计；摄入份量、热量及宏量不变。",
+      "old": {
+        "fruit_vegetable_g": 120
+      },
+      "new": {
+        "fruit_vegetable_g_estimate": 120
+      }
+    },
+    {
+      "timestamp": "2026-09-10T21:37:13.059842+08:00",
+      "entry_id": "2026-09-10-dinner-pizza-1",
+      "reason": "用户确认披萨9寸、曲奇每个60克，并要求曲奇沿用历史记录。",
+      "old": {
+        "id": "2026-09-10-dinner-pizza-1",
+        "status": "consumed_estimated",
+        "meal": "晚餐",
+        "description": "达美乐培根土豆薄脆披萨一整个",
+        "reported_text": "达美乐培根土豆薄脆披萨一整个",
+        "source_kind": "database_estimate",
+        "basis": "尺寸未说明，点估算暂按9寸整张、饼底和配料全吃；一般薄底奶酪培根土豆披萨份量估算，非官方营养数据。范围保留更大规格的可能；不能将此前9寸其他口味视为本次确认。",
+        "kcal_base_estimate": 1050,
+        "kcal_booked": 1155.0,
+        "kcal_range": [
+          750,
+          1800
+        ],
+        "protein_g_estimate": 40,
+        "fat_g_estimate": 61.666666666666664,
+        "carbs_g_estimate": 110,
+        "margin": {
+          "added_fat_g": 11.666666666666666,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+        },
+        "uncertainty": "尺寸未说明，点估算暂按9寸整张、饼底和配料全吃；一般薄底奶酪培根土豆披萨份量估算，非官方营养数据。范围保留更大规格的可能；不能将此前9寸其他口味视为本次确认。 所列范围是操作性估算范围，并非统计置信区间。"
+      },
+      "new": {
+        "id": "2026-09-10-dinner-pizza-1",
+        "status": "consumed_estimated",
+        "meal": "晚餐",
+        "description": "达美乐培根土豆薄脆披萨9寸一整个",
+        "reported_text": "一整个达美乐培根土豆薄脆披萨；后续确认9寸",
+        "source_kind": "database_estimate",
+        "basis": "用户确认9寸整张薄脆披萨，按饼底与配料全吃估算；基础1050千卡及10%记账余量沿用。无官方标签，按一般培根土豆奶酪薄底披萨估算。",
+        "kcal_base_estimate": 1050,
+        "kcal_booked": 1155.0,
+        "kcal_range": [
+          750,
+          1400
+        ],
+        "protein_g_estimate": 40,
+        "fat_g_estimate": 61.666666666666664,
+        "carbs_g_estimate": 110,
+        "margin": {
+          "added_fat_g": 11.666666666666666,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+        },
+        "uncertainty": "9寸已确认；具体配料、芝士及饼底重量未测，热量仍为估算，范围不是统计置信区间。",
+        "diameter_inches": 9
+      }
+    },
+    {
+      "timestamp": "2026-09-10T21:37:13.059842+08:00",
+      "entry_id": "2026-09-10-dinner-dubai-cookies-1",
+      "reason": "用户确认披萨9寸、曲奇每个60克，并要求曲奇沿用历史记录。",
+      "old": {
+        "id": "2026-09-10-dinner-dubai-cookies-1",
+        "status": "consumed_estimated",
+        "meal": "晚餐",
+        "description": "迪拜软曲奇两个",
+        "reported_text": "迪拜软曲奇两个",
+        "source_kind": "database_estimate",
+        "basis": "品牌和单个重量未说明，暂按每个70克、合计140克的夹馅软曲奇及约500千卡/100克估算；迪拜风味并非统一配方，实际大小、坚果酱/巧克力馅料比例差异很大，非官方标签值。",
+        "kcal_base_estimate": 700,
+        "kcal_booked": 770.0000000000001,
+        "kcal_range": [
+          450,
+          1200
+        ],
+        "protein_g_estimate": 10,
+        "fat_g_estimate": 45.77777777777778,
+        "carbs_g_estimate": 80,
+        "margin": {
+          "added_fat_g": 7.777777777777778,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+        },
+        "uncertainty": "品牌和单个重量未说明，暂按每个70克、合计140克的夹馅软曲奇及约500千卡/100克估算；迪拜风味并非统一配方，实际大小、坚果酱/巧克力馅料比例差异很大，非官方标签值。 所列范围是操作性估算范围，并非统计置信区间。"
+      },
+      "new": {
+        "id": "2026-09-10-dinner-dubai-cookies-1",
+        "status": "consumed_estimated",
+        "meal": "晚餐",
+        "description": "迪拜软曲奇2枚，每枚60克，共120克；按此前同款标签",
+        "reported_text": "两个迪拜软曲奇；每个60g，沿用之前记录",
+        "source_kind": "matched_default",
+        "basis": "用户明确要求沿用此前同款；采用2026-08-03记录中迪拜软曲奇（树莓味）120克的标签换算及原取整值478千卡、蛋白质9.8克、脂肪32克、碳水37.8克、钠265毫克。原标签每100克1663千焦、蛋白质8.2克、脂肪26.7克、碳水31.5克、钠221毫克；本次不新增用油余量。",
+        "kcal_base_estimate": 478,
+        "kcal_booked": 478,
+        "kcal_range": [
+          478,
+          478
+        ],
+        "protein_g_estimate": 9.8,
+        "fat_g_estimate": 32,
+        "carbs_g_estimate": 37.8,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "已确认每枚60克并授权沿用此前同款标签，不额外加成。"
+        },
+        "uncertainty": "沿用历史同款标签与取整值，未重新核验本次包装；固定记账值不代表实际热量无误差。",
+        "quantity_g_estimate": 120,
+        "unit_weight_g": 60,
+        "units": 2,
+        "sodium_mg_estimate": 265,
+        "nutrition_per_100g": {
+          "energy_kj": 1663,
+          "protein_g": 8.2,
+          "fat_g": 26.7,
+          "carbs_g": 31.5,
+          "sodium_mg": 221
+        },
+        "reference_record": "fitness_logs/daily/2026-08/2026-08-03.json"
+      }
+    }
+  ],
+  "notes": [
+    "09-10已开始，早餐牛奶一瓶及包装猪肝约50克；后续补报空腹体重90.80公斤，BMR更新为1859.25千卡。09-09已封账不重复修改。",
+    "用户说明09-10不去健身房做力量训练，考虑晚间延长有氧；有氧尚为计划，未记录为已完成训练或计入消耗。",
+    "用户表示本周放纵餐结束、接下来几天正常吃饭；仅确认本餐结束，未据此认定全天训练结束或已完成计划有氧。",
+    "09-11开始新日，按跨日规则封存09-10；未报告晚间有氧是否实际完成，训练仍为unknown，不计算最终全天缺口；可补报更正。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 4813.860420650096,
+    "intake_kcal_booked": 5154.360420650096,
+    "protein_g_estimate": 255.0,
+    "fat_g_estimate": 282.03333333333336,
+    "carbs_g_estimate": 399.34999999999997,
+    "intake_kcal_estimate": 5154.360420650096,
+    "food_margin_kcal": 340.5,
+    "base_macro_estimates": {
+      "protein_g": 255.0,
+      "fat_g": 244.20000000000002,
+      "carbs_g": 399.34999999999997
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      3790.6883365200765,
+      6032.032504780114
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2231.1,
+    "estimated_deficit_kcal": -2923.260420650096,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 12,
+    "protein_by_meal_g": {
+      "下午加餐": 5.8,
+      "午餐": 70.5,
+      "早餐": 19.9,
+      "晚餐": 158.8
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 3,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 3,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 3,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 3.1,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 875.0,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": 120.0,
+    "fruit_vegetable_g_entries_with_data": 1,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "weight_trend": {
+    "previous_measured_date": "2026-09-09",
+    "previous_measured_weight_kg": 90.6,
+    "day_over_day_change_kg": 0.2,
+    "change_since_first_record_kg": -7.45,
+    "window_start": "2026-09-04",
+    "window_end": "2026-09-10",
+    "valid_measurements": 6,
+    "mean_weight_kg": 91.83,
+    "interpretation": "较昨日增加0.20公斤，属于常见短期波动，不能据此判断脂肪增加；原饮食目标不因单日变化调整。"
+  }
+}

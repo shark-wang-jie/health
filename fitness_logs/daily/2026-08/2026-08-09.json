@@ -1,0 +1,228 @@
+{
+  "date": "2026-08-09",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1889,
+    "bmr_note": "按 2026-08-09 早晨空腹体重 93.75 千克，用米夫林-圣乔尔公式 10×93.75 + 6.25×173 - 5×27 + 5 = 1888.75 千卡估算。"
+  },
+  "morning_weight_kg": 93.75,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1889 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "下午第一顿",
+      "description": "无油焗高盐黑金刚虎虾一斤约 500 克活重、原味发酵乳 500 克",
+      "kcal_estimate": 656,
+      "kcal_range": [
+        606,
+        716
+      ],
+      "protein_g_range": [
+        65,
+        85
+      ],
+      "fat_g_range": [
+        26.5,
+        29
+      ],
+      "carbs_g_range": [
+        28,
+        31
+      ],
+      "components": [
+        {
+          "food": "高盐黑金刚虎虾",
+          "amount": "一斤约 500 克带头带壳活重，无油焗制；估计可食虾肉约 220-300 克",
+          "kcal_estimate": 240,
+          "kcal_range": [
+            190,
+            300
+          ],
+          "protein_g_range": [
+            45,
+            65
+          ],
+          "fat_g_range": [
+            1.5,
+            4
+          ],
+          "carbs_g_range": [
+            0,
+            3
+          ],
+          "confidence": "用户确认采用无油焗制，食物干净且没有放油；按不吃虾头虾壳估算。主要误差来自虾的大小和头壳占比。若 500 克实际指净虾肉重量需明显上调。‘高盐’暂按养殖水体或品类描述理解，不在未报告额外加盐的情况下擅自增加热量或钠。"
+        },
+        {
+          "food": "原味发酵乳",
+          "amount": "500 克",
+          "kcal_estimate": 416,
+          "protein_g_estimate": 20,
+          "fat_g_estimate": 25,
+          "carbs_g_estimate": 28,
+          "sodium_mg_estimate": 200,
+          "nutrition_basis": "暂沿用此前同款原味发酵乳每 100 克：348 千焦、蛋白质 4 克、脂肪 5 克、碳水 5.6 克、钠 40 毫克。若本次并非同款需修正。"
+        }
+      ],
+      "notes": [
+        "用户睡醒时已到下午，计划当天只吃两顿；这不是要求断食，第二顿仍需正常安排。",
+        "500 克酸奶约提供 25 克脂肪；第二顿应优先天然低脂蛋白质，避免再叠加油炸食品或高脂酱料。",
+        "虎虾为无油焗制，因此不追加烹调油热量；焗制会降低成品含水量，但按烹调前整虾活重估算时不因此重复上调总热量。"
+      ]
+    },
+    {
+      "meal": "晚餐（第二顿）",
+      "description": "无油焗高盐黑金刚虎虾一斤约 500 克活重、重庆小面 120 克、小面调味料 15 克",
+      "kcal_estimate": 735,
+      "kcal_range": [
+        685,
+        795
+      ],
+      "protein_g_range": [
+        57.9,
+        77.9
+      ],
+      "fat_g_range": [
+        15,
+        17.5
+      ],
+      "carbs_g_range": [
+        79.7,
+        82.7
+      ],
+      "components": [
+        {
+          "food": "高盐黑金刚虎虾",
+          "amount": "一斤约 500 克带头带壳活重，沿用下午同样的无油焗制口径；估计可食虾肉约 220-300 克",
+          "kcal_estimate": 240,
+          "kcal_range": [
+            190,
+            300
+          ],
+          "protein_g_range": [
+            45,
+            65
+          ],
+          "fat_g_range": [
+            1.5,
+            4
+          ],
+          "carbs_g_range": [
+            0,
+            3
+          ],
+          "confidence": "沿用下午同批或同类虎虾的估算：带头带壳活重、无油焗制、不吃虾头虾壳。"
+        },
+        {
+          "food": "重庆小面",
+          "amount": "一包 120 克",
+          "kcal_estimate": 381,
+          "protein_g_estimate": 12.2,
+          "fat_g_estimate": 1.7,
+          "carbs_g_estimate": 78,
+          "sodium_mg_estimate": 414,
+          "label_per_100g": {
+            "energy_kj": 1330,
+            "protein_g": 10.2,
+            "fat_g": 1.4,
+            "carbs_g": 65,
+            "sodium_mg": 345
+          },
+          "nutrition_basis": "沿用 2026-08-07 拍摄的包装标签，每 100 克数据乘以 1.2。"
+        },
+        {
+          "food": "小面调味料",
+          "amount": "15 克",
+          "kcal_estimate": 114,
+          "protein_g_estimate": 0.7,
+          "fat_g_estimate": 11.8,
+          "saturated_fat_g_estimate": 0.9,
+          "carbs_g_estimate": 1.7,
+          "sugar_g_estimate": 0,
+          "sodium_mg_estimate": 731,
+          "label_per_100g": {
+            "energy_kj": 3186,
+            "protein_g": 4.7,
+            "fat_g": 78.9,
+            "saturated_fat_g": 6.1,
+            "trans_fat_g": 0,
+            "carbs_g": 11,
+            "sugar_g": 0,
+            "sodium_mg": 4873
+          },
+          "nutrition_basis": "沿用 2026-08-07 拍摄的包装标签，每 100 克数据乘以 0.15。"
+        }
+      ],
+      "notes": [
+        "面条和调味料合计约 495 千卡、蛋白质 12.9 克、脂肪 13.5 克、碳水 79.7 克、钠约 1145 毫克。",
+        "两顿计划已经完成，饮食部分暂封口；如后来仍有摄入需重新打开并追补。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1391,
+    "intake_kcal_range": [
+      1291,
+      1511
+    ],
+    "protein_g_range": [
+      122.9,
+      162.9
+    ],
+    "carbs_g_range": [
+      107.7,
+      113.7
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1391,
+    "net_intake_after_exercise_kcal_range": [
+      1291,
+      1511
+    ],
+    "conservative_deficit_kcal": 498,
+    "conservative_deficit_kcal_range": [
+      378,
+      598
+    ],
+    "remaining_to_intake_target_kcal": 499,
+    "remaining_to_intake_target_kcal_range": [
+      379,
+      599
+    ],
+    "remaining_to_protein_target_g_range": [
+      7.1,
+      47.1
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      36.3,
+      72.3
+    ],
+    "status": "全天最终：两顿累计摄入中位估算约 1391 千卡，合理范围约 1291-1511 千卡；蛋白质约 122.9-162.9 克、碳水约 107.7-113.7 克。没有收到运动记录，最终按运动 0 千卡结算；按基础代谢口径保守缺口中位约 498 千卡，位于 400-700 千卡目标范围。"
+  },
+  "notes": [
+    "空腹体重 93.75 千克，较 2026-08-08 的 93.60 千克上升 0.15 千克，属于正常日间波动；前一日高钠高碳水饮食仍可能影响储水。",
+    "按 93.75 千克计算当日基础代谢约 1889 千卡，固定饮食上限为 1890 千卡。",
+    "睡醒时已到下午，因此当天只吃两顿可以接受，但不能把第二顿取消或用零食代替；需要把剩余蛋白质和适量主食集中安排。",
+    "下午第一顿暂估约 656 千卡，蛋白质约 65-85 克。酸奶按此前同款 500 克计算；虎虾按 500 克带头带壳活重、无油焗制估算。‘高盐’暂按养殖水体或品类描述理解，未报告额外加盐时不按盐腌食品处理。",
+    "第二顿仍需约 85-105 克蛋白质，优先鸡胸、白肉鱼、虾、蛋清等低脂来源；固定饮食上限中位尚余约 1234 千卡。",
+    "晚餐吃一斤同样口径的无油焗虎虾、120 克重庆小面和 15 克小面调味料，中位约 735 千卡，合理范围约 685-795 千卡；蛋白质约 57.9-77.9 克、碳水约 79.7-82.7 克。",
+    "两顿累计中位约 1391 千卡，蛋白质约 122.9-162.9 克；未记录运动时保守缺口中位约 498 千卡，位于目标范围。用户此前明确今天只吃两顿，因此饮食部分暂封口；不需要追加食物或补偿性运动。",
+    "2026-08-10 已开始报告新一天，据此按 2026-08-09 此后没有进食或运动处理并正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

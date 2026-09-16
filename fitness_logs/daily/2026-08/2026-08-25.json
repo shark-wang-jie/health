@@ -1,0 +1,356 @@
+{
+  "date": "2026-08-25",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1877,
+    "bmr_note": "按2026-08-25早晨空腹体重92.60千克，用米夫林-圣乔尔公式10×92.60 + 6.25×173 - 5×27 + 5 = 1877.25千卡估算。"
+  },
+  "morning_weight_kg": 92.6,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1877千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "空气炸锅无油烤熟榴莲蜜薯130克、此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 359,
+      "kcal_range": [
+        339,
+        378
+      ],
+      "protein_g_estimate": 10.5,
+      "protein_g_range": [
+        10,
+        11
+      ],
+      "fat_g_estimate": 9.7,
+      "fat_g_range": [
+        9.5,
+        10
+      ],
+      "carbs_g_estimate": 53.5,
+      "carbs_g_range": [
+        49,
+        58
+      ],
+      "components": [
+        {
+          "food": "榴莲蜜薯",
+          "amount": "烤熟可食重130克，空气炸锅无油",
+          "kcal_estimate": 176,
+          "kcal_range": [
+            156,
+            195
+          ],
+          "protein_g_estimate": 2.5,
+          "protein_g_range": [
+            2,
+            3
+          ],
+          "fat_g_estimate": 0.3,
+          "carbs_g_estimate": 41,
+          "carbs_g_range": [
+            36.5,
+            45.5
+          ],
+          "estimation_note": "按无油烤熟红薯每100克约120-150千卡、中位135千卡估算；熟重含水量差异是主要误差。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：按默认两只鸡腿去皮、一些蔬菜和约半份米饭",
+      "kcal_estimate": 720,
+      "kcal_range": [
+        580,
+        930
+      ],
+      "protein_g_estimate": 59.5,
+      "protein_g_range": [
+        50,
+        69
+      ],
+      "fat_g_estimate": 30,
+      "fat_g_range": [
+        20,
+        45
+      ],
+      "carbs_g_estimate": 58.5,
+      "carbs_g_range": [
+        49,
+        68
+      ],
+      "confidence": "用户只说沙县鸡腿饭，沿用既有默认约定：两只鸡腿去皮、一些蔬菜和约半份米饭；如当天鸡腿数量、是否去皮、米饭份量或剩余情况不同需修正。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "空气炸锅无油烤熟蜜薯105克",
+      "kcal_estimate": 142,
+      "kcal_range": [
+        126,
+        158
+      ],
+      "protein_g_estimate": 2,
+      "protein_g_range": [
+        1.5,
+        2.5
+      ],
+      "fat_g_estimate": 0.2,
+      "fat_g_range": [
+        0.2,
+        0.3
+      ],
+      "carbs_g_estimate": 33.1,
+      "carbs_g_range": [
+        29.5,
+        36.8
+      ],
+      "estimation_note": "沿用早餐无油烤熟蜜薯每100克约120-150千卡、中位135千卡的口径；按烤熟可食重105克换算。"
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "半根中等大小糯玉米",
+      "kcal_estimate": 110,
+      "kcal_range": [
+        95,
+        120
+      ],
+      "protein_g_estimate": 2.5,
+      "protein_g_range": [
+        2,
+        3
+      ],
+      "fat_g_estimate": 1,
+      "fat_g_range": [
+        0.5,
+        1
+      ],
+      "carbs_g_estimate": 24,
+      "carbs_g_range": [
+        21,
+        27
+      ],
+      "estimation_note": "沿用中等大小糯玉米整根约220千卡、合理范围190-240千卡的默认口径，按半根计算。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "吃完约5个卤鹌鹑蛋和少量豆干；其余豆腐/腐竹/海带大多未吃。蛏子固体约120克吃完，盒内酸甜辣汤汁未吃",
+      "kcal_estimate": 275,
+      "kcal_range": [
+        210,
+        360
+      ],
+      "protein_g_estimate": 29.5,
+      "protein_g_range": [
+        24,
+        36
+      ],
+      "fat_g_estimate": 12,
+      "fat_g_range": [
+        10,
+        15
+      ],
+      "carbs_g_estimate": 11.5,
+      "carbs_g_range": [
+        6,
+        18
+      ],
+      "components": [
+        {
+          "food": "卤鹌鹑蛋",
+          "amount": "图片约5个；结合左盒固体总重200克修正为鹌鹑蛋大小",
+          "kcal_estimate": 85,
+          "kcal_range": [
+            70,
+            100
+          ],
+          "protein_g_estimate": 6.5,
+          "fat_g_estimate": 6,
+          "carbs_g_estimate": 0.5
+        },
+        {
+          "food": "豆腐、豆干、腐竹和海带",
+          "amount": "只吃少量豆干，其余绝大部分未吃",
+          "kcal_estimate": 60,
+          "kcal_range": [
+            40,
+            90
+          ],
+          "protein_g_estimate": 5,
+          "protein_g_range": [
+            3,
+            7
+          ],
+          "fat_g_estimate": 4,
+          "fat_g_range": [
+            2,
+            6
+          ],
+          "carbs_g_estimate": 3,
+          "carbs_g_range": [
+            2,
+            5
+          ]
+        },
+        {
+          "food": "蛏子",
+          "amount": "固体约120克吃完，仅计表面附着酸甜辣汁，盒内汤汁未吃",
+          "kcal_estimate": 130,
+          "kcal_range": [
+            100,
+            170
+          ],
+          "protein_g_estimate": 18,
+          "protein_g_range": [
+            14,
+            24
+          ],
+          "fat_g_estimate": 2,
+          "fat_g_range": [
+            1,
+            4
+          ],
+          "carbs_g_estimate": 8,
+          "carbs_g_range": [
+            3,
+            13
+          ]
+        }
+      ],
+      "estimation_note": "按最终剩余照片修正：左盒只吃约5个鹌鹑蛋和少量豆干，绝大多数豆制品与海带未吃；蛏子120克固体吃完，盒内酸甜辣汤汁未吃，仅计表面附着汁。卤味较咸，钠摄入可能较高。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/EADBFEFF-1737-4995-8898-6C7FB3BFD888/1-照片-1.jpg"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "默认浓缩原味发酵乳一杯120克",
+      "kcal_estimate": 145,
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "sodium_mg_estimate": 96,
+      "calcium_mg_estimate": 240,
+      "nutrition_basis": "沿用2026-08-23建立的默认一杯酸奶规格：120克；每100克506千焦、蛋白质8克、脂肪7克、碳水6.5克。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:41",
+      "end_time": "18:22",
+      "duration": "40分43秒",
+      "active_kcal": 223,
+      "total_kcal": 297,
+      "average_heart_rate_bpm": 108,
+      "calorie_accounting_basis": "只将Apple Watch动态千卡223计入运动消耗；总千卡297不重复计入。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/638F49D3-4AAF-45FB-9870-F4FF25ADDD27/3-照片-3.jpg"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:44",
+      "end_time": "22:17",
+      "duration": "32分20秒",
+      "elapsed_duration": "32分22秒",
+      "active_kcal": 353,
+      "total_kcal": 413,
+      "average_heart_rate_bpm": 150,
+      "heart_rate_range_bpm": [
+        107,
+        163
+      ],
+      "calorie_accounting_basis": "只将Apple Watch动态千卡353计入运动消耗；总千卡413不重复计入。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/3FDB5088-B93D-4428-9429-63A89FAA0E30/1-照片-1.jpg"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1751,
+    "intake_kcal_range": [
+      1495,
+      2091
+    ],
+    "protein_g_estimate": 113.6,
+    "protein_g_range": [
+      97.1,
+      131.1
+    ],
+    "fat_g_estimate": 61.3,
+    "fat_g_range": [
+      48.6,
+      79.7
+    ],
+    "carbs_g_estimate": 188.4,
+    "carbs_g_range": [
+      162.3,
+      215.6
+    ],
+    "exercise_active_kcal": 576,
+    "net_intake_after_exercise_kcal": 1175,
+    "net_intake_after_exercise_kcal_range": [
+      919,
+      1515
+    ],
+    "provisional_conservative_deficit_kcal": 702,
+    "provisional_conservative_deficit_kcal_range": [
+      362,
+      958
+    ],
+    "remaining_to_intake_target_kcal": 129,
+    "remaining_to_intake_target_kcal_range": [
+      -211,
+      385
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 302,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      0,
+      558
+    ],
+    "remaining_to_protein_target_g": 56.4,
+    "remaining_to_protein_target_g_range": [
+      38.9,
+      72.9
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      0
+    ],
+    "status": "全天最终：累计摄入中位约1751千卡，合理范围约1495-2091千卡；蛋白质约97.1-131.1克、脂肪约48.6-79.7克、碳水约162.3-215.6克。力量训练与室内单车动态消耗合计576千卡；中位低于1880千卡固定饮食上限约129千卡，按基础代谢加动态运动口径为中位约702千卡缺口，处于目标上沿附近。"
+  },
+  "notes": [
+    "空腹体重92.60千克，较2026-08-24的93.50千克下降0.90千克。单日降幅主要按水分、糖原和胃肠内容物变化解读，不视为隔夜减少0.90千克脂肪。",
+    "按92.60千克计算基础代谢约1877千卡，今日固定饮食上限为1880千卡。",
+    "早餐无油烤熟榴莲蜜薯130克和一瓶此前同款纯牛奶，中位约359千卡；碳水约53.5克，但蛋白质仅约10.5克。",
+    "今日正常饮食，不因8月24日超标而断食或进行惩罚性训练；后续两餐优先鸡胸、鱼虾、蛋清、瘦肉等天然低脂蛋白质。",
+    "午餐沙县鸡腿饭沿用默认口径：两个鸡腿去皮、一些蔬菜和约半份米饭；中位约720千卡，合理范围约580-930千卡。如用户补充实际剩余需追溯修正。",
+    "下午加餐无油烤熟蜜薯105克，约142千卡、碳水约33.1克。加餐后碳水中位约145.1克，晚餐不再安排主食或薯类。",
+    "传统力量训练40分43秒，Apple Watch动态223千卡、总297千卡、平均心率108次/分；只将动态223千卡计入消耗。",
+    "训练后吃半根中等大小糯玉米，约110千卡、蛋白质2.5克、碳水24克。",
+    "计划晚餐吃香干马兰头及P2卤牛肉；马兰头图片只显示每100克578千焦、蛋白质3.9克、脂肪10.8克、碳水6.6克，未显示整盒净重，尚未计入实际摄入。P2卤牛肉每100克646千焦、蛋白质25.9克、脂肪4.5克。",
+    "晚间加餐最终：左盒只吃约5个鹌鹑蛋和少量豆干，其余豆腐/腐竹/海带因偏咸未吃；蛏子固体约120克吃完，酸甜辣汤汁未吃。按最终剩余将该加餐从460千卡修正为中位约275千卡、范围约210-360千卡。",
+    "随后加餐一杯默认浓缩原味发酵乳120克，约145千卡、蛋白质9.6克、脂肪8.4克、碳水7.8克。",
+    "21:44-22:17完成室内单车32分20秒；Apple Watch动态消耗353千卡、总消耗413千卡、平均心率150次/分，心率范围约107-163次/分。只将动态353千卡计入消耗。",
+    "两次训练动态消耗合计576千卡；全天中位保守缺口约702千卡，合理范围约362-958千卡，处于400-700千卡目标上沿附近。",
+    "2026-08-26开始报告新一天，据此按室内单车后没有新增摄入或运动正式封账。"
+  ]
+}

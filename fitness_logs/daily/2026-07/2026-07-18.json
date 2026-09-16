@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-18",
+  "timezone": "亚洲/上海",
+  "record_status": "partial",
+  "missing_sections": [
+    "午餐及其他未报告餐食",
+    "当日运动确认",
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1912,
+    "bmr_note": "按 2026-07-18 早晨体重 96.05 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 96.05,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "七个鸡蛋清、一个蛋黄、烤红薯 200 克",
+      "kcal_estimate": 368,
+      "kcal_range": [
+        340,
+        400
+      ],
+      "protein_g_range": [
+        27,
+        28
+      ],
+      "confidence": "鸡蛋沿用此前同批偏小鸡蛋口径；红薯按烤后重量且未额外加油糖估算",
+      "components": [
+        {
+          "food": "鸡蛋清和蛋黄",
+          "amount": "七个偏小鸡蛋的蛋清、一个蛋黄",
+          "kcal_estimate": 148,
+          "protein_g_range": [
+            24,
+            25
+          ]
+        },
+        {
+          "food": "烤红薯",
+          "amount": "烤后 200 克",
+          "kcal_estimate": 220,
+          "kcal_range": [
+            195,
+            240
+          ],
+          "protein_g_estimate": 3
+        }
+      ],
+      "notes": [
+        "其余六个蛋黄未吃，不计入摄入。",
+        "红薯按烤后 200 克、未加油、糖或蜂蜜计算；若 200 克为生重可再修正。"
+      ]
+    },
+    {
+      "meal": "晚间进食",
+      "description": "烤红薯约 150 克",
+      "kcal_estimate": 165,
+      "kcal_range": [
+        145,
+        180
+      ],
+      "protein_g_estimate": 2.5,
+      "confidence": "按烤后报告重量和常见烤红薯数据估算",
+      "notes": [
+        "按未额外加油、糖或蜂蜜计算。",
+        "若 150 克为烤前生重，可再下调估算。"
+      ]
+    },
+    {
+      "meal": "晚间进食",
+      "description": "台式无骨鸡柳一包 300 克",
+      "kcal_estimate": 393,
+      "protein_g_estimate": 38.4,
+      "fat_g_estimate": 6.3,
+      "carbs_g_estimate": 44.4,
+      "sodium_mg_estimate": 1767,
+      "confidence": "用户说明与 2026-07-17 晚餐同款、同热量，沿用整包 300 克营养标签",
+      "label_per_100g": {
+        "energy_kcal": 131,
+        "protein_g": 12.8,
+        "fat_g": 2.1,
+        "carbs_g": 14.8,
+        "sodium_mg": 589
+      },
+      "notes": [
+        "按整包净含量 300 克计算。",
+        "默认未额外刷油或添加蘸酱。",
+        "该鸡柳为裹粉调制品，不等同于纯鸡胸肉，蛋白质密度偏低且钠较高。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_totals": {
+    "intake_kcal_estimate": 926,
+    "protein_g_range": [
+      67.9,
+      68.9
+    ],
+    "exercise_kcal_estimate": 0,
+    "remaining_intake_kcal": 974,
+    "intake_vs_target_kcal": -974,
+    "net_intake_after_exercise_kcal": 926,
+    "conservative_deficit_kcal": 986
+  },
+  "notes": [
+    "报告空腹体重 96.05 千克。",
+    "比 2026-07-17 早晨的 95.85 千克上涨 0.20 千克；结合前一晚加工食品钠约 3037 毫克、腿部训练和碳水摄入，优先按水分、糖原、训练后炎症和胃肠内容物波动解读，不视为脂肪增长。",
+    "早餐约 368 千卡、蛋白质约 27-28 克。",
+    "当前尚未记录运动；保守缺口只是基于已报告饮食的临时值，不代表全天最终缺口。",
+    "晚间吃烤红薯约 150 克，按烤后重量且未加油糖估算约 165 千卡、蛋白质约 2.5 克。",
+    "晚间又吃与前一晚同款台式无骨鸡柳一包 300 克，沿用标签记录约 393 千卡、蛋白质 38.4 克、钠约 1767 毫克。",
+    "截至当前仅报告约 926 千卡、蛋白质约 67.9-68.9 克；尚未报告午餐、其他晚餐或运动，如有需继续补记。",
+    "如果以上确为全天全部摄入，则热量和蛋白质都严重不足，不应以这种方式追求减脂；需要补充天然低脂蛋白并避免长期过低摄入。"
+  ]
+}

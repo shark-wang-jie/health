@@ -1,0 +1,237 @@
+{
+  "date": "2026-07-31",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1895,
+    "bmr_note": "按 2026-07-31 早晨空腹体重 94.40 千克，用米夫林-圣乔尔公式 10×94.40 + 6.25×173 - 5×27 + 5 = 1895.25 千卡估算。"
+  },
+  "morning_weight_kg": 94.4,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1895 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "迪拜软曲奇（树莓味）一枚 60 克、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 422,
+      "protein_g_estimate": 12.9,
+      "fat_g_estimate": 24,
+      "carbs_g_estimate": 31.4,
+      "confidence": "软曲奇按包装净含量和营养成分表精确换算；牛奶沿用此前同款 260 毫升营养数据",
+      "components": [
+        {
+          "food": "迪拜软曲奇（树莓味）",
+          "amount": "1 枚，60 克",
+          "kcal_estimate": 239,
+          "protein_g_estimate": 4.9,
+          "fat_g_estimate": 16,
+          "carbs_g_estimate": 18.9,
+          "sodium_mg_estimate": 133,
+          "nutrition_basis": "包装标示每 100 克：1663 千焦、蛋白质 8.2 克、脂肪 26.7 克、碳水化合物 31.5 克、钠 221 毫克；净含量 60 克。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "1 瓶，260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 8,
+          "carbs_g_estimate": 12.5
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "白米饭、带骨炖肉、拍黄瓜、莴笋及少量胡萝卜、小碗清汤；按餐前餐后照片扣除剩余米饭、骨头、少量肉菜和大碗汤汁",
+      "kcal_estimate": 650,
+      "kcal_range": [
+        520,
+        800
+      ],
+      "protein_g_range": [
+        38,
+        50
+      ],
+      "confidence": "根据餐前餐后照片估算；主要误差来自带骨肉的具体种类、肥瘦比例和实际可食重量",
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "约吃 120-150 克熟饭，碗内仍剩较多",
+          "kcal_estimate": 175,
+          "kcal_range": [
+            140,
+            195
+          ],
+          "protein_g_range": [
+            3,
+            4
+          ]
+        },
+        {
+          "food": "带骨炖肉",
+          "amount": "多数肉吃下，骨头及少量附着肉剩余；按约 130-180 克可食熟肉估算",
+          "kcal_estimate": 360,
+          "kcal_range": [
+            280,
+            480
+          ],
+          "protein_g_range": [
+            32,
+            43
+          ]
+        },
+        {
+          "food": "拍黄瓜、莴笋及少量胡萝卜",
+          "amount": "吃下约一半至六成，盘中仍有剩余",
+          "kcal_estimate": 85,
+          "kcal_range": [
+            65,
+            100
+          ],
+          "protein_g_range": [
+            2,
+            3
+          ]
+        },
+        {
+          "food": "小碗清汤及大碗中实际入口汤汁",
+          "amount": "小碗喝完；大碗汤汁大部分剩余",
+          "kcal_estimate": 30,
+          "kcal_range": [
+            20,
+            45
+          ],
+          "protein_g_range": [
+            1,
+            2
+          ]
+        }
+      ],
+      "notes": [
+        "未把餐后大碗中剩余的大量汤汁计入摄入。",
+        "餐后托盘上的骨头和少量附着肉已从估算中扣除。",
+        "若带骨肉并非猪脊骨或排骨类，后续可按具体菜名修正。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "黄花鱼丸一包 200 克",
+      "kcal_estimate": 241,
+      "protein_g_estimate": 37.6,
+      "fat_g_estimate": 10,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 192,
+      "confidence": "按包装净含量和营养成分表精确换算",
+      "components": [
+        {
+          "food": "黄花鱼丸",
+          "amount": "整包 200 克",
+          "kcal_estimate": 241,
+          "protein_g_estimate": 37.6,
+          "fat_g_estimate": 10,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 192,
+          "nutrition_basis": "包装标示每 100 克：505 千焦、蛋白质 18.8 克、脂肪 5.0 克、碳水化合物 0 克、钠 96 毫克。"
+        }
+      ]
+    },
+    {
+      "meal": "晚餐追加",
+      "description": "台式无骨鸡柳一包 300 克",
+      "kcal_estimate": 393,
+      "protein_g_estimate": 38.4,
+      "fat_g_estimate": 6.3,
+      "carbs_g_estimate": 44.4,
+      "sodium_mg_estimate": 1767,
+      "confidence": "沿用此前同款包装营养数据",
+      "components": [
+        {
+          "food": "台式无骨鸡柳",
+          "amount": "整包 300 克",
+          "kcal_estimate": 393,
+          "protein_g_estimate": 38.4,
+          "fat_g_estimate": 6.3,
+          "carbs_g_estimate": 44.4,
+          "sodium_mg_estimate": 1767,
+          "nutrition_basis": "此前同款包装数据每 100 克：131 千卡、蛋白质 12.8 克、脂肪 2.1 克、碳水化合物 14.8 克、钠 589 毫克。"
+        }
+      ],
+      "notes": [
+        "属于裹粉加工食品，蛋白质密度一般且钠较高，不宜作为日常主要蛋白质来源。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:35",
+      "end_time": "18:27",
+      "duration": "00:51:56",
+      "active_kcal": 334,
+      "total_kcal_reference": 425,
+      "average_heart_rate_bpm": 115,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 334；总千卡 425 仅作参考。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "start_time": "20:34",
+      "end_time": "21:16",
+      "duration": "00:41:31",
+      "active_kcal": 452,
+      "total_kcal_reference": 529,
+      "average_heart_rate_bpm": 145,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 452；总千卡 529 仅作参考。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1706,
+    "intake_kcal_range": [
+      1576,
+      1856
+    ],
+    "protein_g_range": [
+      126.9,
+      138.9
+    ],
+    "exercise_active_kcal": 786,
+    "net_intake_after_exercise_kcal": 920,
+    "conservative_deficit_kcal": 975,
+    "remaining_to_intake_target_kcal": 194,
+    "remaining_while_preserving_min_deficit_kcal": 575,
+    "additional_intake_needed_to_reach_max_deficit_kcal": 275,
+    "remaining_to_protein_target_g_range": [
+      31.1,
+      43.1
+    ],
+    "status": "截至 21:16：摄入中位估算约 1706 千卡，合理范围约 1576-1856 千卡；蛋白质约 127-139 克。力量训练与室内单车合计动态消耗 786 千卡，按中位估算的保守缺口约 975 千卡，高于 400-700 千卡目标。距离固定饮食上限仅约 194 千卡，且午餐存在估算误差；运动不增加饮食上限，今晚停止进食，不用额外食物抵消本次骑行。"
+  },
+  "notes": [
+    "空腹体重 94.40 千克，较 2026-07-30 的 94.70 千克下降 0.30 千克；继续关注 3-7 天趋势，不把单日变化全部视为脂肪变化。",
+    "当日基础代谢约 1895 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐软曲奇脂肪较高、蛋白质较低；与牛奶合计约 422 千卡但蛋白质仅约 12.9 克。",
+    "午餐必须优先安排天然低脂蛋白和蔬菜，减少额外油脂、甜食及加工食品；蛋白质不要拖到晚上集中补。",
+    "17:35-18:27 完成传统力量训练 51 分 56 秒，Apple Watch 动态消耗 334 千卡、总消耗 425 千卡、平均心率 115 次/分。",
+    "午餐按实际吃下部分估算约 650 千卡，合理范围 520-800 千卡，蛋白质约 38-50 克；米饭、大碗汤汁、骨头和附着的少量肉菜均按餐后照片扣除。",
+    "截至午餐和力量训练，中位保守缺口约 1157 千卡，仍明显高于目标；晚餐应在固定饮食上限内正常补充约 500-750 千卡，并以天然低脂蛋白为主。",
+    "晚餐一包黄花鱼丸 200 克，按包装换算约 241 千卡、蛋白质 37.6 克、脂肪 10 克、钠约 192 毫克。",
+    "计入鱼丸后，中位保守缺口约 916 千卡；若不再运动，要达到约 500 千卡缺口仍可摄入约 416 千卡。",
+    "晚餐追加台式无骨鸡柳一包 300 克，约 393 千卡、蛋白质 38.4 克、钠约 1767 毫克。",
+    "计入鸡柳后，中位保守缺口约 523 千卡，已达到目标；距离固定饮食上限仅约 194 千卡，考虑午餐估算误差，今晚停止进食。",
+    "20:34-21:16 完成室内单车 41 分 31 秒，Apple Watch 动态消耗 452 千卡、总消耗 529 千卡、平均心率 145 次/分。",
+    "全天力量训练与室内单车合计动态消耗 786 千卡；中位保守缺口约 975 千卡，高于目标。运动不自动提高固定饮食上限，今晚不再进食，次日正常吃饭，不断食或进行惩罚性训练。"
+  ]
+}

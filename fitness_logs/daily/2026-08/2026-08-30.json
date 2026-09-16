@@ -1,0 +1,227 @@
+{
+  "date": "2026-08-30",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1883,
+    "bmr_note": "按2026-08-30早晨空腹体重93.20千克，用米夫林-圣乔尔公式10×93.20 + 6.25×173 - 5×27 + 5 = 1883.25千卡估算。"
+  },
+  "morning_weight_kg": 93.2,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1883千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ]
+  },
+  "intake_entries": [
+    {
+      "meal": "上午",
+      "description": "此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+    },
+    {
+      "meal": "正餐",
+      "description": "盒马凉拌干豆丝80克、盒马五香牛肉实际吃下300克、熏酱猪筒骨240克1份；筒骨未吃骨髓",
+      "kcal_estimate": 1055,
+      "kcal_range": [
+        885,
+        1260
+      ],
+      "protein_g_estimate": 118.0,
+      "protein_g_range": [
+        102.0,
+        132.0
+      ],
+      "fat_g_estimate": 59.0,
+      "fat_g_range": [
+        43.0,
+        77.0
+      ],
+      "carbs_g_estimate": 18.0,
+      "carbs_g_range": [
+        8.0,
+        35.0
+      ],
+      "components": [
+        {
+          "food": "盒马凉拌干豆丝",
+          "amount": "80克",
+          "kcal_estimate": 130,
+          "kcal_range": [
+            90,
+            180
+          ],
+          "protein_g_estimate": 10.0,
+          "fat_g_estimate": 7.0,
+          "carbs_g_estimate": 7.0,
+          "estimation_note": "无营养标签，热量误差主要来自凉拌油和调味汁用量。"
+        },
+        {
+          "food": "盒马五香牛肉",
+          "amount": "实际吃下300克；包装原重500克，剩余200克未吃",
+          "kcal_estimate": 555,
+          "kcal_range": [
+            495,
+            630
+          ],
+          "protein_g_estimate": 78.0,
+          "protein_g_range": [
+            69.0,
+            87.0
+          ],
+          "fat_g_estimate": 27.0,
+          "fat_g_range": [
+            18.0,
+            39.0
+          ],
+          "carbs_g_estimate": 6.0,
+          "estimation_note": "沿用熟制较瘦卤牛肉每100克约165-210千卡、蛋白质约23-29克的口径；实际肥瘦与包装标签未知。"
+        },
+        {
+          "food": "熏酱猪筒骨",
+          "amount": "240克1份，未吃骨髓",
+          "kcal_estimate": 370,
+          "kcal_range": [
+            300,
+            450
+          ],
+          "protein_g_estimate": 30.0,
+          "fat_g_estimate": 25.0,
+          "carbs_g_estimate": 5.0,
+          "estimation_note": "包装重量包含骨头；按吃外部肉和附着酱汁、不吃骨髓估算。骨肉比例和肥瘦是主要误差。"
+        }
+      ],
+      "photo_path": "/tmp/codex-remote-attachments/01a04390-45e4-78c3-bc51-380cfd02f601/5E1222BD-6F0E-42E5-92F4-ED196B65C7F1/1-照片-1.jpg",
+      "estimation_note": "上一张购物车中的鸡腿及第二份筒骨未实际食用，不计入摄入；五香牛肉包装500克但实际只吃300克；牙膏不计。"
+    },
+    {
+      "meal": "加餐",
+      "description": "此前同款荞麦锅巴约50克",
+      "kcal_estimate": 199,
+      "protein_g_estimate": 2.8,
+      "fat_g_estimate": 1.4,
+      "carbs_g_estimate": 41.8,
+      "dietary_fiber_g_estimate": 3.1,
+      "sodium_mg_estimate": 158,
+      "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "默认浓缩原味发酵乳一杯约120克",
+      "kcal_estimate": 145,
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "nutrition_basis": "沿用当前默认酸奶口径：一杯浓缩原味发酵乳120克约145千卡。"
+    },
+    {
+      "meal": "加餐",
+      "description": "无油烤熟蜜薯250克，按烤后可食重",
+      "kcal_estimate": 338,
+      "kcal_range": [
+        300,
+        375
+      ],
+      "protein_g_estimate": 3.5,
+      "fat_g_estimate": 0.5,
+      "carbs_g_estimate": 78.8,
+      "carbs_g_range": [
+        70.0,
+        87.5
+      ],
+      "estimation_note": "沿用无油烤熟蜜薯按烤后可食重每100克约120-150千卡、中位135千卡的口径；含水量和品种是主要误差。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1920,
+    "intake_kcal_range": [
+      1712,
+      2162
+    ],
+    "protein_g_estimate": 141.9,
+    "protein_g_range": [
+      125.9,
+      155.9
+    ],
+    "fat_g_estimate": 78.7,
+    "fat_g_range": [
+      62.7,
+      96.7
+    ],
+    "carbs_g_estimate": 158.9,
+    "carbs_g_range": [
+      140.1,
+      184.6
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1920,
+    "net_intake_after_exercise_kcal_range": [
+      1712,
+      2162
+    ],
+    "provisional_conservative_deficit_kcal": -37,
+    "provisional_conservative_deficit_kcal_range": [
+      -279,
+      171
+    ],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [
+      0,
+      168
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      0,
+      0
+    ],
+    "remaining_to_protein_target_g": 28.1,
+    "remaining_to_protein_target_g_range": [
+      14.1,
+      44.1
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0.0,
+      21.1
+    ],
+    "intake_above_target_kcal": 40,
+    "status": "全天最终：累计摄入中位约1920千卡，合理范围约1712-2162千卡；蛋白质约141.9克、脂肪约78.7克、碳水约158.9克。碳水处于150-180克执行区间；中位摄入较1880千卡上限高约40千卡，无运动，中位保守结果约为37千卡盈余。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 92.6,
+    "day_over_day_change_kg": 0.6,
+    "seven_day_average_kg": 92.81,
+    "seven_day_period": "2026-08-24至2026-08-30",
+    "previous_seven_day_average_kg": 92.82,
+    "previous_seven_day_period": "2026-08-23至2026-08-29",
+    "interpretation": "单日上升0.60千克，但新旧7日均重基本持平；结合前一日晚间高碳水和高钠摄入，短期上升优先视为糖原、水分及胃肠内容物波动。"
+  },
+  "notes": [
+    "空腹体重93.20千克，较前一日上升0.60千克。",
+    "2026-08-24至08-30的7日均重约92.81千克，与08-23至08-29约92.82千克基本持平；不依据单日反弹判断脂肪增长或减脂停滞。",
+    "前一日晚间碳水和钠摄入较高，今日秤面上升很可能主要来自水分、糖原和胃肠内容物变化。",
+    "按93.20千克计算基础代谢约1883千卡，今日固定饮食上限1880千卡。",
+    "今日正常执行饮食计划，不断食，也不安排惩罚性运动补偿前一日超量。",
+    "上午喝此前同款纯牛奶一瓶约260毫升，约183千卡、蛋白质约8克。",
+    "用户展示的首张购物车食品当时仅作假设测算，未计入实际摄入。",
+    "实际吃下凉拌干豆丝80克、五香牛肉300克、熏酱猪筒骨240克一份且未吃骨髓；首图鸡腿和第二份筒骨均未吃，牛肉包装剩余200克也未吃。修正后该餐中位约1055千卡。",
+    "加餐此前同款荞麦锅巴约50克，约199千卡、碳水约41.8克。",
+    "下午加餐一杯默认浓缩原味发酵乳约120克，约145千卡、蛋白质约9.6克。",
+    "加餐无油烤熟蜜薯250克，按烤后可食重中位约338千卡、碳水约78.8克；加入后全天碳水进入执行区间。",
+    "用户于2026-08-31开始报告新一天数据；据此确认2026-08-30无后续饮食或运动，当日记录封账。"
+  ]
+}

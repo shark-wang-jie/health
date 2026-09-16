@@ -1,0 +1,297 @@
+{
+  "date": "2026-08-04",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1899,
+    "bmr_note": "按 2026-08-04 早晨空腹体重 94.75 千克，用米夫林-圣乔尔公式 10×94.75 + 6.25×173 - 5×27 + 5 = 1898.75 千卡估算。"
+  },
+  "morning_weight_kg": 94.75,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1899 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "这是按 1900 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间，不是通用医学最低需要量；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "原味发酵乳约 180 克、一杯无糖无奶冰美式",
+      "kcal_estimate": 155,
+      "protein_g_estimate": 7.2,
+      "fat_g_estimate": 9,
+      "carbs_g_estimate": 10.1,
+      "sodium_mg_estimate": 72,
+      "calcium_mg_estimate": 225,
+      "confidence": "酸奶暂按此前同款原味发酵乳每 100 克营养数据换算；冰美式按不加糖、不加奶和不加糖浆估算约 5 千卡",
+      "components": [
+        {
+          "food": "原味发酵乳",
+          "amount": "约 180 克",
+          "kcal_estimate": 150,
+          "protein_g_estimate": 7.2,
+          "fat_g_estimate": 9,
+          "carbs_g_estimate": 10.1,
+          "sodium_mg_estimate": 72,
+          "calcium_mg_estimate": 225,
+          "nutrition_basis": "暂沿用此前同款包装每 100 克：348 千焦、蛋白质 4.0 克、脂肪 5.0 克、碳水化合物 5.6 克、钠 40 毫克、钙 125 毫克。"
+        },
+        {
+          "food": "冰美式",
+          "amount": "1 杯",
+          "kcal_estimate": 5,
+          "protein_g_estimate": 0,
+          "confidence": "暂按无糖、无奶、无糖浆计算；若有任何添加需修正"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "沙县鸡腿饭：一份较大的带骨卤鸡腿，鸡皮全部去掉后吃肉；熟米饭和蔬菜全部吃完，碗底剩余较多游离油汁",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/BAAAF27A-EAD4-46AE-B529-E473F76C2735/1-照片-1.jpg",
+      "kcal_estimate": 1030,
+      "kcal_range": [
+        875,
+        1220
+      ],
+      "protein_g_range": [
+        55.5,
+        71
+      ],
+      "carbs_g_estimate": 110,
+      "carbs_g_range": [
+        97,
+        125
+      ],
+      "confidence": "根据照片、用户确认鸡皮未吃且米饭蔬菜全部吃完估算；用户进一步说明露出部分约三层米饭、鸡腿下约两层、蔬菜下约一层，因此将熟米饭中位估算上调至约 350 克。碗底未喝下的游离油不全额计入，只计米饭、鸡肉和蔬菜已经吸附或附着的油汁。主要误差来自去骨后的鸡肉可食重量和实际吸附油量。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "结合铺层分布估计约 320-380 克，中位约 350 克，全部吃完",
+          "kcal_estimate": 455,
+          "kcal_range": [
+            415,
+            495
+          ],
+          "protein_g_range": [
+            8.5,
+            10
+          ],
+          "carbs_g_range": [
+            90,
+            107
+          ]
+        },
+        {
+          "food": "去皮卤鸡腿肉",
+          "amount": "照片所示一份较大的带骨鸡腿，鸡皮全部去掉，鸡骨不计可食重量",
+          "kcal_estimate": 390,
+          "kcal_range": [
+            330,
+            470
+          ],
+          "protein_g_range": [
+            45,
+            58
+          ],
+          "carbs_g_range": [
+            1,
+            4
+          ]
+        },
+        {
+          "food": "蔬菜",
+          "amount": "照片所示白菜或生菜、少量菌菇等，全部吃完",
+          "kcal_estimate": 45,
+          "kcal_range": [
+            30,
+            65
+          ],
+          "protein_g_range": [
+            2,
+            3
+          ],
+          "carbs_g_range": [
+            4,
+            8
+          ]
+        },
+        {
+          "food": "已吸附的卤汁和油脂",
+          "amount": "仅计食物表面及米饭、蔬菜吸附部分；碗底剩余游离油汁不全额计入",
+          "kcal_estimate": 140,
+          "kcal_range": [
+            80,
+            190
+          ],
+          "carbs_g_range": [
+            2,
+            6
+          ]
+        }
+      ],
+      "notes": [
+        "鸡皮明确未吃，因此不计鸡皮热量。",
+        "碗底虽然剩油，但米饭和蔬菜全部吃完，仍需计入已经被食物吸附的部分油脂；剩余游离油不按全部吃下计算。",
+        "用户描述米饭铺层为：露出部分约三层、鸡腿下约两层、蔬菜下约一层；据此将原 300-350 克估算修正为约 320-380 克。"
+      ]
+    },
+    {
+      "meal": "练后加餐",
+      "description": "饭团 1 个，净含量 105 克",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/638CB1EF-C34C-4320-9769-1B4F99E7DDFA/2-照片-2.jpg",
+      "kcal_estimate": 95,
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "sodium_mg_estimate": 386,
+      "nutrition_basis": "包装标示每 100 克：能量 378 千焦、蛋白质 1.8 克、脂肪 3.5 克、碳水化合物 12.8 克、钠 368 毫克；按 105 克换算。",
+      "notes": [
+        "这只饭团的标签显示碳水不高，但蛋白质仅约 1.9 克，不能作为练后蛋白质补充。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "黄花鱼丸一包 200 克、五个普通大小蛋白、原味发酵乳约 150 克",
+      "kcal_estimate": 451,
+      "protein_g_estimate": 61.6,
+      "fat_g_estimate": 17.5,
+      "carbs_g_estimate": 8.4,
+      "components": [
+        {
+          "food": "黄花鱼丸",
+          "amount": "一包 200 克",
+          "kcal_estimate": 241,
+          "protein_g_estimate": 37.6,
+          "fat_g_estimate": 10,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 192,
+          "nutrition_basis": "沿用此前同款包装每 100 克：505 千焦、蛋白质 18.8 克、脂肪 5.0 克、碳水化合物 0 克、钠 96 毫克。"
+        },
+        {
+          "food": "水煮蛋白",
+          "amount": "普通大小 5 个",
+          "kcal_estimate": 85,
+          "protein_g_estimate": 18,
+          "nutrition_basis": "按普通大小蛋白约 17 千卡、蛋白质 3.6 克/个估算。"
+        },
+        {
+          "food": "原味发酵乳",
+          "amount": "约 150 克",
+          "kcal_estimate": 125,
+          "protein_g_estimate": 6,
+          "fat_g_estimate": 7.5,
+          "carbs_g_estimate": 8.4,
+          "sodium_mg_estimate": 60,
+          "calcium_mg_estimate": 188,
+          "nutrition_basis": "沿用此前同款包装每 100 克：348 千焦、蛋白质 4.0 克、脂肪 5.0 克、碳水化合物 5.6 克、钠 40 毫克、钙 125 毫克。"
+        }
+      ],
+      "notes": [
+        "晚餐合计蛋白质约 61.6 克，结构比高脂外卖明显更可控；黄花鱼丸仍属于加工食品，不宜每天作为蛋白质主力。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:35",
+      "end_time": "18:31",
+      "duration": "55分57秒",
+      "active_kcal": 372,
+      "total_kcal_reference_only": 472,
+      "average_heart_rate_bpm": 113,
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/638CB1EF-C34C-4320-9769-1B4F99E7DDFA/1-照片-1.jpg",
+      "notes": "能量结算只采用动态千卡 372；总千卡 472 仅作参考，避免重复计算静息消耗。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:39",
+      "end_time": "22:12",
+      "duration": "33分00秒",
+      "active_kcal": 293,
+      "total_kcal_reference_only": 354,
+      "average_heart_rate_bpm": 134,
+      "effort_level": "4，适中",
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/389960C1-AC48-48DC-80C7-2B8D9E8641E6/1-照片-1.jpg",
+      "notes": "能量结算只采用动态千卡 293；总千卡 354 仅作参考，避免重复计算静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1731,
+    "intake_kcal_range": [
+      1576,
+      1921
+    ],
+    "protein_g_range": [
+      126.2,
+      141.7
+    ],
+    "carbs_g_range": [
+      128.9,
+      156.9
+    ],
+    "exercise_active_kcal": 665,
+    "net_intake_after_exercise_kcal": 1066,
+    "net_intake_after_exercise_kcal_range": [
+      911,
+      1256
+    ],
+    "conservative_deficit_kcal": 833,
+    "conservative_deficit_kcal_range": [
+      643,
+      988
+    ],
+    "remaining_to_intake_target_kcal": 169,
+    "remaining_to_intake_target_kcal_range": [
+      -21,
+      324
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 433,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      243,
+      588
+    ],
+    "additional_intake_to_reduce_median_deficit_to_700_kcal": 133,
+    "remaining_to_protein_target_g_range": [
+      28.3,
+      43.8
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      -6.9,
+      51.1
+    ],
+    "status": "全天最终：累计摄入中位估算约 1731 千卡，合理范围约 1576-1921 千卡；蛋白质约 126.2-141.7 克，碳水约 128.9-156.9 克；力量训练与室内单车动态消耗合计 665 千卡。保守缺口中位约 833 千卡，高于 400-700 千卡目标；蛋白质比 170 克目标少约 28.3-43.8 克。"
+  },
+  "notes": [
+    "空腹体重 94.75 千克，较 2026-08-03 的 93.85 千克上升 0.90 千克；结合前一日晚间高热量、高脂、高碳水和高钠饮食，优先按水分、糖原和胃肠内容物增加解读，不能视为一夜增加 0.90 千克脂肪。",
+    "当日基础代谢约 1899 千卡，固定饮食上限为 1900 千卡。",
+    "早餐 180 克酸奶约 150 千卡、蛋白质仅约 7.2 克；冰美式几乎不提供蛋白质。早餐合计约 155 千卡、蛋白质 7.2 克，明显低于原计划的六个蛋清加酸奶，也明显低于工作日早餐 60-70 克蛋白质框架。",
+    "这顿早餐呈现出超吃后的补偿性少吃倾向。今天应恢复结构化饮食，午餐和晚餐优先低脂天然蛋白质与蔬菜，不断食、不跳餐，也不因前一日超吃做惩罚性训练。",
+    "冰美式暂按无糖、无奶、无糖浆记录；如实际添加糖、奶、奶精或糖浆，必须补充说明并修正。",
+    "午餐沙县鸡腿饭中位估算约 1030 千卡，合理范围约 875-1220 千卡，蛋白质约 55.5-71 克。鸡皮未吃已下调热量，但约 320-380 克熟米饭、较大的鸡腿和已经吸附的油汁仍使这顿饭热量较高。",
+    "截至午餐累计中位约 1185 千卡，距离 1900 千卡固定上限约 715 千卡；蛋白质仍少约 91.8-107.3 克。晚餐应优先低脂高蛋白食物，不再安排油炸、高脂肉、甜食或大量主食。",
+    "午餐碳水化合物估算约 97-125 克，中位约 110 克，主要来自约 320-380 克熟米饭；早餐加午餐累计约 107-135 克。当前为用户设置的日常减脂执行区间为 150-180 克。",
+    "17:35-18:31 传统力量训练 55 分 57 秒，Apple Watch 动态消耗 372 千卡、总消耗 472 千卡、平均心率 113 次/分；能量结算只采用动态千卡。",
+    "练后 105 克饭团按包装换算约 95 千卡、蛋白质 1.9 克、脂肪 3.7 克、碳水 13.4 克、钠 386 毫克。它补充了少量碳水，但蛋白质太低，不能替代练后正餐。",
+    "截至练后累计中位约 1280 千卡，距离 1900 千卡固定上限约 620 千卡；蛋白质仍少约 89.9-105.4 克。晚餐必须以易称量的天然低脂蛋白质为核心，避免再用高脂丸类、油炸食物或甜点挤占额度。",
+    "晚餐一包 200 克黄花鱼丸、五个普通大小蛋白和 150 克原味发酵乳，合计约 451 千卡、蛋白质 61.6 克、脂肪 17.5 克、碳水 8.4 克。",
+    "晚餐后全天累计中位约 1731 千卡，蛋白质约 126.2-141.7 克，仍少约 28.3-43.8 克；按已确认的 372 动态千卡计算，保守缺口中位约 540 千卡，已经达到目标范围。",
+    "21:39-22:12 室内单车 33 分钟，Apple Watch 动态消耗 293 千卡、总消耗 354 千卡、平均心率 134 次/分、体感强度 4（适中）；能量结算只采用动态千卡。",
+    "两次训练动态消耗合计 665 千卡；按当前饮食中位估算，保守缺口约 833 千卡，高于目标上沿约 133 千卡。固定饮食上限仍剩中位约 169 千卡，蛋白质仍少约 28.3-43.8 克。",
+    "2026-08-05 早晨开始报告新一天饮食，按 2026-08-04 此后没有继续进食处理并正式封账；如以后补充遗漏食物，再追溯修正。"
+  ]
+}

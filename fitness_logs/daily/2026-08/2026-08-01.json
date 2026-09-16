@@ -1,0 +1,190 @@
+{
+  "date": "2026-08-01",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1899,
+    "bmr_note": "按 2026-08-01 早晨空腹体重 94.75 千克，用米夫林-圣乔尔公式 10×94.75 + 6.25×173 - 5×27 + 5 = 1898.75 千卡估算。"
+  },
+  "morning_weight_kg": 94.75,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1899 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 8,
+      "carbs_g_estimate": 12.5,
+      "confidence": "沿用此前同款牛奶营养数据",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "1 瓶，260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 8,
+          "carbs_g_estimate": 12.5
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "白米饭、酱或卤大骨、番茄炒蛋、一勺红烧豆腐、少量青菜和紫菜蛋花汤；按餐前餐后照片扣除剩余米饭、大骨、附着肥肉及少量番茄",
+      "kcal_estimate": 1310,
+      "kcal_range": [
+        1000,
+        1570
+      ],
+      "protein_g_range": [
+        62,
+        87
+      ],
+      "confidence": "根据餐前餐后照片和用户补充按实际吃下部分估算；主要误差来自大骨肉的具体部位、肥瘦比例、可食重量，以及番茄炒蛋和红烧豆腐的用油量",
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "约吃 180-230 克熟饭，餐后仍剩约 130-180 克",
+          "kcal_estimate": 270,
+          "kcal_range": [
+            210,
+            310
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ]
+        },
+        {
+          "food": "酱或卤大骨",
+          "amount": "大部分肉吃下，大骨、部分皮脂和少量附着肉剩余；按约 180-240 克可食熟肉估算",
+          "kcal_estimate": 540,
+          "kcal_range": [
+            400,
+            680
+          ],
+          "protein_g_range": [
+            40,
+            55
+          ]
+        },
+        {
+          "food": "番茄炒蛋",
+          "amount": "大部分吃下，按约 2-3 个鸡蛋、番茄及炒制用油估算",
+          "kcal_estimate": 290,
+          "kcal_range": [
+            240,
+            330
+          ],
+          "protein_g_range": [
+            10,
+            13
+          ]
+        },
+        {
+          "food": "红烧豆腐",
+          "amount": "食堂一勺，约 100-150 克，位于大骨下面且全部吃完",
+          "kcal_estimate": 160,
+          "kcal_range": [
+            100,
+            220
+          ],
+          "protein_g_range": [
+            7,
+            12
+          ]
+        },
+        {
+          "food": "少量青菜和紫菜蛋花汤",
+          "amount": "青菜基本吃下，汤喝完",
+          "kcal_estimate": 50,
+          "kcal_range": [
+            35,
+            65
+          ],
+          "protein_g_range": [
+            1,
+            3
+          ]
+        }
+      ],
+      "notes": [
+        "餐后剩余的大骨、可见皮脂和附着肉未按吃完计入。",
+        "餐后剩余米饭已扣除；盘中菜汁实际拌入米饭和入口的部分已包含。",
+        "用户补充大骨下面有一勺红烧豆腐且全部吃完，已另行计入。",
+        "如主菜实际不是酱大骨或卤大骨，可按具体菜名和部位修正。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "黄花鱼丸一包 200 克、墨虾丸一包 250 克",
+      "kcal_estimate": 463,
+      "protein_g_estimate": 74.1,
+      "confidence": "黄花鱼丸按本次此前包装数据换算；墨虾丸沿用此前同款 250 克包装数据",
+      "components": [
+        {
+          "food": "黄花鱼丸",
+          "amount": "整包 200 克",
+          "kcal_estimate": 241,
+          "protein_g_estimate": 37.6,
+          "fat_g_estimate": 10,
+          "carbs_g_estimate": 0,
+          "sodium_mg_estimate": 192,
+          "nutrition_basis": "包装标示每 100 克：505 千焦、蛋白质 18.8 克、脂肪 5.0 克、碳水化合物 0 克、钠 96 毫克。"
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "整包 250 克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "nutrition_basis": "沿用此前同款包装数据：每 100 克 371 千焦、蛋白质 14.6 克。"
+        }
+      ],
+      "notes": [
+        "两种鱼丸或虾丸均属于加工食品，不应长期替代天然鱼虾、鸡胸肉或瘦肉作为主要蛋白质来源。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1956,
+    "intake_kcal_range": [
+      1646,
+      2216
+    ],
+    "protein_g_range": [
+      144.1,
+      169.1
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1956,
+    "conservative_deficit_kcal": -57,
+    "remaining_to_intake_target_kcal": -56,
+    "remaining_while_preserving_min_deficit_kcal": -457,
+    "remaining_to_protein_target_g_range": [
+      0.9,
+      25.9
+    ],
+    "status": "截至晚餐：摄入中位估算约 1956 千卡，合理范围约 1646-2216 千卡；蛋白质约 144-169 克。尚未记录运动，按中位估算已超过 1900 千卡固定饮食上限约 56 千卡，按基础代谢口径约为 57 千卡盈余，未达到 400-700 千卡缺口目标。今晚停止进食；若之后有正常计划内训练，按实际动态千卡更新，但不安排惩罚性运动。"
+  },
+  "notes": [
+    "空腹体重 94.75 千克，较 2026-07-31 的 94.40 千克上升 0.35 千克；结合前一晚高钠鸡柳摄入，优先按水分波动解读，不视为脂肪增长。",
+    "当日基础代谢约 1899 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐仅喝牛奶，蛋白质只有约 8 克且饱腹感不足；午餐必须优先安排足量天然低脂蛋白，不要再次把蛋白质集中拖到晚上补。",
+    "前一日保守缺口偏大，今天正常进食，不断食、不跳餐、不安排惩罚性运动。",
+    "午餐按实际吃下部分并补计一勺红烧豆腐后，估算约 1310 千卡，合理范围 1000-1570 千卡，蛋白质约 62-87 克；剩余米饭、大骨、可见皮脂、附着肉和少量番茄已扣除。",
+    "午餐酱或卤大骨、番茄炒蛋和红烧豆腐的脂肪与用油较多；当天后续不再安排肥肉、油炸食品、坚果、甜食或额外主食。",
+    "晚餐黄花鱼丸 200 克和墨虾丸 250 克合计约 463 千卡、蛋白质约 74.1 克。",
+    "计入晚餐后，中位摄入约 1956 千卡，超过固定饮食上限约 56 千卡；今晚停止进食，不用惩罚性运动或次日断食补偿。"
+  ]
+}

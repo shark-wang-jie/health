@@ -1,0 +1,293 @@
+{
+  "date": "2026-08-23",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1884,
+    "bmr_note": "按2026-08-23早晨空腹体重93.25千克，用米夫林-圣乔尔公式10×93.25 + 6.25×173 - 5×27 + 5 = 1883.75千卡估算。"
+  },
+  "morning_weight_kg": 93.25,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1884千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1880千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "午餐（起床后第一餐）",
+      "description": "两根小香蕉、此前同款荞麦锅巴95克",
+      "kcal_estimate": 539,
+      "kcal_range": [
+        519,
+        559
+      ],
+      "protein_g_estimate": 7.3,
+      "protein_g_range": [
+        6.8,
+        7.8
+      ],
+      "fat_g_estimate": 3.3,
+      "fat_g_range": [
+        3.1,
+        3.5
+      ],
+      "carbs_g_estimate": 120.3,
+      "carbs_g_range": [
+        115.8,
+        125
+      ],
+      "components": [
+        {
+          "food": "香蕉",
+          "amount": "两根小香蕉",
+          "kcal_estimate": 160,
+          "kcal_range": [
+            140,
+            180
+          ],
+          "protein_g_estimate": 2,
+          "fat_g_estimate": 0.6,
+          "carbs_g_estimate": 41,
+          "carbs_g_range": [
+            36.5,
+            45.7
+          ],
+          "confidence": "未称重，按每根可食部分约80-100克估算。"
+        },
+        {
+          "food": "荞麦锅巴",
+          "amount": "95克",
+          "kcal_estimate": 379,
+          "protein_g_estimate": 5.3,
+          "fat_g_estimate": 2.7,
+          "carbs_g_estimate": 79.3,
+          "dietary_fiber_g_estimate": 5.8,
+          "sodium_mg_estimate": 299,
+          "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+        }
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "一杯浓缩原味发酵乳120克",
+      "kcal_estimate": 145,
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "sodium_mg_estimate": 96,
+      "calcium_mg_estimate": 240,
+      "nutrition_basis": "按包装每100克能量506千焦、蛋白质8.0克、脂肪7.0克、碳水化合物6.5克、乳糖0克、钠80毫克、钙200毫克换算；一杯净含量120克。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/93B8F198-7091-4F7C-8821-0518426D4EE5/1-照片-1.jpg"
+    },
+    {
+      "meal": "正餐",
+      "description": "两只鸭腿去皮、一些蔬菜（含少量花生和调味汁）",
+      "kcal_estimate": 465,
+      "kcal_range": [
+        350,
+        610
+      ],
+      "protein_g_estimate": 42,
+      "protein_g_range": [
+        34,
+        51
+      ],
+      "fat_g_estimate": 24,
+      "fat_g_range": [
+        14,
+        37
+      ],
+      "carbs_g_estimate": 18,
+      "carbs_g_range": [
+        10,
+        30
+      ],
+      "components": [
+        {
+          "food": "鸭腿肉",
+          "amount": "两只，带皮带骨称重共240克，食用时去皮、骨头不计入口",
+          "kcal_estimate": 275,
+          "kcal_range": [
+            230,
+            330
+          ],
+          "protein_g_estimate": 36,
+          "protein_g_range": [
+            31,
+            42
+          ],
+          "fat_g_estimate": 12,
+          "fat_g_range": [
+            8,
+            17
+          ],
+          "carbs_g_estimate": 2,
+          "carbs_g_range": [
+            0,
+            5
+          ]
+        },
+        {
+          "food": "蔬菜沙拉",
+          "amount": "一些，图片可见生菜、黄瓜、胡萝卜及少量花生和调味汁",
+          "kcal_estimate": 190,
+          "kcal_range": [
+            120,
+            280
+          ],
+          "protein_g_estimate": 6,
+          "protein_g_range": [
+            3,
+            9
+          ],
+          "fat_g_estimate": 12,
+          "fat_g_range": [
+            6,
+            20
+          ],
+          "carbs_g_estimate": 16,
+          "carbs_g_range": [
+            10,
+            25
+          ]
+        }
+      ],
+      "estimation_note": "用户补充两只鸭腿带皮带骨共240克；按去皮后可食熟肉约120-145克估算，骨头及弃掉的鸭皮不计。蔬菜热量主要来自花生和调味汁。",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/9FA635F2-E210-44EC-B6BA-31055FD710A7/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/9FA635F2-E210-44EC-B6BA-31055FD710A7/2-照片-2.jpg"
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "凉拌菜中只吃了一些贡菜、木耳和花生米；藕片、胡萝卜丝等其余食物未吃",
+      "kcal_estimate": 160,
+      "kcal_range": [
+        100,
+        240
+      ],
+      "protein_g_estimate": 5,
+      "protein_g_range": [
+        3,
+        8
+      ],
+      "fat_g_estimate": 10,
+      "fat_g_range": [
+        6,
+        15
+      ],
+      "carbs_g_estimate": 12,
+      "carbs_g_range": [
+        7,
+        17
+      ],
+      "estimation_note": "按用户补充的最终摄入修正；主要热量来自花生和附着的调味油，实际食用量未称重，因此保留较宽范围。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/17B7E98A-6932-4767-939C-71946DC41A33/1-照片-1.jpg"
+    },
+    {
+      "meal": "晚餐",
+      "description": "盒马鸡腿4个，食用时去皮",
+      "amount": "带皮带骨约340克（按2个170克换算），去皮食用，骨头不计入口",
+      "kcal_estimate": 380,
+      "kcal_range": [
+        340,
+        440
+      ],
+      "protein_g_estimate": 50,
+      "protein_g_range": [
+        44,
+        58
+      ],
+      "fat_g_estimate": 18,
+      "fat_g_range": [
+        14,
+        22
+      ],
+      "carbs_g_estimate": 4,
+      "carbs_g_range": [
+        2,
+        10
+      ],
+      "estimation_note": "沿用用户提供的盒马鸡腿规格：每2个带皮带骨170克；4个共约340克。按去皮后可食熟肉量及少量卤汁估算。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1689,
+    "intake_kcal_range": [
+      1454,
+      1994
+    ],
+    "protein_g_estimate": 113.9,
+    "protein_g_range": [
+      97.4,
+      134.4
+    ],
+    "fat_g_estimate": 63.7,
+    "fat_g_range": [
+      45.5,
+      85.9
+    ],
+    "carbs_g_estimate": 162.1,
+    "carbs_g_range": [
+      142.6,
+      189.8
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1689,
+    "net_intake_after_exercise_kcal_range": [
+      1454,
+      1994
+    ],
+    "provisional_conservative_deficit_kcal": 195,
+    "provisional_conservative_deficit_kcal_range": [
+      -110,
+      430
+    ],
+    "remaining_to_intake_target_kcal": 191,
+    "remaining_to_intake_target_kcal_range": [
+      -114,
+      426
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      0,
+      30
+    ],
+    "remaining_to_protein_target_g": 56.1,
+    "remaining_to_protein_target_g_range": [
+      35.6,
+      72.6
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      21.9
+    ],
+    "status": "全天最终：累计摄入中位约1689千卡，合理范围约1454-1994千卡；蛋白质约97.4-134.4克、脂肪约45.5-85.9克、碳水约142.6-189.8克。无运动记录；按基础代谢口径中位缺口约195千卡，合理范围约110千卡盈余至430千卡缺口。中位摄入低于1880千卡固定上限约191千卡，但未达到400-700千卡目标缺口，且蛋白质未达170克目标。"
+  },
+  "notes": [
+    "空腹体重93.25千克，较2026-08-22的94.55千克下降1.30千克。单日降幅远大于可能的脂肪变化，主要按前期水分、糖原和胃肠内容物回落解读。",
+    "按93.25千克计算基础代谢约1884千卡，今日固定饮食上限为1880千卡。",
+    "用户中午起床，第一餐为两根小香蕉和95克荞麦锅巴，合计中位约539千卡、蛋白质约7.3克、脂肪约3.3克、碳水约120.3克。",
+    "这顿结构严重不合格：约85%的热量来自高碳水锅巴和香蕉，蛋白质不足8克，碳水已经接近全天150-180克执行区间下沿。后续不再安排锅巴、主食、水果或甜食，必须以天然低脂蛋白质和少油蔬菜为核心。",
+    "睡到中午不代表可以只吃零食；后续仍需正常安排正餐，但不得为补蛋白突破固定热量上限。",
+    "加餐一杯120克浓缩原味发酵乳，按标签约145千卡、蛋白质9.6克、脂肪8.4克、碳水7.8克。以后用户只说一杯酸奶时，默认按本款和120克规格记录。",
+    "两只鸭腿带皮带骨实称共240克，食用时去皮；连同蔬菜沙拉合计中位约465千卡。",
+    "凉拌菜最终只吃了一些贡菜、木耳和花生米，藕片、胡萝卜丝等未吃，修正为约160千卡。",
+    "晚餐4个盒马鸡腿，按每2个带皮带骨170克换算共约340克，食用时去皮，估算约380千卡、蛋白质约50克。",
+    "用户确认今日饮食结束，未记录运动，按无运动封账。全天中位摄入约1689千卡，低于1880千卡固定饮食上限约191千卡；按基础代谢口径中位缺口约195千卡，未达到400-700千卡目标缺口。蛋白质中位约113.9克，低于170克目标约56.1克；碳水中位约162.1克，处于150-180克执行区间。",
+    "明日正常执行按晨重计算的固定饮食上限，不因今日缺口偏小而断食或安排惩罚性训练；应从第一餐开始优先天然低脂蛋白质。"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-08",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1869,
+    "bmr_note": "按2026-09-08早晨空腹体重91.80千克，用米夫林-圣乔尔公式10×91.80 + 6.25×173 - 5×27 + 5 = 1869.25千卡估算。"
+  },
+  "morning_weight_kg": 91.8,
+  "targets": {
+    "intake_kcal": 1870,
+    "intake_target_basis": "按当日基础代谢1869千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "午餐",
+      "description": "默认沙县鸡腿饭：鸡腿2只去皮食用；米饭、炒白菜和卤蛋全部吃完；土豆丝未吃；未见豆腐干，未计入",
+      "kcal_estimate": 885,
+      "kcal_range": [710, 1080],
+      "protein_g_estimate": 70.5,
+      "protein_g_range": [57.0, 84.0],
+      "fat_g_estimate": 27.0,
+      "fat_g_range": [18.0, 41.0],
+      "carbs_g_estimate": 91.0,
+      "carbs_g_range": [73.0, 118.0],
+      "estimation_note": "沿用当前默认沙县鸡腿饭口径：土豆丝默认不吃；明确剩余或吃了土豆丝时以实际吃下为准。"
+    },
+    {
+      "meal": "睡醒后饮料",
+      "description": "活菌型乳酸菌饮料350毫升1瓶",
+      "kcal_estimate": 238,
+      "protein_g_estimate": 3.9,
+      "fat_g_estimate": 0.0,
+      "carbs_g_estimate": 54.6,
+      "sodium_mg_estimate": 105,
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/DF1BC212-BC38-4566-82E4-D94E762DB3F9/1-照片-1.jpg",
+      "nutrition_basis": "包装每100毫升：能量284千焦、蛋白质1.1克、脂肪0克、碳水15.6克、钠30毫克；按350毫升换算。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "百事乐事原味薯片20克",
+      "kcal_estimate": 108,
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 7.0,
+      "carbs_g_estimate": 10.2,
+      "sodium_mg_estimate": 140,
+      "nutrition_basis": "按默认百事乐事原味薯片每100克约540千卡、蛋白质6.5克、脂肪35克、碳水50.9克、钠约700毫克换算。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "百事乐事原味薯片20克（第二次）",
+      "kcal_estimate": 108,
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 7.0,
+      "carbs_g_estimate": 10.2,
+      "sodium_mg_estimate": 140,
+      "nutrition_basis": "按默认百事乐事原味薯片每100克约540千卡、蛋白质6.5克、脂肪35克、碳水50.9克、钠约700毫克换算。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "海盐苏打饼干一小包，暂按约15克",
+      "kcal_estimate": 75,
+      "kcal_range": [60, 95],
+      "protein_g_estimate": 1.5,
+      "protein_g_range": [1.0, 2.0],
+      "fat_g_estimate": 3.5,
+      "fat_g_range": [2.5, 4.5],
+      "carbs_g_estimate": 11.0,
+      "carbs_g_range": [9.0, 13.0],
+      "estimation_note": "未提供净含量和营养标签，沿用常见独立小包约15克口径；若实际包装重量不同需修正。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "time": "18:09–18:44",
+      "duration": "35分22秒",
+      "elapsed_time": "35分26秒",
+      "active_kcal": 273,
+      "total_kcal": 335,
+      "average_heart_rate_bpm": 125,
+      "heart_rate_range_bpm": [79, 161],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/A90C6F2F-5EF3-4DA0-92F4-513418F1569A/1-照片-1.jpg",
+      "note": "Apple Watch记录；只将动态千卡计入运动消耗，总千卡仅保存。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1414,
+    "intake_kcal_range": [1224, 1629],
+    "protein_g_estimate": 78.5,
+    "protein_g_range": [64.5, 92.5],
+    "fat_g_estimate": 44.5,
+    "fat_g_range": [34.5, 59.5],
+    "carbs_g_estimate": 177.0,
+    "carbs_g_range": [157.0, 206.0],
+    "exercise_active_kcal": 273,
+    "net_intake_after_exercise_kcal": 1141,
+    "net_intake_after_exercise_kcal_range": [951, 1356],
+    "provisional_conservative_deficit_kcal": 728,
+    "provisional_conservative_deficit_kcal_range": [513, 918],
+    "remaining_to_intake_target_kcal": 456,
+    "remaining_to_intake_target_kcal_range": [241, 646],
+    "remaining_while_preserving_min_deficit_kcal": 328,
+    "remaining_while_preserving_min_deficit_kcal_range": [113, 518],
+    "remaining_to_protein_target_g": 91.5,
+    "remaining_to_protein_target_g_range": [77.5, 105.5],
+    "remaining_to_carbohydrate_practical_target_g_range": [0.0, 23.0],
+    "intake_above_target_kcal": 0,
+    "status": "全天最终：累计摄入中位约1414千卡，蛋白质约78.5克、脂肪约44.5克、碳水约177克；传统力量训练动态消耗273千卡。按保守算法热量缺口约728千卡，略高于400–700千卡目标上限。"
+  },
+  "weight_trend": {
+    "previous_measured_weight_kg": 92.15,
+    "previous_measured_date": "2026-09-07",
+    "day_over_day_change_kg": -0.35,
+    "interpretation": "较前一日下降0.35千克；近期受高钠、高碳水餐影响的水分波动较明显，继续以连续空腹体重趋势判断。"
+  },
+  "notes": [
+    "空腹体重91.80千克，较前一日下降0.35千克；BMI约30.7。",
+    "按91.80千克计算基础代谢约1869千卡，今日固定饮食上限1870千卡。",
+    "午餐按默认沙县鸡腿饭口径记录：两只鸡腿去皮，米饭、炒白菜、卤蛋吃完，土豆丝未吃，未见豆腐干；中位约885千卡、蛋白质约70.5克。",
+    "睡醒后喝活菌型乳酸菌饮料350毫升；按照片标签约238千卡、碳水54.6克。",
+    "下午两次共吃百事乐事原味薯片40克，按默认口径约216千卡、脂肪14克。",
+    "18:09–18:44完成传统力量训练35分22秒；Apple Watch动态消耗273千卡、总消耗335千卡、平均心率125次/分、心率范围79–161次/分；只将动态273千卡计入消耗。",
+    "09-07在无新增食物或训练报告的情况下已封账：摄入约1419千卡、力量训练动态263千卡、中位保守缺口约717千卡。",
+    "晚间加餐海盐苏打饼干一小包，未提供净含量，暂按约15克、约75千卡估算。",
+    "用户确认2026-09-08饮食和训练结束，记录封账。"
+  ]
+}

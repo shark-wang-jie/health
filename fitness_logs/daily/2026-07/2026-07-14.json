@@ -1,0 +1,201 @@
+{
+  "date": "2026-07-14",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1923,
+    "bmr_note": "按 2026-07-14 早晨体重 97.20 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 97.2,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "三个鸡蛋、一根香蕉（可食部分约 120 克）、一瓶普通牛奶 260 毫升",
+      "kcal_estimate": 500,
+      "protein_g_range": [
+        27,
+        29
+      ],
+      "confidence": "鸡蛋和香蕉按报告份量估算；牛奶沿用普通牛奶每 100 毫升 294 千焦的数据",
+      "components": [
+        {
+          "food": "鸡蛋",
+          "amount": "3 个",
+          "kcal_estimate": 210,
+          "protein_g_range": [
+            18,
+            19
+          ]
+        },
+        {
+          "food": "香蕉",
+          "amount": "可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3
+        },
+        {
+          "food": "普通牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "鸡蛋按每个约 70 千卡计算。",
+        "香蕉按每 100 克约 89 千卡计算。",
+        "牛奶蛋白质未提供标签，暂按普通牛奶约 3.1 克/100 毫升估算。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：红烧肉烧油豆腐、白米饭、豆腐丝/芹菜、酸豆角、包菜和蛋花汤；肥肉挑出未吃",
+      "kcal_estimate": 750,
+      "kcal_range": [
+        650,
+        850
+      ],
+      "protein_g_range": [
+        36,
+        46
+      ],
+      "confidence": "根据餐前、餐后照片及用户说明估算",
+      "notes": [
+        "餐后照片显示米饭约吃五至六成，蛋花汤基本喝完。",
+        "明确挑出的肥肉不计入摄入；按实际吃下的瘦肉和油豆腐估算。",
+        "主菜及配菜沾有较多红烧汁和油，因此即使未吃肥肉，仍需计入烹调油和酱汁热量。",
+        "整餐合理范围约 650-850 千卡，取约 750 千卡记录。"
+      ]
+    },
+    {
+      "meal": "训练前加餐",
+      "description": "香蕉，可食部分 100 克",
+      "kcal_estimate": 89,
+      "protein_g_estimate": 1.1,
+      "carbs_g_estimate": 23,
+      "fat_g_estimate": 0.3,
+      "confidence": "按报告重量和常用食物数据估算",
+      "notes": [
+        "按香蕉可食部分每 100 克约 89 千卡计算。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "黏玉米半根",
+      "kcal_estimate": 110,
+      "protein_g_estimate": 2.5,
+      "confidence": "根据照片、用户报告的实际食用比例和常用份量估算",
+      "notes": [
+        "最初报告一根，后续确认实际只吃了半根。",
+        "未提供去芯可食重量，按一根黏玉米约 220 千卡的一半记录。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "香蕉，可食部分约 120 克",
+      "kcal_estimate": 107,
+      "protein_g_estimate": 1.3,
+      "carbs_g_estimate": 27.6,
+      "fat_g_estimate": 0.4,
+      "confidence": "按报告重量和常用食物数据估算",
+      "notes": [
+        "按香蕉可食部分每 100 克约 89 千卡计算。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "五个鸡蛋",
+      "kcal_estimate": 350,
+      "protein_g_range": [
+        30,
+        32
+      ],
+      "carbs_g_estimate": 2.5,
+      "fat_g_range": [
+        23,
+        25
+      ],
+      "confidence": "按五个中大号鸡蛋估算",
+      "notes": [
+        "每个鸡蛋按约 70 千卡、蛋白质约 6-6.4 克计算。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:55",
+      "end_time": "18:36",
+      "duration_min": 55.35,
+      "watch_recorded_duration_min": 40.35,
+      "unrecorded_duration_min": 15,
+      "active_kcal": 369,
+      "watch_recorded_active_kcal": 269,
+      "unrecorded_active_kcal_estimate": 100,
+      "total_kcal": 343,
+      "avg_heart_rate_bpm": 119,
+      "kcal_estimate": 369,
+      "confidence": "苹果手表记录加漏记时段手动估算",
+      "notes": [
+        "苹果手表记录 40 分 21 秒、动态消耗 269 千卡；开始训练约 15 分钟后才开启记录。",
+        "漏记的 15 分钟按已记录时段平均约 6.67 动态千卡/分钟估算为约 100 动态千卡。",
+        "总训练时长约 55 分 21 秒，汇总动态消耗约 369 千卡。",
+        "苹果手表显示的总千卡 343 仅对应已记录时段且只作参考，不另行加入。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "22:01",
+      "end_time": "22:32",
+      "duration_min": 30.67,
+      "elapsed_duration_min": 30.75,
+      "active_kcal": 249,
+      "total_kcal": 306,
+      "avg_heart_rate_bpm": 134,
+      "kcal_estimate": 249,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1906,
+    "protein_g_range": [
+      98,
+      112
+    ],
+    "exercise_kcal_estimate": 618,
+    "remaining_intake_kcal": -6,
+    "intake_vs_target_kcal": 6,
+    "net_intake_after_exercise_kcal": 1288,
+    "conservative_deficit_kcal": 635
+  },
+  "notes": [
+    "新一天从空腹体重记录开始。",
+    "报告空腹体重：97.20 千克。",
+    "比 2026-07-13 早晨的 97.45 千克下降 0.25 千克，说明放纵日后的水分正在逐步回落。",
+    "相比 2026-07-12 放纵日前的 95.90 千克仍高 1.30 千克，主要继续按高钠、高碳水、糖原储水、胃肠内容物和训练后炎症性储水解释。",
+    "继续执行正常 1900 千卡计划，不通过极端少吃或额外惩罚性运动加速体重回落。",
+    "早餐吃三个鸡蛋、约 120 克可食部分香蕉和 260 毫升普通牛奶，合计约 500 千卡、蛋白质约 27-29 克。",
+    "午餐根据餐前餐后照片估算约 750 千卡、蛋白质约 36-46 克；肥肉明确挑出未吃，但计入实际吃下的瘦肉、油豆腐及菜品所带烹调油和红烧汁。",
+    "下午训练前吃香蕉可食部分 100 克，约 89 千卡。",
+    "傍晚完成传统力量训练约 55 分 21 秒；其中苹果手表记录 40 分 21 秒、动态消耗 269 千卡，另有开始前漏记的 15 分钟按相同时段强度估算约 100 动态千卡，合计约 369 动态千卡。",
+    "晚餐黏玉米最初报告一根，后续确认实际只吃半根，修正为约 110 千卡。",
+    "晚间另吃香蕉可食部分约 120 克，约 107 千卡。",
+    "晚间完成室内单车 30 分 40 秒，苹果手表记录动态消耗 249 千卡、总消耗 306 千卡、平均心率 134 次/分；汇总仅采用动态千卡。",
+    "晚间加餐五个鸡蛋，约 350 千卡、蛋白质约 30-32 克。",
+    "全天摄入约 1906 千卡，比 1900 千卡目标高约 6 千卡；已记录及估算运动动态消耗合计约 618 千卡。",
+    "按基础代谢加运动动态消耗减摄入计算的保守缺口约 635 千卡，处于 400-700 千卡目标范围；但全天蛋白质约 98-112 克，仍低于 170 克目标。"
+  ]
+}

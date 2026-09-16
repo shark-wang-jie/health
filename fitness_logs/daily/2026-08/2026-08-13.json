@@ -1,0 +1,354 @@
+{
+  "date": "2026-08-13",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1889,
+    "bmr_note": "按 2026-08-13 早晨空腹体重 93.80 千克，用米夫林-圣乔尔公式 10×93.80 + 6.25×173 - 5×27 + 5 = 1889.25 千卡估算。"
+  },
+  "morning_weight_kg": 93.8,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1889 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "一根中等大小香蕉和一瓶此前同款纯牛奶约 260 毫升",
+      "kcal_estimate": 290,
+      "protein_g_estimate": 9.3,
+      "fat_g_estimate": 9.8,
+      "carbs_g_estimate": 39.5,
+      "confidence": "香蕉未称重，暂按中等大小、可食部分约 120 克估算；牛奶暂按此前同款 260 毫升计算。若香蕉大小或牛奶容量、标签不同需修正。",
+      "components": [
+        {
+          "food": "香蕉",
+          "amount": "中等大小 1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "约 260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦的标签。"
+        }
+      ],
+      "notes": "早餐蛋白质仅约 9.3 克，明显低于工作日早餐 60-70 克的分配目标；后续两餐必须优先安排天然低脂蛋白质。"
+    },
+    {
+      "meal": "午餐",
+      "description": "默认鸡腿饭：两只鸡腿去皮后吃鸡肉、一些蔬菜和约半份米饭",
+      "kcal_estimate": 720,
+      "kcal_range": [
+        580,
+        930
+      ],
+      "protein_g_range": [
+        50,
+        69
+      ],
+      "fat_g_range": [
+        18,
+        40
+      ],
+      "carbs_g_range": [
+        49,
+        68
+      ],
+      "confidence": "用户说明与 2026-08-12 相同，并指定以后只说鸡腿饭时默认按此吃法记录。米饭暂按约 170-220 克熟重；实际鸡腿净肉、米饭重量和附着油汁仍是主要误差来源。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "约半份，暂按 170-220 克熟重",
+          "kcal_estimate": 245,
+          "kcal_range": [
+            220,
+            285
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ],
+          "fat_g_range": [
+            0.4,
+            0.8
+          ],
+          "carbs_g_range": [
+            44,
+            57
+          ]
+        },
+        {
+          "food": "去皮去骨鸡腿肉",
+          "amount": "两只鸡腿的可食肉；鸡皮和鸡骨排除",
+          "kcal_estimate": 360,
+          "kcal_range": [
+            300,
+            450
+          ],
+          "protein_g_range": [
+            45,
+            60
+          ],
+          "fat_g_range": [
+            10,
+            20
+          ]
+        },
+        {
+          "food": "蔬菜及实际入口的附着油汁",
+          "amount": "一些蔬菜",
+          "kcal_estimate": 115,
+          "kcal_range": [
+            60,
+            195
+          ],
+          "protein_g_range": [
+            1,
+            3
+          ],
+          "fat_g_range": [
+            7.6,
+            19.2
+          ],
+          "carbs_g_range": [
+            5,
+            11
+          ]
+        }
+      ],
+      "notes": "鸡皮、鸡骨和未入口的碗底游离油汁不计；如当天米饭份量、鸡腿数量、是否吃皮或剩余情况不同，按用户补充修正。"
+    },
+    {
+      "meal": "训练前后加餐",
+      "description": "训练前一根中等大小香蕉，训练后一个 105 克饭团",
+      "kcal_estimate": 202,
+      "protein_g_estimate": 3.2,
+      "fat_g_estimate": 4.1,
+      "carbs_g_estimate": 40.4,
+      "sodium_mg_estimate": 386,
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/92F585E5-E737-47A6-944B-25C8B4894115/2-照片-2.jpg",
+      "confidence": "饭团按本次包装标签和用户报告的 105 克实算；香蕉未称重，暂按中等大小、可食部分约 120 克估算。",
+      "components": [
+        {
+          "food": "香蕉",
+          "timing": "训练前",
+          "amount": "中等大小 1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "protein_g_estimate": 1.3,
+          "fat_g_estimate": 0.4,
+          "carbs_g_estimate": 27
+        },
+        {
+          "food": "饭团",
+          "timing": "训练后",
+          "amount": "105 克",
+          "kcal_estimate": 95,
+          "protein_g_estimate": 1.9,
+          "fat_g_estimate": 3.7,
+          "carbs_g_estimate": 13.4,
+          "sodium_mg_estimate": 386,
+          "nutrition_basis": "包装每 100 克：能量 378 千焦、蛋白质 1.8 克、脂肪 3.5 克、碳水化合物 12.8 克、钠 368 毫克；按 105 克换算。"
+        }
+      ],
+      "notes": "香蕉和饭团主要补充碳水，合计蛋白质仅约 3.2 克，不能作为完整的练后蛋白质补充。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "一根中等大小香蕉",
+      "kcal_estimate": 107,
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 27,
+      "confidence": "未称重，暂按中等大小、可食部分约 120 克估算。",
+      "notes": "当天累计已吃三根香蕉；本根使全天碳水中位进入 150-180 克执行区间，晚餐不再安排主食、水果或甜食。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "130 克此前同款原味发酵乳和八颗饱满花生仁",
+      "kcal_estimate": 153,
+      "kcal_range": [
+        148,
+        159
+      ],
+      "protein_g_estimate": 7.3,
+      "protein_g_range": [
+        7,
+        7.5
+      ],
+      "fat_g_estimate": 10.4,
+      "fat_g_range": [
+        9.9,
+        10.9
+      ],
+      "carbs_g_estimate": 8.6,
+      "carbs_g_range": [
+        8.4,
+        8.8
+      ],
+      "confidence": "酸奶沿用此前同款原味发酵乳标签；八颗花生按八颗去壳花生仁、合计约 7-9 克估算。若用户所说八颗指八个带两粒仁的花生荚，需要上调。",
+      "components": [
+        {
+          "food": "原味发酵乳",
+          "amount": "130 克",
+          "kcal_estimate": 108,
+          "protein_g_estimate": 5.2,
+          "fat_g_estimate": 6.5,
+          "carbs_g_estimate": 7.3,
+          "nutrition_basis": "沿用此前同款每 100 克 348 千焦、蛋白质 4 克、脂肪 5 克、碳水 5.6 克的标签。"
+        },
+        {
+          "food": "花生仁",
+          "amount": "8 颗，暂按约 7-9 克",
+          "kcal_estimate": 45,
+          "kcal_range": [
+            40,
+            51
+          ],
+          "protein_g_range": [
+            1.8,
+            2.3
+          ],
+          "fat_g_range": [
+            3.4,
+            4.4
+          ],
+          "carbs_g_range": [
+            1.1,
+            1.5
+          ]
+        }
+      ],
+      "notes": "花生份量虽小，但热量主要来自脂肪；当天碳水已接近或达到执行区间上沿，此后不再追加水果、主食或甜食。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "七个普通大小蛋白",
+      "kcal_estimate": 119,
+      "protein_g_estimate": 25.2,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 1.7,
+      "confidence": "按普通大小鸡蛋蛋白估算，每个约 17 千卡、蛋白质约 3.6 克；未计蛋黄。",
+      "notes": "属于低脂蛋白质补充，但加入后全天蛋白质仍未达到 170 克目标。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:37",
+      "end_time": "18:30",
+      "duration_min": 52.77,
+      "active_kcal": 419,
+      "total_kcal_reference_only": 511,
+      "average_heart_rate_bpm": 123,
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/92F585E5-E737-47A6-944B-25C8B4894115/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 419 千卡；总千卡 511 仅作参考，避免重复计入训练期间静息消耗。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "20:11",
+      "end_time": "20:44",
+      "duration_min": 33.32,
+      "active_kcal": 321,
+      "total_kcal_reference_only": 383,
+      "average_heart_rate_bpm": 141,
+      "heart_rate_range_bpm": [
+        99,
+        148
+      ],
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/EE51593B-4AA7-4D36-8978-29DAA51573B7/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 321 千卡；总千卡 383 仅作参考，避免重复计入训练期间静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1591,
+    "intake_kcal_range": [
+      1446,
+      1807
+    ],
+    "protein_g_range": [
+      96,
+      115.5
+    ],
+    "fat_g_range": [
+      42.6,
+      65.6
+    ],
+    "carbs_g_range": [
+      166,
+      185.4
+    ],
+    "exercise_active_kcal": 740,
+    "net_intake_after_exercise_kcal": 851,
+    "net_intake_after_exercise_kcal_range": [
+      706,
+      1067
+    ],
+    "conservative_deficit_kcal": 1038,
+    "conservative_deficit_kcal_range": [
+      822,
+      1183
+    ],
+    "remaining_to_intake_target_kcal": 299,
+    "remaining_to_intake_target_kcal_range": [
+      83,
+      444
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 638,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      422,
+      783
+    ],
+    "remaining_to_protein_target_g_range": [
+      54.5,
+      74
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0,
+      14
+    ],
+    "status": "全天最终：累计摄入中位约 1591 千卡，合理范围约 1446-1807 千卡；蛋白质约 96.0-115.5 克、脂肪约 42.6-65.6 克、碳水约 166.0-185.4 克。力量训练与室内单车动态消耗合计 740 千卡，按基础代谢加动态运动口径的保守缺口中位约 1038 千卡，合理范围约 822-1183 千卡。蛋白质明显不足。"
+  },
+  "notes": [
+    "空腹体重 93.80 千克，较 2026-08-12 的 93.15 千克上升 0.65 千克；结合前一日晚餐泡面钠含量较高、碳水较多及训练后恢复，优先按水分、糖原和胃肠内容物波动解读，不视为一夜增加 0.65 千克脂肪。",
+    "按 93.80 千克计算当日基础代谢约 1889 千卡，固定饮食上限为 1890 千卡。",
+    "早餐一根中等香蕉和一瓶 260 毫升纯牛奶，暂估约 290 千卡、蛋白质约 9.3 克、碳水约 39.5 克。",
+    "早餐蛋白质明显不足；午餐和晚餐应优先鸡胸、鱼虾、鸡蛋或蛋清、瘦肉及低脂奶制品，不依赖加工肉制品追蛋白质。",
+    "午餐为默认鸡腿饭：两只鸡腿去皮、一些蔬菜和约半份米饭，沿用 2026-08-12 口径估算约 720 千卡，合理范围约 580-930 千卡；蛋白质约 50-69 克。",
+    "用户指定：以后只说“鸡腿饭”时，默认按两只鸡腿去皮、一些蔬菜和约半份米饭记录；如当天吃法不同，再按补充说明修正。"
+    ,"训练前吃一根中等香蕉，训练后吃一个 105 克饭团；合计约 202 千卡、蛋白质约 3.2 克、碳水约 40.4 克。饭团按包装每 100 克 378 千焦、蛋白质 1.8 克、脂肪 3.5 克、碳水 12.8 克、钠 368 毫克换算。"
+    ,"17:37-18:30 完成传统力量训练 52 分 46 秒；Apple Watch 动态消耗 419 千卡、总消耗 511 千卡、平均心率 123 次/分。结算只采用动态千卡。"
+    ,"训练后累计中位约 1212 千卡、蛋白质约 62.5-81.5 克；固定饮食上限中位尚余约 678 千卡。香蕉和饭团主要补碳水，晚餐仍须以天然低脂蛋白质为核心。"
+    ,"晚间再加一根中等香蕉，暂估约 107 千卡、蛋白质约 1.3 克、碳水约 27 克。当天累计三根香蕉。"
+    ,"追加香蕉后累计碳水约 155.9-174.9 克，已进入 150-180 克执行区间；晚餐不再安排主食、水果或甜食，只选低脂蛋白质和少油蔬菜。"
+    ,"晚间加餐 130 克此前同款原味发酵乳和八颗饱满花生仁，暂估约 153 千卡、蛋白质约 7.3 克、脂肪约 10.4 克、碳水约 8.6 克；花生按八颗仁、约 7-9 克估算。"
+    ,"20:11-20:44 完成室内单车 33 分 19 秒；Apple Watch 动态消耗 321 千卡、总消耗 383 千卡、平均心率 141 次/分，心率范围约 99-148 次/分。结算只采用动态千卡。"
+    ,"力量训练与室内单车动态消耗合计 740 千卡；加餐后累计中位约 1472 千卡，蛋白质约 70.8-90.3 克、脂肪约 42.2-65.2 克、碳水约 164.3-183.7 克。固定饮食上限中位尚余约 418 千卡。"
+    ,"晚间再加七个普通大小蛋白，约 119 千卡、蛋白质约 25.2 克、脂肪约 0.4 克、碳水约 1.7 克。"
+    ,"蛋白后累计中位约 1591 千卡，蛋白质约 96.0-115.5 克、脂肪约 42.6-65.6 克、碳水约 166.0-185.4 克；固定饮食上限中位剩约 299 千卡，但估算上沿只剩约 83 千卡。今晚停止进食，蛋白质不足留到次日提前分配解决。"
+    ,"2026-08-14 已开始报告新一天，据此按七个蛋白后没有新增摄入或运动正式封账；如以后补充遗漏内容，再追溯修正。"
+  ]
+}

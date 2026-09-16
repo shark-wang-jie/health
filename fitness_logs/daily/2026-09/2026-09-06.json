@@ -1,0 +1,140 @@
+{
+  "date": "2026-09-06",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1878,
+    "bmr_note": "当日未称空腹体重，暂沿用2026-09-05的92.65千克及对应BMR约1878千卡；下次测得空腹体重后再重算。"
+  },
+  "morning_weight_kg": null,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "当日未称体重，暂沿用上一有效体重对应的1880千卡固定饮食上限；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "未报告早餐，不自行补记",
+      "kcal_estimate": 0,
+      "protein_g_estimate": 0.0,
+      "fat_g_estimate": 0.0,
+      "carbs_g_estimate": 0.0
+    },
+    {
+      "meal": "午餐",
+      "description": "照片所示盒饭：去皮鸡腿、白米饭、炒白菜及青椒，按照片默认均吃完",
+      "kcal_estimate": 680,
+      "kcal_range": [540, 840],
+      "protein_g_estimate": 41.0,
+      "protein_g_range": [30.0, 55.0],
+      "fat_g_estimate": 17.0,
+      "fat_g_range": [8.0, 34.0],
+      "carbs_g_estimate": 87.0,
+      "carbs_g_range": [72.0, 106.0],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/375AFA2A-0B63-4A11-901F-7833370E4636/1-照片-1.jpg",
+      "estimation_note": "米饭目测约300克；鸡腿去皮后按可食肉约130–170克估算；蔬菜及附着酱汁按正常少量用油计入。未见餐后照片，暂按食材均吃完记录。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "荞麦锅巴200克",
+      "kcal_estimate": 797,
+      "protein_g_estimate": 11.2,
+      "fat_g_estimate": 5.6,
+      "carbs_g_estimate": 167.0,
+      "sodium_mg_estimate": 630,
+      "nutrition_basis": "按每100克1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、钠315毫克换算。用户原文“二百块钱”按语境暂作200克处理。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "浓缩原味发酵乳一杯120克",
+      "kcal_estimate": 145,
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "nutrition_basis": "沿用默认“一杯酸奶”规格：浓缩原味发酵乳120克。"
+    },
+    {
+      "meal": "深夜加餐",
+      "description": "大份排骨150克、大份掌中宝180克（截图显示蒜香/甘梅口味）",
+      "kcal_estimate": 970,
+      "kcal_range": [730, 1270],
+      "protein_g_estimate": 53.0,
+      "protein_g_range": [36.0, 74.0],
+      "fat_g_estimate": 64.0,
+      "fat_g_range": [44.0, 90.0],
+      "carbs_g_estimate": 45.0,
+      "carbs_g_range": [23.0, 67.0],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/5D61782D-93F7-4985-A395-34758554AA58/1-照片-1.jpg",
+      "components": [
+        {
+          "food": "排骨",
+          "amount": "150克，按带骨熟重",
+          "kcal_estimate": 390,
+          "kcal_range": [280, 520],
+          "protein_g_estimate": 23.0,
+          "fat_g_estimate": 25.0,
+          "carbs_g_estimate": 15.0
+        },
+        {
+          "food": "掌中宝",
+          "amount": "180克",
+          "kcal_estimate": 580,
+          "kcal_range": [450, 750],
+          "protein_g_estimate": 30.0,
+          "fat_g_estimate": 39.0,
+          "carbs_g_estimate": 30.0
+        }
+      ],
+      "estimation_note": "截图仅显示点单品名及大份规格，没有成品或营养标签。按外卖油炸/调味排骨和掌中宝估算；排骨默认150克为带骨熟重，若为纯可食肉重，实际热量会更高。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 2592,
+    "intake_kcal_range": [2212, 3052],
+    "protein_g_estimate": 114.8,
+    "protein_g_range": [86.8, 149.8],
+    "fat_g_estimate": 95.0,
+    "fat_g_range": [66.0, 138.0],
+    "carbs_g_estimate": 306.8,
+    "carbs_g_range": [269.8, 347.8],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 2592,
+    "net_intake_after_exercise_kcal_range": [2212, 3052],
+    "provisional_conservative_deficit_kcal": -714,
+    "provisional_conservative_deficit_kcal_range": [-1174, -334],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [0, 0],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 0],
+    "remaining_to_protein_target_g": 55.2,
+    "remaining_to_protein_target_g_range": [20.2, 83.2],
+    "remaining_to_carbohydrate_practical_target_g_range": [0.0, 0.0],
+    "intake_above_target_kcal": 712,
+    "status": "全天最终：累计摄入中位约2592千卡，蛋白质约114.8克、脂肪约95克、碳水约306.8克；无运动记录。按保守算法中位约714千卡盈余，主要来自200克荞麦锅巴及深夜排骨、掌中宝。"
+  },
+  "weight_trend": {
+    "latest_measured_weight_kg": 92.65,
+    "latest_measured_date": "2026-09-05",
+    "interpretation": "当日未测空腹体重，不新增单日或7日均重数据；下次继续在早晨空腹条件下测量即可。"
+  },
+  "notes": [
+    "2026-09-06早晨未称空腹体重，沿用昨日92.65千克对应的BMR和固定饮食上限，未将此视为新的体重数据。",
+    "午餐照片所示鸡腿已去皮；未说明剩余，暂按米饭、鸡肉和蔬菜均吃完记录。",
+    "下午报告“二百块钱荞麦锅巴”，按语境暂记录为荞麦锅巴200克；若实际是金额而非重量，需补充实际克数或包装数量后修正。",
+    "200克荞麦锅巴约797千卡、碳水约167克，是今日碳水过高和蛋白质不足的主要原因；后续如进食，应避免主食、零食及甜食。",
+    "晚间加餐默认浓缩原味发酵乳120克，约145千卡、蛋白质9.6克。",
+    "深夜加餐：大份排骨150克及大份掌中宝180克，按截图大份蒜香/甘梅口味暂估约970千卡；排骨默认按带骨熟重记录，若为纯可食肉重需上调。",
+    "按BMR1878 - 摄入2592计算，全天中位约714千卡盈余；实际误差主要来自外卖油炸/调味程度和排骨骨重。次日恢复正常减脂餐，不用断食或惩罚性运动补偿。",
+    "2026-09-07已开始；据此将09-06在补记全部已知摄入后封账。"
+  ]
+}

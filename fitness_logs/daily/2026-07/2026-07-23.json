@@ -1,0 +1,220 @@
+{
+  "date": "2026-07-23",
+  "timezone": "亚洲/上海",
+  "record_status": "partial",
+  "missing_sections": [
+    "完整训练后晚餐",
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1902,
+    "bmr_note": "按 2026-07-23 早晨空腹体重 95.05 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 95.05,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1902 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶 260 毫升、香蕉一根",
+      "kcal_estimate": 290,
+      "kcal_range": [
+        268,
+        313
+      ],
+      "protein_g_estimate": 9.3,
+      "protein_g_range": [
+        9,
+        10
+      ],
+      "confidence": "牛奶沿用同款包装标签；香蕉未称重，按中等大小可食部分约 120 克估算",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        },
+        {
+          "food": "香蕉",
+          "amount": "1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "kcal_range": [
+            85,
+            130
+          ],
+          "protein_g_estimate": 1.3
+        }
+      ],
+      "notes": [
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。",
+        "香蕉未报告重量，暂按中等大小估算；若补充去皮重量可修正。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：咸菜炖猪脊骨、白米饭、豆芽韭菜、豆腐皮配菜、酸豆角及清汤；按餐前餐后照片计算实际吃下部分",
+      "kcal_estimate": 800,
+      "kcal_range": [
+        650,
+        950
+      ],
+      "protein_g_range": [
+        42,
+        54
+      ],
+      "confidence": "根据餐前餐后照片及用户确认主菜为猪脊骨估算；带骨比例、肥瘦、实际可食重量及配菜用油量不明确",
+      "components": [
+        {
+          "food": "咸菜炖猪脊骨",
+          "amount": "吃下大部分可食肉，餐后主要剩骨头和少量附着肉",
+          "kcal_estimate": 430,
+          "kcal_range": [
+            330,
+            550
+          ],
+          "protein_g_range": [
+            34,
+            44
+          ]
+        },
+        {
+          "food": "白米饭",
+          "amount": "按照片估计吃下约 160-200 克熟饭",
+          "kcal_estimate": 230,
+          "kcal_range": [
+            205,
+            260
+          ],
+          "protein_g_estimate": 4
+        },
+        {
+          "food": "豆芽韭菜、豆腐皮和酸豆角",
+          "amount": "豆芽和豆腐皮等大部分吃完，酸豆角仍剩较多",
+          "kcal_estimate": 125,
+          "kcal_range": [
+            95,
+            155
+          ],
+          "protein_g_range": [
+            5,
+            8
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "基本喝完",
+          "kcal_estimate": 15
+        }
+      ],
+      "notes": [
+        "带骨肉按实际吃下的可食部分估算，餐后骨头和少量附着肉不计入。",
+        "米饭约剩一半，暂估实际吃下约 160-200 克熟饭。",
+        "豆芽韭菜和豆腐皮大部分吃完；主菜汤汁及酸豆角仍剩较多。",
+        "用户已确认主菜为猪脊骨；骨头不计入摄入，仅估算实际吃下的肉和附着脂肪。"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "香蕉一根",
+      "kcal_estimate": 107,
+      "kcal_range": [
+        85,
+        130
+      ],
+      "protein_g_estimate": 1.3,
+      "confidence": "未称重，沿用中等大小香蕉可食部分约 120 克的估算口径",
+      "notes": [
+        "若补充香蕉去皮重量可进一步修正。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "饭团一个，105 克",
+      "kcal_estimate": 95,
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "sodium_mg_estimate": 386,
+      "confidence": "按包装营养成分表及用户报告的 105 克重量计算",
+      "label_per_100g": {
+        "energy_kj": 378,
+        "protein_g": 1.8,
+        "fat_g": 3.5,
+        "carbs_g": 12.8,
+        "sodium_mg": 368
+      },
+      "notes": [
+        "每 100 克 378 千焦约合 90 千卡；105 克约 95 千卡。",
+        "该饭团蛋白质仅约 1.9 克，不能作为训练后主要蛋白质来源，也不能单独构成完整晚餐。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "传统力量训练；Apple Watch 正式记录 45 分 23 秒，另补记开始前漏记的 10 分钟",
+      "start_time": "17:36",
+      "end_time": "18:31",
+      "duration_min": 55.38,
+      "recorded_start_time": "17:46",
+      "recorded_duration_min": 45.38,
+      "recorded_active_kcal": 332,
+      "recorded_total_kcal": 412,
+      "unrecorded_duration_min": 10,
+      "unrecorded_active_kcal_estimate": 73,
+      "unrecorded_total_kcal_estimate": 91,
+      "active_kcal": 405,
+      "total_kcal": 503,
+      "avg_heart_rate_bpm": 121,
+      "kcal_estimate": 405,
+      "confidence": "Apple Watch 记录加手动估算：已记录部分采用手表数据，漏记 10 分钟按同次训练平均每分钟消耗率外推",
+      "notes": [
+        "截图显示 17:46-18:31，训练 45 分 23 秒，动态 332 千卡、总消耗 412 千卡、平均心率 121 次/分。",
+        "用户说明训练开始前还有 10 分钟未记录；按已记录部分约 7.32 动态千卡/分钟估算，补记约 73 动态千卡。",
+        "每日净热量计算使用合计动态千卡 405 千卡；合计总千卡 503 仅作参考，不另行加入。",
+        "漏记时段不是 Apple Watch 实测，存在额外估算误差。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1292,
+    "intake_kcal_range": [
+      1098,
+      1488
+    ],
+    "protein_g_range": [
+      54.2,
+      67.2
+    ],
+    "exercise_active_kcal": 405,
+    "net_intake_after_exercise_kcal": 887,
+    "conservative_deficit_kcal": 1015,
+    "remaining_to_intake_target_kcal": 608,
+    "remaining_to_protein_target_g_range": [
+      102.8,
+      115.8
+    ],
+    "status": "截至晚餐饭团；按中位估算距离 1900 千卡饮食上限约 608 千卡，当前保守缺口约 1015 千卡；饭团蛋白质极低，仍需在上限内补充低脂蛋白。"
+  },
+  "notes": [
+    "空腹体重较 2026-07-22 的 95.10 千克下降 0.05 千克，属于正常短期波动，继续看 3-7 天趋势。",
+    "当日基础代谢约 1902 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐仅约 9-10 克蛋白质，明显不足；午餐必须优先安排一大份鸡胸肉、虾仁、低脂鱼或瘦牛肉。",
+    "原计划上午吃六颗约 30 克冬枣，但发现已坏并未食用，因此不计入摄入。",
+    "午餐主菜已确认为咸菜炖猪脊骨；因带骨比例、肥瘦和实际可食重量不明确，热量估算仍保留较宽范围。",
+    "截至午餐蛋白质约 51-64 克，仍少约 106-119 克；晚餐应优先选择低脂高蛋白食物。",
+    "练前吃一根香蕉，约 107 千卡、蛋白质约 1.3 克。",
+    "传统力量训练 Apple Watch 正式记录动态 332 千卡；开始前漏记 10 分钟按同次训练平均消耗率补估 73 动态千卡，合计按 405 动态千卡记录。",
+    "当前缺口只是晚餐前状态；晚餐仍可在约 500-650 千卡内集中安排低脂蛋白，不因运动将 1900 千卡饮食上限上调。"
+    ,"晚餐先吃一个 105 克饭团，约 95 千卡、蛋白质仅约 1.9 克；不能把它当作完整训练后晚餐。"
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "date": "2026-07-29",
+  "timezone": "亚洲/上海",
+  "record_status": "open",
+  "missing_sections": [
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1901,
+    "bmr_note": "按 2026-07-29 早晨空腹体重 95.00 千克，用米夫林-圣乔尔公式 10×95.00 + 6.25×173 - 5×27 + 5 = 1901.25 千卡估算。"
+  },
+  "morning_weight_kg": 95,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1901 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "六个鸡蛋清、一个蛋黄、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 340,
+      "protein_g_estimate": 32.3,
+      "fat_g_estimate": 12.5,
+      "carbs_g_estimate": 13.1,
+      "confidence": "鸡蛋按正常大小计算；牛奶沿用此前同款 260 毫升营养数据",
+      "components": [
+        {
+          "food": "鸡蛋清",
+          "amount": "6 个，按正常大小",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6
+        },
+        {
+          "food": "鸡蛋黄",
+          "amount": "1 个，按正常大小",
+          "kcal_estimate": 55,
+          "protein_g_estimate": 2.7,
+          "fat_g_estimate": 4.5
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "1 瓶，260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 8,
+          "carbs_g_estimate": 12.5
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：红烧肉烧鹌鹑蛋、红烧鸭、拌黄瓜、白菜烧油豆腐、白米饭和蛋花清汤；按餐前餐后照片计算实际吃下部分",
+      "kcal_estimate": 950,
+      "kcal_range": [
+        800,
+        1100
+      ],
+      "protein_g_range": [
+        45,
+        60
+      ],
+      "confidence": "根据餐前餐后照片及用户补充说明估算；主要误差来自实际瘦肉可食量、甜口红烧汁摄入量和菜品用油量",
+      "components": [
+        {
+          "food": "白米饭",
+          "amount": "全部吃完；沿用同款黄边碗此前校准，按约 220 克熟饭",
+          "kcal_estimate": 286,
+          "kcal_range": [
+            260,
+            320
+          ],
+          "protein_g_estimate": 5.5
+        },
+        {
+          "food": "红烧肉烧鹌鹑蛋",
+          "amount": "吃下少量瘦肉及约 2 个鹌鹑蛋，肥肉未吃；红烧汁为甜口，计入附着糖汁，餐后大量游离汤汁未喝",
+          "kcal_estimate": 220,
+          "kcal_range": [
+            160,
+            290
+          ],
+          "protein_g_range": [
+            12,
+            18
+          ]
+        },
+        {
+          "food": "红烧鸭",
+          "amount": "吃下大部分可食鸭肉但未吃鸭皮；餐后剩骨头、少量附着肉及少量未吃肉块",
+          "kcal_estimate": 210,
+          "kcal_range": [
+            160,
+            270
+          ],
+          "protein_g_range": [
+            20,
+            27
+          ]
+        },
+        {
+          "food": "拌黄瓜",
+          "amount": "约吃三至四成，餐后仍剩较多",
+          "kcal_estimate": 40,
+          "kcal_range": [
+            25,
+            65
+          ],
+          "protein_g_estimate": 0.5
+        },
+        {
+          "food": "白菜烧油豆腐",
+          "amount": "白菜吃下约六至七成，油豆腐多数吃下",
+          "kcal_estimate": 170,
+          "kcal_range": [
+            110,
+            220
+          ],
+          "protein_g_range": [
+            7,
+            11
+          ]
+        },
+        {
+          "food": "蛋花清汤",
+          "amount": "一碗，基本喝完",
+          "kcal_estimate": 24,
+          "kcal_range": [
+            10,
+            30
+          ],
+          "protein_g_range": [
+            1,
+            2
+          ]
+        }
+      ],
+      "notes": [
+        "米饭和蛋花清汤基本吃完，按整份计入。",
+        "餐后仍可见的大部分红烧肉、较多黄瓜、少量白菜和大量游离汤汁，均未按吃完计入。",
+        "用户明确说明红烧肉肥肉未吃、鸭皮未吃，已从摄入估算中扣除。",
+        "红烧肉为甜口，已对实际吃下瘦肉和鹌鹑蛋表面附着的含糖红烧汁提高估值；碗中剩余的大量游离甜汁不计入。",
+        "鸭骨不属于可食重量；已扣除骨头和骨上残肉，只计算估计吃下的去皮鸭肉及附着酱汁。",
+        "去除肥肉和鸭皮后热量下降，但油豆腐、烹调油和甜口红烧汁使整餐仍不算清淡。"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "香蕉一根",
+      "kcal_estimate": 107,
+      "kcal_range": [
+        85,
+        130
+      ],
+      "protein_g_estimate": 1.3,
+      "confidence": "未称重，按中等大小香蕉可食部分约 120 克估算"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "蟠桃一个",
+      "kcal_estimate": 55,
+      "kcal_range": [
+        40,
+        75
+      ],
+      "protein_g_estimate": 1,
+      "confidence": "未称重，沿用此前同类蟠桃记录，按中等大小可食部分约 140 克估算"
+    },
+    {
+      "meal": "晚餐",
+      "description": "墨虾丸一包 250 克、六个鸡蛋清",
+      "kcal_estimate": 324,
+      "protein_g_estimate": 58.1,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 14.3,
+      "sodium_mg_estimate": 1270,
+      "confidence": "墨虾丸按此前同款整包营养标签计算；蛋清按正常大小计算",
+      "components": [
+        {
+          "food": "墨虾丸",
+          "amount": "1 包，250 克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "label_per_100g": {
+            "energy_kj": 371,
+            "protein_g": 14.6,
+            "fat_g": 0.7,
+            "carbs_g": 5.7,
+            "sodium_mg": 508
+          }
+        },
+        {
+          "food": "鸡蛋清",
+          "amount": "6 个，正常大小",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6
+        }
+      ],
+      "notes": [
+        "墨虾丸属于高钠加工食品，整包钠约 1270 毫克；今晚后续避免其他高钠食品。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:49",
+      "end_time": "18:48",
+      "duration": "00:59:19",
+      "active_kcal": 412,
+      "total_kcal_reference": 517,
+      "average_heart_rate_bpm": 120,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 412；总千卡 517 仅作参考。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "start_time": "20:02",
+      "end_time": "20:32",
+      "duration": "00:30:15",
+      "active_kcal": 270,
+      "total_kcal_reference": 326,
+      "average_heart_rate_bpm": 137,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 270；总千卡 326 仅作参考。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1776,
+    "intake_kcal_range": [
+      1589,
+      1969
+    ],
+    "protein_g_range": [
+      137.7,
+      152.7
+    ],
+    "exercise_active_kcal": 682,
+    "net_intake_after_exercise_kcal": 1094,
+    "conservative_deficit_kcal": 807,
+    "remaining_to_intake_target_kcal": 124,
+    "remaining_while_preserving_min_deficit_kcal": 407,
+    "minimum_additional_to_stay_within_max_deficit_kcal": 107,
+    "remaining_to_protein_target_g_range": [
+      17.3,
+      32.3
+    ],
+    "status": "截至 20:32；已摄入约 1776 千卡、蛋白质约 138-153 克，力量训练与室内单车合计动态消耗 682 千卡，当前保守热量缺口约 807 千卡。距离 1900 千卡饮食上限约 124 千卡。"
+  },
+  "notes": [
+    "空腹体重 95.00 千克，较 2026-07-28 的 95.05 千克下降 0.05 千克，属于基本持平的正常日波动。",
+    "当日基础代谢约 1901 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐蛋白质约完成全天目标的 19%；午餐继续优先安排足量天然低脂蛋白，避免把主要蛋白质拖到深夜补。",
+    "午餐根据补充说明修正为约 950 千卡、蛋白质约 45-60 克；未吃的红烧肉肥肉和鸭皮已扣除，甜口红烧汁按偏高口径计入实际附着部分，剩余肉块、骨头和大量游离汤汁也已扣除。",
+    "午餐后约剩 610 千卡饮食额度，晚餐仍应以天然低脂蛋白和清淡蔬菜为主，不再安排高脂肉类、油炸食品或额外大份主食。",
+    "练前香蕉和练后蟠桃合计约 162 千卡、蛋白质约 2.3 克。",
+    "传统力量训练 59 分 19 秒，动态消耗 412 千卡；总消耗 517 千卡不重复计入。",
+    "晚餐一包墨虾丸和六个正常大小蛋清，约 324 千卡、蛋白质约 58.1 克。",
+    "室内单车 30 分 15 秒，动态消耗 270 千卡；总消耗 326 千卡不重复计入。",
+    "两次训练动态消耗合计 682 千卡；按中位估算当前保守缺口约 807 千卡，仍高于 400-700 千卡目标。距离饮食上限约 124 千卡；若仍有食欲，可在上限内补约 100-120 千卡天然低脂蛋白，不因运动继续增加进食额度。"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "date": "2026-07-30",
+  "timezone": "亚洲/上海",
+  "record_status": "open",
+  "missing_sections": [
+    "当日结束确认"
+  ],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1898,
+    "bmr_note": "按 2026-07-30 早晨空腹体重 94.70 千克，用米夫林-圣乔尔公式 10×94.70 + 6.25×173 - 5×27 + 5 = 1898.25 千卡估算。"
+  },
+  "morning_weight_kg": 94.7,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1898 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 8,
+      "carbs_g_estimate": 12.5,
+      "confidence": "沿用此前同款牛奶营养数据",
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "1 瓶，260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 8,
+          "carbs_g_estimate": 12.5
+        }
+      ]
+    },
+    {
+      "meal": "上午加餐",
+      "description": "蟠桃一个",
+      "kcal_estimate": 55,
+      "kcal_range": [
+        40,
+        75
+      ],
+      "protein_g_estimate": 1,
+      "confidence": "未称重，沿用此前同类蟠桃记录，按中等大小可食部分约 140 克估算",
+      "notes": [
+        "若补充去核后的可食重量可进一步修正。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "拌面一大碗：青椒回锅肉、青椒肉丝、一勺辣椒油、一勺油炸花生，底料为酱油、香油和醋；固体基本吃完，碗底剩较多油汁",
+      "kcal_estimate": 1200,
+      "kcal_range": [
+        950,
+        1350
+      ],
+      "protein_g_range": [
+        44,
+        56
+      ],
+      "confidence": "根据餐前餐后照片和用户描述按偏保守减脂口径估算；主要误差来自面条重量、回锅肉肥瘦及实际入口油量",
+      "components": [
+        {
+          "food": "绿色面条",
+          "amount": "固体基本吃完，按约 300-350 克熟面估算",
+          "kcal_estimate": 440,
+          "kcal_range": [
+            380,
+            520
+          ],
+          "protein_g_range": [
+            11,
+            15
+          ]
+        },
+        {
+          "food": "青椒回锅肉",
+          "amount": "一份浇头，基本吃完",
+          "kcal_estimate": 280,
+          "kcal_range": [
+            220,
+            350
+          ],
+          "protein_g_range": [
+            11,
+            16
+          ]
+        },
+        {
+          "food": "青椒肉丝",
+          "amount": "一份浇头，基本吃完",
+          "kcal_estimate": 220,
+          "kcal_range": [
+            170,
+            280
+          ],
+          "protein_g_range": [
+            18,
+            24
+          ]
+        },
+        {
+          "food": "油炸花生",
+          "amount": "一勺，按约 20-25 克估算，基本吃完",
+          "kcal_estimate": 130,
+          "kcal_range": [
+            110,
+            155
+          ],
+          "protein_g_range": [
+            5,
+            6
+          ]
+        },
+        {
+          "food": "辣椒油及酱油、香油、醋底料",
+          "amount": "计算面条和浇头实际附着、吸收部分；餐后剩余游离油汁不计",
+          "kcal_estimate": 130,
+          "kcal_range": [
+            70,
+            160
+          ]
+        }
+      ],
+      "notes": [
+        "面条、两份肉浇头和花生基本吃完，均按实际摄入计入。",
+        "回锅肉和肉丝本身的炒制用油已包含在各自估值中。",
+        "碗底仍剩较多酱油、辣椒油和香油混合汁，未按整碗喝完计算；但面条吸附和食材表面附着的油汁已计入。",
+        "本餐同时包含面条、回锅肉、肉丝、油炸花生、辣椒油和香油，属于高热量、高脂且高钠的一餐。"
+      ]
+    },
+    {
+      "meal": "午饭后加餐",
+      "description": "蟠桃一个",
+      "kcal_estimate": 55,
+      "kcal_range": [
+        40,
+        75
+      ],
+      "protein_g_estimate": 1,
+      "confidence": "未称重，沿用此前同类蟠桃记录，按中等大小可食部分约 140 克估算",
+      "notes": [
+        "这是当天第二个蟠桃。"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "蟠桃一个、铜锣烧约 20 克",
+      "kcal_estimate": 120,
+      "kcal_range": [
+        95,
+        150
+      ],
+      "protein_g_estimate": 2.2,
+      "confidence": "蟠桃未称重，按中等大小估算；铜锣烧按用户报告约 20 克及常见配方估算",
+      "components": [
+        {
+          "food": "蟠桃",
+          "amount": "1 个",
+          "kcal_estimate": 55,
+          "kcal_range": [
+            40,
+            75
+          ],
+          "protein_g_estimate": 1
+        },
+        {
+          "food": "铜锣烧",
+          "amount": "约 20 克",
+          "kcal_estimate": 65,
+          "kcal_range": [
+            55,
+            75
+          ],
+          "protein_g_estimate": 1.2
+        }
+      ],
+      "notes": [
+        "这是当天第三个蟠桃。"
+      ]
+    },
+    {
+      "meal": "练后加餐",
+      "description": "水果玉米一根",
+      "kcal_estimate": 160,
+      "kcal_range": [
+        130,
+        190
+      ],
+      "protein_g_estimate": 5,
+      "confidence": "未称重，按中等大小熟水果玉米一根估算",
+      "notes": [
+        "水果玉米主要补充碳水化合物，不能替代练后低脂蛋白。",
+        "若补充去芯可食重量可进一步修正。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:38",
+      "end_time": "18:22",
+      "duration": "00:44:07",
+      "active_kcal": 277,
+      "total_kcal_reference": 353,
+      "average_heart_rate_bpm": 114,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 277；总千卡 353 仅作参考。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "start_time": "20:50",
+      "end_time": "21:22",
+      "duration": "00:31:40",
+      "elapsed_duration": "00:31:51",
+      "active_kcal": 258,
+      "total_kcal_reference": 317,
+      "average_heart_rate_bpm": 124,
+      "source": "Apple Watch 截图",
+      "notes": [
+        "热量核算只计动态千卡 258；总千卡 317 仅作参考。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1773,
+    "intake_kcal_range": [
+      1438,
+      2023
+    ],
+    "protein_g_range": [
+      61.2,
+      73.2
+    ],
+    "exercise_active_kcal": 535,
+    "net_intake_after_exercise_kcal": 1238,
+    "conservative_deficit_kcal": 660,
+    "remaining_to_intake_target_kcal": 127,
+    "remaining_while_preserving_min_deficit_kcal": 260,
+    "remaining_to_protein_target_g_range": [
+      96.8,
+      108.8
+    ],
+    "status": "截至 21:22；按偏保守中位估算已摄入约 1773 千卡、蛋白质约 61-73 克，力量训练与室内单车合计动态消耗 535 千卡，当前保守热量缺口约 660 千卡。距离 1900 千卡饮食上限约 127 千卡；如仍进食，只能补不超过 7 个正常大小蛋清。"
+  },
+  "notes": [
+    "空腹体重 94.70 千克，较 2026-07-29 的 95.00 千克下降 0.30 千克；单日变化仍可能包含水分、糖原和胃肠内容物波动。",
+    "当日基础代谢约 1898 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐只有牛奶，蛋白质和饱腹感均不足；上午或午餐应尽早补充足量天然低脂蛋白，避免晚上集中补。",
+    "上午加餐一个蟠桃，暂估约 55 千卡、蛋白质约 1 克；水果不能替代蛋白质加餐。",
+    "午餐拌面按偏保守口径估算约 1200 千卡、蛋白质约 44-56 克；固体基本吃完，餐后剩余较多游离油汁已扣除。",
+    "午餐的面条、回锅肉、花生、辣椒油和香油使脂肪与总热量明显偏高；当天后续不再安排主食、坚果、肥肉或额外用油。",
+    "当天共吃三个蟠桃，合计暂估约 165 千卡、蛋白质约 3 克。",
+    "练前一个蟠桃和约 20 克铜锣烧合计约 120 千卡、蛋白质约 2.2 克。",
+    "传统力量训练 44 分 07 秒，动态消耗 277 千卡；总消耗 353 千卡不重复计入。",
+    "练后水果玉米一根约 160 千卡、蛋白质约 5 克，已占用此前可用于低脂蛋白的剩余额度。",
+    "室内单车 31 分 40 秒，动态消耗 258 千卡；总消耗 317 千卡不重复计入。",
+    "两次训练动态消耗合计 535 千卡，按中位估算当前保守缺口约 660 千卡；距离固定饮食上限约 127 千卡，如仍有食欲，只能补最多 7 个正常大小蛋清，不能再吃其他食物。",
+    "当天蛋白质前半日分配严重不足，无法在不突破热量约束的前提下追到 170 克；不要为追赶单日蛋白目标强行超吃，次日必须从早餐和午餐提前安排。"
+  ]
+}

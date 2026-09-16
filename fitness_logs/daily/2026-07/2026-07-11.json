@@ -1,0 +1,128 @@
+{
+  "date": "2026-07-11",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1908,
+    "bmr_note": "按 2026-07-11 早晨体重 95.65 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 95.65,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "一瓶普通牛奶",
+      "kcal_estimate": 183,
+      "protein_g_range": [
+        9,
+        10
+      ],
+      "carbs_g_range": [
+        13,
+        18
+      ],
+      "fat_g_range": [
+        10,
+        12
+      ],
+      "confidence": "沿用此前同款牛奶记录",
+      "notes": [
+        "按此前早餐中同款普通牛奶的数据估算。",
+        "如本次牛奶品牌、容量或营养标签不同，需要修正。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "外卖午餐：清蒸鲈鱼、肉末豌豆和一份白米饭，全部吃完",
+      "kcal_estimate": 1250,
+      "protein_g_range": [
+        65,
+        80
+      ],
+      "carbs_g_range": [
+        105,
+        135
+      ],
+      "fat_g_range": [
+        38,
+        52
+      ],
+      "confidence": "根据照片、实际食用份数和上周日同份量肉末豌豆估算",
+      "notes": [
+        "清蒸鲈鱼约 320-400 千卡，肉末豌豆约 550-600 千卡，一份白米饭约 280-330 千卡。",
+        "用户确认只吃了一份米饭，其余菜品全部吃完，按估算区间中位值 1250 千卡记录。",
+        "外卖用油、鱼的可食部分和米饭实际重量存在误差，整餐合理范围约 1150-1330 千卡。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "一根约 200 克香蕉和两片同 2026-07-10 的腌制鸡胸肉，共 200 克",
+      "kcal_estimate": 372,
+      "protein_g_estimate": 33,
+      "carbs_g_estimate": 57.8,
+      "fat_g_estimate": 3,
+      "sodium_mg_estimate": 834,
+      "confidence": "香蕉按报告重量估算，鸡胸肉按营养标签折算",
+      "notes": [
+        "香蕉按 200 克可食部分估算，约 178 千卡、蛋白质约 2.2 克、碳水约 46 克。",
+        "腌制鸡胸肉标签每 100 克约 97 千卡、蛋白质 15.4 克；本次 200 克约 194 千卡、蛋白质 30.8 克。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "focus": "腿部",
+      "description": "下午腿部力量训练",
+      "start_time": "18:10",
+      "end_time": "18:54",
+      "duration_min": 43.5,
+      "active_kcal": 293,
+      "total_kcal": 367,
+      "avg_heart_rate_bpm": 122,
+      "kcal_estimate": 293,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "下午",
+      "focus": "腿部",
+      "description": "腿部力量训练约 43 分钟",
+      "status": "已完成"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1805,
+    "protein_g_range": [
+      107,
+      123
+    ],
+    "exercise_kcal_estimate": 293,
+    "remaining_intake_kcal": 95,
+    "intake_vs_target_kcal": -95,
+    "net_intake_after_exercise_kcal": 1512,
+    "conservative_deficit_kcal": 396
+  },
+  "notes": [
+    "新一天从早餐记录开始。",
+    "报告空腹体重：95.65 千克。",
+    "与 2026-07-10 早晨体重 96.65 千克相比下降 1.00 千克；单日变化主要按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "午餐清蒸鲈鱼、肉末豌豆和一份白米饭全部吃完，按约 1250 千卡记录。",
+    "午餐后约余 467 千卡摄入额度，外卖估算仍存在上浮可能，晚间需要控制份量。",
+    "晚餐吃约 200 克香蕉和 200 克腌制鸡胸肉，共约 372 千卡。",
+    "下午完成约 43 分钟腿部力量训练，记录动态消耗 293 千卡。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

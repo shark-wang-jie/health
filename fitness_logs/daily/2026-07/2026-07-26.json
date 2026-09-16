@@ -1,0 +1,182 @@
+{
+  "date": "2026-07-26",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1916,
+    "bmr_note": "按 2026-07-26 早晨空腹体重 96.45 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 96.45,
+  "targets": {
+    "intake_kcal": 1920,
+    "intake_target_basis": "按当日基础代谢 1916 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "午餐",
+      "description": "汉堡王霸王鸡条三盒",
+      "kcal_estimate": 1140,
+      "kcal_range": [
+        900,
+        1350
+      ],
+      "protein_g_range": [
+        67.5,
+        90
+      ],
+      "confidence": "缺少每盒克数和包装营养标签，沿用 2026-07-25 同款两盒约 760 千卡的估算口径并按三盒换算",
+      "components": [
+        {
+          "food": "汉堡王霸王鸡条",
+          "amount": "3 盒",
+          "kcal_estimate": 1140,
+          "kcal_range": [
+            900,
+            1350
+          ],
+          "protein_g_range": [
+            67.5,
+            90
+          ]
+        }
+      ],
+      "notes": [
+        "油炸鸡条的裹粉和吸油会带来较多脂肪与精制碳水，不能作为常规蛋白质主力。",
+        "如果能提供包装、每盒数量或营养标签，可进一步修正。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "胡萝卜半根、酱卤猪肝约 120 克",
+      "kcal_estimate": 222,
+      "kcal_range": [
+        212,
+        232
+      ],
+      "protein_g_estimate": 32.1,
+      "fat_g_estimate": 5.5,
+      "carbs_g_estimate": 10,
+      "sodium_mg_estimate": 1166,
+      "confidence": "猪肝按包装营养成分表和用户报告的约 120 克计算；胡萝卜未称重，按半根约 60 克估算",
+      "components": [
+        {
+          "food": "酱卤猪肝",
+          "amount": "约 120 克",
+          "kcal_estimate": 197,
+          "protein_g_estimate": 31.6,
+          "fat_g_estimate": 5.4,
+          "carbs_g_estimate": 5.2,
+          "sodium_mg_estimate": 1166,
+          "label_per_100g": {
+            "energy_kj": 687,
+            "protein_g": 26.3,
+            "fat_g": 4.5,
+            "carbs_g": 4.3,
+            "sodium_mg": 972
+          }
+        },
+        {
+          "food": "胡萝卜",
+          "amount": "半根，暂估约 60 克",
+          "kcal_estimate": 25,
+          "kcal_range": [
+            15,
+            35
+          ],
+          "protein_g_estimate": 0.5,
+          "carbs_g_estimate": 4.8
+        }
+      ],
+      "notes": [
+        "猪肝钠含量较高，120 克约含钠 1166 毫克。",
+        "猪肝富含维生素 A，不建议把 120 克以上的份量作为每日常规加餐。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "台式无骨鸡柳一包 300 克、墨虾丸一包 250 克",
+      "kcal_estimate": 615,
+      "protein_g_estimate": 74.9,
+      "fat_g_estimate": 8.1,
+      "carbs_g_estimate": 58.7,
+      "sodium_mg_estimate": 3037,
+      "confidence": "沿用此前两款产品包装标签并按整包计算",
+      "components": [
+        {
+          "food": "台式无骨鸡柳",
+          "amount": "1 包，300 克",
+          "kcal_estimate": 393,
+          "protein_g_estimate": 38.4,
+          "fat_g_estimate": 6.3,
+          "carbs_g_estimate": 44.4,
+          "sodium_mg_estimate": 1767,
+          "label_per_100g": {
+            "kcal": 131,
+            "protein_g": 12.8,
+            "fat_g": 2.1,
+            "carbs_g": 14.8,
+            "sodium_mg": 589
+          }
+        },
+        {
+          "food": "墨虾丸",
+          "amount": "1 包，250 克",
+          "kcal_estimate": 222,
+          "protein_g_estimate": 36.5,
+          "fat_g_estimate": 1.8,
+          "carbs_g_estimate": 14.3,
+          "sodium_mg_estimate": 1270,
+          "label_per_100g": {
+            "energy_kj": 371,
+            "protein_g": 14.6,
+            "fat_g": 0.7,
+            "carbs_g": 5.7,
+            "sodium_mg": 508
+          }
+        }
+      ],
+      "notes": [
+        "两包均按全部吃完记录。",
+        "本餐钠约 3037 毫克，明显偏高，次日体重可能因水分潴留上升。",
+        "鸡柳含裹粉碳水，不能等同于等重量天然鸡胸肉。"
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1977,
+    "intake_kcal_range": [
+      1727,
+      2197
+    ],
+    "protein_g_range": [
+      174.5,
+      197
+    ],
+    "exercise_active_kcal": 0,
+    "conservative_calorie_surplus_kcal": 61,
+    "intake_over_target_kcal": 57,
+    "remaining_to_intake_target_kcal": 0,
+    "protein_over_target_g_range": [
+      4.5,
+      27
+    ],
+    "status": "截至晚餐；按中位估算全天摄入约 1977 千卡，超过 1920 千卡饮食上限约 57 千卡；未记录运动，按基础代谢口径约为 61 千卡热量盈余，今晚停止进食。"
+  },
+  "notes": [
+    "空腹体重较 2026-07-25 的 94.65 千克上升 1.80 千克；结合前一晚约 4480 千卡高碳水、高脂、高钠放纵餐，主要按水分、糖原、钠和胃肠内容物增加解读，不视为 1.80 千克脂肪增长。",
+    "当日基础代谢约 1916 千卡，饮食上限四舍五入到十位为 1920 千卡。",
+    "午餐连续吃三盒油炸鸡条，食物结构仍偏高脂高钠；当天后续必须恢复天然低脂蛋白和蔬菜，不再吃油炸、甜食或放纵餐剩余食物。",
+    "下午加餐半根胡萝卜和约 120 克酱卤猪肝，合计约 222 千卡、蛋白质约 32 克；猪肝钠约 1166 毫克。",
+    "晚餐整包台式无骨鸡柳和整包墨虾丸合计约 615 千卡、蛋白质约 75 克、钠约 3037 毫克。",
+    "晚餐后全天蛋白质达到目标，但总摄入中位估算超过动态饮食上限约 57 千卡；今晚停止进食。",
+    "未报告早餐，不自行补记。",
+    "未报告运动，不添加运动消耗。",
+    "不因前一日晚间超量而断食或进行惩罚性运动，但本周不再安排放纵餐。"
+  ]
+}

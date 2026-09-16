@@ -1,0 +1,142 @@
+{
+  "date": "2026-07-01",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1923,
+    "bmr_note": "按当前早晨体重用 米夫林-圣乔尔公式 估算；摄入目标保持 2000 千卡。"
+  },
+  "morning_weight_kg": 97.2,
+  "targets": {
+    "intake_kcal": 2000,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "如实际份量或标签不同，需要修正本条。",
+      "kcal_estimate": 560,
+      "protein_g_range": [
+        27,
+        30
+      ],
+      "carbs_g_range": [
+        55,
+        65
+      ],
+      "fat_g_range": [
+        22,
+        25
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐按照片和剩余量修正：米饭、黄瓜、咸菜剩约一半；带骨炖肉、豆皮/蔬菜和清汤大部分计入",
+      "kcal_estimate": 710,
+      "protein_g_range": [
+        58,
+        72
+      ],
+      "carbs_g_range": [
+        50,
+        65
+      ],
+      "fat_g_range": [
+        28,
+        40
+      ],
+      "confidence": "根据照片和剩余量估算"
+    },
+    {
+      "meal": "加餐",
+      "description": "皇冠丹麦黄油曲奇 24 克和 1 根棒棒糖",
+      "kcal_estimate": 170,
+      "protein_g_range": [
+        1,
+        2
+      ],
+      "carbs_g_range": [
+        25,
+        32
+      ],
+      "fat_g_range": [
+        5,
+        7
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "1 包苏打饼干和 2 小包芝士饼干",
+      "kcal_estimate": 350,
+      "protein_g_range": [
+        6,
+        9
+      ],
+      "carbs_g_range": [
+        45,
+        58
+      ],
+      "fat_g_range": [
+        14,
+        20
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "晚餐",
+      "description": "一个肉夹馍，约 250 克",
+      "kcal_estimate": 650,
+      "protein_g_range": [
+        25,
+        35
+      ],
+      "carbs_g_range": [
+        60,
+        80
+      ],
+      "fat_g_range": [
+        25,
+        38
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "加餐",
+      "description": "一个卤蛋",
+      "kcal_estimate": 80,
+      "protein_g_estimate": 6,
+      "carbs_g_estimate": 1,
+      "fat_g_estimate": 5,
+      "confidence": "估算"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "力量训练",
+      "description": "手臂训练：二头 10 组，三头 4 组",
+      "duration_min": 30,
+      "kcal_estimate": 180,
+      "confidence": "估算"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 2520,
+    "protein_g_range": [
+      123,
+      154
+    ],
+    "exercise_kcal_estimate": 180,
+    "remaining_intake_kcal": -520,
+    "intake_vs_target_kcal": 520
+  },
+  "notes": [
+    "新一天从早晨体重记录开始。",
+    "与 2026-06-30 早晨体重 98.25 千克相比，今天早晨体重下降 1.05 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。"
+  ]
+}

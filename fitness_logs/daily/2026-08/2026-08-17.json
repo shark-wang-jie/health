@@ -1,0 +1,190 @@
+{
+  "date": "2026-08-17",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1893,
+    "bmr_note": "按2026-08-17早晨空腹体重94.20千克，用米夫林-圣乔尔公式10×94.20 + 6.25×173 - 5×27 + 5 = 1893.25千卡估算。"
+  },
+  "morning_weight_kg": 94.2,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢1893千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1890千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶，暂按约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "confidence": "沿用此前同款纯牛奶每100毫升294千焦及一瓶约260毫升的记录；如本次品牌或容量不同需修正。"
+    },
+    {
+      "meal": "午餐",
+      "description": "大份熟白米饭、带骨炖猪肉（外观近似酸菜炖猪脊骨）、凉拌黄瓜、炒花菜和蛋花汤；菜、米饭和汤几乎吃完，只剩盘中汤汁未吃",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/C30D5976-2C94-4FB4-83F6-4E179F1DFB8F/1-照片-1.jpg"
+      ],
+      "kcal_estimate": 1220,
+      "kcal_range": [
+        950,
+        1500
+      ],
+      "protein_g_estimate": 57.5,
+      "protein_g_range": [
+        43,
+        72
+      ],
+      "fat_g_estimate": 45,
+      "fat_g_range": [
+        32,
+        65
+      ],
+      "carbs_g_estimate": 125,
+      "carbs_g_range": [
+        105,
+        145
+      ],
+      "confidence": "依据餐前照片和用户所述几乎吃完估算；盘中剩余汤汁不计。照片中的肉类按带骨猪脊骨类炖肉处理，骨头不计入可食量。主要误差来自肉类具体部位、净肉量、肥瘦、米饭实际熟重以及凉菜和花菜用油。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "大碗，几乎吃完；暂估约300-380克熟重",
+          "kcal_range": [
+            350,
+            490
+          ]
+        },
+        {
+          "food": "带骨炖猪肉",
+          "amount": "照片可见数块大骨，暂按可食净肉约140-220克；骨头和剩余汤汁不计",
+          "kcal_range": [
+            350,
+            600
+          ]
+        },
+        {
+          "food": "凉拌黄瓜、炒花菜和蛋花汤",
+          "amount": "几乎吃完",
+          "kcal_range": [
+            250,
+            410
+          ]
+        }
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "七个偏小鸡蛋蛋清和一个蛋黄",
+      "kcal_estimate": 148,
+      "protein_g_estimate": 24.5,
+      "fat_g_estimate": 4.7,
+      "carbs_g_estimate": 1.7,
+      "confidence": "用户已确认实际为七个蛋清加一个蛋黄；沿用此前同样吃法的估算。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:38",
+      "end_time": "18:28",
+      "duration": "49分48秒",
+      "active_kcal": 297,
+      "total_kcal": 388,
+      "average_heart_rate_bpm": 112,
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/342435EB-B438-44A2-85FA-770106673E77/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量297千卡，不重复加入总热量388千卡。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:01",
+      "end_time": "21:29",
+      "duration": "27分50秒",
+      "active_kcal": 299,
+      "total_kcal": 351,
+      "average_heart_rate_bpm": 143,
+      "perceived_effort": "6/10，适中",
+      "source": "Apple Watch截图",
+      "photo_path": "/tmp/codex-remote-attachments/019ff6a2-d3d2-7d93-93f9-58db798722dc/F847AA88-BB83-411C-963B-37D6E353A24F/1-照片-1.jpg",
+      "calorie_accounting_note": "缺口计算只加入动态热量299千卡，不重复加入总热量351千卡。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1551,
+    "intake_kcal_range": [
+      1281,
+      1831
+    ],
+    "protein_g_estimate": 90,
+    "protein_g_range": [
+      75.5,
+      104.5
+    ],
+    "fat_g_estimate": 59.1,
+    "fat_g_range": [
+      46.1,
+      79.1
+    ],
+    "carbs_g_estimate": 139.2,
+    "carbs_g_range": [
+      119.2,
+      159.2
+    ],
+    "exercise_active_kcal": 596,
+    "net_intake_after_exercise_kcal": 955,
+    "net_intake_after_exercise_kcal_range": [
+      685,
+      1235
+    ],
+    "provisional_conservative_deficit_kcal": 938,
+    "provisional_conservative_deficit_kcal_range": [
+      658,
+      1208
+    ],
+    "remaining_to_intake_target_kcal": 339,
+    "remaining_to_intake_target_kcal_range": [
+      59,
+      609
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 538,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      258,
+      808
+    ],
+    "remaining_to_protein_target_g": 80,
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      10.8,
+      40.8
+    ],
+    "status": "全天最终：累计摄入中位约1551千卡，合理范围约1281-1831千卡；蛋白质约75.5-104.5克、脂肪约46.1-79.1克、碳水约119.2-159.2克。力量训练与室内单车动态消耗合计596千卡；保守缺口中位约938千卡，合理范围约658-1208千卡，中位明显高于400-700千卡目标。"
+  },
+  "notes": [
+    "空腹体重94.20千克，较2026-08-16的94.25千克下降0.05千克，属于正常日波动。",
+    "按94.20千克计算当日基础代谢约1893千卡，固定饮食上限为1890千卡。",
+    "早餐一瓶此前同款纯牛奶暂按约183千卡、蛋白质8克、脂肪9.4克、碳水12.5克记录。",
+    "午餐照片显示大份熟白米饭、带骨炖猪肉（外观近似酸菜炖猪脊骨）、凉拌黄瓜、炒花菜和蛋花汤；菜、饭和汤几乎吃完，仅剩盘中汤汁未吃。午餐中位约1220千卡，合理范围约950-1500千卡。",
+    "早餐和午餐后累计中位约1403千卡，合理范围约1133-1683千卡；蛋白质约51-80克、脂肪约41.4-74.4克、碳水约117.5-157.5克。",
+    "17:38-18:28完成传统力量训练49分48秒，动态消耗297千卡、总消耗388千卡、平均心率112次/分；缺口只计动态热量。",
+    "用户已确认晚餐为七个偏小蛋清加一个蛋黄，约148千卡、蛋白质24.5克、脂肪4.7克、碳水1.7克。",
+    "计入晚餐和力量训练后，累计摄入中位约1551千卡，合理范围约1281-1831千卡；当前保守缺口中位约639千卡，合理范围约359-909千卡。",
+    "21:01-21:29完成室内单车27分50秒，动态消耗299千卡、总消耗351千卡、平均心率143次/分，主观强度6/10适中；缺口只计动态热量。",
+    "两次训练动态消耗合计596千卡；当前保守缺口中位约938千卡，合理范围约658-1208千卡，中位高于400-700千卡目标。",
+    "2026-08-18已开始报告新一天，据此按此后没有新增摄入或运动正式封账。"
+  ]
+}

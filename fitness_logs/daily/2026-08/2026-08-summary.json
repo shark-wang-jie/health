@@ -1,0 +1,1150 @@
+{
+  "schema_version": 1,
+  "record_type": "monthly_summary",
+  "month": "2026-08",
+  "summary_type": "月度饮食与运动总结",
+  "period": {
+    "start_date": "2026-08-01",
+    "end_date": "2026-08-31",
+    "timezone": "亚洲/上海"
+  },
+  "month_end_date": "2026-08-31",
+  "generated_at": "2026-08-31T20:06:04+08:00",
+  "finalized": true,
+  "coverage": {
+    "calendar_days": 31,
+    "recorded_days": 31,
+    "is_complete_calendar_coverage": true,
+    "missing_dates": [],
+    "final_dates": [
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31"
+    ],
+    "partial_dates": [],
+    "open_dates": [],
+    "unknown_completion_dates": [],
+    "weight_missing_dates": []
+  },
+  "aggregation_policy": {
+    "daily_summary_precedence": [
+      "daily_summary",
+      "daily_totals"
+    ],
+    "reported_data_policy": "月度总量包含所有日文件中已报告的数据；partial/open 日期会单独标出，不能视为完整全天。",
+    "range_central_value": "每日 intake_kcal_estimate 使用原记录点估算；蛋白质同时汇总上下限。",
+    "exercise_kcal": "优先 active_kcal，否则使用 kcal_estimate；不使用 total_kcal。",
+    "energy_balance_formula": "bmr_kcal + active_or_estimated_exercise_kcal - intake_kcal_estimate",
+    "target_evaluation": "按每个日文件自身 targets 判断，不使用单一月度目标。"
+  },
+  "weight_summary": {
+    "recorded_days": 31,
+    "first": {
+      "date": "2026-08-01",
+      "weight_kg": 94.75
+    },
+    "last": {
+      "date": "2026-08-31",
+      "weight_kg": 92.55
+    },
+    "first_to_last_change_kg": -2.2,
+    "average_kg": 93.58,
+    "minimum": {
+      "date": "2026-08-19",
+      "weight_kg": 92.5
+    },
+    "maximum": {
+      "date": "2026-08-01",
+      "weight_kg": 94.75
+    }
+  },
+  "nutrition_summary": {
+    "days_with_intake_summary": 31,
+    "total_intake_kcal_estimate": 67736,
+    "average_intake_kcal_per_recorded_day": 2185,
+    "lowest_intake_day": {
+      "date": "2026-08-09",
+      "value": 1391
+    },
+    "highest_intake_day": {
+      "date": "2026-08-15",
+      "value": 5293
+    },
+    "intake_limit_adherence": {
+      "days_definitely_at_or_below_limit": 7,
+      "days_estimate_at_or_below_limit": 17,
+      "days_possibly_at_or_below_limit": 22,
+      "days_definitely_above_limit": 9
+    },
+    "total_meal_entries": 133,
+    "meal_category_counts": {
+      "上午": 1,
+      "上午加餐": 1,
+      "下午加餐": 5,
+      "下午第一顿": 1,
+      "两次餐食（具体时段未说明）": 1,
+      "凌晨加餐": 1,
+      "加餐": 6,
+      "午餐": 26,
+      "午餐（起床后第一餐）": 1,
+      "单车后加餐": 1,
+      "夜宵": 1,
+      "夜间加餐": 1,
+      "早餐": 27,
+      "早餐加餐": 1,
+      "早餐补记": 1,
+      "晚间加餐": 15,
+      "晚间加餐（饮食结束）": 1,
+      "晚间甜品": 1,
+      "晚间聚餐": 1,
+      "晚间追加甜品": 1,
+      "晚餐": 13,
+      "晚餐追加": 1,
+      "晚餐（第二顿）": 1,
+      "晚饭": 1,
+      "晚饭加餐": 1,
+      "正餐": 2,
+      "练前加餐": 3,
+      "练后加餐": 7,
+      "练后餐": 2,
+      "练后餐（按晚餐计）": 1,
+      "训练前后加餐": 2,
+      "训练前后及晚间进食": 1,
+      "训练后加餐": 3,
+      "餐食（时间未说明）": 1
+    },
+    "protein_days_with_summary": 31,
+    "total_protein_g_range": [
+      3996.6,
+      5073.1
+    ],
+    "average_protein_g_range_per_recorded_day": [
+      128.9,
+      163.6
+    ],
+    "protein_target_days_definitely_met": 3,
+    "protein_target_days_midpoint_met": 8,
+    "protein_target_days_possibly_met": 11,
+    "protein_target_days_definitely_below": 20
+  },
+  "exercise_summary": {
+    "exercise_days": 16,
+    "days_without_exercise_entries": 15,
+    "total_sessions": 29,
+    "sessions_with_duration": 10,
+    "sessions_with_kcal": 28,
+    "total_active_or_estimated_kcal_from_daily_summaries": 9799,
+    "highest_exercise_kcal_day": {
+      "date": "2026-08-12",
+      "value": 1181
+    },
+    "by_normalized_type": {
+      "indoor_cycling": {
+        "sessions": 13,
+        "recorded_duration_min": 156.5,
+        "active_or_estimated_kcal": 4830
+      },
+      "strength": {
+        "sessions": 15,
+        "recorded_duration_min": 299.1,
+        "active_or_estimated_kcal": 4639
+      },
+      "无氧训练（练胸）": {
+        "sessions": 1,
+        "recorded_duration_min": 0,
+        "active_or_estimated_kcal": 330
+      }
+    },
+    "type_aliases": {
+      "strength": [
+        "力量训练",
+        "传统力量训练"
+      ],
+      "indoor_cycling": [
+        "骑行",
+        "室内骑行",
+        "室内单车"
+      ]
+    },
+    "energy_basis": "每次运动优先采用 active_kcal；没有该字段时沿用 kcal_estimate。Apple Watch 总千卡不计入。"
+  },
+  "conservative_deficit_summary": {
+    "days_with_calculable_deficit": 31,
+    "total_conservative_deficit_kcal": 560,
+    "average_conservative_deficit_kcal_per_recorded_day": 18.1,
+    "days_within_that_days_recorded_target": 10,
+    "days_below_that_days_recorded_target": 14,
+    "days_above_that_days_recorded_target": 7,
+    "surplus_days": 10,
+    "lowest_deficit_day": {
+      "date": "2026-08-15",
+      "value": -3406
+    },
+    "highest_deficit_day": {
+      "date": "2026-08-18",
+      "value": 1060
+    },
+    "formula": "当日基础代谢 + 已记录运动动态或估算千卡 - 当日摄入估算"
+  },
+  "notable_days": {
+    "highest_intake": {
+      "date": "2026-08-15",
+      "value": 5293
+    },
+    "lowest_intake": {
+      "date": "2026-08-09",
+      "value": 1391
+    },
+    "highest_exercise": {
+      "date": "2026-08-12",
+      "value": 1181
+    },
+    "highest_conservative_deficit": {
+      "date": "2026-08-18",
+      "value": 1060
+    },
+    "lowest_conservative_deficit": {
+      "date": "2026-08-15",
+      "value": -3406
+    }
+  },
+  "assessment": [
+    "本月首次至末次有记录体重变化 -2.20 千克。",
+    "有蛋白质汇总的 31 天中，确定达到当日目标 3 天；另分别统计按中位估算和可能达到的天数。",
+    "记录到 16 个运动日、29 次训练。",
+    "热量缺口按统一保守公式重算；该结果不包含未单独记录的日常活动和食物热效应。"
+  ],
+  "daily_metrics": [
+    {
+      "date": "2026-08-01",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.75,
+      "bmr_kcal": 1899,
+      "intake_kcal_estimate": 1956,
+      "intake_kcal_range": [
+        1646,
+        2216
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        144.1,
+        169.1
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -57,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 0,
+      "source_summary_status": "截至晚餐：摄入中位估算约 1956 千卡，合理范围约 1646-2216 千卡；蛋白质约 144-169 克。尚未记录运动，按中位估算已超过 1900 千卡固定饮食上限约 56 千卡，按基础代谢口径约为 57 千卡盈余，未达到 400-700 千卡缺口目标。今晚停止进食；若之后有正常计划内训练，按实际动态千卡更新，但不安排惩罚性运动。"
+    },
+    {
+      "date": "2026-08-02",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.45,
+      "bmr_kcal": 1896,
+      "intake_kcal_estimate": 1483,
+      "intake_kcal_range": null,
+      "protein_g_estimate": 71.9,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 413,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：摄入约 1483 千卡、蛋白质约 71.9 克；无运动。按基础代谢口径的保守缺口约 413 千卡，位于 400-700 千卡目标下沿。蛋白质比 170 克目标少约 98.1 克，严重不足。"
+    },
+    {
+      "date": "2026-08-03",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.85,
+      "bmr_kcal": 1890,
+      "intake_kcal_estimate": 4254,
+      "intake_kcal_range": [
+        3619,
+        5009
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        163.2,
+        217.2
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -2364,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：用户确认晚间不再进食、只喝水；进入下一自然日时仍未收到运动记录，因此运动按 0 动态千卡结算。全天摄入中位估算约 4254 千卡，合理范围约 3619-5009 千卡；蛋白质约 163-217 克；按基础代谢口径中位约为 2364 千卡保守盈余。"
+    },
+    {
+      "date": "2026-08-04",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.75,
+      "bmr_kcal": 1899,
+      "intake_kcal_estimate": 1731,
+      "intake_kcal_range": [
+        1576,
+        1921
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        126.2,
+        141.7
+      ],
+      "exercise_active_or_estimated_kcal": 665,
+      "conservative_deficit_kcal": 833,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位估算约 1731 千卡，合理范围约 1576-1921 千卡；蛋白质约 126.2-141.7 克，碳水约 128.9-156.9 克；力量训练与室内单车动态消耗合计 665 千卡。保守缺口中位约 833 千卡，高于 400-700 千卡目标；蛋白质比 170 克目标少约 28.3-43.8 克。"
+    },
+    {
+      "date": "2026-08-05",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.45,
+      "bmr_kcal": 1896,
+      "intake_kcal_estimate": 2249,
+      "intake_kcal_range": [
+        2099,
+        2429
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        177.1,
+        192.1
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -353,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位估算约 2249 千卡，合理范围约 2099-2429 千卡；蛋白质约 177.1-192.1 克、碳水约 204.1-229.1 克。没有收到运动记录，最终按运动 0 千卡结算；按基础代谢口径为中位约 353 千卡保守盈余，固定饮食上限超过中位约 349 千卡。"
+    },
+    {
+      "date": "2026-08-06",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.5,
+      "bmr_kcal": 1896,
+      "intake_kcal_estimate": 1825,
+      "intake_kcal_range": [
+        1635,
+        2075
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        122.5,
+        142.5
+      ],
+      "exercise_active_or_estimated_kcal": 530,
+      "conservative_deficit_kcal": 601,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位估算约 1825 千卡，合理范围约 1635-2075 千卡；蛋白质约 122.5-142.5 克、碳水约 167.9-207.9 克；力量训练与室内单车动态消耗合计 530 千卡。保守缺口中位约 601 千卡，位于 400-700 千卡目标范围；蛋白质仍少约 27.5-47.5 克。"
+    },
+    {
+      "date": "2026-08-07",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.5,
+      "bmr_kcal": 1896,
+      "intake_kcal_estimate": 1774,
+      "intake_kcal_range": [
+        1561,
+        2041
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        122,
+        144.1
+      ],
+      "exercise_active_or_estimated_kcal": 494,
+      "conservative_deficit_kcal": 616,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位估算约 1774 千卡，合理范围约 1561-2041 千卡；蛋白质约 122.0-144.1 克、碳水约 139.2-189.7 克。传统力量训练动态消耗 494 千卡，保守缺口中位约 616 千卡，位于 400-700 千卡目标范围；蛋白质仍少约 25.9-48.0 克。"
+    },
+    {
+      "date": "2026-08-08",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.6,
+      "bmr_kcal": 1887,
+      "intake_kcal_estimate": 2645,
+      "intake_kcal_range": [
+        2475,
+        2845
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        137.8,
+        156.8
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -758,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位估算约 2645 千卡，合理范围约 2475-2845 千卡；蛋白质约 137.8-156.8 克、碳水约 235.2-265.2 克。没有收到运动记录，最终按运动 0 千卡结算；中位摄入超过 1890 千卡固定上限约 755 千卡，按基础代谢口径约为 758 千卡保守盈余。"
+    },
+    {
+      "date": "2026-08-09",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.75,
+      "bmr_kcal": 1889,
+      "intake_kcal_estimate": 1391,
+      "intake_kcal_range": [
+        1291,
+        1511
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        122.9,
+        162.9
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 498,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 2,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：两顿累计摄入中位估算约 1391 千卡，合理范围约 1291-1511 千卡；蛋白质约 122.9-162.9 克、碳水约 107.7-113.7 克。没有收到运动记录，最终按运动 0 千卡结算；按基础代谢口径保守缺口中位约 498 千卡，位于 400-700 千卡目标范围。"
+    },
+    {
+      "date": "2026-08-10",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.65,
+      "bmr_kcal": 1888,
+      "intake_kcal_estimate": 1580,
+      "intake_kcal_range": [
+        1295,
+        1910
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        86.3,
+        116.3
+      ],
+      "exercise_active_or_estimated_kcal": 351,
+      "conservative_deficit_kcal": 659,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位估算约 1580 千卡，合理范围约 1295-1910 千卡；蛋白质约 86.3-116.3 克、碳水约 92-144 克。下午力量训练主动消耗暂估约 200 千卡，晚间室内单车 Apple Watch 动态消耗 351 千卡，合计约 551 千卡、合理范围约 501-611 千卡。按基础代谢口径的保守缺口中位约 859 千卡，合理范围约 479-1204 千卡，中位高于目标范围；蛋白质仍明显不足。"
+    },
+    {
+      "date": "2026-08-11",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.45,
+      "bmr_kcal": 1886,
+      "intake_kcal_estimate": 1689,
+      "intake_kcal_range": [
+        1534,
+        1914
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        150.1,
+        170.1
+      ],
+      "exercise_active_or_estimated_kcal": 649,
+      "conservative_deficit_kcal": 846,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位估算约 1689 千卡，合理范围约 1534-1914 千卡；蛋白质约 150.1-170.1 克、碳水约 132-156 克。传统力量训练动态消耗 341 千卡，室内单车动态消耗 308 千卡，合计 649 千卡。按基础代谢口径的保守缺口中位约 846 千卡，合理范围约 621-1001 千卡，中位高于目标范围；蛋白质接近或达到目标。"
+    },
+    {
+      "date": "2026-08-12",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.15,
+      "bmr_kcal": 1883,
+      "intake_kcal_estimate": 2368,
+      "intake_kcal_range": [
+        2108,
+        2718
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        167.1,
+        223.6
+      ],
+      "exercise_active_or_estimated_kcal": 1181,
+      "conservative_deficit_kcal": 696,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约 2368 千卡，合理范围约 2108-2718 千卡；蛋白质约 167.1-223.6 克、碳水约 233-263.2 克。传统力量训练动态消耗 476 千卡，室内单车动态消耗 705 千卡，合计 1181 千卡。按基础代谢加动态运动口径，保守缺口中位约 696 千卡，合理范围约 346-956 千卡；中位位于目标上沿。中位摄入超过 1880 千卡固定饮食上限约 488 千卡。"
+    },
+    {
+      "date": "2026-08-13",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.8,
+      "bmr_kcal": 1889,
+      "intake_kcal_estimate": 1591,
+      "intake_kcal_range": [
+        1446,
+        1807
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        96,
+        115.5
+      ],
+      "exercise_active_or_estimated_kcal": 740,
+      "conservative_deficit_kcal": 1038,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约 1591 千卡，合理范围约 1446-1807 千卡；蛋白质约 96.0-115.5 克、脂肪约 42.6-65.6 克、碳水约 166.0-185.4 克。力量训练与室内单车动态消耗合计 740 千卡，按基础代谢加动态运动口径的保守缺口中位约 1038 千卡，合理范围约 822-1183 千卡。蛋白质明显不足。"
+    },
+    {
+      "date": "2026-08-14",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.6,
+      "bmr_kcal": 1887,
+      "intake_kcal_estimate": 1867,
+      "intake_kcal_range": [
+        1700,
+        2085
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        117.3,
+        133.8
+      ],
+      "exercise_active_or_estimated_kcal": 305,
+      "conservative_deficit_kcal": 325,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位约1867千卡，合理范围约1700-2085千卡；蛋白质约117.3-133.8克、脂肪约54.5-78.8克、碳水约175.5-211.5克。力量训练动态消耗305千卡，保守缺口中位约325千卡，合理范围约107-492千卡；中位低于400-700千卡目标。"
+    },
+    {
+      "date": "2026-08-15",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.6,
+      "bmr_kcal": 1887,
+      "intake_kcal_estimate": 5293,
+      "intake_kcal_range": [
+        4604,
+        6050
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        218.2,
+        298.5
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -3406,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约5293千卡，合理范围约4604-6050千卡；蛋白质约218.2-298.5克、脂肪约278.9-395.5克、碳水约340.1-440.5克。无运动记录，超过1890千卡固定饮食上限中位约3403千卡，按基础代谢口径为约3406千卡保守盈余。"
+    },
+    {
+      "date": "2026-08-16",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.25,
+      "bmr_kcal": 1894,
+      "intake_kcal_estimate": 1411,
+      "intake_kcal_range": [
+        1256,
+        1596
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        167,
+        227
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 483,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 2,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：同款原味发酵乳累计800克，并分两次吃完三斤带头带壳活虾的虾肉，另吃4至5个虾头。中位约1411千卡、蛋白质197克、脂肪50克、碳水49.3克。按基础代谢口径的缺口中位约483千卡；因活虾出肉率不确定，合理范围约298-638千卡。"
+    },
+    {
+      "date": "2026-08-17",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.2,
+      "bmr_kcal": 1893,
+      "intake_kcal_estimate": 1551,
+      "intake_kcal_range": [
+        1281,
+        1831
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        75.5,
+        104.5
+      ],
+      "exercise_active_or_estimated_kcal": 596,
+      "conservative_deficit_kcal": 938,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1551千卡，合理范围约1281-1831千卡；蛋白质约75.5-104.5克、脂肪约46.1-79.1克、碳水约119.2-159.2克。力量训练与室内单车动态消耗合计596千卡；保守缺口中位约938千卡，合理范围约658-1208千卡，中位明显高于400-700千卡目标。"
+    },
+    {
+      "date": "2026-08-18",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.8,
+      "bmr_kcal": 1879,
+      "intake_kcal_estimate": 1422,
+      "intake_kcal_range": [
+        1239,
+        1639
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        84.4,
+        108.4
+      ],
+      "exercise_active_or_estimated_kcal": 603,
+      "conservative_deficit_kcal": 1060,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1422千卡，合理范围约1239-1639千卡；蛋白质约84.4-108.4克、脂肪约43.7-70.2克、碳水约123.4-161.4克。力量训练与室内单车动态消耗合计603千卡；保守缺口中位约1060千卡，合理范围约843-1243千卡，明显高于400-700千卡目标。"
+    },
+    {
+      "date": "2026-08-19",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.5,
+      "bmr_kcal": 1876,
+      "intake_kcal_estimate": 2905,
+      "intake_kcal_range": [
+        2525,
+        3345
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        155.5,
+        209.5
+      ],
+      "exercise_active_or_estimated_kcal": 1086,
+      "conservative_deficit_kcal": 57,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约2905千卡，合理范围约2525-3345千卡；蛋白质约155.5-209.5克、脂肪约121.2-204.2克、碳水约219.8-283.8克。力量训练与室内单车动态消耗合计1086千卡；按基础代谢口径保守缺口中位约57千卡，合理范围约383千卡盈余至437千卡缺口，未达到400-700千卡目标。"
+    },
+    {
+      "date": "2026-08-20",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.55,
+      "bmr_kcal": 1887,
+      "intake_kcal_estimate": 1551,
+      "intake_kcal_range": [
+        1371,
+        1781
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        99.1,
+        119.1
+      ],
+      "exercise_active_or_estimated_kcal": 481,
+      "conservative_deficit_kcal": 817,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1551千卡，合理范围约1371-1781千卡；蛋白质约99.1-119.1克、脂肪约45.3-69.3克、碳水约135.1-168.1克。力量训练与室内单车动态消耗合计481千卡；最终保守缺口中位约817千卡，合理范围约587-997千卡，高于400-700千卡目标。"
+    },
+    {
+      "date": "2026-08-21",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.7,
+      "bmr_kcal": 1888,
+      "intake_kcal_estimate": 4772,
+      "intake_kcal_range": [
+        3979,
+        5914
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        215.8,
+        320.4
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -2884,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约4772千卡，合理范围约3979-5914千卡；蛋白质约215.8-320.4克、脂肪约238.4-377.9克、碳水约307.2-446.7克。无运动记录；按基础代谢口径为中位约2884千卡保守盈余，合理范围约2091-4026千卡盈余。"
+    },
+    {
+      "date": "2026-08-22",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 94.55,
+      "bmr_kcal": 1897,
+      "intake_kcal_estimate": 1931,
+      "intake_kcal_range": [
+        1791,
+        2141
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        86.2,
+        105.2
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -34,
+      "intake_limit_kcal": 1900,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1931千卡，合理范围约1791-2141千卡；蛋白质约86.2-105.2克、脂肪约58-83克、碳水约227-246克。无运动记录；按基础代谢口径为中位约34千卡保守盈余，合理范围约106千卡缺口至244千卡盈余。"
+    },
+    {
+      "date": "2026-08-23",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.25,
+      "bmr_kcal": 1884,
+      "intake_kcal_estimate": 1689,
+      "intake_kcal_range": [
+        1454,
+        1994
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        97.4,
+        134.4
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 195,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1689千卡，合理范围约1454-1994千卡；蛋白质约97.4-134.4克、脂肪约45.5-85.9克、碳水约142.6-189.8克。无运动记录；按基础代谢口径中位缺口约195千卡，合理范围约110千卡盈余至430千卡缺口。中位摄入低于1880千卡固定上限约191千卡，但未达到400-700千卡目标缺口，且蛋白质未达170克目标。"
+    },
+    {
+      "date": "2026-08-24",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.5,
+      "bmr_kcal": 1886,
+      "intake_kcal_estimate": 2307,
+      "intake_kcal_range": [
+        2177,
+        2477
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        107.1,
+        134.8
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -421,
+      "intake_limit_kcal": 1890,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约2307千卡，合理范围约2177-2477千卡；蛋白质约107.1-134.8克、脂肪约74.4-103.4克、碳水约242.2-267.2克。无运动记录；中位超过1890千卡固定饮食上限约417千卡，按基础代谢口径为中位约421千卡盈余。"
+    },
+    {
+      "date": "2026-08-25",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.6,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 1751,
+      "intake_kcal_range": [
+        1495,
+        2091
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        97.1,
+        131.1
+      ],
+      "exercise_active_or_estimated_kcal": 576,
+      "conservative_deficit_kcal": 702,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1751千卡，合理范围约1495-2091千卡；蛋白质约97.1-131.1克、脂肪约48.6-79.7克、碳水约162.3-215.6克。力量训练与室内单车动态消耗合计576千卡；中位低于1880千卡固定饮食上限约129千卡，按基础代谢加动态运动口径为中位约702千卡缺口，处于目标上沿附近。"
+    },
+    {
+      "date": "2026-08-26",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.6,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 1881,
+      "intake_kcal_range": [
+        1652,
+        2137
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        119.9,
+        155.9
+      ],
+      "exercise_active_or_estimated_kcal": 614,
+      "conservative_deficit_kcal": 610,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1881千卡，合理范围约1652-2137千卡；蛋白质约138.8克、脂肪约51.2克、碳水约216.4克。力量训练与室内单车动态消耗合计614千卡，中位保守缺口约610千卡，处于400-700千卡目标范围。"
+    },
+    {
+      "date": "2026-08-27",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.6,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 1704,
+      "intake_kcal_range": [
+        1466,
+        1975
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        94.4,
+        128.2
+      ],
+      "exercise_active_or_estimated_kcal": 256,
+      "conservative_deficit_kcal": 429,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位约1704千卡，合理范围约1466-1975千卡；蛋白质约111.8克、脂肪约66.3克、碳水约171.2克。力量训练动态消耗256千卡，中位保守缺口约429千卡，处于400-700千卡目标范围。"
+    },
+    {
+      "date": "2026-08-28",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.6,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 1857,
+      "intake_kcal_range": [
+        1607,
+        2177
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        136.9,
+        182.9
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 20,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1857千卡，合理范围约1607-2177千卡；蛋白质约160.9克、脂肪约64.4克、碳水约154.0克。碳水处于150-180克执行区间；无运动，中位保守缺口约20千卡，低于400-700千卡目标范围。"
+    },
+    {
+      "date": "2026-08-29",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.6,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 3456,
+      "intake_kcal_range": [
+        3126,
+        3896
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        165.3,
+        212.3
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -1579,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约3456千卡，合理范围约3126-3896千卡；蛋白质约188.3克、脂肪约126.8克、碳水约381.2克。中位摄入较1880千卡上限高约1576千卡；无运动，中位保守结果约为1579千卡盈余。"
+    },
+    {
+      "date": "2026-08-30",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.2,
+      "bmr_kcal": 1883,
+      "intake_kcal_estimate": 1920,
+      "intake_kcal_range": [
+        1712,
+        2162
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        125.9,
+        155.9
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -37,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1920千卡，合理范围约1712-2162千卡；蛋白质约141.9克、脂肪约78.7克、碳水约158.9克。碳水处于150-180克执行区间；中位摄入较1880千卡上限高约40千卡，无运动，中位保守结果约为37千卡盈余。"
+    },
+    {
+      "date": "2026-08-31",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.55,
+      "bmr_kcal": 1877,
+      "intake_kcal_estimate": 1932,
+      "intake_kcal_range": [
+        1702,
+        2232
+      ],
+      "protein_g_estimate": null,
+      "protein_g_range": [
+        146.4,
+        187.4
+      ],
+      "exercise_active_or_estimated_kcal": 672,
+      "conservative_deficit_kcal": 617,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1932千卡，合理范围约1702-2232千卡；蛋白质约167.4克、脂肪约64.1克、碳水约169.4克。碳水处于150-180克执行区间。练胸约50分钟暂估动态消耗330千卡，室内骑行设备记录342千卡，合计672千卡；中位保守缺口约617千卡，处于400-700千卡目标范围。"
+    }
+  ],
+  "source_files": [
+    "daily/2026-08/2026-08-01.json",
+    "daily/2026-08/2026-08-02.json",
+    "daily/2026-08/2026-08-03.json",
+    "daily/2026-08/2026-08-04.json",
+    "daily/2026-08/2026-08-05.json",
+    "daily/2026-08/2026-08-06.json",
+    "daily/2026-08/2026-08-07.json",
+    "daily/2026-08/2026-08-08.json",
+    "daily/2026-08/2026-08-09.json",
+    "daily/2026-08/2026-08-10.json",
+    "daily/2026-08/2026-08-11.json",
+    "daily/2026-08/2026-08-12.json",
+    "daily/2026-08/2026-08-13.json",
+    "daily/2026-08/2026-08-14.json",
+    "daily/2026-08/2026-08-15.json",
+    "daily/2026-08/2026-08-16.json",
+    "daily/2026-08/2026-08-17.json",
+    "daily/2026-08/2026-08-18.json",
+    "daily/2026-08/2026-08-19.json",
+    "daily/2026-08/2026-08-20.json",
+    "daily/2026-08/2026-08-21.json",
+    "daily/2026-08/2026-08-22.json",
+    "daily/2026-08/2026-08-23.json",
+    "daily/2026-08/2026-08-24.json",
+    "daily/2026-08/2026-08-25.json",
+    "daily/2026-08/2026-08-26.json",
+    "daily/2026-08/2026-08-27.json",
+    "daily/2026-08/2026-08-28.json",
+    "daily/2026-08/2026-08-29.json",
+    "daily/2026-08/2026-08-30.json",
+    "daily/2026-08/2026-08-31.json"
+  ],
+  "methodology_notes": [
+    "月度总量和均值只按现有每日 JSON 计算；缺失日期不按零摄入或零运动处理。",
+    "每日摄入使用当日汇总中的中位或点估算；有合理范围时同时保留范围。",
+    "蛋白质区间按逐日上下限分别汇总；点估算视为上下限相同。",
+    "运动总消耗优先采用 Apple Watch 动态千卡；没有动态千卡时沿用设备或人工估算。",
+    "保守缺口统一按基础代谢加已记录运动、减摄入计算；真实 TDEE 通常更高。",
+    "没有运动条目的日期仅表示无运动记录；若当日记录不完整，不能据此确认是休息日。"
+  ]
+}

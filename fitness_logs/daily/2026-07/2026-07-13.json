@@ -1,0 +1,174 @@
+{
+  "date": "2026-07-13",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1926,
+    "bmr_note": "按 2026-07-13 早晨体重 97.45 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 97.45,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "两个鸡蛋",
+      "kcal_estimate": 140,
+      "protein_g_range": [
+        12,
+        13
+      ],
+      "carbs_g_estimate": 1,
+      "fat_g_range": [
+        9,
+        10
+      ],
+      "confidence": "按两个中大号鸡蛋估算",
+      "notes": [
+        "每个鸡蛋按约 70 千卡估算。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：带骨炖肉基本吃完，约半份白米饭，部分黄瓜、冬瓜/酸菜和少量汤汁，番茄汤基本未喝",
+      "kcal_estimate": 720,
+      "protein_g_range": [
+        36,
+        46
+      ],
+      "carbs_g_range": [
+        55,
+        70
+      ],
+      "fat_g_range": [
+        32,
+        44
+      ],
+      "confidence": "根据餐前餐后照片估算",
+      "notes": [
+        "餐后照片显示带骨炖肉的可食部分基本吃完，骨头留在托盘上。",
+        "白米饭约吃一半，黄瓜和冬瓜/酸菜吃了一部分，番茄汤基本未喝。",
+        "复核餐后骨头份量后，将酸菜炖猪肉可食部分下调至约 420-500 千卡。",
+        "整餐合理范围约 650-800 千卡，取约 720 千卡记录。"
+      ]
+    },
+    {
+      "meal": "训练前加餐",
+      "description": "100 克蒸土豆",
+      "kcal_estimate": 80,
+      "protein_g_estimate": 2,
+      "carbs_g_estimate": 18,
+      "fat_g_estimate": 0.1,
+      "confidence": "按报告重量和蒸土豆常用食物数据估算",
+      "notes": [
+        "按不加油的蒸土豆计算。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "100 克饭团",
+      "kcal_estimate": 161,
+      "protein_g_estimate": 3.4,
+      "carbs_g_estimate": 27.9,
+      "fat_g_estimate": 3.8,
+      "sodium_mg_estimate": 258,
+      "confidence": "营养标签",
+      "notes": [
+        "标签每 100 克能量 673 千焦，折合约 161 千卡。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "一片此前吃过的腌制鸡胸肉，100 克",
+      "kcal_estimate": 97,
+      "protein_g_estimate": 15.4,
+      "carbs_g_estimate": 5.9,
+      "fat_g_estimate": 1.2,
+      "sodium_mg_estimate": 417,
+      "confidence": "沿用此前同款鸡胸肉营养标签",
+      "notes": [
+        "标签每 100 克能量 407 千焦，折合约 97 千卡。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "focus": "胸部",
+      "description": "胸部无氧力量训练，苹果手表忘记记录",
+      "duration_min": 45,
+      "active_kcal": 250,
+      "kcal_estimate": 250,
+      "kcal_range": [
+        210,
+        300
+      ],
+      "confidence": "根据体重、时长和既往相近力量训练记录保守估算",
+      "notes": [
+        "缺少苹果手表实测数据，按约 250 动态千卡记录。",
+        "合理范围约 210-300 千卡，日汇总采用中间偏保守值，避免高估运动消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "晚间室内单车骑行",
+      "start_time": "21:29",
+      "end_time": "22:00",
+      "duration_min": 30.5,
+      "active_kcal": 257,
+      "total_kcal": 313,
+      "avg_heart_rate_bpm": 143,
+      "kcal_estimate": 257,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "下午",
+      "focus": "胸部",
+      "description": "胸部无氧力量训练 45 分钟",
+      "status": "已完成"
+    },
+    {
+      "time": "晚上",
+      "focus": "有氧",
+      "description": "室内单车约 30 分钟",
+      "status": "已完成"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 1198,
+    "protein_g_range": [
+      68,
+      79
+    ],
+    "exercise_kcal_estimate": 507,
+    "remaining_intake_kcal": 702,
+    "intake_vs_target_kcal": -702,
+    "net_intake_after_exercise_kcal": 691,
+    "conservative_deficit_kcal": 1235
+  },
+  "notes": [
+    "新一天从空腹体重和早餐记录开始。",
+    "报告空腹体重：97.45 千克。",
+    "与 2026-07-12 早晨体重 95.90 千克相比上升 1.55 千克；结合前一日高热量、高碳水和高钠放纵餐，主要按水分、糖原、钠和胃肠内容物增加解读。",
+    "今天恢复 1900 千卡正常减脂计划，不断食、不极端限食，也不进行惩罚性运动。",
+    "午餐根据餐前餐后照片复核后估算约 720 千卡，带骨炖肉基本吃完，米饭约吃一半。",
+    "训练前吃 100 克蒸土豆，约 80 千卡。",
+    "下午完成 45 分钟胸部无氧力量训练；苹果手表忘记记录，按约 250 动态千卡保守估算。",
+    "晚餐吃 100 克饭团，按标签记录约 161 千卡。",
+    "晚间加餐吃 100 克腌制鸡胸肉，按此前同款标签记录约 97 千卡、蛋白质 15.4 克。",
+    "晚间完成约 30 分钟室内单车，苹果手表记录动态消耗 257 千卡。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

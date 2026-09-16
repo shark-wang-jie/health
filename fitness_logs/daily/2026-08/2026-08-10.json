@@ -1,0 +1,368 @@
+{
+  "date": "2026-08-10",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1888,
+    "bmr_note": "按 2026-08-10 早晨空腹体重 93.65 千克，用米夫林-圣乔尔公式 10×93.65 + 6.25×173 - 5×27 + 5 = 1887.75 千卡估算。"
+  },
+  "morning_weight_kg": 93.65,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢 1888 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约 1890 千卡固定上限、170 克蛋白质及约 55-65 克脂肪反推的减脂执行区间；不建议长期刻意压到 130 克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶约 260 毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "confidence": "暂按此前同款 260 毫升一瓶计算；若本次容量或标签不同需修正。",
+      "nutrition_basis": "沿用此前同款每 100 毫升 294 千焦；260 毫升约 183 千卡、蛋白质约 8 克。"
+    },
+    {
+      "meal": "午餐",
+      "description": "白米饭、酸菜炖猪大骨或脊骨、拍黄瓜、炒白菜和清汤；按餐前餐后照片扣除剩余米饭、蔬菜、盘底油汁及全部骨头",
+      "photo_paths": [
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/8DD2EF22-5342-4CA2-9903-C93F939F971F/1-照片-1.jpg",
+        "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/8DD2EF22-5342-4CA2-9903-C93F939F971F/2-照片-2.jpg"
+      ],
+      "kcal_estimate": 830,
+      "kcal_range": [
+        650,
+        1050
+      ],
+      "protein_g_range": [
+        42,
+        62
+      ],
+      "carbs_g_range": [
+        45,
+        72
+      ],
+      "confidence": "按餐前、餐后照片估算实际吃下部分。米饭约吃四成，暂按 160-220 克熟重；大骨上的肉基本吃净，但骨头全部排除；黄瓜、白菜和酸菜只按减少的部分计入；盘底剩余游离油汁不全额计入。主要误差来自大骨去骨后的实际肉量、肉的肥瘦和米饭初始重量。",
+      "components": [
+        {
+          "food": "熟白米饭",
+          "amount": "按餐前与餐后差额估计吃下约 160-220 克",
+          "kcal_estimate": 250,
+          "kcal_range": [
+            210,
+            285
+          ],
+          "protein_g_range": [
+            4,
+            6
+          ],
+          "carbs_g_range": [
+            40,
+            57
+          ]
+        },
+        {
+          "food": "酸菜炖猪大骨或脊骨上的可食肉",
+          "amount": "肉基本吃净，照片所示全部骨头不计",
+          "kcal_estimate": 430,
+          "kcal_range": [
+            350,
+            540
+          ],
+          "protein_g_range": [
+            35,
+            50
+          ]
+        },
+        {
+          "food": "拍黄瓜、炒白菜和酸菜",
+          "amount": "只计餐前餐后减少的部分，仍有较多剩余",
+          "kcal_estimate": 70,
+          "kcal_range": [
+            40,
+            100
+          ],
+          "protein_g_range": [
+            2,
+            4
+          ],
+          "carbs_g_range": [
+            4,
+            10
+          ]
+        },
+        {
+          "food": "食物表面附着油汁",
+          "amount": "只计随肉和已吃蔬菜入口的部分，盘底剩余油汁不计",
+          "kcal_estimate": 50,
+          "kcal_range": [
+            30,
+            80
+          ],
+          "carbs_g_range": [
+            0,
+            3
+          ]
+        },
+        {
+          "food": "清汤或蛋花清汤",
+          "amount": "一碗喝完",
+          "kcal_estimate": 30,
+          "kcal_range": [
+            20,
+            45
+          ],
+          "protein_g_range": [
+            1,
+            3
+          ],
+          "carbs_g_range": [
+            0,
+            2
+          ]
+        }
+      ],
+      "notes": [
+        "骨头体积很大但不提供实际摄入热量，已按去骨后的可食肉估算。",
+        "餐后仍有较多米饭、黄瓜、白菜、酸菜和盘底油汁，均已按剩余量扣除。"
+      ]
+    },
+    {
+      "meal": "训练后加餐",
+      "description": "半根糯玉米、两根手指粗的鸡肉肠、两小包麻酱素毛肚",
+      "kcal_estimate": 380,
+      "kcal_range": [
+        285,
+        480
+      ],
+      "protein_g_range": [
+        11,
+        20
+      ],
+      "fat_g_range": [
+        14,
+        29
+      ],
+      "carbs_g_range": [
+        29,
+        50
+      ],
+      "confidence": "糯玉米沿用既有中等大小整根约 220 千卡的记录并按一半计算。鸡肉肠缺少长度、总重量和标签，暂按两根合计约 50-80 克的常见加工鸡肉肠估算；麻酱素毛肚缺少每包净含量和标签，暂按两小包合计约 35-55 克且含麻酱油脂估算。鸡肉肠和素毛肚的包装标签可显著缩小误差。",
+      "components": [
+        {
+          "food": "熟糯玉米",
+          "amount": "中等大小约半根",
+          "kcal_estimate": 110,
+          "kcal_range": [
+            95,
+            120
+          ],
+          "protein_g_range": [
+            2,
+            3
+          ],
+          "fat_g_estimate": 1,
+          "carbs_g_range": [
+            20,
+            25
+          ]
+        },
+        {
+          "food": "鸡肉肠",
+          "amount": "手指粗 2 根，暂按合计约 50-80 克",
+          "kcal_estimate": 145,
+          "kcal_range": [
+            110,
+            190
+          ],
+          "protein_g_range": [
+            7,
+            12
+          ],
+          "fat_g_range": [
+            7,
+            14
+          ],
+          "carbs_g_range": [
+            3,
+            9
+          ]
+        },
+        {
+          "food": "麻酱素毛肚",
+          "amount": "小包装 2 包，暂按合计约 35-55 克",
+          "kcal_estimate": 125,
+          "kcal_range": [
+            80,
+            170
+          ],
+          "protein_g_range": [
+            2,
+            5
+          ],
+          "fat_g_range": [
+            6,
+            14
+          ],
+          "carbs_g_range": [
+            6,
+            16
+          ]
+        }
+      ],
+      "notes": [
+        "鸡肉肠和麻酱素毛肚均属于加工食品，蛋白质密度通常低于等热量天然瘦肉，并可能含较多钠。",
+        "如补充鸡肉肠单根重量及两包素毛肚的营养标签，应按标签追溯修正。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "六个普通大小蛋白、一个蛋黄",
+      "kcal_estimate": 157,
+      "protein_g_estimate": 24.3,
+      "fat_g_estimate": 4.7,
+      "carbs_g_estimate": 1.5,
+      "confidence": "沿用此前普通大小鸡蛋估算口径；按蛋白约 17 千卡和 3.6 克蛋白质/个，蛋黄约 55 千卡计算。",
+      "components": [
+        {
+          "food": "蛋白",
+          "amount": "普通大小 6 个",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6
+        },
+        {
+          "food": "蛋黄",
+          "amount": "普通大小 1 个",
+          "kcal_estimate": 55,
+          "protein_g_estimate": 2.7,
+          "fat_g_estimate": 4.7,
+          "carbs_g_estimate": 1.5
+        }
+      ]
+    },
+    {
+      "meal": "夜间加餐",
+      "description": "生黄瓜一根，约 20 厘米长",
+      "amount_estimate": "可食部分暂估约 180-250 克",
+      "kcal_estimate": 30,
+      "kcal_range": [
+        20,
+        40
+      ],
+      "protein_g_range": [
+        1,
+        2
+      ],
+      "carbs_g_range": [
+        4,
+        8
+      ],
+      "confidence": "只有长度、没有称重；按约 20 厘米普通鲜黄瓜的常见重量估算，未计酱料或蘸料。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "duration_min": 40,
+      "intensity": "中等",
+      "active_kcal_estimate": 200,
+      "active_kcal_range": [
+        150,
+        260
+      ],
+      "source": "用户口述，无 Apple Watch 记录",
+      "confidence": "人工保守估算",
+      "notes": "按当前体重、40 分钟中等强度力量训练及既往相近训练记录估算主动消耗；缺少心率、组间休息和动作数据，误差较大。只作为主动千卡估算，不另加静息消耗。"
+    },
+    {
+      "type": "室内单车",
+      "start_time": "21:57",
+      "end_time": "22:28",
+      "duration_min": 30.67,
+      "active_kcal": 351,
+      "total_kcal_reference_only": 407,
+      "average_heart_rate_bpm": 150,
+      "heart_rate_range_bpm": [
+        80,
+        168
+      ],
+      "source": "Apple Watch 截图",
+      "photo_path": "/tmp/codex-remote-attachments/019fc2fd-d644-71a3-8253-809ebb75b5f5/70F9E917-09DD-42E8-B492-998D76046DFA/1-照片-1.jpg",
+      "confidence": "设备实测",
+      "notes": "结算只采用动态 351 千卡；总千卡 407 仅作参考，避免重复计入训练期间静息消耗。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1580,
+    "intake_kcal_range": [
+      1295,
+      1910
+    ],
+    "protein_g_range": [
+      86.3,
+      116.3
+    ],
+    "carbs_g_range": [
+      92,
+      144
+    ],
+    "exercise_active_kcal_estimate": 551,
+    "exercise_active_kcal_range": [
+      501,
+      611
+    ],
+    "net_intake_after_exercise_kcal_estimate": 1029,
+    "net_intake_after_exercise_kcal_range": [
+      684,
+      1409
+    ],
+    "conservative_deficit_kcal": 859,
+    "conservative_deficit_kcal_range": [
+      479,
+      1204
+    ],
+    "remaining_to_intake_target_kcal": 310,
+    "remaining_to_intake_target_kcal_range": [
+      -20,
+      595
+    ],
+    "remaining_to_protein_target_g_range": [
+      53.7,
+      83.7
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      6,
+      88
+    ],
+    "status": "全天最终：累计摄入中位估算约 1580 千卡，合理范围约 1295-1910 千卡；蛋白质约 86.3-116.3 克、碳水约 92-144 克。下午力量训练主动消耗暂估约 200 千卡，晚间室内单车 Apple Watch 动态消耗 351 千卡，合计约 551 千卡、合理范围约 501-611 千卡。按基础代谢口径的保守缺口中位约 859 千卡，合理范围约 479-1204 千卡，中位高于目标范围；蛋白质仍明显不足。"
+  },
+  "notes": [
+    "空腹体重 93.65 千克，较 2026-08-09 的 93.75 千克下降 0.10 千克，属于正常短期波动；继续观察 3-7 天趋势。",
+    "按 93.65 千克计算当日基础代谢约 1888 千卡，固定饮食上限为 1890 千卡。",
+    "早餐只有一瓶牛奶，约 183 千卡、蛋白质约 8 克；后续两餐需优先天然低脂蛋白质，避免再次把大部分热量留给面食、油炸食品或高脂酸奶。",
+    "下午完成约 40 分钟中等强度力量训练，没有 Apple Watch 记录；主动消耗人工保守估算约 200 千卡，合理范围约 150-260 千卡。该估算不提高 1890 千卡固定饮食上限。",
+    "午餐按餐前餐后照片估算约 830 千卡，合理范围约 650-1050 千卡；蛋白质约 42-62 克、碳水约 45-72 克。大骨骨重不计，餐后剩余米饭、蔬菜和盘底油汁已扣除。",
+    "午餐后蛋白质仍少约 100-120 克；晚餐应以天然低脂蛋白质为主，中位口径建议约 600-700 千卡，不为追满蛋白质而突破固定饮食上限。",
+    "训练后加餐为半根糯玉米、两根手指粗鸡肉肠和两小包麻酱素毛肚；在缺少包装重量与标签的情况下暂估约 380 千卡，合理范围约 285-480 千卡，蛋白质约 11-20 克、碳水约 29-50 克。",
+    "训练后加餐已占用原计划的大部分晚餐热量。当前若仍要吃晚餐，中位口径建议控制在约 250-300 千卡并只选天然低脂蛋白质，不再追加主食、麻酱、油炸食品或其他加工零食。",
+    "晚间加餐六个普通大小蛋白和一个蛋黄，约 157 千卡、蛋白质约 24.3 克、脂肪约 4.7 克、碳水约 1.5 克。",
+    "晚间加餐后中位保守缺口约 538 千卡，已落在 400-700 千卡目标范围；考虑午餐和加工食品份量误差，今晚建议停止进食，不为补齐蛋白质继续追餐。",
+    "21:57-22:28 完成室内单车 30 分 40 秒；Apple Watch 动态消耗 351 千卡、总消耗 407 千卡、平均心率 150 次/分。结算只采用动态千卡。",
+    "力量训练估算与室内单车实测动态消耗合计约 551 千卡，合理范围约 501-611 千卡；当前中位保守缺口约 889 千卡，高于目标上沿，但不建议以此为理由追加进食。",
+    "夜间加餐一根约 20 厘米长的生黄瓜；按可食部分约 180-250 克暂估约 30 千卡，合理范围约 20-40 千卡。未报告蘸料，因此不另计。",
+    "2026-08-11 已开始报告新一天，据此按黄瓜后没有继续进食或运动处理并正式封账；晚间蛋类、黄瓜等加餐构成最终晚间摄入，不另补记一顿未报告的晚餐。如以后补充遗漏内容，再追溯修正。"
+  ]
+}

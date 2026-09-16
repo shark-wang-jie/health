@@ -1,0 +1,242 @@
+{
+  "date": "2026-07-22",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1902,
+    "bmr_note": "按 2026-07-22 早晨空腹体重 95.10 千克用米夫林-圣乔尔公式估算。"
+  },
+  "morning_weight_kg": 95.1,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1902 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "七个普通大小鸡蛋的蛋清、两个蛋黄、一根香蕉、纯牛奶一瓶 260 毫升",
+      "kcal_estimate": 519,
+      "kcal_range": [
+        495,
+        545
+      ],
+      "protein_g_estimate": 40,
+      "protein_g_range": [
+        39,
+        41
+      ],
+      "confidence": "鸡蛋沿用用户昨晚确认的普通大小口径；牛奶沿用同款标签；香蕉未称重，按中等大小可食部分约 120 克估算",
+      "components": [
+        {
+          "food": "鸡蛋清",
+          "amount": "7 个，普通大小",
+          "kcal_estimate": 119,
+          "protein_g_estimate": 25.2
+        },
+        {
+          "food": "鸡蛋黄",
+          "amount": "2 个，普通大小",
+          "kcal_estimate": 110,
+          "protein_g_estimate": 5.4
+        },
+        {
+          "food": "香蕉",
+          "amount": "1 根，暂按可食部分约 120 克",
+          "kcal_estimate": 107,
+          "kcal_range": [
+            85,
+            130
+          ],
+          "protein_g_estimate": 1.3
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        }
+      ],
+      "notes": [
+        "其余五个蛋黄未吃，不计入摄入。",
+        "香蕉未报告重量，暂按中等大小估算；若补充去皮重量可修正。",
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：疑似咸菜或酸菜炖带骨猪肉、白米饭、黄瓜、芹菜炒豆腐皮及清汤；按餐前餐后照片计算实际吃下部分",
+      "kcal_estimate": 750,
+      "kcal_range": [
+        620,
+        900
+      ],
+      "protein_g_range": [
+        35,
+        47
+      ],
+      "confidence": "根据餐前餐后照片估算；主菜名称暂未确认，带骨比例、猪肉肥瘦、实际可食重量和配菜用油量不明确",
+      "components": [
+        {
+          "food": "炖带骨猪肉",
+          "amount": "吃下大部分可食肉，餐后剩骨头及一块带肉骨块",
+          "kcal_estimate": 400,
+          "kcal_range": [
+            310,
+            510
+          ],
+          "protein_g_range": [
+            30,
+            41
+          ]
+        },
+        {
+          "food": "白米饭",
+          "amount": "按照片估计吃下约 170-210 克熟饭",
+          "kcal_estimate": 240,
+          "kcal_range": [
+            220,
+            275
+          ],
+          "protein_g_estimate": 4
+        },
+        {
+          "food": "黄瓜、芹菜和豆腐皮",
+          "amount": "吃下大部分，餐后仍剩少量黄瓜和芹菜",
+          "kcal_estimate": 95,
+          "kcal_range": [
+            75,
+            120
+          ],
+          "protein_g_range": [
+            2,
+            4
+          ]
+        },
+        {
+          "food": "清汤",
+          "amount": "基本喝完",
+          "kcal_estimate": 15
+        }
+      ],
+      "notes": [
+        "餐后照片显示主菜主要剩骨头和一块仍带较多肉的骨块，未吃部分不计入。",
+        "米饭约剩一半左右，暂估实际吃下约 170-210 克熟饭。",
+        "黄瓜和芹菜豆腐皮吃下大部分，但餐后仍有少量剩余。",
+        "主菜暂按咸菜或酸菜炖带骨猪肉记录；若用户确认其他菜名，应据此修正。"
+      ]
+    },
+    {
+      "meal": "练前加餐",
+      "description": "香蕉一根",
+      "kcal_estimate": 107,
+      "kcal_range": [
+        85,
+        130
+      ],
+      "protein_g_estimate": 1.3,
+      "confidence": "未称重，沿用中等大小香蕉可食部分约 120 克的估算口径",
+      "notes": [
+        "若补充香蕉去皮重量可进一步修正。"
+      ]
+    },
+    {
+      "meal": "练后加餐",
+      "description": "香蕉两根、纯牛奶一瓶 260 毫升、冬枣四颗约 20 克",
+      "kcal_estimate": 419,
+      "kcal_range": [
+        371,
+        468
+      ],
+      "protein_g_range": [
+        10,
+        12
+      ],
+      "confidence": "香蕉未称重，沿用中等大小口径；牛奶沿用同款标签；冬枣按用户报告约 20 克及常见鲜冬枣营养值估算",
+      "components": [
+        {
+          "food": "香蕉",
+          "amount": "2 根，暂按每根可食部分约 120 克",
+          "kcal_estimate": 214,
+          "kcal_range": [
+            170,
+            260
+          ],
+          "protein_g_estimate": 2.6
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "260 毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8
+        },
+        {
+          "food": "鲜冬枣",
+          "amount": "4 颗，约 20 克",
+          "kcal_estimate": 22,
+          "kcal_range": [
+            18,
+            25
+          ],
+          "protein_g_estimate": 0.2
+        }
+      ],
+      "notes": [
+        "三根训练前后香蕉合计主要提供碳水，不能替代高蛋白练后餐。",
+        "牛奶按每 100 毫升 294 千焦计算，260 毫升约 183 千卡。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "傍晚传统力量训练",
+      "start_time": "17:54",
+      "end_time": "18:35",
+      "duration_min": 41.45,
+      "active_kcal": 365,
+      "total_kcal": 440,
+      "avg_heart_rate_bpm": 130,
+      "kcal_estimate": 365,
+      "confidence": "苹果手表记录",
+      "notes": [
+        "每日净热量计算使用苹果手表动态千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1795,
+    "intake_kcal_range": [
+      1571,
+      2043
+    ],
+    "protein_g_range": [
+      85,
+      101
+    ],
+    "exercise_active_kcal": 365,
+    "net_intake_after_exercise_kcal": 1430,
+    "conservative_deficit_kcal": 472,
+    "remaining_to_intake_target_kcal": 105,
+    "remaining_to_protein_target_g_range": [
+      69,
+      85
+    ],
+    "status": "截至练后加餐；按中位估算全天摄入约 1795 千卡，距离 1900 千卡饮食上限仅约 105 千卡；当前保守缺口约 472 千卡，位于 400-700 千卡目标范围，后续应停止进食。"
+  },
+  "notes": [
+    "空腹体重较 2026-07-21 的 95.25 千克下降 0.15 千克；属于正常短期波动，继续看 3-7 天趋势。",
+    "当日基础代谢约 1902 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐蛋白质约 39-41 克，较此前有所改善；午餐仍需安排一大份天然低脂蛋白，避免晚上集中补充。",
+    "午餐主菜暂识别为咸菜或酸菜炖带骨猪肉；因菜名和带骨肥瘦比例未确认，保留较宽热量范围。",
+    "午餐后全天蛋白质中位范围约 74-88 克，晚餐仍应优先安排低脂蛋白。",
+    "训练前后一共吃三根香蕉，另有 260 毫升牛奶和约 20 克冬枣；加餐碳水较多、蛋白质有限。",
+    "传统力量训练按苹果手表动态消耗 365 千卡记录；总消耗 440 千卡不重复加入。",
+    "按中位估算当前保守缺口约 472 千卡，已经达到目标；因仅剩约 105 千卡饮食空间且午餐误差较大，后续停止进食。"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "date": "2026-08-16",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1894,
+    "bmr_note": "按2026-08-16早晨空腹体重94.25千克，用米夫林-圣乔尔公式10×94.25 + 6.25×173 - 5×27 + 5 = 1893.75千卡估算。"
+  },
+  "morning_weight_kg": 94.25,
+  "targets": {
+    "intake_kcal": 1890,
+    "intake_target_basis": "按当日基础代谢1894千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ],
+    "carbohydrate_target_note": "按约1890千卡固定上限、170克蛋白质及约55-65克脂肪反推的减脂执行区间；不建议长期刻意压到130克以下。"
+  },
+  "intake_entries": [
+    {
+      "meal": "餐食（时间未说明）",
+      "items": [
+        {
+          "name": "原味发酵乳（此前同款）",
+          "amount_g": 400,
+          "kcal_estimate": 333,
+          "protein_g_estimate": 16,
+          "fat_g_estimate": 20,
+          "carbs_g_estimate": 22.4,
+          "basis": "按包装每100克348千焦、蛋白质4克、脂肪5克、碳水5.6克换算。"
+        }
+      ],
+      "meal_kcal_estimate": 333,
+      "meal_protein_g_estimate": 16,
+      "meal_fat_g_estimate": 20,
+      "meal_carbs_g_estimate": 22.4
+    },
+    {
+      "meal": "两次餐食（具体时段未说明）",
+      "items": [
+        {
+          "name": "活虾（绝大多数只吃虾肉，另吃4至5个虾头）",
+          "purchase_weight_g": 1500,
+          "estimated_edible_shrimp_meat_g_range": [
+            675,
+            825
+          ],
+          "kcal_estimate": 745,
+          "kcal_range": [
+            590,
+            930
+          ],
+          "protein_g_estimate": 165,
+          "protein_g_range": [
+            135,
+            195
+          ],
+          "fat_g_estimate": 10,
+          "fat_g_range": [
+            5,
+            15
+          ],
+          "carbs_g_estimate": 4.5,
+          "carbs_g_range": [
+            0,
+            9
+          ],
+          "basis": "按三斤即1500克带头带壳活重、虾肉可食率约45%-55%估算；做法干净，不计额外烹调油。绝大多数虾头未吃，仅为吃下的4至5个虾头增加少量热量并扩大脂肪估算范围。主要误差来自虾的大小、头壳占比和实际出肉率。"
+        },
+        {
+          "name": "原味发酵乳（此前同款，新增）",
+          "amount_g": 400,
+          "kcal_estimate": 333,
+          "protein_g_estimate": 16,
+          "fat_g_estimate": 20,
+          "carbs_g_estimate": 22.4,
+          "basis": "按包装每100克348千焦、蛋白质4克、脂肪5克、碳水5.6克换算。"
+        }
+      ],
+      "meal_kcal_estimate": 1078,
+      "meal_kcal_range": [
+        923,
+        1263
+      ],
+      "meal_protein_g_estimate": 181,
+      "meal_protein_g_range": [
+        151,
+        211
+      ],
+      "meal_fat_g_estimate": 30,
+      "meal_fat_g_range": [
+        25,
+        35
+      ],
+      "meal_carbs_g_estimate": 26.9,
+      "meal_carbs_g_range": [
+        22.4,
+        31.4
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1411,
+    "intake_kcal_range": [
+      1256,
+      1596
+    ],
+    "protein_g_estimate": 197,
+    "protein_g_range": [
+      167,
+      227
+    ],
+    "fat_g_estimate": 50,
+    "fat_g_range": [
+      45,
+      55
+    ],
+    "carbs_g_estimate": 49.3,
+    "carbs_g_range": [
+      44.8,
+      53.8
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1411,
+    "net_intake_after_exercise_kcal_range": [
+      1256,
+      1596
+    ],
+    "provisional_conservative_deficit_kcal": 483,
+    "provisional_conservative_deficit_kcal_range": [
+      298,
+      638
+    ],
+    "remaining_to_intake_target_kcal": 479,
+    "remaining_to_intake_target_kcal_range": [
+      294,
+      634
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 83,
+    "remaining_while_preserving_min_deficit_kcal_range": [
+      -102,
+      238
+    ],
+    "remaining_to_protein_target_g": 0,
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      100.7,
+      130.7
+    ],
+    "status": "全天最终：同款原味发酵乳累计800克，并分两次吃完三斤带头带壳活虾的虾肉，另吃4至5个虾头。中位约1411千卡、蛋白质197克、脂肪50克、碳水49.3克。按基础代谢口径的缺口中位约483千卡；因活虾出肉率不确定，合理范围约298-638千卡。"
+  },
+  "notes": [
+    "空腹体重94.25千克，较2026-08-15的93.60千克上升0.65千克。",
+    "结合前一日约5293千卡、高脂高碳水高钠饮食，体重上涨主要按糖原与伴随水分、钠潴留和胃肠内容物增加解读，不视为隔夜增加0.65千克脂肪。",
+    "前一日按基础代谢口径的保守盈余中位约3406千卡，但食物份量估算范围较宽；即使存在真实脂肪增加，也不能用单次秤重将0.65千克全部归为脂肪。",
+    "今天正常吃饭、正常饮水，不断食、不跳餐、不额外做惩罚性运动；重新回到固定饮食上限和蛋白质分配计划。",
+    "按94.25千克计算当日基础代谢约1894千卡，固定饮食上限为1890千卡。",
+    "同款原味发酵乳今日累计800克，约666千卡、蛋白质32克、脂肪40克、碳水44.8克。",
+    "分两次吃三斤即1500克带头带壳活虾；绝大多数只吃虾肉，另吃4至5个虾头，做法干净且不计额外用油。按45%-55%出肉率及少量虾头估算约745千卡，合理范围约590-930千卡；蛋白质约135-195克、脂肪约5-15克、碳水约0-9克。",
+    "当前累计中位约1411千卡，合理范围约1256-1596千卡；蛋白质约167-227克、脂肪约45-55克、碳水约44.8-53.8克。按基础代谢口径临时缺口中位约483千卡，合理范围约298-638千卡。",
+    "2026-08-17已开始报告新一天，据此按此后没有新增摄入或运动正式封账。"
+  ]
+}

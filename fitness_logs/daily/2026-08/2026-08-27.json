@@ -1,0 +1,193 @@
+{
+  "date": "2026-08-27",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1877,
+    "bmr_note": "按2026-08-27早晨空腹体重92.60千克，用米夫林-圣乔尔公式10×92.60 + 6.25×173 - 5×27 + 5 = 1877.25千卡估算。"
+  },
+  "morning_weight_kg": 92.6,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1877千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款荞麦锅巴20克、此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 263,
+      "protein_g_estimate": 9.1,
+      "fat_g_estimate": 10,
+      "carbs_g_estimate": 29.2,
+      "components": [
+        {
+          "food": "荞麦锅巴",
+          "amount": "20克",
+          "kcal_estimate": 80,
+          "protein_g_estimate": 1.1,
+          "fat_g_estimate": 0.6,
+          "carbs_g_estimate": 16.7,
+          "dietary_fiber_g_estimate": 1.2,
+          "sodium_mg_estimate": 63,
+          "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+        },
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        }
+      ]
+    },
+    {
+      "meal": "早餐加餐",
+      "description": "小香蕉1根，未称重",
+      "kcal_estimate": 71,
+      "kcal_range": [60, 85],
+      "protein_g_estimate": 0.9,
+      "protein_g_range": [0.7, 1.1],
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 18.3,
+      "carbs_g_range": [15.5, 22],
+      "estimation_note": "按小香蕉可食部分约80克、每100克约89千卡估算；未称重是主要误差。"
+    },
+    {
+      "meal": "午餐",
+      "description": "兰州拉面一份（含自带牛肉，汤未喝），另有单独称重的卤牛肉约235克",
+      "kcal_estimate": 954,
+      "kcal_range": [788, 1147],
+      "protein_g_estimate": 89,
+      "protein_g_range": [75, 102],
+      "fat_g_estimate": 33.2,
+      "fat_g_range": [23.3, 46.1],
+      "carbs_g_estimate": 82,
+      "carbs_g_range": [68, 101],
+      "components": [
+        {
+          "food": "兰州拉面",
+          "amount": "面条、萝卜、香菜、葱及自带牛肉均吃；汤未喝",
+          "kcal_estimate": 520,
+          "kcal_range": [400, 650],
+          "protein_g_estimate": 28,
+          "protein_g_range": [22, 34],
+          "fat_g_estimate": 12,
+          "fat_g_range": [7, 19],
+          "carbs_g_estimate": 82,
+          "carbs_g_range": [68, 98],
+          "estimation_note": "沿用2026-08-26同款口径；汤未喝，基本不计汤中油脂。"
+        },
+        {
+          "food": "卤牛肉",
+          "amount": "单独称重的可食重约235克，不包含拉面自带牛肉",
+          "kcal_estimate": 434,
+          "kcal_range": [388, 497],
+          "protein_g_estimate": 61,
+          "protein_g_range": [53, 68],
+          "fat_g_estimate": 21.2,
+          "fat_g_range": [16.3, 27.1],
+          "carbs_g_estimate": 0,
+          "carbs_g_range": [0, 3],
+          "estimation_note": "沿用前一日较瘦熟制卤牛肉每100克约165-210千卡、蛋白质约23-29克的口径。"
+        }
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "便利店烤肠1根，照片显示尺寸偏大，未称重且无营养标签",
+      "kcal_estimate": 250,
+      "kcal_range": [200, 300],
+      "protein_g_estimate": 10,
+      "protein_g_range": [7, 13],
+      "fat_g_estimate": 19,
+      "fat_g_range": [14, 24],
+      "carbs_g_estimate": 10,
+      "carbs_g_range": [6, 15],
+      "estimation_note": "按照片中偏大的淀粉肉肠约75-90克估算；品牌、肥瘦比例和实际重量未知，误差较大。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/AFC0D956-338A-42DD-8F42-8646D23AB73E/1-照片-1.jpg"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "饭团1个，净重105克",
+      "kcal_estimate": 95,
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "sodium_mg_estimate": 386,
+      "nutrition_basis": "包装每100克能量378千焦、蛋白质1.8克、脂肪3.5克、碳水12.8克、钠368毫克；按105克换算。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/6FC75F3F-FBAE-4202-92DE-848254AA2FAA/2-照片-2.jpg"
+    },
+    {
+      "meal": "练后加餐",
+      "description": "小香蕉1根，未称重",
+      "kcal_estimate": 71,
+      "kcal_range": [60, 85],
+      "protein_g_estimate": 0.9,
+      "protein_g_range": [0.7, 1.1],
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 18.3,
+      "carbs_g_range": [15.5, 22],
+      "estimation_note": "沿用当天上午小香蕉口径：可食部分约80克、每100克约89千卡。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "start_time": "17:41",
+      "end_time": "18:21",
+      "duration": "39分48秒",
+      "active_kcal": 256,
+      "total_kcal": 327,
+      "average_heart_rate_bpm": 117,
+      "heart_rate_range_bpm": [88, 152],
+      "calorie_accounting_basis": "只将Apple Watch动态千卡256计入运动消耗；总千卡327不重复计入。",
+      "photo_path": "/tmp/codex-remote-attachments/01a01751-0d53-7ef0-9d26-141374cf5bad/6FC75F3F-FBAE-4202-92DE-848254AA2FAA/1-照片-1.jpg"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1704,
+    "intake_kcal_range": [1466, 1975],
+    "protein_g_estimate": 111.8,
+    "protein_g_range": [94.4, 128.2],
+    "fat_g_estimate": 66.3,
+    "fat_g_range": [51.4, 84.2],
+    "carbs_g_estimate": 171.2,
+    "carbs_g_range": [147.6, 202.6],
+    "exercise_active_kcal": 256,
+    "net_intake_after_exercise_kcal": 1448,
+    "net_intake_after_exercise_kcal_range": [1210, 1719],
+    "provisional_conservative_deficit_kcal": 429,
+    "provisional_conservative_deficit_kcal_range": [158, 667],
+    "remaining_to_intake_target_kcal": 176,
+    "remaining_to_intake_target_kcal_range": [0, 414],
+    "remaining_while_preserving_min_deficit_kcal": 29,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 267],
+    "remaining_to_protein_target_g": 58.2,
+    "remaining_to_protein_target_g_range": [41.8, 75.6],
+    "remaining_to_carbohydrate_practical_target_g_range": [0, 8.8],
+    "status": "全天最终：累计摄入中位约1704千卡，合理范围约1466-1975千卡；蛋白质约111.8克、脂肪约66.3克、碳水约171.2克。力量训练动态消耗256千卡，中位保守缺口约429千卡，处于400-700千卡目标范围。"
+  },
+  "notes": [
+    "空腹体重92.60千克，连续三天持平；短期平台不代表减脂停滞，应结合至少7天平均体重观察。",
+    "按92.60千克计算基础代谢约1877千卡，今日固定饮食上限1880千卡。",
+    "早餐荞麦锅巴20克和一瓶默认纯牛奶，约263千卡、蛋白质约9.1克；随后加餐一根小香蕉，中位约71千卡。",
+    "午餐沿用前一日口径：一份兰州拉面含自带牛肉、汤未喝，另有单独称重卤牛肉235克；中位约954千卡、蛋白质约89克。",
+    "下午加餐一根照片中偏大的便利店烤肠，未称重且无标签，中位暂估约250千卡，合理范围约200-300千卡。",
+    "17:41-18:21完成传统力量训练39分48秒；Apple Watch动态消耗256千卡、总消耗327千卡、平均心率117次/分，心率范围约88-152次/分。只将动态256千卡计入消耗。",
+    "练后吃105克饭团一个；按包装每100克378千焦换算约95千卡，蛋白质1.9克、脂肪3.7克、碳水13.4克、钠约386毫克。",
+    "练后另吃一根小香蕉，中位约71千卡；加入后中位保守缺口约429千卡，接近目标下沿。",
+    "前一日中位缺口约610千卡，今日正常进食，不断食，也不安排补偿性运动。",
+    "用户于2026-08-27确认今日饮食与训练结束，当日记录据此封账。"
+  ]
+}

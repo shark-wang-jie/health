@@ -1,0 +1,191 @@
+{
+  "date": "2026-07-02",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1923,
+    "bmr_note": "按当前早晨体重用 米夫林-圣乔尔公式 估算；摄入目标保持 2000 千卡。"
+  },
+  "morning_weight_kg": 97.15,
+  "targets": {
+    "intake_kcal": 2000,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "一碗双拼面：湿面约 200 克，照片估算雪菜肉丝 50-60 克、青椒肉丝 40-50 克，2 个鸡蛋，260 毫升普通牛奶",
+      "kcal_estimate": 1020,
+      "protein_g_range": [
+        47,
+        58
+      ],
+      "carbs_g_range": [
+        112,
+        136
+      ],
+      "fat_g_range": [
+        32,
+        43
+      ],
+      "confidence": "根据照片和报告重量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。",
+        "如实际份量或标签不同，需要修正本条。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "食堂餐：粉蒸五花肉、豆皮花生菜、肉末蒸蛋和清白菜汤；未计米饭",
+      "kcal_estimate": 1250,
+      "protein_g_range": [
+        50,
+        65
+      ],
+      "carbs_g_range": [
+        50,
+        75
+      ],
+      "fat_g_range": [
+        80,
+        105
+      ],
+      "confidence": "根据照片估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "训练前加餐",
+      "description": "训练前 15 克黑松露火腿苏打饼干",
+      "kcal_estimate": 75,
+      "protein_g_range": [
+        1,
+        2
+      ],
+      "carbs_g_range": [
+        9,
+        12
+      ],
+      "fat_g_range": [
+        3,
+        4
+      ],
+      "confidence": "估算"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "3 个凤梨酥，每个 25 克，共 75 克",
+      "kcal_estimate": 323,
+      "protein_g_estimate": 2.9,
+      "carbs_g_estimate": 50.8,
+      "sugar_g_estimate": 21.3,
+      "fat_g_estimate": 11.9,
+      "saturated_fat_g_estimate": 7.7,
+      "sodium_mg_estimate": 108,
+      "confidence": "营养标签",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。"
+      ]
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "原味牛肉干 2 根；整罐 440 克 12 根，总量约 73 克",
+      "kcal_estimate": 164,
+      "protein_g_estimate": 31.7,
+      "carbs_g_estimate": 0,
+      "fat_g_estimate": 4.0,
+      "sodium_mg_estimate": 642,
+      "confidence": "营养标签和报告数量",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。",
+        "牛肉干按整罐 440 克 12 根折算，每根约 36.7 克。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "focus": "肩部",
+      "description": "健身房肩部训练，苹果手表 已记录",
+      "start_time": "17:39",
+      "end_time": "18:15",
+      "duration_min": 35.8,
+      "active_kcal": 252,
+      "total_kcal": 316,
+      "avg_heart_rate_bpm": 124,
+      "kcal_estimate": 252,
+      "confidence": "苹果手表 记录",
+      "exercises": [
+        {
+          "name": "肩部前推",
+          "load": "63 千克",
+          "sets": 4
+        },
+        {
+          "name": "侧平举/飞鸟",
+          "load": "8 千克",
+          "sets": 5
+        },
+        {
+          "name": "坐姿俯身后束飞鸟",
+          "load": "2 千克",
+          "sets": 4
+        }
+      ],
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "骑行",
+      "description": "共享单车额外骑行，苹果手表 按室内单车记录",
+      "start_time": "21:47",
+      "end_time": "22:32",
+      "duration_min": 45.5,
+      "active_kcal": 389,
+      "total_kcal": 473,
+      "avg_heart_rate_bpm": 145,
+      "effort": "中等强度",
+      "kcal_estimate": 389,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "下午",
+      "focus": "肩部",
+      "description": "下午完成健身房肩部训练",
+      "status": "已完成",
+      "notes": [
+        "监督备注：该条已按中文规则记录；运动用主动千卡，饮食不因运动自动增加额度，必要时控制晚间进食。"
+      ]
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 2832,
+    "protein_g_range": [
+      133,
+      160
+    ],
+    "exercise_kcal_estimate": 641,
+    "remaining_intake_kcal": -832,
+    "intake_vs_target_kcal": 832,
+    "net_intake_after_exercise_kcal": 2191
+  },
+  "notes": [
+    "新一天从早晨体重记录开始。",
+    "与 2026-07-01 早晨体重 97.20 千克相比，今天早晨体重下降 0.05 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "用户表示今晚停止进食，只喝水。"
+  ]
+}

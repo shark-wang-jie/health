@@ -1,0 +1,182 @@
+{
+  "date": "2026-09-02",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1868,
+    "bmr_note": "按2026-09-02早晨空腹体重91.70千克，用米夫林-圣乔尔公式10×91.70 + 6.25×173 - 5×27 + 5 = 1868.25千卡估算。"
+  },
+  "morning_weight_kg": 91.7,
+  "targets": {
+    "intake_kcal": 1870,
+    "intake_target_basis": "按当日基础代谢1868千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "纯牛奶一瓶约260毫升、普通大小鸡蛋7个蛋白",
+      "kcal_estimate": 302,
+      "protein_g_estimate": 33.2,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 13.9,
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8.0,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        },
+        {
+          "food": "鸡蛋蛋白",
+          "amount": "普通大小7个",
+          "kcal_estimate": 119,
+          "protein_g_estimate": 25.2,
+          "fat_g_estimate": 0.0,
+          "carbs_g_estimate": 1.4,
+          "nutrition_basis": "沿用既定口径：普通大小鸡蛋蛋清约17千卡、蛋白质3.6克/个。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "照片所示沙县套餐：鸡腿2只去皮食用；米饭、炒白菜和卤蛋全部吃完；土豆丝仅吃一小口；照片未见豆腐干，未计入",
+      "kcal_estimate": 895,
+      "kcal_range": [720, 1100],
+      "protein_g_estimate": 70.7,
+      "protein_g_range": [57, 84],
+      "fat_g_estimate": 27.3,
+      "fat_g_range": [18, 41],
+      "carbs_g_estimate": 92.6,
+      "carbs_g_range": [75, 120],
+      "components": [
+        {
+          "food": "鸡腿",
+          "amount": "2只，去皮食用",
+          "kcal_estimate": 380,
+          "protein_g_estimate": 55.0,
+          "fat_g_estimate": 17.0,
+          "carbs_g_estimate": 3.0,
+          "estimation_note": "按照片中两只带骨熟鸡腿、去皮后实际吃下的肉量估算；骨重和卤汁含油量未知。"
+        },
+        {
+          "food": "米饭",
+          "amount": "照片原份量，全部吃完",
+          "kcal_estimate": 360,
+          "protein_g_estimate": 7.0,
+          "fat_g_estimate": 1.0,
+          "carbs_g_estimate": 80.0,
+          "estimation_note": "按熟米饭约300克估算；未称重。"
+        },
+        {
+          "food": "炒土豆丝",
+          "amount": "仅吃一小口",
+          "kcal_estimate": 10,
+          "protein_g_estimate": 0.2,
+          "fat_g_estimate": 0.3,
+          "carbs_g_estimate": 1.6,
+          "estimation_note": "按整份约145千卡的约1/15估算；本次实际摄入显著少于后续默认的半份口径。"
+        },
+        {
+          "food": "炒白菜",
+          "amount": "照片原份量，全部吃完",
+          "kcal_estimate": 70,
+          "protein_g_estimate": 2.0,
+          "fat_g_estimate": 4.0,
+          "carbs_g_estimate": 7.0
+        },
+        {
+          "food": "卤蛋",
+          "amount": "1个，全部吃完",
+          "kcal_estimate": 75,
+          "protein_g_estimate": 6.5,
+          "fat_g_estimate": 5.0,
+          "carbs_g_estimate": 1.0
+        }
+      ],
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/15412F9B-0E44-4703-AA77-B5B24EA14F75/1-照片-1.jpg",
+      "estimation_note": "主要误差来自鸡腿去骨后的肉量、炒菜用油量及原米饭份量。以后用户只说同款沙县套餐而未说明土豆丝份量时，按土豆丝吃半份计算；鸡腿去皮、米饭、炒白菜和卤蛋按实际说明记录。"
+    },
+    {
+      "meal": "晚餐",
+      "description": "卤牛肉270克",
+      "kcal_estimate": 499,
+      "kcal_range": [446, 567],
+      "protein_g_estimate": 70.0,
+      "protein_g_range": [62.0, 78.0],
+      "fat_g_estimate": 24.4,
+      "fat_g_range": [18.7, 31.1],
+      "carbs_g_estimate": 0.0,
+      "carbs_g_range": [0.0, 3.0],
+      "estimation_note": "沿用较瘦熟制卤牛肉每100克约165–210千卡、蛋白质约23–29克的口径；实际肥瘦和卤汁含油量未知。"
+    },
+    {
+      "meal": "加餐",
+      "description": "大桶原味发酵乳170克",
+      "kcal_estimate": 141,
+      "protein_g_estimate": 6.8,
+      "fat_g_estimate": 8.5,
+      "carbs_g_estimate": 9.5,
+      "sodium_mg_estimate": 68,
+      "calcium_mg_estimate": 213,
+      "nutrition_basis": "按具体克数酸奶默认大桶原味发酵乳标签：每100克348千焦（约83千卡）、蛋白质4.0克、脂肪5.0克、碳水5.6克、钠40毫克、钙125毫克换算。"
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1837,
+    "intake_kcal_range": [1609, 2110],
+    "protein_g_estimate": 180.7,
+    "protein_g_range": [159.0, 202.0],
+    "fat_g_estimate": 69.6,
+    "fat_g_range": [54.6, 90.0],
+    "carbs_g_estimate": 116.0,
+    "carbs_g_range": [98.4, 146.4],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1837,
+    "net_intake_after_exercise_kcal_range": [1609, 2110],
+    "provisional_conservative_deficit_kcal": 31,
+    "provisional_conservative_deficit_kcal_range": [-242, 259],
+    "remaining_to_intake_target_kcal": 33,
+    "remaining_to_intake_target_kcal_range": [0, 261],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 0],
+    "remaining_to_protein_target_g": 0,
+    "remaining_to_protein_target_g_range": [0, 11.0],
+    "remaining_to_carbohydrate_practical_target_g_range": [34.0, 64.0],
+    "intake_above_target_kcal": 0,
+    "status": "全天最终：累计摄入中位约1837千卡，合理范围约1609–2110千卡；蛋白质约180.7克、脂肪约69.6克、碳水约116.0克。无运动记录；中位保守缺口约31千卡，低于400–700千卡目标。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 92.1,
+    "day_over_day_change_kg": -0.4,
+    "seven_day_average_kg": 92.48,
+    "seven_day_period": "2026-08-27至2026-09-02",
+    "previous_seven_day_average_kg": 92.61,
+    "previous_seven_day_period": "2026-08-26至2026-09-01",
+    "seven_day_average_change_kg": -0.13,
+    "interpretation": "空腹体重再创当前记录新低；7日均重继续下降，减脂趋势明确。"
+  },
+  "notes": [
+    "空腹体重91.70千克，较前一日下降0.40千克，再创当前记录新低。BMI约30.6。",
+    "2026-08-27至09-02的7日均重约92.48千克，较上一窗口约92.61千克下降约0.13千克。",
+    "按91.70千克计算基础代谢约1868千卡，今日固定饮食上限1870千卡。",
+    "早餐吃此前同款纯牛奶一瓶约260毫升和普通大小鸡蛋7个蛋白，合计约302千卡、蛋白质约33.2克。",
+    "午餐照片所示沙县套餐：两只鸡腿去皮，米饭、炒白菜和卤蛋吃完，土豆丝只吃一小口；照片未见豆腐干，未计入。中位约895千卡、蛋白质约70.7克。",
+    "晚餐吃卤牛肉270克，按较瘦熟制卤牛肉口径估算约499千卡、蛋白质约70克。",
+    "加餐吃大桶原味发酵乳170克，按包装约141千卡、蛋白质约6.8克。",
+    "以后同款沙县套餐如未特别说明，土豆丝按吃半份计算；当天本次仍按实际一小口记录。",
+    "用户确认今日饮食与训练全部结束；无运动记录，2026-09-02据此封账。"
+  ]
+}

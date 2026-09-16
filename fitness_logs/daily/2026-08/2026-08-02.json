@@ -1,0 +1,132 @@
+{
+  "date": "2026-08-02",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1896,
+    "bmr_note": "按 2026-08-02 早晨空腹体重 94.45 千克，用米夫林-圣乔尔公式 10×94.45 + 6.25×173 - 5×27 + 5 = 1895.75 千卡估算。"
+  },
+  "morning_weight_kg": 94.45,
+  "targets": {
+    "intake_kcal": 1900,
+    "intake_target_basis": "按当日基础代谢 1896 千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "迪拜软曲奇（树莓味）三枚，每枚 60 克，共 180 克",
+      "kcal_estimate": 716,
+      "protein_g_estimate": 14.8,
+      "fat_g_estimate": 48.1,
+      "carbs_g_estimate": 56.7,
+      "sodium_mg_estimate": 398,
+      "confidence": "按此前同款包装净含量和营养成分表精确换算，最终数值四舍五入",
+      "components": [
+        {
+          "food": "迪拜软曲奇（树莓味）",
+          "amount": "3 枚，每枚 60 克，共 180 克",
+          "kcal_estimate": 716,
+          "protein_g_estimate": 14.8,
+          "fat_g_estimate": 48.1,
+          "carbs_g_estimate": 56.7,
+          "sodium_mg_estimate": 398,
+          "nutrition_basis": "包装标示每 100 克：1663 千焦、蛋白质 8.2 克、脂肪 26.7 克、碳水化合物 31.5 克、钠 221 毫克。"
+        }
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "六个普通大小水煮蛋白、一个蛋黄、烤红薯 200 克",
+      "kcal_estimate": 377,
+      "protein_g_estimate": 27.5,
+      "fat_g_estimate": 4.7,
+      "carbs_g_estimate": 51.5,
+      "confidence": "鸡蛋按普通大小估算；红薯按用户报告的烤后重量及每 100 克约 110 千卡估算",
+      "components": [
+        {
+          "food": "水煮蛋白和蛋黄",
+          "amount": "6 个普通大小蛋白、1 个蛋黄",
+          "kcal_estimate": 157,
+          "protein_g_estimate": 24.3,
+          "fat_g_estimate": 4.7,
+          "carbs_g_estimate": 1.5
+        },
+        {
+          "food": "烤红薯",
+          "amount": "烤后重量 200 克",
+          "kcal_estimate": 220,
+          "protein_g_estimate": 3.2,
+          "carbs_g_estimate": 50
+        }
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "原味发酵乳 135 克、六个普通大小水煮蛋白、烤红薯 160 克",
+      "kcal_estimate": 390,
+      "protein_g_estimate": 29.6,
+      "fat_g_estimate": 6.8,
+      "carbs_g_estimate": 49,
+      "confidence": "酸奶按包装营养成分表和净含量精确换算；鸡蛋按普通大小估算；红薯按用户报告的烤后重量估算",
+      "components": [
+        {
+          "food": "原味发酵乳",
+          "amount": "1 杯，135 克",
+          "kcal_estimate": 112,
+          "protein_g_estimate": 5.4,
+          "fat_g_estimate": 6.8,
+          "carbs_g_estimate": 7.6,
+          "sodium_mg_estimate": 54,
+          "calcium_mg_estimate": 169,
+          "nutrition_basis": "包装标示每 100 克：348 千焦、蛋白质 4.0 克、脂肪 5.0 克、碳水化合物 5.6 克、钠 40 毫克、钙 125 毫克；净含量 135 克。"
+        },
+        {
+          "food": "水煮蛋白",
+          "amount": "6 个普通大小蛋白",
+          "kcal_estimate": 102,
+          "protein_g_estimate": 21.6,
+          "carbs_g_estimate": 1.2
+        },
+        {
+          "food": "烤红薯",
+          "amount": "烤后重量 160 克",
+          "kcal_estimate": 176,
+          "protein_g_estimate": 2.6,
+          "carbs_g_estimate": 40.2
+        }
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 1483,
+    "protein_g_estimate": 71.9,
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 1483,
+    "conservative_deficit_kcal": 413,
+    "remaining_to_intake_target_kcal": 417,
+    "remaining_while_preserving_min_deficit_kcal": 13,
+    "remaining_to_protein_target_g": 98.1,
+    "status": "全天最终：摄入约 1483 千卡、蛋白质约 71.9 克；无运动。按基础代谢口径的保守缺口约 413 千卡，位于 400-700 千卡目标下沿。蛋白质比 170 克目标少约 98.1 克，严重不足。"
+  },
+  "notes": [
+    "空腹体重 94.45 千克，较 2026-08-01 的 94.75 千克下降 0.30 千克；单日变化仍可能包含水分、糖原和胃肠内容物波动。",
+    "当日基础代谢约 1896 千卡，饮食上限四舍五入到十位为 1900 千卡。",
+    "早餐三个软曲奇合计约 716 千卡、脂肪约 48.1 克，但蛋白质仅约 14.8 克，热量结构很差。",
+    "当天后续不再吃甜食、油炸食品、坚果、肥肉或高脂酱料；午餐和晚餐必须以少油天然低脂蛋白和蔬菜为主，并严格控制主食。",
+    "不通过断食或惩罚性运动抵消早餐；后续正常分配剩余热量，但不得突破固定饮食上限。",
+    "加餐六个普通大小水煮蛋白、一个蛋黄和 200 克烤红薯，合计约 377 千卡、蛋白质约 27.5 克。",
+    "蛋白质有所补充，但当天仍差约 127.7 克；后续主餐必须继续以天然低脂蛋白为主。",
+    "晚餐 135 克原味发酵乳、六个蛋白和 160 克烤红薯，合计约 390 千卡、蛋白质约 29.6 克。",
+    "截至晚餐蛋白质仅约 71.9 克，距 170 克目标仍差约 98.1 克；早餐用三个曲奇占用大量热量，导致全天难以在热量目标内补足蛋白质。",
+    "若当晚不再运动，当前保守缺口约 413 千卡，已在目标下沿，应停止进食；次日必须从早餐和午餐提前安排天然低脂蛋白。",
+    "用户确认当天此后未再进食且没有锻炼；全天最终按摄入 1483 千卡、蛋白质 71.9 克、运动 0 千卡和保守缺口 413 千卡结算。"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-04",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1881,
+    "bmr_note": "按2026-09-04早晨空腹体重93.00千克，用米夫林-圣乔尔公式10×93.00 + 6.25×173 - 5×27 + 5 = 1881.25千卡估算。"
+  },
+  "morning_weight_kg": 93.0,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1881千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [150, 180]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升",
+      "kcal_estimate": 183,
+      "protein_g_estimate": 8.0,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+    },
+    {
+      "meal": "午餐",
+      "description": "默认沙县鸡腿饭：鸡腿2只去皮食用；米饭、炒白菜和卤蛋全部吃完；土豆丝未吃；未见豆腐干，未计入",
+      "kcal_estimate": 885,
+      "kcal_range": [710, 1080],
+      "protein_g_estimate": 70.5,
+      "protein_g_range": [57.0, 84.0],
+      "fat_g_estimate": 27.0,
+      "fat_g_range": [18.0, 41.0],
+      "carbs_g_estimate": 91.0,
+      "carbs_g_range": [73.0, 118.0],
+      "estimation_note": "沿用当前默认沙县鸡腿饭口径：土豆丝默认不吃；明确剩余或吃了土豆丝时以实际吃下为准。"
+    },
+    {
+      "meal": "晚餐",
+      "description": "卤牛肉220克",
+      "kcal_estimate": 407,
+      "kcal_range": [363, 462],
+      "protein_g_estimate": 57.0,
+      "protein_g_range": [50.5, 63.6],
+      "fat_g_estimate": 19.9,
+      "fat_g_range": [15.2, 25.3],
+      "carbs_g_estimate": 0.0,
+      "carbs_g_range": [0.0, 2.4],
+      "estimation_note": "沿用较瘦熟制卤牛肉每100克约165–210千卡、蛋白质约23–29克的口径；实际肥瘦和卤汁含油量未知。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "大桶原味发酵乳410克",
+      "kcal_estimate": 340,
+      "protein_g_estimate": 16.4,
+      "fat_g_estimate": 20.5,
+      "carbs_g_estimate": 23.0,
+      "sodium_mg_estimate": 164,
+      "calcium_mg_estimate": 513,
+      "nutrition_basis": "按具体克数酸奶默认大桶原味发酵乳标签：每100克348千焦（约83千卡）、蛋白质4.0克、脂肪5.0克、碳水5.6克、钠40毫克、钙125毫克换算。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "荞麦锅巴20克",
+      "kcal_estimate": 80,
+      "protein_g_estimate": 1.1,
+      "fat_g_estimate": 0.6,
+      "carbs_g_estimate": 16.7,
+      "sodium_mg_estimate": 63,
+      "nutrition_basis": "按每100克1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、钠315毫克换算。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "duration": "54分48秒",
+      "time": "17:39–18:34",
+      "active_kcal": 313,
+      "total_kcal": 409,
+      "average_heart_rate_bpm": 110,
+      "photo_path": "/tmp/codex-remote-attachments/01a05d92-1067-7d82-ba24-c3fda39fa921/537AF69A-65EE-42FA-8655-5EDA1B34255D/1-照片-1.jpg",
+      "note": "Apple Watch记录；只将动态千卡计入运动消耗，总千卡仅保存。"
+    }
+  ],
+  "daily_summary": {
+    "intake_kcal_estimate": 1895,
+    "intake_kcal_range": [1676, 2145],
+    "protein_g_estimate": 153.0,
+    "protein_g_range": [133.0, 173.1],
+    "fat_g_estimate": 77.4,
+    "fat_g_range": [63.7, 96.8],
+    "carbs_g_estimate": 143.2,
+    "carbs_g_range": [125.2, 172.6],
+    "exercise_active_kcal": 313,
+    "net_intake_after_exercise_kcal": 1582,
+    "net_intake_after_exercise_kcal_range": [1363, 1832],
+    "provisional_conservative_deficit_kcal": 299,
+    "provisional_conservative_deficit_kcal_range": [49, 518],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [0, 204],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_while_preserving_min_deficit_kcal_range": [0, 140],
+    "remaining_to_protein_target_g": 17.0,
+    "remaining_to_protein_target_g_range": [0, 37.0],
+    "remaining_to_carbohydrate_practical_target_g_range": [6.8, 36.8],
+    "intake_above_target_kcal": 15,
+    "status": "全天最终：累计摄入中位约1895千卡，蛋白质约153.0克、脂肪约77.4克、碳水约143.2克；传统力量训练动态消耗313千卡。按当前摄入的保守缺口约299千卡，低于400–700千卡目标。"
+  },
+  "weight_trend": {
+    "previous_day_weight_kg": 91.7,
+    "day_over_day_change_kg": 1.3,
+    "seven_day_average_kg": 92.41,
+    "seven_day_period": "2026-08-29至2026-09-04",
+    "previous_seven_day_average_kg": 92.35,
+    "previous_seven_day_period": "2026-08-28至2026-09-03",
+    "seven_day_average_change_kg": 0.06,
+    "interpretation": "较前一日上升1.30千克；考虑到09-03高碳水、高盐及高热量饮食，主要符合糖原、水分和胃肠内容物波动，暂不视为等量脂肪增加。7日均重仅上升约0.06千克，继续正常执行减脂计划。"
+  },
+  "notes": [
+    "空腹体重93.00千克，较前一日上升1.30千克；BMI约31.1。",
+    "09-03高碳水、高盐及高热量饮食后，短期体重反弹主要可由糖原、水分和胃肠内容物解释；不采用断食或惩罚性运动补偿。",
+    "2026-08-29至09-04的7日均重约92.41千克，较上一窗口约92.35千克上升约0.06千克，短期趋势变化很小。",
+    "按93.00千克计算基础代谢约1881千卡，今日固定饮食上限1880千卡。",
+    "早餐喝此前同款纯牛奶一瓶约260毫升，约183千卡、蛋白质约8克。",
+    "午餐按默认沙县鸡腿饭口径记录：两只鸡腿去皮，米饭、炒白菜、卤蛋吃完，土豆丝未吃，未见豆腐干；中位约885千卡、蛋白质约70.5克。",
+    "17:39–18:34完成传统力量训练54分48秒；Apple Watch动态消耗313千卡、总消耗409千卡、平均心率110次/分；只将动态313千卡计入消耗。",
+    "晚餐实际吃卤牛肉220克，约407千卡、蛋白质约57克；晚间加餐实际吃大桶原味发酵乳410克，约340千卡、蛋白质约16.4克，并吃荞麦锅巴20克约80千卡。",
+    "按BMR1881 + Apple Watch动态313 - 摄入1895计算，当前中位保守热量缺口约299千卡；因卤牛肉肥瘦和午餐估算存在误差，合理范围约49–518千卡。",
+    "2026-09-05已开始报告新一天；据此将09-04在无新增食物或训练报告的情况下封账。"
+  ]
+}

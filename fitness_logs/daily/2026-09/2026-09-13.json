@@ -1,0 +1,517 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-13",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户已开始09-14并报告实际饮食体重，按跨日规则封存09-13；按用户周末通常休息的默认安排，无相反信息，记休息。饮食完整性未经明确确认，保留partial。",
+  "food_coverage": "partial",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户明确中午起床忘记称体重；09-13缺测，不补填体重。BMR体重沿用09-12的91.80公斤及原日期。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": null,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 91.8,
+    "bmr_weight_date": "2026-09-12",
+    "bmr_kcal": 1869.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "2026-09-13-overnight-kfc-egg-tarts-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "KFC蛋挞6个，暂按常规原味葡式蛋挞",
+      "reported_text": "凌晨太饿吃了夜宵：KFC蛋挞6个，暂按常规原味葡式蛋挞",
+      "source_kind": "database_estimate",
+      "basis": "沿用09-10常规原味葡式蛋挞每个约200千卡的一般估算，6个约1200千卡；未核验本次口味或官方营养值。",
+      "units": 6,
+      "kcal_base_estimate": 1200,
+      "kcal_booked": 1200,
+      "kcal_range": [
+        1020,
+        1380
+      ],
+      "protein_g_estimate": 18,
+      "fat_g_estimate": 72,
+      "carbs_g_estimate": 120,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "已知个数的常规规格食品，基础值含酥皮及馅料油糖，不机械追加10%；配方与大小误差用范围体现。"
+      },
+      "uncertainty": "暂按常规原味款，口味和标签未核验；每个约170–230千卡的操作性范围，非统计置信区间。"
+    },
+    {
+      "id": "2026-09-13-overnight-kfc-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "KFC吮指原味鸡两块",
+      "reported_text": "凌晨太饿吃了夜宵：KFC吮指原味鸡两块",
+      "source_kind": "database_estimate",
+      "basis": "部位未说明，按带皮及裹粉均吃、扣除骨头的两块中等炸鸡估算；每块基础约300千卡，实际胸/腿/翅部位及大小影响较大，非本次官方标签值。",
+      "kcal_base_estimate": 600,
+      "kcal_booked": 660.0,
+      "kcal_range": [
+        400,
+        800
+      ],
+      "protein_g_estimate": 45,
+      "fat_g_estimate": 46.666666666666664,
+      "carbs_g_estimate": 15,
+      "margin": {
+        "added_fat_g": 6.666666666666667,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "一般配方基础点估算上留10%油脂用量记账余量；非实测额外用油，不再叠加其他加成。"
+      },
+      "uncertainty": "部位未说明，按带皮及裹粉均吃、扣除骨头的两块中等炸鸡估算；每块基础约300千卡，实际胸/腿/翅部位及大小影响较大，非本次官方标签值。 所列范围是操作性估算范围，并非统计置信区间。"
+    },
+    {
+      "id": "2026-09-13-overnight-dubai-cookies-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "迪拜软曲奇2枚，每枚60克，共120克；按此前同款标签",
+      "reported_text": "凌晨太饿吃了夜宵：迪拜软曲奇2枚，每枚60克，共120克；按此前同款标签",
+      "source_kind": "matched_default",
+      "basis": "用户明确要求沿用此前同款；采用2026-08-03记录中迪拜软曲奇（树莓味）120克的标签换算及原取整值478千卡、蛋白质9.8克、脂肪32克、碳水37.8克、钠265毫克。原标签每100克1663千焦、蛋白质8.2克、脂肪26.7克、碳水31.5克、钠221毫克；本次不新增用油余量。",
+      "kcal_base_estimate": 478,
+      "kcal_booked": 478,
+      "kcal_range": [
+        478,
+        478
+      ],
+      "protein_g_estimate": 9.8,
+      "fat_g_estimate": 32,
+      "carbs_g_estimate": 37.8,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "已确认每枚60克并授权沿用此前同款标签，不额外加成。"
+      },
+      "uncertainty": "沿用历史同款标签与取整值，未重新核验本次包装；固定记账值不代表实际热量无误差。",
+      "quantity_g_estimate": 120,
+      "unit_weight_g": 60,
+      "units": 2,
+      "sodium_mg_estimate": 265,
+      "nutrition_per_100g": {
+        "energy_kj": 1663,
+        "protein_g": 8.2,
+        "fat_g": 26.7,
+        "carbs_g": 31.5,
+        "sodium_mg": 221
+      },
+      "reference_record": "fitness_logs/daily/2026-08/2026-08-03.json"
+    },
+    {
+      "id": "2026-09-13-overnight-wontons-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "此前同款鲅鱼水饺一碗，沿用一盒150克",
+      "source_kind": "matched_default",
+      "basis": "用户答复同款，结合此前一盒150克规格沿用：每100克900千焦、蛋白质9.9克、脂肪4.8克、碳水32.6克。入口调味和辣油另列。",
+      "kcal_base_estimate": 322.65774378585087,
+      "kcal_booked": 322.65774378585087,
+      "kcal_range": [
+        258.1261950286807,
+        387.18929254302105
+      ],
+      "protein_g_estimate": 14.850000000000001,
+      "fat_g_estimate": 7.199999999999999,
+      "carbs_g_estimate": 48.900000000000006,
+      "sodium_mg_estimate": 606.0,
+      "nutrition_per_100g": {
+        "energy_kj": 900,
+        "protein_g": 9.9,
+        "fat_g": 4.8,
+        "carbs_g": 32.6,
+        "sodium_mg": 404
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用同款本体标签，份量误差用范围体现，油另列。"
+      },
+      "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg",
+      "reported_text": "一碗鲅鱼水饺",
+      "quantity_g_estimate": 150,
+      "quantity_g_range": [
+        120,
+        180
+      ],
+      "uncertainty": "沿用同款单盒150克规格，本次未称重，保留份量估算范围。"
+    },
+    {
+      "id": "2026-09-13-overnight-seasoning-1",
+      "status": "consumed_estimated",
+      "meal": "凌晨夜宵",
+      "description": "水饺带入口的调味与辣油，并喝少量汤；两种辣油各加一勺",
+      "source_kind": "photo_estimate",
+      "basis": "用户补充汤喝一点、两种辣椒油各加一勺且比之前多。分别是此前重庆小面辣椒油和糊辣壳辣椒油的沿用解释；未给勺容量。区分倒入量与实际入口量：按附着水饺及少量汤带入口的油脂和调味暂估基础110千卡、记账120千卡，不把两勺全部计入。",
+      "kcal_base_estimate": 110,
+      "kcal_booked": 120,
+      "kcal_range": [
+        60,
+        220
+      ],
+      "protein_g_estimate": 0.3,
+      "fat_g_estimate": 12.11111111111111,
+      "carbs_g_estimate": 2.45,
+      "margin": {
+        "added_fat_g": 1.1111111111111112,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "基础情景约11克入口油及少量调味，另留10千卡余量；实际入口油量不是测量值。"
+      },
+      "uncertainty": "汤只喝少量、两种油各一勺已明确；勺容量、剩汤油和附着量不明。60–220千卡是操作性估算范围，非保证上下界；不因本次更多油而机械翻倍。",
+      "soup_consumed": true,
+      "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg",
+      "reported_text": "汤喝了一点 加的辣椒油比之前多 各一勺",
+      "soup_amount_reported": "一点",
+      "added_to_bowl": {
+        "extra_chili_condiments": [
+          {
+            "name": "重庆小面辣椒油（沿用此前品种）",
+            "amount_reported": "一勺"
+          },
+          {
+            "name": "糊辣壳辣椒油（沿用此前品种）",
+            "amount_reported": "一勺"
+          }
+        ],
+        "spoon_size_ml": null
+      }
+    },
+    {
+      "id": "2026-09-13-lunch-roasted-sweet-potato-1",
+      "status": "consumed_estimated",
+      "meal": "午餐",
+      "description": "烤蜜薯1个约150克，暂按烤后可食重、无额外油糖",
+      "reported_text": "中午起床 吃了一个烤蜜薯 大概一百五十克",
+      "source_kind": "matched_default",
+      "basis": "沿用food_defaults及08-30无油烤熟蜜薯每100克约135千卡口径；150克约202.5千卡。按普通无额外油糖烤制、烤后可食重估算。",
+      "quantity_g_estimate": 150,
+      "quantity_g_range": [
+        130,
+        170
+      ],
+      "kcal_base_estimate": 202.5,
+      "kcal_booked": 202.5,
+      "kcal_range": [
+        156,
+        255
+      ],
+      "protein_g_estimate": 2.1,
+      "fat_g_estimate": 0.3,
+      "carbs_g_estimate": 47.25,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "单一无油薯类按份量估算，不机械追加余量。"
+      },
+      "uncertainty": "约150克为用户估计，暂按130–170克及每100克120–150千卡表达份量与含水量差异；若150克含未吃的皮或另有油糖可修正。"
+    },
+    {
+      "id": "2026-09-13-dinner-yellow-croaker-balls-1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "默认同款黄花鱼丸2包，每包200克，共400克",
+      "reported_text": "晚饭两包黄花鱼丸",
+      "source_kind": "matched_default",
+      "basis": "沿用food_defaults及07-31同款包装标签：每包200克约241千卡、蛋白质37.6克、脂肪10克、碳水0克、钠192毫克；两包按历史取整值乘2。未报告新增用油或酱料，先按鱼丸本体记录。",
+      "units": 2,
+      "unit_weight_g": 200,
+      "quantity_g_estimate": 400,
+      "kcal_base_estimate": 482,
+      "kcal_booked": 482,
+      "kcal_range": [
+        482,
+        482
+      ],
+      "protein_g_estimate": 75.2,
+      "fat_g_estimate": 20,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 384,
+      "nutrition_per_100g": {
+        "energy_kj": 505,
+        "protein_g": 18.8,
+        "fat_g": 5,
+        "carbs_g": 0,
+        "sodium_mg": 96
+      },
+      "reference_record": "fitness_logs/daily/2026-07/2026-07-31.json",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用同款包装标签和默认每包200克，不机械加成。"
+      },
+      "uncertainty": "沿用已建立的同款默认规格，本次未重新核验包装；固定区间为标签记账口径，不代表实际营养无误差。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": "凌晨用户自述太饿，吃了夜宵",
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-09-13T00:58:40.146738+08:00",
+      "entry_id": "2026-09-13-overnight-wontons-1",
+      "reason": "用户确认同款并补充喝少量汤、两种辣椒油各一勺且比之前多。",
+      "old": {
+        "id": "2026-09-13-overnight-wontons-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "鲅鱼水饺一碗，暂按此前同款一盒150克",
+        "source_kind": "matched_default",
+        "basis": "本次照片可见一碗小型鲅鱼水饺及带油调味汤；暂按此前同款一盒150克，沿用09-09水饺本体每100克900千焦、蛋白质9.9克、脂肪4.8克、碳水32.6克。照片不能确认实际重量或是否正好一盒，待用户确认。调味和辣油另列。",
+        "kcal_base_estimate": 322.65774378585087,
+        "kcal_booked": 322.65774378585087,
+        "kcal_range": [
+          258.1261950286807,
+          387.18929254302105
+        ],
+        "protein_g_estimate": 14.850000000000001,
+        "fat_g_estimate": 7.199999999999999,
+        "carbs_g_estimate": 48.900000000000006,
+        "sodium_mg_estimate": 606.0,
+        "nutrition_per_100g": {
+          "energy_kj": 900,
+          "protein_g": 9.9,
+          "fat_g": 4.8,
+          "carbs_g": 32.6,
+          "sodium_mg": 404
+        },
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用同款本体标签，份量误差用范围体现，油另列。"
+        },
+        "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg",
+        "reported_text": "一碗鲅鱼水饺",
+        "quantity_g_estimate": 150,
+        "quantity_g_range": [
+          120,
+          180
+        ],
+        "uncertainty": "同款及150克是条件假设，未将照片中可见个数当作精确称重；120–180克为暂估范围。"
+      },
+      "new": {
+        "id": "2026-09-13-overnight-wontons-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "此前同款鲅鱼水饺一碗，沿用一盒150克",
+        "source_kind": "matched_default",
+        "basis": "用户答复同款，结合此前一盒150克规格沿用：每100克900千焦、蛋白质9.9克、脂肪4.8克、碳水32.6克。入口调味和辣油另列。",
+        "kcal_base_estimate": 322.65774378585087,
+        "kcal_booked": 322.65774378585087,
+        "kcal_range": [
+          258.1261950286807,
+          387.18929254302105
+        ],
+        "protein_g_estimate": 14.850000000000001,
+        "fat_g_estimate": 7.199999999999999,
+        "carbs_g_estimate": 48.900000000000006,
+        "sodium_mg_estimate": 606.0,
+        "nutrition_per_100g": {
+          "energy_kj": 900,
+          "protein_g": 9.9,
+          "fat_g": 4.8,
+          "carbs_g": 32.6,
+          "sodium_mg": 404
+        },
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用同款本体标签，份量误差用范围体现，油另列。"
+        },
+        "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg",
+        "reported_text": "一碗鲅鱼水饺",
+        "quantity_g_estimate": 150,
+        "quantity_g_range": [
+          120,
+          180
+        ],
+        "uncertainty": "沿用同款单盒150克规格，本次未称重，保留份量估算范围。"
+      }
+    },
+    {
+      "timestamp": "2026-09-13T00:58:40.146738+08:00",
+      "entry_id": "2026-09-13-overnight-seasoning-1",
+      "reason": "用户确认同款并补充喝少量汤、两种辣椒油各一勺且比之前多。",
+      "old": {
+        "id": "2026-09-13-overnight-seasoning-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "水饺入口调味与辣油，暂按主要附着摄入估算",
+        "source_kind": "photo_estimate",
+        "basis": "本次照片有明显带油汤汁，但未提供喝汤量或配料用量。点估算暂参考此前主要吃水饺、少摄入汤的情景：基础70千卡、记账80千卡；此为条件假设，不把09-09未喝汤当作本次事实，不按整碗可见油全量计入。",
+        "kcal_base_estimate": 70,
+        "kcal_booked": 80,
+        "kcal_range": [
+          40,
+          250
+        ],
+        "protein_g_estimate": 0.3,
+        "fat_g_estimate": 8.11111111111111,
+        "carbs_g_estimate": 1.45,
+        "margin": {
+          "added_fat_g": 1.1111111111111112,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础情景约7克入口油和少量调味，另留10千卡油脂余量，不再叠加。"
+        },
+        "uncertainty": "喝汤量及调味量未知，范围暂扩至40–250千卡，不是实测或保证上下界；若喝较多汤或用了更多油需修正。",
+        "soup_consumed": null,
+        "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg"
+      },
+      "new": {
+        "id": "2026-09-13-overnight-seasoning-1",
+        "status": "consumed_estimated",
+        "meal": "凌晨夜宵",
+        "description": "水饺带入口的调味与辣油，并喝少量汤；两种辣油各加一勺",
+        "source_kind": "photo_estimate",
+        "basis": "用户补充汤喝一点、两种辣椒油各加一勺且比之前多。分别是此前重庆小面辣椒油和糊辣壳辣椒油的沿用解释；未给勺容量。区分倒入量与实际入口量：按附着水饺及少量汤带入口的油脂和调味暂估基础110千卡、记账120千卡，不把两勺全部计入。",
+        "kcal_base_estimate": 110,
+        "kcal_booked": 120,
+        "kcal_range": [
+          60,
+          220
+        ],
+        "protein_g_estimate": 0.3,
+        "fat_g_estimate": 12.11111111111111,
+        "carbs_g_estimate": 2.45,
+        "margin": {
+          "added_fat_g": 1.1111111111111112,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "基础情景约11克入口油及少量调味，另留10千卡余量；实际入口油量不是测量值。"
+        },
+        "uncertainty": "汤只喝少量、两种油各一勺已明确；勺容量、剩汤油和附着量不明。60–220千卡是操作性估算范围，非保证上下界；不因本次更多油而机械翻倍。",
+        "soup_consumed": true,
+        "photo_path": "/tmp/codex-remote-attachments/01a0815d-c1e0-70c3-aede-a856080eac73/AC63266F-97EC-4EE4-93F6-AD208C92803B/1-照片-1.jpg",
+        "reported_text": "汤喝了一点 加的辣椒油比之前多 各一勺",
+        "soup_amount_reported": "一点",
+        "added_to_bowl": {
+          "extra_chili_condiments": [
+            {
+              "name": "重庆小面辣椒油（沿用此前品种）",
+              "amount_reported": "一勺"
+            },
+            {
+              "name": "糊辣壳辣椒油（沿用此前品种）",
+              "amount_reported": "一勺"
+            }
+          ],
+          "spoon_size_ml": null
+        }
+      }
+    }
+  ],
+  "notes": [
+    "按上海自然日将凌晨夜宵归09-13；09-12晚餐原KFC和曲奇仍为not_eaten，本次是09-13实际摄入，不重复记入09-12。周日默认休息安排，日内训练状态仍unknown。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 3395.157743785851,
+    "intake_kcal_booked": 3465.157743785851,
+    "protein_g_estimate": 165.25,
+    "fat_g_estimate": 190.27777777777777,
+    "carbs_g_estimate": 271.4,
+    "intake_kcal_estimate": 3465.157743785851,
+    "food_margin_kcal": 70.0,
+    "base_macro_estimates": {
+      "protein_g": 165.25,
+      "fat_g": 182.5,
+      "carbs_g": 271.4
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      2854.1261950286807,
+      4002.189292543021
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2243.1,
+    "estimated_deficit_kcal": -1222.057743785851,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 7,
+    "protein_by_meal_g": {
+      "凌晨夜宵": 87.95,
+      "午餐": 2.1,
+      "晚餐": 75.2
+    },
+    "warnings": [
+      "饮食完整性未确认：合计仅含已记录摄入"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1255.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}

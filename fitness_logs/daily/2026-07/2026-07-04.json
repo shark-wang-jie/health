@@ -1,0 +1,150 @@
+{
+  "date": "2026-07-04",
+  "timezone": "亚洲/上海",
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1919,
+    "bmr_note": "按 2026-07-04 早晨体重用 米夫林-圣乔尔公式 估算；摄入目标自 2026-07-03 起为 1900 千卡。"
+  },
+  "morning_weight_kg": 96.85,
+  "targets": {
+    "intake_kcal": 1900,
+    "deficit_min_kcal": 500,
+    "deficit_max_kcal": 800,
+    "protein_target_g": 170
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "3 个凤梨酥、1 根原味牛肉干和 260 毫升普通牛奶",
+      "kcal_estimate": 588,
+      "protein_g_estimate": 28.1,
+      "carbs_g_estimate": 60.8,
+      "fat_g_estimate": 24.3,
+      "sodium_mg_estimate": 429,
+      "confidence": "营养标签和既往记录",
+      "notes": [
+        "如实际份量或标签不同，需要修正本条。",
+        "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+        "牛奶按既有标签折算，热量和宏量营养素已计入。"
+      ]
+    },
+    {
+      "meal": "加餐",
+      "description": "一个拳头大小黄桃",
+      "kcal_estimate": 125,
+      "protein_g_estimate": 2,
+      "carbs_g_estimate": 29,
+      "fat_g_estimate": 0.5,
+      "confidence": "估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "马记永牛肉拉面一份，只喝两口汤，另加一份沙葱土豆丝",
+      "kcal_estimate": 1050,
+      "protein_g_estimate": 39,
+      "carbs_g_estimate": 145,
+      "fat_g_estimate": 34,
+      "confidence": "根据照片和喝汤量估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "下午加餐",
+      "description": "一个拳头大小黄桃",
+      "kcal_estimate": 125,
+      "protein_g_estimate": 2,
+      "carbs_g_estimate": 29,
+      "fat_g_estimate": 0.5,
+      "confidence": "估算",
+      "notes": [
+        "该条为餐食细项中文化摘要：按照片、报告份量、剩余量和可见油/酱汁保守估算，具体数值见本条热量与宏量营养素字段。"
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "原味牛肉干 5 根；整罐 440 克 12 根，总量约 183 克",
+      "kcal_estimate": 410,
+      "protein_g_estimate": 79.2,
+      "carbs_g_estimate": 0,
+      "fat_g_estimate": 9.9,
+      "sodium_mg_estimate": 1604,
+      "confidence": "营养标签和报告数量",
+      "notes": [
+        "按营养标签折算，相关热量和营养素已计入。",
+        "牛肉干按整罐 440 克 12 根折算，每根约 36.7 克。",
+        "钠摄入较高，可能通过水分潴留影响次日晨重。"
+      ]
+    }
+  ],
+  "exercise_entries": [
+    {
+      "type": "传统力量训练",
+      "description": "苹果手表 传统力量训练",
+      "start_time": "17:52",
+      "end_time": "18:30",
+      "duration_min": 37.9,
+      "active_kcal": 215,
+      "total_kcal": 281,
+      "avg_heart_rate_bpm": 111,
+      "kcal_estimate": 215,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    },
+    {
+      "type": "室内单车",
+      "description": "苹果手表 室内单车训练",
+      "start_time": "20:06",
+      "end_time": "20:51",
+      "duration_min": 45.3,
+      "active_kcal": 378,
+      "total_kcal": 461,
+      "avg_heart_rate_bpm": 136,
+      "effort": "中等强度",
+      "kcal_estimate": 378,
+      "confidence": "苹果手表 记录",
+      "notes": [
+        "每日净热量计算使用 苹果手表 主动千卡作为运动消耗。",
+        "总千卡仅作参考，不另行加入，避免重复计算静息消耗。"
+      ]
+    }
+  ],
+  "training_plan": [
+    {
+      "time": "晚上",
+      "focus": "力量训练",
+      "description": "17:52-18:30 完成传统力量训练",
+      "status": "已完成"
+    },
+    {
+      "time": "晚上",
+      "focus": "有氧",
+      "description": "20:06-20:51 完成室内单车",
+      "status": "已完成"
+    }
+  ],
+  "daily_totals": {
+    "intake_kcal_estimate": 2298,
+    "protein_g_estimate": 150.3,
+    "exercise_kcal_estimate": 593,
+    "remaining_intake_kcal": -398,
+    "intake_vs_target_kcal": 398,
+    "net_intake_after_exercise_kcal": 1705
+  },
+  "notes": [
+    "新一天从空腹体重记录开始。",
+    "与 2026-07-03 早晨体重 97.55 千克相比，今天早晨体重下降 0.70 千克；短期变化按水分、糖原、钠和胃肠内容物波动谨慎解读。",
+    "牛肉干按既往标签记录折算；热量、蛋白质、脂肪和钠已计入。",
+    "苹果手表 记录：传统力量训练主动消耗 215 千卡，室内单车主动消耗 378 千卡，合计主动消耗 593 千卡。",
+    "运动消耗单独记录，不自动提高 1900 千卡摄入目标。"
+  ]
+}

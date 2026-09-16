@@ -1,0 +1,277 @@
+{
+  "date": "2026-08-29",
+  "timezone": "亚洲/上海",
+  "record_status": "final",
+  "food_log_closed": true,
+  "missing_sections": [],
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_kcal": 1877,
+    "bmr_note": "按2026-08-29早晨空腹体重92.60千克，用米夫林-圣乔尔公式10×92.60 + 6.25×173 - 5×27 + 5 = 1877.25千卡估算。"
+  },
+  "morning_weight_kg": 92.6,
+  "targets": {
+    "intake_kcal": 1880,
+    "intake_target_basis": "按当日基础代谢1877千卡四舍五入到十位确定；运动不自动增加饮食上限。",
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 700,
+    "protein_target_g": 170,
+    "carbohydrate_practical_target_g_range": [
+      150,
+      180
+    ]
+  },
+  "intake_entries": [
+    {
+      "meal": "早餐",
+      "description": "此前同款纯牛奶一瓶约260毫升、默认浓缩原味发酵乳一杯约120克",
+      "kcal_estimate": 328,
+      "protein_g_estimate": 17.6,
+      "fat_g_estimate": 17.8,
+      "carbs_g_estimate": 20.3,
+      "components": [
+        {
+          "food": "纯牛奶",
+          "amount": "此前同款一瓶约260毫升",
+          "kcal_estimate": 183,
+          "protein_g_estimate": 8.0,
+          "fat_g_estimate": 9.4,
+          "carbs_g_estimate": 12.5,
+          "nutrition_basis": "沿用此前同款每100毫升294千焦；260毫升约183千卡、蛋白质约8克。"
+        },
+        {
+          "food": "浓缩原味发酵乳",
+          "amount": "默认一杯约120克",
+          "kcal_estimate": 145,
+          "protein_g_estimate": 9.6,
+          "fat_g_estimate": 8.4,
+          "carbs_g_estimate": 7.8,
+          "nutrition_basis": "沿用当前默认酸奶口径：一杯浓缩原味发酵乳120克约145千卡。"
+        }
+      ]
+    },
+    {
+      "meal": "午餐",
+      "description": "与2026-08-28午餐相同：盒饭鸡腿2只去皮食用；土豆丝和炒白菜各约一半并全部吃完；米饭吃原份量的一半；卤蛋和豆腐干全部吃完",
+      "kcal_estimate": 950,
+      "kcal_range": [
+        760,
+        1200
+      ],
+      "protein_g_estimate": 80.0,
+      "protein_g_range": [
+        65.0,
+        94.0
+      ],
+      "fat_g_estimate": 35.0,
+      "fat_g_range": [
+        25.0,
+        49.0
+      ],
+      "carbs_g_estimate": 80.0,
+      "carbs_g_range": [
+        65.0,
+        105.0
+      ],
+      "estimation_note": "完全沿用2026-08-28同款午餐及实际食用份量的估算口径。"
+    },
+    {
+      "meal": "下午加餐",
+      "description": "达美乐小份培根菠萝披萨2片",
+      "kcal_estimate": 320,
+      "kcal_range": [
+        260,
+        400
+      ],
+      "protein_g_estimate": 13.0,
+      "protein_g_range": [
+        10.0,
+        17.0
+      ],
+      "fat_g_estimate": 12.0,
+      "fat_g_range": [
+        9.0,
+        17.0
+      ],
+      "carbs_g_estimate": 40.0,
+      "carbs_g_range": [
+        32.0,
+        50.0
+      ],
+      "estimation_note": "按小份披萨的两片估算；实际尺寸、饼底厚度、每张切片数及配料量未知，是主要误差来源。"
+    },
+    {
+      "meal": "加餐",
+      "description": "小包装泡椒凤爪1包、果切芒果几块、达美乐芝士肉酱披萨1片",
+      "kcal_estimate": 310,
+      "kcal_range": [
+        230,
+        420
+      ],
+      "protein_g_estimate": 14.0,
+      "protein_g_range": [
+        9.0,
+        20.0
+      ],
+      "fat_g_estimate": 11.0,
+      "fat_g_range": [
+        7.0,
+        17.0
+      ],
+      "carbs_g_estimate": 39.0,
+      "carbs_g_range": [
+        28.0,
+        54.0
+      ],
+      "components": [
+        {
+          "food": "泡椒凤爪",
+          "amount": "小包装1包",
+          "kcal_estimate": 80,
+          "kcal_range": [
+            60,
+            110
+          ],
+          "protein_g_estimate": 6.0,
+          "fat_g_estimate": 4.0,
+          "carbs_g_estimate": 4.0,
+          "estimation_note": "无包装净重和营养标签，按常见小包装估算；钠通常较高。"
+        },
+        {
+          "food": "果切芒果",
+          "amount": "几块，未称重",
+          "kcal_estimate": 60,
+          "kcal_range": [
+            40,
+            90
+          ],
+          "protein_g_estimate": 1.0,
+          "fat_g_estimate": 0.5,
+          "carbs_g_estimate": 15.0,
+          "estimation_note": "按可食部分约100克估算，实际块数和大小未知。"
+        },
+        {
+          "food": "达美乐芝士肉酱披萨",
+          "amount": "1片",
+          "kcal_estimate": 170,
+          "kcal_range": [
+            130,
+            220
+          ],
+          "protein_g_estimate": 7.0,
+          "fat_g_estimate": 6.5,
+          "carbs_g_estimate": 20.0,
+          "estimation_note": "暂按与此前小份披萨相近的单片尺寸估算；饼底和芝士肉酱用量未知。"
+        }
+      ]
+    },
+    {
+      "meal": "晚餐",
+      "description": "此前同款墨虾丸一包250克",
+      "kcal_estimate": 222,
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 14.3,
+      "sodium_mg_estimate": 1270,
+      "nutrition_basis": "沿用此前同款每100克371千焦、蛋白质14.6克、脂肪0.7克、碳水5.7克、钠508毫克的标签。",
+      "note": "墨虾丸属于高钠加工食品；整包钠约1270毫克。"
+    },
+    {
+      "meal": "晚间加餐",
+      "description": "此前同款荞麦锅巴150克、此前同款棒棒鸡2.5根",
+      "kcal_estimate": 1326,
+      "protein_g_estimate": 27.2,
+      "fat_g_estimate": 49.2,
+      "carbs_g_estimate": 187.6,
+      "sodium_mg_estimate": 1835,
+      "components": [
+        {
+          "food": "荞麦锅巴",
+          "amount": "150克",
+          "kcal_estimate": 598,
+          "protein_g_estimate": 8.4,
+          "fat_g_estimate": 4.2,
+          "carbs_g_estimate": 125.3,
+          "dietary_fiber_g_estimate": 9.2,
+          "sodium_mg_estimate": 473,
+          "nutrition_basis": "沿用此前同款包装每100克能量1667千焦、蛋白质5.6克、脂肪2.8克、碳水83.5克、膳食纤维6.1克、钠315毫克的数据。"
+        },
+        {
+          "food": "棒棒鸡",
+          "amount": "2.5根，按此前同款每根110克计算",
+          "kcal_estimate": 728,
+          "protein_g_estimate": 18.8,
+          "fat_g_estimate": 45.0,
+          "carbs_g_estimate": 62.3,
+          "sodium_mg_estimate": 1362,
+          "nutrition_basis": "沿用2026-08-24同款包装口径：每根110克约291千卡、蛋白质7.5克、脂肪18克、碳水24.9克、钠约545毫克；按2.5根同比换算。"
+        }
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_estimate": 3456,
+    "intake_kcal_range": [
+      3126,
+      3896
+    ],
+    "protein_g_estimate": 188.3,
+    "protein_g_range": [
+      165.3,
+      212.3
+    ],
+    "fat_g_estimate": 126.8,
+    "fat_g_range": [
+      109.8,
+      151.8
+    ],
+    "carbs_g_estimate": 381.2,
+    "carbs_g_range": [
+      347.2,
+      431.2
+    ],
+    "exercise_active_kcal": 0,
+    "net_intake_after_exercise_kcal": 3456,
+    "net_intake_after_exercise_kcal_range": [
+      3126,
+      3896
+    ],
+    "provisional_conservative_deficit_kcal": -1579,
+    "provisional_conservative_deficit_kcal_range": [
+      -2019,
+      -1249
+    ],
+    "remaining_to_intake_target_kcal": 0,
+    "remaining_to_intake_target_kcal_range": [
+      0,
+      0
+    ],
+    "remaining_while_preserving_min_deficit_kcal": 0,
+    "remaining_to_protein_target_g": 0.0,
+    "remaining_to_protein_target_g_range": [
+      0.0,
+      4.7
+    ],
+    "remaining_to_carbohydrate_practical_target_g_range": [
+      0.0,
+      0.0
+    ],
+    "carbohydrate_above_practical_target_upper_g": 201.2,
+    "intake_above_target_kcal": 1576,
+    "status": "全天最终：累计摄入中位约3456千卡，合理范围约3126-3896千卡；蛋白质约188.3克、脂肪约126.8克、碳水约381.2克。中位摄入较1880千卡上限高约1576千卡；无运动，中位保守结果约为1579千卡盈余。"
+  },
+  "notes": [
+    "空腹体重92.60千克，继续以7日均重判断趋势。",
+    "按92.60千克计算基础代谢约1877千卡，今日固定饮食上限1880千卡。",
+    "早餐一瓶默认纯牛奶和一杯默认浓缩原味发酵乳，合计约328千卡、蛋白质约17.6克。",
+    "午餐与2026-08-28相同并沿用同一估算口径，中位约950千卡、蛋白质约80克。",
+    "下午加餐达美乐小份培根菠萝披萨2片，因缺少具体尺寸、克重和营养标签，中位暂估约320千卡，合理范围约260-400千卡。",
+    "随后加餐小包装泡椒凤爪、几块果切芒果和一片达美乐芝士肉酱披萨，中位合计约310千卡；三项均缺少准确重量或标签。",
+    "晚餐一包此前同款墨虾丸250克，按既有包装标签约222千卡、蛋白质36.5克、钠约1270毫克。",
+    "2026-08-30补报前一晚加餐：荞麦锅巴150克和此前同款棒棒鸡2.5根，合计约1326千卡；仅这次加餐钠估算约1835毫克。",
+    "用户随后报告2026-08-30空腹体重，据此确认2026-08-29无后续饮食或运动，当日记录封账。"
+  ]
+}
