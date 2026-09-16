@@ -89,3 +89,5 @@
 阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex exec --ephemeral --sandbox workspace-write --ask-for-approval never`读取规则和目标日，做受限语义复核。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
 
 脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
+
+macOS普通LaunchAgent不能后台读取`Documents`时，实际任务通过`HEALTH_REPO_ROOT`指向`~/Library/Application Support/health-daily-review/repo`专用checkout。该checkout与交互工作副本共享同一`origin/main`，不复制或改写未提交的本地工作。

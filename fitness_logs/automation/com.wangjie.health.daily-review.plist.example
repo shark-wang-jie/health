@@ -20,6 +20,8 @@
   </dict>
   <key>EnvironmentVariables</key>
   <dict>
+    <key>HEALTH_REPO_ROOT</key>
+    <string>__REPO_ROOT__</string>
     <key>HOME</key>
     <string>__HOME__</string>
     <key>PATH</key>

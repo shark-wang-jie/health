@@ -3,7 +3,7 @@
 set -u
 set -o pipefail
 
-REPO_ROOT="/Users/wangjie/Documents/health"
+REPO_ROOT="${HEALTH_REPO_ROOT:-/Users/wangjie/Documents/health}"
 AUTOMATION_DIR="$REPO_ROOT/fitness_logs/automation"
 PROMPT_FILE="$AUTOMATION_DIR/daily_codex_prompt.md"
 LOG_DIR="/Users/wangjie/Library/Logs/health"

@@ -217,6 +217,8 @@ Mac 上的统一入口是 `fitness_logs/automation/daily_review.sh`，由 Launch
 
 任务以原子目录锁避免并发，完整日志位于 `~/Library/Logs/health/`。工作区已有修改、pull冲突、Codex失败、验证失败或远端竞态都会停止任务。只有 `fitness_logs/` 下存在合法实际修改时才提交 `fitness: automated review YYYY-MM-DD` 并普通推送；无变化时不产生空提交。
 
+若 macOS 隐私保护阻止普通 LaunchAgent 读取 `Documents`，本机安装使用 `~/Library/Application Support/health-daily-review/repo` 专用 checkout，并通过 `HEALTH_REPO_ROOT` 传给同一版本化脚本。两个本地工作副本只通过 GitHub `main` 交换已提交事实；自动任务不会复制、覆盖或暂存交互工作副本的未提交内容。
+
 ## 并发与冲突处理
 
 为了避免 ChatGPT 与 Codex 同时修改同一文件：

@@ -21,3 +21,5 @@
 ## 每日自动复核
 
 Mac 通过 LaunchAgent `com.wangjie.health.daily-review` 每天本地时间 00:00 运行 `fitness_logs/automation/daily_review.sh`，复核刚结束的前一上海自然日。任务先同步 `origin/main`，执行确定性重算与校验，再调用本机 Codex CLI 做受限语义复核；只有产生合法实际修改时才提交并非强制推送。运行日志保存在 `~/Library/Logs/health/`，不进入仓库。
+
+由于 macOS 不允许普通 LaunchAgent 后台读取用户的 `Documents` 目录，实际定时任务使用 `~/Library/Application Support/health-daily-review/repo` 作为专用 checkout；它与本目录共享同一个 GitHub `main`。交互式 Codex 继续使用本目录，并在写入前同步 `main`。
