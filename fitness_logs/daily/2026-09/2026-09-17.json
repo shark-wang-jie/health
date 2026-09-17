@@ -1,1 +1,388 @@
-{"schema_version":3,"date":"2026-09-17","timezone":"Asia/Shanghai","record_status":"final","food_log_closed":true,"closure_basis":"用户明确确认“今天饮食运动结束”。","food_coverage":"confirmed_complete","training_status":"reported_training","training_coverage":"confirmed_complete","missing_sections":[],"non_energy_pending_notes":[],"trend_context":[],"weight_measurement_note":"用户报告早上空腹体重91.40公斤。","plan_version":"2026-09-08-v3.2","morning_weight_kg":91.4,"profile_snapshot":{"sex":"男性","age":27,"height_cm":173,"bmr_weight_kg":91.4,"bmr_weight_date":"2026-09-17","bmr_kcal":1865.25},"energy_method":{"algorithm":"tdee_v1","activity_factor":1.2,"training_factor":0.75},"food_estimation_policy":"photo_margin_v1","targets":{"rest_day_intake_kcal_range":[1800,1800],"training_day_intake_kcal_range":[1900,2000],"protein_target_g":170,"protein_practical_g_range":[140,180],"carbohydrate_reference_g_range":[150,180],"deficit_min_kcal":400,"deficit_max_kcal":600},"intake_entries":[{"description":"默认纯牛奶260毫升","meal":"早餐","source_kind":"matched_default","basis":"沿用food_catalog.json中的默认纯牛奶260毫升；用户本次报告早餐一瓶牛奶，未提供新的规格或标签。","kcal_base_estimate":183,"kcal_booked":183,"kcal_range":[183,183],"protein_g_estimate":8,"fat_g_estimate":9.4,"carbs_g_estimate":12.5,"margin":{"added_fat_g":0.0,"added_carbs_g":0,"already_in_base":false,"reason":"沿用固定规格基础口径，不机械加成"},"uncertainty":"沿用历史默认份量；若本次牛奶规格或标签不同，以本次实际信息更正。","id":"breakfast_milk_260ml","status":"consumed","catalog_id":"milk_260ml","catalog_version":"2026-09-08-v1","servings":1.0},{"description":"早餐香蕉1根，中等大小暂估可食部分约120克","meal":"早餐","source_kind":"matched_default","basis":"用户报告早餐又吃了1根香蕉；未提供重量或大小，沿用近期中等香蕉约120克可食部分的记录口径。","kcal_base_estimate":107,"kcal_booked":107,"kcal_range":[85,135],"protein_g_estimate":1.3,"fat_g_estimate":0.4,"carbs_g_estimate":27.6,"margin":{"added_fat_g":0.0,"added_carbs_g":0,"already_in_base":false,"reason":"无烹调用油；用范围表达香蕉大小和可食部分差异"},"uncertainty":"香蕉未称重且大小未说明；暂按中等香蕉约120克可食部分估算，若实际明显偏小或偏大可后续更正。","id":"breakfast_banana_1","status":"consumed_estimated","servings":1.0},{"description":"沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝","meal":"午餐","source_kind":"matched_default","basis":"沿用food_catalog.json固定同款；本次照片再次确认餐盒结构为米饭、鸡腿、卤蛋、炒白菜和土豆丝，另有第2只鸡腿。用户明确鸡腿去皮、不吃土豆丝。按照片重新核对份量结构后，现有基础885千卡/记账973.5千卡仍合理，无足够依据改动数值。","kcal_base_estimate":885.0,"kcal_booked":973.5,"kcal_range":[710.0,1080.0],"protein_g_estimate":70.5,"fat_g_estimate":36.83333333333334,"carbs_g_estimate":91.0,"margin":{"added_fat_g":9.833333333333346,"added_carbs_g":0.0,"already_in_base":false,"reason":"未知烹调用油增加约10%热量记账余量"},"uncertainty":"照片确认组成和固定吃法，但米饭克数、两只去皮鸡腿的实际可食肉重及炒白菜用油未称量；实际剩余量若不同应以后续说明更正。","protein_g_range":[57.0,84.0],"fat_g_range":[18.0,51.0],"carbs_g_range":[73.0,118.0],"id":"lunch_shaxian_1","status":"consumed_estimated","catalog_id":"shaxian_two_skinless_legs","catalog_version":"2026-09-08-v1","servings":1.0,"reported_text":"这就是每天吃的沙县鸡腿饭，去皮不吃土豆丝；重新计算热量。"},{"description":"此前同款青芥蟹饭团2个，每个净重105克","meal":"练后加餐","source_kind":"matched_default","basis":"用户明确要求参考此前记录；历史同款青芥蟹饭团每个105克按包装约95千卡、蛋白质1.9克、脂肪3.7克、碳水13.4克、钠386毫克，本次2个按2倍计。","kcal_base_estimate":190.0,"kcal_booked":190.0,"kcal_range":[190.0,190.0],"protein_g_estimate":3.8,"fat_g_estimate":7.4,"carbs_g_estimate":26.8,"sodium_mg_estimate":772.0,"margin":{"added_fat_g":0.0,"added_carbs_g":0.0,"already_in_base":false,"reason":"复用此前已确认同款标签口径，不额外加成"},"uncertainty":"按此前同款105克规格记录；若本次包装规格或标签有变化，以本次实际包装更正。","id":"postworkout_wasabi_crab_riceballs_2","status":"consumed","servings":2.0,"reported_text":"练后两个青芥蟹饭团；热量参考之前的记录。"},{"description":"普通鸡蛋清7个，不吃蛋黄","meal":"晚间加餐","source_kind":"matched_default","basis":"沿用food_catalog.json中普通蛋清每个约17千卡、蛋白质3.6克的固定口径，本次7个。","kcal_base_estimate":119.0,"kcal_booked":119.0,"kcal_range":[98.0,140.0],"protein_g_estimate":25.2,"fat_g_estimate":0.0,"carbs_g_estimate":0.0,"margin":{"added_fat_g":0.0,"added_carbs_g":0.0,"already_in_base":false,"reason":"按固定个数默认值记录，不额外加成"},"uncertainty":"鸡蛋实际大小会影响蛋清重量；按普通大小7个记录。","id":"evening_egg_whites_7","status":"consumed_estimated","catalog_id":"egg_white_one","catalog_version":"2026-09-08-v1","servings":7.0},{"description":"生巧慕斯条2根，整盒320克/8根，本次约80克","meal":"晚间加餐","source_kind":"label_known_quantity","basis":"用户提供包装标签：整盒净含量320克，共8根；每100克1476千焦、蛋白质8.3克、脂肪25.7克、碳水22.6克。本次2根=80克，按标签乘0.8。","kcal_base_estimate":282.22,"kcal_booked":282.22,"kcal_range":[282.22,282.22],"protein_g_estimate":6.64,"fat_g_estimate":20.56,"carbs_g_estimate":18.08,"margin":{"added_fat_g":0.0,"added_carbs_g":0.0,"already_in_base":false,"reason":"标签和食用数量明确，不额外加成"},"id":"evening_raw_chocolate_mousse_bars_2","status":"consumed","servings":2.0,"reported_text":"晚上吃了两根生巧慕斯条。"}],"exercise_entries":[{"id":"2026-09-17-strength-1","event_id":"2026-09-17-strength-1","type":"传统力量训练","duration":"38分50秒","duration_seconds":2330,"energy_scope":"session_active","source":"用户提供Apple Watch训练截图：2026-09-17 17:48–18:26，传统力量训练","active_kcal":265,"total_kcal":331,"average_heart_rate_bpm":119,"is_estimated":false,"note":"Apple Watch显示动态265千卡、总331千卡、平均心率119次/分；按项目规则只将动态千卡计入训练消耗。"},{"id":"2026-09-17-cycling-1","event_id":"2026-09-17-cycling-1","type":"室内单车","duration":"31分06秒","duration_seconds":1866,"energy_scope":"session_active","source":"用户提供Apple Watch训练截图：2026-09-17 21:04–21:35，室内单车","active_kcal":277,"total_kcal":334,"average_heart_rate_bpm":139,"is_estimated":false,"note":"Apple Watch显示动态277千卡、总334千卡、平均心率139次/分；按项目规则只将动态千卡计入训练消耗。"}],"recovery":{"hunger":null,"sleep_hours":null,"training_performance":null,"fatigue_or_pain":null},"corrections":[],"notes":["2026-09-17午餐照片用于复核固定同款沙县鸡腿饭；重新按可见份量结构核对后，现有885基础/973.5记账口径无需调整。","2026-09-17练后两个青芥蟹饭团按历史同款105克/个、95千卡/个的包装记录复用。","2026-09-17晚间吃7个蛋清和2根生巧慕斯条，并完成室内单车31分06秒。","用户确认今天饮食与运动结束，据此封账并将饮食/训练覆盖标记为confirmed_complete。"],"daily_summary":{"intake_kcal_base_estimate":1766.22,"intake_kcal_booked":1854.72,"protein_g_estimate":115.44,"fat_g_estimate":74.59333333333335,"carbs_g_estimate":175.98,"intake_kcal_estimate":1854.72,"food_margin_kcal":88.5,"base_macro_estimates":{"protein_g":115.44,"fat_g":64.76,"carbs_g":175.98},"completed_day_base_intake_balance_kcal":878.5799999999997,"training_discount_kcal":135.5,"assumption_note":"基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。","intake_kcal_range":[1548.22,2010.22],"exercise_active_kcal":542,"exercise_adjusted_kcal":406.5,"tdee_kcal_estimate":2644.7999999999997,"estimated_deficit_kcal":790.0799999999997,"completed_day_estimated_deficit_kcal":790.0799999999997,"energy_balance_scope":"completed_day_estimate","intake_target_kcal_range":[1900.0,2000.0],"target_is_provisional":false,"energy_estimate_provisional":false,"consumed_entries":6,"protein_by_meal_g":{"早餐":9.3,"午餐":70.5,"练后加餐":3.8,"晚间加餐":31.84},"warnings":[],"interpretation":"按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。","protein_g_range":null,"protein_g_entries_with_range":1,"protein_g_range_coverage_complete":false,"fat_g_range":null,"fat_g_entries_with_range":1,"fat_g_range_coverage_complete":false,"carbs_g_range":null,"carbs_g_entries_with_range":1,"carbs_g_range_coverage_complete":false,"fiber_g_known_sum":null,"fiber_g_entries_with_data":0,"fiber_g_coverage_complete":false,"sodium_mg_known_sum":772.0,"sodium_mg_entries_with_data":1,"sodium_mg_coverage_complete":false,"fruit_vegetable_g_known_sum":null,"fruit_vegetable_g_entries_with_data":0,"fruit_vegetable_g_coverage_complete":false}}
+{
+  "schema_version": 3,
+  "date": "2026-09-17",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确确认“今天饮食运动结束”。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重91.40公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 91.4,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 91.4,
+    "bmr_weight_date": "2026-09-17",
+    "bmr_kcal": 1865.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "description": "默认纯牛奶260毫升",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json中的默认纯牛奶260毫升；用户本次报告早餐一瓶牛奶，未提供新的规格或标签。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        183,
+        183
+      ],
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9.4,
+      "carbs_g_estimate": 12.5,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量；若本次牛奶规格或标签不同，以本次实际信息更正。",
+      "id": "breakfast_milk_260ml",
+      "status": "consumed",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0
+    },
+    {
+      "description": "早餐香蕉1根，中等大小暂估可食部分约120克",
+      "meal": "早餐",
+      "source_kind": "matched_default",
+      "basis": "用户报告早餐又吃了1根香蕉；未提供重量或大小，沿用近期中等香蕉约120克可食部分的记录口径。",
+      "kcal_base_estimate": 107,
+      "kcal_booked": 107,
+      "kcal_range": [
+        85,
+        135
+      ],
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 27.6,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无烹调用油；用范围表达香蕉大小和可食部分差异"
+      },
+      "uncertainty": "香蕉未称重且大小未说明；暂按中等香蕉约120克可食部分估算，若实际明显偏小或偏大可后续更正。",
+      "id": "breakfast_banana_1",
+      "status": "consumed_estimated",
+      "servings": 1.0
+    },
+    {
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "meal": "午餐",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json固定同款；本次照片再次确认餐盒结构为米饭、鸡腿、卤蛋、炒白菜和土豆丝，另有第2只鸡腿。用户明确鸡腿去皮、不吃土豆丝。按照片重新核对份量结构后，现有基础885千卡/记账973.5千卡仍合理，无足够依据改动数值。",
+      "kcal_base_estimate": 885.0,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710.0,
+        1080.0
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91.0,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "照片确认组成和固定吃法，但米饭克数、两只去皮鸡腿的实际可食肉重及炒白菜用油未称量；实际剩余量若不同应以后续说明更正。",
+      "protein_g_range": [
+        57.0,
+        84.0
+      ],
+      "fat_g_range": [
+        18.0,
+        51.0
+      ],
+      "carbs_g_range": [
+        73.0,
+        118.0
+      ],
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "这就是每天吃的沙县鸡腿饭，去皮不吃土豆丝；重新计算热量。"
+    },
+    {
+      "description": "此前同款青芥蟹饭团2个，每个净重105克",
+      "meal": "练后加餐",
+      "source_kind": "matched_default",
+      "basis": "用户明确要求参考此前记录；历史同款青芥蟹饭团每个105克按包装约95千卡、蛋白质1.9克、脂肪3.7克、碳水13.4克、钠386毫克，本次2个按2倍计。",
+      "kcal_base_estimate": 190.0,
+      "kcal_booked": 190.0,
+      "kcal_range": [
+        190.0,
+        190.0
+      ],
+      "protein_g_estimate": 3.8,
+      "fat_g_estimate": 7.4,
+      "carbs_g_estimate": 26.8,
+      "sodium_mg_estimate": 772.0,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "复用此前已确认同款标签口径，不额外加成"
+      },
+      "uncertainty": "按此前同款105克规格记录；若本次包装规格或标签有变化，以本次实际包装更正。",
+      "id": "postworkout_wasabi_crab_riceballs_2",
+      "status": "consumed",
+      "servings": 2.0,
+      "reported_text": "练后两个青芥蟹饭团；热量参考之前的记录。"
+    },
+    {
+      "description": "普通鸡蛋清7个，不吃蛋黄",
+      "meal": "晚间加餐",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json中普通蛋清每个约17千卡、蛋白质3.6克的固定口径，本次7个。",
+      "kcal_base_estimate": 119.0,
+      "kcal_booked": 119.0,
+      "kcal_range": [
+        98.0,
+        140.0
+      ],
+      "protein_g_estimate": 25.2,
+      "fat_g_estimate": 0.42,
+      "carbs_g_estimate": 1.68,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "按固定个数默认值记录，不额外加成"
+      },
+      "uncertainty": "鸡蛋实际大小会影响蛋清重量；按普通大小7个记录。",
+      "id": "evening_egg_whites_7",
+      "status": "consumed_estimated",
+      "catalog_id": "egg_white_one",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 7.0
+    },
+    {
+      "description": "生巧慕斯条2根，整盒320克/8根，本次约80克",
+      "meal": "晚间加餐",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供包装标签：整盒净含量320克，共8根；每100克1476千焦、蛋白质8.3克、脂肪25.7克、碳水22.6克。本次2根=80克，按标签乘0.8。",
+      "kcal_base_estimate": 282.22,
+      "kcal_booked": 282.22,
+      "kcal_range": [
+        282.22,
+        282.22
+      ],
+      "protein_g_estimate": 6.64,
+      "fat_g_estimate": 20.56,
+      "carbs_g_estimate": 18.08,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "标签和食用数量明确，不额外加成"
+      },
+      "id": "evening_raw_chocolate_mousse_bars_2",
+      "status": "consumed",
+      "servings": 2.0,
+      "reported_text": "晚上吃了两根生巧慕斯条。"
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "2026-09-17-strength-1",
+      "event_id": "2026-09-17-strength-1",
+      "type": "传统力量训练",
+      "duration": "38分50秒",
+      "duration_seconds": 2330,
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-17 17:48–18:26，传统力量训练",
+      "active_kcal": 265,
+      "total_kcal": 331,
+      "average_heart_rate_bpm": 119,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态265千卡、总331千卡、平均心率119次/分；按项目规则只将动态千卡计入训练消耗。"
+    },
+    {
+      "id": "2026-09-17-cycling-1",
+      "event_id": "2026-09-17-cycling-1",
+      "type": "室内单车",
+      "duration": "31分06秒",
+      "duration_seconds": 1866,
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-17 21:04–21:35，室内单车",
+      "active_kcal": 277,
+      "total_kcal": 334,
+      "average_heart_rate_bpm": 139,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态277千卡、总334千卡、平均心率139次/分；按项目规则只将动态千卡计入训练消耗。"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-09-18T01:10:19.240609+08:00",
+      "entry_id": "evening_egg_whites_7",
+      "reason": "语义复核：本条明确沿用food_catalog.json版本2026-09-08-v1的egg_white_one，原脂肪和碳水误记为零；按每个脂肪0.06克、碳水0.24克乘7，修正为0.42克和1.68克。热量、蛋白质及食用数量不变。",
+      "old_entry": {
+        "description": "普通鸡蛋清7个，不吃蛋黄",
+        "meal": "晚间加餐",
+        "source_kind": "matched_default",
+        "basis": "沿用food_catalog.json中普通蛋清每个约17千卡、蛋白质3.6克的固定口径，本次7个。",
+        "kcal_base_estimate": 119.0,
+        "kcal_booked": 119.0,
+        "kcal_range": [
+          98.0,
+          140.0
+        ],
+        "protein_g_estimate": 25.2,
+        "fat_g_estimate": 0.0,
+        "carbs_g_estimate": 0.0,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0.0,
+          "already_in_base": false,
+          "reason": "按固定个数默认值记录，不额外加成"
+        },
+        "uncertainty": "鸡蛋实际大小会影响蛋清重量；按普通大小7个记录。",
+        "id": "evening_egg_whites_7",
+        "status": "consumed_estimated",
+        "catalog_id": "egg_white_one",
+        "catalog_version": "2026-09-08-v1",
+        "servings": 7.0
+      },
+      "new_entry": {
+        "description": "普通鸡蛋清7个，不吃蛋黄",
+        "meal": "晚间加餐",
+        "source_kind": "matched_default",
+        "basis": "沿用food_catalog.json中普通蛋清每个约17千卡、蛋白质3.6克的固定口径，本次7个。",
+        "kcal_base_estimate": 119.0,
+        "kcal_booked": 119.0,
+        "kcal_range": [
+          98.0,
+          140.0
+        ],
+        "protein_g_estimate": 25.2,
+        "fat_g_estimate": 0.42,
+        "carbs_g_estimate": 1.68,
+        "margin": {
+          "added_fat_g": 0.0,
+          "added_carbs_g": 0.0,
+          "already_in_base": false,
+          "reason": "按固定个数默认值记录，不额外加成"
+        },
+        "uncertainty": "鸡蛋实际大小会影响蛋清重量；按普通大小7个记录。",
+        "id": "evening_egg_whites_7",
+        "status": "consumed_estimated",
+        "catalog_id": "egg_white_one",
+        "catalog_version": "2026-09-08-v1",
+        "servings": 7.0
+      }
+    }
+  ],
+  "notes": [
+    "2026-09-17午餐照片用于复核固定同款沙县鸡腿饭；重新按可见份量结构核对后，现有885基础/973.5记账口径无需调整。",
+    "2026-09-17练后两个青芥蟹饭团按历史同款105克/个、95千卡/个的包装记录复用。",
+    "2026-09-17晚间吃7个蛋清和2根生巧慕斯条，并完成室内单车31分06秒。",
+    "用户确认今天饮食与运动结束，据此封账并将饮食/训练覆盖标记为confirmed_complete。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 1766.22,
+    "intake_kcal_booked": 1854.72,
+    "protein_g_estimate": 115.44,
+    "fat_g_estimate": 75.01333333333334,
+    "carbs_g_estimate": 177.66000000000003,
+    "intake_kcal_estimate": 1854.72,
+    "food_margin_kcal": 88.5,
+    "base_macro_estimates": {
+      "protein_g": 115.44,
+      "fat_g": 65.17999999999999,
+      "carbs_g": 177.66000000000003
+    },
+    "completed_day_base_intake_balance_kcal": 878.5799999999997,
+    "training_discount_kcal": 135.5,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      1548.22,
+      2010.22
+    ],
+    "exercise_active_kcal": 542.0,
+    "exercise_adjusted_kcal": 406.5,
+    "tdee_kcal_estimate": 2644.7999999999997,
+    "estimated_deficit_kcal": 790.0799999999997,
+    "completed_day_estimated_deficit_kcal": 790.0799999999997,
+    "energy_balance_scope": "completed_day_estimate",
+    "intake_target_kcal_range": [
+      1900.0,
+      2000.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 6,
+    "protein_by_meal_g": {
+      "午餐": 70.5,
+      "早餐": 9.3,
+      "晚间加餐": 31.84,
+      "练后加餐": 3.8
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 1,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 1,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 1,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 772.0,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
