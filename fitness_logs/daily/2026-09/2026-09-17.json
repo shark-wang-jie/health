@@ -29,23 +29,11 @@
   },
   "food_estimation_policy": "photo_margin_v1",
   "targets": {
-    "rest_day_intake_kcal_range": [
-      1800,
-      1800
-    ],
-    "training_day_intake_kcal_range": [
-      1900,
-      2000
-    ],
+    "rest_day_intake_kcal_range": [1800, 1800],
+    "training_day_intake_kcal_range": [1900, 2000],
     "protein_target_g": 170,
-    "protein_practical_g_range": [
-      140,
-      180
-    ],
-    "carbohydrate_reference_g_range": [
-      150,
-      180
-    ],
+    "protein_practical_g_range": [140, 180],
+    "carbohydrate_reference_g_range": [150, 180],
     "deficit_min_kcal": 400,
     "deficit_max_kcal": 600
   },
@@ -57,10 +45,7 @@
       "basis": "沿用food_catalog.json中的默认纯牛奶260毫升；用户本次报告早餐一瓶牛奶，未提供新的规格或标签。",
       "kcal_base_estimate": 183,
       "kcal_booked": 183,
-      "kcal_range": [
-        183,
-        183
-      ],
+      "kcal_range": [183, 183],
       "protein_g_estimate": 8,
       "fat_g_estimate": 9.4,
       "carbs_g_estimate": 12.5,
@@ -84,10 +69,7 @@
       "basis": "用户报告早餐又吃了1根香蕉；未提供重量或大小，沿用近期中等香蕉约120克可食部分的记录口径。",
       "kcal_base_estimate": 107,
       "kcal_booked": 107,
-      "kcal_range": [
-        85,
-        135
-      ],
+      "kcal_range": [85, 135],
       "protein_g_estimate": 1.3,
       "fat_g_estimate": 0.4,
       "carbs_g_estimate": 27.6,
@@ -101,6 +83,34 @@
       "id": "breakfast_banana_1",
       "status": "consumed_estimated",
       "servings": 1.0
+    },
+    {
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "meal": "午餐",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json固定同款；本次照片再次确认餐盒结构为米饭、鸡腿、卤蛋、炒白菜和土豆丝，另有第2只鸡腿。用户明确鸡腿去皮、不吃土豆丝。按照片重新核对份量结构后，现有基础885千卡/记账973.5千卡仍合理，无足够依据改动数值。",
+      "kcal_base_estimate": 885.0,
+      "kcal_booked": 973.5,
+      "kcal_range": [710.0, 1080.0],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91.0,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "照片确认组成和固定吃法，但米饭克数、两只去皮鸡腿的实际可食肉重及炒白菜用油未称量；实际剩余量若不同应以后续说明更正。",
+      "protein_g_range": [57.0, 84.0],
+      "fat_g_range": [18.0, 51.0],
+      "carbs_g_range": [73.0, 118.0],
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1.0,
+      "reported_text": "这就是每天吃的沙县鸡腿饭，去皮不吃土豆丝；重新计算热量。"
     }
   ],
   "exercise_entries": [],
@@ -111,42 +121,39 @@
     "fatigue_or_pain": null
   },
   "corrections": [],
-  "notes": [],
+  "notes": [
+    "2026-09-17午餐照片用于复核固定同款沙县鸡腿饭；重新按可见份量结构核对后，现有885基础/973.5记账口径无需调整。"
+  ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 290.0,
-    "intake_kcal_booked": 290.0,
-    "protein_g_estimate": 9.3,
-    "fat_g_estimate": 9.8,
-    "carbs_g_estimate": 40.1,
-    "intake_kcal_estimate": 290.0,
-    "food_margin_kcal": 0.0,
+    "intake_kcal_base_estimate": 1175.0,
+    "intake_kcal_booked": 1263.5,
+    "protein_g_estimate": 79.8,
+    "fat_g_estimate": 46.63333333333334,
+    "carbs_g_estimate": 131.1,
+    "intake_kcal_estimate": 1263.5,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 9.3,
-      "fat_g": 9.8,
-      "carbs_g": 40.1
+      "protein_g": 79.8,
+      "fat_g": 36.8,
+      "carbs_g": 131.1
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
-    "intake_kcal_range": [
-      268.0,
-      318.0
-    ],
+    "intake_kcal_range": [978.0, 1398.0],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2238.3,
-    "estimated_deficit_kcal": 1948.3,
+    "estimated_deficit_kcal": 974.8,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
-    "intake_target_kcal_range": [
-      1800.0,
-      1800.0
-    ],
+    "intake_target_kcal_range": [1800.0, 1800.0],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "早餐": 9.3
+      "早餐": 9.3,
+      "午餐": 70.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -155,13 +162,13 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
