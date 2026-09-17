@@ -112,4 +112,12 @@
 - 09-07/08早餐未明确报告，不等于没吃；历史空missing_sections不能推翻此待确认说明。
 - 09-10、09-11、09-13的覆盖缺项见上表说明。补报时更新相应日期，不挪到当前日。
 
-每天22:00更新交接是对话约定，尚未配置后台自动任务。用户请求时即可整理，无需另行询问许可。后续用户更正优先于本摘要；源数据以每日JSON为准。
+## 每日自动复核
+
+- 已安装LaunchAgent：`/Users/wangjie/Library/LaunchAgents/com.wangjie.health.daily-review.plist`，每天Asia/Shanghai 00:00复核刚结束的前一自然日。
+- launchd使用专用后台检出：`/Users/wangjie/Library/Application Support/health-daily-review/repo`。原因是macOS不允许普通后台LaunchAgent直接读取`Documents`；交互仓库仍为`/Users/wangjie/Documents/health`，两者以GitHub `main`同步事实。
+- 阶段A已启用：安全同步、recalculate、validate、report、`jq empty`、按需commit/push；无目标日文件时不虚构记录，无变更时不建空提交。
+- 阶段B已启用：Codex CLI `0.154.0-alpha.6.2`通过`codex -s workspace-write -a never -C REPO exec --ephemeral`无人值守执行语义复核；缺少用户事实时只保留pending，不猜测。
+- 日志位于`/Users/wangjie/Library/Logs/health/daily-review-YYYY-MM-DD.log`。2026-09-16已完成两次手动触发验证，阶段A/B、校验、幂等和无空提交均通过，LaunchAgent退出码为0。
+
+用户请求时仍可随时整理交接，无需另行询问许可。后续用户更正优先于本摘要；源数据以每日JSON为准。
