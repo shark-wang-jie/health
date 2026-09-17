@@ -215,7 +215,7 @@ Mac 上的统一入口是 `fitness_logs/automation/daily_review.sh`，由 Launch
 1. 阶段A确定性维护：要求干净 `main`，执行 `fetch`、`pull --rebase`、目标文件存在性检查、`recalculate`、`validate`、`report` 和 `jq empty`。
 2. 阶段B语义复核：使用本机实际安装的 Codex CLI 非交互命令 `codex -s workspace-write -a never -C 仓库 exec --ephemeral`，按 `automation/daily_codex_prompt.md` 读取规则和目标日。当前CLI要求沙箱、审批与工作目录选项放在`exec`之前。它可修正已有事实能证明的重复、累计、状态和更正应用错误，不得补造用户事实。阶段B结束后再次运行阶段A校验。
 
-任务以原子目录锁避免并发，完整日志位于 `~/Library/Logs/health/`。Git网络操作单次最多尝试3次；仍失败时保留待处理日期，后续15分钟检查继续补跑。成功后保存目标记录和复核规则的内容指纹，内容未变化时不重复调用Codex。工作区已有修改、同步冲突、Codex失败、验证失败或远端竞态都会停止任务并保留待处理状态。只有 `fitness_logs/` 下存在合法实际修改时才提交 `fitness: automated review YYYY-MM-DD` 并普通推送；无变化时不产生空提交。
+任务以原子目录锁避免并发，完整日志位于 `~/Library/Logs/health/`。launchd未继承交互式代理变量时，脚本读取已启用的macOS系统HTTP/HTTPS代理。Git网络操作单次最多尝试3次；仍失败时保留待处理日期，后续15分钟检查继续补跑。成功后保存目标记录和复核规则的内容指纹，内容未变化时不重复调用Codex。工作区已有修改、同步冲突、Codex失败、验证失败或远端竞态都会停止任务并保留待处理状态。只有 `fitness_logs/` 下存在合法实际修改时才提交 `fitness: automated review YYYY-MM-DD` 并普通推送；无变化时不产生空提交。
 
 若 macOS 隐私保护阻止普通 LaunchAgent 读取 `Documents`，本机安装使用 `~/Library/Application Support/health-daily-review/repo` 专用 checkout，并通过 `HEALTH_REPO_ROOT` 传给同一版本化脚本。两个本地工作副本只通过 GitHub `main` 交换已提交事实；自动任务不会复制、覆盖或暂存交互工作副本的未提交内容。
 

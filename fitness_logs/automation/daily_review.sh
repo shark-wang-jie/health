@@ -22,6 +22,8 @@ RM="/bin/rm"
 MV="/bin/mv"
 CAT="/bin/cat"
 SLEEP="/bin/sleep"
+SCUTIL="/usr/sbin/scutil"
+AWK="/usr/bin/awk"
 
 export HOME="/Users/wangjie"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Applications/ChatGPT.app/Contents/Resources"
@@ -77,6 +79,37 @@ timestamp() {
 
 log() {
   printf '[%s] %s\n' "$(timestamp)" "$*"
+}
+
+configure_system_proxy() {
+  if [ -n "${HTTPS_PROXY:-${https_proxy:-}}" ] || [ ! -x "$SCUTIL" ]; then
+    return 0
+  fi
+  proxy_settings="$($SCUTIL --proxy 2>/dev/null || true)"
+  https_enabled="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPSEnable" && $2 == ":" {print $3; exit}')"
+  https_host="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPSProxy" && $2 == ":" {print $3; exit}')"
+  https_port="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPSPort" && $2 == ":" {print $3; exit}')"
+  if [ "$https_enabled" = "1" ] && [ -n "$https_host" ] && [ -n "$https_port" ]; then
+    HTTPS_PROXY="http://$https_host:$https_port"
+    https_proxy="$HTTPS_PROXY"
+    export HTTPS_PROXY https_proxy
+    log "network environment: imported enabled macOS HTTPS proxy"
+  fi
+
+  http_enabled="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPEnable" && $2 == ":" {print $3; exit}')"
+  http_host="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPProxy" && $2 == ":" {print $3; exit}')"
+  http_port="$(printf '%s\n' "$proxy_settings" | $AWK '$1 == "HTTPPort" && $2 == ":" {print $3; exit}')"
+  if [ "$http_enabled" = "1" ] && [ -n "$http_host" ] && [ -n "$http_port" ]; then
+    HTTP_PROXY="http://$http_host:$http_port"
+    http_proxy="$HTTP_PROXY"
+    export HTTP_PROXY http_proxy
+  fi
+
+  if [ -z "${NO_PROXY:-${no_proxy:-}}" ]; then
+    NO_PROXY="localhost,127.0.0.1,::1"
+    no_proxy="$NO_PROXY"
+    export NO_PROXY no_proxy
+  fi
 }
 
 retry_delay() {
@@ -181,6 +214,7 @@ if [ "$TARGET_DATE" != "$SCHEDULED_DATE" ]; then
   log "catch-up target selected; scheduled previous day is $SCHEDULED_DATE"
 fi
 log "repository: $REPO_ROOT"
+configure_system_proxy
 
 if ! $MKDIR "$LOCK_DIR" 2>/dev/null; then
   existing_pid="$(cat "$LOCK_DIR/pid" 2>/dev/null || true)"
