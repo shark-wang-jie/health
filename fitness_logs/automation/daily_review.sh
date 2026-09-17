@@ -6,8 +6,11 @@ set -o pipefail
 REPO_ROOT="${HEALTH_REPO_ROOT:-/Users/wangjie/Documents/health}"
 AUTOMATION_DIR="$REPO_ROOT/fitness_logs/automation"
 PROMPT_FILE="$AUTOMATION_DIR/daily_codex_prompt.md"
-LOG_DIR="/Users/wangjie/Library/Logs/health"
-LOCK_DIR="/Users/wangjie/Library/Caches/com.wangjie.health.daily-review.lock"
+LOG_DIR="${HEALTH_LOG_DIR:-/Users/wangjie/Library/Logs/health}"
+LOCK_DIR="${HEALTH_LOCK_DIR:-/Users/wangjie/Library/Caches/com.wangjie.health.daily-review.lock}"
+STATE_ROOT="${HEALTH_STATE_ROOT:-/Users/wangjie/Library/Application Support/health-daily-review/state}"
+PENDING_DIR="$STATE_ROOT/pending"
+COMPLETED_DIR="$STATE_ROOT/completed"
 
 GIT="/usr/bin/git"
 PYTHON3="/opt/homebrew/bin/python3"
@@ -18,26 +21,54 @@ MKDIR="/bin/mkdir"
 RM="/bin/rm"
 MV="/bin/mv"
 CAT="/bin/cat"
+SLEEP="/bin/sleep"
 
 export HOME="/Users/wangjie"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Applications/ChatGPT.app/Contents/Resources"
 export TZ="Asia/Shanghai"
 
-TARGET_DATE="${HEALTH_TARGET_DATE:-$($PYTHON3 - <<'PY'
+SCHEDULED_DATE="$($PYTHON3 - <<'PY'
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
 print((today - timedelta(days=1)).isoformat())
 PY
-)}"
+)"
+
+$MKDIR -p "$LOG_DIR" "/Users/wangjie/Library/Caches" "$PENDING_DIR" "$COMPLETED_DIR"
+
+if [ -n "${HEALTH_TARGET_DATE:-}" ]; then
+  TARGET_DATE="$HEALTH_TARGET_DATE"
+else
+  TARGET_DATE=""
+  for pending_file in "$PENDING_DIR"/*.pending; do
+    [ -e "$pending_file" ] || continue
+    candidate="${pending_file##*/}"
+    candidate="${candidate%.pending}"
+    case "$candidate" in
+      ????-??-??)
+        if [ "$candidate" \> "$SCHEDULED_DATE" ]; then
+          continue
+        fi
+        if [ -z "$TARGET_DATE" ] || [ "$candidate" \< "$TARGET_DATE" ]; then
+          TARGET_DATE="$candidate"
+        fi
+        ;;
+    esac
+  done
+  TARGET_DATE="${TARGET_DATE:-$SCHEDULED_DATE}"
+fi
 TARGET_MONTH="${TARGET_DATE%-*}"
 TARGET_FILE="$REPO_ROOT/fitness_logs/daily/$TARGET_MONTH/$TARGET_DATE.json"
 LOG_FILE="$LOG_DIR/daily-review-$TARGET_DATE.log"
 CODEX_LAST_MESSAGE="$LOG_DIR/codex-last-message-$TARGET_DATE-$$.txt"
+PENDING_FILE="$PENDING_DIR/$TARGET_DATE.pending"
+COMPLETED_FILE="$COMPLETED_DIR/$TARGET_DATE.sha256"
 LOCK_OWNED=0
+COMPLETED=0
 
-$MKDIR -p "$LOG_DIR" "/Users/wangjie/Library/Caches"
+: >"$PENDING_FILE"
 exec >>"$LOG_FILE" 2>&1
 
 timestamp() {
@@ -46,6 +77,82 @@ timestamp() {
 
 log() {
   printf '[%s] %s\n' "$(timestamp)" "$*"
+}
+
+retry_delay() {
+  case "$1" in
+    1) printf '%s\n' "${HEALTH_RETRY_DELAY_1_SECONDS:-15}" ;;
+    *) printf '%s\n' "${HEALTH_RETRY_DELAY_2_SECONDS:-45}" ;;
+  esac
+}
+
+network_retry() {
+  retry_label="$1"
+  shift
+  retry_max="${HEALTH_NETWORK_ATTEMPTS:-3}"
+  retry_attempt=1
+  while :; do
+    log "$retry_label: attempt $retry_attempt/$retry_max"
+    if "$@"; then
+      log "$retry_label: success"
+      return 0
+    fi
+    if [ "$retry_attempt" -ge "$retry_max" ]; then
+      log "$retry_label: failed after $retry_max attempts"
+      return 1
+    fi
+    retry_wait="$(retry_delay "$retry_attempt")"
+    log "$retry_label: retrying in ${retry_wait}s"
+    "$SLEEP" "$retry_wait"
+    retry_attempt=$((retry_attempt + 1))
+  done
+}
+
+review_fingerprint() {
+  "$PYTHON3" - "$REPO_ROOT" "$TARGET_FILE" <<'PY'
+import hashlib
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1])
+target = Path(sys.argv[2])
+paths = [
+    root / "README.md",
+    root / "fitness_logs/AGENTS.md",
+    root / "fitness_logs/README.md",
+    root / "fitness_logs/CHATGPT_CODEX_WORKFLOW.md",
+    root / "fitness_logs/handoff_summary.md",
+    root / "fitness_logs/current_plan.json",
+    root / "fitness_logs/food_catalog.json",
+    root / "fitness_logs/record_tools.py",
+    root / "fitness_logs/automation/daily_codex_prompt.md",
+    target,
+]
+digest = hashlib.sha256()
+for path in paths:
+    try:
+        name = str(path.relative_to(root))
+    except ValueError:
+        name = str(path)
+    digest.update(name.encode("utf-8"))
+    digest.update(b"\0")
+    if path.is_file():
+        digest.update(path.read_bytes())
+    else:
+        digest.update(b"<missing>")
+    digest.update(b"\0")
+print(digest.hexdigest())
+PY
+}
+
+mark_completed() {
+  completed_fingerprint="$(review_fingerprint)" || return 1
+  completed_temp="$COMPLETED_FILE.tmp.$$"
+  printf '%s\n' "$completed_fingerprint" >"$completed_temp"
+  $MV "$completed_temp" "$COMPLETED_FILE"
+  $RM -f "$PENDING_FILE"
+  COMPLETED=1
+  log "completion state: saved fingerprint=$completed_fingerprint"
 }
 
 finish() {
@@ -59,6 +166,7 @@ finish() {
   if [ "$exit_code" -eq 0 ]; then
     log "task end: success"
   else
+    log "retry state: pending target retained at $PENDING_FILE"
     log "task end: failure exit_code=$exit_code"
   fi
 }
@@ -69,6 +177,9 @@ trap 'exit 129' HUP
 
 log "task start"
 log "target date: $TARGET_DATE"
+if [ "$TARGET_DATE" != "$SCHEDULED_DATE" ]; then
+  log "catch-up target selected; scheduled previous day is $SCHEDULED_DATE"
+fi
 log "repository: $REPO_ROOT"
 
 if ! $MKDIR "$LOCK_DIR" 2>/dev/null; then
@@ -119,20 +230,45 @@ if [ -n "$status_before" ]; then
 fi
 
 log "current git commit: $($GIT rev-parse HEAD)"
-log "git fetch: start"
-if ! $GIT fetch origin; then
+if ! network_retry "git fetch" $GIT fetch origin; then
   log "failure reason: git fetch failed"
   exit 70
 fi
-log "git fetch: success"
 
-log "git pull --rebase: start"
-if ! $GIT pull --rebase origin main; then
-  log "failure reason: git pull --rebase failed or conflicted; manual resolution required"
+log "git rebase origin/main: start"
+if ! $GIT rebase origin/main; then
+  log "failure reason: git rebase origin/main failed or conflicted; manual resolution required"
   exit 70
 fi
-log "pull result: success head=$($GIT rev-parse HEAD)"
+log "pull result: success via fetched origin/main and local rebase head=$($GIT rev-parse HEAD)"
 synced_remote_sha="$($GIT rev-parse origin/main)"
+
+ahead_count="$($GIT rev-list --count origin/main..HEAD)"
+if [ "$ahead_count" -gt 0 ]; then
+  unexpected_subjects="$($GIT log --format='%s' origin/main..HEAD | /usr/bin/grep -Ev '^fitness: automated review [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$' || true)"
+  if [ -n "$unexpected_subjects" ]; then
+    log "failure reason: local commits ahead of origin/main are not recognized automation commits"
+    printf '%s\n' "$unexpected_subjects"
+    exit 65
+  fi
+  log "recovery push: found $ahead_count previously committed automated review commit(s)"
+  if ! network_retry "recovery push" $GIT push origin main; then
+    log "failure reason: recovery push failed; commit retained locally"
+    exit 74
+  fi
+  synced_remote_sha="$($GIT rev-parse origin/main)"
+fi
+
+current_fingerprint="$(review_fingerprint)" || {
+  log "failure reason: could not calculate review fingerprint"
+  exit 69
+}
+if [ -f "$COMPLETED_FILE" ] && [ "$(cat "$COMPLETED_FILE" 2>/dev/null || true)" = "$current_fingerprint" ]; then
+  log "review result: skipped; target and review rules unchanged since successful review"
+  $RM -f "$PENDING_FILE"
+  COMPLETED=1
+  exit 0
+fi
 
 if [ ! -f "$TARGET_FILE" ]; then
   log "deterministic review result: 目标日无记录文件"
@@ -141,6 +277,10 @@ if [ ! -f "$TARGET_FILE" ]; then
   log "commit SHA: none"
   log "push result: skipped"
   log "pending questions: none"
+  if ! mark_completed; then
+    log "failure reason: could not save completion state"
+    exit 69
+  fi
   exit 0
 fi
 
@@ -216,6 +356,10 @@ if [ -z "$modified_files" ]; then
   log "modified files: none"
   log "commit SHA: none"
   log "push result: skipped; no actual changes"
+  if ! mark_completed; then
+    log "failure reason: could not save completion state"
+    exit 69
+  fi
   exit 0
 fi
 log "modified files:"
@@ -234,6 +378,10 @@ staged_files="$($GIT diff --cached --name-only)"
 if [ -z "$staged_files" ]; then
   log "commit SHA: none"
   log "push result: skipped; no staged changes"
+  if ! mark_completed; then
+    log "failure reason: could not save completion state"
+    exit 69
+  fi
   exit 0
 fi
 log "staged files:"
@@ -248,7 +396,7 @@ fi
 commit_sha="$($GIT rev-parse HEAD)"
 log "commit SHA: $commit_sha"
 
-if ! $GIT fetch origin; then
+if ! network_retry "pre-push git fetch" $GIT fetch origin; then
   log "push result: skipped because pre-push fetch failed"
   exit 70
 fi
@@ -259,10 +407,14 @@ if [ "$current_remote_sha" != "$synced_remote_sha" ]; then
   exit 73
 fi
 
-if ! $GIT push origin main; then
+if ! network_retry "git push" $GIT push origin main; then
   $GIT fetch origin || true
   log "push result: failed; no force push attempted"
   log "failure reason: origin/main changed or network/authentication failed; manual review required"
   exit 74
 fi
 log "push result: success commit=$commit_sha"
+if ! mark_completed; then
+  log "failure reason: push succeeded but completion state could not be saved"
+  exit 69
+fi

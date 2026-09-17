@@ -114,9 +114,9 @@
 
 ## 每日自动复核
 
-- 已安装LaunchAgent：`/Users/wangjie/Library/LaunchAgents/com.wangjie.health.daily-review.plist`，每天Asia/Shanghai 00:00复核刚结束的前一自然日。
+- 已安装LaunchAgent：`/Users/wangjie/Library/LaunchAgents/com.wangjie.health.daily-review.plist`，每天Asia/Shanghai 00:00复核刚结束的前一自然日，并每15分钟检查失败补跑。
 - launchd使用专用后台检出：`/Users/wangjie/Library/Application Support/health-daily-review/repo`。原因是macOS不允许普通后台LaunchAgent直接读取`Documents`；交互仓库仍为`/Users/wangjie/Documents/health`，两者以GitHub `main`同步事实。
-- 阶段A已启用：安全同步、recalculate、validate、report、`jq empty`、按需commit/push；无目标日文件时不虚构记录，无变更时不建空提交。
+- 阶段A已启用：安全同步、recalculate、validate、report、`jq empty`、按需commit/push；网络操作最多尝试3次，失败日期在仓库外持久保存并跨午夜、重启优先补跑。成功指纹未变化时跳过重复Codex；无目标日文件时不虚构记录，无变更时不建空提交。
 - 阶段B已启用：Codex CLI `0.154.0-alpha.6.2`通过`codex -s workspace-write -a never -C REPO exec --ephemeral`无人值守执行语义复核；缺少用户事实时只保留pending，不猜测。
 - 日志位于`/Users/wangjie/Library/Logs/health/daily-review-YYYY-MM-DD.log`。2026-09-16已完成两次手动触发验证，阶段A/B、校验、幂等和无空提交均通过，LaunchAgent退出码为0。
 
