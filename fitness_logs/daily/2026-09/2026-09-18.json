@@ -141,6 +141,57 @@
       "catalog_version": "2026-09-08-v1",
       "servings": 1,
       "reported_text": "午饭沙县鸡腿饭"
+    },
+    {
+      "description": "练后香蕉1根，中等大小暂估可食部分约120克",
+      "meal": "练后加餐",
+      "source_kind": "matched_default",
+      "basis": "沿用近期记录口径：未说明大小时暂按中等香蕉可食部分约120克估算。",
+      "kcal_base_estimate": 107,
+      "kcal_booked": 107,
+      "kcal_range": [
+        85,
+        135
+      ],
+      "protein_g_estimate": 1.3,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 27.6,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无烹调用油；用范围表达香蕉大小差异"
+      },
+      "uncertainty": "香蕉未称重且大小未说明；若实际明显偏小或偏大可后续更正。",
+      "id": "postworkout_banana_1",
+      "status": "consumed_estimated",
+      "servings": 1
+    },
+    {
+      "description": "练后7个蛋清＋2个蛋黄",
+      "meal": "练后加餐",
+      "source_kind": "matched_default",
+      "basis": "蛋清沿用food_catalog.json普通蛋清每个约17千卡、蛋白质3.6克；蛋黄按普通鸡蛋每个约55千卡、蛋白质约2.7克的常用估算，本次2个。",
+      "kcal_base_estimate": 229,
+      "kcal_booked": 229,
+      "kcal_range": [
+        198,
+        260
+      ],
+      "protein_g_estimate": 30.6,
+      "fat_g_estimate": 9.42,
+      "carbs_g_estimate": 2.88,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按实际个数估算，不额外增加用油余量"
+      },
+      "uncertainty": "鸡蛋大小会影响蛋清和蛋黄重量；蛋黄未提供标签或称重，按普通鸡蛋常用值估算。",
+      "id": "postworkout_egg_whites_7_yolks_2",
+      "status": "consumed_estimated",
+      "servings": 1,
+      "reported_text": "练后一根香蕉，七个蛋清，两个蛋黄"
     }
   ],
   "exercise_entries": [
@@ -168,32 +219,33 @@
   "corrections": [],
   "notes": [
     "2026-09-18早餐生巧慕斯条沿用09-17同款清晰包装标签与规格。",
-    "2026-09-18完成传统力量训练55分07秒，Apple Watch动态368千卡、总466千卡、平均心率119次/分。"
+    "2026-09-18完成传统力量训练55分07秒，Apple Watch动态368千卡、总466千卡、平均心率119次/分。",
+    "2026-09-18练后吃1根香蕉、7个蛋清和2个蛋黄；香蕉按中等约120克估算，蛋黄按普通鸡蛋常用值估算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1350.22,
-    "intake_kcal_booked": 1438.72,
-    "protein_g_estimate": 85.14,
-    "fat_g_estimate": 66.79333333333334,
-    "carbs_g_estimate": 121.58,
-    "intake_kcal_estimate": 1438.72,
+    "intake_kcal_base_estimate": 1686.22,
+    "intake_kcal_booked": 1774.72,
+    "protein_g_estimate": 117.04,
+    "fat_g_estimate": 76.61333333333334,
+    "carbs_g_estimate": 152.06,
+    "intake_kcal_estimate": 1774.72,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 85.14,
-      "fat_g": 56.96,
-      "carbs_g": 121.58
+      "protein_g": 117.04,
+      "fat_g": 66.78,
+      "carbs_g": 152.06
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 92,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1175.22,
-      1545.22
+      1458.22,
+      1940.22
     ],
     "exercise_active_kcal": 368,
     "exercise_adjusted_kcal": 276,
     "tdee_kcal_estimate": 2513.1,
-    "estimated_deficit_kcal": 1074.38,
+    "estimated_deficit_kcal": 738.38,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -202,10 +254,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "早餐": 14.64,
-      "午餐": 70.5
+      "午餐": 70.5,
+      "练后加餐": 31.9
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
