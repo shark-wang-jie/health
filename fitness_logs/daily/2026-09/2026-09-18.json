@@ -254,41 +254,41 @@
   "daily_summary": {
     "intake_kcal_base_estimate": 1831.22,
     "intake_kcal_booked": 1919.72,
-    "protein_g_estimate": 126.64,
-    "fat_g_estimate": 85.01333333333334,
+    "protein_g_estimate": 126.63999999999999,
+    "fat_g_estimate": 85.01333333333336,
     "carbs_g_estimate": 159.86,
     "intake_kcal_estimate": 1919.72,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 126.64,
-      "fat_g": 75.18,
+      "protein_g": 126.63999999999999,
+      "fat_g": 75.18000000000002,
       "carbs_g": 159.86
     },
-    "completed_day_base_intake_balance_kcal": 681.88,
-    "training_discount_kcal": 92,
+    "completed_day_base_intake_balance_kcal": 681.8799999999999,
+    "training_discount_kcal": 92.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1603.22,
-      2085.22
+      2085.2200000000003
     ],
-    "exercise_active_kcal": 368,
-    "exercise_adjusted_kcal": 276,
+    "exercise_active_kcal": 368.0,
+    "exercise_adjusted_kcal": 276.0,
     "tdee_kcal_estimate": 2513.1,
-    "estimated_deficit_kcal": 593.38,
-    "completed_day_estimated_deficit_kcal": 593.38,
+    "estimated_deficit_kcal": 593.3799999999999,
+    "completed_day_estimated_deficit_kcal": 593.3799999999999,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
-      "早餐": 14.64,
       "午餐": 70.5,
-      "练后加餐": 31.9,
-      "晚间加餐": 9.6
+      "早餐": 14.64,
+      "晚间加餐": 9.6,
+      "练后加餐": 31.900000000000002
     },
     "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
