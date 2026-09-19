@@ -8,7 +8,9 @@
   "food_coverage": "confirmed_complete",
   "training_status": "confirmed_rest",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "晚间3包赢多捞面的本次净含量、口味及营养标签未确认；当前80克/包仅为同类暂估，待实际包装确认后修正。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告早上空腹体重90.95公斤。",
@@ -619,6 +621,15 @@
         },
         "uncertainty": "品名以用户明确更正为准；净含量和营养标签维持本次包装照片读取值。未额外计未报告的蘸料或烹调用油。"
       }
+    },
+    {
+      "timestamp": "2026-09-20T00:01:09+08:00",
+      "field": "missing_sections",
+      "old_value": [],
+      "new_value": [
+        "晚间3包赢多捞面的本次净含量、口味及营养标签未确认；当前80克/包仅为同类暂估，待实际包装确认后修正。"
+      ],
+      "reason": "语义复核：捞面条目明确本次包装规格未知，80克/包为临时假设；按README未知包装重量规则保留能量相关待确认项。保留原摄入估算、封账及全天报告完整性，由工具重算暂估状态，不输出最终全天差额。"
     }
   ],
   "notes": [
@@ -634,52 +645,49 @@
     "2026-09-19晚间追加3包赢多捞面；因无本次包装标签，暂按Indomie Mi Goreng原味80克/包约380千卡估算，范围约1100–1200千卡/3包。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 5071.079464627151,
-    "intake_kcal_booked": 5231.079464627151,
+    "intake_kcal_base_estimate": 5071.0794646271515,
+    "intake_kcal_booked": 5231.0794646271515,
     "protein_g_estimate": 243.29,
     "fat_g_estimate": 270.9577777777778,
-    "carbs_g_estimate": 441.34,
-    "intake_kcal_estimate": 5231.079464627151,
-    "food_margin_kcal": 160,
+    "carbs_g_estimate": 441.34000000000003,
+    "intake_kcal_estimate": 5231.0794646271515,
+    "food_margin_kcal": 160.0,
     "base_macro_estimates": {
       "protein_g": 243.29,
       "fat_g": 253.18,
-      "carbs_g": 441.34
+      "carbs_g": 441.34000000000003
     },
-    "completed_day_base_intake_balance_kcal": -2838.179464627151,
-    "training_discount_kcal": 0,
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      4711.079464627151,
+      4711.0794646271515,
       5531.079464627151
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2232.9,
-    "estimated_deficit_kcal": -2998.179464627151,
-    "completed_day_estimated_deficit_kcal": -2998.179464627151,
-    "energy_balance_scope": "completed_day_estimate",
+    "estimated_deficit_kcal": -2998.1794646271514,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1800.0,
+      1800.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 10,
     "protein_by_meal_g": {
-      "早餐": 27.3,
-      "午餐": 59.01,
       "午后加餐": 13.280000000000001,
-      "晚餐": 122.1,
-      "晚间加餐": 21.6
+      "午餐": 59.01,
+      "早餐": 27.3,
+      "晚间加餐": 21.6,
+      "晚餐": 122.1
     },
     "warnings": [
-      "早餐调味与辣油按附着入口估算，实际油量未称重",
-      "晚餐两盒炸鸡缺少品牌/标签和单件重量，热量为较宽估算",
-      "虾仁馄饨调味包和喝汤情况未确认，封账时仍仅计馄饨本体",
-      "赢多捞面未提供本次包装标签，暂按Indomie Mi Goreng 80克原味同类估算"
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "按当前偏高记账口径估算为热量盈余；炸鸡与捞面存在较大标签/份量不确定性，结果不是实测能量平衡，也不能直接等同于脂肪变化。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
