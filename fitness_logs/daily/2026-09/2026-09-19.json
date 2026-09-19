@@ -213,6 +213,32 @@
         "reason": "沿用已建立同款固定规格，不机械加成"
       },
       "uncertainty": "沿用历史同款250克规格；若本次包装或营养标签不同，以本次实际包装更正。"
+    },
+    {
+      "id": "afternoon_raw_chocolate_mousse_bars_4",
+      "status": "consumed",
+      "meal": "午后加餐",
+      "description": "生巧慕斯条4根，整盒320克/8根，本次约160克",
+      "reported_text": "又吃了四根生巧慕斯条",
+      "source_kind": "matched_default",
+      "basis": "沿用此前同款明确包装标签：整盒320克/8根，每100克1476千焦、蛋白质8.3克、脂肪25.7克、碳水22.6克；4根约160克，按标签乘1.6。",
+      "kcal_base_estimate": 564.4359464627152,
+      "kcal_booked": 564.4359464627152,
+      "kcal_range": [
+        564.4359464627152,
+        564.4359464627152
+      ],
+      "protein_g_estimate": 13.280000000000001,
+      "fat_g_estimate": 41.120000000000005,
+      "carbs_g_estimate": 36.160000000000004,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "同款标签和食用数量明确，不额外加成"
+      },
+      "uncertainty": "按此前同款320克/8根规格记录；若本次包装规格不同，以实际包装更正。",
+      "servings": 4
     }
   ],
   "exercise_entries": [],
@@ -485,32 +511,33 @@
     "早餐调味/辣油已按用户补充修正：汤和剩余辣椒油未喝，只计馄饨表面附着入口；原整包调味与两勺辣油倒入量不再全部计入。",
     "2026-09-19午餐：2根生巧慕斯条、1包蟹黄水饺、1包墨虾丸。蟹黄水饺按本次照片标签230克/包换算；墨虾丸沿用历史同款250克默认。",
     "午餐蟹类水饺的清晰包装照片已复核：实际包装品名为“蟹粉水饺”；230克/包、每100克1050千焦及宏量数据与之前读取一致，午餐和全天热量无需调整。",
-    "用户明确更正午餐水饺品名为“蟹黄水饺”；此前误写“蟹粉水饺”已修正。营养标签和热量数值不变。"
+    "用户明确更正午餐水饺品名为“蟹黄水饺”；此前误写“蟹粉水饺”已修正。营养标签和热量数值不变。",
+    "2026-09-19午后追加4根生巧慕斯条；与午餐2根分开记录，本日累计生巧慕斯条6根。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1576.6100573613764,
-    "intake_kcal_booked": 1586.6100573613764,
-    "protein_g_estimate": 86.31,
-    "fat_g_estimate": 69.9211111111111,
-    "carbs_g_estimate": 151.88,
-    "intake_kcal_estimate": 1586.6100573613764,
+    "intake_kcal_base_estimate": 2141.0460038240917,
+    "intake_kcal_booked": 2151.0460038240917,
+    "protein_g_estimate": 99.59,
+    "fat_g_estimate": 111.0411111111111,
+    "carbs_g_estimate": 188.04,
+    "intake_kcal_estimate": 2151.0460038240917,
     "food_margin_kcal": 10,
     "base_macro_estimates": {
-      "protein_g": 86.31,
-      "fat_g": 68.81,
-      "carbs_g": 151.88
+      "protein_g": 99.59,
+      "fat_g": 109.93,
+      "carbs_g": 188.04
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1546.6100573613764,
-      1626.6100573613764
+      2111.0460038240917,
+      2191.0460038240917
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2232.9,
-    "estimated_deficit_kcal": 646.2899426386236,
+    "estimated_deficit_kcal": 81.85399617590838,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -519,10 +546,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "早餐": 27.3,
-      "午餐": 59.01
+      "午餐": 59.01,
+      "午后加餐": 13.280000000000001
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
