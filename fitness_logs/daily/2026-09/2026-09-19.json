@@ -157,10 +157,10 @@
       "id": "lunch_crab_roe_dumplings_230g",
       "status": "consumed",
       "meal": "午餐",
-      "description": "船歌蟹黄水饺1包，净含量230克",
+      "description": "船歌蟹粉水饺1包，12只装，净含量230克",
       "reported_text": "一包蟹黄水饺",
       "source_kind": "label_known_quantity",
-      "basis": "用户提供本次包装营养标签；净含量230克。每100克：能量1050千焦、蛋白质6.9克、脂肪13.5克、碳水25.5克、钠460毫克；整包按230克换算。",
+      "basis": "用户补充更清晰的本次包装照片确认：品名为蟹粉水饺（速冻生制品，非即食），12只装，净含量230克。营养表每100克：能量1050千焦、蛋白质6.9克、脂肪13.5克、碳水25.5克、钠460毫克；整包按230克换算。",
       "quantity_g": 230,
       "kcal_base_estimate": 577.1988527724665,
       "kcal_booked": 577.1988527724665,
@@ -185,7 +185,7 @@
         "already_in_base": false,
         "reason": "本次标签和整包重量明确，不机械加成"
       },
-      "uncertainty": "按整包230克记录；未额外计未报告的蘸料或烹调用油。"
+      "uncertainty": "本次品名、净含量和营养标签已由清晰照片确认；未额外计未报告的蘸料或烹调用油。"
     },
     {
       "id": "lunch_mo_shrimp_balls_250g",
@@ -331,13 +331,87 @@
           "spoon_size_ml": null
         }
       }
+    },
+    {
+      "timestamp": "2026-09-19T13:58:00+08:00",
+      "entry_id": "lunch_crab_roe_dumplings_230g",
+      "reason": "用户补充更清晰包装照片；确认包装品名为“蟹粉水饺”，12只装、净含量230克，营养表与此前读取一致，因此仅修正名称/依据，不改热量和宏量。",
+      "old_entry": {
+        "id": "lunch_crab_roe_dumplings_230g",
+        "status": "consumed",
+        "meal": "午餐",
+        "description": "船歌蟹黄水饺1包，净含量230克",
+        "reported_text": "一包蟹黄水饺",
+        "source_kind": "label_known_quantity",
+        "basis": "用户提供本次包装营养标签；净含量230克。每100克：能量1050千焦、蛋白质6.9克、脂肪13.5克、碳水25.5克、钠460毫克；整包按230克换算。",
+        "quantity_g": 230,
+        "kcal_base_estimate": 577.1988527724665,
+        "kcal_booked": 577.1988527724665,
+        "kcal_range": [
+          577.1988527724665,
+          577.1988527724665
+        ],
+        "protein_g_estimate": 15.87,
+        "fat_g_estimate": 31.05,
+        "carbs_g_estimate": 58.65,
+        "sodium_mg_estimate": 1058,
+        "nutrition_per_100g": {
+          "energy_kj": 1050,
+          "protein_g": 6.9,
+          "fat_g": 13.5,
+          "carbs_g": 25.5,
+          "sodium_mg": 460
+        },
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "本次标签和整包重量明确，不机械加成"
+        },
+        "uncertainty": "按整包230克记录；未额外计未报告的蘸料或烹调用油。"
+      },
+      "new_entry": {
+        "id": "lunch_crab_roe_dumplings_230g",
+        "status": "consumed",
+        "meal": "午餐",
+        "description": "船歌蟹粉水饺1包，12只装，净含量230克",
+        "reported_text": "一包蟹黄水饺",
+        "source_kind": "label_known_quantity",
+        "basis": "用户补充更清晰的本次包装照片确认：品名为蟹粉水饺（速冻生制品，非即食），12只装，净含量230克。营养表每100克：能量1050千焦、蛋白质6.9克、脂肪13.5克、碳水25.5克、钠460毫克；整包按230克换算。",
+        "quantity_g": 230,
+        "kcal_base_estimate": 577.1988527724665,
+        "kcal_booked": 577.1988527724665,
+        "kcal_range": [
+          577.1988527724665,
+          577.1988527724665
+        ],
+        "protein_g_estimate": 15.87,
+        "fat_g_estimate": 31.05,
+        "carbs_g_estimate": 58.65,
+        "sodium_mg_estimate": 1058,
+        "nutrition_per_100g": {
+          "energy_kj": 1050,
+          "protein_g": 6.9,
+          "fat_g": 13.5,
+          "carbs_g": 25.5,
+          "sodium_mg": 460
+        },
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "本次标签和整包重量明确，不机械加成"
+        },
+        "uncertainty": "本次品名、净含量和营养标签已由清晰照片确认；未额外计未报告的蘸料或烹调用油。"
+      }
     }
   ],
   "notes": [
     "2026-09-19早餐黄花鱼馄饨与调味包按用户本次提供的包装标签记录；额外辣椒油单独估算，不并入产品标签。",
     "空腹体重90.95公斤；较09-18的91.30公斤低0.35公斤，单日变化不等于脂肪变化。",
     "早餐调味/辣油已按用户补充修正：汤和剩余辣椒油未喝，只计馄饨表面附着入口；原整包调味与两勺辣油倒入量不再全部计入。",
-    "2026-09-19午餐：2根生巧慕斯条、1包蟹黄水饺、1包墨虾丸。蟹黄水饺按本次照片标签230克/包换算；墨虾丸沿用历史同款250克默认。"
+    "2026-09-19午餐：2根生巧慕斯条、1包蟹黄水饺、1包墨虾丸。蟹黄水饺按本次照片标签230克/包换算；墨虾丸沿用历史同款250克默认。",
+    "午餐蟹类水饺的清晰包装照片已复核：实际包装品名为“蟹粉水饺”；230克/包、每100克1050千焦及宏量数据与之前读取一致，午餐和全天热量无需调整。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1576.6100573613764,
