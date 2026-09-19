@@ -9,7 +9,9 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [],
-  "non_energy_pending_notes": [],
+  "non_energy_pending_notes": [
+    "虾仁馄饨调味包是否使用、汤是否喝下未确认；当前只计馄饨本体150克。"
+  ],
   "trend_context": [],
   "weight_measurement_note": "用户报告早上空腹体重90.95公斤。",
   "plan_version": "2026-09-08-v3.2",
@@ -291,6 +293,41 @@
         "reason": "炸鸡部位大小、裹粉和吸油量不明，基础点上留约10%油脂记账余量"
       },
       "uncertainty": "不同店铺鸡块大小和裹粉差异较大；若有品牌/包装、实际称重、去皮或剩余情况，可显著修正。"
+    },
+    {
+      "id": "dinner_shrimp_wontons_150g",
+      "status": "consumed",
+      "meal": "晚餐",
+      "description": "虾仁馄饨1盒，约15只、150克",
+      "reported_text": "晚上加一盒虾仁馄饨，一包两盒",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供包装标签：整包馄饨10克×30只=300克，分两盒；本次吃1盒，按15只约150克计。馄饨本体每100克：能量809千焦、蛋白质9.4克、脂肪5.5克、碳水26.2克、钠345毫克。",
+      "quantity_g": 150,
+      "units_estimate": 15,
+      "kcal_base_estimate": 290.03346080305926,
+      "kcal_booked": 290.03346080305926,
+      "kcal_range": [
+        290.03346080305926,
+        290.03346080305926
+      ],
+      "protein_g_estimate": 14.100000000000001,
+      "fat_g_estimate": 8.25,
+      "carbs_g_estimate": 39.3,
+      "sodium_mg_estimate": 517.5,
+      "nutrition_per_100g": {
+        "energy_kj": 809,
+        "protein_g": 9.4,
+        "fat_g": 5.5,
+        "carbs_g": 26.2,
+        "sodium_mg": 345
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "本次包装和份量明确，按1盒150克直接换算，不机械加成"
+      },
+      "uncertainty": "本次只按馄饨本体计；包装内另有5.5克×2调味包，但用户本条未说明是否使用及是否喝汤，因此暂不计调味包。"
     }
   ],
   "exercise_entries": [],
@@ -565,32 +602,33 @@
     "午餐蟹类水饺的清晰包装照片已复核：实际包装品名为“蟹粉水饺”；230克/包、每100克1050千焦及宏量数据与之前读取一致，午餐和全天热量无需调整。",
     "用户明确更正午餐水饺品名为“蟹黄水饺”；此前误写“蟹粉水饺”已修正。营养标签和热量数值不变。",
     "2026-09-19午后追加4根生巧慕斯条；与午餐2根分开记录，本日累计生巧慕斯条6根。",
-    "2026-09-19晚餐：无骨炸鸡约300克＋单人炸鸡1盒（鸡大腿1、翅根2、鸡翅2）。因无品牌标签/单件重量，按常见裹粉油炸鸡估算并保留较宽范围。"
+    "2026-09-19晚餐：无骨炸鸡约300克＋单人炸鸡1盒（鸡大腿1、翅根2、鸡翅2）。因无品牌标签/单件重量，按常见裹粉油炸鸡估算并保留较宽范围。",
+    "2026-09-19晚餐追加虾仁馄饨1盒：整包两盒，按半包馄饨本体150克计；调味包使用/喝汤情况未报告，暂不计。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 3641.0460038240917,
-    "intake_kcal_booked": 3801.0460038240917,
-    "protein_g_estimate": 207.59,
-    "fat_g_estimate": 211.70777777777778,
-    "carbs_g_estimate": 255.04,
-    "intake_kcal_estimate": 3801.0460038240917,
+    "intake_kcal_base_estimate": 3931.079464627151,
+    "intake_kcal_booked": 4091.079464627151,
+    "protein_g_estimate": 221.69,
+    "fat_g_estimate": 219.95777777777778,
+    "carbs_g_estimate": 294.34,
+    "intake_kcal_estimate": 4091.079464627151,
     "food_margin_kcal": 160,
     "base_macro_estimates": {
-      "protein_g": 207.59,
-      "fat_g": 193.93,
-      "carbs_g": 255.04
+      "protein_g": 221.69,
+      "fat_g": 202.18,
+      "carbs_g": 294.34
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      3321.0460038240917,
-      4041.0460038240917
+      3611.079464627151,
+      4331.079464627151
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2232.9,
-    "estimated_deficit_kcal": -1568.1460038240916,
+    "estimated_deficit_kcal": -1858.179464627151,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -599,18 +637,19 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 8,
+    "consumed_entries": 9,
     "protein_by_meal_g": {
       "早餐": 27.3,
       "午餐": 59.01,
       "午后加餐": 13.280000000000001,
-      "晚餐": 108
+      "晚餐": 122.1
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "早餐调味与辣油按附着入口估算，实际油量未称重",
       "晚餐两盒炸鸡缺少品牌/标签和单件重量，当前热量为较宽估算",
+      "虾仁馄饨调味包和喝汤情况未确认，当前只计馄饨本体",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -626,8 +665,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3348,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 3865.5,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
