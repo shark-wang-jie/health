@@ -239,6 +239,58 @@
       },
       "uncertainty": "按此前同款320克/8根规格记录；若本次包装规格不同，以实际包装更正。",
       "servings": 4
+    },
+    {
+      "id": "dinner_boneless_fried_chicken_300g",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "无骨炸鸡1盒，约300克",
+      "reported_text": "晚上一盒无骨炸鸡，无骨炸鸡三百克",
+      "source_kind": "database_estimate",
+      "basis": "用户明确重量约300克，但未提供品牌/营养标签、裹粉厚度、是否带酱。按常见裹粉油炸无骨鸡约260千卡/100克作基础点估算，餐饮油脂不确定性另留约10%记账余量。",
+      "quantity_g_estimate": 300,
+      "kcal_base_estimate": 780,
+      "kcal_booked": 858,
+      "kcal_range": [
+        650,
+        950
+      ],
+      "protein_g_estimate": 54,
+      "fat_g_estimate": 53.66666666666667,
+      "carbs_g_estimate": 39,
+      "margin": {
+        "added_fat_g": 8.666666666666668,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "未知炸制吸油量和裹粉差异，基础点上留约10%油脂记账余量"
+      },
+      "uncertainty": "品牌、裹粉厚度、酱料和实际吸油量未知；若有包装标签、明显剩余或额外酱料，可后续修正。"
+    },
+    {
+      "id": "dinner_single_fried_chicken_set_1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "单人炸鸡1盒：鸡大腿1个、翅根2个、鸡翅2个",
+      "reported_text": "一盒单人炸鸡，一个鸡大腿、俩翅根、俩鸡翅",
+      "source_kind": "database_estimate",
+      "basis": "用户明确部位和数量，但未提供单件重量、品牌或标签。按带皮裹粉油炸常见份量估算：鸡大腿约300千卡、翅根2个约220千卡、鸡翅2个约200千卡，基础合计约720千卡；另留约10%油脂记账余量。",
+      "units": 5,
+      "kcal_base_estimate": 720,
+      "kcal_booked": 792,
+      "kcal_range": [
+        560,
+        900
+      ],
+      "protein_g_estimate": 54,
+      "fat_g_estimate": 47,
+      "carbs_g_estimate": 28,
+      "margin": {
+        "added_fat_g": 8,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "炸鸡部位大小、裹粉和吸油量不明，基础点上留约10%油脂记账余量"
+      },
+      "uncertainty": "不同店铺鸡块大小和裹粉差异较大；若有品牌/包装、实际称重、去皮或剩余情况，可显著修正。"
     }
   ],
   "exercise_entries": [],
@@ -512,32 +564,33 @@
     "2026-09-19午餐：2根生巧慕斯条、1包蟹黄水饺、1包墨虾丸。蟹黄水饺按本次照片标签230克/包换算；墨虾丸沿用历史同款250克默认。",
     "午餐蟹类水饺的清晰包装照片已复核：实际包装品名为“蟹粉水饺”；230克/包、每100克1050千焦及宏量数据与之前读取一致，午餐和全天热量无需调整。",
     "用户明确更正午餐水饺品名为“蟹黄水饺”；此前误写“蟹粉水饺”已修正。营养标签和热量数值不变。",
-    "2026-09-19午后追加4根生巧慕斯条；与午餐2根分开记录，本日累计生巧慕斯条6根。"
+    "2026-09-19午后追加4根生巧慕斯条；与午餐2根分开记录，本日累计生巧慕斯条6根。",
+    "2026-09-19晚餐：无骨炸鸡约300克＋单人炸鸡1盒（鸡大腿1、翅根2、鸡翅2）。因无品牌标签/单件重量，按常见裹粉油炸鸡估算并保留较宽范围。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2141.0460038240917,
-    "intake_kcal_booked": 2151.0460038240917,
-    "protein_g_estimate": 99.59,
-    "fat_g_estimate": 111.0411111111111,
-    "carbs_g_estimate": 188.04,
-    "intake_kcal_estimate": 2151.0460038240917,
-    "food_margin_kcal": 10,
+    "intake_kcal_base_estimate": 3641.0460038240917,
+    "intake_kcal_booked": 3801.0460038240917,
+    "protein_g_estimate": 207.59,
+    "fat_g_estimate": 211.70777777777778,
+    "carbs_g_estimate": 255.04,
+    "intake_kcal_estimate": 3801.0460038240917,
+    "food_margin_kcal": 160,
     "base_macro_estimates": {
-      "protein_g": 99.59,
-      "fat_g": 109.93,
-      "carbs_g": 188.04
+      "protein_g": 207.59,
+      "fat_g": 193.93,
+      "carbs_g": 255.04
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      2111.0460038240917,
-      2191.0460038240917
+      3321.0460038240917,
+      4041.0460038240917
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2232.9,
-    "estimated_deficit_kcal": 81.85399617590838,
+    "estimated_deficit_kcal": -1568.1460038240916,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -546,16 +599,18 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "早餐": 27.3,
       "午餐": 59.01,
-      "午后加餐": 13.280000000000001
+      "午后加餐": 13.280000000000001,
+      "晚餐": 108
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "早餐调味与辣油按附着入口估算，实际油量未称重",
+      "晚餐两盒炸鸡缺少品牌/标签和单件重量，当前热量为较宽估算",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
