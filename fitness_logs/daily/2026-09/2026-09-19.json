@@ -126,6 +126,93 @@
         "extra_chili_oil_spoons": 2,
         "spoon_size_ml": null
       }
+    },
+    {
+      "id": "lunch_raw_chocolate_mousse_bars_2",
+      "status": "consumed",
+      "meal": "午餐",
+      "description": "生巧慕斯条2根，整盒320克/8根，本次约80克",
+      "reported_text": "午饭两根生巧慕斯条",
+      "source_kind": "matched_default",
+      "basis": "沿用2026-09-17已确认同款包装标签：整盒320克/8根，每100克1476千焦、蛋白质8.3克、脂肪25.7克、碳水22.6克；本次2根约80克。",
+      "kcal_base_estimate": 282.22,
+      "kcal_booked": 282.22,
+      "kcal_range": [
+        282.22,
+        282.22
+      ],
+      "protein_g_estimate": 6.64,
+      "fat_g_estimate": 20.56,
+      "carbs_g_estimate": 18.08,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用同款明确标签和数量，不额外加成"
+      },
+      "uncertainty": "按此前同款/同规格记录；若本次包装规格不同，以实际包装更正。",
+      "servings": 2
+    },
+    {
+      "id": "lunch_crab_roe_dumplings_230g",
+      "status": "consumed",
+      "meal": "午餐",
+      "description": "船歌蟹黄水饺1包，净含量230克",
+      "reported_text": "一包蟹黄水饺",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供本次包装营养标签；净含量230克。每100克：能量1050千焦、蛋白质6.9克、脂肪13.5克、碳水25.5克、钠460毫克；整包按230克换算。",
+      "quantity_g": 230,
+      "kcal_base_estimate": 577.1988527724665,
+      "kcal_booked": 577.1988527724665,
+      "kcal_range": [
+        577.1988527724665,
+        577.1988527724665
+      ],
+      "protein_g_estimate": 15.87,
+      "fat_g_estimate": 31.05,
+      "carbs_g_estimate": 58.65,
+      "sodium_mg_estimate": 1058,
+      "nutrition_per_100g": {
+        "energy_kj": 1050,
+        "protein_g": 6.9,
+        "fat_g": 13.5,
+        "carbs_g": 25.5,
+        "sodium_mg": 460
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "本次标签和整包重量明确，不机械加成"
+      },
+      "uncertainty": "按整包230克记录；未额外计未报告的蘸料或烹调用油。"
+    },
+    {
+      "id": "lunch_mo_shrimp_balls_250g",
+      "status": "consumed",
+      "meal": "午餐",
+      "description": "默认同款墨虾丸1包，250克",
+      "reported_text": "一包墨虾丸",
+      "source_kind": "matched_default",
+      "basis": "沿用fitness_logs/reference/food_defaults.md历史同款默认：一包250克，约222千卡、蛋白质36.5克、脂肪1.8克、碳水14.3克、钠1270毫克。",
+      "quantity_g": 250,
+      "kcal_base_estimate": 222,
+      "kcal_booked": 222,
+      "kcal_range": [
+        222,
+        222
+      ],
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 14.3,
+      "sodium_mg_estimate": 1270,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用已建立同款固定规格，不机械加成"
+      },
+      "uncertainty": "沿用历史同款250克规格；若本次包装或营养标签不同，以本次实际包装更正。"
     }
   ],
   "exercise_entries": [],
@@ -249,32 +336,33 @@
   "notes": [
     "2026-09-19早餐黄花鱼馄饨与调味包按用户本次提供的包装标签记录；额外辣椒油单独估算，不并入产品标签。",
     "空腹体重90.95公斤；较09-18的91.30公斤低0.35公斤，单日变化不等于脂肪变化。",
-    "早餐调味/辣油已按用户补充修正：汤和剩余辣椒油未喝，只计馄饨表面附着入口；原整包调味与两勺辣油倒入量不再全部计入。"
+    "早餐调味/辣油已按用户补充修正：汤和剩余辣椒油未喝，只计馄饨表面附着入口；原整包调味与两勺辣油倒入量不再全部计入。",
+    "2026-09-19午餐：2根生巧慕斯条、1包蟹黄水饺、1包墨虾丸。蟹黄水饺按本次照片标签230克/包换算；墨虾丸沿用历史同款250克默认。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 495.1912045889101,
-    "intake_kcal_booked": 505.1912045889101,
-    "protein_g_estimate": 27.3,
-    "fat_g_estimate": 16.51111111111111,
-    "carbs_g_estimate": 60.85,
-    "intake_kcal_estimate": 505.1912045889101,
+    "intake_kcal_base_estimate": 1576.6100573613764,
+    "intake_kcal_booked": 1586.6100573613764,
+    "protein_g_estimate": 86.31,
+    "fat_g_estimate": 69.9211111111111,
+    "carbs_g_estimate": 151.88,
+    "intake_kcal_estimate": 1586.6100573613764,
     "food_margin_kcal": 10,
     "base_macro_estimates": {
-      "protein_g": 27.3,
-      "fat_g": 15.4,
-      "carbs_g": 60.85
+      "protein_g": 86.31,
+      "fat_g": 68.81,
+      "carbs_g": 151.88
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      465.1912045889101,
-      545.1912045889101
+      1546.6100573613764,
+      1626.6100573613764
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2232.9,
-    "estimated_deficit_kcal": 1727.70879541109,
+    "estimated_deficit_kcal": 646.2899426386236,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -283,9 +371,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
-      "早餐": 27.3
+      "早餐": 27.3,
+      "午餐": 59.01
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -306,8 +395,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1020,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 3348,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
