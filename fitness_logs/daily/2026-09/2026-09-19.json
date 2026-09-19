@@ -1,0 +1,223 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-19",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [
+    "早餐额外两勺辣椒油的实际入口量取决于是否喝汤/剩油；当前按中等入口量暂估，后续可按实际剩余修正。"
+  ],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重90.95公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 90.95,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.95,
+    "bmr_weight_date": "2026-09-19",
+    "bmr_kcal": 1860.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_yellow_croaker_wontons_300g",
+      "status": "consumed",
+      "meal": "早餐",
+      "description": "船歌黄花鱼野馄饨1袋，馄饨本体300克",
+      "reported_text": "早饭一包黄花鱼馄饨",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供本次包装配料/营养标签；整袋净含量311克，为馄饨300克＋调味包11克。馄饨营养表每100克：能量593千焦、蛋白质9.0克、脂肪2.8克、碳水19.8克、钠340毫克；本次按300克本体计。",
+      "quantity_g": 300,
+      "kcal_base_estimate": 425.1912045889101,
+      "kcal_booked": 425.1912045889101,
+      "kcal_range": [
+        425.1912045889101,
+        425.1912045889101
+      ],
+      "protein_g_estimate": 27,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 59.4,
+      "sodium_mg_estimate": 1020,
+      "nutrition_per_100g": {
+        "energy_kj": 593,
+        "protein_g": 9,
+        "fat_g": 2.8,
+        "carbs_g": 19.8,
+        "sodium_mg": 340
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "本次包装规格和营养标签明确，不机械加成"
+      },
+      "uncertainty": "按整袋300克馄饨本体记录；若实际只吃了部分，以实际吃下份量更正。"
+    },
+    {
+      "id": "breakfast_yellow_croaker_seasoning_1",
+      "status": "consumed",
+      "meal": "早餐",
+      "description": "黄花鱼馄饨随包调味包1包，约5.5克",
+      "reported_text": "一包调味包",
+      "source_kind": "label_known_quantity",
+      "basis": "包装总调味包11克（2包），本次使用1包按5.5克；调味包每100克：能量774千焦、蛋白质19.4克、脂肪0.7克、碳水24.6克、钠18600毫克。",
+      "quantity_g": 5.5,
+      "kcal_base_estimate": 10.174474187380497,
+      "kcal_booked": 10.174474187380497,
+      "kcal_range": [
+        10.174474187380497,
+        10.174474187380497
+      ],
+      "protein_g_estimate": 1.067,
+      "fat_g_estimate": 0.0385,
+      "carbs_g_estimate": 1.353,
+      "sodium_mg_estimate": 1023,
+      "nutrition_per_100g": {
+        "energy_kj": 774,
+        "protein_g": 19.4,
+        "fat_g": 0.7,
+        "carbs_g": 24.6,
+        "sodium_mg": 18600
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签与使用包数明确，不额外加成"
+      },
+      "uncertainty": "是否把调味汤全部喝下会影响实际钠和少量能量摄入；当前按使用1包的标签量记入，后续可按剩汤修正。"
+    },
+    {
+      "id": "breakfast_extra_chili_oil_2spoons",
+      "status": "consumed_estimated",
+      "meal": "早餐",
+      "description": "额外辣椒油2勺（不在产品配料/营养表内）",
+      "reported_text": "两勺辣椒油（不在配料表）",
+      "source_kind": "database_estimate",
+      "basis": "用户明确额外加入2勺辣椒油；未说明勺容量及汤/剩油情况。为避免把倒入量直接等同于入口量，先按中等实际入口量约120千卡估算，范围60–240千卡；若汤未喝或剩余明显则下修。",
+      "kcal_base_estimate": 120,
+      "kcal_booked": 120,
+      "kcal_range": [
+        60,
+        240
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 13.3,
+      "carbs_g_estimate": 0,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "这是单独记录的实际额外食物估算，不再叠加额外余量"
+      },
+      "uncertainty": "两勺大小及真正入口的油量不明；倒入碗中不等于全部吃下，汤和剩油情况会显著影响实际热量。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-19早餐黄花鱼馄饨与调味包按用户本次提供的包装标签记录；额外辣椒油单独估算，不并入产品标签。",
+    "空腹体重90.95公斤；较09-18的91.30公斤低0.35公斤，单日变化不等于脂肪变化。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 555.3656787762907,
+    "intake_kcal_booked": 555.3656787762907,
+    "protein_g_estimate": 28.067,
+    "fat_g_estimate": 21.7385,
+    "carbs_g_estimate": 60.753,
+    "intake_kcal_estimate": 555.3656787762907,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 28.067,
+      "fat_g": 21.7385,
+      "carbs_g": 60.753
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      495.3656787762906,
+      675.3656787762907
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2232.9,
+    "estimated_deficit_kcal": 1677.5343212237094,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "早餐": 28.067
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "额外辣椒油实际入口量未确认：当前为暂估，汤/剩油情况可导致明显修正",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 2043,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
