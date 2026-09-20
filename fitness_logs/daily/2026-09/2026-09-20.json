@@ -1,0 +1,166 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-20",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户明确今天忘记称空腹体重；09-20缺测，不补填。BMR体重沿用09-19的90.95公斤及原日期。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": null,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.95,
+    "bmr_weight_date": "2026-09-19",
+    "bmr_kcal": 1860.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "dinner_chicken_leg_rice_1",
+      "status": "consumed_estimated",
+      "meal": "晚餐",
+      "description": "鸡腿饭：两只鸡腿去皮，米饭、炒白菜、土豆丝及配菜全吃",
+      "reported_text": "今天忘记称体重，只有晚上吃了鸡腿饭，鸡腿去皮，其他都吃完了",
+      "source_kind": "photo_estimate",
+      "basis": "本次照片可见一盒米饭，菜盒内两只鸡腿、炒白菜、土豆丝及少量配菜；用户明确鸡腿去皮，其他都吃完。以已建立的沙县两只去皮鸡腿饭口径为锚点，但本次没有卤蛋且土豆丝实际吃完，因此不直接套用原固定值，按照片份量重新估算。",
+      "kcal_base_estimate": 910,
+      "kcal_booked": 1000,
+      "kcal_range": [
+        750,
+        1140
+      ],
+      "protein_g_estimate": 66,
+      "fat_g_estimate": 35,
+      "carbs_g_estimate": 108,
+      "margin": {
+        "added_fat_g": 10,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "餐盒菜品和鸡腿烹调用油未称量；在基础点上留约90千卡油脂记账余量"
+      },
+      "uncertainty": "米饭克数、两只去皮鸡腿实际可食肉重、白菜和土豆丝用油量未称重；750–1140千卡为操作性估算范围。照片未见卤蛋，本次不计卤蛋。",
+      "protein_g_range": [
+        54,
+        78
+      ],
+      "fat_g_range": [
+        20,
+        49
+      ],
+      "carbs_g_range": [
+        88,
+        128
+      ]
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-20用户明确忘记称体重，今日体重缺测，不用昨日体重冒充今日测量。",
+    "截至本条，用户报告今天只有晚上的鸡腿饭；记录仍保持open，未自动视为全天封账。",
+    "本次鸡腿饭与固定沙县口径不同：鸡腿去皮、土豆丝吃完，照片未见卤蛋，因此按照片单独估算。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 910,
+    "intake_kcal_booked": 1000,
+    "protein_g_estimate": 66,
+    "fat_g_estimate": 35,
+    "carbs_g_estimate": 108,
+    "intake_kcal_estimate": 1000,
+    "food_margin_kcal": 90,
+    "base_macro_estimates": {
+      "protein_g": 66,
+      "fat_g": 25,
+      "carbs_g": 108
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      750,
+      1140
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2232.9,
+    "estimated_deficit_kcal": 1232.9,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 1,
+    "protein_by_meal_g": {
+      "晚餐": 66
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性尚未正式封账：目前按用户已报告内容累计",
+      "鸡腿饭为照片估算，米饭、鸡腿净肉和烹调用油未称量",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 1,
+    "protein_g_range_coverage_complete": true,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 1,
+    "fat_g_range_coverage_complete": true,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 1,
+    "carbs_g_range_coverage_complete": true,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
