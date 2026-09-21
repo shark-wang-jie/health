@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-09-21",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确确认“今天饮食训练结束”。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -249,6 +249,21 @@
       "average_heart_rate_bpm": 112,
       "is_estimated": false,
       "note": "Apple Watch显示动态247千卡、总323千卡、平均心率112次/分；按项目规则只将动态千卡计入训练消耗。"
+    },
+    {
+      "id": "2026-09-21-cycle-1",
+      "event_id": "2026-09-21-cycle-1",
+      "type": "室内单车",
+      "duration": "41分10秒",
+      "duration_seconds": 2470,
+      "elapsed_duration": "41分15秒",
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-21 21:26–22:07，室内单车",
+      "active_kcal": 409,
+      "total_kcal": 485,
+      "average_heart_rate_bpm": 148,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态409千卡、总485千卡、平均心率148次/分；按项目规则只将动态千卡计入训练消耗。"
     }
   ],
   "recovery": {
@@ -382,7 +397,8 @@
     "2026-09-21完成传统力量训练41分19秒，Apple Watch动态247千卡、总323千卡、平均心率112次/分。",
     "练后加餐：青芥蟹饭团1个按此前同款105克/95千卡记录；王中王火腿肠约40克按公开同款数据库暂估。",
     "2026-09-21枣泥核桃糕份量再次由约5克更正为约10克，热量由约19千卡调整为约38千卡。",
-    "2026-09-21晚间吃苏式板栗月饼2块；整卷320克/4块，本次约160克，按包装标签直接换算。"
+    "2026-09-21晚间吃苏式板栗月饼2块；整卷320克/4块，本次约160克，按包装标签直接换算。",
+    "2026-09-21晚间完成室内单车41分10秒，Apple Watch动态409千卡、总485千卡、平均心率148次/分；随后用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1977.802294455067,
@@ -397,25 +413,25 @@
       "fat_g": 79.04,
       "carbs_g": 217.94
     },
-    "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 61.75,
+    "completed_day_base_intake_balance_kcal": 751.297705544933,
+    "training_discount_kcal": 164,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1779.6022944550668,
       2200.602294455067
     ],
-    "exercise_active_kcal": 247,
-    "exercise_adjusted_kcal": 185.25,
-    "tdee_kcal_estimate": 2422.35,
-    "estimated_deficit_kcal": 356.0477055449328,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 656,
+    "exercise_adjusted_kcal": 492,
+    "tdee_kcal_estimate": 2729.1,
+    "estimated_deficit_kcal": 662.797705544933,
+    "completed_day_estimated_deficit_kcal": 662.797705544933,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
       "早餐": 8.7,
@@ -424,12 +440,11 @@
       "晚间加餐": 9.28
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
+      "沙县鸡腿饭含烹调用油估算余量",
       "王中王火腿肠按约40克和公开同款数据库估算，版本差异可后续修正",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "枣泥核桃糕按用户估计约10克及同类热量密度估算"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
