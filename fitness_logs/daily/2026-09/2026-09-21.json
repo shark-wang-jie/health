@@ -195,6 +195,44 @@
         "reason": "按公开同款数据库和用户报告重量估算，用范围表达版本差异"
       },
       "uncertainty": "王中王不同版本配方可能不同，且40克为用户约数；如有包装标签可后续更正。"
+    },
+    {
+      "id": "evening_suzhou_chestnut_mooncake_2",
+      "status": "consumed",
+      "meal": "晚间加餐",
+      "description": "苏式板栗月饼2块，整卷320克/4块，本次160克",
+      "reported_text": "一卷320g四块，晚上吃了两块",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供包装营养标签：整卷320克/4块，每块约80克；本次2块=160克。每100克：能量1819千焦、蛋白质5.8克、脂肪19.9克、碳水57.9克、糖7.7克、钠66毫克。",
+      "quantity_g": 160,
+      "servings": 2,
+      "kcal_base_estimate": 695.602294455067,
+      "kcal_booked": 695.602294455067,
+      "kcal_range": [
+        695.602294455067,
+        695.602294455067
+      ],
+      "protein_g_estimate": 9.28,
+      "fat_g_estimate": 31.84,
+      "carbs_g_estimate": 92.64,
+      "sugar_g_estimate": 12.32,
+      "sodium_mg_estimate": 105.60000000000001,
+      "nutrition_per_100g": {
+        "energy_kj": 1819,
+        "protein_g": 5.8,
+        "fat_g": 19.9,
+        "saturated_fat_g": 4.6,
+        "carbs_g": 57.9,
+        "sugar_g": 7.7,
+        "sodium_mg": 66
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "本次包装重量和营养标签明确，不额外加成"
+      },
+      "uncertainty": "按整卷320克平均分4块计算，每块约80克；若实际分块不均，单块重量会略有偏差。"
     }
   ],
   "exercise_entries": [
@@ -343,32 +381,33 @@
     "2026-09-21枣泥核桃糕份量由暂估50克更正为用户补充的约5克，热量由190千卡下修至约19千卡。",
     "2026-09-21完成传统力量训练41分19秒，Apple Watch动态247千卡、总323千卡、平均心率112次/分。",
     "练后加餐：青芥蟹饭团1个按此前同款105克/95千卡记录；王中王火腿肠约40克按公开同款数据库暂估。",
-    "2026-09-21枣泥核桃糕份量再次由约5克更正为约10克，热量由约19千卡调整为约38千卡。"
+    "2026-09-21枣泥核桃糕份量再次由约5克更正为约10克，热量由约19千卡调整为约38千卡。",
+    "2026-09-21晚间吃苏式板栗月饼2块；整卷320克/4块，本次约160克，按包装标签直接换算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1282.2,
-    "intake_kcal_booked": 1370.7,
-    "protein_g_estimate": 86.1,
-    "fat_g_estimate": 57.03333333333334,
-    "carbs_g_estimate": 125.3,
-    "intake_kcal_estimate": 1370.7,
+    "intake_kcal_base_estimate": 1977.802294455067,
+    "intake_kcal_booked": 2066.302294455067,
+    "protein_g_estimate": 95.38,
+    "fat_g_estimate": 88.87333333333333,
+    "carbs_g_estimate": 217.94,
+    "intake_kcal_estimate": 2066.302294455067,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 86.1,
-      "fat_g": 47.2,
-      "carbs_g": 125.3
+      "protein_g": 95.38,
+      "fat_g": 79.04,
+      "carbs_g": 217.94
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 61.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1084,
-      1505
+      1779.6022944550668,
+      2200.602294455067
     ],
     "exercise_active_kcal": 247,
     "exercise_adjusted_kcal": 185.25,
     "tdee_kcal_estimate": 2422.35,
-    "estimated_deficit_kcal": 1051.6499999999999,
+    "estimated_deficit_kcal": 356.0477055449328,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -377,11 +416,12 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "早餐": 8.7,
       "午餐": 70.5,
-      "练后加餐": 6.9
+      "练后加餐": 6.9,
+      "晚间加餐": 9.28
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -402,8 +442,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 105.60000000000001,
+    "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
