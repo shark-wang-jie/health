@@ -88,6 +88,6 @@
 
 阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex -s workspace-write -a never -C 仓库 exec --ephemeral`读取规则和目标日，做受限语义复核。当前CLI要求沙箱、审批与工作目录选项放在`exec`之前。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
 
-脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。launchd未继承交互式代理变量时，脚本读取当前已启用的macOS系统HTTP/HTTPS代理供Git和Codex使用。Git fetch和push在单次运行内最多尝试3次；仍失败时把日期保存在`~/Library/Application Support/health-daily-review/state/pending/`，跨午夜和重启继续优先补跑。成功后保存目标记录与复核规则的内容指纹；指纹未变化时只同步并跳过重复Codex复核。推送响应丢失或推送失败时，已创建的标准自动复核提交保留在专用checkout，下次只认可并恢复推送这类提交。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
+脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。Git fetch和push单独使用本机Veee HTTP代理`127.0.0.1:15236`，不依赖macOS系统代理；Codex CLI会清除代理环境变量，由ProxyBridge独立路由。因此普通软件可保持系统代理关闭。Git网络操作在单次运行内最多尝试3次；仍失败时把日期保存在`~/Library/Application Support/health-daily-review/state/pending/`，跨午夜和重启继续优先补跑。成功后保存目标记录与复核规则的内容指纹；指纹未变化时只同步并跳过重复Codex复核。推送响应丢失或推送失败时，已创建的标准自动复核提交保留在专用checkout，下次只认可并恢复推送这类提交。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
 
 macOS普通LaunchAgent不能后台读取`Documents`时，实际任务通过`HEALTH_REPO_ROOT`指向`~/Library/Application Support/health-daily-review/repo`专用checkout。该checkout与交互工作副本共享同一`origin/main`，不复制或改写未提交的本地工作。
