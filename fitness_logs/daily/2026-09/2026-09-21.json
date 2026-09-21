@@ -77,6 +77,72 @@
         "reason": "沿用固定规格基础口径，不机械加成"
       },
       "uncertainty": "沿用历史默认份量；若本次牛奶规格或标签不同，以本次实际信息更正。"
+    },
+    {
+      "id": "breakfast_date_walnut_cake_1",
+      "status": "consumed_estimated",
+      "meal": "早餐",
+      "description": "枣泥核桃糕1块，普通单块暂估约50克",
+      "reported_text": "早上吃了一块枣泥核桃糕",
+      "source_kind": "database_estimate",
+      "basis": "仓库未找到此前同款记录，用户未提供重量/标签/照片；暂按普通枣泥核桃糕单块约50克估算。",
+      "quantity_g_estimate": 50,
+      "kcal_base_estimate": 190,
+      "kcal_booked": 190,
+      "kcal_range": [
+        130,
+        260
+      ],
+      "protein_g_estimate": 3.5,
+      "fat_g_estimate": 7.5,
+      "carbs_g_estimate": 28,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "未知单块重量和配方，用较宽范围表达，不额外叠加余量"
+      },
+      "uncertainty": "单块实际重量、核桃比例、糖油配方未知；如后续有包装或重量可更正。"
+    },
+    {
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "meal": "午餐",
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "reported_text": "午饭沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json固定同款：两只鸡腿去皮、米饭、炒白菜、卤蛋全吃；土豆丝不吃。",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1,
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "沿用已确认固定同款；若今天有剩饭、未吃卤蛋/白菜或其他变化，以实际吃下为准。",
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
     }
   ],
   "exercise_entries": [],
@@ -89,32 +155,34 @@
   "corrections": [],
   "notes": [
     "2026-09-21空腹体重91.30公斤。",
-    "早餐1瓶牛奶按默认260毫升同款记录。"
+    "早餐1瓶牛奶按默认260毫升同款记录。",
+    "2026-09-21补记早餐枣泥核桃糕1块；因无重量/标签，暂按普通单块约50克、190千卡估算。",
+    "2026-09-21午餐沙县鸡腿饭沿用固定同款口径。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 183,
-    "intake_kcal_booked": 183,
-    "protein_g_estimate": 8,
-    "fat_g_estimate": 9.4,
-    "carbs_g_estimate": 12.5,
-    "intake_kcal_estimate": 183,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1258,
+    "intake_kcal_booked": 1346.5,
+    "protein_g_estimate": 82,
+    "fat_g_estimate": 53.73333333333334,
+    "carbs_g_estimate": 131.5,
+    "intake_kcal_estimate": 1346.5,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 8,
-      "fat_g": 9.4,
-      "carbs_g": 12.5
+      "protein_g": 82,
+      "fat_g": 43.9,
+      "carbs_g": 131.5
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      183,
-      183
+      1023,
+      1523
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2237.1,
-    "estimated_deficit_kcal": 2054.1,
+    "estimated_deficit_kcal": 890.6,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -123,9 +191,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "早餐": 8
+      "早餐": 11.5,
+      "午餐": 70.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -134,13 +203,13 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
