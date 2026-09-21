@@ -82,27 +82,27 @@
       "id": "breakfast_date_walnut_cake_1",
       "status": "consumed_estimated",
       "meal": "早餐",
-      "description": "枣泥核桃糕1小块，约5克",
-      "reported_text": "早上吃了一块枣泥核桃糕；补充：一块很小，大概只有5克",
+      "description": "枣泥核桃糕1小块，约10克",
+      "reported_text": "早上吃了一块枣泥核桃糕；后续更正重量大概10克",
       "source_kind": "database_estimate",
-      "basis": "用户补充实际份量约5克；沿用此前对同类枣泥核桃糕约380千卡/100克的暂估密度，按5克线性换算。",
-      "quantity_g_estimate": 5,
-      "kcal_base_estimate": 19,
-      "kcal_booked": 19,
+      "basis": "用户将份量从约5克修正为约10克；沿用此前对同类枣泥核桃糕约380千卡/100克的暂估密度，按10克线性换算。",
+      "quantity_g_estimate": 10,
+      "kcal_base_estimate": 38,
+      "kcal_booked": 38,
       "kcal_range": [
-        13,
-        26
+        26,
+        52
       ],
-      "protein_g_estimate": 0.35,
-      "fat_g_estimate": 0.75,
-      "carbs_g_estimate": 2.8,
+      "protein_g_estimate": 0.7,
+      "fat_g_estimate": 1.5,
+      "carbs_g_estimate": 5.6,
       "margin": {
         "added_fat_g": 0,
         "added_carbs_g": 0,
         "already_in_base": false,
-        "reason": "份量已由用户补充为约5克；配方仍未知，用范围表示"
+        "reason": "份量按用户最新估计约10克；配方仍未知，用范围表示"
       },
-      "uncertainty": "实际配方和精确重量仍未知，但5克份量使总热量影响较小；如后续有包装标签可再更正。"
+      "uncertainty": "实际配方和精确重量仍未知；若后续有包装标签或称重可再更正。"
     },
     {
       "id": "lunch_shaxian_1",
@@ -276,6 +276,63 @@
         },
         "uncertainty": "实际配方和精确重量仍未知，但5克份量使总热量影响较小；如后续有包装标签可再更正。"
       }
+    },
+    {
+      "timestamp": "2026-09-21T18:28:00+08:00",
+      "entry_id": "breakfast_date_walnut_cake_1",
+      "reason": "用户再次修正：早上的枣泥核桃糕实际大概10克，不是此前约5克。按同一暂估热量密度重新计算。",
+      "old_entry": {
+        "id": "breakfast_date_walnut_cake_1",
+        "status": "consumed_estimated",
+        "meal": "早餐",
+        "description": "枣泥核桃糕1小块，约5克",
+        "reported_text": "早上吃了一块枣泥核桃糕；补充：一块很小，大概只有5克",
+        "source_kind": "database_estimate",
+        "basis": "用户补充实际份量约5克；沿用此前对同类枣泥核桃糕约380千卡/100克的暂估密度，按5克线性换算。",
+        "quantity_g_estimate": 5,
+        "kcal_base_estimate": 19,
+        "kcal_booked": 19,
+        "kcal_range": [
+          13,
+          26
+        ],
+        "protein_g_estimate": 0.35,
+        "fat_g_estimate": 0.75,
+        "carbs_g_estimate": 2.8,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "份量已由用户补充为约5克；配方仍未知，用范围表示"
+        },
+        "uncertainty": "实际配方和精确重量仍未知，但5克份量使总热量影响较小；如后续有包装标签可再更正。"
+      },
+      "new_entry": {
+        "id": "breakfast_date_walnut_cake_1",
+        "status": "consumed_estimated",
+        "meal": "早餐",
+        "description": "枣泥核桃糕1小块，约10克",
+        "reported_text": "早上吃了一块枣泥核桃糕；后续更正重量大概10克",
+        "source_kind": "database_estimate",
+        "basis": "用户将份量从约5克修正为约10克；沿用此前对同类枣泥核桃糕约380千卡/100克的暂估密度，按10克线性换算。",
+        "quantity_g_estimate": 10,
+        "kcal_base_estimate": 38,
+        "kcal_booked": 38,
+        "kcal_range": [
+          26,
+          52
+        ],
+        "protein_g_estimate": 0.7,
+        "fat_g_estimate": 1.5,
+        "carbs_g_estimate": 5.6,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "份量按用户最新估计约10克；配方仍未知，用范围表示"
+        },
+        "uncertainty": "实际配方和精确重量仍未知；若后续有包装标签或称重可再更正。"
+      }
     }
   ],
   "notes": [
@@ -285,32 +342,33 @@
     "2026-09-21午餐沙县鸡腿饭沿用固定同款口径。",
     "2026-09-21枣泥核桃糕份量由暂估50克更正为用户补充的约5克，热量由190千卡下修至约19千卡。",
     "2026-09-21完成传统力量训练41分19秒，Apple Watch动态247千卡、总323千卡、平均心率112次/分。",
-    "练后加餐：青芥蟹饭团1个按此前同款105克/95千卡记录；王中王火腿肠约40克按公开同款数据库暂估。"
+    "练后加餐：青芥蟹饭团1个按此前同款105克/95千卡记录；王中王火腿肠约40克按公开同款数据库暂估。",
+    "2026-09-21枣泥核桃糕份量再次由约5克更正为约10克，热量由约19千卡调整为约38千卡。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1263.2,
-    "intake_kcal_booked": 1351.7,
-    "protein_g_estimate": 85.75,
-    "fat_g_estimate": 56.28333333333334,
-    "carbs_g_estimate": 122.5,
-    "intake_kcal_estimate": 1351.7,
+    "intake_kcal_base_estimate": 1282.2,
+    "intake_kcal_booked": 1370.7,
+    "protein_g_estimate": 86.1,
+    "fat_g_estimate": 57.03333333333334,
+    "carbs_g_estimate": 125.3,
+    "intake_kcal_estimate": 1370.7,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 85.75,
-      "fat_g": 46.45,
-      "carbs_g": 122.5
+      "protein_g": 86.1,
+      "fat_g": 47.2,
+      "carbs_g": 125.3
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 61.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1071,
-      1479
+      1084,
+      1505
     ],
     "exercise_active_kcal": 247,
     "exercise_adjusted_kcal": 185.25,
     "tdee_kcal_estimate": 2422.35,
-    "estimated_deficit_kcal": 1070.65,
+    "estimated_deficit_kcal": 1051.6499999999999,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -321,7 +379,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 5,
     "protein_by_meal_g": {
-      "早餐": 8.35,
+      "早餐": 8.7,
       "午餐": 70.5,
       "练后加餐": 6.9
     },
