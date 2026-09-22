@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -117,9 +117,89 @@
         73,
         118
       ]
+    },
+    {
+      "id": "postworkout_wasabi_crab_riceballs_2",
+      "status": "consumed",
+      "meal": "练后加餐",
+      "description": "此前同款青芥蟹饭团2个，每个105克",
+      "reported_text": "练后两个青芥蟹饭团",
+      "source_kind": "matched_default",
+      "basis": "沿用此前已确认同款记录：每个105克约95千卡、蛋白质1.9克、脂肪3.7克、碳水13.4克；本次2个按2倍计。",
+      "quantity_g": 210,
+      "servings": 2,
+      "kcal_base_estimate": 190,
+      "kcal_booked": 190,
+      "kcal_range": [
+        190,
+        190
+      ],
+      "protein_g_estimate": 3.8,
+      "fat_g_estimate": 7.4,
+      "carbs_g_estimate": 26.8,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "复用此前已确认同款标签口径，不额外加成"
+      },
+      "uncertainty": "按此前同款105克规格记录；若本次包装规格或标签变化，以本次实际包装更正。"
+    },
+    {
+      "id": "postworkout_suzhou_chestnut_mooncake_2",
+      "status": "consumed",
+      "meal": "练后加餐",
+      "description": "昨晚同款苏式板栗月饼2块，整卷320克/4块，本次160克",
+      "reported_text": "两个板栗月饼（昨晚吃的）",
+      "source_kind": "matched_default",
+      "basis": "沿用2026-09-21用户提供的同款包装标签：整卷320克/4块，每块约80克；每100克能量1819千焦、蛋白质5.8克、脂肪19.9克、碳水57.9克、糖7.7克、钠66毫克。本次2块=160克。",
+      "quantity_g": 160,
+      "servings": 2,
+      "kcal_base_estimate": 695.602294455067,
+      "kcal_booked": 695.602294455067,
+      "kcal_range": [
+        695.602294455067,
+        695.602294455067
+      ],
+      "protein_g_estimate": 9.28,
+      "fat_g_estimate": 31.84,
+      "carbs_g_estimate": 92.64,
+      "sugar_g_estimate": 12.32,
+      "sodium_mg_estimate": 105.6,
+      "nutrition_per_100g": {
+        "energy_kj": 1819,
+        "protein_g": 5.8,
+        "fat_g": 19.9,
+        "saturated_fat_g": 4.6,
+        "carbs_g": 57.9,
+        "sugar_g": 7.7,
+        "sodium_mg": 66
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用昨晚同款明确包装标签，不额外加成"
+      },
+      "uncertainty": "按昨晚同款320克/4块规格记录；若今天实际不是同一款，以本次包装更正。"
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-09-22-strength-1",
+      "event_id": "2026-09-22-strength-1",
+      "type": "传统力量训练",
+      "duration": "48分24秒",
+      "duration_seconds": 2904,
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-22 17:38–18:27，传统力量训练",
+      "active_kcal": 330,
+      "total_kcal": 416,
+      "average_heart_rate_bpm": 118,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态330千卡、总416千卡、平均心率118次/分；按项目规则只将动态千卡计入训练消耗。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -130,48 +210,52 @@
   "notes": [
     "2026-09-22空腹体重90.75公斤。",
     "早餐1瓶牛奶按默认260毫升同款记录。",
-    "2026-09-22午餐沙县鸡腿饭沿用固定同款口径。"
+    "2026-09-22午餐沙县鸡腿饭沿用固定同款口径。",
+    "2026-09-22完成传统力量训练48分24秒，Apple Watch动态330千卡、总416千卡、平均心率118次/分。",
+    "练后加餐：青芥蟹饭团2个；板栗月饼2块沿用09-21同款包装标签。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1068,
-    "intake_kcal_booked": 1156.5,
-    "protein_g_estimate": 78.5,
-    "fat_g_estimate": 46.23333333333334,
-    "carbs_g_estimate": 103.5,
-    "intake_kcal_estimate": 1156.5,
+    "intake_kcal_base_estimate": 1953.602294455067,
+    "intake_kcal_booked": 2042.102294455067,
+    "protein_g_estimate": 91.58,
+    "fat_g_estimate": 85.47333333333334,
+    "carbs_g_estimate": 222.94,
+    "intake_kcal_estimate": 2042.102294455067,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 78.5,
-      "fat_g": 36.4,
-      "carbs_g": 103.5
+      "protein_g": 91.58,
+      "fat_g": 75.64,
+      "carbs_g": 222.94
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 82.5,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      893,
-      1263
+      1778.602294455067,
+      2148.602294455067
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2230.5,
-    "estimated_deficit_kcal": 1074,
+    "exercise_active_kcal": 330,
+    "exercise_adjusted_kcal": 247.5,
+    "tdee_kcal_estimate": 2478,
+    "estimated_deficit_kcal": 435.897705544933,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
       "早餐": 8,
-      "午餐": 70.5
+      "午餐": 70.5,
+      "练后加餐": 13.08
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
+      "沙县鸡腿饭含烹调用油估算余量",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -187,8 +271,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 105.6,
+    "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
