@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-09-22",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确确认“今日饮食训练结束”。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -198,6 +198,21 @@
       "average_heart_rate_bpm": 118,
       "is_estimated": false,
       "note": "Apple Watch显示动态330千卡、总416千卡、平均心率118次/分；按项目规则只将动态千卡计入训练消耗。"
+    },
+    {
+      "id": "2026-09-22-cycle-1",
+      "event_id": "2026-09-22-cycle-1",
+      "type": "室内单车",
+      "duration": "30分37秒",
+      "duration_seconds": 1837,
+      "elapsed_duration": "30分41秒",
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-22 21:28–21:58，室内单车",
+      "active_kcal": 302,
+      "total_kcal": 358,
+      "average_heart_rate_bpm": 147,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态302千卡、总358千卡、平均心率147次/分；按项目规则只将动态千卡计入训练消耗。"
     }
   ],
   "recovery": {
@@ -212,7 +227,8 @@
     "早餐1瓶牛奶按默认260毫升同款记录。",
     "2026-09-22午餐沙县鸡腿饭沿用固定同款口径。",
     "2026-09-22完成传统力量训练48分24秒，Apple Watch动态330千卡、总416千卡、平均心率118次/分。",
-    "练后加餐：青芥蟹饭团2个；板栗月饼2块沿用09-21同款包装标签。"
+    "练后加餐：青芥蟹饭团2个；板栗月饼2块沿用09-21同款包装标签。",
+    "2026-09-22晚间完成室内单车30分37秒，Apple Watch动态302千卡、总358千卡、平均心率147次/分；随后用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1953.602294455067,
@@ -227,25 +243,25 @@
       "fat_g": 75.64,
       "carbs_g": 222.94
     },
-    "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 82.5,
+    "completed_day_base_intake_balance_kcal": 750.897705544933,
+    "training_discount_kcal": 158,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1778.602294455067,
       2148.602294455067
     ],
-    "exercise_active_kcal": 330,
-    "exercise_adjusted_kcal": 247.5,
-    "tdee_kcal_estimate": 2478,
-    "estimated_deficit_kcal": 435.897705544933,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 632,
+    "exercise_adjusted_kcal": 474,
+    "tdee_kcal_estimate": 2704.5,
+    "estimated_deficit_kcal": 662.397705544933,
+    "completed_day_estimated_deficit_kcal": 662.397705544933,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 4,
     "protein_by_meal_g": {
       "早餐": 8,
@@ -253,12 +269,9 @@
       "练后加餐": 13.08
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "沙县鸡腿饭含烹调用油估算余量",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "沙县鸡腿饭含烹调用油估算余量"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
