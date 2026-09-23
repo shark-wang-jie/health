@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -129,9 +129,100 @@
         "reason": "规格未知，用范围表示，不额外叠加余量"
       },
       "uncertainty": "24克由用户明确提供；具体版本营养标签仍未确认，如后续有包装可再更正。"
+    },
+    {
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "meal": "午餐",
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "reported_text": "午饭沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json固定同款：两只鸡腿去皮、米饭、炒白菜、卤蛋全吃；土豆丝不吃。",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1,
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "未知烹调用油增加约10%热量记账余量"
+      },
+      "uncertainty": "沿用已确认固定同款；若今天有剩饭、未吃卤蛋/白菜或其他变化，以实际吃下为准。",
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
+    },
+    {
+      "id": "postworkout_handtorn_pork_jerky_120g",
+      "status": "consumed",
+      "meal": "练后加餐",
+      "description": "手撕猪肉干120克",
+      "reported_text": "练后吃了120g猪肉干",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供包装标签：每100克能量2082千焦、蛋白质60.7克、脂肪28.1克、碳水0.6克、钠745毫克；本次实际吃120克，按1.2倍换算。",
+      "quantity_g": 120,
+      "kcal_base_estimate": 597.131931166348,
+      "kcal_booked": 597.131931166348,
+      "kcal_range": [
+        597.131931166348,
+        597.131931166348
+      ],
+      "protein_g_estimate": 72.84,
+      "fat_g_estimate": 33.72,
+      "carbs_g_estimate": 0.72,
+      "sodium_mg_estimate": 894,
+      "nutrition_per_100g": {
+        "energy_kj": 2082,
+        "protein_g": 60.7,
+        "fat_g": 28.1,
+        "saturated_fat_g": 13.1,
+        "carbs_g": 0.6,
+        "sugar_g": 0,
+        "sodium_mg": 745
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "包装营养标签和食用重量明确，不额外加成"
+      },
+      "uncertainty": "按包装标签与实际120克直接换算。"
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-09-23-strength-1",
+      "event_id": "2026-09-23-strength-1",
+      "type": "传统力量训练",
+      "duration": "49分24秒",
+      "duration_seconds": 2964,
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-23 17:54–18:44，传统力量训练",
+      "active_kcal": 336,
+      "total_kcal": 422,
+      "average_heart_rate_bpm": 118,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态336千卡、总422千卡、平均心率118次/分；按项目规则只将动态千卡计入训练消耗。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -318,49 +409,55 @@
     "早餐1瓶牛奶按默认260毫升同款记录。",
     "2026-09-23上午加餐：小滑头辣条1小包＋卫龙小面筋1小包；因未提供包装重量/标签，先按常见小包规格估算。",
     "2026-09-23两包辣条重量均更正为约30克；上午辣条合计由约175千卡调整为约276千卡。",
-    "2026-09-23卫龙小面筋最终按24克记录；小滑头维持30克。两包辣条合计约247.8千卡。"
+    "2026-09-23卫龙小面筋最终按24克记录；小滑头维持30克。两包辣条合计约247.8千卡。",
+    "2026-09-23午餐沙县鸡腿饭沿用固定同款口径。",
+    "2026-09-23完成传统力量训练49分24秒，Apple Watch动态336千卡、总422千卡、平均心率118次/分。",
+    "练后手撕猪肉干120克，按本次包装标签直接换算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 430.8,
-    "intake_kcal_booked": 430.8,
-    "protein_g_estimate": 13.4,
-    "fat_g_estimate": 21.214,
-    "carbs_g_estimate": 43.264,
-    "intake_kcal_estimate": 430.8,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1912.931931166348,
+    "intake_kcal_booked": 2001.431931166348,
+    "protein_g_estimate": 156.74,
+    "fat_g_estimate": 91.76733333333334,
+    "carbs_g_estimate": 134.984,
+    "intake_kcal_estimate": 2001.431931166348,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 13.4,
-      "fat_g": 21.214,
-      "carbs_g": 43.264
+      "protein_g": 156.74,
+      "fat_g": 81.934,
+      "carbs_g": 134.984
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 84,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      374.4,
-      509.4
+      1681.531931166348,
+      2186.531931166348
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2227.5,
-    "estimated_deficit_kcal": 1796.7,
+    "exercise_active_kcal": 336,
+    "exercise_adjusted_kcal": 252,
+    "tdee_kcal_estimate": 2479.5,
+    "estimated_deficit_kcal": 478.068068833652,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "早餐": 8,
-      "上午加餐": 5.4
+      "上午加餐": 5.4,
+      "午餐": 70.5,
+      "练后加餐": 72.84
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "两包辣条重量已确认约30克和24克，但未提供营养标签，当前按同类热量密度估算",
+      "沙县鸡腿饭含烹调用油估算余量",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -376,8 +473,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 894,
+    "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
