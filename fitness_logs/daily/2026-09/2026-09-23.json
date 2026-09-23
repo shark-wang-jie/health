@@ -77,6 +77,58 @@
         "reason": "沿用固定规格基础口径，不机械加成"
       },
       "uncertainty": "沿用历史默认份量；若本次牛奶规格或标签不同，以本次实际信息更正。"
+    },
+    {
+      "id": "morning_xiaohuatou_latiao_small_1",
+      "status": "consumed_estimated",
+      "meal": "上午加餐",
+      "description": "小滑头辣条1小包，暂按约20克估算",
+      "reported_text": "上午吃了一小包小滑头辣条",
+      "source_kind": "database_estimate",
+      "basis": "仓库未找到此前同款记录，用户本次未提供包装净含量或营养标签。按常见小包辣条约20克、约450千卡/100克的量级暂估。",
+      "quantity_g_estimate": 20,
+      "kcal_base_estimate": 90,
+      "kcal_booked": 90,
+      "kcal_range": [
+        70,
+        120
+      ],
+      "protein_g_estimate": 2,
+      "fat_g_estimate": 4.5,
+      "carbs_g_estimate": 11,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "规格未知，用范围表示，不额外叠加余量"
+      },
+      "uncertainty": "品牌具体配方和小包净含量未确认；若后续有包装或克数，以实际标签更正。"
+    },
+    {
+      "id": "morning_weilong_xiaomianjin_small_1",
+      "status": "consumed_estimated",
+      "meal": "上午加餐",
+      "description": "卫龙小面筋辣条1小包，暂按约18克估算",
+      "reported_text": "一小包卫龙小面筋辣条",
+      "source_kind": "database_estimate",
+      "basis": "仓库未找到此前同款记录，用户本次未提供包装净含量或营养标签。按常见小包卫龙面筋类辣条约18克、约470千卡/100克的量级暂估。",
+      "quantity_g_estimate": 18,
+      "kcal_base_estimate": 85,
+      "kcal_booked": 85,
+      "kcal_range": [
+        65,
+        110
+      ],
+      "protein_g_estimate": 1.8,
+      "fat_g_estimate": 3.8,
+      "carbs_g_estimate": 10.7,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "规格未知，用范围表示，不额外叠加余量"
+      },
+      "uncertainty": "小包实际净含量和具体版本配方未确认；若后续有包装或克数，以实际标签更正。"
     }
   ],
   "exercise_entries": [],
@@ -89,32 +141,33 @@
   "corrections": [],
   "notes": [
     "2026-09-23空腹体重90.50公斤。",
-    "早餐1瓶牛奶按默认260毫升同款记录。"
+    "早餐1瓶牛奶按默认260毫升同款记录。",
+    "2026-09-23上午加餐：小滑头辣条1小包＋卫龙小面筋1小包；因未提供包装重量/标签，先按常见小包规格估算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 183,
-    "intake_kcal_booked": 183,
-    "protein_g_estimate": 8,
-    "fat_g_estimate": 9.4,
-    "carbs_g_estimate": 12.5,
-    "intake_kcal_estimate": 183,
+    "intake_kcal_base_estimate": 358,
+    "intake_kcal_booked": 358,
+    "protein_g_estimate": 11.8,
+    "fat_g_estimate": 17.7,
+    "carbs_g_estimate": 34.2,
+    "intake_kcal_estimate": 358,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 8,
-      "fat_g": 9.4,
-      "carbs_g": 12.5
+      "protein_g": 11.8,
+      "fat_g": 17.7,
+      "carbs_g": 34.2
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      183,
-      183
+      318,
+      413
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2227.5,
-    "estimated_deficit_kcal": 2044.5,
+    "estimated_deficit_kcal": 1869.5,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -123,13 +176,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "早餐": 8
+      "早餐": 8,
+      "上午加餐": 3.8
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "两包辣条未提供净含量/标签，当前按常见小包规格估算",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
