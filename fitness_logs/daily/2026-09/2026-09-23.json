@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户明确确认“今天饮食训练结束”。",
+  "closure_basis": "用户在补充晚间室内单车后再次明确确认“今天正式结束”。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -221,6 +221,21 @@
       "average_heart_rate_bpm": 118,
       "is_estimated": false,
       "note": "Apple Watch显示动态336千卡、总422千卡、平均心率118次/分；按项目规则只将动态千卡计入训练消耗。"
+    },
+    {
+      "id": "2026-09-23-cycle-1",
+      "event_id": "2026-09-23-cycle-1",
+      "type": "室内单车",
+      "duration": "31分54秒",
+      "duration_seconds": 1914,
+      "elapsed_duration": "36分03秒",
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-23 20:10–20:46，室内单车",
+      "active_kcal": 341,
+      "total_kcal": 400,
+      "average_heart_rate_bpm": 148,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态341千卡、总400千卡、平均心率148次/分；按项目规则只将动态千卡计入训练消耗。"
     }
   ],
   "recovery": {
@@ -402,6 +417,12 @@
         },
         "uncertainty": "24克由用户明确提供；具体版本营养标签仍未确认，如后续有包装可再更正。"
       }
+    },
+    {
+      "timestamp": "2026-09-23T20:47:00+08:00",
+      "entry_id": "2026-09-23-cycle-1",
+      "reason": "用户在先前封账后补充当天晚间室内单车记录，并再次确认“今天正式结束”；在保持final状态的同时补入实际训练事件并重算全天能量。",
+      "action": "add_post_final_exercise"
     }
   ],
   "notes": [
@@ -413,7 +434,8 @@
     "2026-09-23午餐沙县鸡腿饭沿用固定同款口径。",
     "2026-09-23完成传统力量训练49分24秒，Apple Watch动态336千卡、总422千卡、平均心率118次/分。",
     "练后手撕猪肉干120克，按本次包装标签直接换算。",
-    "2026-09-23用户确认今日饮食训练结束并封账。"
+    "2026-09-23用户确认今日饮食训练结束并封账。",
+    "2026-09-23晚间补录室内单车31分54秒，Apple Watch动态341千卡、总400千卡、平均心率148次/分；用户再次确认今天正式结束。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1912.931931166348,
@@ -428,18 +450,18 @@
       "fat_g": 81.934,
       "carbs_g": 134.984
     },
-    "completed_day_base_intake_balance_kcal": 566.568068833652,
-    "training_discount_kcal": 84,
+    "completed_day_base_intake_balance_kcal": 822.318068833652,
+    "training_discount_kcal": 169.25,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1681.531931166348,
       2186.531931166348
     ],
-    "exercise_active_kcal": 336,
-    "exercise_adjusted_kcal": 252,
-    "tdee_kcal_estimate": 2479.5,
-    "estimated_deficit_kcal": 478.068068833652,
-    "completed_day_estimated_deficit_kcal": 478.068068833652,
+    "exercise_active_kcal": 677,
+    "exercise_adjusted_kcal": 507.75,
+    "tdee_kcal_estimate": 2735.25,
+    "estimated_deficit_kcal": 733.818068833652,
+    "completed_day_estimated_deficit_kcal": 733.818068833652,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
