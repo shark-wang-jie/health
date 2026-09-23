@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-09-23",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确确认“今天饮食训练结束”。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -412,7 +412,8 @@
     "2026-09-23卫龙小面筋最终按24克记录；小滑头维持30克。两包辣条合计约247.8千卡。",
     "2026-09-23午餐沙县鸡腿饭沿用固定同款口径。",
     "2026-09-23完成传统力量训练49分24秒，Apple Watch动态336千卡、总422千卡、平均心率118次/分。",
-    "练后手撕猪肉干120克，按本次包装标签直接换算。"
+    "练后手撕猪肉干120克，按本次包装标签直接换算。",
+    "2026-09-23用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1912.931931166348,
@@ -427,7 +428,7 @@
       "fat_g": 81.934,
       "carbs_g": 134.984
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": 566.568068833652,
     "training_discount_kcal": 84,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
@@ -438,14 +439,14 @@
     "exercise_adjusted_kcal": 252,
     "tdee_kcal_estimate": 2479.5,
     "estimated_deficit_kcal": 478.068068833652,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "completed_day_estimated_deficit_kcal": 478.068068833652,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 5,
     "protein_by_meal_g": {
       "早餐": 8,
@@ -454,13 +455,10 @@
       "练后加餐": 72.84
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
       "两包辣条重量已确认约30克和24克，但未提供营养标签，当前按同类热量密度估算",
-      "沙县鸡腿饭含烹调用油估算余量",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "沙县鸡腿饭含烹调用油估算余量"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
