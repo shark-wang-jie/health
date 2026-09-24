@@ -2,20 +2,20 @@
   "schema_version": 3,
   "date": "2026-09-24",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "\u7528\u6237\u660e\u786e\u786e\u8ba4\u4eca\u5929\u996e\u98df\u548c\u8bad\u7ec3\u7ed3\u675f\u3002",
+  "food_coverage": "confirmed_complete",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
-  "weight_measurement_note": "用户报告早上空腹体重90.40公斤。",
+  "weight_measurement_note": "\u7528\u6237\u62a5\u544a\u65e9\u4e0a\u7a7a\u8179\u4f53\u91cd90.40\u516c\u65a4\u3002",
   "plan_version": "2026-09-08-v3.2",
   "morning_weight_kg": 90.4,
   "profile_snapshot": {
-    "sex": "男性",
+    "sex": "\u7537\u6027",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 90.4,
@@ -53,11 +53,11 @@
     {
       "id": "breakfast_milk_260ml",
       "status": "consumed",
-      "meal": "早餐",
-      "description": "默认纯牛奶260毫升",
-      "reported_text": "早饭一瓶牛奶",
+      "meal": "\u65e9\u9910",
+      "description": "\u9ed8\u8ba4\u7eaf\u725b\u5976260\u6beb\u5347",
+      "reported_text": "\u65e9\u996d\u4e00\u74f6\u725b\u5976",
       "source_kind": "matched_default",
-      "basis": "沿用food_catalog.json中的默认纯牛奶260毫升；本次未提供新的规格或标签。",
+      "basis": "\u6cbf\u7528food_catalog.json\u4e2d\u7684\u9ed8\u8ba4\u7eaf\u725b\u5976260\u6beb\u5347\uff1b\u672c\u6b21\u672a\u63d0\u4f9b\u65b0\u7684\u89c4\u683c\u6216\u6807\u7b7e\u3002",
       "catalog_id": "milk_260ml",
       "catalog_version": "2026-09-08-v1",
       "servings": 1,
@@ -74,18 +74,18 @@
         "added_fat_g": 0,
         "added_carbs_g": 0,
         "already_in_base": false,
-        "reason": "沿用固定规格基础口径，不机械加成"
+        "reason": "\u6cbf\u7528\u56fa\u5b9a\u89c4\u683c\u57fa\u7840\u53e3\u5f84\uff0c\u4e0d\u673a\u68b0\u52a0\u6210"
       },
-      "uncertainty": "沿用历史默认份量；若本次牛奶规格或标签不同，以本次实际信息更正。"
+      "uncertainty": "\u6cbf\u7528\u5386\u53f2\u9ed8\u8ba4\u4efd\u91cf\uff1b\u82e5\u672c\u6b21\u725b\u5976\u89c4\u683c\u6216\u6807\u7b7e\u4e0d\u540c\uff0c\u4ee5\u672c\u6b21\u5b9e\u9645\u4fe1\u606f\u66f4\u6b63\u3002"
     },
     {
       "id": "breakfast_pork_floss_redbean_bread_120g",
       "status": "consumed_estimated",
-      "meal": "早餐",
-      "description": "肉松红豆面包1块，约120克",
-      "reported_text": "一块肉松红豆面包，大概120g",
+      "meal": "\u65e9\u9910",
+      "description": "\u8089\u677e\u7ea2\u8c46\u9762\u53051\u5757\uff0c\u7ea6120\u514b",
+      "reported_text": "\u4e00\u5757\u8089\u677e\u7ea2\u8c46\u9762\u5305\uff0c\u5927\u6982120g",
       "source_kind": "database_estimate",
-      "basis": "仓库未找到此前同款记录，用户提供重量约120克但无包装营养标签。按常见肉松＋红豆甜面包约333千卡/100克作基础点估算，120克基础约400千卡；因肉松、红豆馅和面包用油/糖配方不明，另留约10%记账余量。",
+      "basis": "\u4ed3\u5e93\u672a\u627e\u5230\u6b64\u524d\u540c\u6b3e\u8bb0\u5f55\uff0c\u7528\u6237\u63d0\u4f9b\u91cd\u91cf\u7ea6120\u514b\u4f46\u65e0\u5305\u88c5\u8425\u517b\u6807\u7b7e\u3002\u6309\u5e38\u89c1\u8089\u677e\uff0b\u7ea2\u8c46\u751c\u9762\u5305\u7ea6333\u5343\u5361/100\u514b\u4f5c\u57fa\u7840\u70b9\u4f30\u7b97\uff0c120\u514b\u57fa\u7840\u7ea6400\u5343\u5361\uff1b\u56e0\u8089\u677e\u3001\u7ea2\u8c46\u9985\u548c\u9762\u5305\u7528\u6cb9/\u7cd6\u914d\u65b9\u4e0d\u660e\uff0c\u53e6\u7559\u7ea610%\u8bb0\u8d26\u4f59\u91cf\u3002",
       "quantity_g_estimate": 120,
       "kcal_base_estimate": 400,
       "kcal_booked": 440,
@@ -100,9 +100,151 @@
         "added_fat_g": 4.444444444444445,
         "added_carbs_g": 0,
         "already_in_base": false,
-        "reason": "未知肉松、红豆馅和面包配方，基础点上留约10%热量记账余量"
+        "reason": "\u672a\u77e5\u8089\u677e\u3001\u7ea2\u8c46\u9985\u548c\u9762\u5305\u914d\u65b9\uff0c\u57fa\u7840\u70b9\u4e0a\u7559\u7ea610%\u70ed\u91cf\u8bb0\u8d26\u4f59\u91cf"
       },
-      "uncertainty": "120克为用户估计，且无营养标签；不同面包店的肉松、红豆馅和油糖用量差异较大，330–520千卡为操作性估算范围。"
+      "uncertainty": "120\u514b\u4e3a\u7528\u6237\u4f30\u8ba1\uff0c\u4e14\u65e0\u8425\u517b\u6807\u7b7e\uff1b\u4e0d\u540c\u9762\u5305\u5e97\u7684\u8089\u677e\u3001\u7ea2\u8c46\u9985\u548c\u6cb9\u7cd6\u7528\u91cf\u5dee\u5f02\u8f83\u5927\uff0c330\u2013520\u5343\u5361\u4e3a\u64cd\u4f5c\u6027\u4f30\u7b97\u8303\u56f4\u3002"
+    },
+    {
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "meal": "\u5348\u9910",
+      "description": "\u6c99\u53bf\u56fa\u5b9a\u9e21\u817f\u996d\uff1a\u4e24\u53ea\u53bb\u76ae\u9e21\u817f\u3001\u7c73\u996d\u3001\u7092\u767d\u83dc\u3001\u5364\u86cb\u5168\u5403\uff1b\u4e0d\u5403\u571f\u8c46\u4e1d",
+      "reported_text": "\u5348\u996d\u6c99\u53bf\u9e21\u817f\u996d",
+      "source_kind": "matched_default",
+      "basis": "\u6cbf\u7528food_catalog.json\u56fa\u5b9a\u540c\u6b3e\u3002",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1,
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "\u672a\u77e5\u70f9\u8c03\u7528\u6cb9\u4f59\u91cf"
+      },
+      "uncertainty": "\u6cbf\u7528\u56fa\u5b9a\u540c\u6b3e\uff0c\u5b9e\u9645\u5403\u4e0b\u4efd\u91cf\u4f18\u5148\u3002",
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
+    },
+    {
+      "id": "dinner_rice_all",
+      "status": "consumed_estimated",
+      "meal": "\u665a\u9910",
+      "description": "\u767d\u7c73\u996d1\u7897\uff0c\u7167\u7247\u4f30\u7ea6300\u514b\uff0c\u5168\u90e8\u5403\u5b8c",
+      "reported_text": "\u665a\u4e0a\u5403\u5b8c\u4e86\u7c73\u996d",
+      "source_kind": "photo_estimate",
+      "basis": "\u6839\u636e\u7167\u7247\u4f30\u7ea6300\u514b\u719f\u767d\u7c73\u996d\uff0c\u7528\u6237\u660e\u786e\u5168\u90e8\u5403\u5b8c\u3002",
+      "quantity_g_estimate": 300,
+      "kcal_base_estimate": 348,
+      "kcal_booked": 348,
+      "kcal_range": [
+        290,
+        410
+      ],
+      "protein_g_estimate": 7.8,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 77.7,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "\u4efd\u91cf\u8bef\u5dee\u7528\u8303\u56f4\u8868\u8fbe"
+      },
+      "uncertainty": "\u672a\u79f0\u91cd\uff0c\u7167\u7247\u4f30\u7b97\u3002"
+    },
+    {
+      "id": "dinner_braised_pork_part_a",
+      "status": "consumed_estimated",
+      "meal": "\u665a\u9910",
+      "description": "\u5364\u5473\u732a\u8089\u90e8\u4f4dA\u7ea6\u5403\u6574\u76d2\u4e09\u5206\u4e4b\u4e00",
+      "reported_text": "\u732a\u5934\u8089\u5403\u4e86\u4e09\u5206\u4e4b\u4e00",
+      "source_kind": "photo_estimate",
+      "basis": "\u6309\u7167\u7247\u548c\u98df\u7528\u6bd4\u4f8b\u4f30\u7b97\uff0c\u5305\u542b\u53ef\u89c1\u82b1\u751f\u3001\u829d\u9ebb\u548c\u8c03\u5473\u3002",
+      "kcal_base_estimate": 360,
+      "kcal_booked": 396,
+      "kcal_range": [
+        260,
+        500
+      ],
+      "protein_g_estimate": 23,
+      "fat_g_estimate": 32,
+      "carbs_g_estimate": 5,
+      "margin": {
+        "added_fat_g": 4,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "\u80a5\u7626\u6bd4\u4f8b\u4e0e\u8c03\u5473\u7528\u6cb9\u4e0d\u786e\u5b9a"
+      },
+      "uncertainty": "\u6574\u76d2\u672a\u79f0\u91cd\uff0c\u4e09\u5206\u4e4b\u4e00\u4e3a\u4f53\u79ef\u4efd\u91cf\u3002"
+    },
+    {
+      "id": "dinner_braised_pork_part_b",
+      "status": "consumed_estimated",
+      "meal": "\u665a\u9910",
+      "description": "\u5364\u5473\u732a\u8089\u90e8\u4f4dB\u7ea6\u5403\u6574\u76d2\u4e00\u534a",
+      "reported_text": "\u732a\u8033\u6735\u5403\u4e86\u4e00\u534a",
+      "source_kind": "photo_estimate",
+      "basis": "\u6309\u7167\u7247\u548c\u98df\u7528\u6bd4\u4f8b\u4f30\u7b97\uff0c\u5305\u542b\u53ef\u89c1\u82b1\u751f\u3001\u829d\u9ebb\u548c\u8c03\u5473\u3002",
+      "kcal_base_estimate": 360,
+      "kcal_booked": 396,
+      "kcal_range": [
+        260,
+        500
+      ],
+      "protein_g_estimate": 28,
+      "fat_g_estimate": 28,
+      "carbs_g_estimate": 8,
+      "margin": {
+        "added_fat_g": 4,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "\u4efd\u91cf\u4e0e\u8c03\u5473\u7528\u6cb9\u4e0d\u786e\u5b9a"
+      },
+      "uncertainty": "\u6574\u76d2\u672a\u79f0\u91cd\uff0c\u4e00\u534a\u4e3a\u4f53\u79ef\u4efd\u91cf\u3002"
+    },
+    {
+      "id": "dinner_soybeans_100g",
+      "status": "consumed_estimated",
+      "meal": "\u665a\u9910",
+      "description": "\u9ec4\u8c46\u9171\u7092\u9ec4\u8c46\u7ea6100\u514b",
+      "reported_text": "\u9ec4\u8c46\u9171\u7092\u7684\u9ec4\u8c46\u5927\u6982100\u514b",
+      "source_kind": "database_estimate",
+      "basis": "\u6309\u719f\u9ec4\u8c46\u52a0\u9ec4\u8c46\u9171\u53ca\u5c11\u91cf\u7092\u5236\u7528\u6cb9\u4f30\u7b97\u3002",
+      "quantity_g_estimate": 100,
+      "kcal_base_estimate": 220,
+      "kcal_booked": 242,
+      "kcal_range": [
+        170,
+        300
+      ],
+      "protein_g_estimate": 15,
+      "fat_g_estimate": 11.444444444444445,
+      "carbs_g_estimate": 17.5,
+      "margin": {
+        "added_fat_g": 2.4444444444444446,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "\u9171\u6599\u548c\u7528\u6cb9\u4e0d\u786e\u5b9a"
+      },
+      "uncertainty": "\u7ea6100\u514b\u4e3a\u7528\u6237\u4f30\u8ba1\u3002"
     }
   ],
   "exercise_entries": [],
@@ -114,53 +256,57 @@
   },
   "corrections": [],
   "notes": [
-    "2026-09-24空腹体重90.40公斤，较09-23的90.50公斤低0.10公斤。",
-    "早餐1瓶牛奶按默认260毫升同款记录。",
-    "肉松红豆面包约120克，无标签，按常见同类面包估算并保留较宽范围。"
+    "2026-09-24\u7a7a\u8179\u4f53\u91cd90.40\u516c\u65a4\uff0c\u8f8309-23\u768490.50\u516c\u65a4\u4f4e0.10\u516c\u65a4\u3002",
+    "\u65e9\u99101\u74f6\u725b\u5976\u6309\u9ed8\u8ba4260\u6beb\u5347\u540c\u6b3e\u8bb0\u5f55\u3002",
+    "\u8089\u677e\u7ea2\u8c46\u9762\u5305\u7ea6120\u514b\uff0c\u65e0\u6807\u7b7e\uff0c\u6309\u5e38\u89c1\u540c\u7c7b\u9762\u5305\u4f30\u7b97\u5e76\u4fdd\u7559\u8f83\u5bbd\u8303\u56f4\u3002",
+    "2026-09-24\u5348\u9910\u6c99\u53bf\u9e21\u817f\u996d\u6309\u56fa\u5b9a\u540c\u6b3e\u8bb0\u5f55\u3002",
+    "2026-09-24\u665a\u9910\u6309\u7167\u7247\u4e0e\u7528\u6237\u5b9e\u9645\u98df\u7528\u6bd4\u4f8b\u8bb0\u5f55\uff1a\u7c73\u996d\u5168\u5403\uff1b\u4e24\u4efd\u5364\u5473\u5206\u522b\u7ea6\u54031/3\u76d2\u548c1/2\u76d2\uff1b\u9ec4\u8c46\u9171\u7092\u9ec4\u8c46\u7ea6100\u514b\u3002",
+    "2026-09-24\u7528\u6237\u786e\u8ba4\u4eca\u65e5\u996e\u98df\u548c\u8bad\u7ec3\u7ed3\u675f\uff1b\u672a\u62a5\u544a\u8bad\u7ec3\uff0c\u6309\u786e\u8ba4\u4f11\u606f\u65e5\u5c01\u8d26\u3002"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 583,
-    "intake_kcal_booked": 623,
-    "protein_g_estimate": 19,
-    "fat_g_estimate": 26.84444444444444,
-    "carbs_g_estimate": 74.5,
-    "intake_kcal_estimate": 623,
-    "food_margin_kcal": 40,
+    "intake_kcal_base_estimate": 2756,
+    "intake_kcal_booked": 2978.5,
+    "protein_g_estimate": 163.3,
+    "fat_g_estimate": 136.0222222222222,
+    "carbs_g_estimate": 273.7,
+    "intake_kcal_estimate": 2978.5,
+    "food_margin_kcal": 222.5,
     "base_macro_estimates": {
-      "protein_g": 19,
-      "fat_g": 22.4,
-      "carbs_g": 74.5
+      "protein_g": 163.3,
+      "fat_g": 111.3,
+      "carbs_g": 273.7
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": -529.7,
     "training_discount_kcal": 0,
-    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "assumption_note": "\u57fa\u7840\u5b8f\u91cf\u4e0e\u8bb0\u8d26\u5b8f\u91cf\u533a\u5206\u9644\u52a0\u4f59\u91cf\uff1b\u4e24\u4e2a\u6444\u5165\u53e3\u5f84\u7684\u80fd\u91cf\u5dee\u989d\u662f\u6a21\u578b\u5bf9\u7167\uff0c\u4e0d\u662f\u53ef\u4fe1\u533a\u95f4\u6216\u771f\u5b9e\u4e0a\u4e0b\u754c\u3002",
     "intake_kcal_range": [
-      513,
-      703
+      2203,
+      3493
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2226.3,
-    "estimated_deficit_kcal": 1603.3,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "estimated_deficit_kcal": -752.2,
+    "completed_day_estimated_deficit_kcal": -752.2,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1800,
       1800
     ],
-    "target_is_provisional": true,
-    "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
-      "早餐": 19
+      "\u65e9\u9910": 19,
+      "\u5348\u9910": 70.5,
+      "\u665a\u9910": 73.8
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "肉松红豆面包无营养标签，当前按约120克和常见同类热量密度估算",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "\u8089\u677e\u7ea2\u8c46\u9762\u5305\u65e0\u8425\u517b\u6807\u7b7e\uff0c\u5f53\u524d\u6309\u7ea6120\u514b\u548c\u5e38\u89c1\u540c\u7c7b\u70ed\u91cf\u5bc6\u5ea6\u4f30\u7b97",
+      "\u665a\u9910\u7c73\u996d\u548c\u4e24\u4efd\u5364\u5473\u672a\u79f0\u91cd\uff0c\u6309\u7167\u7247\u4e0e\u98df\u7528\u6bd4\u4f8b\u4f30\u7b97\uff0c\u8303\u56f4\u8f83\u5bbd",
+      "\u6c99\u53bf\u9e21\u817f\u996d\u542b\u70f9\u8c03\u7528\u6cb9\u4f30\u7b97\u4f59\u91cf"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "\u6309\u5f53\u524d\u8bb0\u8d26\u53e3\u5f84\u4f30\u7b97\u4e3a\u5168\u5929\u70ed\u91cf\u76c8\u4f59\uff1b\u665a\u9910\u4efd\u91cf\u548c\u8c03\u5473\u8bef\u5dee\u8f83\u5927\uff0c\u56e0\u6b64\u4e0d\u662f\u5b9e\u6d4b\u80fd\u91cf\u5e73\u8861\u3002",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
