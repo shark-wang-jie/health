@@ -403,48 +403,44 @@
   "daily_summary": {
     "intake_kcal_base_estimate": 1977.802294455067,
     "intake_kcal_booked": 2066.302294455067,
-    "protein_g_estimate": 95.38,
-    "fat_g_estimate": 88.87333333333333,
+    "protein_g_estimate": 95.38000000000001,
+    "fat_g_estimate": 88.87333333333335,
     "carbs_g_estimate": 217.94,
     "intake_kcal_estimate": 2066.302294455067,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 95.38,
+      "protein_g": 95.38000000000001,
       "fat_g": 79.04,
       "carbs_g": 217.94
     },
-    "completed_day_base_intake_balance_kcal": 751.297705544933,
-    "training_discount_kcal": 164,
+    "completed_day_base_intake_balance_kcal": 751.2977055449328,
+    "training_discount_kcal": 164.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1779.6022944550668,
       2200.602294455067
     ],
-    "exercise_active_kcal": 656,
-    "exercise_adjusted_kcal": 492,
+    "exercise_active_kcal": 656.0,
+    "exercise_adjusted_kcal": 492.0,
     "tdee_kcal_estimate": 2729.1,
-    "estimated_deficit_kcal": 662.797705544933,
-    "completed_day_estimated_deficit_kcal": 662.797705544933,
+    "estimated_deficit_kcal": 662.7977055449328,
+    "completed_day_estimated_deficit_kcal": 662.7977055449328,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
-      "早餐": 8.7,
       "午餐": 70.5,
-      "练后加餐": 6.9,
-      "晚间加餐": 9.28
+      "早餐": 8.7,
+      "晚间加餐": 9.28,
+      "练后加餐": 6.9
     },
-    "warnings": [
-      "沙县鸡腿饭含烹调用油估算余量",
-      "王中王火腿肠按约40克和公开同款数据库估算，版本差异可后续修正",
-      "枣泥核桃糕按用户估计约10克及同类热量密度估算"
-    ],
-    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
