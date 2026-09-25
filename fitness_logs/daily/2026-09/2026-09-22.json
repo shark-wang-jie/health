@@ -231,47 +231,45 @@
     "2026-09-22晚间完成室内单车30分37秒，Apple Watch动态302千卡、总358千卡、平均心率147次/分；随后用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1953.602294455067,
-    "intake_kcal_booked": 2042.102294455067,
+    "intake_kcal_base_estimate": 1953.6022944550668,
+    "intake_kcal_booked": 2042.1022944550668,
     "protein_g_estimate": 91.58,
     "fat_g_estimate": 85.47333333333334,
     "carbs_g_estimate": 222.94,
-    "intake_kcal_estimate": 2042.102294455067,
+    "intake_kcal_estimate": 2042.1022944550668,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
       "protein_g": 91.58,
       "fat_g": 75.64,
       "carbs_g": 222.94
     },
-    "completed_day_base_intake_balance_kcal": 750.897705544933,
-    "training_discount_kcal": 158,
+    "completed_day_base_intake_balance_kcal": 750.8977055449332,
+    "training_discount_kcal": 158.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1778.602294455067,
+      1778.6022944550668,
       2148.602294455067
     ],
-    "exercise_active_kcal": 632,
-    "exercise_adjusted_kcal": 474,
+    "exercise_active_kcal": 632.0,
+    "exercise_adjusted_kcal": 474.0,
     "tdee_kcal_estimate": 2704.5,
-    "estimated_deficit_kcal": 662.397705544933,
-    "completed_day_estimated_deficit_kcal": 662.397705544933,
+    "estimated_deficit_kcal": 662.3977055449332,
+    "completed_day_estimated_deficit_kcal": 662.3977055449332,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 4,
     "protein_by_meal_g": {
-      "早餐": 8,
       "午餐": 70.5,
-      "练后加餐": 13.08
+      "早餐": 8,
+      "练后加餐": 13.079999999999998
     },
-    "warnings": [
-      "沙县鸡腿饭含烹调用油估算余量"
-    ],
-    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
