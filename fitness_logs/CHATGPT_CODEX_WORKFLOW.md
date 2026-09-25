@@ -270,3 +270,5 @@ ChatGPT 白天记录端一般不修改 schema 或核心计算工具；复杂维�
 以后用户可以直接对 Codex 说：
 
 > 读取 health 仓库最新 main，按 `fitness_logs/CHATGPT_CODEX_WORKFLOW.md` 接手今天的记录。不要让我重新口述白天已经写入 GitHub 的内容。完成 recalculate、validate、report 和 jq 校验；有问题直接修正并保留 corrections；有实际修改再 commit/push，最后简洁汇报今天累计、修正项和校验结果。
+
+每次重算与AI复核在 state/runs/ 下独立临时clone执行，失败副本保留供审计，下一次从干净主副本重新复核；验证后的提交先快进保存到主副本再推送，以便断网恢复。根据完成状态补齐遗漏日期队列，逐次处理最早未完成日期；不创建虚构日记录。

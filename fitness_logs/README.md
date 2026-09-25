@@ -91,3 +91,5 @@
 脚本用原子`mkdir`锁防并发，日志写入`~/Library/Logs/health/`。Git fetch和push单独使用本机Veee HTTP代理`127.0.0.1:15236`，不依赖macOS系统代理；Codex CLI会清除代理环境变量，由ProxyBridge独立路由。因此普通软件可保持系统代理关闭。Git网络操作在单次运行内最多尝试3次；仍失败时把日期保存在`~/Library/Application Support/health-daily-review/state/pending/`，跨午夜和重启继续优先补跑。成功后保存目标记录与复核规则的内容指纹；指纹未变化时只同步并跳过重复Codex复核。推送响应丢失或推送失败时，已创建的标准自动复核提交保留在专用checkout，下次只认可并恢复推送这类提交。无实际diff时不提交；有合法修改时只暂存`fitness_logs/`，提交为`fitness: automated review YYYY-MM-DD`并普通推送。工作区脏、同步冲突、Codex失败、校验失败或远端在复核期间变化时安全退出，不使用reset、clean、stash、强制checkout或强推。
 
 macOS普通LaunchAgent不能后台读取`Documents`时，实际任务通过`HEALTH_REPO_ROOT`指向`~/Library/Application Support/health-daily-review/repo`专用checkout。该checkout与交互工作副本共享同一`origin/main`，不复制或改写未提交的本地工作。
+
+每次重算与AI复核在 state/runs/ 下独立临时clone执行，失败副本保留供审计，下一次从干净主副本重新复核；验证后的提交先快进保存到主副本再推送，以便断网恢复。根据完成状态补齐遗漏日期队列，逐次处理最早未完成日期；不创建虚构日记录。

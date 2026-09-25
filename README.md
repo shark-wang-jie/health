@@ -23,3 +23,5 @@
 Mac 通过 LaunchAgent `com.wangjie.health.daily-review` 每天本地时间 00:00 运行 `fitness_logs/automation/daily_review.sh`，复核刚结束的前一上海自然日，并每15分钟检查失败补跑。任务先同步 `origin/main`，执行确定性重算与校验，再调用本机 Codex CLI 做受限语义复核；只有产生合法实际修改时才提交并非强制推送。Git 网络命令单独使用本机 Veee HTTP 代理 `127.0.0.1:15236`，不依赖 macOS 系统代理；Codex CLI 不注入代理环境变量，由 ProxyBridge 独立路由。网络操作单次运行内有限重试，失败日期保存在仓库外并跨重启优先补跑；已成功日期在目标记录和复核规则未变化时跳过重复Codex调用。运行日志保存在 `~/Library/Logs/health/`，不进入仓库。
 
 由于 macOS 不允许普通 LaunchAgent 后台读取用户的 `Documents` 目录，实际定时任务使用 `~/Library/Application Support/health-daily-review/repo` 作为专用 checkout；它与本目录共享同一个 GitHub `main`。交互式 Codex 继续使用本目录，并在写入前同步 `main`。
+
+每次重算与AI复核在 state/runs/ 下独立临时clone执行，失败副本保留供审计，下一次从干净主副本重新复核；验证后的提交先快进保存到主副本再推送，以便断网恢复。根据完成状态补齐遗漏日期队列，逐次处理最早未完成日期；不创建虚构日记录。

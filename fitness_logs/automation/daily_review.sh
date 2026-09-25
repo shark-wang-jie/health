@@ -15,7 +15,7 @@ COMPLETED_DIR="$STATE_ROOT/completed"
 GIT="/usr/bin/git"
 PYTHON3="/opt/homebrew/bin/python3"
 JQ="/opt/homebrew/bin/jq"
-CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
+CODEX="${HEALTH_CODEX_BIN:-/Applications/ChatGPT.app/Contents/Resources/codex}"
 GIT_PROXY_URL="${HEALTH_GIT_PROXY_URL:-http://127.0.0.1:15236}"
 DATE="/bin/date"
 MKDIR="/bin/mkdir"
@@ -38,6 +38,33 @@ PY
 )"
 
 $MKDIR -p "$LOG_DIR" "/Users/wangjie/Library/Caches" "$PENDING_DIR" "$COMPLETED_DIR"
+
+# Reconstruct missed dates, including days spent retrying an older failure.
+# Queue metadata never creates or invents a daily food record.
+if ! "$PYTHON3" - "$STATE_ROOT" "$SCHEDULED_DATE" <<'PYQUEUE'
+from datetime import date, timedelta
+from pathlib import Path
+import sys
+root = Path(sys.argv[1])
+end = date.fromisoformat(sys.argv[2])
+known = []
+for folder, suffix in (("completed", ".sha256"), ("pending", ".pending")):
+    for path in (root / folder).glob("*" + suffix):
+        try:
+            day = date.fromisoformat(path.name.removesuffix(suffix))
+        except ValueError:
+            continue
+        if day <= end:
+            known.append(day)
+start = min(known) if known else end
+while start <= end:
+    if not (root / "completed" / f"{start}.sha256").exists():
+        (root / "pending" / f"{start}.pending").touch(exist_ok=True)
+    start += timedelta(days=1)
+PYQUEUE
+then
+  exit 69
+fi
 
 if [ -n "${HEALTH_TARGET_DATE:-}" ]; then
   TARGET_DATE="$HEALTH_TARGET_DATE"
@@ -68,6 +95,8 @@ PENDING_FILE="$PENDING_DIR/$TARGET_DATE.pending"
 COMPLETED_FILE="$COMPLETED_DIR/$TARGET_DATE.sha256"
 LOCK_OWNED=0
 COMPLETED=0
+BASE_REPO_ROOT="$REPO_ROOT"
+RUN_REPO=""
 
 : >"$PENDING_FILE"
 exec >>"$LOG_FILE" 2>&1
@@ -169,6 +198,14 @@ finish() {
   exit_code=$?
   if [ -f "$CODEX_LAST_MESSAGE" ]; then
     $RM -f "$CODEX_LAST_MESSAGE"
+  fi
+  if [ -n "$RUN_REPO" ]; then
+    if [ "$exit_code" -eq 0 ] && [ "$COMPLETED" -eq 1 ]; then
+      cd "$BASE_REPO_ROOT" || return
+      $RM -rf "$RUN_REPO"
+    else
+      log "failed review workspace retained: $RUN_REPO"
+    fi
   fi
   if [ "$LOCK_OWNED" -eq 1 ] && [ -f "$LOCK_DIR/pid" ] && [ "$(cat "$LOCK_DIR/pid" 2>/dev/null || true)" = "$$" ]; then
     $RM -rf "$LOCK_DIR"
@@ -295,6 +332,25 @@ if [ ! -f "$TARGET_FILE" ]; then
   exit 0
 fi
 
+# All uncommitted review output belongs to this disposable attempt. The
+# long-lived checkout remains clean even on quota errors, signals or crashes.
+$MKDIR -p "$STATE_ROOT/runs"
+RUN_REPO="$(/usr/bin/mktemp -d "$STATE_ROOT/runs/$TARGET_DATE.XXXXXX")" || exit 69
+if ! $GIT clone --quiet --no-hardlinks "$BASE_REPO_ROOT" "$RUN_REPO"; then
+  log "failure reason: cannot create isolated review workspace"
+  exit 69
+fi
+origin_url="$($GIT remote get-url origin)"
+if ! $GIT -C "$RUN_REPO" remote set-url origin "$origin_url"; then
+  exit 69
+fi
+REPO_ROOT="$RUN_REPO"
+AUTOMATION_DIR="$REPO_ROOT/fitness_logs/automation"
+PROMPT_FILE="$AUTOMATION_DIR/daily_codex_prompt.md"
+TARGET_FILE="$REPO_ROOT/fitness_logs/daily/$TARGET_MONTH/$TARGET_DATE.json"
+cd "$REPO_ROOT" || exit 72
+log "isolated review workspace: $REPO_ROOT"
+
 log "stage A deterministic review: start"
 if ! "$PYTHON3" fitness_logs/record_tools.py recalculate "$TARGET_FILE"; then
   log "recalculate result: failed"
@@ -406,6 +462,19 @@ if ! $GIT commit -m "fitness: automated review $TARGET_DATE"; then
 fi
 commit_sha="$($GIT rev-parse HEAD)"
 log "commit SHA: $commit_sha"
+
+# Retain validated commits in the clean durable checkout before network push.
+# Existing recovery-push logic will retry these commits after a network failure.
+if [ -n "$($GIT -C "$BASE_REPO_ROOT" status --porcelain)" ] ||
+   [ "$($GIT -C "$BASE_REPO_ROOT" rev-parse HEAD)" != "$synced_remote_sha" ]; then
+  log "failure reason: durable checkout changed during review; isolated commit retained"
+  exit 73
+fi
+if ! $GIT -C "$BASE_REPO_ROOT" fetch "$RUN_REPO" main ||
+   ! $GIT -C "$BASE_REPO_ROOT" merge --ff-only FETCH_HEAD; then
+  log "failure reason: could not retain validated review commit"
+  exit 71
+fi
 
 if ! network_retry "pre-push git fetch" git_network fetch origin; then
   log "push result: skipped because pre-push fetch failed"
