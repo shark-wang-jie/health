@@ -72,34 +72,34 @@
     "用户明确当天没有运动，按确认休息日记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 0,
-    "intake_kcal_booked": 0,
-    "protein_g_estimate": 0,
-    "fat_g_estimate": 0,
-    "carbs_g_estimate": 0,
-    "intake_kcal_estimate": 0,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 0.0,
+    "intake_kcal_booked": 0.0,
+    "protein_g_estimate": 0.0,
+    "fat_g_estimate": 0.0,
+    "carbs_g_estimate": 0.0,
+    "intake_kcal_estimate": 0.0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 0,
-      "fat_g": 0,
-      "carbs_g": 0
+      "protein_g": 0.0,
+      "fat_g": 0.0,
+      "carbs_g": 0.0
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      0,
-      0
+      0.0,
+      0.0
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2226.3,
-    "estimated_deficit_kcal": 2226.3,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2226.2999999999997,
+    "estimated_deficit_kcal": 2226.2999999999997,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1800.0,
+      1800.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -109,7 +109,7 @@
       "饮食完整性未确认：合计仅含已记录摄入",
       "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "当天饮食未记录；当前0摄入仅表示没有可计入条目，不能作为真实摄入或热量缺口使用。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
