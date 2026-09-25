@@ -1,0 +1,132 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-25",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户说明今天中秋节与家人聚餐一天；未称体重、未记录饮食、没有运动，按当天信息不完整但已结束的状态封账。",
+  "food_coverage": "unknown",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [
+    "morning_weight",
+    "food_details"
+  ],
+  "non_energy_pending_notes": [
+    "全天饮食未记录；daily_summary中的0摄入仅表示没有可计入的饮食条目，不代表实际没有进食，也不能据此判断真实热量差额。"
+  ],
+  "trend_context": [
+    "2026-09-25中秋家庭聚餐日，体重与饮食均缺测/未记录；趋势分析时应视为缺失日，不应按0摄入处理。"
+  ],
+  "weight_measurement_note": "用户明确今天没有称空腹体重；09-25体重缺测，不补填。BMR体重沿用最近一次09-24的90.40公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": null,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.4,
+    "bmr_weight_date": "2026-09-24",
+    "bmr_kcal": 1855.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-25用户说明今天中秋节，与家人聚餐一天。",
+    "当天未称空腹体重，体重记为缺测。",
+    "全天没有记录具体饮食，因此不估算聚餐摄入，也不把0条饮食记录解释为0千卡实际摄入。",
+    "用户明确当天没有运动，按确认休息日记录。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 0,
+    "intake_kcal_booked": 0,
+    "protein_g_estimate": 0,
+    "fat_g_estimate": 0,
+    "carbs_g_estimate": 0,
+    "intake_kcal_estimate": 0,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 0,
+      "fat_g": 0,
+      "carbs_g": 0
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      0,
+      0
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2226.3,
+    "estimated_deficit_kcal": 2226.3,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 0,
+    "protein_by_meal_g": {},
+    "warnings": [
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "当天饮食未记录；当前0摄入仅表示没有可计入条目，不能作为真实摄入或热量缺口使用。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
