@@ -1,4 +1,5 @@
 """Run the real scheduler against local Git remotes and a fake AI process."""
+import json
 import os
 from pathlib import Path
 import shutil
@@ -25,6 +26,10 @@ class DailyReviewRecoveryTests(unittest.TestCase):
         self.remote = self.root / 'remote.git'
         self.git('clone', '--quiet', '--no-hardlinks', str(ROOT), str(self.repo), cwd=self.root)
         shutil.copyfile(SCRIPT, self.repo / 'fitness_logs/automation/daily_review.sh')
+        target_path = self.repo / REL
+        target = json.loads(target_path.read_text())
+        target['daily_summary']['warnings'] = ['stale test fixture']
+        target_path.write_text(json.dumps(target, ensure_ascii=False, indent=2) + '\n')
         self.git('config', 'user.name', 'Scheduler test')
         self.git('config', 'user.email', 'test@example.invalid')
         self.git('add', '.')
