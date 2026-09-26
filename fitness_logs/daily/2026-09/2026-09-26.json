@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-09-26",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed that food and training for the day are finished.",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -122,9 +122,50 @@
         "reason": "包装营养标签与食用量明确，不额外加成"
       },
       "uncertainty": "按整盒100克和包装标签直接换算。"
+    },
+    {
+      "id": "dinner_chicken_rice_1",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "Chicken-leg rice meal with napa cabbage and cucumber; both chicken legs eaten without skin",
+      "reported_text": "Dinner photo; chicken legs without skin; vegetables corrected to napa cabbage and cucumber",
+      "source_kind": "photo_estimate",
+      "basis": "Estimated from the meal photo and the user's correction of the vegetable items.",
+      "kcal_base_estimate": 850,
+      "kcal_booked": 935,
+      "kcal_range": [
+        720,
+        1080
+      ],
+      "protein_g_estimate": 65,
+      "fat_g_estimate": 40.5,
+      "carbs_g_estimate": 95,
+      "margin": {
+        "added_fat_g": 9.4444444444,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Cooking oil was not measured."
+      },
+      "uncertainty": "Rice weight, edible chicken amount, and cooking oil were not weighed; leftovers can be corrected later."
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-09-26-cycle-1",
+      "event_id": "2026-09-26-cycle-1",
+      "type": "Indoor cycling",
+      "duration": "1:01:28",
+      "duration_seconds": 3688,
+      "elapsed_duration": "1:01:34",
+      "energy_scope": "session_active",
+      "source": "Apple Watch workout screenshot for 2026-09-26 20:30-21:32",
+      "active_kcal": 626,
+      "total_kcal": 740,
+      "average_heart_rate_bpm": 143,
+      "is_estimated": false,
+      "note": "Only active workout calories are used by the repository energy model."
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -135,50 +176,49 @@
   "notes": [
     "2026-09-26空腹体重91.55公斤；较最近一次09-24的90.40公斤高1.15公斤，09-25聚餐日体重缺测。",
     "早餐手撕猪肉干140克，沿用09-23同款包装标签换算。",
-    "2026-09-26加餐牛胸口脆片1盒100克，按本次包装标签直接记录。"
+    "2026-09-26加餐牛胸口脆片1盒100克，按本次包装标签直接记录。",
+    "2026-09-26 dinner correction: vegetables are napa cabbage and cucumber.",
+    "2026-09-26 indoor cycling: 61m28s, active 626 kcal, total 740 kcal, average HR 143 bpm; day closed afterward."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1305.401529636711,
-    "intake_kcal_booked": 1305.401529636711,
-    "protein_g_estimate": 121.98,
-    "fat_g_estimate": 81.04,
-    "carbs_g_estimate": 11.14,
-    "intake_kcal_estimate": 1305.401529636711,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 2155.401529636711,
+    "intake_kcal_booked": 2240.401529636711,
+    "protein_g_estimate": 186.98,
+    "fat_g_estimate": 121.54,
+    "carbs_g_estimate": 106.14,
+    "intake_kcal_estimate": 2240.401529636711,
+    "food_margin_kcal": 85,
     "base_macro_estimates": {
-      "protein_g": 121.98,
-      "fat_g": 81.04,
-      "carbs_g": 11.14
+      "protein_g": 186.98,
+      "fat_g": 112.0955555556,
+      "carbs_g": 106.14
     },
-    "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "completed_day_base_intake_balance_kcal": 554.198470363289,
+    "training_discount_kcal": 156.5,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1305.401529636711,
-      1305.401529636711
+      2025.401529636711,
+      2385.401529636711
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2240.1,
-    "estimated_deficit_kcal": 934.6984703632888,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 626,
+    "exercise_adjusted_kcal": 469.5,
+    "tdee_kcal_estimate": 2709.6,
+    "estimated_deficit_kcal": 469.198470363289,
+    "completed_day_estimated_deficit_kcal": 469.198470363289,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
-    "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "早餐": 84.98,
-      "加餐": 37
+      "dinner": 65,
+      "加餐": 37,
+      "早餐": 84.98
     },
-    "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
-    ],
+    "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
@@ -194,7 +234,7 @@
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 1597,
     "sodium_mg_entries_with_data": 2,
-    "sodium_mg_coverage_complete": true,
+    "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
