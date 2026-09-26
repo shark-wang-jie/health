@@ -1,0 +1,163 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-26",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重91.55公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 91.55,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 91.55,
+    "bmr_weight_date": "2026-09-26",
+    "bmr_kcal": 1866.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_handtorn_pork_jerky_140g",
+      "status": "consumed",
+      "meal": "早餐",
+      "description": "手撕猪肉干140克",
+      "reported_text": "早上140g猪肉干",
+      "source_kind": "matched_default",
+      "basis": "沿用2026-09-23用户提供的同款包装标签：每100克能量2082千焦、蛋白质60.7克、脂肪28.1克、碳水0.6克、钠745毫克；本次140克按1.4倍换算。",
+      "quantity_g": 140,
+      "kcal_base_estimate": 696.6539196940726,
+      "kcal_booked": 696.6539196940726,
+      "kcal_range": [
+        696.6539196940726,
+        696.6539196940726
+      ],
+      "protein_g_estimate": 84.98,
+      "fat_g_estimate": 39.34,
+      "carbs_g_estimate": 0.84,
+      "sodium_mg_estimate": 1043,
+      "nutrition_per_100g": {
+        "energy_kj": 2082,
+        "protein_g": 60.7,
+        "fat_g": 28.1,
+        "saturated_fat_g": 13.1,
+        "carbs_g": 0.6,
+        "sugar_g": 0,
+        "sodium_mg": 745
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用同款明确包装标签，不额外加成"
+      },
+      "uncertainty": "按此前同款包装标签与本次140克直接换算；若今天不是同一款，以本次包装为准。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-26空腹体重91.55公斤；较最近一次09-24的90.40公斤高1.15公斤，09-25聚餐日体重缺测。",
+    "早餐手撕猪肉干140克，沿用09-23同款包装标签换算。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 696.6539196940726,
+    "intake_kcal_booked": 696.6539196940726,
+    "protein_g_estimate": 84.98,
+    "fat_g_estimate": 39.34,
+    "carbs_g_estimate": 0.84,
+    "intake_kcal_estimate": 696.6539196940726,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 84.98,
+      "fat_g": 39.34,
+      "carbs_g": 0.84
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      696.6539196940726,
+      696.6539196940726
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2240.1,
+    "estimated_deficit_kcal": 1543.4460803059274,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 1,
+    "protein_by_meal_g": {
+      "早餐": 84.98
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1043,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
