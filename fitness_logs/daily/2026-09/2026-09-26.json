@@ -85,6 +85,43 @@
         "reason": "沿用同款明确包装标签，不额外加成"
       },
       "uncertainty": "按此前同款包装标签与本次140克直接换算；若今天不是同一款，以本次包装为准。"
+    },
+    {
+      "id": "snack_beef_chest_crisps_100g",
+      "status": "consumed",
+      "meal": "加餐",
+      "description": "牛胸口脆片1盒，100克，芝士咸蛋黄味",
+      "reported_text": "加餐一盒牛胸口",
+      "source_kind": "label_known_quantity",
+      "basis": "用户提供包装标签，净含量100克；每100克：能量2547千焦、蛋白质37.0克、脂肪41.7克、饱和脂肪14.0克、碳水10.3克、糖3.8克、钠554毫克。",
+      "quantity_g": 100,
+      "kcal_base_estimate": 608.7476099426386,
+      "kcal_booked": 608.7476099426386,
+      "kcal_range": [
+        608.7476099426386,
+        608.7476099426386
+      ],
+      "protein_g_estimate": 37,
+      "fat_g_estimate": 41.7,
+      "carbs_g_estimate": 10.3,
+      "sugar_g_estimate": 3.8,
+      "sodium_mg_estimate": 554,
+      "nutrition_per_100g": {
+        "energy_kj": 2547,
+        "protein_g": 37,
+        "fat_g": 41.7,
+        "saturated_fat_g": 14,
+        "carbs_g": 10.3,
+        "sugar_g": 3.8,
+        "sodium_mg": 554
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "包装营养标签与食用量明确，不额外加成"
+      },
+      "uncertainty": "按整盒100克和包装标签直接换算。"
     }
   ],
   "exercise_entries": [],
@@ -97,32 +134,33 @@
   "corrections": [],
   "notes": [
     "2026-09-26空腹体重91.55公斤；较最近一次09-24的90.40公斤高1.15公斤，09-25聚餐日体重缺测。",
-    "早餐手撕猪肉干140克，沿用09-23同款包装标签换算。"
+    "早餐手撕猪肉干140克，沿用09-23同款包装标签换算。",
+    "2026-09-26加餐牛胸口脆片1盒100克，按本次包装标签直接记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 696.6539196940726,
-    "intake_kcal_booked": 696.6539196940726,
-    "protein_g_estimate": 84.98,
-    "fat_g_estimate": 39.34,
-    "carbs_g_estimate": 0.84,
-    "intake_kcal_estimate": 696.6539196940726,
+    "intake_kcal_base_estimate": 1305.401529636711,
+    "intake_kcal_booked": 1305.401529636711,
+    "protein_g_estimate": 121.98,
+    "fat_g_estimate": 81.04,
+    "carbs_g_estimate": 11.14,
+    "intake_kcal_estimate": 1305.401529636711,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 84.98,
-      "fat_g": 39.34,
-      "carbs_g": 0.84
+      "protein_g": 121.98,
+      "fat_g": 81.04,
+      "carbs_g": 11.14
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      696.6539196940726,
-      696.6539196940726
+      1305.401529636711,
+      1305.401529636711
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2240.1,
-    "estimated_deficit_kcal": 1543.4460803059274,
+    "estimated_deficit_kcal": 934.6984703632888,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -131,9 +169,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 2,
     "protein_by_meal_g": {
-      "早餐": 84.98
+      "早餐": 84.98,
+      "加餐": 37
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -153,8 +192,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1043,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 1597,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
