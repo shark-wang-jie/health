@@ -5,7 +5,7 @@
   "record_status": "open",
   "food_log_closed": false,
   "closure_basis": null,
-  "food_coverage": "unknown",
+  "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [],
@@ -49,7 +49,62 @@
     "deficit_min_kcal": 400,
     "deficit_max_kcal": 600
   },
-  "intake_entries": [],
+  "intake_entries": [
+    {
+      "id": "lunch_beef_crisps_100g",
+      "status": "consumed",
+      "meal": "午餐",
+      "description": "牛胸口脆片1盒，100克",
+      "reported_text": "午饭一盒牛肉脆",
+      "source_kind": "label_known_quantity",
+      "basis": "包装净含量100克；每100克能量2337千焦、蛋白质42.8克、脂肪37.8克、碳水12.4克、钠1216毫克。",
+      "quantity_g": 100,
+      "kcal_base_estimate": 558.5564053537285,
+      "kcal_booked": 558.5564053537285,
+      "kcal_range": [
+        558.5564053537285,
+        558.5564053537285
+      ],
+      "protein_g_estimate": 42.8,
+      "fat_g_estimate": 37.8,
+      "carbs_g_estimate": 12.4,
+      "sodium_mg_estimate": 1216,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签和食用量明确，不额外加成"
+      },
+      "uncertainty": "按整盒100克直接换算。"
+    },
+    {
+      "id": "afternoon_beef_jerky_90g",
+      "status": "consumed",
+      "meal": "下午加餐",
+      "description": "牛肉干90克",
+      "reported_text": "下午加餐90g牛肉干",
+      "source_kind": "label_known_quantity",
+      "basis": "包装每100克能量1092千焦、蛋白质45.3克、脂肪8.0克、碳水1.5克、钠631毫克；本次90克按0.9倍换算。",
+      "quantity_g": 90,
+      "kcal_base_estimate": 234.8948374760994,
+      "kcal_booked": 234.8948374760994,
+      "kcal_range": [
+        234.8948374760994,
+        234.8948374760994
+      ],
+      "protein_g_estimate": 40.77,
+      "fat_g_estimate": 7.2,
+      "carbs_g_estimate": 1.35,
+      "sodium_mg_estimate": 567.9,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签和食用量明确，不额外加成"
+      },
+      "uncertainty": "按包装标签和90克直接换算。"
+    }
+  ],
   "exercise_entries": [],
   "recovery": {
     "hunger": null,
@@ -60,32 +115,34 @@
   "corrections": [],
   "notes": [
     "2026-09-27空腹体重90.35公斤。",
-    "较09-26的91.55公斤低1.20公斤；单日变化只记录，不直接解释为脂肪变化。"
+    "较09-26的91.55公斤低1.20公斤；单日变化只记录，不直接解释为脂肪变化。",
+    "2026-09-27午饭牛胸口脆片100克，按包装标签记录。",
+    "2026-09-27下午加餐牛肉干90克，按包装标签记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 0,
-    "intake_kcal_booked": 0,
-    "protein_g_estimate": 0,
-    "fat_g_estimate": 0,
-    "carbs_g_estimate": 0,
-    "intake_kcal_estimate": 0,
+    "intake_kcal_base_estimate": 793.4512428298278,
+    "intake_kcal_booked": 793.4512428298278,
+    "protein_g_estimate": 83.57,
+    "fat_g_estimate": 45,
+    "carbs_g_estimate": 13.75,
+    "intake_kcal_estimate": 793.4512428298278,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 0,
-      "fat_g": 0,
-      "carbs_g": 0
+      "protein_g": 83.57,
+      "fat_g": 45,
+      "carbs_g": 13.75
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      0,
-      0
+      793.4512428298278,
+      793.4512428298278
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2225.7,
-    "estimated_deficit_kcal": 2225.7,
+    "estimated_deficit_kcal": 1432.248757170172,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -94,8 +151,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 0,
-    "protein_by_meal_g": {},
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "午餐": 42.8,
+      "下午加餐": 40.77
+    },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -114,9 +174,9 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
-    "sodium_mg_coverage_complete": false,
+    "sodium_mg_known_sum": 1783.9,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
