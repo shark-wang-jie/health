@@ -108,26 +108,26 @@
       "id": "dinner_photo_meal_1",
       "status": "consumed_estimated",
       "meal": "dinner",
-      "description": "Photo dinner meal: rice, braised chicken pieces, napa cabbage and cauliflower",
-      "reported_text": "dinner",
+      "description": "Dinner: rice, two skinless braised chicken pieces, napa cabbage and cauliflower",
+      "reported_text": "Dinner; correction: chicken eaten without skin",
       "source_kind": "photo_estimate",
-      "basis": "Estimated from the uploaded dinner photo.",
-      "kcal_base_estimate": 880,
-      "kcal_booked": 970,
+      "basis": "Estimated from the dinner photo; user clarified that both chicken pieces were eaten without skin.",
+      "kcal_base_estimate": 800,
+      "kcal_booked": 890,
       "kcal_range": [
-        720,
-        1120
+        660,
+        1040
       ],
       "protein_g_estimate": 58,
-      "fat_g_estimate": 39,
+      "fat_g_estimate": 30,
       "carbs_g_estimate": 95,
       "margin": {
         "added_fat_g": 10,
         "added_carbs_g": 0,
         "already_in_base": false,
-        "reason": "Cooking oil and exact portions were not measured."
+        "reason": "Cooking oil was not measured; keep about 90 kcal bookkeeping margin."
       },
-      "uncertainty": "Rice, chicken edible portion and cooking oil were not weighed; details can be corrected later."
+      "uncertainty": "Rice weight, edible skinless chicken amount, and cooking oil were not weighed."
     }
   ],
   "exercise_entries": [],
@@ -137,38 +137,95 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "timestamp": "2026-09-27T18:14:00+08:00",
+      "entry_id": "dinner_photo_meal_1",
+      "reason": "User clarified chicken skin was not eaten; corrected the existing dinner entry.",
+      "old_entry": {
+        "id": "dinner_photo_meal_1",
+        "status": "consumed_estimated",
+        "meal": "dinner",
+        "description": "Photo dinner meal: rice, braised chicken pieces, napa cabbage and cauliflower",
+        "reported_text": "dinner",
+        "source_kind": "photo_estimate",
+        "basis": "Estimated from the uploaded dinner photo.",
+        "kcal_base_estimate": 880,
+        "kcal_booked": 970,
+        "kcal_range": [
+          720,
+          1120
+        ],
+        "protein_g_estimate": 58,
+        "fat_g_estimate": 39,
+        "carbs_g_estimate": 95,
+        "margin": {
+          "added_fat_g": 10,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "Cooking oil and exact portions were not measured."
+        },
+        "uncertainty": "Rice, chicken edible portion and cooking oil were not weighed; details can be corrected later."
+      },
+      "new_entry": {
+        "id": "dinner_photo_meal_1",
+        "status": "consumed_estimated",
+        "meal": "dinner",
+        "description": "Dinner: rice, two skinless braised chicken pieces, napa cabbage and cauliflower",
+        "reported_text": "Dinner; correction: chicken eaten without skin",
+        "source_kind": "photo_estimate",
+        "basis": "Estimated from the dinner photo; user clarified that both chicken pieces were eaten without skin.",
+        "kcal_base_estimate": 800,
+        "kcal_booked": 890,
+        "kcal_range": [
+          660,
+          1040
+        ],
+        "protein_g_estimate": 58,
+        "fat_g_estimate": 30,
+        "carbs_g_estimate": 95,
+        "margin": {
+          "added_fat_g": 10,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "Cooking oil was not measured; keep about 90 kcal bookkeeping margin."
+        },
+        "uncertainty": "Rice weight, edible skinless chicken amount, and cooking oil were not weighed."
+      }
+    }
+  ],
   "notes": [
     "2026-09-27空腹体重90.35公斤。",
     "较09-26的91.55公斤低1.20公斤；单日变化只记录，不直接解释为脂肪变化。",
     "2026-09-27午饭牛胸口脆片100克，按包装标签记录。",
     "2026-09-27下午加餐牛肉干90克，按包装标签记录。",
-    "2026-09-27 dinner added from photo estimate."
+    "2026-09-27 dinner added from photo estimate.",
+    "2026-09-27 dinner correction: chicken skin not eaten; calories and fat reduced."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1673.4512428298278,
-    "intake_kcal_booked": 1763.4512428298278,
+    "intake_kcal_base_estimate": 1593.4512428298278,
+    "intake_kcal_booked": 1683.4512428298278,
     "protein_g_estimate": 141.57,
-    "fat_g_estimate": 84,
+    "fat_g_estimate": 75,
     "carbs_g_estimate": 108.75,
-    "intake_kcal_estimate": 1763.4512428298278,
+    "intake_kcal_estimate": 1683.4512428298278,
     "food_margin_kcal": 90,
     "base_macro_estimates": {
       "protein_g": 141.57,
-      "fat_g": 74,
+      "fat_g": 65,
       "carbs_g": 108.75
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1513.4512428298278,
-      1913.4512428298278
+      1453.4512428298278,
+      1833.4512428298278
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2225.7,
-    "estimated_deficit_kcal": 462.2487571701722,
+    "estimated_deficit_kcal": 542.2487571701722,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -181,7 +238,7 @@
     "protein_by_meal_g": {
       "午餐": 42.8,
       "下午加餐": 40.77,
-      "dinner": 58
+      "晚餐": 58
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
