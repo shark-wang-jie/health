@@ -6,16 +6,16 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
-  "weight_measurement_note": "\u7528\u6237\u62a5\u544a\u65e9\u4e0a\u7a7a\u8179\u4f53\u91cd89.85\u516c\u65a4\u3002",
+  "weight_measurement_note": "用户报告早上空腹体重89.85公斤。",
   "plan_version": "2026-09-08-v3.2",
   "morning_weight_kg": 89.85,
   "profile_snapshot": {
-    "sex": "\u7537\u6027",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.85,
@@ -53,11 +53,11 @@
     {
       "id": "breakfast_yogurt_concentrated_120g",
       "status": "consumed",
-      "meal": "\u65e9\u9910",
-      "description": "\u4e00\u676f\u6d53\u7f29\u539f\u5473\u53d1\u9175\u4e73120\u514b",
-      "reported_text": "\u65e9\u996d\u4e00\u676f\u6d53\u7f29\u9178\u5976",
+      "meal": "早餐",
+      "description": "一杯浓缩原味发酵乳120克",
+      "reported_text": "早饭一杯浓缩酸奶",
       "source_kind": "matched_default",
-      "basis": "\u6cbf\u7528food_catalog.json\u56fa\u5b9a\u540c\u6b3e\u6d53\u7f29\u539f\u5473\u53d1\u9175\u4e73120\u514b\u3002",
+      "basis": "沿用food_catalog.json固定同款浓缩原味发酵乳120克。",
       "catalog_id": "yogurt_concentrated_120g",
       "catalog_version": "2026-09-08-v1",
       "servings": 1,
@@ -74,9 +74,9 @@
         "added_fat_g": 0,
         "added_carbs_g": 0,
         "already_in_base": false,
-        "reason": "\u6cbf\u7528\u56fa\u5b9a\u89c4\u683c\u57fa\u7840\u53e3\u5f84\uff0c\u4e0d\u673a\u68b0\u52a0\u6210"
+        "reason": "沿用固定规格基础口径，不机械加成"
       },
-      "uncertainty": "\u6cbf\u7528\u5386\u53f2\u9ed8\u8ba4\u4efd\u91cf\uff0c\u5b9e\u9645\u5403\u4e0b\u4efd\u91cf\u4f18\u5148\u3002"
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先。"
     },
     {
       "id": "lunch_shaxian_1",
@@ -117,9 +117,61 @@
         73,
         118
       ]
+    },
+    {
+      "id": "afternoon_handtorn_pork_jerky_120g",
+      "status": "consumed",
+      "meal": "下午加餐",
+      "description": "手撕猪肉干120克",
+      "reported_text": "下午加餐一百二十克猪肉干",
+      "source_kind": "label_known_quantity",
+      "basis": "沿用此前同款包装标签：每100克能量2082千焦、蛋白质60.7克、脂肪28.1克、碳水0.6克、钠745毫克；本次120克按1.2倍换算。",
+      "quantity_g": 120,
+      "kcal_base_estimate": 597.131931166348,
+      "kcal_booked": 597.131931166348,
+      "kcal_range": [
+        597.131931166348,
+        597.131931166348
+      ],
+      "protein_g_estimate": 72.84,
+      "fat_g_estimate": 33.72,
+      "carbs_g_estimate": 0.72,
+      "sodium_mg_estimate": 894,
+      "nutrition_per_100g": {
+        "energy_kj": 2082,
+        "protein_g": 60.7,
+        "fat_g": 28.1,
+        "saturated_fat_g": 13.1,
+        "carbs_g": 0.6,
+        "sugar_g": 0,
+        "sodium_mg": 745
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "包装营养标签和食用重量明确，不额外加成"
+      },
+      "uncertainty": "按此前同款包装标签与本次120克直接换算。"
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-09-28-strength-1",
+      "event_id": "2026-09-28-strength-1",
+      "type": "传统力量训练",
+      "duration": "1小时00分57秒",
+      "duration_seconds": 3657,
+      "elapsed_duration": "1小时01分00秒",
+      "energy_scope": "session_active",
+      "source": "用户提供Apple Watch训练截图：2026-09-28 17:37–18:38，传统力量训练",
+      "active_kcal": 445,
+      "total_kcal": 555,
+      "average_heart_rate_bpm": 123,
+      "is_estimated": false,
+      "note": "Apple Watch显示动态445千卡、总555千卡、平均心率123次/分；按项目规则只将动态千卡计入训练消耗。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -128,53 +180,56 @@
   },
   "corrections": [],
   "notes": [
-    "2026-09-28\u7a7a\u8179\u4f53\u91cd89.85\u516c\u65a4\u3002",
-    "\u8f8309-27\u768490.35\u516c\u65a4\u4f4e0.50\u516c\u65a4\uff1b\u5355\u65e5\u53d8\u5316\u53ea\u8bb0\u5f55\uff0c\u4e0d\u76f4\u63a5\u89e3\u91ca\u4e3a\u8102\u80aa\u53d8\u5316\u3002",
-    "\u65e9\u9910\u6d53\u7f29\u9178\u5976\u6309food_catalog.json\u56fa\u5b9a120\u514b\u540c\u6b3e\u8bb0\u5f55\u3002"
+    "2026-09-28空腹体重89.85公斤。",
+    "较09-27的90.35公斤低0.50公斤；单日变化只记录，不直接解释为脂肪变化。",
+    "早餐浓缩酸奶按food_catalog.json固定120克同款记录。",
+    "2026-09-28下午加餐手撕猪肉干120克，沿用此前同款包装标签。",
+    "2026-09-28完成传统力量训练1小时00分57秒，Apple Watch动态445千卡、总555千卡、平均心率123次/分。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1030,
-    "intake_kcal_booked": 1118.5,
-    "protein_g_estimate": 80.1,
-    "fat_g_estimate": 45.23333333333334,
-    "carbs_g_estimate": 98.8,
-    "intake_kcal_estimate": 1118.5,
+    "intake_kcal_base_estimate": 1627.131931166348,
+    "intake_kcal_booked": 1715.631931166348,
+    "protein_g_estimate": 152.94,
+    "fat_g_estimate": 78.95333333333335,
+    "carbs_g_estimate": 99.52,
+    "intake_kcal_estimate": 1715.631931166348,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 80.1,
-      "fat_g": 35.4,
-      "carbs_g": 98.8
+      "protein_g": 152.94,
+      "fat_g": 69.12,
+      "carbs_g": 99.52
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
-    "assumption_note": "\u57fa\u7840\u5b8f\u91cf\u4e0e\u8bb0\u8d26\u5b8f\u91cf\u533a\u5206\u9644\u52a0\u4f59\u91cf\uff1b\u4e24\u4e2a\u6444\u5165\u53e3\u5f84\u7684\u80fd\u91cf\u5dee\u989d\u662f\u6a21\u578b\u5bf9\u7167\uff0c\u4e0d\u662f\u53ef\u4fe1\u533a\u95f4\u6216\u771f\u5b9e\u4e0a\u4e0b\u754c\u3002",
+    "training_discount_kcal": 111.25,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      855,
-      1225
+      1452.131931166348,
+      1822.131931166348
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 1101.2,
+    "exercise_active_kcal": 445,
+    "exercise_adjusted_kcal": 333.75,
+    "tdee_kcal_estimate": 2553.45,
+    "estimated_deficit_kcal": 837.818068833652,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "\u65e9\u9910": 9.6,
-      "lunch": 70.5
+      "早餐": 9.6,
+      "lunch": 70.5,
+      "下午加餐": 72.84
     },
     "warnings": [
-      "\u8bad\u7ec3\u72b6\u6001\u672a\u786e\u8ba4\uff1a\u4ec5\u6682\u6309\u57fa\u7840\u6d3b\u52a8\u4f30\u7b97\uff0c\u4e0d\u7b49\u4e8e\u786e\u8ba4\u4f11\u606f",
-      "\u996e\u98df\u5b8c\u6574\u6027\u672a\u786e\u8ba4\uff1a\u5408\u8ba1\u4ec5\u542b\u5df2\u8bb0\u5f55\u6444\u5165",
-      "\u5c1a\u672a\u5c01\u8d26\uff1a\u5168\u5929\u6a21\u578b\u6d88\u8017\u51cf\u5df2\u8bb0\u5f55\u6444\u5165\u53ea\u662f\u6682\u7b97\u5dee\u989d"
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
-    "interpretation": "\u6309\u504f\u9ad8\u8bb0\u8d26\u6444\u5165\u4f30\u7b97\u7684\u7f3a\u53e3\uff1b\u975e\u5b9e\u6d4b\u503c\u6216\u771f\u5b9e\u7f3a\u53e3\u4e0b\u9650\u3002\u98df\u7269\u8303\u56f4\u4e0d\u5305\u542b\u5b8c\u6574\u6d88\u8017\u8bef\u5dee\u3002",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -187,8 +242,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 894,
+    "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
