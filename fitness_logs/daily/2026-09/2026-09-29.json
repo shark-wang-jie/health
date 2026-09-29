@@ -101,6 +101,72 @@
         "reason": "规格未知，用范围表达，不额外叠加余量"
       },
       "uncertainty": "实际小包净含量和品牌配方未知；若后续有包装重量或营养标签，以实际信息更正。"
+    },
+    {
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "meal": "午餐",
+      "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+      "reported_text": "中午沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "basis": "沿用固定同款沙县鸡腿饭口径。",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1,
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "烹调用油余量"
+      },
+      "uncertainty": "沿用已确认固定同款；如有剩余可后续更正。",
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
+    },
+    {
+      "id": "afternoon_salted_egg_waffle_small_pack_2",
+      "status": "consumed_estimated",
+      "meal": "下午加餐",
+      "description": "咸蛋黄味三明治华夫饼1小包，沿用早上同款暂估约35克",
+      "reported_text": "睡醒又吃了个早上的华夫饼",
+      "source_kind": "matched_default",
+      "basis": "明确为早上同款，沿用早上暂估口径。",
+      "quantity_g_estimate": 35,
+      "kcal_base_estimate": 155,
+      "kcal_booked": 155,
+      "kcal_range": [
+        120,
+        200
+      ],
+      "protein_g_estimate": 3,
+      "fat_g_estimate": 7,
+      "carbs_g_estimate": 20,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "规格未知，用范围表达"
+      },
+      "uncertainty": "实际净含量和营养标签未确认；有包装信息后一起修正两次同款记录。"
     }
   ],
   "exercise_entries": [],
@@ -113,32 +179,33 @@
   "corrections": [],
   "notes": [
     "2026-09-29空腹体重89.85公斤，与09-28相同。",
-    "早餐两项均未提供包装克数/标签：核桃仁暂按25克，咸蛋黄味三明治华夫饼暂按35克估算。"
+    "早餐两项均未提供包装克数/标签：核桃仁暂按25克，咸蛋黄味三明治华夫饼暂按35克估算。",
+    "2026-09-29午餐沙县鸡腿饭按固定同款记录；睡醒后又吃1小包早上同款咸蛋黄三明治华夫饼。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 320,
-    "intake_kcal_booked": 320,
-    "protein_g_estimate": 6.8,
-    "fat_g_estimate": 23.3,
-    "carbs_g_estimate": 23.4,
-    "intake_kcal_estimate": 320,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1360,
+    "intake_kcal_booked": 1448.5,
+    "protein_g_estimate": 80.3,
+    "fat_g_estimate": 67.13333333333334,
+    "carbs_g_estimate": 134.4,
+    "intake_kcal_estimate": 1448.5,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 6.8,
-      "fat_g": 23.3,
-      "carbs_g": 23.4
+      "protein_g": 80.3,
+      "fat_g": 57.3,
+      "carbs_g": 134.4
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      250,
-      400
+      1080,
+      1680
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 1899.7,
+    "estimated_deficit_kcal": 771.2,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -147,14 +214,16 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "早餐": 6.8
+      "早餐": 6.8,
+      "午餐": 70.5,
+      "下午加餐": 3
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "早餐两项均未提供净含量/营养标签，当前按常见小包装规格估算",
+      "两次同款华夫饼和核桃仁尚未提供净含量/营养标签，当前按常见小包装规格估算",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
