@@ -1,0 +1,180 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-29",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重89.85公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 89.85,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.85,
+    "bmr_weight_date": "2026-09-29",
+    "bmr_kcal": 1849.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_walnuts_small_pack_1",
+      "status": "consumed_estimated",
+      "meal": "早餐",
+      "description": "核桃仁1小包，暂按约25克估算",
+      "reported_text": "早饭一小包核桃仁",
+      "source_kind": "database_estimate",
+      "basis": "仓库未找到此前同款记录，用户未提供包装净含量或营养标签；按常见小包装核桃仁约25克估算。",
+      "quantity_g_estimate": 25,
+      "kcal_base_estimate": 165,
+      "kcal_booked": 165,
+      "kcal_range": [
+        130,
+        200
+      ],
+      "protein_g_estimate": 3.8,
+      "fat_g_estimate": 16.3,
+      "carbs_g_estimate": 3.4,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "规格未知，用范围表达，不额外叠加余量"
+      },
+      "uncertainty": "实际小包净含量未知；若后续有包装重量或营养标签，以实际信息更正。"
+    },
+    {
+      "id": "breakfast_salted_egg_waffle_small_pack_1",
+      "status": "consumed_estimated",
+      "meal": "早餐",
+      "description": "咸蛋黄味三明治华夫饼1小包，暂按约35克估算",
+      "reported_text": "一小包咸蛋黄味三明治华夫饼",
+      "source_kind": "database_estimate",
+      "basis": "仓库未找到此前同款记录，用户未提供包装净含量或营养标签；按常见小包装夹心华夫饼约35克估算。",
+      "quantity_g_estimate": 35,
+      "kcal_base_estimate": 155,
+      "kcal_booked": 155,
+      "kcal_range": [
+        120,
+        200
+      ],
+      "protein_g_estimate": 3,
+      "fat_g_estimate": 7,
+      "carbs_g_estimate": 20,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "规格未知，用范围表达，不额外叠加余量"
+      },
+      "uncertainty": "实际小包净含量和品牌配方未知；若后续有包装重量或营养标签，以实际信息更正。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-29空腹体重89.85公斤，与09-28相同。",
+    "早餐两项均未提供包装克数/标签：核桃仁暂按25克，咸蛋黄味三明治华夫饼暂按35克估算。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 320,
+    "intake_kcal_booked": 320,
+    "protein_g_estimate": 6.8,
+    "fat_g_estimate": 23.3,
+    "carbs_g_estimate": 23.4,
+    "intake_kcal_estimate": 320,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 6.8,
+      "fat_g": 23.3,
+      "carbs_g": 23.4
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      250,
+      400
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2219.7,
+    "estimated_deficit_kcal": 1899.7,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "早餐": 6.8
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "早餐两项均未提供净含量/营养标签，当前按常见小包装规格估算",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
