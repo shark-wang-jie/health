@@ -1,0 +1,191 @@
+{
+  "schema_version": 3,
+  "date": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告早上空腹体重89.45公斤。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 89.45,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.45,
+    "bmr_weight_date": "2026-09-30",
+    "bmr_kcal": 1845.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_yogurt_concentrated_120g",
+      "status": "consumed",
+      "meal": "早餐",
+      "description": "一杯浓缩原味发酵乳120克",
+      "reported_text": "早饭一杯浓缩酸奶",
+      "source_kind": "matched_default",
+      "basis": "沿用food_catalog.json固定同款浓缩原味发酵乳120克。",
+      "catalog_id": "yogurt_concentrated_120g",
+      "catalog_version": "2026-09-08-v1",
+      "servings": 1,
+      "kcal_base_estimate": 145,
+      "kcal_booked": 145,
+      "kcal_range": [
+        145,
+        145
+      ],
+      "protein_g_estimate": 9.6,
+      "fat_g_estimate": 8.4,
+      "carbs_g_estimate": 7.8,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "沿用历史默认份量，实际吃下份量优先。"
+    },
+    {
+      "id": "breakfast_beef_jerky_90g",
+      "status": "consumed",
+      "meal": "早餐",
+      "description": "牛肉干90克",
+      "reported_text": "一片90g牛肉干，参考上次记录的90g牛肉干",
+      "source_kind": "label_known_quantity",
+      "basis": "沿用2026-09-27同款记录：每100克能量1092千焦、蛋白质45.3克、脂肪8.0克、碳水1.5克、钠631毫克；本次90克按0.9倍换算。",
+      "quantity_g": 90,
+      "kcal_base_estimate": 234.8948374760994,
+      "kcal_booked": 234.8948374760994,
+      "kcal_range": [
+        234.8948374760994,
+        234.8948374760994
+      ],
+      "protein_g_estimate": 40.77,
+      "fat_g_estimate": 7.2,
+      "carbs_g_estimate": 1.35,
+      "sodium_mg_estimate": 567.9,
+      "nutrition_per_100g": {
+        "energy_kj": 1092,
+        "protein_g": 45.3,
+        "fat_g": 8,
+        "saturated_fat_g": 3.5,
+        "carbs_g": 1.5,
+        "sugar_g": 0,
+        "sodium_mg": 631
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签和食用量明确，不额外加成"
+      },
+      "uncertainty": "按此前同款包装标签和90克直接换算。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-09-30空腹体重89.45公斤，较09-29的89.85公斤低0.40公斤；单日变化只记录，不直接解释为脂肪变化。",
+    "早餐浓缩酸奶按固定120克同款记录；90克牛肉干沿用2026-09-27同款包装标签。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 379.8948374760994,
+    "intake_kcal_booked": 379.8948374760994,
+    "protein_g_estimate": 50.37,
+    "fat_g_estimate": 15.6,
+    "carbs_g_estimate": 9.15,
+    "intake_kcal_estimate": 379.8948374760994,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 50.37,
+      "fat_g": 15.6,
+      "carbs_g": 9.15
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      379.8948374760994,
+      379.8948374760994
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2214.9,
+    "estimated_deficit_kcal": 1835.0051625239005,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "早餐": 50.37
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "当前仅为已记录摄入的暂算，不代表全天最终能量缺口。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 567.9,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
