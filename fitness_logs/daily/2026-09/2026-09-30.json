@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-09-30",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed today's food and training are complete.",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -247,6 +247,21 @@
       "average_heart_rate_bpm": 126,
       "is_estimated": false,
       "note": "Use active calories only for the training energy model."
+    },
+    {
+      "id": "2026-09-30-cycle-1",
+      "event_id": "2026-09-30-cycle-1",
+      "type": "indoor_cycling",
+      "duration": "42:14",
+      "duration_seconds": 2534,
+      "elapsed_duration": "42:16",
+      "energy_scope": "session_active",
+      "source": "Apple Watch screenshot, 2026-09-30 20:29-21:11",
+      "active_kcal": 417,
+      "total_kcal": 495,
+      "average_heart_rate_bpm": 143,
+      "is_estimated": false,
+      "note": "Use active calories only for the training energy model."
     }
   ],
   "recovery": {
@@ -259,7 +274,8 @@
   "notes": [
     "2026-09-30空腹体重89.45公斤，较09-29的89.85公斤低0.40公斤；单日变化只记录，不直接解释为脂肪变化。",
     "早餐浓缩酸奶按固定120克同款记录；90克牛肉干沿用2026-09-27同款包装标签。",
-    "2026-09-30 strength workout logged from Apple Watch; post-workout rice ball and eggs recorded."
+    "2026-09-30 strength workout logged from Apple Watch; post-workout rice ball and eggs recorded.",
+    "2026-09-30 indoor cycling: 42:14, 417 active kcal, 495 total kcal, avg HR 143 bpm. Day closed by user confirmation."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1662.8623,
@@ -274,37 +290,34 @@
       "fat_g": 61.576,
       "carbs_g": 117.426
     },
-    "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 113.75,
+    "completed_day_base_intake_balance_kcal": 1206.0377,
+    "training_discount_kcal": 218,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1456.8623,
       1888.8623
     ],
-    "exercise_active_kcal": 455,
-    "exercise_adjusted_kcal": 341.25,
-    "tdee_kcal_estimate": 2556.15,
-    "estimated_deficit_kcal": 804.7877,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 872,
+    "exercise_adjusted_kcal": 654,
+    "tdee_kcal_estimate": 2868.9,
+    "estimated_deficit_kcal": 1117.5377,
+    "completed_day_estimated_deficit_kcal": 1117.5377,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 50.37,
       "post_workout": 32.5,
-      "lunch": 70.5
+      "lunch": 70.5,
+      "snack": 3.744
     },
-    "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
-    ],
-    "interpretation": "当前仅为已记录摄入的暂算，不代表全天最终能量缺口。",
+    "warnings": [],
+    "interpretation": "Completed-day estimate using logged intake and tdee_v1; not a measured calorie deficit or direct fat-loss measurement.",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
