@@ -166,6 +166,44 @@
         "reason": "Estimated from count."
       },
       "uncertainty": "Egg size can affect actual nutrition."
+    },
+    {
+      "id": "lunch_shaxian_1",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "Shaxian meal",
+      "reported_text": "lunch",
+      "source_kind": "matched_default",
+      "basis": "catalog shaxian_two_skinless_legs",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "servings": 1,
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "catalog margin"
+      },
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
     }
   ],
   "exercise_entries": [
@@ -198,29 +236,29 @@
     "2026-09-30 strength workout logged from Apple Watch; post-workout rice ball and eggs recorded."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 703.8948374760994,
-    "intake_kcal_booked": 703.8948374760994,
-    "protein_g_estimate": 82.87,
-    "fat_g_estimate": 28.72,
-    "carbs_g_estimate": 25.43,
-    "intake_kcal_estimate": 703.8948374760994,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1588.8948374760994,
+    "intake_kcal_booked": 1677.3948374760994,
+    "protein_g_estimate": 153.37,
+    "fat_g_estimate": 65.55333333333334,
+    "carbs_g_estimate": 116.43,
+    "intake_kcal_estimate": 1677.3948374760994,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 82.87,
-      "fat_g": 28.72,
-      "carbs_g": 25.43
+      "protein_g": 153.37,
+      "fat_g": 55.72,
+      "carbs_g": 116.43
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 113.75,
     "assumption_note": "\u57fa\u7840\u5b8f\u91cf\u4e0e\u8bb0\u8d26\u5b8f\u91cf\u533a\u5206\u9644\u52a0\u4f59\u91cf\uff1b\u4e24\u4e2a\u6444\u5165\u53e3\u5f84\u7684\u80fd\u91cf\u5dee\u989d\u662f\u6a21\u578b\u5bf9\u7167\uff0c\u4e0d\u662f\u53ef\u4fe1\u533a\u95f4\u6216\u771f\u5b9e\u4e0a\u4e0b\u754c\u3002",
     "intake_kcal_range": [
-      672.8948374760994,
-      734.8948374760994
+      1382.8948374760994,
+      1814.8948374760994
     ],
     "exercise_active_kcal": 455,
     "exercise_adjusted_kcal": 341.25,
     "tdee_kcal_estimate": 2556.15,
-    "estimated_deficit_kcal": 1852.2551625239007,
+    "estimated_deficit_kcal": 878.7551625239006,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -229,10 +267,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
-      "\u65e9\u9910": 50.37,
-      "post_workout": 32.5
+      "breakfast": 50.37,
+      "post_workout": 32.5,
+      "lunch": 70.5
     },
     "warnings": [
       "\u8bad\u7ec3\u72b6\u6001\u672a\u786e\u8ba4\uff1a\u4ec5\u6682\u6309\u57fa\u7840\u6d3b\u52a8\u4f30\u7b97\uff0c\u4e0d\u7b49\u4e8e\u786e\u8ba4\u4f11\u606f",
