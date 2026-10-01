@@ -67,16 +67,33 @@
         "sugar_g": 1.1,
         "sodium_mg": 0
       }
+    },
+    {
+      "id": "morning_chia_seed_5g",
+      "status": "consumed",
+      "meal": "morning",
+      "description": "Chia seeds 5 g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 5,
+      "kcal_base_estimate": 22.072179732313575,
+      "kcal_booked": 22.072179732313575,
+      "kcal_range": [
+        22.072179732313575,
+        22.072179732313575
+      ],
+      "protein_g_estimate": 1.05,
+      "fat_g_estimate": 1.595,
+      "carbs_g_estimate": 0.085
     }
   ],
   "exercise_entries": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 82.66586998087953,
-    "intake_kcal_booked": 82.66586998087953,
-    "protein_g_estimate": 3.9312,
-    "fat_g_estimate": 6.1488,
-    "carbs_g_estimate": 1.0458,
-    "intake_kcal_estimate": 82.66586998087953,
+    "intake_kcal_base_estimate": 104.7380497131931,
+    "intake_kcal_booked": 104.7380497131931,
+    "protein_g_estimate": 4.9812,
+    "fat_g_estimate": 7.7438,
+    "carbs_g_estimate": 1.1308,
+    "intake_kcal_estimate": 104.7380497131931,
     "intake_kcal_range": [
       77.66586998087953,
       87.66586998087953
@@ -87,6 +104,6 @@
     "estimated_deficit_kcal": 2129.2341300191206,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
-    "consumed_entries": 2
+    "consumed_entries": 3
   }
 }
