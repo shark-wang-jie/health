@@ -14,3 +14,4 @@
 - 自动任务只在实际修改时提交`fitness_logs/`并普通推送。工作区脏、pull冲突、远端竞态或任一校验失败时安全退出，不reset、clean、stash、强制checkout或强推。
 - 每次重算与AI复核在 state/runs/ 下独立临时clone执行，失败副本保留供审计，下一次从干净主副本重新复核；验证后的提交先快进保存到主副本再推送，以便断网恢复。根据完成状态补齐遗漏日期队列，逐次处理最早未完成日期；不创建虚构日记录。
 - 自动任务按环境变量覆盖、当前应用内路径、旧应用内路径和系统`PATH`依次发现Codex CLI，避免应用升级迁移CLI后持续失败。
+- LaunchAgent入口为`automation/daily_review_watchdog.sh`。看门狗保存机器可读状态，按错误类别退避和熔断；确定性数据校验失败时，`daily_review.sh`可调用Codex在隔离副本中仅修复目标日JSON，且必须重新通过recalculate、validate、report和jq。未知故障只生成只读诊断，不自动修改调度代码。

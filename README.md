@@ -20,7 +20,7 @@
 
 ## 每日自动复核
 
-Mac 通过 LaunchAgent `com.wangjie.health.daily-review` 每天本地时间 00:00 运行 `fitness_logs/automation/daily_review.sh`，复核刚结束的前一上海自然日，并每15分钟检查失败补跑。任务先同步 `origin/main`，执行确定性重算与校验，再调用本机 Codex CLI 做受限语义复核；只有产生合法实际修改时才提交并非强制推送。Git 网络命令单独使用本机 Veee HTTP 代理 `127.0.0.1:15236`，不依赖 macOS 系统代理；Codex CLI 不注入代理环境变量，由 ProxyBridge 独立路由。网络操作单次运行内有限重试，失败日期保存在仓库外并跨重启优先补跑；已成功日期在目标记录和复核规则未变化时跳过重复Codex调用。运行日志保存在 `~/Library/Logs/health/`，不进入仓库。
+Mac 通过 LaunchAgent `com.wangjie.health.daily-review` 每天本地时间 00:00 运行 `fitness_logs/automation/daily_review_watchdog.sh`，并每15分钟检查失败补跑。看门狗按故障类别退避和熔断，再调用`daily_review.sh`同步`origin/main`、执行确定性重算与校验以及受限Codex语义复核。确定性校验失败时，Codex只可在隔离副本中修复目标日期JSON，重新通过全部检查后才能提交。运行状态保存在仓库外的`state/status/`与`watchdog.json`，日志保存在`~/Library/Logs/health/`。
 
 脚本自动发现当前 ChatGPT 应用内的 Codex CLI，同时兼容旧应用路径和系统 `PATH`；`HEALTH_CODEX_BIN` 可显式覆盖。应用升级改变CLI目录时，不再需要手工修改脚本。
 

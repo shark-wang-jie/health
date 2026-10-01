@@ -84,9 +84,11 @@
 
 ## 每日自动复核
 
-`automation/daily_review.sh`是Mac每日复核的统一入口。LaunchAgent在系统本地时间00:00启动，并每15分钟检查补跑；脚本固定用`Asia/Shanghai`计算前一自然日，优先处理尚未成功的最早日期。目标文件不存在时只记录“目标日无记录文件”并退出，不创建虚构记录。
+`automation/daily_review_watchdog.sh`是Mac LaunchAgent入口；它在系统本地时间00:00启动，并每15分钟检查补跑。看门狗调用`daily_review.sh`，按错误类别保存连续失败次数、下次重试时间和熔断状态。脚本固定用`Asia/Shanghai`计算前一自然日，优先处理尚未成功的最早日期。目标文件不存在时只记录“目标日无记录文件”并退出，不创建虚构记录。
 
 阶段A完全确定性执行：检查干净`main`、`fetch`、`pull --rebase`、`recalculate`、`validate`、`report`与`jq empty`。阶段B通过当前安装的Codex CLI `codex -s workspace-write -a never -C 仓库 exec --ephemeral`读取规则和目标日，做受限语义复核。当前CLI要求沙箱、审批与工作目录选项放在`exec`之前。阶段B只能基于已有事实修复明确问题；需要新事实时保留记录并写待确认项。Codex之后再次执行阶段A校验。
+
+若阶段A失败，自动修复提示只允许Codex编辑目标日JSON，不得修改脚本、规则、计划、食物库或其他日期；修复后四项确定性检查全部通过才继续。修复失败、越界修改或仍不通过时保留隔离副本并熔断退避。未知代码故障只生成只读诊断报告到仓库外`state/diagnostics/`，不允许无人值守地自改调度器。
 
 Codex CLI按`HEALTH_CODEX_BIN`、当前ChatGPT应用内路径、旧应用内路径、系统`PATH`的顺序自动发现；应用升级改变内置目录时无需修改脚本。
 

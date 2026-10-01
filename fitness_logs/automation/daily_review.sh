@@ -6,17 +6,20 @@ set -o pipefail
 REPO_ROOT="${HEALTH_REPO_ROOT:-/Users/wangjie/Documents/health}"
 AUTOMATION_DIR="$REPO_ROOT/fitness_logs/automation"
 PROMPT_FILE="$AUTOMATION_DIR/daily_codex_prompt.md"
+REPAIR_PROMPT_FILE="$AUTOMATION_DIR/daily_repair_prompt.md"
 LOG_DIR="${HEALTH_LOG_DIR:-/Users/wangjie/Library/Logs/health}"
 LOCK_DIR="${HEALTH_LOCK_DIR:-/Users/wangjie/Library/Caches/com.wangjie.health.daily-review.lock}"
 STATE_ROOT="${HEALTH_STATE_ROOT:-/Users/wangjie/Library/Application Support/health-daily-review/state}"
 PENDING_DIR="$STATE_ROOT/pending"
 COMPLETED_DIR="$STATE_ROOT/completed"
+STATUS_DIR="$STATE_ROOT/status"
 
 GIT="/usr/bin/git"
 PYTHON3="/opt/homebrew/bin/python3"
 JQ="/opt/homebrew/bin/jq"
 CODEX_BUNDLED_DEFAULT="/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
 CODEX_LEGACY_DEFAULT="/Applications/ChatGPT.app/Contents/Resources/codex"
+CODEX_SEARCH_ROOT="${HEALTH_CODEX_SEARCH_ROOT:-/Applications/ChatGPT.app/Contents/Resources}"
 GIT_PROXY_URL="${HEALTH_GIT_PROXY_URL:-http://127.0.0.1:15236}"
 DATE="/bin/date"
 MKDIR="/bin/mkdir"
@@ -44,6 +47,14 @@ resolve_codex() {
     fi
   done
 
+  if [ -d "$CODEX_SEARCH_ROOT" ]; then
+    discovered_codex="$(/usr/bin/find "$CODEX_SEARCH_ROOT" -type f -name codex -perm -111 2>/dev/null | /usr/bin/head -n 1)"
+    if [ -n "$discovered_codex" ]; then
+      printf '%s\n' "$discovered_codex"
+      return
+    fi
+  fi
+
   system_codex="$(command -v codex 2>/dev/null || true)"
   if [ -n "$system_codex" ]; then
     printf '%s\n' "$system_codex"
@@ -65,7 +76,7 @@ print((today - timedelta(days=1)).isoformat())
 PY
 )"
 
-$MKDIR -p "$LOG_DIR" "/Users/wangjie/Library/Caches" "$PENDING_DIR" "$COMPLETED_DIR"
+$MKDIR -p "$LOG_DIR" "/Users/wangjie/Library/Caches" "$PENDING_DIR" "$COMPLETED_DIR" "$STATUS_DIR"
 
 # Reconstruct missed dates, including days spent retrying an older failure.
 # Queue metadata never creates or invents a daily food record.
@@ -121,10 +132,14 @@ LOG_FILE="$LOG_DIR/daily-review-$TARGET_DATE.log"
 CODEX_LAST_MESSAGE="$LOG_DIR/codex-last-message-$TARGET_DATE-$$.txt"
 PENDING_FILE="$PENDING_DIR/$TARGET_DATE.pending"
 COMPLETED_FILE="$COMPLETED_DIR/$TARGET_DATE.sha256"
+LATEST_STATUS_FILE="$STATUS_DIR/latest.json"
+TARGET_STATUS_FILE="$STATUS_DIR/$TARGET_DATE.json"
 LOCK_OWNED=0
 COMPLETED=0
 BASE_REPO_ROOT="$REPO_ROOT"
 RUN_REPO=""
+STARTED_AT="$($DATE -u '+%Y-%m-%dT%H:%M:%SZ')"
+DETERMINISTIC_ERROR="$LOG_DIR/deterministic-error-$TARGET_DATE-$$.log"
 
 : >"$PENDING_FILE"
 exec >>"$LOG_FILE" 2>&1
@@ -135,6 +150,58 @@ timestamp() {
 
 log() {
   printf '[%s] %s\n' "$(timestamp)" "$*"
+}
+
+classify_exit() {
+  case "$1" in
+    0) printf '%s\n' "none" ;;
+    65) printf '%s\n' "workspace_dirty" ;;
+    66) printf '%s\n' "deterministic_validation" ;;
+    67) printf '%s\n' "codex_semantic" ;;
+    68) printf '%s\n' "post_validation" ;;
+    69) printf '%s\n' "dependency" ;;
+    70) printf '%s\n' "git_sync" ;;
+    71) printf '%s\n' "commit" ;;
+    72) printf '%s\n' "repository" ;;
+    73) printf '%s\n' "remote_race" ;;
+    74) printf '%s\n' "git_push" ;;
+    75) printf '%s\n' "lock" ;;
+    76) printf '%s\n' "automatic_repair" ;;
+    *) printf '%s\n' "unknown" ;;
+  esac
+}
+
+write_status() {
+  status_value="$1"
+  exit_value="$2"
+  class_value="$3"
+  message_value="$4"
+  "$PYTHON3" - "$LATEST_STATUS_FILE" "$TARGET_STATUS_FILE" "$TARGET_DATE" \
+    "$status_value" "$exit_value" "$class_value" "$message_value" "$STARTED_AT" <<'PYSTATUS'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+latest, target, day, status, exit_code, failure_class, message, started_at = sys.argv[1:]
+payload = {
+    "target_date": day,
+    "status": status,
+    "exit_code": int(exit_code),
+    "failure_class": failure_class,
+    "message": message,
+    "started_at": started_at,
+    "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "pid": os.getppid(),
+}
+for raw_path in (latest, target):
+    path = Path(raw_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + f".tmp.{os.getpid()}")
+    temp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    temp.replace(path)
+PYSTATUS
 }
 
 # Keep proxy routing scoped to Git. Codex is routed independently by ProxyBridge,
@@ -224,8 +291,12 @@ mark_completed() {
 
 finish() {
   exit_code=$?
+  failure_class="$(classify_exit "$exit_code")"
   if [ -f "$CODEX_LAST_MESSAGE" ]; then
     $RM -f "$CODEX_LAST_MESSAGE"
+  fi
+  if [ -f "$DETERMINISTIC_ERROR" ]; then
+    $RM -f "$DETERMINISTIC_ERROR"
   fi
   if [ -n "$RUN_REPO" ]; then
     if [ "$exit_code" -eq 0 ] && [ "$COMPLETED" -eq 1 ]; then
@@ -239,8 +310,10 @@ finish() {
     $RM -rf "$LOCK_DIR"
   fi
   if [ "$exit_code" -eq 0 ]; then
+    write_status "success" "0" "none" "daily review completed"
     log "task end: success"
   else
+    write_status "failed" "$exit_code" "$failure_class" "daily review failed"
     log "retry state: pending target retained at $PENDING_FILE"
     log "task end: failure exit_code=$exit_code"
   fi
@@ -258,6 +331,7 @@ fi
 log "repository: $REPO_ROOT"
 log "network routing: Git uses explicit local Veee proxy; Codex uses ProxyBridge"
 log "Codex CLI: $CODEX"
+write_status "running" "0" "none" "daily review started"
 
 if ! $MKDIR "$LOCK_DIR" 2>/dev/null; then
   existing_pid="$(cat "$LOCK_DIR/pid" 2>/dev/null || true)"
@@ -284,6 +358,10 @@ for dependency in "$GIT" "$PYTHON3" "$JQ" "$CODEX"; do
 done
 if [ ! -r "$PROMPT_FILE" ]; then
   log "failure reason: missing semantic review prompt: $PROMPT_FILE"
+  exit 69
+fi
+if [ ! -r "$REPAIR_PROMPT_FILE" ]; then
+  log "failure reason: missing automatic repair prompt: $REPAIR_PROMPT_FILE"
   exit 69
 fi
 
@@ -376,31 +454,63 @@ fi
 REPO_ROOT="$RUN_REPO"
 AUTOMATION_DIR="$REPO_ROOT/fitness_logs/automation"
 PROMPT_FILE="$AUTOMATION_DIR/daily_codex_prompt.md"
+REPAIR_PROMPT_FILE="$AUTOMATION_DIR/daily_repair_prompt.md"
 TARGET_FILE="$REPO_ROOT/fitness_logs/daily/$TARGET_MONTH/$TARGET_DATE.json"
 cd "$REPO_ROOT" || exit 72
 log "isolated review workspace: $REPO_ROOT"
 
+run_checked_step() {
+  step_label="$1"
+  shift
+  : >"$DETERMINISTIC_ERROR"
+  if "$@" >"$DETERMINISTIC_ERROR" 2>&1; then
+    $CAT "$DETERMINISTIC_ERROR"
+    log "$step_label result: success"
+    return 0
+  fi
+  $CAT "$DETERMINISTIC_ERROR"
+  log "$step_label result: failed"
+  return 1
+}
+
+run_deterministic_review() {
+  step_prefix="$1"
+  run_checked_step "${step_prefix}recalculate" "$PYTHON3" fitness_logs/record_tools.py recalculate "$TARGET_FILE" || return 1
+  run_checked_step "${step_prefix}validate" "$PYTHON3" fitness_logs/record_tools.py validate "$TARGET_FILE" || return 1
+  run_checked_step "${step_prefix}report" "$PYTHON3" fitness_logs/record_tools.py report "$TARGET_FILE" || return 1
+  run_checked_step "${step_prefix}jq" "$JQ" empty "$TARGET_FILE" || return 1
+}
+
 log "stage A deterministic review: start"
-if ! "$PYTHON3" fitness_logs/record_tools.py recalculate "$TARGET_FILE"; then
-  log "recalculate result: failed"
-  exit 66
+if ! run_deterministic_review ""; then
+  log "automatic record repair: start"
+  if ! {
+    $CAT "$REPAIR_PROMPT_FILE"
+    printf '\n\nRuntime values:\n- repository: %s\n- target date: %s\n- target JSON: %s\n- deterministic failure:\n' "$REPO_ROOT" "$TARGET_DATE" "$TARGET_FILE"
+    $CAT "$DETERMINISTIC_ERROR"
+  } | "$CODEX" -s workspace-write -a never -C "$REPO_ROOT" exec --ephemeral --color never -o "$CODEX_LAST_MESSAGE" -; then
+    log "failure reason: automatic record repair Codex run failed"
+    exit 76
+  fi
+
+  repair_files="$({ $GIT diff --name-only; $GIT ls-files --others --exclude-standard; } | /usr/bin/sort -u)"
+  expected_repair_file="fitness_logs/daily/$TARGET_MONTH/$TARGET_DATE.json"
+  invalid_repair_files="$(printf '%s\n' "$repair_files" | /usr/bin/awk -v expected="$expected_repair_file" 'NF && $0 != expected {print}')"
+  if [ -n "$invalid_repair_files" ]; then
+    log "failure reason: automatic record repair modified files outside the target JSON"
+    printf '%s\n' "$invalid_repair_files"
+    exit 76
+  fi
+  if [ -z "$repair_files" ]; then
+    log "failure reason: automatic record repair made no change"
+    exit 76
+  fi
+  if ! run_deterministic_review "post-repair "; then
+    log "failure reason: automatic record repair did not pass deterministic checks"
+    exit 76
+  fi
+  log "automatic record repair: success"
 fi
-log "recalculate result: success"
-if ! "$PYTHON3" fitness_logs/record_tools.py validate "$TARGET_FILE"; then
-  log "validate result: failed"
-  exit 66
-fi
-log "validate result: success"
-if ! "$PYTHON3" fitness_logs/record_tools.py report "$TARGET_FILE"; then
-  log "report result: failed"
-  exit 66
-fi
-log "report result: success"
-if ! "$JQ" empty "$TARGET_FILE"; then
-  log "jq result: failed"
-  exit 66
-fi
-log "jq result: success"
 log "deterministic review result: success"
 
 log "stage B Codex semantic review: start"
