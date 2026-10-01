@@ -293,47 +293,47 @@
     "2026-09-28晚间室内单车按截图校正为42分09秒，动态422千卡、总500千卡、平均心率148次/分；随后用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1951.131931166348,
-    "intake_kcal_booked": 2039.631931166348,
+    "intake_kcal_base_estimate": 1951.1319311663478,
+    "intake_kcal_booked": 2039.6319311663478,
     "protein_g_estimate": 185.44,
     "fat_g_estimate": 92.07333333333335,
     "carbs_g_estimate": 115.8,
-    "intake_kcal_estimate": 2039.631931166348,
+    "intake_kcal_estimate": 2039.6319311663478,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
       "protein_g": 185.44,
-      "fat_g": 82.24,
+      "fat_g": 82.24000000000001,
       "carbs_g": 115.8
     },
     "completed_day_base_intake_balance_kcal": 918.818068833652,
     "training_discount_kcal": 216.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1740.131931166348,
-      2210.131931166348
+      1745.1319311663478,
+      2177.131931166348
     ],
-    "exercise_active_kcal": 867,
+    "exercise_active_kcal": 867.0,
     "exercise_adjusted_kcal": 650.25,
     "tdee_kcal_estimate": 2869.95,
     "estimated_deficit_kcal": 830.318068833652,
     "completed_day_estimated_deficit_kcal": 830.318068833652,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 5,
     "protein_by_meal_g": {
-      "早餐": 9.6,
       "lunch": 70.5,
       "下午加餐": 72.84,
-      "练后加餐": 1.9,
-      "晚间加餐": 30.6
+      "早餐": 9.6,
+      "晚间加餐": 30.6,
+      "练后加餐": 1.9
     },
     "warnings": [],
-    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -346,7 +346,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 894,
+    "sodium_mg_known_sum": 894.0,
     "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
