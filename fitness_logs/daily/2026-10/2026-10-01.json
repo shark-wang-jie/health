@@ -84,16 +84,56 @@
       "protein_g_estimate": 1.05,
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 0.085
+    },
+    {
+      "id": "morning_lemon_water_880ml",
+      "status": "consumed",
+      "meal": "morning",
+      "description": "Lemon water 880 ml",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 880,
+      "kcal_base_estimate": 37.858508604206506,
+      "kcal_booked": 37.858508604206506,
+      "kcal_range": [
+        37.858508604206506,
+        37.858508604206506
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 0,
+      "carbs_g_estimate": 29.04,
+      "sugar_g_estimate": 0,
+      "fiber_g_estimate": 6.16,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "morning_beef_crisp_50g",
+      "status": "consumed",
+      "meal": "morning",
+      "description": "Beef crisp snack 50 g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 50,
+      "kcal_base_estimate": 255.736137667304,
+      "kcal_booked": 255.736137667304,
+      "kcal_range": [
+        255.736137667304,
+        255.736137667304
+      ],
+      "protein_g_estimate": 31.6,
+      "fat_g_estimate": 13.5,
+      "carbs_g_estimate": 1.95,
+      "saturated_fat_g_estimate": 5.3,
+      "sugar_g_estimate": 0.25,
+      "sodium_mg_estimate": 242
     }
   ],
   "exercise_entries": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 104.7380497131931,
-    "intake_kcal_booked": 104.7380497131931,
-    "protein_g_estimate": 4.9812,
-    "fat_g_estimate": 7.7438,
-    "carbs_g_estimate": 1.1308,
-    "intake_kcal_estimate": 104.7380497131931,
+    "intake_kcal_base_estimate": 398.3326959847036,
+    "intake_kcal_booked": 398.3326959847036,
+    "protein_g_estimate": 36.5812,
+    "fat_g_estimate": 21.2438,
+    "carbs_g_estimate": 32.1208,
+    "intake_kcal_estimate": 398.3326959847036,
     "intake_kcal_range": [
       77.66586998087953,
       87.66586998087953
@@ -101,9 +141,15 @@
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2211.9,
-    "estimated_deficit_kcal": 2129.2341300191206,
+    "estimated_deficit_kcal": 1813.5673040152965,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
-    "consumed_entries": 3
+    "consumed_entries": 5,
+    "fiber_g_known_sum": 7.915,
+    "fiber_g_entries_with_data": 2,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 242,
+    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_coverage_complete": false
   }
 }
