@@ -172,7 +172,40 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "timestamp": "2026-10-01T20:42:30+08:00",
+      "entry_id": "dinner_chicken_rice_1",
+      "action": "restore_documented_vegetable_correction_history",
+      "reason": "语义复核补存已记录的用户更正：晚餐蔬菜为大白菜和黄瓜。依据本日reported_text、basis、notes及提交0a4a6c7；当前晚餐已应用更正，未新增摄入或改变估算。timestamp为补存时间，用户更正的实际时间和更正前蔬菜名称未保存在仓库，old_entry保留null，不臆造。",
+      "old_entry": null,
+      "new_entry": {
+        "id": "dinner_chicken_rice_1",
+        "status": "consumed_estimated",
+        "meal": "dinner",
+        "description": "Chicken-leg rice meal with napa cabbage and cucumber; both chicken legs eaten without skin",
+        "reported_text": "Dinner photo; chicken legs without skin; vegetables corrected to napa cabbage and cucumber",
+        "source_kind": "photo_estimate",
+        "basis": "Estimated from the meal photo and the user's correction of the vegetable items.",
+        "kcal_base_estimate": 850,
+        "kcal_booked": 935,
+        "kcal_range": [
+          720,
+          1080
+        ],
+        "protein_g_estimate": 65,
+        "fat_g_estimate": 40.5,
+        "carbs_g_estimate": 95,
+        "margin": {
+          "added_fat_g": 9.4444444444,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "Cooking oil was not measured."
+        },
+        "uncertainty": "Rice weight, edible chicken amount, and cooking oil were not weighed; leftovers can be corrected later."
+      }
+    }
+  ],
   "notes": [
     "2026-09-26空腹体重91.55公斤；较最近一次09-24的90.40公斤高1.15公斤，09-25聚餐日体重缺测。",
     "早餐手撕猪肉干140克，沿用09-23同款包装标签换算。",
