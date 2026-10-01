@@ -93,6 +93,16 @@ class DailyReviewRecoveryTests(unittest.TestCase):
         self.assertTrue((pending / '2026-09-23.pending').exists())
         self.assertTrue((pending / '2026-09-24.pending').exists())
 
+    def test_bundled_codex_path_is_discovered_after_app_layout_change(self):
+        env = dict(self.env)
+        env.pop('HEALTH_CODEX_BIN')
+        env['HEALTH_CODEX_BUNDLED_BIN'] = str(self.fake)
+        result = subprocess.run(['bash', str(SCRIPT)], env=env,
+                                capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0)
+        log = (self.root / 'logs' / f'daily-review-{TARGET}.log').read_text()
+        self.assertIn(f'Codex CLI: {self.fake}', log)
+
 
 if __name__ == '__main__':
     unittest.main()

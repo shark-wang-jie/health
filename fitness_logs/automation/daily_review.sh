@@ -15,7 +15,8 @@ COMPLETED_DIR="$STATE_ROOT/completed"
 GIT="/usr/bin/git"
 PYTHON3="/opt/homebrew/bin/python3"
 JQ="/opt/homebrew/bin/jq"
-CODEX="${HEALTH_CODEX_BIN:-/Applications/ChatGPT.app/Contents/Resources/codex}"
+CODEX_BUNDLED_DEFAULT="/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+CODEX_LEGACY_DEFAULT="/Applications/ChatGPT.app/Contents/Resources/codex"
 GIT_PROXY_URL="${HEALTH_GIT_PROXY_URL:-http://127.0.0.1:15236}"
 DATE="/bin/date"
 MKDIR="/bin/mkdir"
@@ -27,6 +28,33 @@ SLEEP="/bin/sleep"
 export HOME="/Users/wangjie"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Applications/ChatGPT.app/Contents/Resources"
 export TZ="Asia/Shanghai"
+
+resolve_codex() {
+  if [ -n "${HEALTH_CODEX_BIN:-}" ]; then
+    printf '%s\n' "$HEALTH_CODEX_BIN"
+    return
+  fi
+
+  for candidate in \
+    "${HEALTH_CODEX_BUNDLED_BIN:-$CODEX_BUNDLED_DEFAULT}" \
+    "${HEALTH_CODEX_LEGACY_BIN:-$CODEX_LEGACY_DEFAULT}"; do
+    if [ -x "$candidate" ]; then
+      printf '%s\n' "$candidate"
+      return
+    fi
+  done
+
+  system_codex="$(command -v codex 2>/dev/null || true)"
+  if [ -n "$system_codex" ]; then
+    printf '%s\n' "$system_codex"
+    return
+  fi
+
+  # Preserve a useful dependency error when no candidate exists.
+  printf '%s\n' "$CODEX_BUNDLED_DEFAULT"
+}
+
+CODEX="$(resolve_codex)"
 
 SCHEDULED_DATE="$($PYTHON3 - <<'PY'
 from datetime import datetime, timedelta
@@ -229,6 +257,7 @@ if [ "$TARGET_DATE" != "$SCHEDULED_DATE" ]; then
 fi
 log "repository: $REPO_ROOT"
 log "network routing: Git uses explicit local Veee proxy; Codex uses ProxyBridge"
+log "Codex CLI: $CODEX"
 
 if ! $MKDIR "$LOCK_DIR" 2>/dev/null; then
   existing_pid="$(cat "$LOCK_DIR/pid" 2>/dev/null || true)"
