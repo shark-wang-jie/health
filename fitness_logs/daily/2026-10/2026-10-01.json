@@ -1,0 +1,92 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "morning_weight_kg": 89.2,
+  "plan_version": "2026-09-08-v3.2",
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.2,
+    "bmr_weight_date": "2026-10-01",
+    "bmr_kcal": 1843.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_iced_americano_1",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "Iced Americano",
+      "source_kind": "generic_estimate",
+      "kcal_base_estimate": 5,
+      "kcal_booked": 5,
+      "kcal_range": [
+        0,
+        10
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 0,
+      "carbs_g_estimate": 0
+    },
+    {
+      "id": "breakfast_pumpkin_seeds_12_6g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Pumpkin seeds 12.6 g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 12.6,
+      "kcal_base_estimate": 77.66586998087953,
+      "kcal_booked": 77.66586998087953,
+      "kcal_range": [
+        77.66586998087953,
+        77.66586998087953
+      ],
+      "protein_g_estimate": 3.9312,
+      "fat_g_estimate": 6.1488,
+      "carbs_g_estimate": 1.0458,
+      "saturated_fat_g_estimate": 1.1844,
+      "sugar_g_estimate": 0.1386,
+      "sodium_mg_estimate": 0,
+      "nutrition_per_100g": {
+        "energy_kj": 2579,
+        "protein_g": 31.2,
+        "fat_g": 48.8,
+        "saturated_fat_g": 9.4,
+        "carbs_g": 8.3,
+        "sugar_g": 1.1,
+        "sodium_mg": 0
+      }
+    }
+  ],
+  "exercise_entries": [],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 82.66586998087953,
+    "intake_kcal_booked": 82.66586998087953,
+    "protein_g_estimate": 3.9312,
+    "fat_g_estimate": 6.1488,
+    "carbs_g_estimate": 1.0458,
+    "intake_kcal_estimate": 82.66586998087953,
+    "intake_kcal_range": [
+      77.66586998087953,
+      87.66586998087953
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2211.9,
+    "estimated_deficit_kcal": 2129.2341300191206,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "consumed_entries": 2
+  }
+}
