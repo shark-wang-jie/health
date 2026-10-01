@@ -2,11 +2,11 @@
   "schema_version": 3,
   "date": "2026-10-01",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -218,8 +218,8 @@
     "exercise_adjusted_kcal": 893.25,
     "tdee_kcal_estimate": 3105.15,
     "estimated_deficit_kcal": 682.8173040152964,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "completed_day_estimated_deficit_kcal": 682.8173040152964,
+    "energy_balance_scope": "completed_day_estimate",
     "consumed_entries": 7,
     "fiber_g_known_sum": 7.915,
     "fiber_g_entries_with_data": 2,
@@ -234,7 +234,7 @@
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true
+    "energy_estimate_provisional": false
   },
   "corrections": [
     {
