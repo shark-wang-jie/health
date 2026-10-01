@@ -124,32 +124,58 @@
       "saturated_fat_g_estimate": 5.3,
       "sugar_g_estimate": 0.25,
       "sodium_mg_estimate": 242
+    },
+    {
+      "id": "lunch_gailan_beef_rice_1",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "Gai lan beef rice bowl",
+      "reported_text": "Lunch: gai lan beef rice",
+      "source_kind": "photo_estimate",
+      "basis": "Photo shows a large rice bowl with beef slices, gai lan/leafy greens and preserved vegetables. Portion and cooking oil are estimated from the images.",
+      "kcal_base_estimate": 920,
+      "kcal_booked": 1012,
+      "kcal_range": [
+        760,
+        1180
+      ],
+      "protein_g_estimate": 48,
+      "fat_g_estimate": 38,
+      "carbs_g_estimate": 112,
+      "margin": {
+        "added_fat_g": 10.2222,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "About 10% bookkeeping margin for uncertain restaurant cooking oil and sauce."
+      },
+      "uncertainty": "Restaurant portion and oil are uncertain; correct if leftovers or exact weights become known."
     }
   ],
   "exercise_entries": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 398.3326959847036,
-    "intake_kcal_booked": 398.3326959847036,
-    "protein_g_estimate": 36.5812,
-    "fat_g_estimate": 21.2438,
-    "carbs_g_estimate": 32.1208,
-    "intake_kcal_estimate": 398.3326959847036,
+    "intake_kcal_base_estimate": 1318.3326959847036,
+    "intake_kcal_booked": 1410.3326959847036,
+    "protein_g_estimate": 84.5812,
+    "fat_g_estimate": 59.2438,
+    "carbs_g_estimate": 144.1208,
+    "intake_kcal_estimate": 1410.3326959847036,
     "intake_kcal_range": [
-      77.66586998087953,
-      87.66586998087953
+      1153.3326959847036,
+      1583.3326959847036
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2211.9,
-    "estimated_deficit_kcal": 1813.5673040152965,
+    "estimated_deficit_kcal": 801.5673040152964,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "fiber_g_known_sum": 7.915,
     "fiber_g_entries_with_data": 2,
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 242,
     "sodium_mg_entries_with_data": 4,
-    "sodium_mg_coverage_complete": false
+    "sodium_mg_coverage_complete": false,
+    "food_margin_kcal": 92
   }
 }
