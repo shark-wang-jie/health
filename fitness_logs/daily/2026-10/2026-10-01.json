@@ -4,13 +4,18 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
+  "closure_basis": "用户确认当日饮食与训练结束并封账（对应 fitness final 提交）。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告当日空腹体重89.2公斤。",
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.2,
@@ -22,13 +27,36 @@
     "activity_factor": 1.2,
     "training_factor": 0.75
   },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
   "intake_entries": [
     {
       "id": "breakfast_iced_americano_1",
       "status": "consumed_estimated",
       "meal": "breakfast",
       "description": "Iced Americano",
-      "source_kind": "generic_estimate",
+      "source_kind": "database_estimate",
+      "basis": "无糖冰美式按普通黑咖啡通用数据估算约5千卡。",
       "kcal_base_estimate": 5,
       "kcal_booked": 5,
       "kcal_range": [
@@ -37,7 +65,8 @@
       ],
       "protein_g_estimate": 0,
       "fat_g_estimate": 0,
-      "carbs_g_estimate": 0
+      "carbs_g_estimate": 0,
+      "uncertainty": "杯量和咖啡浓度未记录；无糖黑咖啡热量影响很小，以0至10千卡范围表示。"
     },
     {
       "id": "breakfast_pumpkin_seeds_12_6g",
@@ -45,6 +74,7 @@
       "meal": "breakfast",
       "description": "Pumpkin seeds 12.6 g",
       "source_kind": "label_known_quantity",
+      "basis": "按当次已记录的包装标签每100克营养值与实际食用12.6克线性换算。",
       "quantity_g": 12.6,
       "kcal_base_estimate": 77.66586998087953,
       "kcal_booked": 77.66586998087953,
@@ -74,6 +104,7 @@
       "meal": "morning",
       "description": "Chia seeds 5 g",
       "source_kind": "label_known_quantity",
+      "basis": "按当次已记录的包装标签营养值与实际食用5克线性换算。",
       "quantity_g": 5,
       "kcal_base_estimate": 22.072179732313575,
       "kcal_booked": 22.072179732313575,
@@ -91,6 +122,7 @@
       "meal": "morning",
       "description": "Lemon water 880 ml",
       "source_kind": "label_known_quantity",
+      "basis": "按当次已记录的饮料标签营养值与实际饮用880毫升线性换算。",
       "quantity_ml": 880,
       "kcal_base_estimate": 37.858508604206506,
       "kcal_booked": 37.858508604206506,
@@ -111,6 +143,7 @@
       "meal": "morning",
       "description": "Beef crisp snack 50 g",
       "source_kind": "label_known_quantity",
+      "basis": "按当次已记录的包装标签营养值与实际食用50克线性换算。",
       "quantity_g": 50,
       "kcal_base_estimate": 255.736137667304,
       "kcal_booked": 255.736137667304,
@@ -156,7 +189,7 @@
       "meal": "dinner",
       "description": "Same gai lan beef rice bowl as lunch, with pickled mustard greens",
       "reported_text": "Dinner same as lunch: gai lan beef rice",
-      "source_kind": "matched_estimate",
+      "source_kind": "photo_estimate",
       "basis": "Reuse lunch photo estimate and confirmed side dish.",
       "kcal_base_estimate": 920,
       "kcal_booked": 1012,
@@ -203,38 +236,74 @@
       "source": "Apple Watch screenshot 2026-10-01 15:53-16:23"
     }
   ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "notes": [],
   "daily_summary": {
     "intake_kcal_base_estimate": 2238.3326959847036,
     "intake_kcal_booked": 2422.3326959847036,
     "protein_g_estimate": 132.5812,
     "fat_g_estimate": 97.2438,
-    "carbs_g_estimate": 256.1208,
+    "carbs_g_estimate": 256.12080000000003,
     "intake_kcal_estimate": 2422.3326959847036,
+    "food_margin_kcal": 184.0,
+    "base_macro_estimates": {
+      "protein_g": 132.5812,
+      "fat_g": 76.79939999999999,
+      "carbs_g": 256.12080000000003
+    },
+    "completed_day_base_intake_balance_kcal": 866.8173040152965,
+    "training_discount_kcal": 297.75,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1913.3326959847036,
       2763.3326959847036
     ],
-    "exercise_active_kcal": 1191,
+    "exercise_active_kcal": 1191.0,
     "exercise_adjusted_kcal": 893.25,
     "tdee_kcal_estimate": 3105.15,
-    "estimated_deficit_kcal": 682.8173040152964,
-    "completed_day_estimated_deficit_kcal": 682.8173040152964,
+    "estimated_deficit_kcal": 682.8173040152965,
+    "completed_day_estimated_deficit_kcal": 682.8173040152965,
     "energy_balance_scope": "completed_day_estimate",
-    "consumed_entries": 7,
-    "fiber_g_known_sum": 7.915,
-    "fiber_g_entries_with_data": 2,
-    "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 242,
-    "sodium_mg_entries_with_data": 4,
-    "sodium_mg_coverage_complete": false,
-    "food_margin_kcal": 184,
-    "training_discount_kcal": 297.75,
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false
+    "energy_estimate_provisional": false,
+    "consumed_entries": 7,
+    "protein_by_meal_g": {
+      "breakfast": 3.9312,
+      "dinner": 48,
+      "lunch": 48,
+      "morning": 32.65
+    },
+    "warnings": [
+      "morning_lemon_water_880ml:热量与宏量换算差异较大，请核对标签或估算，勿强行配平"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 6.16,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 242.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
   },
   "corrections": [
     {

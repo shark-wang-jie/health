@@ -192,6 +192,7 @@
         "already_in_base": false,
         "reason": "catalog margin"
       },
+      "uncertainty": "沿用已确认的固定同款沙县鸡腿饭口径；实际米饭、配菜份量和烹调用油可能波动，已通过估算范围与用油余量表达。",
       "protein_g_range": [
         57,
         84
@@ -278,54 +279,54 @@
     "2026-09-30 indoor cycling: 42:14, 417 active kcal, 495 total kcal, avg HR 143 bpm. Day closed by user confirmation."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1662.8623,
-    "intake_kcal_booked": 1751.3623,
+    "intake_kcal_base_estimate": 1662.8623374760994,
+    "intake_kcal_booked": 1751.3623374760994,
     "protein_g_estimate": 157.114,
-    "fat_g_estimate": 71.4093,
+    "fat_g_estimate": 71.40933333333334,
     "carbs_g_estimate": 117.426,
-    "intake_kcal_estimate": 1751.3623,
+    "intake_kcal_estimate": 1751.3623374760994,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
       "protein_g": 157.114,
-      "fat_g": 61.576,
+      "fat_g": 61.57599999999999,
       "carbs_g": 117.426
     },
-    "completed_day_base_intake_balance_kcal": 1206.0377,
-    "training_discount_kcal": 218,
+    "completed_day_base_intake_balance_kcal": 1206.0376625239007,
+    "training_discount_kcal": 218.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1456.8623,
-      1888.8623
+      1456.8623374760994,
+      1888.8623374760994
     ],
-    "exercise_active_kcal": 872,
-    "exercise_adjusted_kcal": 654,
+    "exercise_active_kcal": 872.0,
+    "exercise_adjusted_kcal": 654.0,
     "tdee_kcal_estimate": 2868.9,
-    "estimated_deficit_kcal": 1117.5377,
-    "completed_day_estimated_deficit_kcal": 1117.5377,
+    "estimated_deficit_kcal": 1117.5376625239007,
+    "completed_day_estimated_deficit_kcal": 1117.5376625239007,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
-      "breakfast": 50.37,
-      "post_workout": 32.5,
       "lunch": 70.5,
-      "snack": 3.744
+      "post_workout": 32.5,
+      "snack": 3.744,
+      "早餐": 50.370000000000005
     },
     "warnings": [],
-    "interpretation": "Completed-day estimate using logged intake and tdee_v1; not a measured calorie deficit or direct fat-loss measurement.",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
