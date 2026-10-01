@@ -5,8 +5,8 @@
   "record_status": "open",
   "food_log_closed": false,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -149,34 +149,92 @@
         "reason": "About 10% bookkeeping margin for uncertain restaurant cooking oil and sauce."
       },
       "uncertainty": "Restaurant portion and oil are uncertain; yellow side confirmed by user as pickled mustard greens. Correct if leftovers or exact weights become known."
+    },
+    {
+      "id": "dinner_gailan_beef_rice_1",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "Same gai lan beef rice bowl as lunch, with pickled mustard greens",
+      "reported_text": "Dinner same as lunch: gai lan beef rice",
+      "source_kind": "matched_estimate",
+      "basis": "Reuse lunch photo estimate and confirmed side dish.",
+      "kcal_base_estimate": 920,
+      "kcal_booked": 1012,
+      "kcal_range": [
+        760,
+        1180
+      ],
+      "protein_g_estimate": 48,
+      "fat_g_estimate": 38,
+      "carbs_g_estimate": 112,
+      "margin": {
+        "added_fat_g": 10.2222,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Same restaurant oil and sauce margin as lunch."
+      },
+      "uncertainty": "Assumes same portion as lunch."
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-10-01-strength-1",
+      "event_id": "2026-10-01-strength-1",
+      "type": "strength_training",
+      "duration_seconds": 4957,
+      "elapsed_duration_seconds": 4977,
+      "active_kcal": 764,
+      "total_kcal": 905,
+      "average_heart_rate_bpm": 128,
+      "energy_scope": "session_active",
+      "source": "Apple Watch screenshot 2026-10-01 14:29-15:52"
+    },
+    {
+      "id": "2026-10-01-indoor-walk-1",
+      "event_id": "2026-10-01-indoor-walk-1",
+      "type": "indoor_walk",
+      "duration_seconds": 1836,
+      "distance_km": 1.88,
+      "average_pace_min_per_km": "16:16",
+      "active_kcal": 427,
+      "total_kcal": 484,
+      "average_heart_rate_bpm": 168,
+      "energy_scope": "session_active",
+      "source": "Apple Watch screenshot 2026-10-01 15:53-16:23"
+    }
+  ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1318.3326959847036,
-    "intake_kcal_booked": 1410.3326959847036,
-    "protein_g_estimate": 84.5812,
-    "fat_g_estimate": 59.2438,
-    "carbs_g_estimate": 144.1208,
-    "intake_kcal_estimate": 1410.3326959847036,
+    "intake_kcal_base_estimate": 2238.3326959847036,
+    "intake_kcal_booked": 2422.3326959847036,
+    "protein_g_estimate": 132.5812,
+    "fat_g_estimate": 97.2438,
+    "carbs_g_estimate": 256.1208,
+    "intake_kcal_estimate": 2422.3326959847036,
     "intake_kcal_range": [
-      1153.3326959847036,
-      1583.3326959847036
+      1913.3326959847036,
+      2763.3326959847036
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2211.9,
-    "estimated_deficit_kcal": 801.5673040152964,
+    "exercise_active_kcal": 1191,
+    "exercise_adjusted_kcal": 893.25,
+    "tdee_kcal_estimate": 3105.15,
+    "estimated_deficit_kcal": 682.8173040152964,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
-    "consumed_entries": 6,
+    "consumed_entries": 7,
     "fiber_g_known_sum": 7.915,
     "fiber_g_entries_with_data": 2,
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 242,
     "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
-    "food_margin_kcal": 92
+    "food_margin_kcal": 184,
+    "training_discount_kcal": 297.75,
+    "intake_target_kcal_range": [
+      1900,
+      2000
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": true
   },
   "corrections": [
     {
