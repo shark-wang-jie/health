@@ -129,10 +129,10 @@
       "id": "lunch_gailan_beef_rice_1",
       "status": "consumed_estimated",
       "meal": "lunch",
-      "description": "Gai lan beef rice bowl",
+      "description": "Gai lan beef rice bowl with pickled mustard greens",
       "reported_text": "Lunch: gai lan beef rice",
       "source_kind": "photo_estimate",
-      "basis": "Photo shows a large rice bowl with beef slices, gai lan/leafy greens and preserved vegetables. Portion and cooking oil are estimated from the images.",
+      "basis": "Photo shows a large rice bowl with beef slices, gai lan/leafy greens and yellow pickled mustard greens (酸菜). Portion and cooking oil are estimated from the images.",
       "kcal_base_estimate": 920,
       "kcal_booked": 1012,
       "kcal_range": [
@@ -148,7 +148,7 @@
         "already_in_base": false,
         "reason": "About 10% bookkeeping margin for uncertain restaurant cooking oil and sauce."
       },
-      "uncertainty": "Restaurant portion and oil are uncertain; correct if leftovers or exact weights become known."
+      "uncertainty": "Restaurant portion and oil are uncertain; yellow side confirmed by user as pickled mustard greens. Correct if leftovers or exact weights become known."
     }
   ],
   "exercise_entries": [],
@@ -177,5 +177,61 @@
     "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "food_margin_kcal": 92
-  }
+  },
+  "corrections": [
+    {
+      "entry_id": "lunch_gailan_beef_rice_1",
+      "reason": "User clarified the yellow side dish is pickled mustard greens (酸菜), not a generic preserved vegetable.",
+      "old_entry": {
+        "id": "lunch_gailan_beef_rice_1",
+        "status": "consumed_estimated",
+        "meal": "lunch",
+        "description": "Gai lan beef rice bowl",
+        "reported_text": "Lunch: gai lan beef rice",
+        "source_kind": "photo_estimate",
+        "basis": "Photo shows a large rice bowl with beef slices, gai lan/leafy greens and preserved vegetables. Portion and cooking oil are estimated from the images.",
+        "kcal_base_estimate": 920,
+        "kcal_booked": 1012,
+        "kcal_range": [
+          760,
+          1180
+        ],
+        "protein_g_estimate": 48,
+        "fat_g_estimate": 38,
+        "carbs_g_estimate": 112,
+        "margin": {
+          "added_fat_g": 10.2222,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "About 10% bookkeeping margin for uncertain restaurant cooking oil and sauce."
+        },
+        "uncertainty": "Restaurant portion and oil are uncertain; correct if leftovers or exact weights become known."
+      },
+      "new_entry": {
+        "id": "lunch_gailan_beef_rice_1",
+        "status": "consumed_estimated",
+        "meal": "lunch",
+        "description": "Gai lan beef rice bowl with pickled mustard greens",
+        "reported_text": "Lunch: gai lan beef rice",
+        "source_kind": "photo_estimate",
+        "basis": "Photo shows a large rice bowl with beef slices, gai lan/leafy greens and yellow pickled mustard greens (酸菜). Portion and cooking oil are estimated from the images.",
+        "kcal_base_estimate": 920,
+        "kcal_booked": 1012,
+        "kcal_range": [
+          760,
+          1180
+        ],
+        "protein_g_estimate": 48,
+        "fat_g_estimate": 38,
+        "carbs_g_estimate": 112,
+        "margin": {
+          "added_fat_g": 10.2222,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "About 10% bookkeeping margin for uncertain restaurant cooking oil and sauce."
+        },
+        "uncertainty": "Restaurant portion and oil are uncertain; yellow side confirmed by user as pickled mustard greens. Correct if leftovers or exact weights become known."
+      }
+    }
+  ]
 }
