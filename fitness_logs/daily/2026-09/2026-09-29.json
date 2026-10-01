@@ -8,7 +8,9 @@
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "核桃仁1小包及两次同款咸蛋黄味三明治华夫饼的实际包装净含量、营养标签未确认；当前分别暂按25克和35克/包估算，待包装信息确认后修正（华夫饼两次同步修正）。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告早上空腹体重89.85公斤。",
@@ -288,7 +290,17 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "timestamp": "2026-10-01T20:46:23+08:00",
+      "field": "missing_sections",
+      "old_value": [],
+      "new_value": [
+        "核桃仁1小包及两次同款咸蛋黄味三明治华夫饼的实际包装净含量、营养标签未确认；当前分别暂按25克和35克/包估算，待包装信息确认后修正（华夫饼两次同步修正）。"
+      ],
+      "reason": "语义复核：条目明确包装重量未知，25克及35克为暂估；按README未知包装重量规则补入能量相关待确认项。保留原摄入估算、稳定标识、封账及全天报告完整性；由工具重算暂估状态，不输出最终全天差额。"
+    }
+  ],
   "notes": [
     "2026-09-29空腹体重89.85公斤，与09-28相同。",
     "早餐两项均未提供包装克数/标签：核桃仁暂按25克，咸蛋黄味三明治华夫饼暂按35克估算。",
@@ -297,57 +309,57 @@
     "2026-09-29晚间室内单车31分24秒，动态305千卡、总363千卡、平均心率145次/分；用户确认今日饮食训练结束并封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1829,
+    "intake_kcal_base_estimate": 1829.0,
     "intake_kcal_booked": 1917.5,
     "protein_g_estimate": 122.4,
-    "fat_g_estimate": 88.65333333333334,
-    "carbs_g_estimate": 158.48,
+    "fat_g_estimate": 88.65333333333335,
+    "carbs_g_estimate": 158.48000000000002,
     "intake_kcal_estimate": 1917.5,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
       "protein_g": 122.4,
-      "fat_g": 78.82,
-      "carbs_g": 158.48
+      "fat_g": 78.82000000000001,
+      "carbs_g": 158.48000000000002
     },
-    "completed_day_base_intake_balance_kcal": 874.45,
+    "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 161.25,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1518,
-      2180
+      1518.0,
+      2180.0
     ],
-    "exercise_active_kcal": 645,
+    "exercise_active_kcal": 645.0,
     "exercise_adjusted_kcal": 483.75,
     "tdee_kcal_estimate": 2703.45,
-    "estimated_deficit_kcal": 785.95,
-    "completed_day_estimated_deficit_kcal": 785.95,
-    "energy_balance_scope": "completed_day_estimate",
+    "estimated_deficit_kcal": 785.9499999999998,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 7,
     "protein_by_meal_g": {
-      "早餐": 6.8,
-      "午餐": 70.5,
       "下午加餐": 3,
-      "练后加餐": 32.5,
-      "加餐": 9.6
+      "加餐": 9.6,
+      "午餐": 70.5,
+      "早餐": 6.8,
+      "练后加餐": 32.5
     },
     "warnings": [
-      "两次同款华夫饼和核桃仁尚未提供净含量/营养标签，全天摄入仍含规格估算误差"
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "按当前记账摄入和tdee_v1模型估算的全天缺口；不是实测能量消耗或脂肪变化。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
