@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-02",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed food and training complete.",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -187,7 +187,17 @@
       "kcal_booked": 935,
       "protein_g_estimate": 58,
       "fat_g_estimate": 32,
-      "carbs_g_estimate": 98
+      "carbs_g_estimate": 98,
+      "kcal_range": [
+        700,
+        1050
+      ],
+      "margin": {
+        "added_fat_g": 9.444,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "restaurant/home-style oil and sauce estimate"
+      }
     },
     {
       "id": "dinner_shrimp_500g_1",
@@ -198,7 +208,17 @@
       "kcal_booked": 250,
       "protein_g_estimate": 60,
       "fat_g_estimate": 1.5,
-      "carbs_g_estimate": 0.5
+      "carbs_g_estimate": 0.5,
+      "kcal_range": [
+        220,
+        300
+      ],
+      "quantity_g_live_weight": 500,
+      "edible_weight_g_estimate": 250,
+      "edible_weight_g_range": [
+        225,
+        300
+      ]
     }
   ],
   "exercise_entries": [
@@ -245,43 +265,44 @@
     "fat_g_estimate": 72.553,
     "carbs_g_estimate": 229.598,
     "intake_kcal_estimate": 2500.174,
-    "food_margin_kcal": 82,
+    "food_margin_kcal": 167,
     "base_macro_estimates": {
       "protein_g": 3.432,
       "fat_g": 5.368,
       "carbs_g": 0.913
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": 757.876,
     "training_discount_kcal": 292.25,
     "intake_kcal_range": [
-      1025.173998087954,
-      1493.173998087954
+      1983.17877629063,
+      2863.17877629063
     ],
     "exercise_active_kcal": 1169,
     "exercise_adjusted_kcal": 876.75,
     "tdee_kcal_estimate": 3091.05,
     "estimated_deficit_kcal": 590.876,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "completed_day_estimated_deficit_kcal": 590.876,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 10.312,
       "lunch": 105,
-      "afternoon": 1.05
+      "afternoon": 1.05,
+      "dinner": 118
     },
     "warnings": [
-      "Training status not confirmed.",
-      "Food log is incomplete.",
-      "Day is still open."
+      "Lunch and dinner rice meals are portion/oil estimates.",
+      "Both 500 g shrimp entries are based on estimated edible yield from whole live weight."
     ],
     "fiber_g_known_sum": 7.915,
     "fiber_g_entries_with_data": 2,
-    "fiber_g_coverage_complete": false
+    "fiber_g_coverage_complete": false,
+    "interpretation": "Completed-day estimate from logged intake and tdee_v1; not a measured calorie deficit."
   }
 }
