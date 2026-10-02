@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "Morning fasting weight 89.40 kg.",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 89.4,
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.4,
+    "bmr_weight_date": "2026-10-02",
+    "bmr_kcal": 1845.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_11g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Pumpkin seeds 11 g",
+      "reported_text": "11 g pumpkin seeds",
+      "source_kind": "label_known_quantity",
+      "basis": "Reuse prior package label: per 100 g 2579 kJ, protein 31.2 g, fat 48.8 g, saturated fat 9.4 g, carbs 8.3 g, sugar 1.1 g, sodium 0 mg. Scaled to 11 g.",
+      "quantity_g": 11,
+      "kcal_base_estimate": 67.80353728489484,
+      "kcal_booked": 67.80353728489484,
+      "kcal_range": [
+        67.80353728489484,
+        67.80353728489484
+      ],
+      "protein_g_estimate": 3.432,
+      "fat_g_estimate": 5.368,
+      "carbs_g_estimate": 0.913,
+      "saturated_fat_g_estimate": 1.034,
+      "sugar_g_estimate": 0.121,
+      "sodium_mg_estimate": 0,
+      "nutrition_per_100g": {
+        "energy_kj": 2579,
+        "protein_g": 31.2,
+        "fat_g": 48.8,
+        "saturated_fat_g": 9.4,
+        "carbs_g": 8.3,
+        "sugar_g": 1.1,
+        "sodium_mg": 0
+      }
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "Morning fasting weight 89.40 kg.",
+    "Breakfast pumpkin seeds 11 g using the same package label as the prior day."
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 67.80353728489484,
+    "intake_kcal_booked": 67.80353728489484,
+    "protein_g_estimate": 3.432,
+    "fat_g_estimate": 5.368,
+    "carbs_g_estimate": 0.913,
+    "intake_kcal_estimate": 67.80353728489484,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 3.432,
+      "fat_g": 5.368,
+      "carbs_g": 0.913
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      67.80353728489484,
+      67.80353728489484
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2214.3,
+    "estimated_deficit_kcal": 2146.4964627151053,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 1,
+    "protein_by_meal_g": {
+      "breakfast": 3.432
+    },
+    "warnings": [
+      "Training status not confirmed.",
+      "Food log is incomplete.",
+      "Day is still open."
+    ]
+  }
+}
