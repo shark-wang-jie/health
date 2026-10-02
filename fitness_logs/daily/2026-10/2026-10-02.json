@@ -177,6 +177,17 @@
       "fat_g_estimate": 0,
       "carbs_g_estimate": 29.04,
       "fiber_g_estimate": 6.16
+    },
+    {
+      "id": "dinner_chicken_rice_veg_1",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "Chicken rice dinner",
+      "kcal_base_estimate": 850,
+      "kcal_booked": 935,
+      "protein_g_estimate": 58,
+      "fat_g_estimate": 32,
+      "carbs_g_estimate": 98
     }
   ],
   "exercise_entries": [
