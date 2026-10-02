@@ -8,14 +8,16 @@
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "Lemon water 880 ml: confirm package-label energy and carbohydrate interpretation; recorded 37.8585 kcal versus 29.04 g carbohydrate are inconsistent. Original values retained."
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "Morning fasting weight 89.40 kg.",
   "plan_version": "2026-09-08-v3.2",
   "morning_weight_kg": 89.4,
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.4,
@@ -96,7 +98,8 @@
       "protein_g_estimate": 6.88,
       "fat_g_estimate": 0.59,
       "carbs_g_estimate": 0.56,
-      "sodium_mg_estimate": 89.7
+      "sodium_mg_estimate": 89.7,
+      "basis": "Recorded package-label estimate scaled to the reported 10 g; existing calorie and nutrient values retained."
     },
     {
       "id": "lunch_beef_rice_1",
@@ -118,14 +121,16 @@
         "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "restaurant oil and sauce estimate"
-      }
+      },
+      "basis": "Photo estimate of beef rice with bitter melon and choy sum; recorded base 820 kcal plus 82 kcal restaurant oil and sauce margin.",
+      "uncertainty": "Portion and restaurant oil/sauce are estimated; existing 680–1050 kcal range retained."
     },
     {
       "id": "lunch_shrimp_500g_1",
       "status": "consumed_estimated",
       "meal": "lunch",
       "description": "Baked shrimp, 500 g whole live weight, no seasoning",
-      "source_kind": "yield_estimate",
+      "source_kind": "database_estimate",
       "quantity_g_live_weight": 500,
       "edible_weight_g_estimate": 250,
       "edible_weight_g_range": [
@@ -140,7 +145,10 @@
       ],
       "protein_g_estimate": 60,
       "fat_g_estimate": 1.5,
-      "carbs_g_estimate": 0.5
+      "carbs_g_estimate": 0.5,
+      "source_evidence": "Original source_kind: yield_estimate.",
+      "basis": "Reported 500 g whole live weight; recorded edible-yield estimate 250 g (225–300 g), with existing calorie and nutrient estimates retained.",
+      "uncertainty": "Edible yield from whole live weight is estimated, not weighed; existing 220–300 kcal range retained."
     },
     {
       "id": "afternoon_chia_5g",
@@ -158,7 +166,8 @@
       "protein_g_estimate": 1.05,
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 0.085,
-      "fiber_g_estimate": 1.755
+      "fiber_g_estimate": 1.755,
+      "basis": "Recorded package-label estimate scaled to the reported 5 g; existing calorie and nutrient values retained."
     },
     {
       "id": "afternoon_lemon_water_880ml",
@@ -176,7 +185,9 @@
       "protein_g_estimate": 0,
       "fat_g_estimate": 0,
       "carbs_g_estimate": 29.04,
-      "fiber_g_estimate": 6.16
+      "fiber_g_estimate": 6.16,
+      "basis": "Recorded package-label estimate scaled to the reported 880 ml; existing calorie and nutrient values retained pending consistency check.",
+      "uncertainty": "Recorded 37.8585 kcal and 29.04 g carbohydrate differ substantially under 4 kcal/g; label interpretation needs confirmation, with both original values preserved."
     },
     {
       "id": "dinner_chicken_rice_veg_1",
@@ -197,7 +208,10 @@
         "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "restaurant/home-style oil and sauce estimate"
-      }
+      },
+      "source_kind": "database_estimate",
+      "basis": "Recorded chicken rice dinner estimate: base 850 kcal plus 85 kcal restaurant/home-style oil and sauce margin; original portion and nutrient estimates retained.",
+      "uncertainty": "Portion and cooking oil/sauce are estimated; existing 700–1050 kcal range retained."
     },
     {
       "id": "dinner_shrimp_500g_1",
@@ -218,7 +232,10 @@
       "edible_weight_g_range": [
         225,
         300
-      ]
+      ],
+      "source_kind": "database_estimate",
+      "basis": "Reported 500 g whole live weight; recorded edible-yield estimate 250 g (225–300 g), with existing calorie and nutrient estimates retained.",
+      "uncertainty": "Edible yield from whole live weight is estimated, not weighed; existing 220–300 kcal range retained."
     }
   ],
   "exercise_entries": [
@@ -256,53 +273,72 @@
   "corrections": [],
   "notes": [
     "Morning fasting weight 89.40 kg.",
-    "Breakfast pumpkin seeds 11 g using the same package label as the prior day."
+    "Breakfast pumpkin seeds 11 g using the same package label as the prior day.",
+    "Lunch and dinner rice meals are portion/oil estimates.",
+    "Both 500 g shrimp entries are based on estimated edible yield from whole live weight."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2333.174,
-    "intake_kcal_booked": 2500.174,
+    "intake_kcal_base_estimate": 2333.1787762906306,
+    "intake_kcal_booked": 2500.1787762906306,
     "protein_g_estimate": 234.362,
     "fat_g_estimate": 72.553,
-    "carbs_g_estimate": 229.598,
-    "intake_kcal_estimate": 2500.174,
-    "food_margin_kcal": 167,
+    "carbs_g_estimate": 229.59799999999998,
+    "intake_kcal_estimate": 2500.1787762906306,
+    "food_margin_kcal": 167.0,
     "base_macro_estimates": {
-      "protein_g": 3.432,
-      "fat_g": 5.368,
-      "carbs_g": 0.913
+      "protein_g": 234.362,
+      "fat_g": 53.998,
+      "carbs_g": 229.59799999999998
     },
-    "completed_day_base_intake_balance_kcal": 757.876,
+    "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 292.25,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1983.17877629063,
-      2863.17877629063
+      1983.178776290631,
+      2863.1787762906306
     ],
-    "exercise_active_kcal": 1169,
+    "exercise_active_kcal": 1169.0,
     "exercise_adjusted_kcal": 876.75,
-    "tdee_kcal_estimate": 3091.05,
-    "estimated_deficit_kcal": 590.876,
-    "completed_day_estimated_deficit_kcal": 590.876,
-    "energy_balance_scope": "completed_day_estimate",
+    "tdee_kcal_estimate": 3091.0499999999997,
+    "estimated_deficit_kcal": 590.8712237093691,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
-      "breakfast": 10.312,
-      "lunch": 105,
       "afternoon": 1.05,
-      "dinner": 118
+      "breakfast": 10.312,
+      "dinner": 118,
+      "lunch": 105
     },
     "warnings": [
-      "Lunch and dinner rice meals are portion/oil estimates.",
-      "Both 500 g shrimp entries are based on estimated edible yield from whole live weight."
+      "afternoon_lemon_water_880ml:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
     ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": 7.915,
     "fiber_g_entries_with_data": 2,
     "fiber_g_coverage_complete": false,
-    "interpretation": "Completed-day estimate from logged intake and tdee_v1; not a measured calorie deficit."
-  }
+    "sodium_mg_known_sum": 89.7,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "food_estimation_policy": "photo_margin_v1"
 }
