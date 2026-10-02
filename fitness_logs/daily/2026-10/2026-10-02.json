@@ -188,6 +188,17 @@
       "protein_g_estimate": 58,
       "fat_g_estimate": 32,
       "carbs_g_estimate": 98
+    },
+    {
+      "id": "dinner_shrimp_500g_1",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "Shrimp 500 g whole live weight",
+      "kcal_base_estimate": 250,
+      "kcal_booked": 250,
+      "protein_g_estimate": 60,
+      "fat_g_estimate": 1.5,
+      "carbs_g_estimate": 0.5
     }
   ],
   "exercise_entries": [
@@ -228,12 +239,12 @@
     "Breakfast pumpkin seeds 11 g using the same package label as the prior day."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1233.173998087954,
-    "intake_kcal_booked": 1315.173998087954,
-    "protein_g_estimate": 116.362,
-    "fat_g_estimate": 39.053,
-    "carbs_g_estimate": 131.098,
-    "intake_kcal_estimate": 1315.173998087954,
+    "intake_kcal_base_estimate": 2333.174,
+    "intake_kcal_booked": 2500.174,
+    "protein_g_estimate": 234.362,
+    "fat_g_estimate": 72.553,
+    "carbs_g_estimate": 229.598,
+    "intake_kcal_estimate": 2500.174,
     "food_margin_kcal": 82,
     "base_macro_estimates": {
       "protein_g": 3.432,
@@ -249,7 +260,7 @@
     "exercise_active_kcal": 1169,
     "exercise_adjusted_kcal": 876.75,
     "tdee_kcal_estimate": 3091.05,
-    "estimated_deficit_kcal": 1775.876001912046,
+    "estimated_deficit_kcal": 590.876,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -258,7 +269,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 10.312,
       "lunch": 105,
