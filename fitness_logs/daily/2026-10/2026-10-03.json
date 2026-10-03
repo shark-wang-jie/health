@@ -113,6 +113,31 @@
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
       "fiber_g_estimate": 7.915
+    },
+    {
+      "id": "dinner_choysum_beef_rice_photo_1",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "菜心牛肉盖饭",
+      "reported_text": "晚饭菜心牛肉",
+      "source_kind": "photo_estimate",
+      "basis": "Photo estimate: large rice portion, generous sliced beef, choy sum, restaurant sauce/oil.",
+      "kcal_base_estimate": 1020,
+      "kcal_booked": 1122,
+      "kcal_range": [
+        850,
+        1300
+      ],
+      "protein_g_estimate": 65,
+      "fat_g_estimate": 43.3,
+      "carbs_g_estimate": 115,
+      "margin": {
+        "added_fat_g": 11.3,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Restaurant oil/sauce uncertainty; about 10% calorie booking margin."
+      },
+      "uncertainty": "Main uncertainty is cooked beef quantity, rice quantity, and oil/sauce. Correct if leftovers are reported."
     }
   ],
   "exercise_entries": [
@@ -154,13 +179,13 @@
     "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 653.1383250478012,
-    "intake_kcal_booked": 653.1383250478012,
-    "protein_g_estimate": 48.394,
-    "fat_g_estimate": 9.801,
-    "carbs_g_estimate": 109.171,
-    "intake_kcal_estimate": 653.1383250478012,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1673.1383250478011,
+    "intake_kcal_booked": 1775.1383250478011,
+    "protein_g_estimate": 113.394,
+    "fat_g_estimate": 53.101,
+    "carbs_g_estimate": 224.171,
+    "intake_kcal_estimate": 1775.1383250478011,
+    "food_margin_kcal": 102,
     "base_macro_estimates": {
       "protein_g": 3.744,
       "fat_g": 5.856,
@@ -169,13 +194,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 394.25,
     "intake_kcal_range": [
-      653.1383250478012,
-      653.1383250478012
+      1503.1383250478011,
+      1953.1383250478011
     ],
     "exercise_active_kcal": 1577,
     "exercise_adjusted_kcal": 1182.75,
     "tdee_kcal_estimate": 3404.25,
-    "estimated_deficit_kcal": 2751.111674952199,
+    "estimated_deficit_kcal": 1629.1116749521989,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -184,7 +209,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -194,7 +219,8 @@
     "protein_by_meal_g": {
       "breakfast": 3.744,
       "meal": 43.6,
-      "intra_workout": 1.05
+      "intra_workout": 1.05,
+      "dinner": 65
     }
   }
 }
