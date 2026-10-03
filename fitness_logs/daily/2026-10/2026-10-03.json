@@ -76,6 +76,24 @@
       "protein_g_estimate": 36.5,
       "fat_g_estimate": 1.75,
       "carbs_g_estimate": 14.25
+    },
+    {
+      "id": "meal_noodle_cake_80g_1",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "Noodle cake 80 g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 80,
+      "kcal_base_estimate": 297.5621414913958,
+      "kcal_booked": 297.5621414913958,
+      "kcal_range": [
+        297.5621414913958,
+        297.5621414913958
+      ],
+      "protein_g_estimate": 7.1,
+      "fat_g_estimate": 0.6,
+      "carbs_g_estimate": 64.8,
+      "sodium_mg_estimate": 715
     }
   ],
   "exercise_entries": [],
@@ -91,12 +109,12 @@
     "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 73.96749521988528,
-    "intake_kcal_booked": 295.6455,
-    "protein_g_estimate": 40.244,
-    "fat_g_estimate": 7.606,
-    "carbs_g_estimate": 15.246,
-    "intake_kcal_estimate": 295.6455,
+    "intake_kcal_base_estimate": 593.2076367112811,
+    "intake_kcal_booked": 593.2076367112811,
+    "protein_g_estimate": 47.344,
+    "fat_g_estimate": 8.206,
+    "carbs_g_estimate": 80.046,
+    "intake_kcal_estimate": 593.2076367112811,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 3.744,
@@ -106,13 +124,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      73.96749521988528,
-      73.96749521988528
+      593.2076367112811,
+      593.2076367112811
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2221.5,
-    "estimated_deficit_kcal": 2147.532504780115,
+    "estimated_deficit_kcal": 1628.292363288719,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -121,14 +139,16 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
-      "Day is still open."
+      "Day is still open.",
+      "Calories from leftover wonton seasoning are not quantified."
     ],
     "protein_by_meal_g": {
-      "breakfast": 3.744
+      "breakfast": 3.744,
+      "meal": 43.6
     }
   }
 }
