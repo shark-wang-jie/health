@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-03",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed today's food intake is complete; training was already confirmed complete.",
+  "food_coverage": "confirmed_complete",
   "training_status": "completed",
-  "training_coverage": "complete",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 90,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -233,9 +233,8 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 6,
     "warnings": [
-      "Food log is incomplete.",
       "Training is complete.",
-      "Day is still open.",
+      "Food log is user-confirmed complete.",
       "Calories from leftover wonton seasoning are not quantified."
     ],
     "protein_by_meal_g": {
