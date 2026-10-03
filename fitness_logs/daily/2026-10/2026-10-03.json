@@ -44,7 +44,30 @@
     "deficit_min_kcal": 400,
     "deficit_max_kcal": 600
   },
-  "intake_entries": [],
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_12g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Pumpkin seeds 12 g",
+      "reported_text": "早上吃了12g南瓜子",
+      "source_kind": "label_known_quantity",
+      "basis": "Reuse prior package label per 100 g: 2579 kJ, protein 31.2 g, fat 48.8 g, carbs 8.3 g.",
+      "quantity_g": 12,
+      "kcal_base_estimate": 73.96749521988528,
+      "kcal_booked": 73.96749521988528,
+      "kcal_range": [
+        73.96749521988528,
+        73.96749521988528
+      ],
+      "protein_g_estimate": 3.744,
+      "fat_g_estimate": 5.856,
+      "carbs_g_estimate": 0.996,
+      "saturated_fat_g_estimate": 1.128,
+      "sugar_g_estimate": 0.132,
+      "sodium_mg_estimate": 0
+    }
+  ],
   "exercise_entries": [],
   "recovery": {
     "hunger": null,
@@ -58,28 +81,28 @@
     "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 0,
-    "intake_kcal_booked": 0,
-    "protein_g_estimate": 0,
-    "fat_g_estimate": 0,
-    "carbs_g_estimate": 0,
-    "intake_kcal_estimate": 0,
+    "intake_kcal_base_estimate": 73.96749521988528,
+    "intake_kcal_booked": 73.96749521988528,
+    "protein_g_estimate": 3.744,
+    "fat_g_estimate": 5.856,
+    "carbs_g_estimate": 0.996,
+    "intake_kcal_estimate": 73.96749521988528,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 0,
-      "fat_g": 0,
-      "carbs_g": 0
+      "protein_g": 3.744,
+      "fat_g": 5.856,
+      "carbs_g": 0.996
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      0,
-      0
+      73.96749521988528,
+      73.96749521988528
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2221.5,
-    "estimated_deficit_kcal": 2221.5,
+    "estimated_deficit_kcal": 2147.532504780115,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -88,11 +111,14 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 0,
+    "consumed_entries": 1,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
       "Day is still open."
-    ]
+    ],
+    "protein_by_meal_g": {
+      "breakfast": 3.744
+    }
   }
 }
