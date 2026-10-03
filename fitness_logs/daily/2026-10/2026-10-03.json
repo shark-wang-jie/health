@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User confirmed today's food intake is complete; training was already confirmed complete.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
+  "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "morning_weight_kg": 90,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 90,
@@ -69,13 +69,21 @@
     },
     {
       "id": "meal_250g_pack_1",
-      "status": "consumed",
+      "status": "consumed_estimated",
       "meal": "meal",
       "description": "250 g seafood snack",
       "kcal_booked": 221.678,
       "protein_g_estimate": 36.5,
       "fat_g_estimate": 1.75,
-      "carbs_g_estimate": 14.25
+      "carbs_g_estimate": 14.25,
+      "kcal_base_estimate": 221.678,
+      "kcal_range": [
+        221.678,
+        221.678
+      ],
+      "source_kind": "database_estimate",
+      "basis": "Preserved original 250 g seafood snack estimates from commit 8b2126e; commit 339ffec daily_summary includes this same value in base intake and both calorie bounds, with no margin. Original nutrition source was not recorded; source_kind is a provisional schema classification, not evidence of a verified database or label.",
+      "uncertainty": "Original nutrition source/label is missing. The restored calorie bounds reproduce the historical recorded bounds, not a measured uncertainty interval; confirm the original estimate basis."
     },
     {
       "id": "meal_noodle_cake_80g_1",
@@ -93,7 +101,8 @@
       "protein_g_estimate": 7.1,
       "fat_g_estimate": 0.6,
       "carbs_g_estimate": 64.8,
-      "sodium_mg_estimate": 715
+      "sodium_mg_estimate": 715,
+      "basis": "Existing entry records an 80 g noodle cake using label_known_quantity, 297.5621414913958 kcal and the preserved macros; added in commit 339ffec. No additional label details are available in this entry."
     },
     {
       "id": "intra_workout_chia_lemon_combo_1",
@@ -112,7 +121,8 @@
       "protein_g_estimate": 1.05,
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
-      "fiber_g_estimate": 7.915
+      "fiber_g_estimate": 7.915,
+      "uncertainty": "Lemon drink component retains recorded label values: 37.8585 kcal and 29.04 g carbohydrate for 880 ml differ substantially under 4 kcal/g. Confirm original label interpretation; do not force energy/macronutrient agreement."
     },
     {
       "id": "dinner_choysum_beef_rice_photo_1",
@@ -173,7 +183,10 @@
       "active_kcal": 858,
       "total_kcal": 1005,
       "avg_hr_bpm": 131,
-      "source_kind": "apple_watch_screenshot"
+      "source_kind": "apple_watch_screenshot",
+      "event_id": "strength_2026-10-03_1342",
+      "energy_scope": "session_active",
+      "source": "apple_watch_screenshot"
     },
     {
       "id": "indoor_walk_2026-10-03_1509",
@@ -186,7 +199,10 @@
       "active_kcal": 719,
       "total_kcal": 818,
       "avg_pace_per_km": "16:54",
-      "source_kind": "apple_watch_screenshot"
+      "source_kind": "apple_watch_screenshot",
+      "event_id": "indoor_walk_2026-10-03_1509",
+      "energy_scope": "session_active",
+      "source": "apple_watch_screenshot"
     }
   ],
   "recovery": {
@@ -198,7 +214,10 @@
   "corrections": [],
   "notes": [
     "Morning fasting weight 90.00 kg.",
-    "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain."
+    "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain.",
+    "Training is complete.",
+    "Food log is user-confirmed complete.",
+    "Calories from leftover wonton seasoning are not quantified."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1981.9337361376672,
@@ -207,41 +226,68 @@
     "fat_g_estimate": 62.101,
     "carbs_g_estimate": 228.771,
     "intake_kcal_estimate": 2083.9337361376674,
-    "food_margin_kcal": 102,
+    "food_margin_kcal": 102.00000000000023,
     "base_macro_estimates": {
-      "protein_g": 3.744,
-      "fat_g": 5.856,
-      "carbs_g": 0.996
+      "protein_g": 165.19400000000002,
+      "fat_g": 50.801,
+      "carbs_g": 228.771
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 394.25,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1811.9337361376672,
       2261.9337361376674
     ],
-    "exercise_active_kcal": 1577,
+    "exercise_active_kcal": 1577.0,
     "exercise_adjusted_kcal": 1182.75,
     "tdee_kcal_estimate": 3404.25,
     "estimated_deficit_kcal": 1320.3162638623326,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 6,
-    "warnings": [
-      "Training is complete.",
-      "Food log is user-confirmed complete.",
-      "Calories from leftover wonton seasoning are not quantified."
-    ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
-      "meal": 43.6,
+      "dinner": 116.8,
       "intra_workout": 1.05,
-      "dinner": 116.8
-    }
-  }
+      "meal": 43.6
+    },
+    "warnings": [
+      "intra_workout_chia_lemon_combo_1:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 7.915,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 2433.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "Calories from leftover wonton seasoning are not quantified.",
+    "250 g seafood snack: original nutrition source/label is not recorded; confirm the basis of the preserved estimates.",
+    "柠檬水880毫升沿用标签记录约37.9千卡、碳水29.04克，换算差异较大；待核对原始标签的能量、碳水及糖醇等成分口径，确认前保留原值。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
