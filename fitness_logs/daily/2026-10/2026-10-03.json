@@ -94,6 +94,25 @@
       "fat_g_estimate": 0.6,
       "carbs_g_estimate": 64.8,
       "sodium_mg_estimate": 715
+    },
+    {
+      "id": "intra_workout_chia_lemon_combo_1",
+      "status": "consumed",
+      "meal": "intra_workout",
+      "description": "Chia seeds 5 g + lemon drink 880 ml",
+      "reported_text": "练的时候喝了柠檬水和奇亚籽",
+      "source_kind": "label_known_quantity",
+      "basis": "Reuse established labels: chia per 100 g 1847 kJ, protein 21.0 g, fat 31.9 g, carbs 1.7 g, fiber 35.1 g; lemon drink per 100 ml 18 kJ, carbs 3.3 g, fiber 0.7 g.",
+      "kcal_base_estimate": 59.93068833652008,
+      "kcal_booked": 59.93068833652008,
+      "kcal_range": [
+        59.93068833652008,
+        59.93068833652008
+      ],
+      "protein_g_estimate": 1.05,
+      "fat_g_estimate": 1.595,
+      "carbs_g_estimate": 29.125,
+      "fiber_g_estimate": 7.915
     }
   ],
   "exercise_entries": [
@@ -135,12 +154,12 @@
     "Weight is 0.60 kg above 2026-10-02; single-day change recorded without interpreting it as fat gain."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 593.2076367112811,
-    "intake_kcal_booked": 593.2076367112811,
-    "protein_g_estimate": 47.344,
-    "fat_g_estimate": 8.206,
-    "carbs_g_estimate": 80.046,
-    "intake_kcal_estimate": 593.2076367112811,
+    "intake_kcal_base_estimate": 653.1383250478012,
+    "intake_kcal_booked": 653.1383250478012,
+    "protein_g_estimate": 48.394,
+    "fat_g_estimate": 9.801,
+    "carbs_g_estimate": 109.171,
+    "intake_kcal_estimate": 653.1383250478012,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 3.744,
@@ -150,13 +169,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 394.25,
     "intake_kcal_range": [
-      593.2076367112811,
-      593.2076367112811
+      653.1383250478012,
+      653.1383250478012
     ],
     "exercise_active_kcal": 1577,
     "exercise_adjusted_kcal": 1182.75,
     "tdee_kcal_estimate": 3404.25,
-    "estimated_deficit_kcal": 2811.0423632887187,
+    "estimated_deficit_kcal": 2751.111674952199,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -165,7 +184,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -174,7 +193,8 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
-      "meal": 43.6
+      "meal": 43.6,
+      "intra_workout": 1.05
     }
   }
 }
