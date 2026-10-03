@@ -66,6 +66,16 @@
       "saturated_fat_g_estimate": 1.128,
       "sugar_g_estimate": 0.132,
       "sodium_mg_estimate": 0
+    },
+    {
+      "id": "meal_250g_pack_1",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "250 g seafood snack",
+      "kcal_booked": 221.678,
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 1.75,
+      "carbs_g_estimate": 14.25
     }
   ],
   "exercise_entries": [],
@@ -82,11 +92,11 @@
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 73.96749521988528,
-    "intake_kcal_booked": 73.96749521988528,
-    "protein_g_estimate": 3.744,
-    "fat_g_estimate": 5.856,
-    "carbs_g_estimate": 0.996,
-    "intake_kcal_estimate": 73.96749521988528,
+    "intake_kcal_booked": 295.6455,
+    "protein_g_estimate": 40.244,
+    "fat_g_estimate": 7.606,
+    "carbs_g_estimate": 15.246,
+    "intake_kcal_estimate": 295.6455,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 3.744,
@@ -111,7 +121,7 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 2,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
