@@ -66,6 +66,66 @@
       "saturated_fat_g_estimate": 1.0528,
       "sugar_g_estimate": 0.12320000000000002,
       "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_chongqing_noodles_120g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "重庆小面挂面 120 g",
+      "reported_text": "早饭吃了一包重庆小面",
+      "source_kind": "label_known_quantity",
+      "basis": "Package label per 100 g: 1330 kJ, protein 10.2 g, fat 1.4 g, carbs 65.0 g, sodium 345 mg.",
+      "quantity_g": 120,
+      "kcal_base_estimate": 381.453154875717,
+      "kcal_booked": 381.453154875717,
+      "kcal_range": [
+        381.453154875717,
+        381.453154875717
+      ],
+      "protein_g_estimate": 12.24,
+      "fat_g_estimate": 1.68,
+      "carbs_g_estimate": 78,
+      "sodium_mg_estimate": 414
+    },
+    {
+      "id": "breakfast_7_whites_1_yolk",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "7 egg whites + 1 egg yolk",
+      "reported_text": "七个蛋白一个蛋黄",
+      "source_kind": "matched_default",
+      "basis": "Established egg defaults: one egg white 17 kcal, 3.6 g protein; one yolk derived from prior 7 whites + 2 yolks entry.",
+      "kcal_base_estimate": 174,
+      "kcal_booked": 174,
+      "kcal_range": [
+        160,
+        190
+      ],
+      "protein_g_estimate": 27.9,
+      "fat_g_estimate": 4.92,
+      "carbs_g_estimate": 2.28
+    },
+    {
+      "id": "breakfast_hema_beef_50g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "盒马五香牛肉 50 g",
+      "reported_text": "五十克盒马牛肉",
+      "source_kind": "label_known_quantity",
+      "basis": "Package label per 100 g: 646 kJ, protein 25.9 g, fat 4.5 g, saturated fat 1.2 g, carbs 2.3 g, sugar 0 g, sodium 859 mg.",
+      "quantity_g": 50,
+      "kcal_base_estimate": 77.19885277246654,
+      "kcal_booked": 77.19885277246654,
+      "kcal_range": [
+        77.19885277246654,
+        77.19885277246654
+      ],
+      "protein_g_estimate": 12.95,
+      "fat_g_estimate": 2.25,
+      "carbs_g_estimate": 1.15,
+      "saturated_fat_g_estimate": 0.6,
+      "sugar_g_estimate": 0,
+      "sodium_mg_estimate": 429.5
     }
   ],
   "exercise_entries": [],
@@ -80,28 +140,28 @@
     "Morning fasting weight 89.80 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 69.03632887189292,
-    "intake_kcal_booked": 69.03632887189292,
-    "protein_g_estimate": 3.4944,
-    "fat_g_estimate": 5.4656,
-    "carbs_g_estimate": 0.9296000000000001,
-    "intake_kcal_estimate": 69.03632887189292,
+    "intake_kcal_base_estimate": 701.6883365200765,
+    "intake_kcal_booked": 701.6883365200765,
+    "protein_g_estimate": 56.5844,
+    "fat_g_estimate": 14.3156,
+    "carbs_g_estimate": 82.3596,
+    "intake_kcal_estimate": 701.6883365200765,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 3.4944,
-      "fat_g": 5.4656,
-      "carbs_g": 0.9296000000000001
+      "protein_g": 56.5844,
+      "fat_g": 14.3156,
+      "carbs_g": 82.3596
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      69.03632887189292,
-      69.03632887189292
+      687.6883365200765,
+      717.6883365200765
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.1,
-    "estimated_deficit_kcal": 2150.0636711281068,
+    "estimated_deficit_kcal": 1517.4116634799234,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -110,14 +170,14 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 3.4944
+      "breakfast": 56.5844
     }
   }
 }
