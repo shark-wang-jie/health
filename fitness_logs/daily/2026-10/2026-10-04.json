@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User confirmed food and training complete.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
+  "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.8,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.8,
@@ -145,7 +145,7 @@
       "fat_g_estimate": 38,
       "carbs_g_estimate": 115.4,
       "margin": {
-        "added_fat_g": 12.39,
+        "added_fat_g": 10.11111111111111,
         "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "Restaurant oil/sauce and fried-egg oil uncertainty; about 10% booking margin."
@@ -189,7 +189,8 @@
       "carbs_g_estimate": 3.22,
       "saturated_fat_g_estimate": 1.68,
       "sugar_g_estimate": 0,
-      "sodium_mg_estimate": 1202.6
+      "sodium_mg_estimate": 1202.6,
+      "basis": "Same Hema five-spice beef label recorded at breakfast: per 100 g 646 kJ, protein 25.9 g, fat 4.5 g, saturated fat 1.2 g, carbs 2.3 g, sugar 0 g, sodium 859 mg; scaled to recorded 140 g."
     }
   ],
   "exercise_entries": [
@@ -202,7 +203,10 @@
       "duration_seconds": 4846.2812530994415,
       "active_kcal": 734,
       "total_kcal": 864.1724836704333,
-      "source_kind": "health_sync"
+      "source_kind": "health_sync",
+      "event_id": "strength_2026-10-04_1302",
+      "energy_scope": "session_active",
+      "source": "health_sync"
     },
     {
       "id": "indoor_walk_2026-10-04_1424",
@@ -214,7 +218,10 @@
       "distance_km": 3.535965433367528,
       "active_kcal": 390,
       "total_kcal": 851.7347088295859,
-      "source_kind": "health_sync"
+      "source_kind": "health_sync",
+      "event_id": "indoor_walk_2026-10-04_1424",
+      "energy_scope": "session_active",
+      "source": "health_sync"
     }
   ],
   "recovery": {
@@ -230,10 +237,19 @@
       "reason": "Same rice, less beef than prior day.",
       "previous_kcal_booked": 1226.5,
       "revised_kcal_booked": 1001
+    },
+    {
+      "id": "repair_dinner_margin_2026-10-04",
+      "target_entry_id": "dinner_choysum_beef_rice_fried_egg_photo_1",
+      "reason": "Derived oil margin normalization: Git commit f148da6 revised dinner from 1115/1226.5 to 910/1001 kcal but retained the previous added_fat_g. Recalculate the 91 kcal oil margin at 9 kcal/g; preserve reported meal and macro estimates.",
+      "previous_added_fat_g": 12.39,
+      "revised_added_fat_g": 10.11111111111111
     }
   ],
   "notes": [
-    "Morning fasting weight 89.80 kg."
+    "Morning fasting weight 89.80 kg.",
+    "Dinner is a photo-based estimate; actual beef, rice, sauce, and oil may differ.",
+    "Exercise calories are based on synced Health workout data."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1887.7758126195029,
@@ -242,39 +258,65 @@
     "fat_g_estimate": 60.2106,
     "carbs_g_estimate": 230.1046,
     "intake_kcal_estimate": 1978.7758126195029,
-    "food_margin_kcal": 91,
+    "food_margin_kcal": 91.0,
     "base_macro_estimates": {
-      "protein_g": 56.5844,
-      "fat_g": 14.3156,
-      "carbs_g": 82.3596
+      "protein_g": 143.8944,
+      "fat_g": 50.099488888888885,
+      "carbs_g": 230.1046
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 281,
+    "training_discount_kcal": 281.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1743.7758126195029,
       2173.7758126195026
     ],
-    "exercise_active_kcal": 1124,
-    "exercise_adjusted_kcal": 843,
+    "exercise_active_kcal": 1124.0,
+    "exercise_adjusted_kcal": 843.0,
     "tdee_kcal_estimate": 3062.1,
     "estimated_deficit_kcal": 1083.324187380497,
-    "completed_day_estimated_deficit_kcal": 1083.324187380497,
-    "energy_balance_scope": "completed_day_estimate",
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 7,
-    "warnings": [
-      "Dinner is a photo-based estimate; actual beef, rice, sauce, and oil may differ.",
-      "Exercise calories are based on synced Health workout data."
-    ],
     "protein_by_meal_g": {
-      "breakfast": 56.5844,
+      "breakfast": 56.584399999999995,
       "dinner": 50,
-      "post_workout": 37.31
-    }
-  }
+      "post_workout": 37.309999999999995
+    },
+    "warnings": [
+      "post_workout_chia_lemon_combo_1:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 7.915,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 2046.1,
+    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "柠檬水880毫升沿用标签记录约37.9千卡、碳水29.04克，换算差异较大；待核对原始标签的能量、碳水及糖醇等成分口径，确认前保留原值。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
