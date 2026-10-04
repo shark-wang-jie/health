@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-04",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed food and training complete.",
+  "food_coverage": "confirmed_complete",
+  "training_status": "completed",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.8,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -170,9 +170,53 @@
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
       "fiber_g_estimate": 7.915
+    },
+    {
+      "id": "post_workout_hema_beef_140g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Hema five-spice beef 140 g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 140,
+      "kcal_base_estimate": 216.1567877629063,
+      "kcal_booked": 216.1567877629063,
+      "kcal_range": [
+        216.1567877629063,
+        216.1567877629063
+      ],
+      "protein_g_estimate": 36.26,
+      "fat_g_estimate": 6.3,
+      "carbs_g_estimate": 3.22,
+      "saturated_fat_g_estimate": 1.68,
+      "sugar_g_estimate": 0,
+      "sodium_mg_estimate": 1202.6
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-04_1302",
+      "status": "completed",
+      "type": "traditional_strength_training",
+      "start_local": "13:02:26",
+      "end_local": "14:23:13",
+      "duration_seconds": 4846.2812530994415,
+      "active_kcal": 734,
+      "total_kcal": 864.1724836704333,
+      "source_kind": "health_sync"
+    },
+    {
+      "id": "indoor_walk_2026-10-04_1424",
+      "status": "completed",
+      "type": "indoor_walk",
+      "start_local": "14:24:14",
+      "end_local": "15:28:11",
+      "duration_seconds": 3836.8570679426193,
+      "distance_km": 3.535965433367528,
+      "active_kcal": 390,
+      "total_kcal": 851.7347088295859,
+      "source_kind": "health_sync"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -192,12 +236,12 @@
     "Morning fasting weight 89.80 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1671.6190248565965,
-    "intake_kcal_booked": 1762.6190248565965,
-    "protein_g_estimate": 107.6344,
-    "fat_g_estimate": 53.9106,
-    "carbs_g_estimate": 226.8846,
-    "intake_kcal_estimate": 1762.6190248565965,
+    "intake_kcal_base_estimate": 1887.7758126195029,
+    "intake_kcal_booked": 1978.7758126195029,
+    "protein_g_estimate": 143.8944,
+    "fat_g_estimate": 60.2106,
+    "carbs_g_estimate": 230.1046,
+    "intake_kcal_estimate": 1978.7758126195029,
     "food_margin_kcal": 91,
     "base_macro_estimates": {
       "protein_g": 56.5844,
@@ -205,33 +249,32 @@
       "carbs_g": 82.3596
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 281,
     "intake_kcal_range": [
-      1527.6190248565965,
-      1957.6190248565965
+      1743.7758126195029,
+      2173.7758126195026
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2219.1,
-    "estimated_deficit_kcal": 456.4809751434034,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 1124,
+    "exercise_adjusted_kcal": 843,
+    "tdee_kcal_estimate": 3062.1,
+    "estimated_deficit_kcal": 1083.324187380497,
+    "completed_day_estimated_deficit_kcal": 1083.324187380497,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
-    "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 7,
     "warnings": [
-      "Food log is incomplete.",
-      "Training status not confirmed.",
-      "Day is still open."
+      "Dinner is a photo-based estimate; actual beef, rice, sauce, and oil may differ.",
+      "Exercise calories are based on synced Health workout data."
     ],
     "protein_by_meal_g": {
       "breakfast": 56.5844,
       "dinner": 50,
-      "post_workout": 1.05
+      "post_workout": 37.31
     }
   }
 }
