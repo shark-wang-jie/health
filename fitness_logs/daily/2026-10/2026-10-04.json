@@ -126,6 +126,31 @@
       "saturated_fat_g_estimate": 0.6,
       "sugar_g_estimate": 0,
       "sodium_mg_estimate": 429.5
+    },
+    {
+      "id": "dinner_choysum_beef_rice_fried_egg_photo_1",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "菜心牛肉盖饭 + 煎蛋",
+      "reported_text": "晚饭菜心牛肉 加一个煎蛋",
+      "source_kind": "photo_estimate",
+      "basis": "Photo estimate, calibrated to the same style of菜心牛肉盖饭 logged on 2026-10-03, plus one fried egg.",
+      "kcal_base_estimate": 1115,
+      "kcal_booked": 1226.5,
+      "kcal_range": [
+        950,
+        1420
+      ],
+      "protein_g_estimate": 71.5,
+      "fat_g_estimate": 50.3,
+      "carbs_g_estimate": 115.4,
+      "margin": {
+        "added_fat_g": 12.39,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Restaurant oil/sauce and fried-egg oil uncertainty; about 10% booking margin."
+      },
+      "uncertainty": "Main uncertainty is cooked beef quantity, rice quantity, gravy/oil, and egg frying oil. Correct if leftovers are reported."
     }
   ],
   "exercise_entries": [],
@@ -140,13 +165,13 @@
     "Morning fasting weight 89.80 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 701.6883365200765,
-    "intake_kcal_booked": 701.6883365200765,
-    "protein_g_estimate": 56.5844,
-    "fat_g_estimate": 14.3156,
-    "carbs_g_estimate": 82.3596,
-    "intake_kcal_estimate": 701.6883365200765,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1816.6883365200765,
+    "intake_kcal_booked": 1928.1883365200765,
+    "protein_g_estimate": 128.08440000000002,
+    "fat_g_estimate": 64.6156,
+    "carbs_g_estimate": 197.7596,
+    "intake_kcal_estimate": 1928.1883365200765,
+    "food_margin_kcal": 111.5,
     "base_macro_estimates": {
       "protein_g": 56.5844,
       "fat_g": 14.3156,
@@ -155,13 +180,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      687.6883365200765,
-      717.6883365200765
+      1637.6883365200765,
+      2137.6883365200765
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.1,
-    "estimated_deficit_kcal": 1517.4116634799234,
+    "estimated_deficit_kcal": 290.9116634799234,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -170,14 +195,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 56.5844
+      "breakfast": 56.5844,
+      "dinner": 71.5
     }
   }
 }
