@@ -124,6 +124,55 @@
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
       "fiber_g_estimate": 7.915
+    },
+    {
+      "id": "meal_skinless_chicken_legs_170g",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "2 braised chicken legs, skin removed",
+      "kcal_base_estimate": 215,
+      "kcal_booked": 225,
+      "kcal_range": [
+        205,
+        245
+      ],
+      "protein_g_estimate": 34.5,
+      "fat_g_estimate": 2.5,
+      "carbs_g_estimate": 15
+    },
+    {
+      "id": "meal_baked_live_shrimp_500g",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "Baked live shrimp, 500 g whole weight",
+      "quantity_g_live": 500,
+      "edible_cooked_g_estimate": 250,
+      "kcal_base_estimate": 250,
+      "kcal_booked": 250,
+      "kcal_range": [
+        220,
+        300
+      ],
+      "protein_g_estimate": 60,
+      "fat_g_estimate": 1.5,
+      "carbs_g_estimate": 0.5
+    },
+    {
+      "id": "meal_mantou_100g",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "Mantou 100 g",
+      "quantity_g": 100,
+      "kcal_base_estimate": 252.868068833652,
+      "kcal_booked": 252.868068833652,
+      "kcal_range": [
+        252.868068833652,
+        252.868068833652
+      ],
+      "protein_g_estimate": 7.4,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 52.9,
+      "sodium_mg_estimate": 23
     }
   ],
   "exercise_entries": [
@@ -162,13 +211,13 @@
     "Morning fasting weight 89.50 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 938.9316443594646,
-    "intake_kcal_booked": 958.9316443594646,
-    "protein_g_estimate": 31.394000000000002,
-    "fat_g_estimate": 31.201,
-    "carbs_g_estimate": 151.421,
-    "intake_kcal_estimate": 958.9316443594646,
-    "food_margin_kcal": 20,
+    "intake_kcal_base_estimate": 1656.7997131931165,
+    "intake_kcal_booked": 1686.7997131931165,
+    "protein_g_estimate": 133.294,
+    "fat_g_estimate": 36.101,
+    "carbs_g_estimate": 219.821,
+    "intake_kcal_estimate": 1686.7997131931165,
+    "food_margin_kcal": 30,
     "base_macro_estimates": {
       "protein_g": 3.7439999999999998,
       "fat_g": 5.856,
@@ -177,13 +226,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 422,
     "intake_kcal_range": [
-      903.9316443594646,
-      1043.9316443594646
+      1581.7997131931165,
+      1841.7997131931165
     ],
     "exercise_active_kcal": 1688,
     "exercise_adjusted_kcal": 1266,
     "tdee_kcal_estimate": 3481.5,
-    "estimated_deficit_kcal": 2522.5683556405356,
+    "estimated_deficit_kcal": 1794.7002868068835,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -192,7 +241,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 7,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -201,7 +250,7 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
-      "meal": 26.6,
+      "meal": 128.5,
       "post_workout": 1.05
     }
   }
