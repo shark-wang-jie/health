@@ -66,6 +66,26 @@
       "saturated_fat_g_estimate": 1.128,
       "sugar_g_estimate": 0.132,
       "sodium_mg_estimate": 0
+    },
+    {
+      "id": "meal_chongqing_noodles_pepper_chilioil_1",
+      "status": "consumed",
+      "meal": "meal",
+      "description": "重庆小面挂面 120 g + 1 spoon roasted pepper sauce + 1 spoon chili oil",
+      "reported_text": "一包重庆小面 一勺烧椒酱一勺辣椒油",
+      "source_kind": "mixed_label_and_photo_estimate",
+      "basis": "Noodles from package label: 120 g = 1330 kJ/100 g. Condiments estimated from photo as one spoon each; chili oil is the main uncertainty.",
+      "quantity_g": 120,
+      "kcal_base_estimate": 515,
+      "kcal_booked": 535,
+      "kcal_range": [
+        480,
+        620
+      ],
+      "protein_g_estimate": 12.5,
+      "fat_g_estimate": 15.5,
+      "carbs_g_estimate": 82,
+      "uncertainty": "Sauce/oil spoon size and retained oil may vary."
     }
   ],
   "exercise_entries": [],
@@ -80,13 +100,13 @@
     "Morning fasting weight 89.50 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 73.96749521988528,
-    "intake_kcal_booked": 73.96749521988528,
-    "protein_g_estimate": 3.7439999999999998,
-    "fat_g_estimate": 5.856,
-    "carbs_g_estimate": 0.996,
-    "intake_kcal_estimate": 73.96749521988528,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 588.9674952198852,
+    "intake_kcal_booked": 608.9674952198852,
+    "protein_g_estimate": 16.244,
+    "fat_g_estimate": 21.356,
+    "carbs_g_estimate": 82.996,
+    "intake_kcal_estimate": 608.9674952198852,
+    "food_margin_kcal": 20,
     "base_macro_estimates": {
       "protein_g": 3.7439999999999998,
       "fat_g": 5.856,
@@ -95,13 +115,13 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      73.96749521988528,
-      73.96749521988528
+      553.9674952198852,
+      693.9674952198852
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2215.5,
-    "estimated_deficit_kcal": 2141.532504780115,
+    "estimated_deficit_kcal": 1606.5325047801148,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -110,14 +130,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 2,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 3.7439999999999998
+      "breakfast": 3.744,
+      "meal": 12.5
     }
   }
 }
