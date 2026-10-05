@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "User confirmed food and training complete.",
+  "closure_basis": "User confirmed food and training are officially complete after two additional Hema chicken legs.",
   "food_coverage": "confirmed_complete",
   "training_status": "completed",
   "training_coverage": "confirmed_complete",
@@ -173,6 +173,24 @@
       "fat_g_estimate": 0.9,
       "carbs_g_estimate": 52.9,
       "sodium_mg_estimate": 23
+    },
+    {
+      "id": "late_meal_hema_chicken_legs_170g",
+      "status": "consumed",
+      "meal": "late_meal",
+      "description": "2 Hema braised chicken legs, same skinless assumption as earlier",
+      "source_kind": "matched_recent_entry",
+      "quantity_g_package": 170,
+      "kcal_base_estimate": 215,
+      "kcal_booked": 225,
+      "kcal_range": [
+        205,
+        245
+      ],
+      "protein_g_estimate": 34.5,
+      "fat_g_estimate": 2.5,
+      "carbs_g_estimate": 15,
+      "uncertainty": "User said two more Hema chicken legs; assumed same product and same skin-removal pattern as earlier today."
     }
   ],
   "exercise_entries": [
@@ -222,13 +240,13 @@
     "Morning fasting weight 89.50 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1656.7997131931165,
-    "intake_kcal_booked": 1686.7997131931165,
-    "protein_g_estimate": 133.294,
-    "fat_g_estimate": 36.101,
-    "carbs_g_estimate": 219.821,
-    "intake_kcal_estimate": 1686.7997131931165,
-    "food_margin_kcal": 30,
+    "intake_kcal_base_estimate": 1871.7997131931165,
+    "intake_kcal_booked": 1911.7997131931165,
+    "protein_g_estimate": 167.794,
+    "fat_g_estimate": 38.601,
+    "carbs_g_estimate": 234.821,
+    "intake_kcal_estimate": 1911.7997131931165,
+    "food_margin_kcal": 40,
     "base_macro_estimates": {
       "protein_g": 3.7439999999999998,
       "fat_g": 5.856,
@@ -237,14 +255,14 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 438.9480705282499,
     "intake_kcal_range": [
-      1581.7997131931165,
-      1841.7997131931165
+      1786.7997131931165,
+      2086.7997131931165
     ],
     "exercise_active_kcal": 1755.7922821129996,
     "exercise_adjusted_kcal": 1316.8442115847497,
     "tdee_kcal_estimate": 3532.3442115847497,
-    "estimated_deficit_kcal": 1845.5444983916332,
-    "completed_day_estimated_deficit_kcal": 1845.5444983916332,
+    "estimated_deficit_kcal": 1620.5444983916332,
+    "completed_day_estimated_deficit_kcal": 1620.5444983916332,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
@@ -252,15 +270,17 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "warnings": [
       "Food and training logs are user-confirmed complete.",
-      "Workout active calories use Health workout total_energy_kcal, validated against Fitness screenshots as the displayed dynamic calories."
+      "Workout active calories use Health workout total_energy_kcal, validated against Fitness screenshots as the displayed dynamic calories.",
+      "Late chicken legs were assumed to be the same product and skinless preparation as the earlier pair; correct if skin was eaten."
     ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
       "meal": 128.5,
-      "post_workout": 1.05
+      "post_workout": 1.05,
+      "late_meal": 34.5
     }
   }
 }
