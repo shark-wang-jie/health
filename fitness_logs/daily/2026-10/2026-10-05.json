@@ -183,9 +183,11 @@
       "start_local": "12:48:32",
       "end_local": "14:22:12",
       "duration_seconds": 5619.038779020309,
-      "active_kcal": 1369,
-      "total_kcal": 959.5769952087645,
-      "source_kind": "health_sync"
+      "active_kcal": 959.5769952087645,
+      "total_kcal": 1125,
+      "source_kind": "health_sync_validated_by_screenshot",
+      "avg_hr_bpm": 132,
+      "note": "Health workout total_energy_kcal matches Fitness dynamic calories."
     },
     {
       "id": "indoor_walk_2026-10-05_1423",
@@ -195,9 +197,11 @@
       "end_local": "15:23:48",
       "duration_seconds": 3627.9168549776077,
       "distance_km": 3.4850361221446655,
-      "active_kcal": 319,
-      "total_kcal": 796.215286904235,
-      "source_kind": "health_sync"
+      "active_kcal": 796.215286904235,
+      "total_kcal": 908,
+      "source_kind": "health_sync_validated_by_screenshot",
+      "avg_hr_bpm": 155,
+      "note": "Health workout total_energy_kcal matches Fitness dynamic calories."
     }
   ],
   "recovery": {
@@ -206,7 +210,14 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "id": "corr_health_workout_energy_mapping_2026-10-05",
+      "reason": "Fitness screenshots confirmed Health workout total_energy_kcal corresponds to displayed dynamic calories; interval activeEnergyBurned aggregation should not be used for workout active calories.",
+      "previous_exercise_active_kcal": 1688,
+      "revised_exercise_active_kcal": 1755.7922821129996
+    }
+  ],
   "notes": [
     "Morning fasting weight 89.50 kg."
   ],
@@ -224,27 +235,27 @@
       "carbs_g": 0.996
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 422,
+    "training_discount_kcal": 438.9480705282499,
     "intake_kcal_range": [
       1581.7997131931165,
       1841.7997131931165
     ],
-    "exercise_active_kcal": 1688,
-    "exercise_adjusted_kcal": 1266,
-    "tdee_kcal_estimate": 3481.5,
-    "estimated_deficit_kcal": 1794.7002868068835,
-    "completed_day_estimated_deficit_kcal": null,
+    "exercise_active_kcal": 1755.7922821129996,
+    "exercise_adjusted_kcal": 1316.8442115847497,
+    "tdee_kcal_estimate": 3532.3442115847497,
+    "estimated_deficit_kcal": 1845.5444983916332,
+    "completed_day_estimated_deficit_kcal": 1845.5444983916332,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 7,
     "warnings": [
       "Food and training logs are user-confirmed complete.",
-      "Synced Health workout total-energy and active-energy values are internally inconsistent, so the modeled TDEE and deficit remain provisional."
+      "Workout active calories use Health workout total_energy_kcal, validated against Fitness screenshots as the displayed dynamic calories."
     ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
