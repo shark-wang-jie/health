@@ -86,6 +86,16 @@
       "fat_g_estimate": 15.5,
       "carbs_g_estimate": 82,
       "uncertainty": "Sauce/oil spoon size and retained oil may vary."
+    },
+    {
+      "id": "meal_shrimp_wonton_box_1",
+      "status": "consumed_pending",
+      "meal": "meal",
+      "description": "虾仁馄饨 1 盒",
+      "reported_text": "又吃了一盒虾仁馄饨",
+      "source_kind": "amount_unknown",
+      "quantity": "1 box",
+      "uncertainty": "Package net weight and nutrition label are not available in the current record; calories and macros are pending."
     }
   ],
   "exercise_entries": [],
@@ -130,11 +140,12 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status not confirmed.",
-      "Day is still open."
+      "Day is still open.",
+      "One box of shrimp wontons is recorded as consumed, but its calories/macros are pending package nutrition data."
     ],
     "protein_by_meal_g": {
       "breakfast": 3.744,
