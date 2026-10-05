@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User confirmed food and training are officially complete after two additional Hema chicken legs.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
+  "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.5,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.5,
@@ -73,7 +73,7 @@
       "meal": "meal",
       "description": "重庆小面挂面 120 g + 1 spoon roasted pepper sauce + 1 spoon chili oil",
       "reported_text": "一包重庆小面 一勺烧椒酱一勺辣椒油",
-      "source_kind": "mixed_label_and_photo_estimate",
+      "source_kind": "photo_estimate",
       "basis": "Noodles from package label: 120 g = 1330 kJ/100 g. Condiments estimated from photo as one spoon each; chili oil is the main uncertainty.",
       "quantity_g": 120,
       "kcal_base_estimate": 515,
@@ -85,7 +85,16 @@
       "protein_g_estimate": 12.5,
       "fat_g_estimate": 15.5,
       "carbs_g_estimate": 82,
-      "uncertainty": "Sauce/oil spoon size and retained oil may vary."
+      "uncertainty": "Sauce/oil spoon size and retained oil may vary.",
+      "source_evidence": {
+        "original_source_kind": "mixed_label_and_photo_estimate"
+      },
+      "margin": {
+        "added_fat_g": 2.2222222222222223,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Existing 20 kcal margin for uncertain chili oil/sauce, expressed as a fat equivalent for schema normalization; actual split unconfirmed, not additional reported consumption."
+      }
     },
     {
       "id": "meal_shrimp_wonton_box_1",
@@ -106,7 +115,8 @@
       "protein_g_estimate": 14.1,
       "fat_g_estimate": 8.25,
       "carbs_g_estimate": 39.3,
-      "sodium_mg_estimate": 517.5
+      "sodium_mg_estimate": 517.5,
+      "basis": "Existing package-label estimate for one box, 15 pieces / 150 g; no seasoning used. Original calorie and nutrient estimates retained."
     },
     {
       "id": "post_workout_chia_lemon_combo_1",
@@ -123,7 +133,9 @@
       "protein_g_estimate": 1.05,
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
-      "fiber_g_estimate": 7.915
+      "fiber_g_estimate": 7.915,
+      "basis": "Reuse established labels: chia per 100 g 1847 kJ, protein 21.0 g, fat 31.9 g, carbs 1.7 g, fiber 35.1 g; lemon drink per 100 ml 18 kJ, carbs 3.3 g, fiber 0.7 g. Recorded 5 g chia and 880 ml drink; original values retained.",
+      "uncertainty": "Lemon drink label energy and carbohydrate interpretation are inconsistent; pending confirmation, original estimates retained."
     },
     {
       "id": "meal_skinless_chicken_legs_170g",
@@ -138,7 +150,16 @@
       ],
       "protein_g_estimate": 34.5,
       "fat_g_estimate": 2.5,
-      "carbs_g_estimate": 15
+      "carbs_g_estimate": 15,
+      "source_kind": "matched_default",
+      "basis": "Existing estimate for two braised chicken legs with skin removed: base 215 kcal, booked 225 kcal. Original portion and nutrient estimates retained; no measured edible weight added.",
+      "uncertainty": "Portion and retained braising sauce are estimated; original 205–245 kcal range retained.",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 2.5,
+        "already_in_base": false,
+        "reason": "Existing 10 kcal braising margin expressed as a carbohydrate equivalent for schema normalization; actual fat/carbohydrate split unconfirmed, not additional reported consumption."
+      }
     },
     {
       "id": "meal_baked_live_shrimp_500g",
@@ -155,7 +176,10 @@
       ],
       "protein_g_estimate": 60,
       "fat_g_estimate": 1.5,
-      "carbs_g_estimate": 0.5
+      "carbs_g_estimate": 0.5,
+      "source_kind": "database_estimate",
+      "basis": "Existing estimate from 500 g whole live weight and 250 g estimated cooked edible yield; original calorie and nutrient values retained.",
+      "uncertainty": "Cooked edible yield is estimated rather than weighed; original 220–300 kcal range retained."
     },
     {
       "id": "meal_mantou_100g",
@@ -172,14 +196,16 @@
       "protein_g_estimate": 7.4,
       "fat_g_estimate": 0.9,
       "carbs_g_estimate": 52.9,
-      "sodium_mg_estimate": 23
+      "sodium_mg_estimate": 23,
+      "source_kind": "matched_default",
+      "basis": "Existing recorded estimate for 100 g mantou; original calorie and nutrient values retained. Original entry does not specify its label/source."
     },
     {
       "id": "late_meal_hema_chicken_legs_170g",
       "status": "consumed",
       "meal": "late_meal",
       "description": "2 Hema braised chicken legs, same skinless assumption as earlier",
-      "source_kind": "matched_recent_entry",
+      "source_kind": "matched_default",
       "quantity_g_package": 170,
       "kcal_base_estimate": 215,
       "kcal_booked": 225,
@@ -190,7 +216,17 @@
       "protein_g_estimate": 34.5,
       "fat_g_estimate": 2.5,
       "carbs_g_estimate": 15,
-      "uncertainty": "User said two more Hema chicken legs; assumed same product and same skin-removal pattern as earlier today."
+      "uncertainty": "User said two more Hema chicken legs; assumed same product and same skin-removal pattern as earlier today.",
+      "source_evidence": {
+        "original_source_kind": "matched_recent_entry"
+      },
+      "basis": "Existing estimate for two braised chicken legs with skin removed: base 215 kcal, booked 225 kcal. Reuse earlier same-day entry; product and skin removal are assumptions already recorded.",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 2.5,
+        "already_in_base": false,
+        "reason": "Existing 10 kcal braising margin expressed as a carbohydrate equivalent for schema normalization; actual fat/carbohydrate split unconfirmed, not additional reported consumption."
+      }
     }
   ],
   "exercise_entries": [
@@ -205,7 +241,10 @@
       "total_kcal": 1125,
       "source_kind": "health_sync_validated_by_screenshot",
       "avg_hr_bpm": 132,
-      "note": "Health workout total_energy_kcal matches Fitness dynamic calories."
+      "note": "Health workout total_energy_kcal matches Fitness dynamic calories.",
+      "event_id": "strength_2026-10-05_1248",
+      "energy_scope": "session_active",
+      "source": "health_sync_validated_by_screenshot; Health workout total_energy_kcal matches Fitness dynamic calories."
     },
     {
       "id": "indoor_walk_2026-10-05_1423",
@@ -219,7 +258,10 @@
       "total_kcal": 908,
       "source_kind": "health_sync_validated_by_screenshot",
       "avg_hr_bpm": 155,
-      "note": "Health workout total_energy_kcal matches Fitness dynamic calories."
+      "note": "Health workout total_energy_kcal matches Fitness dynamic calories.",
+      "event_id": "indoor_walk_2026-10-05_1423",
+      "energy_scope": "session_active",
+      "source": "health_sync_validated_by_screenshot; Health workout total_energy_kcal matches Fitness dynamic calories."
     }
   ],
   "recovery": {
@@ -237,7 +279,10 @@
     }
   ],
   "notes": [
-    "Morning fasting weight 89.50 kg."
+    "Morning fasting weight 89.50 kg.",
+    "Food and training logs are user-confirmed complete.",
+    "Workout active calories use Health workout total_energy_kcal, validated against Fitness screenshots as the displayed dynamic calories.",
+    "Late chicken legs were assumed to be the same product and skinless preparation as the earlier pair; correct if skin was eaten."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1871.7997131931165,
@@ -246,14 +291,15 @@
     "fat_g_estimate": 38.601,
     "carbs_g_estimate": 234.821,
     "intake_kcal_estimate": 1911.7997131931165,
-    "food_margin_kcal": 40,
+    "food_margin_kcal": 40.0,
     "base_macro_estimates": {
-      "protein_g": 3.7439999999999998,
-      "fat_g": 5.856,
-      "carbs_g": 0.996
+      "protein_g": 167.794,
+      "fat_g": 36.37877777777778,
+      "carbs_g": 229.821
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 438.9480705282499,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1786.7997131931165,
       2086.7997131931165
@@ -262,25 +308,50 @@
     "exercise_adjusted_kcal": 1316.8442115847497,
     "tdee_kcal_estimate": 3532.3442115847497,
     "estimated_deficit_kcal": 1620.5444983916332,
-    "completed_day_estimated_deficit_kcal": 1620.5444983916332,
-    "energy_balance_scope": "completed_day_estimate",
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 8,
-    "warnings": [
-      "Food and training logs are user-confirmed complete.",
-      "Workout active calories use Health workout total_energy_kcal, validated against Fitness screenshots as the displayed dynamic calories.",
-      "Late chicken legs were assumed to be the same product and skinless preparation as the earlier pair; correct if skin was eaten."
-    ],
     "protein_by_meal_g": {
-      "breakfast": 3.744,
+      "breakfast": 3.7439999999999998,
+      "late_meal": 34.5,
       "meal": 128.5,
-      "post_workout": 1.05,
-      "late_meal": 34.5
-    }
-  }
+      "post_workout": 1.05
+    },
+    "warnings": [
+      "post_workout_chia_lemon_combo_1:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 7.915,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 540.5,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "Lemon drink 880 ml: confirm package-label energy and carbohydrate interpretation; existing label estimates (18 kJ and 3.3 g carbohydrate per 100 ml) are inconsistent. Original values retained.",
+    "Existing 20 kcal noodle margin and 10 kcal per chicken-leg pair margin lack an explicit fat/carbohydrate split. Equivalent accounting allocations below are structural placeholders, not confirmed extra food; original estimates retained pending clarification."
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
