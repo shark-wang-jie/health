@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User confirmed food and training complete.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
-  "training_coverage": "complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.4,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.4,
@@ -62,7 +62,8 @@
       "protein_g_estimate": 7.4,
       "fat_g_estimate": 0.9,
       "carbs_g_estimate": 52.9,
-      "sodium_mg_estimate": 23
+      "sodium_mg_estimate": 23,
+      "basis": "Existing recorded mantou estimate scaled to 100 g; original calorie, nutrient and source values retained."
     },
     {
       "id": "breakfast_whole_eggs_3",
@@ -70,7 +71,7 @@
       "meal": "breakfast",
       "description": "3 whole eggs",
       "reported_text": "三个全蛋",
-      "source_kind": "established_egg_convention",
+      "source_kind": "matched_default",
       "quantity": "3 eggs",
       "basis": "Uses established egg convention from prior logs: ~72 kcal, 6.3 g protein, 4.71 g fat, 1.44 g carbs per whole egg.",
       "kcal_base_estimate": 216,
@@ -81,7 +82,8 @@
       ],
       "protein_g_estimate": 18.9,
       "fat_g_estimate": 14.13,
-      "carbs_g_estimate": 4.32
+      "carbs_g_estimate": 4.32,
+      "original_source_kind": "established_egg_convention"
     },
     {
       "id": "snack_pumpkin_seeds_10g",
@@ -110,7 +112,7 @@
       "status": "consumed",
       "meal": "post_workout",
       "description": "Chia seeds 5 g + lemon drink 880 ml",
-      "source_kind": "established_label_combo",
+      "source_kind": "label_known_quantity",
       "kcal_base_estimate": 59.93068833652008,
       "kcal_booked": 59.93068833652008,
       "kcal_range": [
@@ -120,7 +122,10 @@
       "protein_g_estimate": 1.05,
       "fat_g_estimate": 1.595,
       "carbs_g_estimate": 29.125,
-      "fiber_g_estimate": 7.915
+      "fiber_g_estimate": 7.915,
+      "original_source_kind": "established_label_combo",
+      "basis": "Reuse established labels: chia per 100 g 1847 kJ, protein 21.0 g, fat 31.9 g, carbs 1.7 g, fiber 35.1 g; lemon drink per 100 ml 18 kJ, carbs 3.3 g, fiber 0.7 g. Recorded 5 g chia and 880 ml drink; original values retained.",
+      "uncertainty": "Lemon drink label energy and carbohydrate interpretation remain unresolved: 18 kJ and 3.3 g carbohydrate per 100 ml differ substantially under 4 kcal/g. Original estimates retained pending label confirmation."
     },
     {
       "id": "post_workout_egg_whites_3",
@@ -128,7 +133,7 @@
       "meal": "post_workout",
       "description": "3 egg whites",
       "reported_text": "练后吃了三个蛋白",
-      "source_kind": "established_egg_convention",
+      "source_kind": "matched_default",
       "quantity": "3 egg whites",
       "kcal_base_estimate": 51,
       "kcal_booked": 51,
@@ -138,7 +143,9 @@
       ],
       "protein_g_estimate": 10.8,
       "fat_g_estimate": 0,
-      "carbs_g_estimate": 0
+      "carbs_g_estimate": 0,
+      "original_source_kind": "established_egg_convention",
+      "basis": "Established egg-white convention: 3 egg whites, 17 kcal and 3.6 g protein each; original fat and carbohydrate estimates retained."
     },
     {
       "id": "post_workout_scallop_pork_dumplings_528g",
@@ -168,7 +175,7 @@
       "meal": "dinner",
       "description": "Baked live shrimp, about 600 g whole weight",
       "reported_text": "刚刚吃了大概600g活虾",
-      "source_kind": "established_live_shrimp_estimate",
+      "source_kind": "matched_default",
       "quantity_g_live": 600,
       "edible_cooked_g_estimate": 300,
       "basis": "Established convention: 500 g live whole shrimp ≈ 250 g edible cooked, ~250 kcal, 60 g protein, 1.5 g fat, 0.5 g carbs.",
@@ -181,7 +188,8 @@
       "protein_g_estimate": 72,
       "fat_g_estimate": 1.8,
       "carbs_g_estimate": 0.6,
-      "uncertainty": "Main uncertainty is edible yield and any added oil."
+      "uncertainty": "Main uncertainty is edible yield and any added oil.",
+      "original_source_kind": "established_live_shrimp_estimate"
     },
     {
       "id": "late_mantou_50g",
@@ -200,7 +208,8 @@
       "protein_g_estimate": 3.7,
       "fat_g_estimate": 0.45,
       "carbs_g_estimate": 26.45,
-      "sodium_mg_estimate": 11.5
+      "sodium_mg_estimate": 11.5,
+      "basis": "Existing recorded mantou estimate scaled to 50 g; original calorie, nutrient and source values retained."
     }
   ],
   "exercise_entries": [
@@ -214,7 +223,10 @@
       "active_kcal": 504,
       "total_kcal": 622,
       "avg_hr_bpm": 119,
-      "source_kind": "fitness_screenshot"
+      "source_kind": "fitness_screenshot",
+      "event_id": "strength_2026-10-06_1305",
+      "energy_scope": "session_active",
+      "source": "fitness_screenshot"
     },
     {
       "id": "indoor_walk_2026-10-06_1414",
@@ -228,7 +240,10 @@
       "active_kcal": 752,
       "total_kcal": 865,
       "avg_hr_bpm": 150,
-      "source_kind": "fitness_screenshot"
+      "source_kind": "fitness_screenshot",
+      "event_id": "indoor_walk_2026-10-06_1414",
+      "energy_scope": "session_active",
+      "source": "fitness_screenshot"
     }
   ],
   "recovery": {
@@ -248,35 +263,67 @@
     "fat_g_estimate": 53.32299999999999,
     "carbs_g_estimate": 220.35299999999998,
     "intake_kcal_estimate": 1962.5951242829829,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 166.60199999999998,
+      "fat_g": 53.32299999999999,
+      "carbs_g": 220.35299999999998
+    },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 314,
+    "training_discount_kcal": 314.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1926.5951242829829,
       2022.5951242829829
     ],
-    "exercise_active_kcal": 1256,
-    "exercise_adjusted_kcal": 942,
+    "exercise_active_kcal": 1256.0,
+    "exercise_adjusted_kcal": 942.0,
     "tdee_kcal_estimate": 3156.2999999999997,
     "estimated_deficit_kcal": 1193.7048757170169,
-    "completed_day_estimated_deficit_kcal": 1193.7048757170169,
-    "energy_balance_scope": "completed_day_estimate",
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 8,
-    "warnings": [
-      "Food and training logs are user-confirmed complete."
-    ],
     "protein_by_meal_g": {
       "breakfast": 26.299999999999997,
-      "snack": 3.12,
-      "post_workout": 61.482,
       "dinner": 72,
-      "late_meal": 3.7
-    }
-  }
+      "late_meal": 3.7,
+      "post_workout": 61.482000000000006,
+      "snack": 3.12
+    },
+    "warnings": [
+      "post_workout_chia_lemon_combo_1:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 7.915,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 2373.54,
+    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "Lemon drink 880 ml: confirm package-label energy and carbohydrate interpretation; established label values (18 kJ and 3.3 g carbohydrate per 100 ml) are inconsistent. Original values retained."
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
