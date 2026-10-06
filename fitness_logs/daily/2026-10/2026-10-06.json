@@ -82,6 +82,28 @@
       "protein_g_estimate": 18.9,
       "fat_g_estimate": 14.13,
       "carbs_g_estimate": 4.32
+    },
+    {
+      "id": "snack_pumpkin_seeds_10g",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "Pumpkin seeds 10 g",
+      "reported_text": "10g南瓜子",
+      "source_kind": "label_known_quantity",
+      "basis": "Package label per 100 g: 2579 kJ, protein 31.2 g, fat 48.8 g, carbs 8.3 g.",
+      "quantity_g": 10,
+      "kcal_base_estimate": 61.6395793499044,
+      "kcal_booked": 61.6395793499044,
+      "kcal_range": [
+        61.6395793499044,
+        61.6395793499044
+      ],
+      "protein_g_estimate": 3.12,
+      "fat_g_estimate": 4.88,
+      "carbs_g_estimate": 0.83,
+      "saturated_fat_g_estimate": 0.94,
+      "sugar_g_estimate": 0.11,
+      "sodium_mg_estimate": 0
     }
   ],
   "exercise_entries": [],
@@ -96,23 +118,23 @@
     "Morning fasting weight 89.40 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 468.868068833652,
-    "intake_kcal_booked": 468.868068833652,
-    "protein_g_estimate": 26.299999999999997,
-    "fat_g_estimate": 15.03,
-    "carbs_g_estimate": 57.22,
-    "intake_kcal_estimate": 468.868068833652,
+    "intake_kcal_base_estimate": 530.5076481835564,
+    "intake_kcal_booked": 530.5076481835564,
+    "protein_g_estimate": 29.419999999999998,
+    "fat_g_estimate": 19.91,
+    "carbs_g_estimate": 58.05,
+    "intake_kcal_estimate": 530.5076481835564,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      468.868068833652,
-      468.868068833652
+      530.5076481835564,
+      530.5076481835564
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2214.2999999999997,
-    "estimated_deficit_kcal": 1745.4319311663478,
+    "estimated_deficit_kcal": 1683.7923518164434,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -121,14 +143,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 26.299999999999997
+      "breakfast": 26.299999999999997,
+      "snack": 3.12
     }
   }
 }
