@@ -2,10 +2,10 @@
   "schema_version": 3,
   "date": "2026-10-06",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed food and training complete.",
+  "food_coverage": "confirmed_complete",
   "training_status": "completed",
   "training_coverage": "complete",
   "morning_weight_kg": 89.4,
@@ -182,6 +182,25 @@
       "fat_g_estimate": 1.8,
       "carbs_g_estimate": 0.6,
       "uncertainty": "Main uncertainty is edible yield and any added oil."
+    },
+    {
+      "id": "late_mantou_50g",
+      "status": "consumed",
+      "meal": "late_meal",
+      "description": "Mantou 50 g",
+      "reported_text": "又吃了半个馒头",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 50,
+      "kcal_base_estimate": 126.434034416826,
+      "kcal_booked": 126.434034416826,
+      "kcal_range": [
+        126.434034416826,
+        126.434034416826
+      ],
+      "protein_g_estimate": 3.7,
+      "fat_g_estimate": 0.45,
+      "carbs_g_estimate": 26.45,
+      "sodium_mg_estimate": 11.5
     }
   ],
   "exercise_entries": [
@@ -223,42 +242,41 @@
     "Morning fasting weight 89.40 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1836.1610898661568,
-    "intake_kcal_booked": 1836.1610898661568,
-    "protein_g_estimate": 162.902,
-    "fat_g_estimate": 52.87299999999999,
-    "carbs_g_estimate": 193.903,
-    "intake_kcal_estimate": 1836.1610898661568,
+    "intake_kcal_base_estimate": 1962.5951242829829,
+    "intake_kcal_booked": 1962.5951242829829,
+    "protein_g_estimate": 166.60199999999998,
+    "fat_g_estimate": 53.32299999999999,
+    "carbs_g_estimate": 220.35299999999998,
+    "intake_kcal_estimate": 1962.5951242829829,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 314,
     "intake_kcal_range": [
-      1800.1610898661568,
-      1896.1610898661568
+      1926.5951242829829,
+      2022.5951242829829
     ],
     "exercise_active_kcal": 1256,
     "exercise_adjusted_kcal": 942,
     "tdee_kcal_estimate": 3156.2999999999997,
-    "estimated_deficit_kcal": 1320.138910133843,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "estimated_deficit_kcal": 1193.7048757170169,
+    "completed_day_estimated_deficit_kcal": 1193.7048757170169,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "warnings": [
-      "Food log is incomplete.",
-      "Training is complete.",
-      "Day is still open."
+      "Food and training logs are user-confirmed complete."
     ],
     "protein_by_meal_g": {
       "breakfast": 26.299999999999997,
       "snack": 3.12,
       "post_workout": 61.482,
-      "dinner": 72
+      "dinner": 72,
+      "late_meal": 3.7
     }
   }
 }
