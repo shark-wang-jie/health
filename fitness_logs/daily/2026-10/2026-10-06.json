@@ -1,0 +1,134 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "morning_weight_kg": 89.4,
+  "plan_version": "2026-09-08-v3.2",
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.4,
+    "bmr_weight_date": "2026-10-06",
+    "bmr_kcal": 1845.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_mantou_100g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Mantou 100 g",
+      "reported_text": "早饭一个馒头",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "kcal_base_estimate": 252.868068833652,
+      "kcal_booked": 252.868068833652,
+      "kcal_range": [
+        252.868068833652,
+        252.868068833652
+      ],
+      "protein_g_estimate": 7.4,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 52.9,
+      "sodium_mg_estimate": 23
+    },
+    {
+      "id": "breakfast_whole_eggs_3",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "3 whole eggs",
+      "reported_text": "三个全蛋",
+      "source_kind": "established_egg_convention",
+      "quantity": "3 eggs",
+      "basis": "Uses established egg convention from prior logs: ~72 kcal, 6.3 g protein, 4.71 g fat, 1.44 g carbs per whole egg.",
+      "kcal_base_estimate": 216,
+      "kcal_booked": 216,
+      "kcal_range": [
+        216,
+        216
+      ],
+      "protein_g_estimate": 18.9,
+      "fat_g_estimate": 14.13,
+      "carbs_g_estimate": 4.32
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "Morning fasting weight 89.40 kg."
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 468.868068833652,
+    "intake_kcal_booked": 468.868068833652,
+    "protein_g_estimate": 26.299999999999997,
+    "fat_g_estimate": 15.03,
+    "carbs_g_estimate": 57.22,
+    "intake_kcal_estimate": 468.868068833652,
+    "food_margin_kcal": 0,
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      468.868068833652,
+      468.868068833652
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2214.2999999999997,
+    "estimated_deficit_kcal": 1745.4319311663478,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      2000
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "warnings": [
+      "Food log is incomplete.",
+      "Training status is not yet known.",
+      "Day is still open."
+    ],
+    "protein_by_meal_g": {
+      "breakfast": 26.299999999999997
+    }
+  }
+}
