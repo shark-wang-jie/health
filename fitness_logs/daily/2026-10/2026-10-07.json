@@ -88,6 +88,25 @@
       "saturated_fat_g_estimate": 1.034,
       "sugar_g_estimate": 0.12100000000000001,
       "sodium_mg_estimate": 0
+    },
+    {
+      "id": "snack_mantou_50g",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "Mantou 50 g",
+      "reported_text": "又吃了半个馒头",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 50,
+      "kcal_base_estimate": 126.434034416826,
+      "kcal_booked": 126.434034416826,
+      "kcal_range": [
+        126.434034416826,
+        126.434034416826
+      ],
+      "protein_g_estimate": 3.7,
+      "fat_g_estimate": 0.45,
+      "carbs_g_estimate": 26.45,
+      "sodium_mg_estimate": 11.5
     }
   ],
   "exercise_entries": [],
@@ -102,23 +121,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 331.30736137667304,
-    "intake_kcal_booked": 331.30736137667304,
-    "protein_g_estimate": 24.282,
-    "fat_g_estimate": 19.017999999999997,
-    "carbs_g_estimate": 15.163,
-    "intake_kcal_estimate": 331.30736137667304,
+    "intake_kcal_base_estimate": 457.741395793499,
+    "intake_kcal_booked": 457.741395793499,
+    "protein_g_estimate": 27.982,
+    "fat_g_estimate": 19.467999999999996,
+    "carbs_g_estimate": 41.613,
+    "intake_kcal_estimate": 457.741395793499,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      331.30736137667304,
-      331.30736137667304
+      457.741395793499,
+      457.741395793499
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2212.5,
-    "estimated_deficit_kcal": 1881.192638623327,
+    "estimated_deficit_kcal": 1754.7586042065009,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -127,14 +146,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 24.282
+      "breakfast": 24.282,
+      "snack": 3.7
     }
   }
 }
