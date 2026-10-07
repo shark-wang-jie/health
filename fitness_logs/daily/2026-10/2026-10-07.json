@@ -88,28 +88,6 @@
       "saturated_fat_g_estimate": 1.034,
       "sugar_g_estimate": 0.12100000000000001,
       "sodium_mg_estimate": 0
-    },
-    {
-      "id": "breakfast_liuhhao_sausage_150g",
-      "status": "consumed",
-      "meal": "breakfast",
-      "description": "六号肠 150 g",
-      "reported_text": "吃了一根六号肠",
-      "source_kind": "label_known_quantity",
-      "quantity_g": 150,
-      "basis": "Label per 100 g: 735 kJ, protein 13.9 g, fat 9.1 g, saturated fat 2.3 g, carbs 9.5 g, sugar 0.9 g, sodium 987 mg.",
-      "kcal_base_estimate": 263.5038240917782,
-      "kcal_booked": 263.5038240917782,
-      "kcal_range": [
-        263.5038240917782,
-        263.5038240917782
-      ],
-      "protein_g_estimate": 20.85,
-      "fat_g_estimate": 13.649999999999999,
-      "carbs_g_estimate": 14.25,
-      "saturated_fat_g_estimate": 3.4499999999999997,
-      "sugar_g_estimate": 1.35,
-      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [],
@@ -124,23 +102,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 662.6147227533461,
-    "intake_kcal_booked": 662.6147227533461,
-    "protein_g_estimate": 48.564,
-    "fat_g_estimate": 38.035999999999994,
-    "carbs_g_estimate": 30.326,
-    "intake_kcal_estimate": 662.6147227533461,
+    "intake_kcal_base_estimate": 331.30736137667304,
+    "intake_kcal_booked": 331.30736137667304,
+    "protein_g_estimate": 24.282,
+    "fat_g_estimate": 19.017999999999997,
+    "carbs_g_estimate": 15.163,
+    "intake_kcal_estimate": 331.30736137667304,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      662.6147227533461,
-      662.6147227533461
+      331.30736137667304,
+      331.30736137667304
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2212.5,
-    "estimated_deficit_kcal": 1549.885277246654,
+    "estimated_deficit_kcal": 1881.192638623327,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -149,14 +127,14 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 2,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 48.564
+      "breakfast": 24.282
     }
   }
 }
