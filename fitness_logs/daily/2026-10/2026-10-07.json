@@ -187,6 +187,27 @@
       "protein_g_estimate": 1.3,
       "fat_g_estimate": 0.052000000000000005,
       "carbs_g_estimate": 11.024
+    },
+    {
+      "id": "post_workout_live_shrimp_500g_second",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Live shrimp 500 g whole weight, second serving",
+      "reported_text": "又吃了一斤虾",
+      "source_kind": "established_live_shrimp_estimate",
+      "quantity_g_live": 500,
+      "edible_cooked_g_estimate": 250,
+      "basis": "Established convention: 500 g live whole shrimp ≈ 250 g edible cooked, ~250 kcal, 60 g protein, 1.5 g fat, 0.5 g carbs.",
+      "kcal_base_estimate": 250,
+      "kcal_booked": 250,
+      "kcal_range": [
+        220,
+        300
+      ],
+      "protein_g_estimate": 60,
+      "fat_g_estimate": 1.5,
+      "carbs_g_estimate": 0.5,
+      "uncertainty": "Main uncertainty is edible yield and added oil."
     }
   ],
   "exercise_entries": [
@@ -213,7 +234,7 @@
     }
   ],
   "recovery": {
-    "hunger": null,
+    "hunger": "Still not very satiated after second 500 g live-shrimp serving post-workout.",
     "sleep_hours": null,
     "training_performance": null,
     "fatigue_or_pain": null
@@ -223,23 +244,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 914.8599043977056,
-    "intake_kcal_booked": 914.8599043977056,
-    "protein_g_estimate": 92.532,
-    "fat_g_estimate": 21.149999999999995,
-    "carbs_g_estimate": 109.737,
-    "intake_kcal_estimate": 914.8599043977056,
+    "intake_kcal_base_estimate": 1164.8599043977056,
+    "intake_kcal_booked": 1164.8599043977056,
+    "protein_g_estimate": 152.53199999999998,
+    "fat_g_estimate": 22.649999999999995,
+    "carbs_g_estimate": 110.237,
+    "intake_kcal_estimate": 1164.8599043977056,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.92101902977197,
     "intake_kcal_range": [
-      878.9599043977056,
-      978.9599043977056
+      1098.9599043977055,
+      1278.9599043977055
     ],
     "exercise_active_kcal": 1463.6840761190876,
     "exercise_adjusted_kcal": 1097.7630570893157,
     "tdee_kcal_estimate": 3310.2630570893157,
-    "estimated_deficit_kcal": 2395.40315269161,
+    "estimated_deficit_kcal": 2145.40315269161,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -248,7 +269,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -257,7 +278,7 @@
     "protein_by_meal_g": {
       "breakfast": 24.282,
       "snack": 3.7,
-      "post_workout": 64.55
+      "post_workout": 124.55
     }
   }
 }
