@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "morning_weight_kg": 89.25,
+  "plan_version": "2026-09-08-v3.2",
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.25,
+    "bmr_weight_date": "2026-10-07",
+    "bmr_kcal": 1843.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "Morning fasting weight 89.25 kg."
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 0,
+    "intake_kcal_booked": 0,
+    "protein_g_estimate": 0,
+    "fat_g_estimate": 0,
+    "carbs_g_estimate": 0,
+    "intake_kcal_estimate": 0,
+    "food_margin_kcal": 0,
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      0,
+      0
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2212.5,
+    "estimated_deficit_kcal": 2212.5,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      2000
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 0,
+    "warnings": [
+      "Food log is incomplete.",
+      "Training status is not yet known.",
+      "Day is still open."
+    ],
+    "protein_by_meal_g": {}
+  }
+}
