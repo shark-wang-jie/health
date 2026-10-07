@@ -208,6 +208,28 @@
       "fat_g_estimate": 1.5,
       "carbs_g_estimate": 0.5,
       "uncertainty": "Main uncertainty is edible yield and added oil."
+    },
+    {
+      "id": "evening_no6_sausage_150g",
+      "status": "consumed",
+      "meal": "evening",
+      "description": "No. 6 sausage 150 g",
+      "reported_text": "吃了一根六号肠",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "Label per 100 g: 735 kJ, protein 13.9 g, fat 9.1 g, saturated fat 2.3 g, carbs 9.5 g, sugar 0.9 g, sodium 987 mg.",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        263.5038240917782,
+        263.5038240917782
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.649999999999999,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 3.4499999999999997,
+      "sugar_g_estimate": 1.35,
+      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [
@@ -244,23 +266,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1164.8599043977056,
-    "intake_kcal_booked": 1164.8599043977056,
-    "protein_g_estimate": 152.53199999999998,
-    "fat_g_estimate": 22.649999999999995,
-    "carbs_g_estimate": 110.237,
-    "intake_kcal_estimate": 1164.8599043977056,
+    "intake_kcal_base_estimate": 1428.3637284894837,
+    "intake_kcal_booked": 1428.3637284894837,
+    "protein_g_estimate": 173.38199999999998,
+    "fat_g_estimate": 36.3,
+    "carbs_g_estimate": 124.487,
+    "intake_kcal_estimate": 1428.3637284894837,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.92101902977197,
     "intake_kcal_range": [
-      1098.9599043977055,
-      1278.9599043977055
+      1362.4637284894836,
+      1542.4637284894836
     ],
     "exercise_active_kcal": 1463.6840761190876,
     "exercise_adjusted_kcal": 1097.7630570893157,
     "tdee_kcal_estimate": 3310.2630570893157,
-    "estimated_deficit_kcal": 2145.40315269161,
+    "estimated_deficit_kcal": 1881.899328599832,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -269,7 +291,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 8,
+    "consumed_entries": 9,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -278,7 +300,8 @@
     "protein_by_meal_g": {
       "breakfast": 24.282,
       "snack": 3.7,
-      "post_workout": 124.55
+      "post_workout": 124.55,
+      "evening": 20.85
     }
   }
 }
