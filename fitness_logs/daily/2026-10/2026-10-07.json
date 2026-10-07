@@ -230,6 +230,25 @@
       "saturated_fat_g_estimate": 3.4499999999999997,
       "sugar_g_estimate": 1.35,
       "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "evening_airfryer_potato_120g",
+      "status": "consumed",
+      "meal": "evening",
+      "description": "Air-fryer roasted potato 120 g, no oil",
+      "reported_text": "太饿了 又吃了120g烤土豆",
+      "source_kind": "food_estimate",
+      "quantity_g": 120,
+      "basis": "Same no-oil roasted potato convention as earlier today, ~93 kcal per 100 g.",
+      "kcal_base_estimate": 111.6,
+      "kcal_booked": 111.6,
+      "kcal_range": [
+        111.6,
+        111.6
+      ],
+      "protein_g_estimate": 3,
+      "fat_g_estimate": 0.12,
+      "carbs_g_estimate": 25.439999999999998
     }
   ],
   "exercise_entries": [
@@ -256,7 +275,7 @@
     }
   ],
   "recovery": {
-    "hunger": "Still not very satiated after second 500 g live-shrimp serving post-workout.",
+    "hunger": "Very hungry in the evening; added another 120 g roasted potato.",
     "sleep_hours": null,
     "training_performance": null,
     "fatigue_or_pain": null
@@ -266,23 +285,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1428.3637284894837,
-    "intake_kcal_booked": 1428.3637284894837,
-    "protein_g_estimate": 173.38199999999998,
-    "fat_g_estimate": 36.3,
-    "carbs_g_estimate": 124.487,
-    "intake_kcal_estimate": 1428.3637284894837,
+    "intake_kcal_base_estimate": 1539.9637284894836,
+    "intake_kcal_booked": 1539.9637284894836,
+    "protein_g_estimate": 176.38199999999998,
+    "fat_g_estimate": 36.419999999999995,
+    "carbs_g_estimate": 149.927,
+    "intake_kcal_estimate": 1539.9637284894836,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.92101902977197,
     "intake_kcal_range": [
-      1362.4637284894836,
-      1542.4637284894836
+      1474.0637284894835,
+      1654.0637284894835
     ],
     "exercise_active_kcal": 1463.6840761190876,
     "exercise_adjusted_kcal": 1097.7630570893157,
     "tdee_kcal_estimate": 3310.2630570893157,
-    "estimated_deficit_kcal": 1881.899328599832,
+    "estimated_deficit_kcal": 1770.299328599832,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -291,7 +310,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 9,
+    "consumed_entries": 10,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -301,7 +320,7 @@
       "breakfast": 24.282,
       "snack": 3.7,
       "post_workout": 124.55,
-      "evening": 20.85
+      "evening": 23.85
     }
   }
 }
