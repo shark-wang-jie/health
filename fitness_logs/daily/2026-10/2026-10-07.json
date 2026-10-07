@@ -107,6 +107,26 @@
       "fat_g_estimate": 0.45,
       "carbs_g_estimate": 26.45,
       "sodium_mg_estimate": 11.5
+    },
+    {
+      "id": "post_workout_lemon_drink_880ml",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Lemon drink 880 ml",
+      "reported_text": "练后喝了一瓶柠檬水",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 880,
+      "basis": "Established bottle label: per 100 ml 18 kJ, carbs 3.3 g, fiber 0.7 g.",
+      "kcal_base_estimate": 37.8585086042065,
+      "kcal_booked": 37.8585086042065,
+      "kcal_range": [
+        37.8585086042065,
+        37.8585086042065
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 0,
+      "carbs_g_estimate": 29.04,
+      "fiber_g_estimate": 6.16
     }
   ],
   "exercise_entries": [
@@ -143,23 +163,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 457.741395793499,
-    "intake_kcal_booked": 457.741395793499,
+    "intake_kcal_base_estimate": 495.59990439770553,
+    "intake_kcal_booked": 495.59990439770553,
     "protein_g_estimate": 27.982,
     "fat_g_estimate": 19.467999999999996,
-    "carbs_g_estimate": 41.613,
-    "intake_kcal_estimate": 457.741395793499,
+    "carbs_g_estimate": 70.65299999999999,
+    "intake_kcal_estimate": 495.59990439770553,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.92101902977197,
     "intake_kcal_range": [
-      457.741395793499,
-      457.741395793499
+      495.59990439770553,
+      495.59990439770553
     ],
     "exercise_active_kcal": 1463.6840761190876,
     "exercise_adjusted_kcal": 1097.7630570893157,
     "tdee_kcal_estimate": 3310.2630570893157,
-    "estimated_deficit_kcal": 2852.5216612958166,
+    "estimated_deficit_kcal": 2814.6631526916103,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -168,7 +188,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
       "Training is complete.",
@@ -176,7 +196,8 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 24.282,
-      "snack": 3.7
+      "snack": 3.7,
+      "post_workout": 0
     }
   }
 }
