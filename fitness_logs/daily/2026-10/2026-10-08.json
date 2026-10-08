@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User confirmed both food and training are complete on 2026-10-08.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
-  "training_coverage": "complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.25,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.25,
@@ -73,7 +73,7 @@
       "meal": "breakfast",
       "description": "Air-fryer roasted potato 130 g, no oil assumed",
       "reported_text": "130g烤土豆",
-      "source_kind": "food_estimate",
+      "source_kind": "database_estimate",
       "quantity_g": 130,
       "basis": "Same no-oil roasted potato convention as previous day, ~93 kcal per 100 g.",
       "kcal_base_estimate": 120.9,
@@ -84,7 +84,8 @@
       ],
       "protein_g_estimate": 3.25,
       "fat_g_estimate": 0.13,
-      "carbs_g_estimate": 27.56
+      "carbs_g_estimate": 27.56,
+      "original_source_kind": "food_estimate"
     },
     {
       "id": "lunch_shaxian_chicken_leg_rice",
@@ -92,7 +93,7 @@
       "meal": "lunch",
       "description": "Shaxian chicken leg rice",
       "reported_text": "午饭沙县鸡腿饭",
-      "source_kind": "established_meal_estimate",
+      "source_kind": "matched_default",
       "basis": "Established Shaxian fixed lunch convention: base 885 kcal, booked 973.5 kcal with ~10% restaurant margin; range 710–1080 kcal.",
       "kcal_base_estimate": 885,
       "kcal_booked": 973.5,
@@ -103,7 +104,14 @@
       "protein_g_estimate": 70.5,
       "fat_g_estimate": 36.8333,
       "carbs_g_estimate": 91,
-      "food_margin_kcal": 88.5
+      "food_margin_kcal": 88.5,
+      "original_source_kind": "established_meal_estimate",
+      "margin": {
+        "added_fat_g": 9.833333333333334,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Existing 88.5 kcal restaurant cooking-oil margin, using food_catalog.json shaxian_two_skinless_legs convention; no new intake added."
+      }
     },
     {
       "id": "preworkout_potato_50g",
@@ -111,7 +119,7 @@
       "meal": "pre_workout",
       "description": "Roasted potato about 50 g",
       "reported_text": "下午练前吃了个小土豆 大概五十克",
-      "source_kind": "food_estimate",
+      "source_kind": "database_estimate",
       "quantity_g_estimate": 50,
       "kcal_base_estimate": 46.5,
       "kcal_booked": 46.5,
@@ -121,7 +129,10 @@
       ],
       "protein_g_estimate": 1.25,
       "fat_g_estimate": 0.05,
-      "carbs_g_estimate": 10.6
+      "carbs_g_estimate": 10.6,
+      "original_source_kind": "food_estimate",
+      "basis": "Reported small roasted potato about 50 g; same existing no-oil potato estimate of 93 kcal per 100 g, with original 43–50 kcal range retained.",
+      "uncertainty": "Reported weight is approximate (about 50 g); no-oil preparation follows the existing potato estimate."
     },
     {
       "id": "postworkout_mantou_100g",
@@ -140,7 +151,8 @@
       "protein_g_estimate": 7.4,
       "fat_g_estimate": 0.9,
       "carbs_g_estimate": 52.9,
-      "sodium_mg_estimate": 23
+      "sodium_mg_estimate": 23,
+      "basis": "Existing recorded label_known_quantity estimate for one 100 g mantou; original 252.868068833652 kcal and protein 7.4 g, fat 0.9 g, carbs 52.9 g retained without adding new label facts."
     },
     {
       "id": "postworkout_hema_chicken_legs_skinless_2",
@@ -148,7 +160,7 @@
       "meal": "post_workout",
       "description": "Hema braised chicken legs, 2 legs, skin removed",
       "reported_text": "两个盒马鸡腿去皮",
-      "source_kind": "established_skinless_estimate",
+      "source_kind": "matched_default",
       "quantity": "2 legs",
       "kcal_base_estimate": 215,
       "kcal_booked": 225,
@@ -159,7 +171,15 @@
       "protein_g_estimate": 34.5,
       "fat_g_estimate": 2.5,
       "carbs_g_estimate": 15,
-      "uncertainty": "Skin weight not measured; uses established skinless bookkeeping convention."
+      "uncertainty": "Skin weight not measured; uses established skinless bookkeeping convention.",
+      "original_source_kind": "established_skinless_estimate",
+      "basis": "Existing two skinless Hema braised chicken-leg convention, as recorded on 2026-10-05: base 215 kcal, booked 225 kcal; original quantity, nutrient estimates and range retained.",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 2.5,
+        "already_in_base": false,
+        "reason": "Existing 10 kcal braising margin expressed as a carbohydrate equivalent using 2026-10-05 schema normalization; actual fat/carbohydrate split unconfirmed, not additional reported consumption."
+      }
     }
   ],
   "exercise_entries": [
@@ -170,7 +190,11 @@
       "active_kcal": 588.4990000000006,
       "duration_seconds": 4222.020401954651,
       "total_kcal": 713,
-      "average_heart_rate_bpm": 124
+      "average_heart_rate_bpm": 124,
+      "event_id": "2026-10-08_workout_1",
+      "energy_scope": "session_active",
+      "source": "health_sync",
+      "source_evidence": "Git history 900b822 records pending Health workout sync; b8cc4fb subsequently adds these workout totals. Event ID normalized from date and existing stable entry ID."
     },
     {
       "id": "workout_2",
@@ -179,7 +203,11 @@
       "active_kcal": 684.2538645021549,
       "duration_seconds": 4024.968460917473,
       "total_kcal": 808,
-      "average_heart_rate_bpm": 143
+      "average_heart_rate_bpm": 143,
+      "event_id": "2026-10-08_workout_2",
+      "energy_scope": "session_active",
+      "source": "health_sync",
+      "source_evidence": "Git history 900b822 records pending Health workout sync; b8cc4fb subsequently adds these workout totals. Event ID normalized from date and existing stable entry ID."
     }
   ],
   "recovery": {
@@ -200,34 +228,62 @@
     "carbs_g_estimate": 211.31,
     "intake_kcal_estimate": 1882.2718929254302,
     "food_margin_kcal": 98.5,
-    "completed_day_base_intake_balance_kcal": null,
+    "base_macro_estimates": {
+      "protein_g": 137.75,
+      "fat_g": 44.22996666666666,
+      "carbs_g": 208.81
+    },
+    "completed_day_base_intake_balance_kcal": 1383.2927554511866,
     "training_discount_kcal": 318.18821612553893,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1595.2718929254302,
       2012.2718929254302
     ],
     "exercise_active_kcal": 1272.7528645021555,
     "exercise_adjusted_kcal": 954.5646483766166,
-    "tdee_kcal_estimate": 3167.0646483766163,
-    "estimated_deficit_kcal": 1284.7927554511862,
-    "completed_day_estimated_deficit_kcal": 1284.7927554511862,
+    "tdee_kcal_estimate": 3167.064648376617,
+    "estimated_deficit_kcal": 1284.7927554511866,
+    "completed_day_estimated_deficit_kcal": 1284.7927554511866,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 6,
-    "warnings": [
-      "Food and training logs are user-confirmed complete.",
-      "Calorie intake and workout-based TDEE are estimates."
-    ],
     "protein_by_meal_g": {
       "breakfast": 24.1,
       "lunch": 70.5,
-      "pre_workout": 1.25,
-      "post_workout": 41.9
-    }
-  }
+      "post_workout": 41.9,
+      "pre_workout": 1.25
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1503.5,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [],
+  "non_energy_pending_notes": [
+    "Hema chicken-leg 10 kcal margin uses the existing 2026-10-05 carbohydrate-equivalent normalization (2.5 g); actual fat/carbohydrate split is unconfirmed, not additional reported consumption."
+  ],
+  "trend_context": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
