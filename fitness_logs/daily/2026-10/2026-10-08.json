@@ -7,7 +7,7 @@
   "closure_basis": null,
   "food_coverage": "partial",
   "training_status": "completed",
-  "training_coverage": "pending_health_sync",
+  "training_coverage": "complete",
   "morning_weight_kg": 89.25,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -162,7 +162,26 @@
       "uncertainty": "Skin weight not measured; uses established skinless bookkeeping convention."
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "workout_1",
+      "status": "completed",
+      "type": "strength",
+      "active_kcal": 588.4990000000006,
+      "duration_seconds": 4222.020401954651,
+      "total_kcal": 713,
+      "average_heart_rate_bpm": 124
+    },
+    {
+      "id": "workout_2",
+      "status": "completed",
+      "type": "indoor_cycle",
+      "active_kcal": 684.2538645021549,
+      "duration_seconds": 4024.968460917473,
+      "total_kcal": 808,
+      "average_heart_rate_bpm": 143
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -183,15 +202,15 @@
     "intake_kcal_estimate": 1882.2718929254302,
     "food_margin_kcal": 98.5,
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 318.18821612553893,
     "intake_kcal_range": [
       1595.2718929254302,
       2012.2718929254302
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2212.5,
-    "estimated_deficit_kcal": 330.22810707456983,
+    "exercise_active_kcal": 1272.7528645021555,
+    "exercise_adjusted_kcal": 954.5646483766166,
+    "tdee_kcal_estimate": 3167.0646483766163,
+    "estimated_deficit_kcal": 1284.7927554511864,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -199,7 +218,7 @@
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "warnings": [
       "Food log is incomplete.",
