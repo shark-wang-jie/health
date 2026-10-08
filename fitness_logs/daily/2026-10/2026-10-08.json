@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "completed",
+  "training_coverage": "pending_health_sync",
   "morning_weight_kg": 89.25,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -104,6 +104,62 @@
       "fat_g_estimate": 36.8333,
       "carbs_g_estimate": 91,
       "food_margin_kcal": 88.5
+    },
+    {
+      "id": "preworkout_potato_50g",
+      "status": "consumed",
+      "meal": "pre_workout",
+      "description": "Roasted potato about 50 g",
+      "reported_text": "下午练前吃了个小土豆 大概五十克",
+      "source_kind": "food_estimate",
+      "quantity_g_estimate": 50,
+      "kcal_base_estimate": 46.5,
+      "kcal_booked": 46.5,
+      "kcal_range": [
+        43,
+        50
+      ],
+      "protein_g_estimate": 1.25,
+      "fat_g_estimate": 0.05,
+      "carbs_g_estimate": 10.6
+    },
+    {
+      "id": "postworkout_mantou_100g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Mantou 100 g",
+      "reported_text": "练后一个馒头",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "kcal_base_estimate": 252.868068833652,
+      "kcal_booked": 252.868068833652,
+      "kcal_range": [
+        252.868068833652,
+        252.868068833652
+      ],
+      "protein_g_estimate": 7.4,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 52.9,
+      "sodium_mg_estimate": 23
+    },
+    {
+      "id": "postworkout_hema_chicken_legs_skinless_2",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Hema braised chicken legs, 2 legs, skin removed",
+      "reported_text": "两个盒马鸡腿去皮",
+      "source_kind": "established_skinless_estimate",
+      "quantity": "2 legs",
+      "kcal_base_estimate": 215,
+      "kcal_booked": 225,
+      "kcal_range": [
+        205,
+        245
+      ],
+      "protein_g_estimate": 34.5,
+      "fat_g_estimate": 2.5,
+      "carbs_g_estimate": 15,
+      "uncertainty": "Skin weight not measured; uses established skinless bookkeeping convention."
     }
   ],
   "exercise_entries": [],
@@ -115,43 +171,46 @@
   },
   "corrections": [],
   "notes": [
-    "Morning fasting weight 89.25 kg."
+    "Morning fasting weight 89.25 kg.",
+    "User reported training complete; Health workout samples had not synced yet at check time."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1269.4038240917782,
-    "intake_kcal_booked": 1357.9038240917782,
-    "protein_g_estimate": 94.6,
-    "fat_g_estimate": 50.6133,
-    "carbs_g_estimate": 132.81,
-    "intake_kcal_estimate": 1357.9038240917782,
-    "food_margin_kcal": 88.5,
+    "intake_kcal_base_estimate": 1783.7718929254302,
+    "intake_kcal_booked": 1882.2718929254302,
+    "protein_g_estimate": 137.75,
+    "fat_g_estimate": 54.0633,
+    "carbs_g_estimate": 211.31,
+    "intake_kcal_estimate": 1882.2718929254302,
+    "food_margin_kcal": 98.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      1094.4038240917782,
-      1464.4038240917782
+      1595.2718929254302,
+      2012.2718929254302
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2212.5,
-    "estimated_deficit_kcal": 854.5961759082218,
+    "estimated_deficit_kcal": 330.22810707456983,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
+      1900,
       2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 6,
     "warnings": [
       "Food log is incomplete.",
-      "Training status is not yet known.",
+      "Training is complete, but Health workout energy has not synced yet.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
       "breakfast": 24.1,
-      "lunch": 70.5
+      "lunch": 70.5,
+      "pre_workout": 1.25,
+      "post_workout": 41.9
     }
   }
 }
