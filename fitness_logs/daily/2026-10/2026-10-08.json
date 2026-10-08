@@ -85,6 +85,25 @@
       "protein_g_estimate": 3.25,
       "fat_g_estimate": 0.13,
       "carbs_g_estimate": 27.56
+    },
+    {
+      "id": "lunch_shaxian_chicken_leg_rice",
+      "status": "consumed",
+      "meal": "lunch",
+      "description": "Shaxian chicken leg rice",
+      "reported_text": "午饭沙县鸡腿饭",
+      "source_kind": "established_meal_estimate",
+      "basis": "Established Shaxian fixed lunch convention: base 885 kcal, booked 973.5 kcal with ~10% restaurant margin; range 710–1080 kcal.",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.8333,
+      "carbs_g_estimate": 91,
+      "food_margin_kcal": 88.5
     }
   ],
   "exercise_entries": [],
@@ -99,23 +118,23 @@
     "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 384.40382409177823,
-    "intake_kcal_booked": 384.40382409177823,
-    "protein_g_estimate": 24.1,
-    "fat_g_estimate": 13.78,
-    "carbs_g_estimate": 41.81,
-    "intake_kcal_estimate": 384.40382409177823,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1269.4038240917782,
+    "intake_kcal_booked": 1357.9038240917782,
+    "protein_g_estimate": 94.6,
+    "fat_g_estimate": 50.6133,
+    "carbs_g_estimate": 132.81,
+    "intake_kcal_estimate": 1357.9038240917782,
+    "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      384.40382409177823,
-      384.40382409177823
+      1094.4038240917782,
+      1464.4038240917782
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2212.5,
-    "estimated_deficit_kcal": 1828.0961759082218,
+    "estimated_deficit_kcal": 854.5961759082218,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -124,14 +143,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 24.1
+      "breakfast": 24.1,
+      "lunch": 70.5
     }
   }
 }
