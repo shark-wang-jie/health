@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "morning_weight_kg": 89.25,
+  "plan_version": "2026-09-08-v3.2",
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 89.25,
+    "bmr_weight_date": "2026-10-08",
+    "bmr_kcal": 1843.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_no6_sausage_150g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "No. 6 sausage 150 g",
+      "reported_text": "早饭一根六号肠",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "Label per 100 g: 735 kJ, protein 13.9 g, fat 9.1 g, saturated fat 2.3 g, carbs 9.5 g, sugar 0.9 g, sodium 987 mg.",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        263.5038240917782,
+        263.5038240917782
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 3.45,
+      "sugar_g_estimate": 1.35,
+      "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "breakfast_airfryer_potato_130g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Air-fryer roasted potato 130 g, no oil assumed",
+      "reported_text": "130g烤土豆",
+      "source_kind": "food_estimate",
+      "quantity_g": 130,
+      "basis": "Same no-oil roasted potato convention as previous day, ~93 kcal per 100 g.",
+      "kcal_base_estimate": 120.9,
+      "kcal_booked": 120.9,
+      "kcal_range": [
+        120.9,
+        120.9
+      ],
+      "protein_g_estimate": 3.25,
+      "fat_g_estimate": 0.13,
+      "carbs_g_estimate": 27.56
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "Morning fasting weight 89.25 kg."
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 384.40382409177823,
+    "intake_kcal_booked": 384.40382409177823,
+    "protein_g_estimate": 24.1,
+    "fat_g_estimate": 13.78,
+    "carbs_g_estimate": 41.81,
+    "intake_kcal_estimate": 384.40382409177823,
+    "food_margin_kcal": 0,
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      384.40382409177823,
+      384.40382409177823
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2212.5,
+    "estimated_deficit_kcal": 1828.0961759082218,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      2000
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "warnings": [
+      "Food log is incomplete.",
+      "Training status is not yet known.",
+      "Day is still open."
+    ],
+    "protein_by_meal_g": {
+      "breakfast": 24.1
+    }
+  }
+}
