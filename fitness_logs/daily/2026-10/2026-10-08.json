@@ -2,10 +2,10 @@
   "schema_version": 3,
   "date": "2026-10-08",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User confirmed both food and training are complete on 2026-10-08.",
+  "food_coverage": "confirmed_complete",
   "training_status": "completed",
   "training_coverage": "complete",
   "morning_weight_kg": 89.25,
@@ -190,8 +190,7 @@
   },
   "corrections": [],
   "notes": [
-    "Morning fasting weight 89.25 kg.",
-    "User reported training complete; Health workout samples had not synced yet at check time."
+    "Morning fasting weight 89.25 kg."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1783.7718929254302,
@@ -210,9 +209,9 @@
     "exercise_active_kcal": 1272.7528645021555,
     "exercise_adjusted_kcal": 954.5646483766166,
     "tdee_kcal_estimate": 3167.0646483766163,
-    "estimated_deficit_kcal": 1284.7927554511864,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "estimated_deficit_kcal": 1284.7927554511862,
+    "completed_day_estimated_deficit_kcal": 1284.7927554511862,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
@@ -221,9 +220,8 @@
     "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "warnings": [
-      "Food log is incomplete.",
-      "Training is complete, but Health workout energy has not synced yet.",
-      "Day is still open."
+      "Food and training logs are user-confirmed complete.",
+      "Calorie intake and workout-based TDEE are estimates."
     ],
     "protein_by_meal_g": {
       "breakfast": 24.1,
