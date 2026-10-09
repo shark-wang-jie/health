@@ -88,6 +88,34 @@
       "saturated_fat_g_estimate": 3.45,
       "sugar_g_estimate": 1.35,
       "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "lunch_shaxian_two_skinless_legs",
+      "status": "consumed",
+      "meal": "lunch",
+      "description": "Shaxian chicken leg rice: two skinless legs, rice, stir-fried cabbage, braised egg; no shredded potatoes",
+      "reported_text": "午饭还是沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "basis": "Previous confirmed standard meal: 2 skinless chicken legs, rice, cabbage, braised egg, no shredded potatoes. Includes restaurant cooking oil allowance.",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "food_margin_kcal": 88.5,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "Restaurant cooking oil allowance"
+      },
+      "uncertainty": "Default portions assumed; adjust if actual portions or sides differed."
     }
   ],
   "exercise_entries": [],
@@ -102,23 +130,23 @@
     "Morning fasting weight 89.15 kg."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 325.1434034416826,
-    "intake_kcal_booked": 325.1434034416826,
-    "protein_g_estimate": 23.97,
-    "fat_g_estimate": 18.53,
-    "carbs_g_estimate": 15.08,
-    "intake_kcal_estimate": 325.1434034416826,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1210.1434034416825,
+    "intake_kcal_booked": 1298.6434034416825,
+    "protein_g_estimate": 94.47,
+    "fat_g_estimate": 55.363333333333344,
+    "carbs_g_estimate": 106.08,
+    "intake_kcal_estimate": 1298.6434034416825,
+    "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      325.1434034416826,
-      325.1434034416826
+      1035.1434034416825,
+      1405.1434034416825
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2211.2999999999997,
-    "estimated_deficit_kcal": 1886.1565965583172,
+    "estimated_deficit_kcal": 912.6565965583172,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -127,14 +155,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 23.97
+      "breakfast": 23.970000000000002,
+      "lunch": 70.5
     }
   }
 }
