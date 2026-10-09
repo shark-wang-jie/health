@@ -5,13 +5,13 @@
   "record_status": "final",
   "food_log_closed": true,
   "closure_basis": "User explicitly ended the day's logging after lunch; evening roasted-lamb gathering deliberately not tracked.",
-  "food_coverage": "partial_evening_untracked",
-  "training_status": "rest",
-  "training_coverage": "confirmed_rest",
+  "food_coverage": "partial",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.15,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.15,
@@ -138,33 +138,61 @@
     "carbs_g_estimate": 106.08,
     "intake_kcal_estimate": 1298.6434034416825,
     "food_margin_kcal": 88.5,
+    "base_macro_estimates": {
+      "protein_g": 94.47,
+      "fat_g": 45.53,
+      "carbs_g": 106.08
+    },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1035.1434034416825,
       1405.1434034416825
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2211.2999999999997,
-    "estimated_deficit_kcal": null,
+    "estimated_deficit_kcal": 912.6565965583172,
     "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "incomplete_food_log_no_full_day_deficit",
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1800.0,
+      1800.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 3,
-    "warnings": [
-      "Logging closed at user request; evening food intentionally not recorded.",
-      "Recorded calories and macros cover breakfast and lunch only, not the full day.",
-      "Full-day intake and calorie deficit cannot be estimated reliably."
-    ],
     "protein_by_meal_g": {
       "breakfast": 23.970000000000002,
       "lunch": 70.5
-    }
-  }
+    },
+    "warnings": [
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1480.5,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "Evening food intentionally untracked at user request; full-day intake is incomplete."
+  ],
+  "food_estimation_policy": "photo_margin_v1"
 }
