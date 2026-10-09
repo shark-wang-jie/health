@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-09",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User explicitly ended the day's logging after lunch; evening roasted-lamb gathering deliberately not tracked.",
+  "food_coverage": "partial_evening_untracked",
+  "training_status": "rest",
+  "training_coverage": "confirmed_rest",
   "morning_weight_kg": 89.15,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -127,7 +127,8 @@
   },
   "corrections": [],
   "notes": [
-    "Morning fasting weight 89.15 kg."
+    "Morning fasting weight 89.15 kg.",
+    "Evening meal intentionally untracked: planned roasted whole lamb social dinner; user requested no evening entries or estimates."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1210.1434034416825,
@@ -146,20 +147,20 @@
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2211.2999999999997,
-    "estimated_deficit_kcal": 912.6565965583172,
+    "estimated_deficit_kcal": null,
     "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "energy_balance_scope": "incomplete_food_log_no_full_day_deficit",
     "intake_target_kcal_range": [
       1800,
-      2000
+      1800
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 3,
     "warnings": [
-      "Food log is incomplete.",
-      "Training status is not yet known.",
-      "Day is still open."
+      "Logging closed at user request; evening food intentionally not recorded.",
+      "Recorded calories and macros cover breakfast and lunch only, not the full day.",
+      "Full-day intake and calorie deficit cannot be estimated reliably."
     ],
     "protein_by_meal_g": {
       "breakfast": 23.970000000000002,
