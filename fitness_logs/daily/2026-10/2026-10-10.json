@@ -126,17 +126,16 @@
       "reported_text": "还有一块400g的老卤豆腐",
       "source_kind": "label_known_quantity",
       "quantity_g": 400,
-      "basis": "Product nutrition label photo: per 100g energy 430kJ, protein 9.4g, fat 5.5g, saturated fat 0.9g, carbs 3.9g, sugar 0g, sodium 57mg; label says package net 380g (solids >=350g). User earlier reported consuming ~400g, pending clarification.",
+      "basis": "Nutrition label: per 100g 430kJ, protein 9.4g, fat 5.5g, saturated fat 0.9g, carbohydrates 3.9g, sugar 0g, sodium 57mg. User explicitly chose 400g for bookkeeping despite package net weight 380g.",
       "kcal_base_estimate": 411.08986615678776,
       "kcal_booked": 411.08986615678776,
       "kcal_range": [
-        390.5353728489484,
+        411.08986615678776,
         411.08986615678776
       ],
       "protein_g_estimate": 37.6,
       "fat_g_estimate": 22,
       "carbs_g_estimate": 15.6,
-      "uncertainty": "Pack label net weight 380g differs from previously reported 400g. Keep user's reported 400g until weighed vs package amount clarified.",
       "saturated_fat_g_estimate": 3.6,
       "sugar_g_estimate": 0,
       "sodium_mg_estimate": 228
@@ -168,11 +167,18 @@
         "source_kind": "label_known_quantity"
       },
       "reason": "Corrected provisional tofu nutrition estimate using newly provided package nutrition label. Preserved user-reported 400g; package states net 380g, pending weight clarification."
+    },
+    {
+      "date": "2026-10-10",
+      "field": "intake_entries.dinner_braised_tofu_400g.quantity_g",
+      "old_value": "400g user report with 380g package discrepancy pending",
+      "new_value": "400g confirmed bookkeeping quantity",
+      "reason": "User explicitly said count 400g; no quantity change and no caloric change."
     }
   ],
   "notes": [
     "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked.",
-    "Tofu nutrition label received and applied. Packaging net weight 380g vs user-reported ~400g; confirm if entire package or measured weight to finalize quantity."
+    "Tofu logged at user-confirmed bookkeeping quantity 400g; do not adjust to the 380g packaging figure."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1646.674952198853,
@@ -185,7 +191,7 @@
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      1436.302103250478,
+      1456.8565965583175,
       1856.493307839388
     ],
     "exercise_active_kcal": 0,
