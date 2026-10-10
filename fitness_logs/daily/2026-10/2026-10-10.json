@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-10",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "reported_training",
-  "training_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User explicitly confirmed 2026-10-10 food and all training completed.",
+  "food_coverage": "confirmed_complete",
+  "training_status": "completed",
+  "training_coverage": "complete",
   "morning_weight_kg": 90.5,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -154,6 +154,23 @@
       "source": "Apple Health synced Apple Watch workout",
       "is_estimated": false,
       "note": "Health workout.total_energy_kcal mapped to dynamic session kcal based on prior screenshot calibration."
+    },
+    {
+      "id": "2026-10-10-indoor-cycle-2130",
+      "event_id": "2026-10-10-indoor-cycle-2130",
+      "type": "室内单车",
+      "start_local": "2026-10-10T21:30:40+08:00",
+      "end_local": "2026-10-10T22:06:06+08:00",
+      "duration_seconds": 2125.9639159440994,
+      "elapsed_seconds": 2129,
+      "energy_scope": "session_active",
+      "active_kcal": 375,
+      "total_kcal": 440,
+      "average_heart_rate_bpm": 139,
+      "source": "Apple Fitness screenshot 2026-10-10, independently seen in Apple Health",
+      "health_workout_energy_kcal": 376.6252016041026,
+      "is_estimated": false,
+      "note": "Screenshot displays dynamic 375 kcal; Health synced workout energy 376.6 kcal. Use screenshot value for this session (small finish-time drift)."
     }
   ],
   "recovery": {
@@ -203,28 +220,28 @@
     "intake_kcal_estimate": 1735.174952198853,
     "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 170.86903205690157,
+    "training_discount_kcal": 264.6190320569016,
     "intake_kcal_range": [
       1456.8565965583175,
       1856.493307839388
     ],
-    "exercise_active_kcal": 683.4761282276063,
-    "exercise_adjusted_kcal": 512.6070961707047,
-    "tdee_kcal_estimate": 2740.1070961707046,
-    "estimated_deficit_kcal": 1004.9321439718517,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 1058.4761282276063,
+    "exercise_adjusted_kcal": 793.8570961707047,
+    "tdee_kcal_estimate": 3021.3570961707046,
+    "estimated_deficit_kcal": 1286.1821439718517,
+    "completed_day_estimated_deficit_kcal": 1286.1821439718517,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
-    "target_is_provisional": true,
-    "energy_estimate_provisional": true,
+    "target_is_provisional": false,
+    "energy_estimate_provisional": false,
     "consumed_entries": 4,
     "warnings": [
-      "Food log is incomplete.",
-      "Strength workout is complete; whether additional training will occur today is unknown.",
-      "Day is still open; current calorie balance is provisional."
+      "Food and training logs are user-confirmed complete.",
+      "Meal and TDEE numbers are model estimates.",
+      "One restaurant meal retains an estimated cooking-oil margin; counts and calories are not lab-measured."
     ],
     "protein_by_meal_g": {
       "breakfast": 3.4943999999999997,
