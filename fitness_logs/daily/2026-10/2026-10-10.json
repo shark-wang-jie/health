@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "morning_weight_kg": 90.5,
+  "plan_version": "2026-09-08-v3.2",
+  "profile_snapshot": {
+    "sex": "male",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90.5,
+    "bmr_weight_date": "2026-10-10",
+    "bmr_kcal": 1856.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_11_2g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "Pumpkin seeds 11.2 g",
+      "reported_text": "早饭 11.2g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 11.2,
+      "basis": "Previously confirmed label per 100 g: 2579 kJ, protein 31.2 g, fat 48.8 g, saturated fat 9.4 g, carbs 8.3 g, sugar 1.1 g, sodium 0.",
+      "kcal_base_estimate": 69.0363288718929,
+      "kcal_booked": 69.0363288718929,
+      "kcal_range": [
+        69.0363288718929,
+        69.0363288718929
+      ],
+      "protein_g_estimate": 3.4943999999999997,
+      "fat_g_estimate": 5.465599999999999,
+      "carbs_g_estimate": 0.9296,
+      "saturated_fat_g_estimate": 1.0528,
+      "sugar_g_estimate": 0.1232,
+      "sodium_mg_estimate": 0
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked."
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 69.0363288718929,
+    "intake_kcal_booked": 69.0363288718929,
+    "protein_g_estimate": 3.4943999999999997,
+    "fat_g_estimate": 5.465599999999999,
+    "carbs_g_estimate": 0.9296,
+    "intake_kcal_estimate": 69.0363288718929,
+    "food_margin_kcal": 0,
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      69.0363288718929,
+      69.0363288718929
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2227.5,
+    "estimated_deficit_kcal": 2158.4636711281073,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      2000
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 1,
+    "warnings": [
+      "Food log is incomplete.",
+      "Training status is not yet known.",
+      "Day is still open."
+    ],
+    "protein_by_meal_g": {
+      "breakfast": 3.4943999999999997
+    }
+  }
+}
