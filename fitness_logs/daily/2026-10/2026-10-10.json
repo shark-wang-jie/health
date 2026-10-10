@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "morning_weight_kg": 90.5,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -141,7 +141,21 @@
       "sodium_mg_estimate": 228
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "2026-10-10-strength-1808",
+      "event_id": "2026-10-10-strength-1808",
+      "type": "传统力量训练",
+      "start_local": "2026-10-10T18:08:26+08:00",
+      "end_local": "2026-10-10T19:16:59+08:00",
+      "duration_seconds": 4112.680823087692,
+      "energy_scope": "session_active",
+      "active_kcal": 683.4761282276063,
+      "source": "Apple Health synced Apple Watch workout",
+      "is_estimated": false,
+      "note": "Health workout.total_energy_kcal mapped to dynamic session kcal based on prior screenshot calibration."
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -189,19 +203,19 @@
     "intake_kcal_estimate": 1735.174952198853,
     "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 170.86903205690157,
     "intake_kcal_range": [
       1456.8565965583175,
       1856.493307839388
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2227.5,
-    "estimated_deficit_kcal": 492.3250478011471,
+    "exercise_active_kcal": 683.4761282276063,
+    "exercise_adjusted_kcal": 512.6070961707047,
+    "tdee_kcal_estimate": 2740.1070961707046,
+    "estimated_deficit_kcal": 1004.9321439718517,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
+      1900,
       2000
     ],
     "target_is_provisional": true,
@@ -209,8 +223,8 @@
     "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
-      "Training status is not yet known.",
-      "Day is still open."
+      "Strength workout is complete; whether additional training will occur today is unknown.",
+      "Day is still open; current calorie balance is provisional."
     ],
     "protein_by_meal_g": {
       "breakfast": 3.4943999999999997,
