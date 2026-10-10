@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User explicitly confirmed 2026-10-10 food and all training completed.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
-  "training_coverage": "complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 90.5,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 90.5,
@@ -209,7 +209,10 @@
   ],
   "notes": [
     "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked.",
-    "Tofu logged at user-confirmed bookkeeping quantity 400g; do not adjust to the 380g packaging figure."
+    "Tofu logged at user-confirmed bookkeeping quantity 400g; do not adjust to the 380g packaging figure.",
+    "Food and training logs are user-confirmed complete.",
+    "Meal and TDEE numbers are model estimates.",
+    "One restaurant meal retains an estimated cooking-oil margin; counts and calories are not lab-measured."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1646.674952198853,
@@ -219,8 +222,14 @@
     "carbs_g_estimate": 118.54959999999998,
     "intake_kcal_estimate": 1735.174952198853,
     "food_margin_kcal": 88.5,
-    "completed_day_base_intake_balance_kcal": null,
+    "base_macro_estimates": {
+      "protein_g": 151.3044,
+      "fat_g": 63.015600000000006,
+      "carbs_g": 118.54959999999998
+    },
+    "completed_day_base_intake_balance_kcal": 1374.6821439718517,
     "training_discount_kcal": 264.6190320569016,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1456.8565965583175,
       1856.493307839388
@@ -232,21 +241,38 @@
     "completed_day_estimated_deficit_kcal": 1286.1821439718517,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
     "consumed_entries": 4,
-    "warnings": [
-      "Food and training logs are user-confirmed complete.",
-      "Meal and TDEE numbers are model estimates.",
-      "One restaurant meal retains an estimated cooking-oil margin; counts and calories are not lab-measured."
-    ],
     "protein_by_meal_g": {
       "breakfast": 3.4943999999999997,
-      "lunch": 70.5,
-      "dinner": 77.31
-    }
-  }
+      "dinner": 77.31,
+      "lunch": 70.5
+    },
+    "warnings": [],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1820.1999999999998,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [],
+  "food_estimation_policy": "photo_margin_v1"
 }
