@@ -400,7 +400,7 @@ synced_remote_sha="$($GIT rev-parse origin/main)"
 
 ahead_count="$($GIT rev-list --count origin/main..HEAD)"
 if [ "$ahead_count" -gt 0 ]; then
-  unexpected_subjects="$($GIT log --format='%s' origin/main..HEAD | /usr/bin/grep -Ev '^fitness: automated review [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$' || true)"
+  unexpected_subjects="$($GIT log --format='%s' origin/main..HEAD | /usr/bin/grep -Ev '^fitness: automated (review [0-9]{4}-[0-9]{2}-[0-9]{2}|monthly summary [0-9]{4}-[0-9]{2})$' || true)"
   if [ -n "$unexpected_subjects" ]; then
     log "failure reason: local commits ahead of origin/main are not recognized automation commits"
     printf '%s\n' "$unexpected_subjects"

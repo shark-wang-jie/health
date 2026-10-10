@@ -97,3 +97,6 @@ Codex CLI按`HEALTH_CODEX_BIN`、当前ChatGPT应用内路径、旧应用内路�
 macOS普通LaunchAgent不能后台读取`Documents`时，实际任务通过`HEALTH_REPO_ROOT`指向`~/Library/Application Support/health-daily-review/repo`专用checkout。该checkout与交互工作副本共享同一`origin/main`，不复制或改写未提交的本地工作。
 
 每次重算与AI复核在 state/runs/ 下独立临时clone执行，失败副本保留供审计，下一次从干净主副本重新复核；验证后的提交先快进保存到主副本再推送，以便断网恢复。根据完成状态补齐遗漏日期队列，逐次处理最早未完成日期；不创建虚构日记录。
+
+
+月度总结自动任务：`automation/monthly_review.py`由`com.wangjie.health.monthly-review` LaunchAgent在每月1日00:15及每15分钟检查。日期按Asia/Shanghai，只为已结束且有日记录、尚无总结的月份生成，已有总结保留，不自动覆盖。与每日复核共用锁、专用checkout和Git代理；隔离生成后通过jq检查，只提交新月总结并普通推送。失败保留副本，下次检查重试；断网后的月总结提交可由每日或月度任务恢复推送。状态为仓库外`state/monthly/latest.json`，日志为`~/Library/Logs/health/monthly.log`。资料缺失或未全封账仍如实标记，调度成功不等于资料完整。

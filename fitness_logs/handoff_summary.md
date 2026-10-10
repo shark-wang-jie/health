@@ -98,3 +98,6 @@
 2026-10-01起，脚本自动发现新版与旧版ChatGPT应用内的Codex CLI，也支持环境变量和系统`PATH`覆盖，避免应用升级迁移可执行文件后阻塞补跑。
 
 自动任务由独立看门狗按错误类别退避熔断并保存机器状态；日报确定性校验失败时，可在隔离副本中触发仅限目标JSON的Codex修复，重新通过全部检查后才提交。未知故障只生成只读诊断，不自动改调度代码。
+
+
+月度总结自动任务：`automation/monthly_review.py`由`com.wangjie.health.monthly-review` LaunchAgent在每月1日00:15及每15分钟检查。日期按Asia/Shanghai，只为已结束且有日记录、尚无总结的月份生成，已有总结保留，不自动覆盖。与每日复核共用锁、专用checkout和Git代理；隔离生成后通过jq检查，只提交新月总结并普通推送。失败保留副本，下次检查重试；断网后的月总结提交可由每日或月度任务恢复推送。状态为仓库外`state/monthly/latest.json`，日志为`~/Library/Logs/health/monthly.log`。资料缺失或未全封账仍如实标记，调度成功不等于资料完整。
