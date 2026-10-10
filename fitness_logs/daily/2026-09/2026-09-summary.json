@@ -1,0 +1,2124 @@
+{
+  "schema_version": 3,
+  "record_type": "monthly_summary",
+  "month": "2026-09",
+  "summary_type": "月度饮食与运动总结",
+  "period": {
+    "start_date": "2026-09-01",
+    "end_date": "2026-09-30",
+    "timezone": "亚洲/上海"
+  },
+  "month_end_date": "2026-09-30",
+  "generated_at": "2026-10-10T22:30:39+08:00",
+  "finalized": false,
+  "coverage": {
+    "calendar_days": 30,
+    "recorded_days": 30,
+    "is_complete_calendar_coverage": true,
+    "missing_dates": [],
+    "final_dates": [
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-27",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30"
+    ],
+    "partial_dates": [],
+    "open_dates": [
+      "2026-09-20"
+    ],
+    "unknown_completion_dates": [],
+    "weight_missing_dates": [
+      "2026-09-06",
+      "2026-09-13",
+      "2026-09-20",
+      "2026-09-25"
+    ]
+  },
+  "aggregation_policy": {
+    "daily_summary_precedence": [
+      "daily_summary",
+      "daily_totals"
+    ],
+    "reported_data_policy": "月度总量包含所有日文件中已报告的数据；partial/open 日期会单独标出，不能视为完整全天。",
+    "range_central_value": "新日摄入采用intake_kcal_booked，旧日采用intake_kcal_estimate；宏量点估算单列，区间不是置信区间。",
+    "exercise_kcal": "优先 active_kcal，否则使用 kcal_estimate；不使用 total_kcal。",
+    "energy_balance_formula": "按 energy_summary_by_algorithm 分组，不合并新旧算法缺口",
+    "target_evaluation": "按每个日文件自身 targets 判断，不使用单一月度目标。"
+  },
+  "energy_summary_by_algorithm": {
+    "legacy_bmr_plus_exercise": {
+      "days_with_calculable_deficit": 8,
+      "total_conservative_deficit_kcal": -805,
+      "average_conservative_deficit_kcal_per_recorded_day": -100.6,
+      "days_within_that_days_recorded_target": 1,
+      "days_below_that_days_recorded_target": 5,
+      "days_above_that_days_recorded_target": 2,
+      "surplus_days": 2,
+      "lowest_deficit_day": {
+        "date": "2026-09-03",
+        "value": -2721
+      },
+      "highest_deficit_day": {
+        "date": "2026-09-08",
+        "value": 728
+      },
+      "formula": "当日基础代谢 + 已记录运动动态或估算千卡 - 当日摄入估算",
+      "interpretation": "旧算法记账差额，不代表真实缺口或盈余。",
+      "base_intake_summary": {
+        "days_with_data": 0,
+        "total_kcal": null,
+        "average_kcal": null
+      },
+      "booked_or_legacy_intake_total_kcal": 17255,
+      "provisional_or_unconfirmed_dates": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08"
+      ],
+      "coefficient_variants": [
+        {}
+      ],
+      "dates": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08"
+      ],
+      "recorded_days": 8,
+      "average_booked_or_legacy_intake_kcal": 2156.9
+    },
+    "tdee_v1": {
+      "total_estimated_deficit_kcal": 7687.9,
+      "days_with_completed_day_estimate": 15,
+      "excluded_provisional_days": 7,
+      "average_estimated_deficit_kcal": 512.5,
+      "total_estimated_tdee_kcal": 55488,
+      "total_adjusted_training_kcal": 6354,
+      "formula": "BMR × activity_factor + 原始训练动态消耗 × training_factor − 偏高记账摄入",
+      "interpretation": "按偏高摄入估算的缺口，不是真实缺口下限；系数未经个人验证。",
+      "base_intake_summary": {
+        "days_with_data": 22,
+        "total_kcal": 47259,
+        "average_kcal": 2148.1
+      },
+      "booked_or_legacy_intake_total_kcal": 49701,
+      "complete_data_subset": {
+        "dates": [
+          "2026-09-09",
+          "2026-09-12",
+          "2026-09-14",
+          "2026-09-15",
+          "2026-09-16",
+          "2026-09-17",
+          "2026-09-18",
+          "2026-09-21",
+          "2026-09-22",
+          "2026-09-23",
+          "2026-09-24",
+          "2026-09-26",
+          "2026-09-27",
+          "2026-09-28",
+          "2026-09-30"
+        ],
+        "recorded_days": 15,
+        "average_estimated_deficit_kcal": 512.5,
+        "note": "完整资料子集，仍是估算；未完成日的暂算差额不计入缺口合计"
+      },
+      "provisional_or_unconfirmed_dates": [
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-13",
+        "2026-09-19",
+        "2026-09-20",
+        "2026-09-25",
+        "2026-09-29"
+      ],
+      "coefficient_variants": [
+        {
+          "algorithm": "tdee_v1",
+          "activity_factor": 1.2,
+          "training_factor": 0.75
+        }
+      ],
+      "dates": [
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-26",
+        "2026-09-27",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30"
+      ],
+      "recorded_days": 22,
+      "average_booked_or_legacy_intake_kcal": 2259.1
+    }
+  },
+  "weekly_weight_summary": [
+    {
+      "iso_week": "2026-W36",
+      "valid_measurements": 5,
+      "average_kg": 92.23,
+      "scope": "仅当前月内有效测量，月边界周可能不完整；缺测不插补"
+    },
+    {
+      "iso_week": "2026-W37",
+      "valid_measurements": 6,
+      "average_kg": 91.54,
+      "scope": "仅当前月内有效测量，月边界周可能不完整；缺测不插补"
+    },
+    {
+      "iso_week": "2026-W38",
+      "valid_measurements": 6,
+      "average_kg": 91.55,
+      "scope": "仅当前月内有效测量，月边界周可能不完整；缺测不插补"
+    },
+    {
+      "iso_week": "2026-W39",
+      "valid_measurements": 6,
+      "average_kg": 90.81,
+      "scope": "仅当前月内有效测量，月边界周可能不完整；缺测不插补"
+    },
+    {
+      "iso_week": "2026-W40",
+      "valid_measurements": 3,
+      "average_kg": 89.72,
+      "scope": "仅当前月内有效测量，月边界周可能不完整；缺测不插补"
+    }
+  ],
+  "recovery_reports": [
+    {
+      "date": "2026-09-13",
+      "hunger": "凌晨用户自述太饿，吃了夜宵",
+      "sleep_hours": null,
+      "training_performance": null,
+      "fatigue_or_pain": null
+    }
+  ],
+  "unresolved_data": [
+    {
+      "date": "2026-09-01",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-02",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-03",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-04",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-05",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-06",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-07",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-08",
+      "missing_sections": [],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-10",
+      "missing_sections": [],
+      "food_coverage": "partial"
+    },
+    {
+      "date": "2026-09-11",
+      "missing_sections": [],
+      "food_coverage": "partial"
+    },
+    {
+      "date": "2026-09-13",
+      "missing_sections": [],
+      "food_coverage": "partial"
+    },
+    {
+      "date": "2026-09-19",
+      "missing_sections": [
+        "晚间3包赢多捞面的本次净含量、口味及营养标签未确认；当前80克/包仅为同类暂估，待实际包装确认后修正。"
+      ],
+      "food_coverage": "confirmed_complete"
+    },
+    {
+      "date": "2026-09-20",
+      "missing_sections": [],
+      "food_coverage": "partial"
+    },
+    {
+      "date": "2026-09-25",
+      "missing_sections": [
+        "morning_weight",
+        "food_details"
+      ],
+      "food_coverage": "unknown"
+    },
+    {
+      "date": "2026-09-29",
+      "missing_sections": [
+        "核桃仁1小包及两次同款咸蛋黄味三明治华夫饼的实际包装净含量、营养标签未确认；当前分别暂按25克和35克/包估算，待包装信息确认后修正（华夫饼两次同步修正）。"
+      ],
+      "food_coverage": "confirmed_complete"
+    }
+  ],
+  "weight_summary": {
+    "recorded_days": 26,
+    "first": {
+      "date": "2026-09-01",
+      "weight_kg": 92.1
+    },
+    "last": {
+      "date": "2026-09-30",
+      "weight_kg": 89.45
+    },
+    "first_to_last_change_kg": -2.65,
+    "average_kg": 91.3,
+    "minimum": {
+      "date": "2026-09-30",
+      "weight_kg": 89.45
+    },
+    "maximum": {
+      "date": "2026-09-14",
+      "weight_kg": 93.1
+    }
+  },
+  "nutrition_summary": {
+    "days_with_intake_summary": 30,
+    "total_intake_kcal_estimate": 66956,
+    "average_intake_kcal_per_recorded_day": 2231.9,
+    "lowest_intake_day": {
+      "date": "2026-09-25",
+      "value": 0.0
+    },
+    "highest_intake_day": {
+      "date": "2026-09-19",
+      "value": 5231.0794646271515
+    },
+    "intake_limit_adherence": {
+      "days_recorded_range_at_or_below_legacy_limit": 3,
+      "days_estimate_at_or_below_limit": 4,
+      "days_possibly_at_or_below_limit": 6,
+      "days_recorded_range_above_legacy_limit": 2
+    },
+    "total_meal_entries": 157,
+    "meal_category_counts": {
+      "dinner": 2,
+      "lunch": 2,
+      "post_workout": 2,
+      "snack": 1,
+      "上午加餐": 2,
+      "下午加餐": 10,
+      "凌晨夜宵": 8,
+      "加餐": 4,
+      "午后加餐": 1,
+      "午餐": 27,
+      "放纵餐": 1,
+      "早餐": 33,
+      "晚间加餐": 16,
+      "晚餐": 24,
+      "深夜加餐": 1,
+      "睡醒后饮料": 1,
+      "练后加餐": 16,
+      "练后晚餐": 3,
+      "练后餐": 3
+    },
+    "protein_days_with_summary": 30,
+    "protein_days_with_explicit_range": 9,
+    "protein_range_note": "无范围日仅提供点估算，不当作确定上下限；以下区间合计仅含有明确区间的日",
+    "total_protein_g_range": [
+      966,
+      1321.3
+    ],
+    "average_protein_g_range_per_recorded_day": [
+      107.3,
+      146.8
+    ],
+    "protein_target_days_range_lower_bound_met": 0,
+    "protein_target_days_point_estimate_met": 6,
+    "protein_target_days_possibly_met": 3,
+    "protein_target_days_range_upper_bound_below": 6,
+    "protein_g_point_summary": {
+      "days_with_data": 30,
+      "total": 4025.8,
+      "average_per_recorded_day": 134.2,
+      "note": "仅已报告数据；缺失不按零处理"
+    },
+    "fat_g_point_summary": {
+      "days_with_data": 30,
+      "total": 3071.5,
+      "average_per_recorded_day": 102.4,
+      "note": "仅已报告数据；缺失不按零处理"
+    },
+    "carbs_g_point_summary": {
+      "days_with_data": 30,
+      "total": 5749.2,
+      "average_per_recorded_day": 191.6,
+      "note": "仅已报告数据；缺失不按零处理"
+    },
+    "new_intake_target_comparison": {
+      "below": 5,
+      "within": 2,
+      "above": 8,
+      "excluded_incomplete_days": 7,
+      "interpretation": "相对初始摄入安排的描述，不是合格评分；低于区间不自动代表更好"
+    },
+    "base_macro_summaries": {
+      "protein_g": {
+        "days_with_data": 22,
+        "total": 2959.3,
+        "mean": 134.5
+      },
+      "fat_g": {
+        "days_with_data": 22,
+        "total": 2072.1,
+        "mean": 94.2
+      },
+      "carbs_g": {
+        "days_with_data": 22,
+        "total": 4150.9,
+        "mean": 188.7
+      }
+    },
+    "macro_basis_note": "原有宏量合计含记账余量；base_macro_summaries仅汇总明确保存的基础宏量，不反推旧日数据"
+  },
+  "exercise_summary": {
+    "exercise_days": 19,
+    "days_without_exercise_entries": 11,
+    "total_sessions": 28,
+    "sessions_with_duration": 28,
+    "sessions_with_kcal": 28,
+    "total_active_or_estimated_kcal_from_daily_summaries": 9935,
+    "highest_exercise_kcal_day": {
+      "date": "2026-09-30",
+      "value": 872
+    },
+    "by_normalized_type": {
+      "Indoor cycling": {
+        "sessions": 1,
+        "recorded_duration_min": 61.5,
+        "active_or_estimated_kcal": 626
+      },
+      "indoor_cycling": {
+        "sessions": 11,
+        "recorded_duration_min": 395.8,
+        "active_or_estimated_kcal": 3891
+      },
+      "strength": {
+        "sessions": 15,
+        "recorded_duration_min": 724.6,
+        "active_or_estimated_kcal": 4963
+      },
+      "strength_training": {
+        "sessions": 1,
+        "recorded_duration_min": 54.1,
+        "active_or_estimated_kcal": 455
+      }
+    },
+    "type_aliases": {
+      "strength": [
+        "力量训练",
+        "传统力量训练"
+      ],
+      "indoor_cycling": [
+        "骑行",
+        "室内骑行",
+        "室内单车"
+      ]
+    },
+    "energy_basis": "每次运动优先采用 active_kcal；没有该字段时沿用 kcal_estimate。Apple Watch 总千卡不计入。"
+  },
+  "strength_progress": {
+    "exercises": [],
+    "interpretation": "仅汇总已报告工作组；不同器械或重量口径不混比。无组数资料不等于没有力量训练，不从热量推断肌肉增长或自动增加训练量。"
+  },
+  "conservative_deficit_summary": {
+    "days_with_calculable_deficit": 8,
+    "total_conservative_deficit_kcal": -805,
+    "average_conservative_deficit_kcal_per_recorded_day": -100.6,
+    "days_within_that_days_recorded_target": 1,
+    "days_below_that_days_recorded_target": 5,
+    "days_above_that_days_recorded_target": 2,
+    "surplus_days": 2,
+    "lowest_deficit_day": {
+      "date": "2026-09-03",
+      "value": -2721
+    },
+    "highest_deficit_day": {
+      "date": "2026-09-08",
+      "value": 728
+    },
+    "formula": "当日基础代谢 + 已记录运动动态或估算千卡 - 当日摄入估算"
+  },
+  "notable_days": {
+    "highest_intake": {
+      "date": "2026-09-19",
+      "value": 5231.0794646271515
+    },
+    "lowest_intake": {
+      "date": "2026-09-25",
+      "value": 0.0
+    },
+    "highest_exercise": {
+      "date": "2026-09-30",
+      "value": 872
+    },
+    "highest_conservative_deficit": {
+      "date": "2026-09-08",
+      "value": 728
+    },
+    "lowest_conservative_deficit": {
+      "date": "2026-09-03",
+      "value": -2721
+    }
+  },
+  "assessment": [
+    "缺少当日结束确认的记录：2026-09-20；月度统计按已报告内容计算。",
+    "本月首次至末次有记录体重变化 -2.65 千克。",
+    "有蛋白质汇总的 30 天中，按记录区间下限达到参考目标 0 天；另列点估算统计，均非确定测量或饮食质量评分。",
+    "记录到 19 个运动日、28 次训练。",
+    "旧算法记账差额仅汇总旧记录；新算法另列，不将两者合并为月度缺口。"
+  ],
+  "daily_metrics": [
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-01",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.1,
+      "bmr_kcal": 1872,
+      "intake_kcal_estimate": 1909,
+      "intake_kcal_range": [
+        1719,
+        2159
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 72.5,
+      "carbs_g_estimate": 170.4,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 135.4,
+      "protein_g_range": [
+        120.4,
+        149.4
+      ],
+      "exercise_active_or_estimated_kcal": 614,
+      "conservative_deficit_kcal": 577,
+      "intake_limit_kcal": 1870,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": "全天最终：累计摄入中位约1909千卡，合理范围约1719-2159千卡；蛋白质约135.4克、脂肪约72.5克、碳水约170.4克。碳水处于150-180克执行区间。传统力量训练动态323千卡，室内骑行设备记录291千卡，合计614千卡；中位保守缺口约577千卡，处于400-700千卡目标范围。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-02",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.7,
+      "bmr_kcal": 1868,
+      "intake_kcal_estimate": 1837,
+      "intake_kcal_range": [
+        1609,
+        2110
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 69.6,
+      "carbs_g_estimate": 116.0,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 180.7,
+      "protein_g_range": [
+        159,
+        202
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 31,
+      "intake_limit_kcal": 1870,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1837千卡，合理范围约1609–2110千卡；蛋白质约180.7克、脂肪约69.6克、碳水约116.0克。无运动记录；中位保守缺口约31千卡，低于400–700千卡目标。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-03",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.7,
+      "bmr_kcal": 1868,
+      "intake_kcal_estimate": 4589,
+      "intake_kcal_range": [
+        3724,
+        5654
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 262.8,
+      "carbs_g_estimate": 399.9,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 163.9,
+      "protein_g_range": [
+        129.6,
+        211.8
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -2721,
+      "intake_limit_kcal": 1870,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约4589千卡，合理范围约3724–5654千卡；蛋白质约163.9克、脂肪约262.8克、碳水约399.9克。用户提到练后餐但未提供训练数据，运动动态消耗未计入；按已记录消耗0计算，中位保守盈余约2721千卡。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-04",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.0,
+      "bmr_kcal": 1881,
+      "intake_kcal_estimate": 1895,
+      "intake_kcal_range": [
+        1676,
+        2145
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 77.4,
+      "carbs_g_estimate": 143.2,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 153.0,
+      "protein_g_range": [
+        133,
+        173.1
+      ],
+      "exercise_active_or_estimated_kcal": 313,
+      "conservative_deficit_kcal": 299,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位约1895千卡，蛋白质约153.0克、脂肪约77.4克、碳水约143.2克；传统力量训练动态消耗313千卡。按当前摄入的保守缺口约299千卡，低于400–700千卡目标。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-05",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.65,
+      "bmr_kcal": 1878,
+      "intake_kcal_estimate": 1600,
+      "intake_kcal_range": [
+        1460,
+        1760
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 60.2,
+      "carbs_g_estimate": 143.9,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 129.7,
+      "protein_g_range": [
+        121.7,
+        140.7
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": 278,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约1600千卡，蛋白质约129.7克、脂肪约60.2克、碳水约143.9克；无运动记录，保守缺口约278千卡。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-06",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": null,
+      "bmr_kcal": 1878,
+      "intake_kcal_estimate": 2592,
+      "intake_kcal_range": [
+        2212,
+        3052
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 95.0,
+      "carbs_g_estimate": 306.8,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 114.8,
+      "protein_g_range": [
+        86.8,
+        149.8
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": -714,
+      "intake_limit_kcal": 1880,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 0,
+      "source_summary_status": "全天最终：累计摄入中位约2592千卡，蛋白质约114.8克、脂肪约95克、碳水约306.8克；无运动记录。按保守算法中位约714千卡盈余，主要来自200克荞麦锅巴及深夜排骨、掌中宝。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-07",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.15,
+      "bmr_kcal": 1873,
+      "intake_kcal_estimate": 1419,
+      "intake_kcal_range": [
+        1244,
+        1614
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 46.1,
+      "carbs_g_estimate": 141.1,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 110.5,
+      "protein_g_range": [
+        97,
+        124
+      ],
+      "exercise_active_or_estimated_kcal": 263,
+      "conservative_deficit_kcal": 717,
+      "intake_limit_kcal": 1870,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位约1419千卡，蛋白质约110.5克、脂肪约46.1克、碳水约141.1克；传统力量训练动态消耗263千卡，保守缺口约717千卡。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": true,
+      "algorithm": "legacy_bmr_plus_exercise",
+      "energy_method": {},
+      "intake_kcal_base_estimate": null,
+      "exercise_adjusted_kcal": null,
+      "tdee_kcal_estimate": null,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": null,
+      "date": "2026-09-08",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.8,
+      "bmr_kcal": 1869,
+      "intake_kcal_estimate": 1414,
+      "intake_kcal_range": [
+        1224,
+        1629
+      ],
+      "base_macro_estimates": null,
+      "fat_g_estimate": 44.5,
+      "carbs_g_estimate": 177.0,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 78.5,
+      "protein_g_range": [
+        64.5,
+        92.5
+      ],
+      "exercise_active_or_estimated_kcal": 273,
+      "conservative_deficit_kcal": 728,
+      "intake_limit_kcal": 1870,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        700
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": "全天最终：累计摄入中位约1414千卡，蛋白质约78.5克、脂肪约44.5克、碳水约177克；传统力量训练动态消耗273千卡。按保守算法热量缺口约728千卡，略高于400–700千卡目标上限。"
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1817.1797323135756,
+      "exercise_adjusted_kcal": 522.0,
+      "tdee_kcal_estimate": 2750.7,
+      "estimated_deficit_kcal": 835.0202676864242,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-09",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.6,
+      "bmr_kcal": 1857.25,
+      "intake_kcal_estimate": 1915.6797323135756,
+      "intake_kcal_range": [
+        1594.2,
+        2080.2
+      ],
+      "base_macro_estimates": {
+        "protein_g": 106.95,
+        "fat_g": 66.0,
+        "carbs_g": 198.05
+      },
+      "fat_g_estimate": 76.94444444444446,
+      "carbs_g_estimate": 198.05,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 106.95,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 696,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": -2923.260420650096,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 4813.860420650096,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2231.1,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-10",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.8,
+      "bmr_kcal": 1859.25,
+      "intake_kcal_estimate": 5154.360420650096,
+      "intake_kcal_range": [
+        3790.7,
+        6032
+      ],
+      "base_macro_estimates": {
+        "protein_g": 255.0,
+        "fat_g": 244.20000000000002,
+        "carbs_g": 399.34999999999997
+      },
+      "fat_g_estimate": 282.03333333333336,
+      "carbs_g_estimate": 399.34999999999997,
+      "food_coverage": "partial",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 255.0,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 12,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": 997.4280114722751,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1491.5219885277247,
+      "exercise_adjusted_kcal": 330.75,
+      "tdee_kcal_estimate": 2577.45,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-11",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 92.1,
+      "bmr_kcal": 1872.25,
+      "intake_kcal_estimate": 1580.0219885277247,
+      "intake_kcal_range": [
+        1285.5,
+        1717.5
+      ],
+      "base_macro_estimates": {
+        "protein_g": 118.4,
+        "fat_g": 56.31999999999999,
+        "carbs_g": 122.58
+      },
+      "fat_g_estimate": 66.15333333333334,
+      "carbs_g_estimate": 122.58,
+      "food_coverage": "partial",
+      "energy_estimate_provisional": true,
+      "training_status": "reported_training",
+      "protein_g_estimate": 118.4,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 441,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 2666.0229445506693,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2243.1,
+      "estimated_deficit_kcal": -541.4229445506694,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-12",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.8,
+      "bmr_kcal": 1869.25,
+      "intake_kcal_estimate": 2784.5229445506693,
+      "intake_kcal_range": [
+        2250.4,
+        3196.6
+      ],
+      "base_macro_estimates": {
+        "protein_g": 140.4,
+        "fat_g": 93.6,
+        "carbs_g": 309.2
+      },
+      "fat_g_estimate": 106.76666666666668,
+      "carbs_g_estimate": 309.2,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "confirmed_rest",
+      "protein_g_estimate": 140.4,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": -1222.057743785851,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 3395.157743785851,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2243.1,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-13",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": null,
+      "bmr_kcal": 1869.25,
+      "intake_kcal_estimate": 3465.157743785851,
+      "intake_kcal_range": [
+        2854.1,
+        4002.2
+      ],
+      "base_macro_estimates": {
+        "protein_g": 165.25,
+        "fat_g": 182.5,
+        "carbs_g": 271.4
+      },
+      "fat_g_estimate": 190.27777777777777,
+      "carbs_g_estimate": 271.4,
+      "food_coverage": "partial",
+      "energy_estimate_provisional": true,
+      "training_status": "confirmed_rest",
+      "protein_g_estimate": 165.25,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 7,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 3038.0,
+      "exercise_adjusted_kcal": 299.25,
+      "tdee_kcal_estimate": 2557.95,
+      "estimated_deficit_kcal": -765.5500000000002,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-14",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 93.1,
+      "bmr_kcal": 1882.25,
+      "intake_kcal_estimate": 3323.5,
+      "intake_kcal_range": [
+        2373,
+        4063
+      ],
+      "base_macro_estimates": {
+        "protein_g": 198.16666666666669,
+        "fat_g": 164.4,
+        "carbs_g": 188.5
+      },
+      "fat_g_estimate": 196.12222222222223,
+      "carbs_g_estimate": 188.5,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 198.16666666666669,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 399,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 900.65,
+      "exercise_adjusted_kcal": 192.75,
+      "tdee_kcal_estimate": 2434.65,
+      "estimated_deficit_kcal": 1534.0,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-15",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.7,
+      "bmr_kcal": 1868.25,
+      "intake_kcal_estimate": 900.65,
+      "intake_kcal_range": null,
+      "base_macro_estimates": {
+        "protein_g": 39.9,
+        "fat_g": 34.35,
+        "carbs_g": 102.9
+      },
+      "fat_g_estimate": 34.35,
+      "carbs_g_estimate": 102.9,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 39.9,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 257,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1765.8899999999999,
+      "exercise_adjusted_kcal": 262.5,
+      "tdee_kcal_estimate": 2494.2,
+      "estimated_deficit_kcal": 643.31,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-16",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.85,
+      "bmr_kcal": 1859.75,
+      "intake_kcal_estimate": 1850.8899999999999,
+      "intake_kcal_range": [
+        1541.9,
+        2061.9
+      ],
+      "base_macro_estimates": {
+        "protein_g": 83.33999999999999,
+        "fat_g": 64.53999999999999,
+        "carbs_g": 215.94
+      },
+      "fat_g_estimate": 73.98444444444443,
+      "carbs_g_estimate": 215.94,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 83.33999999999999,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 350,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1766.22,
+      "exercise_adjusted_kcal": 406.5,
+      "tdee_kcal_estimate": 2644.7999999999997,
+      "estimated_deficit_kcal": 790.0799999999997,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-17",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.4,
+      "bmr_kcal": 1865.25,
+      "intake_kcal_estimate": 1854.72,
+      "intake_kcal_range": [
+        1548.2,
+        2010.2
+      ],
+      "base_macro_estimates": {
+        "protein_g": 115.44,
+        "fat_g": 65.17999999999999,
+        "carbs_g": 177.66000000000003
+      },
+      "fat_g_estimate": 75.01333333333334,
+      "carbs_g_estimate": 177.66000000000003,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 115.44,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 542,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1831.22,
+      "exercise_adjusted_kcal": 276.0,
+      "tdee_kcal_estimate": 2513.1,
+      "estimated_deficit_kcal": 593.3799999999999,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-18",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.3,
+      "bmr_kcal": 1864.25,
+      "intake_kcal_estimate": 1919.72,
+      "intake_kcal_range": [
+        1603.2,
+        2085.2
+      ],
+      "base_macro_estimates": {
+        "protein_g": 126.63999999999999,
+        "fat_g": 75.18000000000002,
+        "carbs_g": 159.86
+      },
+      "fat_g_estimate": 85.01333333333336,
+      "carbs_g_estimate": 159.86,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 126.63999999999999,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 368,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": -2998.1794646271514,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 5071.0794646271515,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2232.9,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-19",
+      "record_status": "final",
+      "missing_sections": [
+        "晚间3包赢多捞面的本次净含量、口味及营养标签未确认；当前80克/包仅为同类暂估，待实际包装确认后修正。"
+      ],
+      "morning_weight_kg": 90.95,
+      "bmr_kcal": 1860.75,
+      "intake_kcal_estimate": 5231.0794646271515,
+      "intake_kcal_range": [
+        4711.1,
+        5531.1
+      ],
+      "base_macro_estimates": {
+        "protein_g": 243.29,
+        "fat_g": 253.18,
+        "carbs_g": 441.34000000000003
+      },
+      "fat_g_estimate": 270.9577777777778,
+      "carbs_g_estimate": 441.34000000000003,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": true,
+      "training_status": "confirmed_rest",
+      "protein_g_estimate": 243.29,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 10,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": 1232.9,
+      "protein_range_available": true,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 910.0,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2232.9,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-20",
+      "record_status": "open",
+      "missing_sections": [],
+      "morning_weight_kg": null,
+      "bmr_kcal": 1860.75,
+      "intake_kcal_estimate": 1000.0,
+      "intake_kcal_range": [
+        750,
+        1140
+      ],
+      "base_macro_estimates": {
+        "protein_g": 66.0,
+        "fat_g": 25.0,
+        "carbs_g": 108.0
+      },
+      "fat_g_estimate": 35.0,
+      "carbs_g_estimate": 108.0,
+      "food_coverage": "partial",
+      "energy_estimate_provisional": true,
+      "training_status": "unknown",
+      "protein_g_estimate": 66.0,
+      "protein_g_range": [
+        54,
+        78
+      ],
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 1,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1977.802294455067,
+      "exercise_adjusted_kcal": 492.0,
+      "tdee_kcal_estimate": 2729.1,
+      "estimated_deficit_kcal": 662.7977055449328,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-21",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.3,
+      "bmr_kcal": 1864.25,
+      "intake_kcal_estimate": 2066.302294455067,
+      "intake_kcal_range": [
+        1779.6,
+        2200.6
+      ],
+      "base_macro_estimates": {
+        "protein_g": 95.38000000000001,
+        "fat_g": 79.04,
+        "carbs_g": 217.94
+      },
+      "fat_g_estimate": 88.87333333333335,
+      "carbs_g_estimate": 217.94,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 95.38000000000001,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 656,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1953.6022944550668,
+      "exercise_adjusted_kcal": 474.0,
+      "tdee_kcal_estimate": 2704.5,
+      "estimated_deficit_kcal": 662.3977055449332,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-22",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.75,
+      "bmr_kcal": 1858.75,
+      "intake_kcal_estimate": 2042.1022944550668,
+      "intake_kcal_range": [
+        1778.6,
+        2148.6
+      ],
+      "base_macro_estimates": {
+        "protein_g": 91.58,
+        "fat_g": 75.64,
+        "carbs_g": 222.94
+      },
+      "fat_g_estimate": 85.47333333333334,
+      "carbs_g_estimate": 222.94,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 91.58,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 632,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 4,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1912.931931166348,
+      "exercise_adjusted_kcal": 507.75,
+      "tdee_kcal_estimate": 2735.25,
+      "estimated_deficit_kcal": 733.818068833652,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-23",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.5,
+      "bmr_kcal": 1856.25,
+      "intake_kcal_estimate": 2001.431931166348,
+      "intake_kcal_range": [
+        1681.5,
+        2186.5
+      ],
+      "base_macro_estimates": {
+        "protein_g": 156.74,
+        "fat_g": 81.934,
+        "carbs_g": 134.984
+      },
+      "fat_g_estimate": 91.76733333333334,
+      "carbs_g_estimate": 134.984,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 156.74,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 677,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 2756.0,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2226.2999999999997,
+      "estimated_deficit_kcal": -752.2000000000003,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-24",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.4,
+      "bmr_kcal": 1855.25,
+      "intake_kcal_estimate": 2978.5,
+      "intake_kcal_range": [
+        2203,
+        3493
+      ],
+      "base_macro_estimates": {
+        "protein_g": 163.3,
+        "fat_g": 111.30000000000001,
+        "carbs_g": 273.7
+      },
+      "fat_g_estimate": 136.02222222222224,
+      "carbs_g_estimate": 273.7,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "confirmed_rest",
+      "protein_g_estimate": 163.3,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 7,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": 2226.2999999999997,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 0.0,
+      "exercise_adjusted_kcal": 0.0,
+      "tdee_kcal_estimate": 2226.2999999999997,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1800.0,
+        1800.0
+      ],
+      "date": "2026-09-25",
+      "record_status": "final",
+      "missing_sections": [
+        "morning_weight",
+        "food_details"
+      ],
+      "morning_weight_kg": null,
+      "bmr_kcal": 1855.25,
+      "intake_kcal_estimate": 0.0,
+      "intake_kcal_range": null,
+      "base_macro_estimates": {
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      },
+      "fat_g_estimate": 0.0,
+      "carbs_g_estimate": 0.0,
+      "food_coverage": "unknown",
+      "energy_estimate_provisional": true,
+      "training_status": "confirmed_rest",
+      "protein_g_estimate": 0.0,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 0,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 0,
+      "exercise_sessions": 0,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 2155.401529636711,
+      "exercise_adjusted_kcal": 469.5,
+      "tdee_kcal_estimate": 2709.6,
+      "estimated_deficit_kcal": 469.19847036328883,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-26",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 91.55,
+      "bmr_kcal": 1866.75,
+      "intake_kcal_estimate": 2240.401529636711,
+      "intake_kcal_range": [
+        2025.4,
+        2385.4
+      ],
+      "base_macro_estimates": {
+        "protein_g": 186.98000000000002,
+        "fat_g": 112.0955555556,
+        "carbs_g": 106.14
+      },
+      "fat_g_estimate": 121.54,
+      "carbs_g_estimate": 106.14,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 186.98000000000002,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 626,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1593.4512428298278,
+      "exercise_adjusted_kcal": 333.0,
+      "tdee_kcal_estimate": 2558.7,
+      "estimated_deficit_kcal": 875.248757170172,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-27",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 90.35,
+      "bmr_kcal": 1854.75,
+      "intake_kcal_estimate": 1683.4512428298278,
+      "intake_kcal_range": [
+        1453.5,
+        1833.5
+      ],
+      "base_macro_estimates": {
+        "protein_g": 141.57,
+        "fat_g": 65.0,
+        "carbs_g": 108.75
+      },
+      "fat_g_estimate": 75.0,
+      "carbs_g_estimate": 108.75,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 141.57,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 444,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 3,
+      "exercise_sessions": 1,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1951.1319311663478,
+      "exercise_adjusted_kcal": 650.25,
+      "tdee_kcal_estimate": 2869.95,
+      "estimated_deficit_kcal": 830.318068833652,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-28",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 89.85,
+      "bmr_kcal": 1849.75,
+      "intake_kcal_estimate": 2039.6319311663478,
+      "intake_kcal_range": [
+        1745.1,
+        2177.1
+      ],
+      "base_macro_estimates": {
+        "protein_g": 185.44,
+        "fat_g": 82.24000000000001,
+        "carbs_g": 115.8
+      },
+      "fat_g_estimate": 92.07333333333335,
+      "carbs_g_estimate": 115.8,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 185.44,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 867,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 5,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": 785.9499999999998,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1829.0,
+      "exercise_adjusted_kcal": 483.75,
+      "tdee_kcal_estimate": 2703.45,
+      "estimated_deficit_kcal": null,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-29",
+      "record_status": "final",
+      "missing_sections": [
+        "核桃仁1小包及两次同款咸蛋黄味三明治华夫饼的实际包装净含量、营养标签未确认；当前分别暂按25克和35克/包估算，待包装信息确认后修正（华夫饼两次同步修正）。"
+      ],
+      "morning_weight_kg": 89.85,
+      "bmr_kcal": 1849.75,
+      "intake_kcal_estimate": 1917.5,
+      "intake_kcal_range": [
+        1518,
+        2180
+      ],
+      "base_macro_estimates": {
+        "protein_g": 122.4,
+        "fat_g": 78.82000000000001,
+        "carbs_g": 158.48000000000002
+      },
+      "fat_g_estimate": 88.65333333333335,
+      "carbs_g_estimate": 158.48000000000002,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": true,
+      "training_status": "reported_training",
+      "protein_g_estimate": 122.4,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 645,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 7,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    },
+    {
+      "provisional_recorded_balance_kcal": null,
+      "protein_range_available": false,
+      "algorithm": "tdee_v1",
+      "energy_method": {
+        "algorithm": "tdee_v1",
+        "activity_factor": 1.2,
+        "training_factor": 0.75
+      },
+      "intake_kcal_base_estimate": 1662.8623374760994,
+      "exercise_adjusted_kcal": 654.0,
+      "tdee_kcal_estimate": 2868.9,
+      "estimated_deficit_kcal": 1117.5376625239007,
+      "intake_target_kcal_range": [
+        1900.0,
+        2000.0
+      ],
+      "date": "2026-09-30",
+      "record_status": "final",
+      "missing_sections": [],
+      "morning_weight_kg": 89.45,
+      "bmr_kcal": 1845.75,
+      "intake_kcal_estimate": 1751.3623374760994,
+      "intake_kcal_range": [
+        1456.9,
+        1888.9
+      ],
+      "base_macro_estimates": {
+        "protein_g": 157.114,
+        "fat_g": 61.57599999999999,
+        "carbs_g": 117.426
+      },
+      "fat_g_estimate": 71.40933333333334,
+      "carbs_g_estimate": 117.426,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
+      "training_status": "reported_training",
+      "protein_g_estimate": 157.114,
+      "protein_g_range": null,
+      "exercise_active_or_estimated_kcal": 872,
+      "conservative_deficit_kcal": null,
+      "intake_limit_kcal": null,
+      "protein_target_g": 170,
+      "deficit_target_range_kcal": [
+        400,
+        600
+      ],
+      "meal_entries": 6,
+      "exercise_sessions": 2,
+      "source_summary_status": null
+    }
+  ],
+  "source_files": [
+    "daily/2026-09/2026-09-01.json",
+    "daily/2026-09/2026-09-02.json",
+    "daily/2026-09/2026-09-03.json",
+    "daily/2026-09/2026-09-04.json",
+    "daily/2026-09/2026-09-05.json",
+    "daily/2026-09/2026-09-06.json",
+    "daily/2026-09/2026-09-07.json",
+    "daily/2026-09/2026-09-08.json",
+    "daily/2026-09/2026-09-09.json",
+    "daily/2026-09/2026-09-10.json",
+    "daily/2026-09/2026-09-11.json",
+    "daily/2026-09/2026-09-12.json",
+    "daily/2026-09/2026-09-13.json",
+    "daily/2026-09/2026-09-14.json",
+    "daily/2026-09/2026-09-15.json",
+    "daily/2026-09/2026-09-16.json",
+    "daily/2026-09/2026-09-17.json",
+    "daily/2026-09/2026-09-18.json",
+    "daily/2026-09/2026-09-19.json",
+    "daily/2026-09/2026-09-20.json",
+    "daily/2026-09/2026-09-21.json",
+    "daily/2026-09/2026-09-22.json",
+    "daily/2026-09/2026-09-23.json",
+    "daily/2026-09/2026-09-24.json",
+    "daily/2026-09/2026-09-25.json",
+    "daily/2026-09/2026-09-26.json",
+    "daily/2026-09/2026-09-27.json",
+    "daily/2026-09/2026-09-28.json",
+    "daily/2026-09/2026-09-29.json",
+    "daily/2026-09/2026-09-30.json"
+  ],
+  "methodology_notes": [
+    "月度总量和均值只按现有每日 JSON 计算；缺失日期不按零摄入或零运动处理。",
+    "每日摄入使用该日算法对应记账值；新口径基础估算另外保留。",
+    "蛋白质范围仅汇总显式区间，只有点估算不当作零宽范围；注明范围覆盖天数。",
+    "运动总消耗优先采用 Apple Watch 动态千卡；没有动态千卡时沿用设备或人工估算。",
+    "conservative_deficit_summary 仅含旧算法；新口径见 energy_summary_by_algorithm。",
+    "跨口径摄入合计仅为记录值合计，不能视为同一估算标准下的精确摄入；校准优先使用连续3–4周同口径记录。",
+    "蛋白质目标为参考，不以达标天数单独评价饮食质量；同时观察完整正餐、饥饿及训练恢复。",
+    "没有运动条目的日期仅表示无运动记录；若当日记录不完整，不能据此确认是休息日。"
+  ],
+  "rolling_28_day_review": {
+    "start": "2026-09-03",
+    "end": "2026-09-30",
+    "recorded_days": 28,
+    "weeks": [
+      {
+        "start": "2026-09-03",
+        "end": "2026-09-09",
+        "valid_measurements": 6,
+        "mean_weight_kg": 91.98333333333333
+      },
+      {
+        "start": "2026-09-10",
+        "end": "2026-09-16",
+        "valid_measurements": 6,
+        "mean_weight_kg": 91.72500000000001
+      },
+      {
+        "start": "2026-09-17",
+        "end": "2026-09-23",
+        "valid_measurements": 6,
+        "mean_weight_kg": 91.03333333333335
+      },
+      {
+        "start": "2026-09-24",
+        "end": "2026-09-30",
+        "valid_measurements": 6,
+        "mean_weight_kg": 90.24166666666667
+      }
+    ],
+    "calibration_eligible": false,
+    "reasons": [
+      "包含旧口径记录",
+      "存在可能干扰体重解释的情况，需人工复核后再粗校准",
+      "存在未封账、饮食资料不完整或关键待确认日"
+    ],
+    "trend_context": [
+      {
+        "date": "2026-09-25",
+        "context": [
+          "2026-09-25中秋家庭聚餐日，体重与饮食均缺测/未记录；趋势分析时应视为缺失日，不应按0摄入处理。"
+        ]
+      }
+    ],
+    "weight_trend": {
+      "available": true,
+      "valid_measurements": 24,
+      "span_days": 27,
+      "weekly_weight_loss_kg_approx": 0.6075573618685057,
+      "interpretation": "实际日期线性趋势，仅描述体重变化，不等于脂肪变化；4次/7天是报告门槛，非医学阈值"
+    },
+    "exercise_model_comparison_available": false,
+    "recovery_reports": [
+      {
+        "date": "2026-09-13",
+        "hunger": "凌晨用户自述太饿，吃了夜宵",
+        "sleep_hours": null,
+        "training_performance": null,
+        "fatigue_or_pain": null
+      }
+    ],
+    "note": "跨月读取；缺测不插补。趋势用于复核，不自动修改目标。7700换算仅为多周粗估，水分与估餐偏差仍可能显著。"
+  }
+}
