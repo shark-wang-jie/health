@@ -120,23 +120,26 @@
     },
     {
       "id": "dinner_braised_tofu_400g",
-      "status": "consumed_estimated",
+      "status": "consumed",
       "meal": "dinner",
       "description": "老卤豆腐 400g",
       "reported_text": "还有一块400g的老卤豆腐",
-      "source_kind": "food_estimate",
+      "source_kind": "label_known_quantity",
       "quantity_g": 400,
-      "basis": "No nutrition label provided; provisional estimate for firm braised tofu per100g ~145kcal, 13g protein, 8g fat, 5g carbs; may vary substantially by seasoning, oil, and tofu style.",
-      "kcal_base_estimate": 580,
-      "kcal_booked": 580,
+      "basis": "Product nutrition label photo: per 100g energy 430kJ, protein 9.4g, fat 5.5g, saturated fat 0.9g, carbs 3.9g, sugar 0g, sodium 57mg; label says package net 380g (solids >=350g). User earlier reported consuming ~400g, pending clarification.",
+      "kcal_base_estimate": 411.08986615678776,
+      "kcal_booked": 411.08986615678776,
       "kcal_range": [
-        400,
-        760
+        390.5353728489484,
+        411.08986615678776
       ],
-      "protein_g_estimate": 52,
-      "fat_g_estimate": 32,
-      "carbs_g_estimate": 20,
-      "uncertainty": "Label/brand unknown, estimated range is broad. Replace with actual per100g information when available."
+      "protein_g_estimate": 37.6,
+      "fat_g_estimate": 22,
+      "carbs_g_estimate": 15.6,
+      "uncertainty": "Pack label net weight 380g differs from previously reported 400g. Keep user's reported 400g until weighed vs package amount clarified.",
+      "saturated_fat_g_estimate": 3.6,
+      "sugar_g_estimate": 0,
+      "sodium_mg_estimate": 228
     }
   ],
   "exercise_entries": [],
@@ -146,29 +149,49 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-10",
+      "field": "intake_entries.dinner_braised_tofu_400g",
+      "old_value": {
+        "kcal_booked": 580,
+        "protein_g_estimate": 52,
+        "fat_g_estimate": 32,
+        "carbs_g_estimate": 20,
+        "source_kind": "food_estimate"
+      },
+      "new_value": {
+        "kcal_booked": 411.08986615678776,
+        "protein_g_estimate": 37.6,
+        "fat_g_estimate": 22,
+        "carbs_g_estimate": 15.6,
+        "source_kind": "label_known_quantity"
+      },
+      "reason": "Corrected provisional tofu nutrition estimate using newly provided package nutrition label. Preserved user-reported 400g; package states net 380g, pending weight clarification."
+    }
+  ],
   "notes": [
     "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked.",
-    "Braised tofu 400g has no nutrition label. Estimate is provisional; details can be corrected on receiving packaging nutrition information."
+    "Tofu nutrition label received and applied. Packaging net weight 380g vs user-reported ~400g; confirm if entire package or measured weight to finalize quantity."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1815.585086042065,
-    "intake_kcal_booked": 1904.085086042065,
-    "protein_g_estimate": 165.7044,
-    "fat_g_estimate": 82.84893333333335,
-    "carbs_g_estimate": 122.94959999999999,
-    "intake_kcal_estimate": 1904.085086042065,
+    "intake_kcal_base_estimate": 1646.674952198853,
+    "intake_kcal_booked": 1735.174952198853,
+    "protein_g_estimate": 151.3044,
+    "fat_g_estimate": 72.84893333333335,
+    "carbs_g_estimate": 118.54959999999998,
+    "intake_kcal_estimate": 1735.174952198853,
     "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      1445.7667304015297,
-      2205.4034416826003
+      1436.302103250478,
+      1856.493307839388
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2227.5,
-    "estimated_deficit_kcal": 323.4149139579349,
+    "estimated_deficit_kcal": 492.3250478011471,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -186,7 +209,7 @@
     "protein_by_meal_g": {
       "breakfast": 3.4943999999999997,
       "lunch": 70.5,
-      "dinner": 91.71
+      "dinner": 77.31
     }
   }
 }
