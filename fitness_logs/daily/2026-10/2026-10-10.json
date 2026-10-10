@@ -94,6 +94,49 @@
         "reason": "烹调用油余量"
       },
       "uncertainty": "沿用固定同款份量，若实际配菜或剩余不同可更正"
+    },
+    {
+      "id": "dinner_sauce_pork_liver_190g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "回味茶香酱猪肝 190 g",
+      "reported_text": "一盒酱猪肝 大概190g",
+      "source_kind": "label_known_quantity",
+      "quantity_g_estimate": 190,
+      "basis": "Photo label: per 100g 620kJ, protein 20.9g, fat 4.5g, carbs 5.8g, sodium 838mg. Actual eaten about 190g of 200g package.",
+      "kcal_base_estimate": 281.54875717017205,
+      "kcal_booked": 281.54875717017205,
+      "kcal_range": [
+        266.7304015296367,
+        296.36711281070745
+      ],
+      "protein_g_estimate": 39.709999999999994,
+      "fat_g_estimate": 8.549999999999999,
+      "carbs_g_estimate": 11.02,
+      "saturated_fat_g_estimate": 2.4699999999999998,
+      "sugar_g_estimate": 6.6499999999999995,
+      "sodium_mg_estimate": 1592.1999999999998,
+      "uncertainty": "Approximate consumed quantity 190g."
+    },
+    {
+      "id": "dinner_braised_tofu_400g",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "老卤豆腐 400g",
+      "reported_text": "还有一块400g的老卤豆腐",
+      "source_kind": "food_estimate",
+      "quantity_g": 400,
+      "basis": "No nutrition label provided; provisional estimate for firm braised tofu per100g ~145kcal, 13g protein, 8g fat, 5g carbs; may vary substantially by seasoning, oil, and tofu style.",
+      "kcal_base_estimate": 580,
+      "kcal_booked": 580,
+      "kcal_range": [
+        400,
+        760
+      ],
+      "protein_g_estimate": 52,
+      "fat_g_estimate": 32,
+      "carbs_g_estimate": 20,
+      "uncertainty": "Label/brand unknown, estimated range is broad. Replace with actual per100g information when available."
     }
   ],
   "exercise_entries": [],
@@ -105,26 +148,27 @@
   },
   "corrections": [],
   "notes": [
-    "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked."
+    "Morning fasting weight 90.50 kg; prior morning 89.15 kg (+1.35 kg). Previous evening social dinner was intentionally not tracked.",
+    "Braised tofu 400g has no nutrition label. Estimate is provisional; details can be corrected on receiving packaging nutrition information."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 954.0363288718929,
-    "intake_kcal_booked": 1042.536328871893,
-    "protein_g_estimate": 73.9944,
-    "fat_g_estimate": 42.298933333333345,
-    "carbs_g_estimate": 91.9296,
-    "intake_kcal_estimate": 1042.536328871893,
+    "intake_kcal_base_estimate": 1815.585086042065,
+    "intake_kcal_booked": 1904.085086042065,
+    "protein_g_estimate": 165.7044,
+    "fat_g_estimate": 82.84893333333335,
+    "carbs_g_estimate": 122.94959999999999,
+    "intake_kcal_estimate": 1904.085086042065,
     "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      779.0363288718929,
-      1149.036328871893
+      1445.7667304015297,
+      2205.4034416826003
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2227.5,
-    "estimated_deficit_kcal": 1184.963671128107,
+    "estimated_deficit_kcal": 323.4149139579349,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -133,7 +177,7 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
       "Training status is not yet known.",
@@ -141,7 +185,8 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 3.4943999999999997,
-      "lunch": 70.5
+      "lunch": 70.5,
+      "dinner": 91.71
     }
   }
 }
