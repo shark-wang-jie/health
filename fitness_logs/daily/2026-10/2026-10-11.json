@@ -7,7 +7,7 @@
   "closure_basis": null,
   "food_coverage": "partial",
   "training_status": "completed",
-  "training_coverage": "pending_health_sync",
+  "training_coverage": "complete",
   "morning_weight_kg": 88.85,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -156,7 +156,40 @@
       "fiber_g_estimate": 6.16
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-11_1249",
+      "event_id": "strength_2026-10-11_1249",
+      "type": "传统力量训练",
+      "start_local": "2026-10-11T12:49:17+08:00",
+      "end_local": "2026-10-11T14:15:07+08:00",
+      "duration_seconds": 5149.38341999054,
+      "duration": "1:25:49",
+      "energy_scope": "session_active",
+      "active_kcal": 636.0434478704215,
+      "total_kcal": 785,
+      "average_heart_rate_bpm": 119,
+      "source": "Apple Health synced workout + Apple Fitness screenshot",
+      "is_estimated": false
+    },
+    {
+      "id": "indoor_walk_2026-10-11_1416",
+      "event_id": "indoor_walk_2026-10-11_1416",
+      "type": "室内步行",
+      "start_local": "2026-10-11T14:16:09+08:00",
+      "end_local": "2026-10-11T15:02:35+08:00",
+      "duration_seconds": 2785.870504975319,
+      "duration": "0:46:25",
+      "distance_km": 2.8563046038253233,
+      "average_pace": "16'15\"/km",
+      "energy_scope": "session_active",
+      "active_kcal": 560.2570430913104,
+      "total_kcal": 646,
+      "average_heart_rate_bpm": 144,
+      "source": "Apple Health synced workout + Apple Fitness screenshot",
+      "is_estimated": false
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -166,7 +199,7 @@
   "corrections": [],
   "notes": [
     "Morning fasting weight 88.85kg, 1.65kg below prior morning 90.50kg; single-day fluctuation can reflect fluid and gut content.",
-    "User reported all training completed; workout session calorie details pending synced Apple Health data or screenshot."
+    "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 607.3776290630975,
@@ -177,15 +210,15 @@
     "intake_kcal_estimate": 607.3776290630975,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
       537.3776290630975,
       697.3776290630975
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": null,
-    "estimated_deficit_kcal": null,
+    "exercise_active_kcal": 1196.3004909617318,
+    "exercise_adjusted_kcal": 897.2253682212988,
+    "tdee_kcal_estimate": 3104.9253682212984,
+    "estimated_deficit_kcal": 2497.547739158201,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -196,9 +229,9 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 5,
     "warnings": [
-      "Food log remains open.",
-      "Workout completed but active session calories not yet available; TDEE and deficit intentionally omitted.",
-      "Second duck leg assumed skinless; confirm if needed."
+      "Food log remains open; current energy difference is not a final deficit.",
+      "Training complete based on user report and synced Apple Health sessions.",
+      "Two duck legs assumed skinless; skin/bone edible yield remains estimated."
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
