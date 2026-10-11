@@ -216,6 +216,24 @@
       "carbs_g_estimate": 16.49,
       "sodium_mg_estimate": 787.1,
       "uncertainty": "User did not specify removing chicken skin or any uneaten part; revise if skin/bones discarded."
+    },
+    {
+      "id": "liver_100g",
+      "meal": "snack",
+      "status": "consumed",
+      "description": "100g 盒马酱卤猪肝",
+      "quantity_g": 100,
+      "source_kind": "label_known_quantity",
+      "kcal_base_estimate": 164.2,
+      "kcal_booked": 164.2,
+      "kcal_range": [
+        164.2,
+        164.2
+      ],
+      "protein_g_estimate": 26.3,
+      "fat_g_estimate": 4.5,
+      "carbs_g_estimate": 4.3,
+      "sodium_mg_estimate": 972
     }
   ],
   "exercise_entries": [
@@ -264,23 +282,23 @@
     "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1132.7391969407265,
-    "intake_kcal_booked": 1132.7391969407265,
-    "protein_g_estimate": 100.8218,
-    "fat_g_estimate": 28.548199999999998,
-    "carbs_g_estimate": 140.4562,
-    "intake_kcal_estimate": 1132.7391969407265,
+    "intake_kcal_base_estimate": 1296.9391969407266,
+    "intake_kcal_booked": 1296.9391969407266,
+    "protein_g_estimate": 127.1218,
+    "fat_g_estimate": 33.048199999999994,
+    "carbs_g_estimate": 144.7562,
+    "intake_kcal_estimate": 1296.9391969407266,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
-      1042.7391969407265,
-      1262.7391969407265
+      1206.9391969407266,
+      1426.9391969407266
     ],
     "exercise_active_kcal": 1196.3004909617318,
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
-    "estimated_deficit_kcal": 1972.186171280572,
+    "estimated_deficit_kcal": 1807.9861712805719,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -289,7 +307,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 8,
+    "consumed_entries": 9,
     "warnings": [
       "Food log remains open; interim balance is not full-day deficit.",
       "One duck leg edible portion was assumed skinless without reconfirmation.",
@@ -298,7 +316,7 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
-      "snack": 25.625,
+      "snack": 51.925,
       "post_workout": 51.64
     }
   }
