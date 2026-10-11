@@ -154,6 +154,68 @@
       "fat_g_estimate": 0,
       "carbs_g_estimate": 29.04,
       "fiber_g_estimate": 6.16
+    },
+    {
+      "id": "postworkout_firm_tofu_100g",
+      "status": "consumed_estimated",
+      "meal": "post_workout",
+      "description": "老豆腐 100g",
+      "reported_text": "练后一百克老豆腐",
+      "source_kind": "food_estimate",
+      "quantity_g": 100,
+      "basis": "Generic firm tofu estimate, since today's '老豆腐' is not confirmed as the earlier labelled '老卤豆腐' product.",
+      "kcal_base_estimate": 100,
+      "kcal_booked": 100,
+      "kcal_range": [
+        80,
+        140
+      ],
+      "protein_g_estimate": 10,
+      "fat_g_estimate": 5,
+      "carbs_g_estimate": 3,
+      "uncertainty": "If the same labelled braised tofu as Oct 10, replace with 430kJ/100g, protein9.4g, fat5.5g, carbs3.9g."
+    },
+    {
+      "id": "postworkout_airfryer_potato_190g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "烤土豆 190g（沿用无油口径）",
+      "reported_text": "190g烤土豆",
+      "source_kind": "food_estimate",
+      "quantity_g": 190,
+      "basis": "Prior no-oil air-fryer potato convention 93 kcal/100g.",
+      "kcal_base_estimate": 176.7,
+      "kcal_booked": 176.7,
+      "kcal_range": [
+        176.7,
+        176.7
+      ],
+      "protein_g_estimate": 4.75,
+      "fat_g_estimate": 0.19,
+      "carbs_g_estimate": 40.279999999999994,
+      "uncertainty": "Oil not explicitly reconfirmed; adjust if oil was added."
+    },
+    {
+      "id": "postworkout_hema_braised_chicken_legs_full_box_170g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "盒马卤鸡腿一盒，两只，170g按整盒营养标签",
+      "reported_text": "一盒盒马卤鸡腿",
+      "source_kind": "label_known_quantity",
+      "quantity_g_package": 170,
+      "legs": 2,
+      "basis": "Established Hema braised chicken leg label: pack 2 legs 170g; per100g 612kJ, P21.7g, F2.1g, C9.7g, Na463mg. Skin not reported as removed this time; until confirmed, booked as full labelled package.",
+      "kcal_base_estimate": 248.661567877629,
+      "kcal_booked": 248.661567877629,
+      "kcal_range": [
+        248.661567877629,
+        248.661567877629
+      ],
+      "protein_g_estimate": 36.89,
+      "fat_g_estimate": 3.57,
+      "carbs_g_estimate": 16.49,
+      "sodium_mg_estimate": 787.1,
+      "uncertainty": "User did not specify removing chicken skin or any uneaten part; revise if skin/bones discarded."
     }
   ],
   "exercise_entries": [
@@ -202,23 +264,23 @@
     "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 607.3776290630975,
-    "intake_kcal_booked": 607.3776290630975,
-    "protein_g_estimate": 49.181799999999996,
-    "fat_g_estimate": 19.788199999999996,
-    "carbs_g_estimate": 80.68619999999999,
-    "intake_kcal_estimate": 607.3776290630975,
+    "intake_kcal_base_estimate": 1132.7391969407265,
+    "intake_kcal_booked": 1132.7391969407265,
+    "protein_g_estimate": 100.8218,
+    "fat_g_estimate": 28.548199999999998,
+    "carbs_g_estimate": 140.4562,
+    "intake_kcal_estimate": 1132.7391969407265,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
-      537.3776290630975,
-      697.3776290630975
+      1042.7391969407265,
+      1262.7391969407265
     ],
     "exercise_active_kcal": 1196.3004909617318,
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
-    "estimated_deficit_kcal": 2497.547739158201,
+    "estimated_deficit_kcal": 1972.186171280572,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -227,16 +289,17 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 8,
     "warnings": [
-      "Food log remains open; current energy difference is not a final deficit.",
-      "Training complete based on user report and synced Apple Health sessions.",
-      "Two duck legs assumed skinless; skin/bone edible yield remains estimated."
+      "Food log remains open; interim balance is not full-day deficit.",
+      "One duck leg edible portion was assumed skinless without reconfirmation.",
+      "Today's 100g firm tofu is a generic estimate pending product confirmation.",
+      "Hema braised chicken legs counted using full 170g pack label pending skin/bone clarification."
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
       "snack": 25.625,
-      "post_workout": 0
+      "post_workout": 51.64
     }
   }
 }
