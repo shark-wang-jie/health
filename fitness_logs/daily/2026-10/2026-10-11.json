@@ -234,6 +234,26 @@
       "fat_g_estimate": 4.5,
       "carbs_g_estimate": 4.3,
       "sodium_mg_estimate": 972
+    },
+    {
+      "id": "snack_mantou_100g",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "馒头1个 100g",
+      "reported_text": "再加一个馒头",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "basis": "Established same mantou per 100g label: 1058kJ; protein7.4g fat0.9g carbs52.9g sodium23mg.",
+      "kcal_base_estimate": 252.868068833652,
+      "kcal_booked": 252.868068833652,
+      "kcal_range": [
+        252.868068833652,
+        252.868068833652
+      ],
+      "protein_g_estimate": 7.4,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 52.9,
+      "sodium_mg_estimate": 23
     }
   ],
   "exercise_entries": [
@@ -282,23 +302,23 @@
     "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1296.9391969407266,
-    "intake_kcal_booked": 1296.9391969407266,
-    "protein_g_estimate": 127.1218,
-    "fat_g_estimate": 33.048199999999994,
-    "carbs_g_estimate": 144.7562,
-    "intake_kcal_estimate": 1296.9391969407266,
+    "intake_kcal_base_estimate": 1549.8072657743785,
+    "intake_kcal_booked": 1549.8072657743785,
+    "protein_g_estimate": 134.52179999999998,
+    "fat_g_estimate": 33.94819999999999,
+    "carbs_g_estimate": 197.6562,
+    "intake_kcal_estimate": 1549.8072657743785,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
-      1206.9391969407266,
-      1426.9391969407266
+      1459.8072657743785,
+      1679.8072657743785
     ],
     "exercise_active_kcal": 1196.3004909617318,
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
-    "estimated_deficit_kcal": 1807.9861712805719,
+    "estimated_deficit_kcal": 1555.11810244692,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -307,7 +327,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 9,
+    "consumed_entries": 10,
     "warnings": [
       "Food log remains open; interim balance is not full-day deficit.",
       "One duck leg edible portion was assumed skinless without reconfirmation.",
@@ -316,7 +336,7 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
-      "snack": 51.925,
+      "snack": 59.324999999999996,
       "post_workout": 51.64
     }
   }
