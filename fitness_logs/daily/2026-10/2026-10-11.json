@@ -2,10 +2,10 @@
   "schema_version": 3,
   "date": "2026-10-11",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "User explicitly confirmed day's food finished; earlier completed both exercise sessions.",
+  "food_coverage": "confirmed_complete",
   "training_status": "completed",
   "training_coverage": "complete",
   "morning_weight_kg": 88.85,
@@ -273,6 +273,44 @@
       "fat_g_estimate": 0.4125,
       "carbs_g_estimate": 18.1125,
       "fiber_g_estimate": 3
+    },
+    {
+      "id": "evening_whole_eggs_2",
+      "status": "consumed",
+      "meal": "evening",
+      "description": "Whole eggs, 2",
+      "reported_text": "晚上吃了两个全蛋",
+      "source_kind": "established_egg_estimate",
+      "servings": 2,
+      "basis": "Established whole egg convention: 72kcal, P6.3g F4.71g C1.44g each.",
+      "kcal_base_estimate": 144,
+      "kcal_booked": 144,
+      "kcal_range": [
+        144,
+        144
+      ],
+      "protein_g_estimate": 12.6,
+      "fat_g_estimate": 9.42,
+      "carbs_g_estimate": 2.88
+    },
+    {
+      "id": "evening_egg_whites_4",
+      "status": "consumed",
+      "meal": "evening",
+      "description": "Egg whites, 4",
+      "reported_text": "晚上吃了四个蛋清",
+      "source_kind": "matched_default",
+      "servings": 4,
+      "basis": "Egg white per item: 17kcal, P3.6g F0.06g C0.24g from food catalog.",
+      "kcal_base_estimate": 68,
+      "kcal_booked": 68,
+      "kcal_range": [
+        56,
+        80
+      ],
+      "protein_g_estimate": 14.4,
+      "fat_g_estimate": 0.24,
+      "carbs_g_estimate": 0.96
     }
   ],
   "exercise_entries": [
@@ -321,42 +359,43 @@
     "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1621.0572657743785,
-    "intake_kcal_booked": 1621.0572657743785,
-    "protein_g_estimate": 135.4468,
-    "fat_g_estimate": 34.360699999999994,
-    "carbs_g_estimate": 215.76870000000002,
-    "intake_kcal_estimate": 1621.0572657743785,
+    "intake_kcal_base_estimate": 1833.0572657743785,
+    "intake_kcal_booked": 1833.0572657743785,
+    "protein_g_estimate": 162.4468,
+    "fat_g_estimate": 44.0207,
+    "carbs_g_estimate": 219.60870000000003,
+    "intake_kcal_estimate": 1833.0572657743785,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
-      1524.8072657743785,
-      1759.8072657743785
+      1724.8072657743785,
+      1983.8072657743785
     ],
     "exercise_active_kcal": 1196.3004909617318,
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
-    "estimated_deficit_kcal": 1483.86810244692,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "estimated_deficit_kcal": 1271.86810244692,
+    "completed_day_estimated_deficit_kcal": 1271.86810244692,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
-    "consumed_entries": 11,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 13,
     "warnings": [
-      "Food log remains open; interim balance is not full-day deficit.",
-      "One duck leg edible portion was assumed skinless without reconfirmation.",
-      "Today's 100g firm tofu is a generic estimate pending product confirmation.",
-      "Hema braised chicken legs counted using full 170g pack label pending skin/bone clarification."
+      "Food and training logs are user-confirmed closed.",
+      "Duck leg skin/bone edible yield is estimated, second duck leg assumed skinless.",
+      "Today's tofu uses a generic estimate; Hema braised chicken legs use full package nutrition without skin-removal confirmation.",
+      "Total caloric intake and TDEE are estimates, not measured energy balance."
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
       "snack": 59.324999999999996,
-      "post_workout": 52.565
+      "post_workout": 52.565,
+      "evening": 27
     }
   }
 }
