@@ -254,6 +254,25 @@
       "fat_g_estimate": 0.9,
       "carbs_g_estimate": 52.9,
       "sodium_mg_estimate": 23
+    },
+    {
+      "id": "blueberry_125g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "Blueberries 125g",
+      "reported_text": "练后125g蓝莓",
+      "source_kind": "food_estimate",
+      "quantity_g": 125,
+      "kcal_base_estimate": 71.25,
+      "kcal_booked": 71.25,
+      "kcal_range": [
+        65,
+        80
+      ],
+      "protein_g_estimate": 0.925,
+      "fat_g_estimate": 0.4125,
+      "carbs_g_estimate": 18.1125,
+      "fiber_g_estimate": 3
     }
   ],
   "exercise_entries": [
@@ -302,23 +321,23 @@
     "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1549.8072657743785,
-    "intake_kcal_booked": 1549.8072657743785,
-    "protein_g_estimate": 134.52179999999998,
-    "fat_g_estimate": 33.94819999999999,
-    "carbs_g_estimate": 197.6562,
-    "intake_kcal_estimate": 1549.8072657743785,
+    "intake_kcal_base_estimate": 1621.0572657743785,
+    "intake_kcal_booked": 1621.0572657743785,
+    "protein_g_estimate": 135.4468,
+    "fat_g_estimate": 34.360699999999994,
+    "carbs_g_estimate": 215.76870000000002,
+    "intake_kcal_estimate": 1621.0572657743785,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
     "intake_kcal_range": [
-      1459.8072657743785,
-      1679.8072657743785
+      1524.8072657743785,
+      1759.8072657743785
     ],
     "exercise_active_kcal": 1196.3004909617318,
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
-    "estimated_deficit_kcal": 1555.11810244692,
+    "estimated_deficit_kcal": 1483.86810244692,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -327,7 +346,7 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 10,
+    "consumed_entries": 11,
     "warnings": [
       "Food log remains open; interim balance is not full-day deficit.",
       "One duck leg edible portion was assumed skinless without reconfirmation.",
@@ -337,7 +356,7 @@
     "protein_by_meal_g": {
       "breakfast": 23.5568,
       "snack": 59.324999999999996,
-      "post_workout": 51.64
+      "post_workout": 52.565
     }
   }
 }
