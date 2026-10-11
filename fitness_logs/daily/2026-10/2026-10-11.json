@@ -110,6 +110,30 @@
       "fat_g_estimate": 0.225,
       "carbs_g_estimate": 47.699999999999996,
       "uncertainty": "If oil was used, revise upwards."
+    },
+    {
+      "id": "snack_hema_duck_leg_skinless_2",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "盒马香卤鸭腿第2根，暂按去皮去骨食用",
+      "reported_text": "又吃了一个鸭腿",
+      "source_kind": "label_and_edible_yield_estimate",
+      "package_total_g": 240,
+      "package_legs": 2,
+      "quantity_legs": 1,
+      "gross_leg_g_estimate": 120,
+      "edible_meat_g_estimate": 75,
+      "basis": "Photo label per100g: 941kJ, P25.9g, F12.8g, C1.6g, Na371mg. Pack net 240g containing two bone-in, skin-on duck legs. User ate one skinless leg; bone and skin not consumed, edible meat weight unmeasured. Estimated cooked skinless edible meat ~70-85g. Calorie and macros are a skinless edible-yield estimate, not simply 120g x label. Second leg assumed skinless like first; confirm if skin was eaten.",
+      "kcal_base_estimate": 145,
+      "kcal_booked": 145,
+      "kcal_range": [
+        110,
+        190
+      ],
+      "protein_g_estimate": 20,
+      "fat_g_estimate": 7,
+      "carbs_g_estimate": 1.5,
+      "uncertainty": "Assumed same product, skin removed as first leg; if skin was eaten or edible yield differed, recalculate."
     }
   ],
   "exercise_entries": [],
@@ -124,23 +148,23 @@
     "Morning fasting weight 88.85kg, 1.65kg below prior morning 90.50kg; single-day fluctuation can reflect fluid and gut content."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 424.51912045889105,
-    "intake_kcal_booked": 424.51912045889105,
-    "protein_g_estimate": 29.1818,
-    "fat_g_estimate": 12.788199999999998,
-    "carbs_g_estimate": 50.14619999999999,
-    "intake_kcal_estimate": 424.51912045889105,
+    "intake_kcal_base_estimate": 569.519120458891,
+    "intake_kcal_booked": 569.519120458891,
+    "protein_g_estimate": 49.181799999999996,
+    "fat_g_estimate": 19.788199999999996,
+    "carbs_g_estimate": 51.64619999999999,
+    "intake_kcal_estimate": 569.519120458891,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      389.51912045889105,
-      469.51912045889105
+      499.51912045889105,
+      659.519120458891
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.7,
-    "estimated_deficit_kcal": 1783.1808795411089,
+    "estimated_deficit_kcal": 1638.1808795411089,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -149,7 +173,7 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "warnings": [
       "Food log is incomplete.",
       "Duck leg edible portion is an estimate; skin and bone weight not measured.",
@@ -158,7 +182,7 @@
     ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
-      "snack": 5.625
+      "snack": 25.625
     }
   }
 }
