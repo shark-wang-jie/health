@@ -90,6 +90,26 @@
       "fat_g_estimate": 7,
       "carbs_g_estimate": 1.5,
       "uncertainty": "Actual weight of removed bone/skin unknown; revise if measured cooked skinless edible meat weight becomes available."
+    },
+    {
+      "id": "snack_airfryer_potato_225g",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "Air-fryer roasted potato 225g (no added oil assumed)",
+      "reported_text": "又吃了225g烤土豆",
+      "source_kind": "food_estimate",
+      "quantity_g": 225,
+      "basis": "Same previous no-oil roasted potato estimate per 100g: 93 kcal, protein 2.5g, fat 0.1g, carbs 21.2g. User did not specifically reconfirm no oil today.",
+      "kcal_base_estimate": 209.25,
+      "kcal_booked": 209.25,
+      "kcal_range": [
+        209.25,
+        209.25
+      ],
+      "protein_g_estimate": 5.625,
+      "fat_g_estimate": 0.225,
+      "carbs_g_estimate": 47.699999999999996,
+      "uncertainty": "If oil was used, revise upwards."
     }
   ],
   "exercise_entries": [],
@@ -104,23 +124,23 @@
     "Morning fasting weight 88.85kg, 1.65kg below prior morning 90.50kg; single-day fluctuation can reflect fluid and gut content."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 215.26912045889102,
-    "intake_kcal_booked": 215.26912045889102,
-    "protein_g_estimate": 23.5568,
-    "fat_g_estimate": 12.563199999999998,
-    "carbs_g_estimate": 2.4462,
-    "intake_kcal_estimate": 215.26912045889102,
+    "intake_kcal_base_estimate": 424.51912045889105,
+    "intake_kcal_booked": 424.51912045889105,
+    "protein_g_estimate": 29.1818,
+    "fat_g_estimate": 12.788199999999998,
+    "carbs_g_estimate": 50.14619999999999,
+    "intake_kcal_estimate": 424.51912045889105,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      180.26912045889102,
-      260.26912045889105
+      389.51912045889105,
+      469.51912045889105
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.7,
-    "estimated_deficit_kcal": 1992.4308795411089,
+    "estimated_deficit_kcal": 1783.1808795411089,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -129,7 +149,7 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
       "Duck leg edible portion is an estimate; skin and bone weight not measured.",
@@ -137,7 +157,8 @@
       "Day is still open."
     ],
     "protein_by_meal_g": {
-      "breakfast": 23.5568
+      "breakfast": 23.5568,
+      "snack": 5.625
     }
   }
 }
