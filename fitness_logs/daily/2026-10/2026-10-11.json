@@ -6,12 +6,12 @@
   "food_log_closed": true,
   "closure_basis": "User explicitly confirmed day's food finished; earlier completed both exercise sessions.",
   "food_coverage": "confirmed_complete",
-  "training_status": "completed",
-  "training_coverage": "complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 88.85,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 88.85,
@@ -73,7 +73,7 @@
       "meal": "breakfast",
       "description": "盒马香卤鸭腿一根去皮去骨食用",
       "reported_text": "一根盒马鸭腿 这是盒马鸭腿营养成分表 一盒两根 去皮食用",
-      "source_kind": "label_and_edible_yield_estimate",
+      "source_kind": "photo_estimate",
       "package_total_g": 240,
       "package_legs": 2,
       "quantity_legs": 1,
@@ -89,7 +89,8 @@
       "protein_g_estimate": 20,
       "fat_g_estimate": 7,
       "carbs_g_estimate": 1.5,
-      "uncertainty": "Actual weight of removed bone/skin unknown; revise if measured cooked skinless edible meat weight becomes available."
+      "uncertainty": "Actual weight of removed bone/skin unknown; revise if measured cooked skinless edible meat weight becomes available.",
+      "source_kind_original": "label_and_edible_yield_estimate"
     },
     {
       "id": "snack_airfryer_potato_225g",
@@ -97,7 +98,7 @@
       "meal": "snack",
       "description": "Air-fryer roasted potato 225g (no added oil assumed)",
       "reported_text": "又吃了225g烤土豆",
-      "source_kind": "food_estimate",
+      "source_kind": "matched_default",
       "quantity_g": 225,
       "basis": "Same previous no-oil roasted potato estimate per 100g: 93 kcal, protein 2.5g, fat 0.1g, carbs 21.2g. User did not specifically reconfirm no oil today.",
       "kcal_base_estimate": 209.25,
@@ -109,7 +110,8 @@
       "protein_g_estimate": 5.625,
       "fat_g_estimate": 0.225,
       "carbs_g_estimate": 47.699999999999996,
-      "uncertainty": "If oil was used, revise upwards."
+      "uncertainty": "If oil was used, revise upwards.",
+      "source_kind_original": "food_estimate"
     },
     {
       "id": "snack_hema_duck_leg_skinless_2",
@@ -117,7 +119,7 @@
       "meal": "snack",
       "description": "盒马香卤鸭腿第2根，暂按去皮去骨食用",
       "reported_text": "又吃了一个鸭腿",
-      "source_kind": "label_and_edible_yield_estimate",
+      "source_kind": "photo_estimate",
       "package_total_g": 240,
       "package_legs": 2,
       "quantity_legs": 1,
@@ -133,7 +135,8 @@
       "protein_g_estimate": 20,
       "fat_g_estimate": 7,
       "carbs_g_estimate": 1.5,
-      "uncertainty": "Assumed same product, skin removed as first leg; if skin was eaten or edible yield differed, recalculate."
+      "uncertainty": "Assumed same product, skin removed as first leg; if skin was eaten or edible yield differed, recalculate.",
+      "source_kind_original": "label_and_edible_yield_estimate"
     },
     {
       "id": "postworkout_lemon_drink_880ml",
@@ -153,7 +156,8 @@
       "protein_g_estimate": 0,
       "fat_g_estimate": 0,
       "carbs_g_estimate": 29.04,
-      "fiber_g_estimate": 6.16
+      "fiber_g_estimate": 6.16,
+      "uncertainty": "Lemon drink label energy and carbohydrate interpretation remain unresolved: 18 kJ and 3.3 g carbohydrate per 100 ml differ substantially under 4 kcal/g. Original estimates retained pending label confirmation."
     },
     {
       "id": "postworkout_firm_tofu_100g",
@@ -161,7 +165,7 @@
       "meal": "post_workout",
       "description": "老豆腐 100g",
       "reported_text": "练后一百克老豆腐",
-      "source_kind": "food_estimate",
+      "source_kind": "matched_default",
       "quantity_g": 100,
       "basis": "Generic firm tofu estimate, since today's '老豆腐' is not confirmed as the earlier labelled '老卤豆腐' product.",
       "kcal_base_estimate": 100,
@@ -173,7 +177,8 @@
       "protein_g_estimate": 10,
       "fat_g_estimate": 5,
       "carbs_g_estimate": 3,
-      "uncertainty": "If the same labelled braised tofu as Oct 10, replace with 430kJ/100g, protein9.4g, fat5.5g, carbs3.9g."
+      "uncertainty": "If the same labelled braised tofu as Oct 10, replace with 430kJ/100g, protein9.4g, fat5.5g, carbs3.9g.",
+      "source_kind_original": "food_estimate"
     },
     {
       "id": "postworkout_airfryer_potato_190g",
@@ -181,7 +186,7 @@
       "meal": "post_workout",
       "description": "烤土豆 190g（沿用无油口径）",
       "reported_text": "190g烤土豆",
-      "source_kind": "food_estimate",
+      "source_kind": "matched_default",
       "quantity_g": 190,
       "basis": "Prior no-oil air-fryer potato convention 93 kcal/100g.",
       "kcal_base_estimate": 176.7,
@@ -193,7 +198,8 @@
       "protein_g_estimate": 4.75,
       "fat_g_estimate": 0.19,
       "carbs_g_estimate": 40.279999999999994,
-      "uncertainty": "Oil not explicitly reconfirmed; adjust if oil was added."
+      "uncertainty": "Oil not explicitly reconfirmed; adjust if oil was added.",
+      "source_kind_original": "food_estimate"
     },
     {
       "id": "postworkout_hema_braised_chicken_legs_full_box_170g",
@@ -233,7 +239,8 @@
       "protein_g_estimate": 26.3,
       "fat_g_estimate": 4.5,
       "carbs_g_estimate": 4.3,
-      "sodium_mg_estimate": 972
+      "sodium_mg_estimate": 972,
+      "basis": "Existing 100g Hema braised pork liver entry (Git 10876bd), recorded as label_known_quantity: 164.2 kcal, protein 26.3g, fat 4.5g, carbs 4.3g, sodium 972mg. Original label image/text is not included in this entry; existing values preserved."
     },
     {
       "id": "snack_mantou_100g",
@@ -261,7 +268,7 @@
       "meal": "post_workout",
       "description": "Blueberries 125g",
       "reported_text": "练后125g蓝莓",
-      "source_kind": "food_estimate",
+      "source_kind": "matched_default",
       "quantity_g": 125,
       "kcal_base_estimate": 71.25,
       "kcal_booked": 71.25,
@@ -272,7 +279,9 @@
       "protein_g_estimate": 0.925,
       "fat_g_estimate": 0.4125,
       "carbs_g_estimate": 18.1125,
-      "fiber_g_estimate": 3
+      "fiber_g_estimate": 3,
+      "source_kind_original": "food_estimate",
+      "basis": "Reported 125g blueberries; preserve existing food estimate from Git 4b9288c: 71.25 kcal (range 65–80), protein 0.925g, fat 0.4125g, carbs 18.1125g, fiber 3g; not a measured nutrition label."
     },
     {
       "id": "evening_whole_eggs_2",
@@ -280,7 +289,7 @@
       "meal": "evening",
       "description": "Whole eggs, 2",
       "reported_text": "晚上吃了两个全蛋",
-      "source_kind": "established_egg_estimate",
+      "source_kind": "matched_default",
       "servings": 2,
       "basis": "Established whole egg convention: 72kcal, P6.3g F4.71g C1.44g each.",
       "kcal_base_estimate": 144,
@@ -291,7 +300,8 @@
       ],
       "protein_g_estimate": 12.6,
       "fat_g_estimate": 9.42,
-      "carbs_g_estimate": 2.88
+      "carbs_g_estimate": 2.88,
+      "source_kind_original": "established_egg_estimate"
     },
     {
       "id": "evening_egg_whites_4",
@@ -356,7 +366,11 @@
   "corrections": [],
   "notes": [
     "Morning fasting weight 88.85kg, 1.65kg below prior morning 90.50kg; single-day fluctuation can reflect fluid and gut content.",
-    "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal."
+    "Apple Health confirmed 2 sessions on 2026-10-11. Active session energy reconciles to screenshot dynamic kcal.",
+    "Food and training logs are user-confirmed closed.",
+    "Duck leg skin/bone edible yield is estimated, second duck leg assumed skinless.",
+    "Today's tofu uses a generic estimate; Hema braised chicken legs use full package nutrition without skin-removal confirmation.",
+    "Total caloric intake and TDEE are estimates, not measured energy balance."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1833.0572657743785,
@@ -365,9 +379,15 @@
     "fat_g_estimate": 44.0207,
     "carbs_g_estimate": 219.60870000000003,
     "intake_kcal_estimate": 1833.0572657743785,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 162.4468,
+      "fat_g": 44.0207,
+      "carbs_g": 219.60870000000003
+    },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 299.075122740433,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1724.8072657743785,
       1983.8072657743785
@@ -376,26 +396,50 @@
     "exercise_adjusted_kcal": 897.2253682212988,
     "tdee_kcal_estimate": 3104.9253682212984,
     "estimated_deficit_kcal": 1271.86810244692,
-    "completed_day_estimated_deficit_kcal": 1271.86810244692,
-    "energy_balance_scope": "completed_day_estimate",
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 13,
-    "warnings": [
-      "Food and training logs are user-confirmed closed.",
-      "Duck leg skin/bone edible yield is estimated, second duck leg assumed skinless.",
-      "Today's tofu uses a generic estimate; Hema braised chicken legs use full package nutrition without skin-removal confirmation.",
-      "Total caloric intake and TDEE are estimates, not measured energy balance."
-    ],
     "protein_by_meal_g": {
       "breakfast": 23.5568,
-      "snack": 59.324999999999996,
+      "evening": 27.0,
       "post_workout": 52.565,
-      "evening": 27
-    }
-  }
+      "snack": 59.325
+    },
+    "warnings": [
+      "postworkout_lemon_drink_880ml:热量与宏量换算差异较大，请核对标签或估算，勿强行配平",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 9.16,
+    "fiber_g_entries_with_data": 2,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1782.1,
+    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "烤土豆225g及190g沿用无油口径；当天是否加油尚未明确，若加油需补充实际用量。",
+    "第2根鸭腿暂按与第1根一样去皮；是否吃皮尚待确认。",
+    "盒马卤鸡腿暂按整盒170g标签记账；是否丢弃皮、骨或其他部分及实际吃下份量尚待确认。",
+    "柠檬水880毫升沿用标签记录约37.9千卡、碳水29.04克，换算差异较大；待核对原始标签的能量、碳水及糖醇等成分口径，确认前保留原值。"
+  ],
+  "food_estimation_policy": "photo_margin_v1"
 }
