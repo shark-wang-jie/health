@@ -136,6 +136,27 @@
         "reason": "烹调用油余量"
       },
       "uncertainty": "未明确今天是否同样两只去皮、炒白菜、卤蛋且不吃土豆丝，等待用户确认"
+    },
+    {
+      "id": "postworkout_alien_electrolyte_drink_600ml",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "外星人电解质饮料600ml",
+      "reported_text": "练后一瓶外星人电解质饮料 600ml",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 600,
+      "basis": "Photo nutrition label per 100mL: energy 80kJ, protein 0g, fat 0g, carbohydrate 4.7g, sugar 4.2g, sodium 55mg.",
+      "kcal_base_estimate": 114.7227533460803,
+      "kcal_booked": 114.7227533460803,
+      "kcal_range": [
+        114.7227533460803,
+        114.7227533460803
+      ],
+      "protein_g_estimate": 0,
+      "fat_g_estimate": 0,
+      "carbs_g_estimate": 28.2,
+      "sugar_g_estimate": 25.2,
+      "sodium_mg_estimate": 330
     }
   ],
   "exercise_entries": [
@@ -167,23 +188,23 @@
     "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; any other workouts not yet ruled out."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1311.529636711281,
-    "intake_kcal_booked": 1400.029636711281,
+    "intake_kcal_base_estimate": 1426.2523900573613,
+    "intake_kcal_booked": 1514.7523900573613,
     "protein_g_estimate": 96.78,
     "fat_g_estimate": 59.353333333333346,
-    "carbs_g_estimate": 120.045,
-    "intake_kcal_estimate": 1400.029636711281,
+    "carbs_g_estimate": 148.245,
+    "intake_kcal_estimate": 1514.7523900573613,
     "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 139,
     "intake_kcal_range": [
-      1136.529636711281,
-      1506.529636711281
+      1251.2523900573613,
+      1621.2523900573613
     ],
     "exercise_active_kcal": 556,
     "exercise_adjusted_kcal": 417,
     "tdee_kcal_estimate": 2628.9,
-    "estimated_deficit_kcal": 1228.870363288719,
+    "estimated_deficit_kcal": 1114.1476099426388,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -192,7 +213,7 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "warnings": [
       "Food log incomplete.",
       "Lunch shaxian chicken-leg meal uses prior standard two skinless chicken legs plus usual side dishes, awaiting confirmation.",
