@@ -291,15 +291,15 @@
       1479.3723900573614,
       1934.3723900573614
     ],
-    "exercise_active_kcal": 1011,
+    "exercise_active_kcal": 1011.0,
     "exercise_adjusted_kcal": 758.25,
     "tdee_kcal_estimate": 2970.15,
     "estimated_deficit_kcal": 1194.2776099426387,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
