@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-12",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-10-12 23:09 Asia/Shanghai: 用户明确确认今天饮食训练结束；已报餐食/训练封账，食物份量估算未决项仍保留。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -219,6 +219,21 @@
       "energy_scope": "session_active",
       "source": "Apple Fitness screenshot 2026-10-12",
       "is_estimated": false
+    },
+    {
+      "id": "indoor_cycle_2026-10-12_2222",
+      "event_id": "indoor_cycle_2026-10-12_2222",
+      "type": "室内单车",
+      "start_local": "2026-10-12T22:22:00+08:00",
+      "end_local": "2026-10-12T23:08:00+08:00",
+      "duration_seconds": 2781,
+      "duration": "0:46:21",
+      "active_kcal": 455,
+      "total_kcal": 541,
+      "average_heart_rate_bpm": 140,
+      "energy_scope": "session_active",
+      "source": "Apple Fitness screenshot 2026-10-12 23:08; cycling workout",
+      "is_estimated": false
     }
   ],
   "recovery": {
@@ -253,7 +268,8 @@
   ],
   "notes": [
     "2026-10-12空腹体重89.20kg，较10-11早上88.85kg上升0.35kg。",
-    "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; any other workouts not yet ruled out."
+    "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; later indoor cycling is a separate recorded session.",
+    "2026-10-12 22:22-23:08 indoor cycling: duration 0:46:21, active 455kcal, total 541kcal, mean HR 140. User confirmed all food and training finished at 23:09 Asia/Shanghai; day finalized with lunch and Hema food uncertainties retained."
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1687.3723900573614,
@@ -269,16 +285,16 @@
       "carbs_g": 178.183
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 139,
+    "training_discount_kcal": 252.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1479.3723900573614,
       1934.3723900573614
     ],
-    "exercise_active_kcal": 556,
-    "exercise_adjusted_kcal": 417,
-    "tdee_kcal_estimate": 2628.9,
-    "estimated_deficit_kcal": 853.0276099426387,
+    "exercise_active_kcal": 1011,
+    "exercise_adjusted_kcal": 758.25,
+    "tdee_kcal_estimate": 2970.15,
+    "estimated_deficit_kcal": 1194.2776099426387,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -295,9 +311,6 @@
       "post_workout": 2.31
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
