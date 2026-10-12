@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
@@ -88,9 +88,45 @@
       "saturated_fat_g_estimate": 3.45,
       "sugar_g_estimate": 1.35,
       "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "postworkout_seafood_quartet_riceball_105g",
+      "status": "consumed",
+      "meal": "post_workout",
+      "description": "海鲜四重奏饭团 105g",
+      "reported_text": "练后一个105g海鲜四重奏饭团",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 105,
+      "basis": "Photo label per 100g: 404 kJ, protein 2.2g, fat 3.8g, carbohydrate 13.3g, sodium 324mg; 105g consumed.",
+      "kcal_base_estimate": 101.38623326959848,
+      "kcal_booked": 101.38623326959848,
+      "kcal_range": [
+        101.38623326959848,
+        101.38623326959848
+      ],
+      "protein_g_estimate": 2.31,
+      "fat_g_estimate": 3.99,
+      "carbs_g_estimate": 13.965,
+      "sodium_mg_estimate": 340.2
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-12_1734",
+      "event_id": "strength_2026-10-12_1734",
+      "type": "传统力量训练",
+      "start_local": "2026-10-12T17:34:00+08:00",
+      "end_local": "2026-10-12T18:42:00+08:00",
+      "duration_seconds": 4118,
+      "duration": "1:08:38",
+      "active_kcal": 556,
+      "total_kcal": 679,
+      "average_heart_rate_bpm": 123,
+      "energy_scope": "session_active",
+      "source": "Apple Fitness screenshot 2026-10-12",
+      "is_estimated": false
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -99,42 +135,44 @@
   },
   "corrections": [],
   "notes": [
-    "2026-10-12空腹体重89.20kg，较10-11早上88.85kg上升0.35kg。"
+    "2026-10-12空腹体重89.20kg，较10-11早上88.85kg上升0.35kg。",
+    "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; any other workouts not yet ruled out."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 325.1434034416826,
-    "intake_kcal_booked": 325.1434034416826,
-    "protein_g_estimate": 23.97,
-    "fat_g_estimate": 18.53,
-    "carbs_g_estimate": 15.08,
-    "intake_kcal_estimate": 325.1434034416826,
+    "intake_kcal_base_estimate": 426.5296367112811,
+    "intake_kcal_booked": 426.5296367112811,
+    "protein_g_estimate": 26.28,
+    "fat_g_estimate": 22.520000000000003,
+    "carbs_g_estimate": 29.045,
+    "intake_kcal_estimate": 426.5296367112811,
     "food_margin_kcal": 0,
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 139,
     "intake_kcal_range": [
-      325.1434034416826,
-      325.1434034416826
+      426.5296367112811,
+      426.5296367112811
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2211.9,
-    "estimated_deficit_kcal": 1886.7565965583176,
+    "exercise_active_kcal": 556,
+    "exercise_adjusted_kcal": 417,
+    "tdee_kcal_estimate": 2628.9,
+    "estimated_deficit_kcal": 2202.370363288719,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
+      1900,
       2000
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "warnings": [
       "Food log is incomplete.",
-      "Training status is not yet known.",
-      "Day is still open."
+      "A strength session is recorded from screenshot; no confirmation whether additional training occurred.",
+      "Day remains open; deficit is provisional and not a final whole-day estimate."
     ],
     "protein_by_meal_g": {
-      "breakfast": 23.97
+      "breakfast": 23.970000000000002,
+      "post_workout": 2.31
     }
   }
 }
