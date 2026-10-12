@@ -108,6 +108,34 @@
       "fat_g_estimate": 3.99,
       "carbs_g_estimate": 13.965,
       "sodium_mg_estimate": 340.2
+    },
+    {
+      "id": "lunch_shaxian_two_skinless_legs",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "沙县鸡腿饭（暂按惯例：两只去皮鸡腿、米饭、炒白菜、卤蛋；不吃土豆丝）",
+      "reported_text": "午饭是沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-09-08-v1",
+      "basis": "暂沿用先前常吃的沙县鸡腿饭固定口径，含10%餐馆用油记账余量，具体鸡腿/配菜/食用份量需确认。",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "food_margin_kcal": 88.5,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "烹调用油余量"
+      },
+      "uncertainty": "未明确今天是否同样两只去皮、炒白菜、卤蛋且不吃土豆丝，等待用户确认"
     }
   ],
   "exercise_entries": [
@@ -139,23 +167,23 @@
     "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; any other workouts not yet ruled out."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 426.5296367112811,
-    "intake_kcal_booked": 426.5296367112811,
-    "protein_g_estimate": 26.28,
-    "fat_g_estimate": 22.520000000000003,
-    "carbs_g_estimate": 29.045,
-    "intake_kcal_estimate": 426.5296367112811,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1311.529636711281,
+    "intake_kcal_booked": 1400.029636711281,
+    "protein_g_estimate": 96.78,
+    "fat_g_estimate": 59.353333333333346,
+    "carbs_g_estimate": 120.045,
+    "intake_kcal_estimate": 1400.029636711281,
+    "food_margin_kcal": 88.5,
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 139,
     "intake_kcal_range": [
-      426.5296367112811,
-      426.5296367112811
+      1136.529636711281,
+      1506.529636711281
     ],
     "exercise_active_kcal": 556,
     "exercise_adjusted_kcal": 417,
     "tdee_kcal_estimate": 2628.9,
-    "estimated_deficit_kcal": 2202.370363288719,
+    "estimated_deficit_kcal": 1228.870363288719,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -164,15 +192,17 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "warnings": [
-      "Food log is incomplete.",
-      "A strength session is recorded from screenshot; no confirmation whether additional training occurred.",
-      "Day remains open; deficit is provisional and not a final whole-day estimate."
+      "Food log incomplete.",
+      "Lunch shaxian chicken-leg meal uses prior standard two skinless chicken legs plus usual side dishes, awaiting confirmation.",
+      "One strength session shown; further workout status is unknown.",
+      "Day remains open; deficit is not final."
     ],
     "protein_by_meal_g": {
       "breakfast": 23.970000000000002,
-      "post_workout": 2.31
+      "post_workout": 2.31,
+      "lunch": 70.5
     }
   }
 }
