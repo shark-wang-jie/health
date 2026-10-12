@@ -11,7 +11,7 @@
   "morning_weight_kg": 89.2,
   "plan_version": "2026-09-08-v3.2",
   "profile_snapshot": {
-    "sex": "male",
+    "sex": "男性",
     "age": 27,
     "height_cm": 173,
     "bmr_weight_kg": 89.2,
@@ -157,6 +157,49 @@
       "carbs_g_estimate": 28.2,
       "sugar_g_estimate": 25.2,
       "sodium_mg_estimate": 330
+    },
+    {
+      "id": "dinner_airfryer_potato_84g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "烤土豆84g（沿用无油口径）",
+      "reported_text": "刚刚吃了一个84g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 84,
+      "basis": "沿用已确认的常用无油烤土豆口径，每100g约93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g。",
+      "kcal_base_estimate": 78.12,
+      "kcal_booked": 78.12,
+      "kcal_range": [
+        78.12,
+        78.12
+      ],
+      "protein_g_estimate": 2.1,
+      "fat_g_estimate": 0.084,
+      "carbs_g_estimate": 17.808,
+      "uncertainty": "本次未单独确认是否加油，暂沿用此前无油烤土豆口径；若实际加油需更正。"
+    },
+    {
+      "id": "dinner_hema_chicken_legs_box_estimated",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "盒马鸡腿一盒（暂按此前盒马卤鸡腿2只、170g）",
+      "reported_text": "刚刚吃了...一盒盒马鸡腿",
+      "source_kind": "matched_default",
+      "assumed_product": "盒马卤鸡腿（沿用2026-10-11同款标签）",
+      "assumed_package_g": 170,
+      "assumed_legs": 2,
+      "basis": "用户报告一盒盒马鸡腿。暂按2026-10-11同款盒马卤鸡腿标签（170g/2只、每100g 612kJ，P21.7/F2.1/C9.7、钠463mg）估算整盒；本次实际品种、包装重量、去皮去骨及是否全部吃完尚未复核。",
+      "kcal_base_estimate": 248.661567877629,
+      "kcal_booked": 248.661567877629,
+      "kcal_range": [
+        200,
+        300
+      ],
+      "protein_g_estimate": 36.89,
+      "fat_g_estimate": 3.57,
+      "carbs_g_estimate": 16.49,
+      "sodium_mg_estimate": 787.1,
+      "uncertainty": "仅按10-11同款全盒标签暂估；若不是170g/2只卤鸡腿，或有去皮、去骨等食用差异，需按本次包装与可食部分更正。"
     }
   ],
   "exercise_entries": [
@@ -188,42 +231,73 @@
     "2026-10-12 screenshot confirmed strength session 17:34-18:42: active 556kcal, total 679kcal, mean HR 123. Only active counted; any other workouts not yet ruled out."
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1426.2523900573613,
-    "intake_kcal_booked": 1514.7523900573613,
-    "protein_g_estimate": 96.78,
-    "fat_g_estimate": 59.353333333333346,
-    "carbs_g_estimate": 148.245,
-    "intake_kcal_estimate": 1514.7523900573613,
+    "intake_kcal_base_estimate": 1753.0339579349904,
+    "intake_kcal_booked": 1841.5339579349904,
+    "protein_g_estimate": 135.76999999999998,
+    "fat_g_estimate": 63.00733333333335,
+    "carbs_g_estimate": 182.543,
+    "intake_kcal_estimate": 1841.5339579349904,
     "food_margin_kcal": 88.5,
+    "base_macro_estimates": {
+      "protein_g": 135.76999999999998,
+      "fat_g": 53.17400000000001,
+      "carbs_g": 182.543
+    },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 139,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1251.2523900573613,
-      1621.2523900573613
+      1529.3723900573614,
+      1999.3723900573614
     ],
     "exercise_active_kcal": 556,
     "exercise_adjusted_kcal": 417,
     "tdee_kcal_estimate": 2628.9,
-    "estimated_deficit_kcal": 1114.1476099426388,
+    "estimated_deficit_kcal": 787.3660420650097,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
       1900,
       2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
-    "warnings": [
-      "Food log incomplete.",
-      "Lunch shaxian chicken-leg meal uses prior standard two skinless chicken legs plus usual side dishes, awaiting confirmation.",
-      "One strength session shown; further workout status is unknown.",
-      "Day remains open; deficit is not final."
-    ],
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 23.970000000000002,
-      "post_workout": 2.31,
-      "lunch": 70.5
-    }
-  }
+      "dinner": 38.99,
+      "lunch": 70.5,
+      "post_workout": 2.31
+    },
+    "warnings": [
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 2937.7999999999997,
+    "sodium_mg_entries_with_data": 5,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "missing_sections": [
+    "午餐沙县鸡腿饭仍沿用两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝的历史默认口径；此次实际份量和配菜未确认。",
+    "晚餐盒马鸡腿一盒暂按2026-10-11同款卤鸡腿两只170g标签估算；本次是否同款、去皮去骨以及吃下部分未确认。"
+  ],
+  "food_estimation_policy": "photo_margin_v1"
 }
