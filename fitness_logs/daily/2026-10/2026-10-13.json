@@ -1,0 +1,169 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.9,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.9,
+    "bmr_weight_date": "2026-10-13",
+    "bmr_kcal": 1840.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_10g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "南瓜子10g",
+      "reported_text": "早饭10g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 10,
+      "basis": "此前同款南瓜子标签每100g：2579 kJ, 蛋白质31.2g, 脂肪48.8g, 碳水8.3g, 饱和脂肪9.4g, 糖1.1g, 钠0mg。",
+      "kcal_base_estimate": 61.6395793499044,
+      "kcal_booked": 61.6395793499044,
+      "kcal_range": [
+        61.6395793499044,
+        61.6395793499044
+      ],
+      "protein_g_estimate": 3.12,
+      "fat_g_estimate": 4.88,
+      "carbs_g_estimate": 0.83,
+      "saturated_fat_g_estimate": 0.94,
+      "sugar_g_estimate": 0.11,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_baked_potato_105g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "烤土豆105g（沿用无油口径）",
+      "reported_text": "早饭105g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 105,
+      "basis": "沿用已确认的常用无油烤土豆口径：每100g约93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g。按本次105g换算；未报告加油。",
+      "kcal_base_estimate": 97.65,
+      "kcal_booked": 97.65,
+      "kcal_range": [
+        97.65,
+        97.65
+      ],
+      "protein_g_estimate": 2.625,
+      "fat_g_estimate": 0.105,
+      "carbs_g_estimate": 22.26,
+      "uncertainty": "本次未明确是否加油，暂沿用通常的无油烤土豆口径；实际加油则更正。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-10-13空腹体重88.90kg，较2026-10-12空腹89.20kg下降0.30kg；单日波动不代表脂肪变化。",
+    "早餐烤土豆105g沿用无油口径，若实际加油以后按用户补报更正。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 159.28957934990441,
+    "intake_kcal_booked": 159.28957934990441,
+    "protein_g_estimate": 5.745,
+    "fat_g_estimate": 4.985,
+    "carbs_g_estimate": 23.09,
+    "intake_kcal_estimate": 159.28957934990441,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 5.745,
+      "fat_g": 4.985,
+      "carbs_g": 23.09
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      159.28957934990441,
+      159.28957934990441
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2208.2999999999997,
+    "estimated_deficit_kcal": 2049.0104206500955,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 5.745
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 0,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
