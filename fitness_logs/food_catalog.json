@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-08-v1",
+  "version": "2026-10-13-v2",
   "policy": "固定同款；历史参考不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
   "foods": {
     "shaxian_two_skinless_legs": {
@@ -40,26 +40,31 @@
     },
     "milk_260ml": {
       "entry": {
-        "description": "默认纯牛奶260毫升",
+        "description": "悦鲜活生牛乳 260mL（2026-10-13照片新标签，瓶装容量暂按历史260mL）",
         "meal": "未分类",
         "source_kind": "matched_default",
-        "basis": "默认纯牛奶260毫升",
-        "kcal_base_estimate": 183,
-        "kcal_booked": 183,
+        "quantity_ml": 260,
+        "basis": "2026-10-13用户上传悦鲜活生牛乳标签，照片营养成分每100mL：287kJ、蛋白质3.6g、脂肪3.9g、饱和脂肪2.7g、碳水4.8g、糖（乳糖）4.8g、钠60mg、钙125mg。整瓶规格照片未清晰显示，沿用此前同类牛奶260mL口径暂估；不是确认实际容量。",
+        "kcal_base_estimate": 178.34608030592733,
+        "kcal_booked": 178.34608030592733,
         "kcal_range": [
-          183,
-          183
+          178.34608030592733,
+          178.34608030592733
         ],
-        "protein_g_estimate": 8,
-        "fat_g_estimate": 9.4,
-        "carbs_g_estimate": 12.5,
+        "protein_g_estimate": 9.360000000000001,
+        "fat_g_estimate": 10.14,
+        "carbs_g_estimate": 12.48,
+        "saturated_fat_g_estimate": 7.0200000000000005,
+        "sugar_g_estimate": 12.48,
+        "sodium_mg_estimate": 156,
+        "calcium_mg_estimate": 325,
         "margin": {
           "added_fat_g": 0,
           "added_carbs_g": 0,
           "already_in_base": false,
-          "reason": "沿用固定规格基础口径，不机械加成"
+          "reason": "按标签含量与历史260mL默认规格，不额外加成"
         },
-        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+        "uncertainty": "净含量未在本次照片清晰显示：沿用260mL/瓶旧口径。后续不同容量按每100mL标签换算；若用户确认其他容量，修改份量及当日记录。"
       }
     },
     "yogurt_concentrated_120g": {
@@ -274,6 +279,30 @@
           "reason": "Known package label energy; no extra margin."
         },
         "uncertainty": "Use one sachet = 5.5 g. Macro details pending a clearer label photo."
+      }
+    },
+    "milk_260ml_pre_2026_10_13": {
+      "entry": {
+        "description": "默认纯牛奶260毫升（2026-10-13前历史默认，保留不作今后同款默认）",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "basis": "默认纯牛奶260毫升",
+        "kcal_base_estimate": 183,
+        "kcal_booked": 183,
+        "kcal_range": [
+          183,
+          183
+        ],
+        "protein_g_estimate": 8,
+        "fat_g_estimate": 9.4,
+        "carbs_g_estimate": 12.5,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿用固定规格基础口径，不机械加成"
+        },
+        "uncertainty": "沿用历史默认份量，实际吃下份量优先"
       }
     }
   }
