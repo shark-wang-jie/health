@@ -2,16 +2,15 @@
   "schema_version": 3,
   "date": "2026-10-13",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-13晚确认当天饮食训练全部结束；骑行已补当日实测截图，保留套餐份量未决项。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "午餐沙县鸡腿饭暂按常吃套餐（两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝）估算；本次具体配菜和份量尚未核实。",
-    "晚餐盒马鸡腿明确去皮，暂按2026-10-12同款两只170g包装估算去骨去皮可食肉约125g，实际规格和可食重量未确认。",
-    "10-13室内单车40分钟的动态消耗约393kcal仅为按前一日同比时长估算（大致315–475kcal），当日原始数据丢失；不可当作手表实测。"
+    "晚餐盒马鸡腿明确去皮，暂按2026-10-12同款两只170g包装估算去骨去皮可食肉约125g，实际规格和可食重量未确认。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -247,19 +246,16 @@
       "id": "cardio_2026-10-13_report",
       "event_id": "cardio_2026-10-13_report",
       "type": "室内单车",
-      "active_kcal": 392.66450916936355,
+      "active_kcal": 424,
       "energy_scope": "session_active",
-      "source": "用户报告当日室内单车40分钟、强度与昨天相近；当天设备数据丢失。按2026-10-12骑行动态455kcal/46:21折算，非手表实测",
-      "duration_seconds": 2400,
-      "duration": "0:40:00",
-      "is_estimated": true,
-      "reference_date": "2026-10-12",
-      "reference_event_id": "indoor_cycle_2026-10-12_2222",
-      "estimation_method": "455kcal × 2400秒 ÷ 2781秒",
-      "estimated_active_kcal_range": [
-        315,
-        475
-      ]
+      "source": "Apple Fitness截图：2026-10-13室内单车，21:11–21:52，动态424kcal，总499kcal，平均心率145",
+      "duration_seconds": 2428,
+      "duration": "0:40:28",
+      "is_estimated": false,
+      "start_local": "2026-10-13T21:11:00+08:00",
+      "end_local": "2026-10-13T21:52:00+08:00",
+      "total_kcal": 499,
+      "average_heart_rate_bpm": 145
     }
   ],
   "recovery": {
@@ -308,14 +304,20 @@
       "original_active_kcal": null,
       "updated_active_kcal": 392.66450916936355,
       "estimated": true
+    },
+    {
+      "date_local": "2026-10-13",
+      "entry_id": "cardio_2026-10-13_report",
+      "reason": "Apple Fitness screenshot supplied; replace previous cycling estimate with measured 424 active kcal.",
+      "previous_active_kcal": 392.66450916936355,
+      "updated_active_kcal": 424
     }
   ],
   "notes": [
     "2026-10-13空腹体重88.90kg，较2026-10-12空腹89.20kg下降0.30kg；单日波动不代表脂肪变化。",
     "早餐烤土豆105g沿用无油口径，若实际加油以后按用户补报更正。",
     "2026-10-13早餐悦鲜活生牛乳1瓶260mL（用户明确确认容量）；营养按当次照片每100mL 287kJ、P3.6g/F3.9g/C4.8g计算，已更新食物库。",
-    "2026-10-13 用户确认晚间完成一段有氧训练并食用一盒去皮盒马鸡腿；未提供当次训练截图，原始动态消耗记为null。",
-    "2026-10-13力量实测动态475kcal，时长52:27，平均心率129。室内单车用户报告40分钟，参考10-12同强度动态455kcal/46:21按时长估算约393kcal，非实测。"
+    "2026-10-13两次训练均有Apple Fitness截图：力量动态475kcal，室内单车动态424kcal；前者52:27，后者40:28。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1621.7446462715104,
@@ -331,16 +333,16 @@
       "carbs_g": 180.86499999999998
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 216.9161272923409,
+    "training_discount_kcal": 224.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1413.7446462715104,
       1868.7446462715104
     ],
-    "exercise_active_kcal": 867.6645091693636,
-    "exercise_adjusted_kcal": 650.7483818770227,
-    "tdee_kcal_estimate": 2859.0483818770226,
-    "estimated_deficit_kcal": 1148.803735605512,
+    "exercise_active_kcal": 899,
+    "exercise_adjusted_kcal": 674.25,
+    "tdee_kcal_estimate": 2882.5499999999997,
+    "estimated_deficit_kcal": 1172.305353728489,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -357,9 +359,6 @@
       "post_workout": 2.31
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
