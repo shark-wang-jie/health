@@ -9,9 +9,7 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [],
-  "non_energy_pending_notes": [
-    "悦鲜活新标签每100mL为287kJ、P3.6g/F3.9g/C4.8g；照片未见净含量，暂按260mL/瓶。确认后若容量变化则修正，本记录只记一次。"
-  ],
+  "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": null,
   "plan_version": "2026-09-08-v3.2",
@@ -96,20 +94,19 @@
     },
     {
       "id": "breakfast_yuexianhuo_milk_260ml",
-      "status": "consumed_estimated",
+      "status": "consumed",
       "meal": "breakfast",
-      "description": "悦鲜活生牛乳1瓶（暂按260mL）",
+      "description": "悦鲜活生牛乳260mL（1瓶）",
       "reported_text": "再加一瓶牛奶，这是更新的牛奶营养成分表，以后都按这个计算",
-      "source_kind": "matched_default",
+      "source_kind": "label_known_quantity",
       "catalog_id": "milk_260ml",
-      "catalog_version": "2026-10-13-v2",
-      "quantity_ml_assumed": 260,
-      "basis": "2026-10-13用户上传悦鲜活生牛乳标签，照片营养成分每100mL：287kJ、蛋白质3.6g、脂肪3.9g、饱和脂肪2.7g、碳水4.8g、糖（乳糖）4.8g、钠60mg、钙125mg。整瓶规格照片未清晰显示，沿用此前同类牛奶260mL口径暂估；不是确认实际容量。",
+      "catalog_version": "2026-10-13-v3",
+      "basis": "2026-10-13当次悦鲜活生牛乳标签每100mL：能量287kJ、蛋白质3.6g、脂肪3.9g、饱和脂肪2.7g、碳水4.8g、糖（乳糖）4.8g、钠60mg、钙125mg。用户明确确认整瓶260mL。按实际260mL换算，不额外加成。",
       "kcal_base_estimate": 178.34608030592733,
       "kcal_booked": 178.34608030592733,
       "kcal_range": [
-        160,
-        210
+        178.34608030592733,
+        178.34608030592733
       ],
       "protein_g_estimate": 9.360000000000001,
       "fat_g_estimate": 10.14,
@@ -118,7 +115,7 @@
       "sugar_g_estimate": 12.48,
       "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325,
-      "uncertainty": "本次照片营养成分表清晰，但未显示瓶身净含量；按旧默认260mL估算一瓶，若瓶身规格不同需更正。"
+      "quantity_ml": 260
     }
   ],
   "exercise_entries": [],
@@ -128,11 +125,37 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date_local": "2026-10-13",
+      "entry_id": "breakfast_yuexianhuo_milk_260ml",
+      "reason": "用户确认悦鲜活生牛乳每瓶260mL；此前容量未确认的估算转为标签明确份量记录",
+      "original_values": {
+        "status": "consumed_estimated",
+        "source_kind": "matched_default",
+        "quantity_ml_assumed": 260,
+        "range": [
+          160,
+          210
+        ],
+        "uncertainty": "本次照片营养成分表清晰，但未显示瓶身净含量；按旧默认260mL估算一瓶，若瓶身规格不同需更正。"
+      },
+      "updated_values": {
+        "status": "consumed",
+        "source_kind": "label_known_quantity",
+        "quantity_ml": 260,
+        "kcal_range": [
+          178.34608030592733,
+          178.34608030592733
+        ]
+      },
+      "note": "只更正原条目，没有新加一瓶牛奶；总热量与宏量数值未变"
+    }
+  ],
   "notes": [
     "2026-10-13空腹体重88.90kg，较2026-10-12空腹89.20kg下降0.30kg；单日波动不代表脂肪变化。",
     "早餐烤土豆105g沿用无油口径，若实际加油以后按用户补报更正。",
-    "2026-10-13早餐追加悦鲜活生牛乳一瓶，营养依据当次包装照片；260mL沿用此前默认规格，尚未在新照片证实。未来同款按新标签计算，食物库已更新。"
+    "2026-10-13早餐悦鲜活生牛乳1瓶260mL（用户明确确认容量）；营养按当次照片每100mL 287kJ、P3.6g/F3.9g/C4.8g计算，已更新食物库。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 337.6356596558318,
@@ -151,8 +174,8 @@
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      319.28957934990444,
-      369.28957934990444
+      337.6356596558318,
+      337.6356596558318
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
