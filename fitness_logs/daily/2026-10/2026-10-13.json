@@ -10,7 +10,9 @@
   "training_coverage": "partial",
   "missing_sections": [
     "午餐沙县鸡腿饭暂按常吃套餐（两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝）估算；本次具体配菜和份量尚未核实。",
-    "本日力量训练动态消耗和时长暂缺，未引用前一天运动数据。"
+    "本日力量训练动态消耗和时长暂缺，未引用前一天运动数据。",
+    "有氧已完成但类型、时长和当次动态消耗未知；不得借用前一日室内单车数据。",
+    "晚餐盒马鸡腿明确去皮，暂按2026-10-12同款两只170g包装估算去骨去皮可食肉约125g，实际规格和可食重量未确认。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -199,6 +201,31 @@
       "fat_g_estimate": 0,
       "carbs_g_estimate": 28.2,
       "sodium_mg_estimate": 330
+    },
+    {
+      "id": "evening_hema_skinless_chicken_box",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "盒马鸡腿一盒（去皮、去骨，暂按170g两只包装）",
+      "reported_text": "还吃了一盒盒马鸡腿，去皮",
+      "source_kind": "matched_default",
+      "assumed_product": "盒马卤鸡腿（沿用2026-10-11同款标签）",
+      "assumed_package_g": 170,
+      "assumed_legs": 2,
+      "basis": "用户确认本次盒马鸡腿去皮，按2026-10-12同款盒马卤鸡腿2只170g包装、去皮去骨可食肉约125g估算；本次具体规格及实际可食重量未称量，不将含骨含皮毛重直接作为食用重量。历史同款标签参考为每100g 612kJ、P21.7g、F2.1g、C9.7g。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579,
+      "uncertainty": "用户明确去皮；是否同2026-10-12规格以及去骨去皮实际可食重量未核实，按125g暂估；如有本次标签或称重再更正原条目。",
+      "edible_meat_g_estimate": 125,
+      "skin_assumption": "removed_by_user_default_for_nonfried_legs"
     }
   ],
   "exercise_entries": [
@@ -209,6 +236,14 @@
       "active_kcal": null,
       "energy_scope": "session_active",
       "source": "用户2026-10-13报告力量训练已完成，时长及动态消耗待补充"
+    },
+    {
+      "id": "cardio_2026-10-13_report",
+      "event_id": "cardio_2026-10-13_report",
+      "type": "有氧训练（具体类型待确认）",
+      "active_kcal": null,
+      "energy_scope": "session_active",
+      "source": "用户2026-10-13晚报告有氧已完成；时长、具体项目和动态消耗尚未提供"
     }
   ],
   "recovery": {
@@ -247,32 +282,33 @@
   "notes": [
     "2026-10-13空腹体重88.90kg，较2026-10-12空腹89.20kg下降0.30kg；单日波动不代表脂肪变化。",
     "早餐烤土豆105g沿用无油口径，若实际加油以后按用户补报更正。",
-    "2026-10-13早餐悦鲜活生牛乳1瓶260mL（用户明确确认容量）；营养按当次照片每100mL 287kJ、P3.6g/F3.9g/C4.8g计算，已更新食物库。"
+    "2026-10-13早餐悦鲜活生牛乳1瓶260mL（用户明确确认容量）；营养按当次照片每100mL 287kJ、P3.6g/F3.9g/C4.8g计算，已更新食物库。",
+    "2026-10-13 用户确认晚间完成一段有氧训练并食用一盒去皮盒马鸡腿；未提供当次训练截图，原始动态消耗记为null。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1438.7446462715104,
-    "intake_kcal_booked": 1527.2446462715106,
-    "protein_g_estimate": 87.915,
-    "fat_g_estimate": 55.948333333333345,
-    "carbs_g_estimate": 168.73499999999999,
-    "intake_kcal_estimate": 1527.2446462715106,
+    "intake_kcal_base_estimate": 1621.7446462715104,
+    "intake_kcal_booked": 1710.2446462715106,
+    "protein_g_estimate": 115.045,
+    "fat_g_estimate": 58.57833333333335,
+    "carbs_g_estimate": 180.86499999999998,
+    "intake_kcal_estimate": 1710.2446462715106,
     "food_margin_kcal": 88.50000000000023,
     "base_macro_estimates": {
-      "protein_g": 87.915,
-      "fat_g": 46.114999999999995,
-      "carbs_g": 168.73499999999999
+      "protein_g": 115.045,
+      "fat_g": 48.745000000000005,
+      "carbs_g": 180.86499999999998
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1263.7446462715104,
-      1633.7446462715104
+      1413.7446462715104,
+      1868.7446462715104
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2208.2999999999997,
-    "estimated_deficit_kcal": 681.0553537284891,
+    "estimated_deficit_kcal": 498.0553537284891,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -281,9 +317,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 15.105,
+      "dinner": 27.13,
       "lunch": 70.5,
       "post_workout": 2.31
     },
@@ -307,8 +344,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 826.2,
-    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_known_sum": 1405.2,
+    "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
