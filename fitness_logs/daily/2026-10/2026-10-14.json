@@ -165,6 +165,28 @@
       "fat_g_estimate": 0.265,
       "carbs_g_estimate": 56.18,
       "uncertainty": "本次未单独确认是否加油；沿用无油口径，如有用油再更正。"
+    },
+    {
+      "id": "dinner_no6_sausage_150g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "六号肠1根（150g）",
+      "reported_text": "晚上再加一根六号肠",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "此前同款六号肠标签每100g：735 kJ, 蛋白质13.9g, 脂肪9.1g, 碳水9.5g, 饱和脂肪2.3g, 糖0.9g, 钠987mg。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        263.5038240917782,
+        263.5038240917782
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 3.45,
+      "sugar_g_estimate": 1.35,
+      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [],
@@ -180,29 +202,29 @@
     "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1498.2184512428298,
-    "intake_kcal_booked": 1586.7184512428298,
-    "protein_g_estimate": 93.0424,
-    "fat_g_estimate": 52.350933333333344,
-    "carbs_g_estimate": 189.1266,
-    "intake_kcal_estimate": 1586.7184512428298,
+    "intake_kcal_base_estimate": 1761.722275334608,
+    "intake_kcal_booked": 1850.222275334608,
+    "protein_g_estimate": 113.89240000000001,
+    "fat_g_estimate": 66.00093333333335,
+    "carbs_g_estimate": 203.3766,
+    "intake_kcal_estimate": 1850.222275334608,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 93.0424,
-      "fat_g": 42.5176,
-      "carbs_g": 189.1266
+      "protein_g": 113.89240000000001,
+      "fat_g": 56.16760000000001,
+      "carbs_g": 203.3766
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1323.2184512428298,
-      1693.2184512428298
+      1586.722275334608,
+      1956.722275334608
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.1,
-    "estimated_deficit_kcal": 620.3815487571701,
+    "estimated_deficit_kcal": 356.87772466539195,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -211,10 +233,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 15.9174,
-      "dinner": 6.625,
+      "dinner": 27.475,
       "lunch": 70.5
     },
     "warnings": [
@@ -236,8 +258,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 156,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1636.5,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
