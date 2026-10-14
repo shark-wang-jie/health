@@ -8,7 +8,9 @@
   "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
-  "missing_sections": [],
+  "missing_sections": [
+    "10月14日沙县午餐具体配菜和份量未确认，沿用历史常吃两只去皮鸡腿套餐估算。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": null,
@@ -116,6 +118,53 @@
       "sugar_g_estimate": 12.48,
       "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325
+    },
+    {
+      "id": "lunch_shaxian_two_skinless_legs",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "沙县鸡腿饭（按常吃两只去皮鸡腿套餐暂估）",
+      "reported_text": "午饭沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-10-13-v3",
+      "basis": "常用套餐：两只去皮鸡腿、米饭、炒白菜、卤蛋，不吃土豆丝；基础885kcal，餐馆油余量88.5kcal，具体食用份量待确认。",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "餐馆烹调油余量"
+      },
+      "uncertainty": "仅确认沙县鸡腿饭，数量、配菜与实际份量未确认"
+    },
+    {
+      "id": "dinner_baked_potato_265g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "烤土豆265g（暂按无油）",
+      "reported_text": "晚饭265g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 265,
+      "basis": "常用无油烤土豆每100g 93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g；按265g换算。",
+      "kcal_base_estimate": 246.45,
+      "kcal_booked": 246.45,
+      "kcal_range": [
+        246.45,
+        246.45
+      ],
+      "protein_g_estimate": 6.625,
+      "fat_g_estimate": 0.265,
+      "carbs_g_estimate": 56.18,
+      "uncertainty": "本次未单独确认是否加油；沿用无油口径，如有用油再更正。"
     }
   ],
   "exercise_entries": [],
@@ -131,29 +180,29 @@
     "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 366.7684512428298,
-    "intake_kcal_booked": 366.7684512428298,
-    "protein_g_estimate": 15.9174,
-    "fat_g_estimate": 15.252600000000001,
-    "carbs_g_estimate": 41.946600000000004,
-    "intake_kcal_estimate": 366.7684512428298,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1498.2184512428298,
+    "intake_kcal_booked": 1586.7184512428298,
+    "protein_g_estimate": 93.0424,
+    "fat_g_estimate": 52.350933333333344,
+    "carbs_g_estimate": 189.1266,
+    "intake_kcal_estimate": 1586.7184512428298,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 15.9174,
-      "fat_g": 15.252600000000001,
-      "carbs_g": 41.946600000000004
+      "protein_g": 93.0424,
+      "fat_g": 42.5176,
+      "carbs_g": 189.1266
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      366.7684512428298,
-      366.7684512428298
+      1323.2184512428298,
+      1693.2184512428298
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.1,
-    "estimated_deficit_kcal": 1840.3315487571701,
+    "estimated_deficit_kcal": 620.3815487571701,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -162,14 +211,17 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
-      "breakfast": 15.9174
+      "breakfast": 15.9174,
+      "dinner": 6.625,
+      "lunch": 70.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
