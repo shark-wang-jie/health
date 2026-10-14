@@ -5,7 +5,7 @@
   "record_status": "open",
   "food_log_closed": false,
   "closure_basis": null,
-  "food_coverage": "partial",
+  "food_coverage": "confirmed_complete",
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
@@ -187,11 +187,33 @@
       "saturated_fat_g_estimate": 3.45,
       "sugar_g_estimate": 1.35,
       "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "late_dinner_second_no6_sausage_150g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "六号肠第2根（150g）",
+      "reported_text": "太饿了，又加了一根六号肠，今天饮食结束",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "此前同款六号肠标签每100g：735 kJ, 蛋白质13.9g, 脂肪9.1g, 碳水9.5g, 饱和脂肪2.3g, 糖0.9g, 钠987mg。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        263.5038240917782,
+        263.5038240917782
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 3.45,
+      "sugar_g_estimate": 1.35,
+      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [],
   "recovery": {
-    "hunger": null,
+    "hunger": "晚间非常饿，额外吃了第二根六号肠",
     "sleep_hours": null,
     "training_performance": null,
     "fatigue_or_pain": null
@@ -199,32 +221,33 @@
   "corrections": [],
   "notes": [
     "2026-10-14空腹体重88.80kg；与10-13空腹88.90kg相比下降0.10kg，单日波动不等于脂肪减少。",
-    "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。"
+    "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。",
+    "2026-10-14 用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g。饮食完整性confirmed_complete；因训练状态未报告，record_status保持open，food_log_closed须与最终封账状态一致，暂不能标记final。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1761.722275334608,
-    "intake_kcal_booked": 1850.222275334608,
-    "protein_g_estimate": 113.89240000000001,
-    "fat_g_estimate": 66.00093333333335,
-    "carbs_g_estimate": 203.3766,
-    "intake_kcal_estimate": 1850.222275334608,
+    "intake_kcal_base_estimate": 2025.226099426386,
+    "intake_kcal_booked": 2113.726099426386,
+    "protein_g_estimate": 134.7424,
+    "fat_g_estimate": 79.65093333333336,
+    "carbs_g_estimate": 217.6266,
+    "intake_kcal_estimate": 2113.726099426386,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 113.89240000000001,
-      "fat_g": 56.16760000000001,
-      "carbs_g": 203.3766
+      "protein_g": 134.7424,
+      "fat_g": 69.81760000000001,
+      "carbs_g": 217.6266
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1586.722275334608,
-      1956.722275334608
+      1850.226099426386,
+      2220.226099426386
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.1,
-    "estimated_deficit_kcal": 356.87772466539195,
+    "estimated_deficit_kcal": 93.37390057361381,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -233,15 +256,14 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 15.9174,
-      "dinner": 27.475,
+      "dinner": 48.325,
       "lunch": 70.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
@@ -258,8 +280,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1636.5,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 3117,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
