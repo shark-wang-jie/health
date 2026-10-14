@@ -249,11 +249,22 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date_local": "2026-10-15",
+      "reason": "语义复核：将训练补报前的open状态备注明确为历史阶段，避免与后续已确认封账状态冲突；依据closure_basis、后一条训练结束备注及交接摘要。",
+      "original_values": {
+        "note": "2026-10-14 用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g。饮食完整性confirmed_complete；因训练状态未报告，record_status保持open，food_log_closed须与最终封账状态一致，暂不能标记final。"
+      },
+      "updated_values": {
+        "note": "2026-10-14训练补报前的阶段说明：用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g；饮食完整性confirmed_complete。当时训练状态未报告，暂保持open。随后用户提供当天训练截图并确认训练全部结束，现已按closure_basis封账为final。"
+      }
+    }
+  ],
   "notes": [
     "2026-10-14空腹体重88.80kg；与10-13空腹88.90kg相比下降0.10kg，单日波动不等于脂肪减少。",
     "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。",
-    "2026-10-14 用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g。饮食完整性confirmed_complete；因训练状态未报告，record_status保持open，food_log_closed须与最终封账状态一致，暂不能标记final。",
+    "2026-10-14训练补报前的阶段说明：用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g；饮食完整性confirmed_complete。当时训练状态未报告，暂保持open。随后用户提供当天训练截图并确认训练全部结束，现已按closure_basis封账为final。",
     "2026-10-14训练全部结束：力量动态522kcal、单车动态689kcal，均依据当日Apple Fitness截图；已封账。"
   ],
   "daily_summary": {
@@ -276,15 +287,15 @@
       1850.226099426386,
       2220.226099426386
     ],
-    "exercise_active_kcal": 1211,
+    "exercise_active_kcal": 1211.0,
     "exercise_adjusted_kcal": 908.25,
     "tdee_kcal_estimate": 3115.35,
     "estimated_deficit_kcal": 1001.6239005736138,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -310,7 +321,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3117,
+    "sodium_mg_known_sum": 3117.0,
     "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
