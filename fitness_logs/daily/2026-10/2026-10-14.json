@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-14",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-14已确认饮食、训练全部结束；运动来源为Apple Fitness截图，保留午餐估算不确定性。",
   "food_coverage": "confirmed_complete",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "10月14日沙县午餐具体配菜和份量未确认，沿用历史常吃两只去皮鸡腿套餐估算。"
   ],
@@ -211,7 +211,38 @@
       "sodium_mg_estimate": 1480.5
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-14_1815",
+      "event_id": "strength_2026-10-14_1815",
+      "type": "传统力量训练",
+      "start_local": "2026-10-14T18:15:00+08:00",
+      "end_local": "2026-10-14T19:24:00+08:00",
+      "duration_seconds": 4170,
+      "duration": "1:09:30",
+      "active_kcal": 522,
+      "total_kcal": 643,
+      "average_heart_rate_bpm": 118,
+      "energy_scope": "session_active",
+      "source": "用户2026-10-14 Apple Fitness截图，力量动态522kcal、时长1:09:30、平均心率118",
+      "is_estimated": false
+    },
+    {
+      "id": "cycle_2026-10-14_2119",
+      "event_id": "cycle_2026-10-14_2119",
+      "type": "室内单车",
+      "start_local": "2026-10-14T21:19:00+08:00",
+      "end_local": "2026-10-14T22:20:00+08:00",
+      "duration_seconds": 3652,
+      "duration": "1:00:52",
+      "active_kcal": 689,
+      "total_kcal": 801,
+      "average_heart_rate_bpm": 143,
+      "energy_scope": "session_active",
+      "source": "用户2026-10-14 Apple Fitness截图，室内单车动态689kcal、时长1:00:52、平均心率143",
+      "is_estimated": false
+    }
+  ],
   "recovery": {
     "hunger": "晚间非常饿，额外吃了第二根六号肠",
     "sleep_hours": null,
@@ -222,7 +253,8 @@
   "notes": [
     "2026-10-14空腹体重88.80kg；与10-13空腹88.90kg相比下降0.10kg，单日波动不等于脂肪减少。",
     "10月14日早餐：南瓜子10.2g、烤土豆135g沿用无油口径、悦鲜活生牛乳一瓶260mL采用2026-10-13起已确认新标签。",
-    "2026-10-14 用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g。饮食完整性confirmed_complete；因训练状态未报告，record_status保持open，food_log_closed须与最终封账状态一致，暂不能标记final。"
+    "2026-10-14 用户明确确认今天饮食已结束，晚间感到非常饿，又吃了第二根六号肠150g。饮食完整性confirmed_complete；因训练状态未报告，record_status保持open，food_log_closed须与最终封账状态一致，暂不能标记final。",
+    "2026-10-14训练全部结束：力量动态522kcal、单车动态689kcal，均依据当日Apple Fitness截图；已封账。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2025.226099426386,
@@ -238,23 +270,23 @@
       "carbs_g": 217.6266
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 302.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1850.226099426386,
       2220.226099426386
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2207.1,
-    "estimated_deficit_kcal": 93.37390057361381,
+    "exercise_active_kcal": 1211,
+    "exercise_adjusted_kcal": 908.25,
+    "tdee_kcal_estimate": 3115.35,
+    "estimated_deficit_kcal": 1001.6239005736138,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 7,
     "protein_by_meal_g": {
@@ -263,8 +295,6 @@
       "lunch": 70.5
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
