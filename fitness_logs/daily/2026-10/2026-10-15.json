@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -134,7 +134,8 @@
   "corrections": [],
   "notes": [
     "2026-10-15空腹体重88.80kg，与2026-10-14持平。",
-    "早餐南瓜子10.5g、悦鲜活生牛乳260mL、烤土豆160g按无油口径；牛奶采用2026-10-13已确认标签与容量。"
+    "早餐南瓜子10.5g、悦鲜活生牛乳260mL、烤土豆160g按无油口径；牛奶采用2026-10-13已确认标签与容量。",
+    "2026-10-15 用户明确确认今天休息日、不训练；无任何运动训练条目，不按未报告训练推测消耗。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 391.8676386233269,
@@ -166,14 +167,13 @@
       1800,
       1800
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 3,
     "protein_by_meal_g": {
       "breakfast": 16.636000000000003
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
