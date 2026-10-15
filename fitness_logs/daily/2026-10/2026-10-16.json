@@ -1,0 +1,180 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.25,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.25,
+    "bmr_weight_date": "2026-10-16",
+    "bmr_kcal": 1833.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_10_9g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "南瓜子10.9g",
+      "reported_text": "早饭10.9g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 10.9,
+      "basis": "沿用已确认同款南瓜子标签每100g：2579kJ、P31.2g、F48.8g、C8.3g、饱和脂肪9.4g、糖1.1g、钠0mg。本次实吃10.9g。",
+      "kcal_base_estimate": 67.1871414913958,
+      "kcal_booked": 67.1871414913958,
+      "kcal_range": [
+        67.1871414913958,
+        67.1871414913958
+      ],
+      "protein_g_estimate": 3.400800000000001,
+      "fat_g_estimate": 5.319200000000001,
+      "carbs_g_estimate": 0.9047000000000003,
+      "saturated_fat_g_estimate": 1.0246000000000002,
+      "sugar_g_estimate": 0.11990000000000003,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "description": "悦鲜活生牛乳260mL（营养标签2026-10-13更新，瓶规格经用户确认）",
+      "meal": "breakfast",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 260,
+      "basis": "2026-10-13当次悦鲜活生牛乳标签每100mL：能量287kJ、蛋白质3.6g、脂肪3.9g、饱和脂肪2.7g、碳水4.8g、糖（乳糖）4.8g、钠60mg、钙125mg。用户明确确认整瓶260mL。按实际260mL换算，不额外加成。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.360000000000001,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.0200000000000005,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按标签含量与历史260mL默认规格，不额外加成"
+      },
+      "id": "breakfast_yuexianhuo_milk_260ml",
+      "status": "consumed",
+      "reported_text": "早饭一瓶牛奶",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-10-13-v3"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-10-16空腹体重88.25kg；较10-15的88.80kg下降0.55kg，单日变动可能含糖原/水分及胃肠内容物变化，不视为脂肪实测下降。",
+    "早餐仅记录南瓜子10.9g、悦鲜活生牛乳一瓶260mL；牛奶沿用2026-10-13已确认标签。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 245.53322179732314,
+    "intake_kcal_booked": 245.53322179732314,
+    "protein_g_estimate": 12.760800000000003,
+    "fat_g_estimate": 15.459200000000003,
+    "carbs_g_estimate": 13.3847,
+    "intake_kcal_estimate": 245.53322179732314,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 12.760800000000003,
+      "fat_g": 15.459200000000003,
+      "carbs_g": 13.3847
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      245.53322179732314,
+      245.53322179732314
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2200.5,
+    "estimated_deficit_kcal": 1954.9667782026768,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 12.760800000000003
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 156,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
