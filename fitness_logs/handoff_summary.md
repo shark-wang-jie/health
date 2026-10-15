@@ -1,6 +1,6 @@
 # 健身记录交接摘要
 
-更新时间：2026-10-15 上午（Asia/Shanghai；新增15日空腹体重与早餐）。用于新对话接续体重、饮食及训练记录。**正式数据源是 GitHub 每日 JSON，而非本摘要或聊天里曾给出的暂算值**。日记录、计划、规则若后来有变化，应先读取最新版本。
+更新时间：2026-10-15 上午（Asia/Shanghai；确认15日休息不训练）。用于新对话接续体重、饮食及训练记录。**正式数据源是 GitHub 每日 JSON，而非本摘要或聊天里曾给出的暂算值**。日记录、计划、规则若后来有变化，应先读取最新版本。
 
 ## 工作位置及操作
 
@@ -12,10 +12,12 @@
 
 ## 当前进行中：2026-10-15
 
-- 当日正式记录 `fitness_logs/daily/2026-10/2026-10-15.json` 已新建，`record_status=open`、`food_coverage=partial`、`training_status=unknown`、`training_coverage=unknown`。每次补写前重新获取最新JSON及SHA。
+- 当日正式记录 `fitness_logs/daily/2026-10/2026-10-15.json` 已新建，`record_status=open`、`food_coverage=partial`、`training_status=confirmed_rest`、`training_coverage=confirmed_complete`。每次补写前重新获取最新JSON及SHA。
 - **空腹体重88.80kg**，与10-14持平，BMR **1839.25kcal**。
 - 早餐已记录：南瓜子**10.5g**（64.72kcal、P3.276/F5.124/C0.8715）、悦鲜活生牛乳**260mL**（178.35kcal、P9.36/F10.14/C12.48，2026-10-13新版标签）、无油口径烤土豆**160g**（148.80kcal、P4/F0.16/C33.92）；若烤土豆有额外用油则更正。
 - **当前累计391.87kcal，蛋白质16.64g、脂肪15.42g、碳水47.27g**。仅早餐3条，后续饮食与训练未报，不根据早餐差额计算全天热量缺口。
+
+- 用户已明确确认**2026-10-15为休息日，不训练**；训练状态`confirmed_rest`、训练覆盖`confirmed_complete`，无训练条目，TDEE基础活动暂算约2207.10kcal；休息日参考摄入1800kcal。仅早餐已记录，饮食尚未结束，`record_status`仍为`open`，不将模型当前差额当全天缺口。
 
 ## 最新封账日：2026-10-14
 
