@@ -19,6 +19,8 @@
 
 - 用户已明确确认**2026-10-15为休息日，不训练**；训练状态`confirmed_rest`、训练覆盖`confirmed_complete`，无训练条目，TDEE基础活动暂算约2207.10kcal；休息日参考摄入1800kcal。仅早餐已记录，饮食尚未结束，`record_status`仍为`open`，不将模型当前差额当全天缺口。
 
+- 10月15日休息日，午餐沙县鸡腿饭约973.5kcal，牛肉干2.5根暂按35g约124kcal，晚餐烤土豆170g及六号肠150g；当前累计1911.03kcal、蛋白质136.32g。饮食未封账，牛肉干真实重量未确定。
+
 ## 最新封账日：2026-10-14
 
 - **已封账**：`fitness_logs/daily/2026-10/2026-10-14.json`，`record_status=final`，`food_log_closed=true`，饮食与训练覆盖均`confirmed_complete`。2026-10-14夜用户确认饮食已结束，随后提供两张当天Apple Fitness截图并确认训练结束。
