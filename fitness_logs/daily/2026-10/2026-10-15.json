@@ -8,7 +8,10 @@
   "food_coverage": "partial",
   "training_status": "confirmed_rest",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "10月15日沙县鸡腿饭具体配菜和份量未确认，沿用此前常吃套餐（两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝）估算。",
+    "下午牛肉干2.5根未称重，暂估35g（可能20–50g），按所示标签折算；实称重量可原位更正。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": null,
@@ -122,6 +125,112 @@
       "fat_g_estimate": 0.16,
       "carbs_g_estimate": 33.92,
       "uncertainty": "当天未单独说明是否加油，按一贯无油口径；如加油则原位更正。"
+    },
+    {
+      "id": "lunch_shaxian_two_skinless_legs",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "沙县鸡腿饭（按常吃两只去皮鸡腿套餐暂估）",
+      "reported_text": "中午吃的还是沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-10-13-v3",
+      "basis": "常用套餐：两只去皮鸡腿、米饭、炒白菜、卤蛋，不吃土豆丝；基础885kcal，餐馆油余量88.5kcal，具体食用份量待确认。",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "餐馆烹调油余量"
+      },
+      "uncertainty": "仅确认沙县鸡腿饭，数量、配菜与实际份量未确认"
+    },
+    {
+      "id": "snack_jianghulang_beef_jerky_2_5_sticks_est35g",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "江湖狼部落原味风干牛肉2.5根（重量暂估35g）",
+      "reported_text": "下午吃了两根半牛肉干",
+      "source_kind": "photo_estimate",
+      "quantity_g_estimate": 35,
+      "quantity_g_range": [
+        20,
+        50
+      ],
+      "basis": "用户照片包装标签每100g：1483kJ、蛋白质68.8g、脂肪5.9g、碳水5.6g、钠897mg；只知2.5根未称重，暂按每根约14g计合计35g，实际可能20–50g，后续实称优先。",
+      "kcal_base_estimate": 124.05592734225621,
+      "kcal_booked": 124.05592734225621,
+      "kcal_range": [
+        70.88910133843211,
+        177.2227533460803
+      ],
+      "protein_g_estimate": 24.08,
+      "fat_g_estimate": 2.065,
+      "carbs_g_estimate": 1.96,
+      "sodium_mg_estimate": 313.95,
+      "protein_g_range": [
+        13.76,
+        34.4
+      ],
+      "fat_g_range": [
+        1.18,
+        2.95
+      ],
+      "carbs_g_range": [
+        1.12,
+        2.8
+      ],
+      "uncertainty": "实吃2.5根，但实际克重未知；35g是暂估值，20–50g是估计范围，不是称重或标签份量。"
+    },
+    {
+      "id": "dinner_baked_potato_170g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "烤土豆170g（暂按无油）",
+      "reported_text": "晚上170g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 170,
+      "basis": "无油烤土豆每100g 93kcal，蛋白质2.5g、脂肪0.1g、碳水21.2g；按170g换算。",
+      "kcal_base_estimate": 158.1,
+      "kcal_booked": 158.1,
+      "kcal_range": [
+        158.1,
+        158.1
+      ],
+      "protein_g_estimate": 4.25,
+      "fat_g_estimate": 0.17,
+      "carbs_g_estimate": 36.04,
+      "uncertainty": "本次未单独确认是否加油；沿用无油口径，如有用油再更正。"
+    },
+    {
+      "id": "dinner_no6_sausage_150g",
+      "status": "consumed",
+      "meal": "dinner",
+      "description": "六号肠1根（150g）",
+      "reported_text": "晚上一根六号肠",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "此前同款六号肠标签每100g：735 kJ, 蛋白质13.9g, 脂肪9.1g, 碳水9.5g, 饱和脂肪2.3g, 糖0.9g, 钠987mg。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        263.5038240917782,
+        263.5038240917782
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 3.45,
+      "sugar_g_estimate": 1.35,
+      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [],
@@ -135,32 +244,33 @@
   "notes": [
     "2026-10-15空腹体重88.80kg，与2026-10-14持平。",
     "早餐南瓜子10.5g、悦鲜活生牛乳260mL、烤土豆160g按无油口径；牛奶采用2026-10-13已确认标签与容量。",
-    "2026-10-15 用户明确确认今天休息日、不训练；无任何运动训练条目，不按未报告训练推测消耗。"
+    "2026-10-15 用户明确确认今天休息日、不训练；无任何运动训练条目，不按未报告训练推测消耗。",
+    "午餐沙县鸡腿饭沿用常吃套餐估算；下午牛肉干2.5根按包装标签和暂估35g记录；晚餐无油口径土豆170g及六号肠150g。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 391.8676386233269,
-    "intake_kcal_booked": 391.8676386233269,
-    "protein_g_estimate": 16.636000000000003,
-    "fat_g_estimate": 15.424000000000001,
-    "carbs_g_estimate": 47.2715,
-    "intake_kcal_estimate": 391.8676386233269,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1822.5273900573611,
+    "intake_kcal_booked": 1911.0273900573611,
+    "protein_g_estimate": 136.316,
+    "fat_g_estimate": 68.14233333333334,
+    "carbs_g_estimate": 190.5215,
+    "intake_kcal_estimate": 1911.0273900573611,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 16.636000000000003,
-      "fat_g": 15.424000000000001,
-      "carbs_g": 47.2715
+      "protein_g": 136.316,
+      "fat_g": 58.309,
+      "carbs_g": 190.5215
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      391.8676386233269,
-      391.8676386233269
+      1594.360564053537,
+      2070.694216061185
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2207.1,
-    "estimated_deficit_kcal": 1815.232361376673,
+    "estimated_deficit_kcal": 296.0726099426388,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -169,29 +279,33 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
-      "breakfast": 16.636000000000003
+      "breakfast": 16.636000000000003,
+      "dinner": 25.1,
+      "lunch": 70.5,
+      "snack": 24.08
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 156,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1950.45,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
