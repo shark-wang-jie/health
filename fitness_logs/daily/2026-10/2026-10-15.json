@@ -2,10 +2,10 @@
   "schema_version": 3,
   "date": "2026-10-15",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-15明确确认当天饮食和训练全部结束；该日为已确认休息日，不训练。风干牛肉干2.5根同意沿用35g估算，午餐套餐份量仍未实称。",
+  "food_coverage": "confirmed_complete",
   "training_status": "confirmed_rest",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
@@ -245,7 +245,8 @@
     "2026-10-15空腹体重88.80kg，与2026-10-14持平。",
     "早餐南瓜子10.5g、悦鲜活生牛乳260mL、烤土豆160g按无油口径；牛奶采用2026-10-13已确认标签与容量。",
     "2026-10-15 用户明确确认今天休息日、不训练；无任何运动训练条目，不按未报告训练推测消耗。",
-    "午餐沙县鸡腿饭沿用常吃套餐估算；下午牛肉干2.5根按包装标签和暂估35g记录；晚餐无油口径土豆170g及六号肠150g。"
+    "午餐沙县鸡腿饭沿用常吃套餐估算；下午牛肉干2.5根按包装标签和暂估35g记录；晚餐无油口径土豆170g及六号肠150g。",
+    "2026-10-15用户确认饮食和训练结束；风干牛肉干2.5根因未称重，明确保留35g暂估；沙县鸡腿饭仍按历史套餐估算。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1822.5273900573611,
@@ -287,8 +288,6 @@
       "snack": 24.08
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
