@@ -9,7 +9,8 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "10月16日午餐确认只吃1只鸡腿；米饭、炒白菜、卤蛋是否全吃，以及实际鸡腿可食肉量和餐馆用油未确认，按常吃套餐扣除一只鸡腿暂估。"
+    "10月16日午餐确认只吃1只鸡腿；米饭、炒白菜、卤蛋是否全吃，以及实际鸡腿可食肉量和餐馆用油未确认，按常吃套餐扣除一只鸡腿暂估。",
+    "10月16日练前山楂锅盔1个未称重、未见本品标签；按同类甜酥山楂锅盔约50g估算，规格和配方可能不同。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -178,6 +179,42 @@
         73,
         118
       ]
+    },
+    {
+      "id": "preworkout_daohuaxiang_hawthorn_guokui_est50g",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "稻花香山楂锅盔1个（甜糕点，约50g暂估）",
+      "reported_text": "下午练前加餐一个稻花香山楂锅盔，糕点偏甜",
+      "source_kind": "database_estimate",
+      "quantity_g_estimate": 50,
+      "quantity_g_range": [
+        35,
+        65
+      ],
+      "basis": "用户只报告1个，未称净重和标签。参考稻香村官网同类山楂锅盔单个约50g，及公开食物数据库同类每100g 423kcal、蛋白质4.8g、脂肪21.8g、碳水51.9g；用户名称为‘稻花香’，不能证明与稻香村同品牌或配方，按50g类似甜酥糕点估算，非产品标签或实称。",
+      "kcal_base_estimate": 211.5,
+      "kcal_booked": 211.5,
+      "kcal_range": [
+        148.05,
+        274.95
+      ],
+      "protein_g_estimate": 2.4,
+      "fat_g_estimate": 10.9,
+      "carbs_g_estimate": 25.95,
+      "protein_g_range": [
+        1.68,
+        3.12
+      ],
+      "fat_g_range": [
+        7.63,
+        14.17
+      ],
+      "carbs_g_range": [
+        18.165,
+        33.735
+      ],
+      "uncertainty": "未提供包装营养标签或重量，仅知甜糕点1个；同类产品推定50g、约211.5kcal，重量可能35–65g，且不同品牌配方有额外偏差。"
     }
   ],
   "exercise_entries": [],
@@ -191,32 +228,33 @@
   "notes": [
     "2026-10-16空腹体重88.25kg；较10-15的88.80kg下降0.55kg，单日变动可能含糖原/水分及胃肠内容物变化，不视为脂肪实测下降。",
     "早餐仅记录南瓜子10.9g、悦鲜活生牛乳一瓶260mL；牛奶沿用2026-10-13已确认标签。",
-    "上午风干牛肉1根约15g按10月15日同款标签估算（12–18g可能范围）；午餐沙县鸡腿饭这次只吃一只去皮鸡腿，不按两只鸡腿餐计入。"
+    "上午风干牛肉1根约15g按10月15日同款标签估算（12–18g可能范围）；午餐沙县鸡腿饭这次只吃一只去皮鸡腿，不按两只鸡腿餐计入。",
+    "用户确认下午练前吃山楂锅盔1个、甜味较重。仅说明练前加餐，尚未提供当日实际训练，不更改training_status。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1018.7000478011472,
-    "intake_kcal_booked": 1090.7000478011473,
-    "protein_g_estimate": 67.58080000000001,
-    "fat_g_estimate": 44.8442,
-    "carbs_g_estimate": 105.2247,
-    "intake_kcal_estimate": 1090.7000478011473,
-    "food_margin_kcal": 72.00000000000011,
+    "intake_kcal_base_estimate": 1230.2000478011473,
+    "intake_kcal_booked": 1302.2000478011473,
+    "protein_g_estimate": 69.98080000000002,
+    "fat_g_estimate": 55.7442,
+    "carbs_g_estimate": 131.1747,
+    "intake_kcal_estimate": 1302.2000478011473,
+    "food_margin_kcal": 72,
     "base_macro_estimates": {
-      "protein_g": 67.58080000000001,
-      "fat_g": 36.8442,
-      "carbs_g": 105.2247
+      "protein_g": 69.98080000000002,
+      "fat_g": 47.7442,
+      "carbs_g": 131.1747
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      778.0666826003824,
-      1269.333413001912
+      926.1166826003823,
+      1544.283413001912
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2200.5,
-    "estimated_deficit_kcal": 1109.7999521988527,
+    "estimated_deficit_kcal": 898.2999521988527,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -225,11 +263,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "breakfast": 12.760800000000003,
       "lunch": 44.5,
-      "snack": 10.319999999999999
+      "snack": 12.719999999999999
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -239,13 +277,13 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 2,
+    "protein_g_entries_with_range": 3,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 2,
+    "fat_g_entries_with_range": 3,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 2,
+    "carbs_g_entries_with_range": 3,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
