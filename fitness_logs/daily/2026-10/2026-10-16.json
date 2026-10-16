@@ -6,8 +6,8 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [
     "10月16日午餐确认只吃1只鸡腿；米饭、炒白菜、卤蛋是否全吃，以及实际鸡腿可食肉量和餐馆用油未确认，按常吃套餐扣除一只鸡腿暂估。",
     "10月16日练前山楂锅盔1个未称重、未见本品标签；按同类甜酥山楂锅盔约50g估算，规格和配方可能不同。"
@@ -217,7 +217,24 @@
       "uncertainty": "未提供包装营养标签或重量，仅知甜糕点1个；同类产品推定50g、约211.5kcal，重量可能35–65g，且不同品牌配方有额外偏差。"
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-16_1835",
+      "event_id": "strength_2026-10-16_1835",
+      "type": "传统力量训练",
+      "start_local": "2026-10-16T18:35:00+08:00",
+      "end_local": "2026-10-16T19:49:00+08:00",
+      "duration_seconds": 4390,
+      "duration": "1:13:10",
+      "elapsed_seconds": 4392,
+      "active_kcal": 671,
+      "total_kcal": 802,
+      "average_heart_rate_bpm": 130,
+      "energy_scope": "session_active",
+      "source": "2026-10-16用户Apple Fitness截图：传统力量训练18:35–19:49，训练1:13:10，经过1:13:12，动态671千卡，总802千卡，平均心率130",
+      "is_estimated": false
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -229,7 +246,8 @@
     "2026-10-16空腹体重88.25kg；较10-15的88.80kg下降0.55kg，单日变动可能含糖原/水分及胃肠内容物变化，不视为脂肪实测下降。",
     "早餐仅记录南瓜子10.9g、悦鲜活生牛乳一瓶260mL；牛奶沿用2026-10-13已确认标签。",
     "上午风干牛肉1根约15g按10月15日同款标签估算（12–18g可能范围）；午餐沙县鸡腿饭这次只吃一只去皮鸡腿，不按两只鸡腿餐计入。",
-    "用户确认下午练前吃山楂锅盔1个、甜味较重。仅说明练前加餐，尚未提供当日实际训练，不更改training_status。"
+    "用户确认下午练前吃山楂锅盔1个、甜味较重。仅说明练前加餐，尚未提供当日实际训练，不更改training_status。",
+    "已报告10月16日18:35–19:49传统力量训练，Apple Fitness动态671kcal；尚未确认当天训练已全部结束，可能随后继续有氧。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1230.2000478011473,
@@ -245,23 +263,23 @@
       "carbs_g": 131.1747
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 167.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       926.1166826003823,
       1544.283413001912
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2200.5,
-    "estimated_deficit_kcal": 898.2999521988527,
+    "exercise_active_kcal": 671,
+    "exercise_adjusted_kcal": 503.25,
+    "tdee_kcal_estimate": 2703.75,
+    "estimated_deficit_kcal": 1401.5499521988527,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 5,
     "protein_by_meal_g": {
@@ -270,7 +288,7 @@
       "snack": 12.719999999999999
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
