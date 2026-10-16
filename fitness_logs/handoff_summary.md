@@ -12,6 +12,10 @@
 
 ## 当前进行中：2026-10-16
 
+- **2026-10-16 22:28 待补同步**：用户上传当晚室内单车Apple Fitness截图，时长40:30、动态427kcal、总502kcal、平均心率145、21:46–22:27。此前力量动态671kcal，两段合计动态1098kcal，按75%计入823.5kcal，模型TDEE约3024kcal。用户明确说当天饮食训练全部结束，应将当天改为final、food_log_closed=true、food_coverage=confirmed_complete、training_coverage=confirmed_complete，并在exercise_entries新增单车唯一event_id。**日JSON更新多次遭安全检查拦截，尚未提交！目前仍open且只存力量训练。下次首先读取日JSON最新SHA检查是否有单车，未写入则补记并封账，禁止重复添加。** 已录饮食1874.93kcal，P125.03/F72.52/C180.47；模型算术差约1149.07kcal，因午餐、糕点与鸡腿份量估算，completed_day_estimated_deficit_kcal应保持null。
+
+
+
 - 新增常用食品：`chaoshan_moxiawan_250g`（潮汕味道墨虾丸250g/包），食物库版本`2026-10-16-v4`；每包221.68kcal、蛋白质36.5g、脂肪1.75g、碳水14.25g、钠1270mg（标签每100g371kJ、P14.6/F0.7/C5.7/钠508mg）。用户只是要求保存营养数据，**尚未确认吃下，不记入10月16日**。
 
 
