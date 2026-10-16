@@ -2,16 +2,17 @@
   "schema_version": 3,
   "date": "2026-10-16",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "fitness_logs/handoff_summary.md记录2026-10-16 22:28用户上传当晚单车截图，并明确当天饮食训练全部结束；该更新此前未同步日JSON。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "10月16日午餐确认只吃1只鸡腿；米饭、炒白菜、卤蛋是否全吃，以及实际鸡腿可食肉量和餐馆用油未确认，按常吃套餐扣除一只鸡腿暂估。",
     "10月16日练前山楂锅盔1个未称重、未见本品标签；按同类甜酥山楂锅盔约50g估算，规格和配方可能不同。",
-    "10月16日晚餐五香居鸡腿3只合计235g是整盒含皮含骨重量；去皮、骨头不吃，实际可食肉未称重，暂估150g(可能130–175g)，热量约263kcal(约195–350kcal)，使用同类产品而非本品营养标签；后续若取得本品标签或称重可更正。"
+    "10月16日晚餐五香居鸡腿3只合计235g是整盒含皮含骨重量；去皮、骨头不吃，实际可食肉未称重，暂估150g(可能130–175g)，热量约263kcal(约195–350kcal)，使用同类产品而非本品营养标签；后续若取得本品标签或称重可更正。",
+    "10月16日蒸饺实吃11个已确认，但用户文字“一包25g”暂解释为每个25g；单个重量未明确确认，275g为暂定换算，若取得实际规格则原位更正。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -287,6 +288,21 @@
       "energy_scope": "session_active",
       "source": "2026-10-16用户Apple Fitness截图：传统力量训练18:35–19:49，训练1:13:10，经过1:13:12，动态671千卡，总802千卡，平均心率130",
       "is_estimated": false
+    },
+    {
+      "id": "cycling_2026-10-16_2146",
+      "event_id": "cycling_2026-10-16_2146",
+      "type": "室内单车",
+      "start_local": "2026-10-16T21:46:00+08:00",
+      "end_local": "2026-10-16T22:27:00+08:00",
+      "duration_seconds": 2430,
+      "duration": "0:40:30",
+      "active_kcal": 427,
+      "total_kcal": 502,
+      "average_heart_rate_bpm": 145,
+      "energy_scope": "session_active",
+      "source": "fitness_logs/handoff_summary.md中2026-10-16 22:28待补同步记录：用户Apple Fitness室内单车截图，21:46–22:27，时长40:30，动态427kcal，总502kcal，平均心率145。",
+      "is_estimated": false
     }
   ],
   "recovery": {
@@ -318,6 +334,26 @@
         "carbs_g_estimate": 46.75000000000001
       },
       "reason": "用户说明蒸饺实际没吃完，只吃11个；每个按25g推定，原整包500g摄入系高估，原位更正，不新增食物。"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "handoff_sync_correction",
+      "entry_id": "cycling_2026-10-16_2146",
+      "previous": {
+        "record_status": "open",
+        "food_log_closed": false,
+        "food_coverage": "partial",
+        "training_coverage": "partial"
+      },
+      "updated": {
+        "record_status": "final",
+        "food_log_closed": true,
+        "food_coverage": "confirmed_complete",
+        "training_coverage": "confirmed_complete",
+        "event_id": "cycling_2026-10-16_2146",
+        "active_kcal": 427
+      },
+      "reason": "fitness_logs/handoff_summary.md记录2026-10-16 22:28用户上传当晚单车截图，并明确当天饮食训练全部结束；该更新此前未同步日JSON。新增独立单车事件，仅计动态427kcal；保留力量训练原始读数及饮食待确认项。"
     }
   ],
   "notes": [
@@ -327,7 +363,8 @@
     "用户确认下午练前吃山楂锅盔1个、甜味较重。仅说明练前加餐，尚未提供当日实际训练，不更改training_status。",
     "已报告10月16日18:35–19:49传统力量训练，Apple Fitness动态671kcal；尚未确认当天训练已全部结束，可能随后继续有氧。",
     "用户已确认晚餐蒸饺实际只吃11个、暂按每个25g共275g（修正原先整包500g误记）及五香居鸡腿整盒3只总重235g（去皮、不吃骨）；此前墨虾丸和盒马鸡腿仅是备选方案，没有吃，不计入。",
-    "蒸饺实际吃11个，每个25g为基于用户简写的解释，合计275g；未吃的225g未计入。"
+    "蒸饺实际吃11个，每个25g为基于用户简写的解释，合计275g；未吃的225g未计入。",
+    "语义复核据交接摘要补入21:46室内单车及用户全天饮食训练结束确认；此前备注中的“尚未结束/未提供训练”为当时进度，现已由本次确认更新。蒸饺25g/个的原始解释与不确定性保留。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1802.9294933078395,
@@ -336,28 +373,28 @@
     "fat_g_estimate": 72.5192,
     "carbs_g_estimate": 180.4747,
     "intake_kcal_estimate": 1874.9294933078395,
-    "food_margin_kcal": 72,
+    "food_margin_kcal": 72.0,
     "base_macro_estimates": {
       "protein_g": 125.03080000000003,
       "fat_g": 64.5192,
       "carbs_g": 180.4747
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 167.75,
+    "training_discount_kcal": 274.5,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1431.3461281070745,
       2204.512858508604
     ],
-    "exercise_active_kcal": 671,
-    "exercise_adjusted_kcal": 503.25,
-    "tdee_kcal_estimate": 2703.75,
-    "estimated_deficit_kcal": 828.8205066921605,
+    "exercise_active_kcal": 1098.0,
+    "exercise_adjusted_kcal": 823.5,
+    "tdee_kcal_estimate": 3024.0,
+    "estimated_deficit_kcal": 1149.0705066921605,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -369,9 +406,6 @@
       "snack": 12.719999999999999
     },
     "warnings": [
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
