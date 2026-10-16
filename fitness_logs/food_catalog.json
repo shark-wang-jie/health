@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-13-v3",
+  "version": "2026-10-16-v4",
   "policy": "固定同款；历史参考不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
   "foods": {
     "shaxian_two_skinless_legs": {
@@ -302,6 +302,33 @@
           "reason": "沿用固定规格基础口径，不机械加成"
         },
         "uncertainty": "沿用历史默认份量，实际吃下份量优先"
+      }
+    },
+    "chaoshan_moxiawan_250g": {
+      "entry": {
+        "description": "潮汕味道墨虾丸250g/包",
+        "meal": "未分类",
+        "source_kind": "label_known_quantity",
+        "quantity_g": 250,
+        "basis": "包装标签每100g：371kJ、蛋白质14.6g、脂肪0.7g、饱和脂肪0.3g、碳水5.7g、糖1.7g、钠508mg；用户确认一包250g。仅建立食物库，不能自动记为已吃。",
+        "kcal_base_estimate": 221.67782026768643,
+        "kcal_booked": 221.67782026768643,
+        "kcal_range": [
+          221.67782026768643,
+          221.67782026768643
+        ],
+        "protein_g_estimate": 36.5,
+        "fat_g_estimate": 1.75,
+        "carbs_g_estimate": 14.25,
+        "saturated_fat_g_estimate": 0.75,
+        "sugar_g_estimate": 4.25,
+        "sodium_mg_estimate": 1270,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "标签已知，无需附加余量"
+        }
       }
     }
   }
