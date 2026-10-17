@@ -239,7 +239,8 @@
       "quantity_pieces": 11,
       "weight_per_piece_g": 20,
       "package_g": 500,
-      "pieces_per_package": 25
+      "pieces_per_package": 25,
+      "uncertainty": "原每个25g为对用户简写的暂定解释，已由2026-10-17用户明确的500g/25个规格更正；220g按规格与实吃11个换算，非另行实称。"
     },
     {
       "id": "dinner_wuxiangju_skinless_chicken_three_235g",
@@ -356,17 +357,45 @@
     },
     {
       "date": "2026-10-17",
-      "type": "quantity_correction",
       "entry_id": "dinner_konjac_oat_chicken_dumplings_500g",
+      "type": "quantity_correction",
       "previous": {
-        "grams": 275,
-        "kcal": 310.2294455066922
+        "description": "魔芋燕麦鸡胸肉蒸饺11个（每个25g，共275g）",
+        "reported_text": "蒸饺没有吃完，一包25g，吃了11个（按每个25g理解）",
+        "quantity_g": 275,
+        "weight_per_piece_g": 25,
+        "basis": "用户原提供包装每100g能量472kJ、蛋白质6.6g、脂肪1.9g、碳水17g、钠484mg。原报整包500g，后明确实际只吃11个，按每个25g推定共275g（并非整包），照标签按275g计算，无额外加成。",
+        "uncertainty": "用户文字为‘一包25g 吃了11个’，结合原包500g暂理解每个25g；若单个重量并非25g，需原位更正。",
+        "kcal_base_estimate": 310.2294455066922,
+        "kcal_booked": 310.2294455066922,
+        "kcal_range": [
+          310.2294455066922,
+          310.2294455066922
+        ],
+        "protein_g_estimate": 18.150000000000002,
+        "fat_g_estimate": 5.2250000000000005,
+        "carbs_g_estimate": 46.75000000000001,
+        "sodium_mg_estimate": 1331
       },
       "updated": {
-        "grams": 220,
-        "kcal": 248.18355640535376
+        "description": "魔芋燕麦鸡胸肉蒸饺11个（每个20g，共220g）",
+        "reported_text": "蒸饺实际吃11个；2026-10-17用户更正规格：一包500g、25个，即每个20g。",
+        "quantity_g": 220,
+        "weight_per_piece_g": 20,
+        "basis": "2026-10-17用户正式更正规格（见fitness_logs/handoff_summary.md）：一包500g、25个，每个20g；10月16日实际吃11个，共220g，并非整包。沿用本次照片标签每100g能量472kJ、蛋白质6.6g、脂肪1.9g、碳水17g、钠484mg，按220g换算，无额外加成。",
+        "uncertainty": "原每个25g为对用户简写的暂定解释，已由2026-10-17用户明确的500g/25个规格更正；220g按规格与实吃11个换算，非另行实称。",
+        "kcal_base_estimate": 248.18355640535373,
+        "kcal_booked": 248.18355640535373,
+        "kcal_range": [
+          248.18355640535373,
+          248.18355640535373
+        ],
+        "protein_g_estimate": 14.52,
+        "fat_g_estimate": 4.18,
+        "carbs_g_estimate": 37.400000000000006,
+        "sodium_mg_estimate": 1064.8000000000002
       },
-      "reason": "用户确认500g共25个，每个20g，之前按275g估算错误"
+      "reason": "fitness_logs/handoff_summary.md保存用户2026-10-17正式更正：一包500g、25个，每个20g；16日实吃11个=220g。替换原25g/个的暂定解释，移除已解决的规格待确认项，保留稳定id及此前更正历史，不新增食物。"
     }
   ],
   "notes": [
@@ -387,7 +416,7 @@
     "fat_g_estimate": 71.4742,
     "carbs_g_estimate": 171.12470000000002,
     "intake_kcal_estimate": 1812.883604206501,
-    "food_margin_kcal": 72,
+    "food_margin_kcal": 72.0,
     "base_macro_estimates": {
       "protein_g": 121.40080000000003,
       "fat_g": 63.474199999999996,
@@ -400,15 +429,15 @@
       1369.300239005736,
       2142.466969407266
     ],
-    "exercise_active_kcal": 1098,
+    "exercise_active_kcal": 1098.0,
     "exercise_adjusted_kcal": 823.5,
-    "tdee_kcal_estimate": 3024,
+    "tdee_kcal_estimate": 3024.0,
     "estimated_deficit_kcal": 1211.116395793499,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
