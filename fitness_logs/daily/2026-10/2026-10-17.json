@@ -1,0 +1,193 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-17",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "10月17日早餐魔芋燕麦蒸饺14个，单个25g未由产品标签明确证实，暂按350g、估计280–420g范围记录；用户如确认每个净重可原位更正。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.25,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.25,
+    "bmr_weight_date": "2026-10-17",
+    "bmr_kcal": 1833.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_11g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "南瓜子11g",
+      "reported_text": "早饭11g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 11,
+      "basis": "沿用已确认南瓜子标签每100g：能量2579kJ、蛋白质31.2g、脂肪48.8g、碳水8.3g、饱和脂肪9.4g、糖1.1g、钠0mg；当日吃11g。",
+      "kcal_base_estimate": 67.80353728489484,
+      "kcal_booked": 67.80353728489484,
+      "kcal_range": [
+        67.80353728489484,
+        67.80353728489484
+      ],
+      "protein_g_estimate": 3.432000000000001,
+      "fat_g_estimate": 5.368000000000001,
+      "carbs_g_estimate": 0.9130000000000003,
+      "saturated_fat_g_estimate": 1.034,
+      "sugar_g_estimate": 0.12100000000000002,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_konjac_oat_chicken_dumplings_14pcs_est350g",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "魔芋燕麦鸡胸肉蒸饺14个（暂按25g/个、合计350g）",
+      "reported_text": "早饭14个魔芋蒸饺",
+      "source_kind": "matched_default",
+      "quantity_pieces": 14,
+      "weight_per_piece_g_estimate": 25,
+      "quantity_g_estimate": 350,
+      "quantity_g_range": [
+        280,
+        420
+      ],
+      "package_g": 500,
+      "basis": "2026-10-16用户照片蒸饺标签每100g：472kJ、P6.6/F1.9/C17、钠484mg；沿用此前每个约25g的暂定解释，14个约350g。25g/个尚未明确独立证实，按每个20–30g暂给食量范围，实际吃下个数14个已确认，不把整包500g算为摄入。",
+      "kcal_base_estimate": 394.8374760994264,
+      "kcal_booked": 394.8374760994264,
+      "kcal_range": [
+        315.8699808795411,
+        473.8049713193117
+      ],
+      "protein_g_estimate": 23.1,
+      "fat_g_estimate": 6.65,
+      "carbs_g_estimate": 59.5,
+      "sodium_mg_estimate": 1694,
+      "protein_g_range": [
+        18.479999999999997,
+        27.72
+      ],
+      "fat_g_range": [
+        5.319999999999999,
+        7.9799999999999995
+      ],
+      "carbs_g_range": [
+        47.599999999999994,
+        71.4
+      ],
+      "uncertainty": "14个实际吃下，但25g/个只是根据2026-10-16前次对话的暂定规格；按20–30g/个估计可食总量280–420g，待独立确认产品每个净重再原位更正。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-10-17空腹体重88.25kg，与前日持平。",
+    "早餐只报告南瓜子11g、魔芋燕麦鸡胸肉蒸饺14个；未报告牛奶，不自行加入。",
+    "16日已由仓库自动复核补齐室内单车并封账，本日无需追改该历史日。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 462.64101338432124,
+    "intake_kcal_booked": 462.64101338432124,
+    "protein_g_estimate": 26.532000000000004,
+    "fat_g_estimate": 12.018,
+    "carbs_g_estimate": 60.413,
+    "intake_kcal_estimate": 462.64101338432124,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 26.532000000000004,
+      "fat_g": 12.018,
+      "carbs_g": 60.413
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      383.67351816443596,
+      541.6085086042065
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2200.5,
+    "estimated_deficit_kcal": 1737.8589866156788,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 26.532000000000004
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 1,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 1,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 1,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1694,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
