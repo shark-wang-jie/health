@@ -9,8 +9,9 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "10月17日芥兰牛肉加苦瓜食材克数、酱汁和烹调用油量未知，按照片暂估520kcal，未加米饭。",
-    "10月17日盒马鸡腿本盒包装和去皮去骨可食克重未确认，沿历史同款暂估183kcal。"
+    "10月17日芥兰牛肉加苦瓜食材克数、酱汁和烹调用油量未知，按照片暂估520kcal，米饭另立条目约400g熟重。",
+    "10月17日盒马鸡腿本盒包装和去皮去骨可食克重未确认，沿历史同款暂估183kcal。",
+    "10月17日午餐米饭用户口述约400g熟重，未经称重，按350–450g估计摄入范围；非生米重量。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -111,7 +112,7 @@
       "description": "芥兰牛肉加一份苦瓜（餐馆照片估算）",
       "reported_text": "午饭芥兰牛肉加了一份苦瓜",
       "source_kind": "photo_estimate",
-      "basis": "照片可见牛肉片、芥兰、苦瓜及酱汁。估计熟牛肉130g、芥兰170g、苦瓜140g、炒菜油酱汁合计基础475kcal；另留5g食用油45kcal余量。未报告米饭，不添加米饭。",
+      "basis": "照片可见牛肉片、芥兰、苦瓜及酱汁。估计熟牛肉130g、芥兰170g、苦瓜140g、炒菜油酱汁合计基础475kcal；另留5g食用油45kcal余量。用户随后确认菜下面有约400g熟米饭，另立米饭条目记录，本条仅计芥兰牛肉苦瓜及酱汁，不包含米饭。",
       "kcal_base_estimate": 475,
       "kcal_booked": 520,
       "kcal_range": [
@@ -150,6 +151,42 @@
       "carbs_g_estimate": 12.13,
       "sodium_mg_estimate": 579,
       "uncertainty": "参照之前同款两只170g包装估算，本次包装规格及去皮去骨可食肉重量未核对。"
+    },
+    {
+      "id": "lunch_cooked_white_rice_est400g",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "熟白米饭约400g（在芥兰牛肉及苦瓜下面）",
+      "reported_text": "菜下面是米饭，大概有四百克",
+      "source_kind": "matched_default",
+      "quantity_g_estimate": 400,
+      "quantity_g_range": [
+        350,
+        450
+      ],
+      "basis": "用户补充照片中菜底下是米饭，估计熟米饭约400g；按常见熟白米饭每100g约116kcal、蛋白质2.6g、脂肪0.3g、碳水25.9g估算，按350–450g留份量范围，不按生米算。",
+      "kcal_base_estimate": 464,
+      "kcal_booked": 464,
+      "kcal_range": [
+        406,
+        522
+      ],
+      "protein_g_estimate": 10.4,
+      "fat_g_estimate": 1.2,
+      "carbs_g_estimate": 103.6,
+      "protein_g_range": [
+        9.1,
+        11.7
+      ],
+      "fat_g_range": [
+        1.05,
+        1.35
+      ],
+      "carbs_g_range": [
+        90.65,
+        116.55
+      ],
+      "uncertainty": "重量为用户估计约400g，非实称；本条仅计算熟米饭，不重复芥兰牛肉或鸡腿。"
     }
   ],
   "exercise_entries": [],
@@ -180,32 +217,33 @@
     "早餐只报告南瓜子11g、魔芋燕麦鸡胸肉蒸饺14个；未报告牛奶，不自行加入。",
     "16日已由仓库自动复核补齐室内单车并封账，本日无需追改该历史日。",
     "用户确认该蒸饺每包500g共25个，早餐14个实际280g；覆盖此前25g/个的暂估。",
-    "午饭实吃芥兰牛肉加苦瓜，以及照片中的一盒盒马鸡腿去皮；泡面猪头肉只是晚餐计划，尚未实吃，不记账。"
+    "午饭实吃芥兰牛肉加苦瓜，以及照片中的一盒盒马鸡腿去皮；泡面猪头肉只是晚餐计划，尚未实吃，不记账。",
+    "午餐补报：芥兰牛肉、苦瓜下方确有熟米饭约400g，前次未记入；单独补一条米饭，原菜肴和鸡腿热量不变，不重复计算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1041.673518164436,
-    "intake_kcal_booked": 1086.673518164436,
-    "protein_g_estimate": 85.042,
-    "fat_g_estimate": 43.318000000000005,
-    "carbs_g_estimate": 80.643,
-    "intake_kcal_estimate": 1086.673518164436,
+    "intake_kcal_base_estimate": 1505.673518164436,
+    "intake_kcal_booked": 1550.673518164436,
+    "protein_g_estimate": 95.44200000000001,
+    "fat_g_estimate": 44.51800000000001,
+    "carbs_g_estimate": 184.243,
+    "intake_kcal_estimate": 1550.673518164436,
     "food_margin_kcal": 45,
     "base_macro_estimates": {
-      "protein_g": 85.042,
-      "fat_g": 38.318000000000005,
-      "carbs_g": 80.643
+      "protein_g": 95.44200000000001,
+      "fat_g": 39.51800000000001,
+      "carbs_g": 184.243
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      883.673518164436,
-      1358.673518164436
+      1289.673518164436,
+      1880.673518164436
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2200.5,
-    "estimated_deficit_kcal": 1113.826481835564,
+    "estimated_deficit_kcal": 649.826481835564,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -214,10 +252,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "breakfast": 21.912000000000003,
-      "lunch": 63.129999999999995
+      "lunch": 73.53
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -227,13 +265,13 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
