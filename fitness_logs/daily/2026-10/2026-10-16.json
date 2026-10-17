@@ -11,8 +11,7 @@
   "missing_sections": [
     "10月16日午餐确认只吃1只鸡腿；米饭、炒白菜、卤蛋是否全吃，以及实际鸡腿可食肉量和餐馆用油未确认，按常吃套餐扣除一只鸡腿暂估。",
     "10月16日练前山楂锅盔1个未称重、未见本品标签；按同类甜酥山楂锅盔约50g估算，规格和配方可能不同。",
-    "10月16日晚餐五香居鸡腿3只合计235g是整盒含皮含骨重量；去皮、骨头不吃，实际可食肉未称重，暂估150g(可能130–175g)，热量约263kcal(约195–350kcal)，使用同类产品而非本品营养标签；后续若取得本品标签或称重可更正。",
-    "10月16日蒸饺实吃11个已确认，但用户文字“一包25g”暂解释为每个25g；单个重量未明确确认，275g为暂定换算，若取得实际规格则原位更正。"
+    "10月16日晚餐五香居鸡腿3只合计235g是整盒含皮含骨重量；去皮、骨头不吃，实际可食肉未称重，暂估150g(可能130–175g)，热量约263kcal(约195–350kcal)，使用同类产品而非本品营养标签；后续若取得本品标签或称重可更正。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -222,25 +221,25 @@
       "id": "dinner_konjac_oat_chicken_dumplings_500g",
       "status": "consumed",
       "meal": "dinner",
-      "description": "魔芋燕麦鸡胸肉蒸饺11个（每个25g，共275g）",
+      "description": "魔芋燕麦鸡胸肉蒸饺11个（每个20g，共220g）",
       "reported_text": "蒸饺没有吃完，一包25g，吃了11个（按每个25g理解）",
       "source_kind": "label_known_quantity",
-      "quantity_g": 275,
-      "basis": "用户原提供包装每100g能量472kJ、蛋白质6.6g、脂肪1.9g、碳水17g、钠484mg。原报整包500g，后明确实际只吃11个，按每个25g推定共275g（并非整包），照标签按275g计算，无额外加成。",
-      "kcal_base_estimate": 310.2294455066922,
-      "kcal_booked": 310.2294455066922,
+      "quantity_g": 220,
+      "basis": "用户确认一包500g共25个，每个20g，11个220g。按标签每100g472kJ、蛋白质6.6g、脂肪1.9g、碳水17g、钠484mg折算。",
+      "kcal_base_estimate": 248.18355640535376,
+      "kcal_booked": 248.18355640535376,
       "kcal_range": [
-        310.2294455066922,
-        310.2294455066922
+        248.18355640535376,
+        248.18355640535376
       ],
-      "protein_g_estimate": 18.150000000000002,
-      "fat_g_estimate": 5.2250000000000005,
-      "carbs_g_estimate": 46.75000000000001,
-      "sodium_mg_estimate": 1331,
+      "protein_g_estimate": 14.520000000000003,
+      "fat_g_estimate": 4.180000000000001,
+      "carbs_g_estimate": 37.400000000000006,
+      "sodium_mg_estimate": 1064.8,
       "quantity_pieces": 11,
-      "weight_per_piece_g": 25,
+      "weight_per_piece_g": 20,
       "package_g": 500,
-      "uncertainty": "用户文字为‘一包25g 吃了11个’，结合原包500g暂理解每个25g；若单个重量并非25g，需原位更正。"
+      "pieces_per_package": 25
     },
     {
       "id": "dinner_wuxiangju_skinless_chicken_three_235g",
@@ -354,6 +353,20 @@
         "active_kcal": 427
       },
       "reason": "fitness_logs/handoff_summary.md记录2026-10-16 22:28用户上传当晚单车截图，并明确当天饮食训练全部结束；该更新此前未同步日JSON。新增独立单车事件，仅计动态427kcal；保留力量训练原始读数及饮食待确认项。"
+    },
+    {
+      "date": "2026-10-17",
+      "type": "quantity_correction",
+      "entry_id": "dinner_konjac_oat_chicken_dumplings_500g",
+      "previous": {
+        "grams": 275,
+        "kcal": 310.2294455066922
+      },
+      "updated": {
+        "grams": 220,
+        "kcal": 248.18355640535376
+      },
+      "reason": "用户确认500g共25个，每个20g，之前按275g估算错误"
     }
   ],
   "notes": [
@@ -364,44 +377,45 @@
     "已报告10月16日18:35–19:49传统力量训练，Apple Fitness动态671kcal；尚未确认当天训练已全部结束，可能随后继续有氧。",
     "用户已确认晚餐蒸饺实际只吃11个、暂按每个25g共275g（修正原先整包500g误记）及五香居鸡腿整盒3只总重235g（去皮、不吃骨）；此前墨虾丸和盒马鸡腿仅是备选方案，没有吃，不计入。",
     "蒸饺实际吃11个，每个25g为基于用户简写的解释，合计275g；未吃的225g未计入。",
-    "语义复核据交接摘要补入21:46室内单车及用户全天饮食训练结束确认；此前备注中的“尚未结束/未提供训练”为当时进度，现已由本次确认更新。蒸饺25g/个的原始解释与不确定性保留。"
+    "语义复核据交接摘要补入21:46室内单车及用户全天饮食训练结束确认；此前备注中的“尚未结束/未提供训练”为当时进度，现已由本次确认更新。蒸饺25g/个的原始解释与不确定性保留。",
+    "最新确认规格：蒸饺500g每包25个；16日实际11个共220g，覆盖旧25g/个记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1802.9294933078395,
-    "intake_kcal_booked": 1874.9294933078395,
-    "protein_g_estimate": 125.03080000000003,
-    "fat_g_estimate": 72.5192,
-    "carbs_g_estimate": 180.4747,
-    "intake_kcal_estimate": 1874.9294933078395,
-    "food_margin_kcal": 72.0,
+    "intake_kcal_base_estimate": 1740.883604206501,
+    "intake_kcal_booked": 1812.883604206501,
+    "protein_g_estimate": 121.40080000000003,
+    "fat_g_estimate": 71.4742,
+    "carbs_g_estimate": 171.12470000000002,
+    "intake_kcal_estimate": 1812.883604206501,
+    "food_margin_kcal": 72,
     "base_macro_estimates": {
-      "protein_g": 125.03080000000003,
-      "fat_g": 64.5192,
-      "carbs_g": 180.4747
+      "protein_g": 121.40080000000003,
+      "fat_g": 63.474199999999996,
+      "carbs_g": 171.12470000000002
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 274.5,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1431.3461281070745,
-      2204.512858508604
+      1369.300239005736,
+      2142.466969407266
     ],
-    "exercise_active_kcal": 1098.0,
+    "exercise_active_kcal": 1098,
     "exercise_adjusted_kcal": 823.5,
-    "tdee_kcal_estimate": 3024.0,
-    "estimated_deficit_kcal": 1149.0705066921605,
+    "tdee_kcal_estimate": 3024,
+    "estimated_deficit_kcal": 1211.116395793499,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 12.760800000000003,
-      "dinner": 55.05,
+      "dinner": 51.42,
       "lunch": 44.5,
       "snack": 12.719999999999999
     },
@@ -421,7 +435,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1621.55,
+    "sodium_mg_known_sum": 1355.35,
     "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
