@@ -6,12 +6,13 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "10月17日芥兰牛肉加苦瓜食材克数、酱汁和烹调用油量未知，按照片暂估520kcal，米饭另立条目约400g熟重。",
     "10月17日盒马鸡腿本盒包装和去皮去骨可食克重未确认，沿历史同款暂估183kcal。",
-    "10月17日午餐米饭用户口述约400g熟重，未经称重，按350–450g估计摄入范围；非生米重量。"
+    "10月17日午餐米饭用户口述约400g熟重，未经称重，按350–450g估计摄入范围；非生米重量。",
+    "10月17日晚餐已经吃泡面1包及猪头肉约900g，用户明确不计算本顿热量。此餐未进入数字摄入合计，当天摄入热量、宏量及净热量缺口均不完整；900g可能是整件/包装标示重量而非核实可食净重，若用户后续说明再按原位更正。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -212,7 +213,23 @@
       "sugar_g_estimate": 1.95
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_2026-10-17_1849",
+      "event_id": "strength_2026-10-17_1849",
+      "type": "传统力量训练",
+      "start_local": "2026-10-17T18:49:00+08:00",
+      "end_local": "2026-10-17T20:07:00+08:00",
+      "duration_seconds": 4725,
+      "duration": "1:18:45",
+      "active_kcal": 688,
+      "total_kcal": 828,
+      "average_heart_rate_bpm": 126,
+      "energy_scope": "session_active",
+      "source": "用户2026-10-17 20:25提供Apple Fitness截图：传统力量训练18:49–20:07，时长1:18:45，动态688千卡、总828千卡、平均心率126；用户确认今日训练结束。",
+      "is_estimated": false
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -240,9 +257,10 @@
     "早餐只报告南瓜子11g、魔芋燕麦鸡胸肉蒸饺14个；未报告牛奶，不自行加入。",
     "16日已由仓库自动复核补齐室内单车并封账，本日无需追改该历史日。",
     "用户确认该蒸饺每包500g共25个，早餐14个实际280g；覆盖此前25g/个的暂估。",
-    "午饭实吃芥兰牛肉加苦瓜，以及照片中的一盒盒马鸡腿去皮；泡面猪头肉只是晚餐计划，尚未实吃，不记账。",
+    "午饭实吃芥兰牛肉加苦瓜，以及照片中的一盒盒马鸡腿去皮；泡面及猪头肉已在晚餐实吃，按用户要求只做非热量文字记录。",
     "午餐补报：芥兰牛肉、苦瓜下方确有熟米饭约400g，前次未记入；单独补一条米饭，原菜肴和鸡腿热量不变，不重复计算。",
-    "10月17日下午训练前已经吃蒜香肠1根150g，包装标签658kJ/100g，摄入约235.90kcal、P18.6/F10.35/C16.95；尚无当天训练报告，训练状态保持unknown。"
+    "10月17日下午训练前已经吃蒜香肠1根150g，包装标签658kJ/100g，摄入约235.90kcal、P18.6/F10.35/C16.95；本条为当时进度；随后18:49–20:07完成传统力量训练，状态已更新为reported_training。",
+    "2026-10-17 晚餐实际报告已吃：泡面1包、猪头肉约900g（900g是用户报出的重量，实际食用净重未独立核对）。用户明确要求这顿自由餐不计算热量，不估蛋白质、脂肪、碳水；本餐只做文字记录，未纳入intake_entries的热量汇总，不能把已有摄入小计当作当天总摄入。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1741.5721797323135,
@@ -258,23 +276,23 @@
       "carbs_g": 201.19299999999998
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 172,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1525.5721797323135,
       2116.5721797323135
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2200.5,
-    "estimated_deficit_kcal": 413.92782026768646,
+    "exercise_active_kcal": 688,
+    "exercise_adjusted_kcal": 516,
+    "tdee_kcal_estimate": 2716.5,
+    "estimated_deficit_kcal": 929.9278202676865,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 6,
     "protein_by_meal_g": {
@@ -283,7 +301,6 @@
       "snack": 18.6
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
