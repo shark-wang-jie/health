@@ -72,6 +72,26 @@
       "saturated_fat_g_estimate": 0.96,
       "sugar_g_estimate": 4.4,
       "sodium_mg_estimate": 750.4
+    },
+    {
+      "id": "pumpkin_seeds_10_2g",
+      "status": "consumed",
+      "meal": "未分类",
+      "description": "南瓜子10.2g",
+      "reported_text": "吃了10.2g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 10.2,
+      "basis": "沿同款营养标签2579kJ/100g、蛋白质31.2g、脂肪48.8g、碳水8.3g、钠0mg/100g换算10.2g。",
+      "kcal_base_estimate": 62.872370936902485,
+      "kcal_booked": 62.872370936902485,
+      "kcal_range": [
+        62.872370936902485,
+        62.872370936902485
+      ],
+      "protein_g_estimate": 3.1824,
+      "fat_g_estimate": 4.9776,
+      "carbs_g_estimate": 0.8466,
+      "sodium_mg_estimate": 0
     }
   ],
   "exercise_entries": [],
@@ -88,29 +108,29 @@
     "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 134.9904397705545,
-    "intake_kcal_booked": 134.9904397705545,
-    "protein_g_estimate": 11.6,
-    "fat_g_estimate": 5.6,
-    "carbs_g_estimate": 9.44,
-    "intake_kcal_estimate": 134.9904397705545,
+    "intake_kcal_base_estimate": 197.862810707457,
+    "intake_kcal_booked": 197.862810707457,
+    "protein_g_estimate": 14.782399999999999,
+    "fat_g_estimate": 10.5776,
+    "carbs_g_estimate": 10.2866,
+    "intake_kcal_estimate": 197.862810707457,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 11.6,
-      "fat_g": 5.6,
-      "carbs_g": 9.44
+      "protein_g": 14.782399999999999,
+      "fat_g": 10.5776,
+      "carbs_g": 10.2866
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      134.9904397705545,
-      134.9904397705545
+      197.862810707457,
+      197.862810707457
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 2084.7095602294453,
+    "estimated_deficit_kcal": 2021.837189292543,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -119,9 +139,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 1,
+    "consumed_entries": 2,
     "protein_by_meal_g": {
-      "未分类": 11.6
+      "未分类": 14.782399999999999
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -142,7 +162,7 @@
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 750.4,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
