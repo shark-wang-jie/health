@@ -159,6 +159,27 @@
       "carbs_g_estimate": 14.25,
       "quantity_g_estimate": 150,
       "sodium_mg_estimate": 1480.5
+    },
+    {
+      "id": "oct18_carrot_one_est100g",
+      "status": "consumed_estimated",
+      "meal": "未分类",
+      "description": "胡萝卜1根（估约100g）",
+      "reported_text": "吃了一根胡萝卜",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 100,
+      "basis": "一根胡萝卜未称重，暂按生/无油胡萝卜可食约100g计算，参考每100g40kcal、P0.9/F0.2/C9.6，实际可能80–150g。",
+      "kcal_base_estimate": 40,
+      "kcal_booked": 40,
+      "kcal_range": [
+        32,
+        60
+      ],
+      "protein_g_estimate": 0.9,
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 9.6,
+      "uncertainty": "未称重，也未描述是否加油烹饪，暂按无油100g估算；重量可能80–150g。"
     }
   ],
   "exercise_entries": [
@@ -241,32 +262,33 @@
     "2026-10-17晚餐为用户已确认的自由餐：泡面1包、猪头肉约900g；用户明确不计算晚餐热量。次日体重变化可能受盐分、水分、糖原及胃肠内容物影响，单日不能判断脂肪变化；不将上一日自由餐自动计入本日。",
     "本日现已报告五类食物，训练已确认结束，日记录保持open。",
     "10月18日更正：未吃五香居鸡腿，实际吃六号肠1根；馒头只吃一小口。",
-    "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。饮食记录仍open。"
+    "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。饮食记录仍open。",
+    "10月18日已吃胡萝卜1根，暂按100g无油胡萝卜估40kcal，补齐此前交接摘要中的待同步食物，不重复记账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 666.6666347992352,
-    "intake_kcal_booked": 666.6666347992352,
-    "protein_g_estimate": 63.4824,
-    "fat_g_estimate": 26.967599999999997,
-    "carbs_g_estimate": 41.336600000000004,
-    "intake_kcal_estimate": 666.6666347992352,
+    "intake_kcal_base_estimate": 706.6666347992352,
+    "intake_kcal_booked": 706.6666347992352,
+    "protein_g_estimate": 64.3824,
+    "fat_g_estimate": 27.167599999999997,
+    "carbs_g_estimate": 50.936600000000006,
+    "intake_kcal_estimate": 706.6666347992352,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 63.4824,
-      "fat_g": 26.967599999999997,
-      "carbs_g": 41.336600000000004
+      "protein_g": 64.3824,
+      "fat_g": 27.167599999999997,
+      "carbs_g": 50.936600000000006
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 303,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      604.012810707457,
-      759.462810707457
+      636.012810707457,
+      819.462810707457
     ],
     "exercise_active_kcal": 1212,
     "exercise_adjusted_kcal": 909,
     "tdee_kcal_estimate": 3128.7,
-    "estimated_deficit_kcal": 2462.033365200765,
+    "estimated_deficit_kcal": 2422.033365200765,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -275,9 +297,9 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
-      "未分类": 63.4824
+      "未分类": 64.3824
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
