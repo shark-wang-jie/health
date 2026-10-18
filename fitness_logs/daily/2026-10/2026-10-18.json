@@ -2,10 +2,10 @@
   "schema_version": 3,
   "date": "2026-10-18",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-18明确报告晚间又实际吃了160g烤土豆，并明确说“今天饮食结束”；此前已报告两项训练全部结束。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
@@ -321,6 +321,26 @@
       "fat_g_estimate": 0.1,
       "carbs_g_estimate": 7,
       "uncertainty": "包装净重确认200g但具体品牌、净沥水重和营养值未确认；按常见无油魔芋结经验估算。"
+    },
+    {
+      "id": "oct18_final_roasted_potato_160g",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "晚间无油烤土豆160g（已吃）",
+      "reported_text": "又吃了160g烤土豆，今天饮食结束",
+      "source_kind": "matched_default",
+      "quantity_g": 160,
+      "basis": "用户2026-10-18明确实际又吃烤土豆160g，沿历史一致无油口径每100g93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g；与此前只是查询500g热量不同，500g并未报告实际吃，不可入账。",
+      "kcal_base_estimate": 148.8,
+      "kcal_booked": 148.8,
+      "kcal_range": [
+        148.8,
+        148.8
+      ],
+      "protein_g_estimate": 4,
+      "fat_g_estimate": 0.16,
+      "carbs_g_estimate": 33.92,
+      "uncertainty": "用户给出160g但未明说是否油烤，沿用其固定无油烤土豆记录口径；若实际刷油则需要原位更正。"
     }
   ],
   "exercise_entries": [
@@ -421,38 +441,39 @@
   "notes": [
     "2026-10-18起床空腹体重89.85kg，较前一日88.25kg增加1.60kg；用户直接报告的称重数据，按Asia/Shanghai记录。",
     "2026-10-17晚餐为用户已确认的自由餐：泡面1包、猪头肉约900g；用户明确不计算晚餐热量。次日体重变化可能受盐分、水分、糖原及胃肠内容物影响，单日不能判断脂肪变化；不将上一日自由餐自动计入本日。",
-    "本日现已报告五类食物，训练已确认结束，日记录保持open。",
+    "2026-10-18饮食和训练均已确认结束，13条食物入账，日记录final。",
     "10月18日更正：未吃五香居鸡腿，实际吃六号肠1根；馒头只吃一小口。",
-    "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。饮食记录仍open。",
+    "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。随后用户明确确认饮食结束，现已封账。",
     "10月18日已吃胡萝卜1根，暂按100g无油胡萝卜估40kcal，补齐此前交接摘要中的待同步食物，不重复记账。",
     "10月18日练后实吃蒜香肠1根（沿之前同款150g），另吃牛脆脆1包50g。蒜香肠按既有包装，牛脆脆本品营养标签已在随后照片中确认，按每100g2140kJ等数值完成原位更正。",
     "2026-10-18牛脆脆原同类食品暂估约232.19kcal已被实际包装标签修正：本品50g 255.74kcal、P31.6/F13.5/C1.95、钠242mg；旧值不再使用。",
-    "2026-10-18晚餐已实吃：白天那盒之外又吃盒马卤鸡腿1盒（默认去皮去骨）；此前计划的娃娃菜一颗、潮汕墨虾丸整包250g及魔芋结200g煮汤也吃了。汤按此前计划全量吃下、未报告额外放油作无油估算。红心火龙果此前仅询问热量，没有确认吃，不计入。"
+    "2026-10-18晚餐已实吃：白天那盒之外又吃盒马卤鸡腿1盒（默认去皮去骨）；此前计划的娃娃菜一颗、潮汕墨虾丸整包250g及魔芋结200g煮汤也吃了。汤按此前计划全量吃下、未报告额外放油作无油估算。红心火龙果此前仅询问热量，没有确认吃，不计入。",
+    "2026-10-18最后又实际吃160g无油烤土豆，沿已有口径记148.8kcal、P4/F0.16/C33.92。用户随后明确确认今天饮食结束，日饮食与已完成两项训练一起封账。此前询问500g烤土豆热量以及红心火龙果热量均只是询问，没有据此虚增食物。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1667.9792543021033,
-    "intake_kcal_booked": 1667.9792543021033,
-    "protein_g_estimate": 180.9124,
-    "fat_g_estimate": 55.7476,
-    "carbs_g_estimate": 109.7166,
-    "intake_kcal_estimate": 1667.9792543021033,
+    "intake_kcal_base_estimate": 1816.7792543021033,
+    "intake_kcal_booked": 1816.7792543021033,
+    "protein_g_estimate": 184.9124,
+    "fat_g_estimate": 55.907599999999995,
+    "carbs_g_estimate": 143.6366,
+    "intake_kcal_estimate": 1816.7792543021033,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 180.9124,
-      "fat_g": 55.7476,
-      "carbs_g": 109.7166
+      "protein_g": 184.9124,
+      "fat_g": 55.907599999999995,
+      "carbs_g": 143.6366
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 303,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1515.4267686424475,
-      1881.8767686424476
+      1664.2267686424475,
+      2030.6767686424475
     ],
     "exercise_active_kcal": 1212,
     "exercise_adjusted_kcal": 909,
     "tdee_kcal_estimate": 3128.7,
-    "estimated_deficit_kcal": 1460.7207456978965,
+    "estimated_deficit_kcal": 1311.9207456978966,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -461,15 +482,13 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 12,
+    "consumed_entries": 13,
     "protein_by_meal_g": {
-      "dinner": 66.33,
+      "dinner": 70.33,
       "snack": 50.2,
       "未分类": 64.3824
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
