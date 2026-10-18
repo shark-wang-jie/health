@@ -5,7 +5,7 @@
   "record_status": "open",
   "food_log_closed": false,
   "closure_basis": null,
-  "food_coverage": "unknown",
+  "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [],
@@ -49,7 +49,31 @@
     "deficit_min_kcal": 400,
     "deficit_max_kcal": 600
   },
-  "intake_entries": [],
+  "intake_entries": [
+    {
+      "id": "meat_jujube_2pcs_80g",
+      "status": "consumed",
+      "meal": "未分类",
+      "description": "肉枣2个各40g，共80g",
+      "reported_text": "肉枣两个 每个40g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 80,
+      "quantity_pieces": 2,
+      "basis": "用户照片标签每100g706kJ，P14.5 F7.0 C11.8，钠938mg；实吃80g，按0.8倍换算。",
+      "kcal_base_estimate": 134.9904397705545,
+      "kcal_booked": 134.9904397705545,
+      "kcal_range": [
+        134.9904397705545,
+        134.9904397705545
+      ],
+      "protein_g_estimate": 11.6,
+      "fat_g_estimate": 5.6,
+      "carbs_g_estimate": 9.44,
+      "saturated_fat_g_estimate": 0.96,
+      "sugar_g_estimate": 4.4,
+      "sodium_mg_estimate": 750.4
+    }
+  ],
   "exercise_entries": [],
   "recovery": {
     "hunger": null,
@@ -64,29 +88,29 @@
     "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 0,
-    "intake_kcal_booked": 0,
-    "protein_g_estimate": 0,
-    "fat_g_estimate": 0,
-    "carbs_g_estimate": 0,
-    "intake_kcal_estimate": 0,
+    "intake_kcal_base_estimate": 134.9904397705545,
+    "intake_kcal_booked": 134.9904397705545,
+    "protein_g_estimate": 11.6,
+    "fat_g_estimate": 5.6,
+    "carbs_g_estimate": 9.44,
+    "intake_kcal_estimate": 134.9904397705545,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 0,
-      "fat_g": 0,
-      "carbs_g": 0
+      "protein_g": 11.6,
+      "fat_g": 5.6,
+      "carbs_g": 9.44
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      0,
-      0
+      134.9904397705545,
+      134.9904397705545
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 2219.7,
+    "estimated_deficit_kcal": 2084.7095602294453,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -95,8 +119,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 0,
-    "protein_by_meal_g": {},
+    "consumed_entries": 1,
+    "protein_by_meal_g": {
+      "未分类": 11.6
+    },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -115,9 +141,9 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
-    "sodium_mg_coverage_complete": false,
+    "sodium_mg_known_sum": 750.4,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
