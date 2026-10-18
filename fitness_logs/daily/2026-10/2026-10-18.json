@@ -9,7 +9,7 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "今日馒头一个暂估100g，实际大小和重量未称。"
+    "今日馒头实际只吃一小口，未称重，暂估熟馒头10g（可能5–20g），不按整只计算。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -99,21 +99,25 @@
       "id": "steamed_bun_est100g",
       "status": "consumed_estimated",
       "meal": "未分类",
-      "description": "馒头1个，暂按100g",
-      "reported_text": "一个馒头",
+      "description": "馒头只吃一小口（暂估约10g）",
+      "reported_text": "馒头也吃不下，只吃了一小口",
       "source_kind": "database_estimate",
-      "basis": "普通白面熟馒头一只未称重，暂按100g、223kcal估算，份量70–130g。",
-      "quantity_g_estimate": 100,
-      "kcal_base_estimate": 223,
-      "kcal_booked": 223,
+      "basis": "用户更正：馒头一只并未吃完，仅吃一小口，暂按熟馒头10g（可能5–20g）折算。此前100g整只估算原位撤销；每100g采用223kcal、P7.2 F1.1 C46.7。",
+      "quantity_g_estimate": 10,
+      "kcal_base_estimate": 22.3,
+      "kcal_booked": 22.3,
       "kcal_range": [
-        156,
-        290
+        11.15,
+        44.6
       ],
-      "protein_g_estimate": 7.2,
-      "fat_g_estimate": 1.1,
-      "carbs_g_estimate": 46.7,
-      "uncertainty": "普通馒头大小不明，按100g估算。"
+      "protein_g_estimate": 0.72,
+      "fat_g_estimate": 0.11,
+      "carbs_g_estimate": 4.67,
+      "uncertainty": "仅一小口没有称重，按约10g暂估；不是整只馒头。",
+      "quantity_g_range": [
+        5,
+        20
+      ]
     },
     {
       "id": "hema_legs_box_18",
@@ -162,37 +166,58 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-18",
+      "entry_id": "steamed_bun_est100g",
+      "type": "portion_correction",
+      "previous": {
+        "quantity_g_estimate": 100,
+        "kcal_booked": 223,
+        "protein_g_estimate": 7.2,
+        "fat_g_estimate": 1.1,
+        "carbs_g_estimate": 46.7
+      },
+      "updated": {
+        "quantity_g_estimate": 10,
+        "kcal_booked": 22.3,
+        "protein_g_estimate": 0.72,
+        "fat_g_estimate": 0.11,
+        "carbs_g_estimate": 4.67
+      },
+      "reason": "用户明确更正馒头只吃一小口，并非整只。原位替换，不重复记账。"
+    }
+  ],
   "notes": [
     "2026-10-18起床空腹体重89.85kg，较前一日88.25kg增加1.60kg；用户直接报告的称重数据，按Asia/Shanghai记录。",
     "2026-10-17晚餐为用户已确认的自由餐：泡面1包、猪头肉约900g；用户明确不计算晚餐热量。次日体重变化可能受盐分、水分、糖原及胃肠内容物影响，单日不能判断脂肪变化；不将上一日自由餐自动计入本日。",
-    "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。",
-    "2026-10-18用户还实际吃了一盒盒马卤鸡腿和一盒五香居卤鸡腿。沿固定口径分别去皮去骨可食125g约183kcal、去皮去骨可食150g约262.5kcal。盒马鸡腿已入结构化条目，五香居鸡腿尚待同步；当前摄入数字小计不包括五香居鸡腿，绝不可宣称当天总摄入。"
+    "本日现已报告五类食物，训练尚未报告，日记录保持open。",
+    "2026-10-18用户还实际吃了一盒盒马卤鸡腿和一盒五香居卤鸡腿。沿固定口径分别去皮去骨可食125g约183kcal、去皮去骨可食150g约262.5kcal。盒马与五香居两盒鸡腿均已写入结构化食物条目；仍未确认全天饮食结束。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 866.362810707457,
-    "intake_kcal_booked": 866.362810707457,
-    "protein_g_estimate": 86.01239999999999,
-    "fat_g_estimate": 25.8576,
-    "carbs_g_estimate": 71.6666,
-    "intake_kcal_estimate": 866.362810707457,
+    "intake_kcal_base_estimate": 665.662810707457,
+    "intake_kcal_booked": 665.662810707457,
+    "protein_g_estimate": 79.5324,
+    "fat_g_estimate": 24.8676,
+    "carbs_g_estimate": 29.6366,
+    "intake_kcal_estimate": 665.662810707457,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 86.01239999999999,
-      "fat_g": 25.8576,
-      "carbs_g": 71.6666
+      "protein_g": 79.5324,
+      "fat_g": 24.8676,
+      "carbs_g": 29.6366
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      698.862810707457,
-      1072.862810707457
+      554.012810707457,
+      827.462810707457
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 1353.337189292543,
+    "estimated_deficit_kcal": 1554.0371892925427,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -203,7 +228,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 5,
     "protein_by_meal_g": {
-      "未分类": 86.01239999999999
+      "未分类": 79.5324
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -226,7 +251,7 @@
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 1329.4,
     "sodium_mg_entries_with_data": 3,
-    "sodium_mg_coverage_complete": true,
+    "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
