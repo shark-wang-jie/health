@@ -9,7 +9,8 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "今日馒头一个暂估100g，实际大小和重量未称。"
+    "今日馒头一个暂估100g，实际大小和重量未称。",
+    "10月18日盒马鸡腿及五香居鸡腿均已吃，尚未进入结构化摄入条目；两盒热量暂估合计445.5kcal，日数字小计不完整。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -127,7 +128,8 @@
   "notes": [
     "2026-10-18起床空腹体重89.85kg，较前一日88.25kg增加1.60kg；用户直接报告的称重数据，按Asia/Shanghai记录。",
     "2026-10-17晚餐为用户已确认的自由餐：泡面1包、猪头肉约900g；用户明确不计算晚餐热量。次日体重变化可能受盐分、水分、糖原及胃肠内容物影响，单日不能判断脂肪变化；不将上一日自由餐自动计入本日。",
-    "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。"
+    "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。",
+    "2026-10-18用户还实际吃了一盒盒马卤鸡腿和一盒五香居卤鸡腿。沿固定口径分别去皮去骨可食125g约183kcal、去皮去骨可食150g约262.5kcal。鸡腿结构化条目尚待同步，当前摄入数字小计不包括这两盒，绝不可宣称当天总摄入。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 420.862810707457,
