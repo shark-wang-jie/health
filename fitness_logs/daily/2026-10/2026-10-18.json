@@ -8,7 +8,9 @@
   "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
-  "missing_sections": [],
+  "missing_sections": [
+    "今日馒头一个暂估100g，实际大小和重量未称。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": null,
@@ -92,6 +94,26 @@
       "fat_g_estimate": 4.9776,
       "carbs_g_estimate": 0.8466,
       "sodium_mg_estimate": 0
+    },
+    {
+      "id": "steamed_bun_est100g",
+      "status": "consumed_estimated",
+      "meal": "未分类",
+      "description": "馒头1个，暂按100g",
+      "reported_text": "一个馒头",
+      "source_kind": "database_estimate",
+      "basis": "普通白面熟馒头一只未称重，暂按100g、223kcal估算，份量70–130g。",
+      "quantity_g_estimate": 100,
+      "kcal_base_estimate": 223,
+      "kcal_booked": 223,
+      "kcal_range": [
+        156,
+        290
+      ],
+      "protein_g_estimate": 7.2,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 46.7,
+      "uncertainty": "普通馒头大小不明，按100g估算。"
     }
   ],
   "exercise_entries": [],
@@ -108,29 +130,29 @@
     "今日尚未报告饮食和训练，保持food_coverage=unknown、training_status=unknown，不能推断休息日或已吃任何食物。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 197.862810707457,
-    "intake_kcal_booked": 197.862810707457,
-    "protein_g_estimate": 14.782399999999999,
-    "fat_g_estimate": 10.5776,
-    "carbs_g_estimate": 10.2866,
-    "intake_kcal_estimate": 197.862810707457,
+    "intake_kcal_base_estimate": 420.862810707457,
+    "intake_kcal_booked": 420.862810707457,
+    "protein_g_estimate": 21.9824,
+    "fat_g_estimate": 11.6776,
+    "carbs_g_estimate": 56.9866,
+    "intake_kcal_estimate": 420.862810707457,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 14.782399999999999,
-      "fat_g": 10.5776,
-      "carbs_g": 10.2866
+      "protein_g": 21.9824,
+      "fat_g": 11.6776,
+      "carbs_g": 56.9866
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      197.862810707457,
-      197.862810707457
+      353.862810707457,
+      487.862810707457
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 2021.837189292543,
+    "estimated_deficit_kcal": 1798.837189292543,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -139,14 +161,15 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "未分类": 14.782399999999999
+      "未分类": 21.9824
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
