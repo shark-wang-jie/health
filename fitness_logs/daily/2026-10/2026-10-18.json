@@ -9,8 +9,7 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "今日馒头一个暂估100g，实际大小和重量未称。",
-    "10月18日五香居鸡腿已吃，仍需写入结构化条目，当前数字小计不完整。"
+    "今日馒头一个暂估100g，实际大小和重量未称。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -135,6 +134,25 @@
       "carbs_g_estimate": 12.13,
       "sodium_mg_estimate": 579,
       "uncertainty": "未称重，沿用历史口径。"
+    },
+    {
+      "id": "oct18_wuxiangju",
+      "status": "consumed_estimated",
+      "meal": "未分类",
+      "description": "五香居鸡腿一盒",
+      "reported_text": "一盒五香居鸡腿",
+      "source_kind": "matched_default",
+      "basis": "沿此前同款已使用的去皮去骨估算，每盒约150g可食肉。",
+      "uncertainty": "食用净重没有称量。",
+      "kcal_base_estimate": 262.5,
+      "kcal_booked": 262.5,
+      "kcal_range": [
+        195,
+        350
+      ],
+      "protein_g_estimate": 36.9,
+      "fat_g_estimate": 11.55,
+      "carbs_g_estimate": 2.55
     }
   ],
   "exercise_entries": [],
@@ -152,29 +170,29 @@
     "2026-10-18用户还实际吃了一盒盒马卤鸡腿和一盒五香居卤鸡腿。沿固定口径分别去皮去骨可食125g约183kcal、去皮去骨可食150g约262.5kcal。盒马鸡腿已入结构化条目，五香居鸡腿尚待同步；当前摄入数字小计不包括五香居鸡腿，绝不可宣称当天总摄入。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 603.862810707457,
-    "intake_kcal_booked": 603.862810707457,
-    "protein_g_estimate": 49.112399999999994,
-    "fat_g_estimate": 14.3076,
-    "carbs_g_estimate": 69.1166,
-    "intake_kcal_estimate": 603.862810707457,
+    "intake_kcal_base_estimate": 866.362810707457,
+    "intake_kcal_booked": 866.362810707457,
+    "protein_g_estimate": 86.01239999999999,
+    "fat_g_estimate": 25.8576,
+    "carbs_g_estimate": 71.6666,
+    "intake_kcal_estimate": 866.362810707457,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 49.112399999999994,
-      "fat_g": 14.3076,
-      "carbs_g": 69.1166
+      "protein_g": 86.01239999999999,
+      "fat_g": 25.8576,
+      "carbs_g": 71.6666
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      503.862810707457,
-      722.862810707457
+      698.862810707457,
+      1072.862810707457
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 1615.837189292543,
+    "estimated_deficit_kcal": 1353.337189292543,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -183,9 +201,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
-      "未分类": 49.112399999999994
+      "未分类": 86.01239999999999
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
