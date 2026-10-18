@@ -140,23 +140,25 @@
       "uncertainty": "未称重，沿用历史口径。"
     },
     {
-      "id": "oct18_wuxiangju",
+      "id": "oct18_no6_sausage_150g",
       "status": "consumed_estimated",
       "meal": "未分类",
-      "description": "五香居鸡腿一盒",
-      "reported_text": "一盒五香居鸡腿",
+      "description": "六号肠1根（按150g）",
+      "reported_text": "五香居鸡腿没吃，换了一根六号肠",
       "source_kind": "matched_default",
-      "basis": "沿此前同款已使用的去皮去骨估算，每盒约150g可食肉。",
-      "uncertainty": "食用净重没有称量。",
-      "kcal_base_estimate": 262.5,
-      "kcal_booked": 262.5,
+      "basis": "用户纠正五香居鸡腿未吃，改为六号肠1根，沿同款150g/根及735kJ/100g、P13.9/F9.1/C9.5营养标签估算。",
+      "uncertainty": "本次单根未称重，沿用同款规格。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
       "kcal_range": [
-        195,
-        350
+        245,
+        282
       ],
-      "protein_g_estimate": 36.9,
-      "fat_g_estimate": 11.55,
-      "carbs_g_estimate": 2.55
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25,
+      "quantity_g_estimate": 150,
+      "sodium_mg_estimate": 1480.5
     }
   ],
   "exercise_entries": [],
@@ -186,38 +188,51 @@
         "carbs_g_estimate": 4.67
       },
       "reason": "用户明确更正馒头只吃一小口，并非整只。原位替换，不重复记账。"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "food_substitution",
+      "previous": {
+        "id": "oct18_wuxiangju",
+        "kcal": 262.5
+      },
+      "updated": {
+        "id": "oct18_no6_sausage_150g",
+        "kcal": 263.5038240917782
+      },
+      "reason": "五香居未吃，换成六号肠"
     }
   ],
   "notes": [
     "2026-10-18起床空腹体重89.85kg，较前一日88.25kg增加1.60kg；用户直接报告的称重数据，按Asia/Shanghai记录。",
     "2026-10-17晚餐为用户已确认的自由餐：泡面1包、猪头肉约900g；用户明确不计算晚餐热量。次日体重变化可能受盐分、水分、糖原及胃肠内容物影响，单日不能判断脂肪变化；不将上一日自由餐自动计入本日。",
     "本日现已报告五类食物，训练尚未报告，日记录保持open。",
-    "2026-10-18用户还实际吃了一盒盒马卤鸡腿和一盒五香居卤鸡腿。沿固定口径分别去皮去骨可食125g约183kcal、去皮去骨可食150g约262.5kcal。盒马与五香居两盒鸡腿均已写入结构化食物条目；仍未确认全天饮食结束。"
+    "10月18日更正：未吃五香居鸡腿，实际吃六号肠1根；馒头只吃一小口。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 665.662810707457,
-    "intake_kcal_booked": 665.662810707457,
-    "protein_g_estimate": 79.5324,
-    "fat_g_estimate": 24.8676,
-    "carbs_g_estimate": 29.6366,
-    "intake_kcal_estimate": 665.662810707457,
+    "intake_kcal_base_estimate": 666.6666347992352,
+    "intake_kcal_booked": 666.6666347992352,
+    "protein_g_estimate": 63.4824,
+    "fat_g_estimate": 26.967599999999997,
+    "carbs_g_estimate": 41.336600000000004,
+    "intake_kcal_estimate": 666.6666347992352,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 79.5324,
-      "fat_g": 24.8676,
-      "carbs_g": 29.6366
+      "protein_g": 63.4824,
+      "fat_g": 26.967599999999997,
+      "carbs_g": 41.336600000000004
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      554.012810707457,
-      827.462810707457
+      604.012810707457,
+      759.462810707457
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2219.7,
-    "estimated_deficit_kcal": 1554.0371892925427,
+    "estimated_deficit_kcal": 1553.0333652007646,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -228,7 +243,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 5,
     "protein_by_meal_g": {
-      "未分类": 79.5324
+      "未分类": 63.4824
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -249,8 +264,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1329.4,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 2809.9,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
