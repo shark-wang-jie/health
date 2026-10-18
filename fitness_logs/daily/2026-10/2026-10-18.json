@@ -9,8 +9,7 @@
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "今日馒头实际只吃一小口，未称重，暂估熟馒头10g（可能5–20g），不按整只计算。",
-    "练后牛脆脆一包50g未提供品牌和营养标签，营养值只按同类牛肉脆片暂估约232kcal、P28.7/F9.65/C7.45，产品差异可能较大，收到标签后应更正原条目。"
+    "今日馒头实际只吃一小口，未称重，暂估熟馒头10g（可能5–20g），不按整只计算。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -208,24 +207,25 @@
     },
     {
       "id": "oct18_postworkout_beef_crisps_50g",
-      "status": "consumed_estimated",
+      "status": "consumed",
       "meal": "snack",
-      "description": "牛脆脆1包50g（同类参考暂估）",
+      "description": "牛脆脆1包50g（按本品标签）",
       "reported_text": "一包50g牛脆脆",
-      "source_kind": "matched_default",
+      "source_kind": "label_known_quantity",
       "quantity_g": 50,
-      "basis": "用户确认吃牛脆脆一包50g，未提供品牌或营养标签。暂用公开同类'哈尼牧场香辣味安格斯牛脆脆'每100g能量1943kJ、蛋白质57.4g、脂肪19.3g、碳水14.9g按50g折半作为近似参照，不表示用户食用同一品牌/口味；来源中国疾控营养与健康所预包装食品营养标签查询系统。未来若提供本品标签则原位更正。",
-      "reference_url": "https://nlc.chinanutri.cn/food/LhAbNyaOQ4Ciu8mIynV_YA.html",
-      "kcal_base_estimate": 232.1940726577438,
-      "kcal_booked": 232.1940726577438,
+      "basis": "用户2026-10-18补上传实际所吃牛脆脆包装营养成分表，每100g能量2140kJ、蛋白质63.2g、脂肪27.0g、饱和脂肪10.6g、碳水3.9g、糖0g、钠484mg。用户当天实际吃1包50g，按一半换算。直接覆盖之前参考其他品牌的估计，不额外加余量。",
+      "kcal_base_estimate": 255.736137667304,
+      "kcal_booked": 255.736137667304,
       "kcal_range": [
-        170,
-        300
+        255.736137667304,
+        255.736137667304
       ],
-      "protein_g_estimate": 28.7,
-      "fat_g_estimate": 9.65,
-      "carbs_g_estimate": 7.45,
-      "uncertainty": "50g实际重量已知，但本次品牌配料和营养标签均未核实，不同牛脆脆可能与同类参考差异很大，热量暂给约170–300kcal的经验范围。"
+      "protein_g_estimate": 31.6,
+      "fat_g_estimate": 13.5,
+      "carbs_g_estimate": 1.95,
+      "saturated_fat_g_estimate": 5.3,
+      "sugar_g_estimate": 0,
+      "sodium_mg_estimate": 242
     }
   ],
   "exercise_entries": [
@@ -301,6 +301,26 @@
         "kcal": 263.5038240917782
       },
       "reason": "五香居未吃，换成六号肠"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "nutrition_label_correction",
+      "entry_id": "oct18_postworkout_beef_crisps_50g",
+      "previous": {
+        "kcal": 232.1940726577438,
+        "protein_g": 28.7,
+        "fat_g": 9.65,
+        "carbs_g": 7.45,
+        "source_kind": "matched_default"
+      },
+      "updated": {
+        "kcal": 255.736137667304,
+        "protein_g": 31.6,
+        "fat_g": 13.5,
+        "carbs_g": 1.95,
+        "source_kind": "label_known_quantity"
+      },
+      "reason": "用户提供本人所吃牛脆脆包装标签2140kJ/100g等营养值，按50g替换原不同品牌同类食品估算"
     }
   ],
   "notes": [
@@ -310,32 +330,33 @@
     "10月18日更正：未吃五香居鸡腿，实际吃六号肠1根；馒头只吃一小口。",
     "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。饮食记录仍open。",
     "10月18日已吃胡萝卜1根，暂按100g无油胡萝卜估40kcal，补齐此前交接摘要中的待同步食物，不重复记账。",
-    "10月18日练后实吃蒜香肠1根（沿之前同款150g），另吃牛脆脆1包50g。蒜香肠按既有包装，牛脆脆品牌营养标签尚未确认、只参考同类产品，不把估算当作用户所吃产品的实测标签。"
+    "10月18日练后实吃蒜香肠1根（沿之前同款150g），另吃牛脆脆1包50g。蒜香肠按既有包装，牛脆脆本品营养标签已在随后照片中确认，按每100g2140kJ等数值完成原位更正。",
+    "2026-10-18牛脆脆原同类食品暂估约232.19kcal已被实际包装标签修正：本品50g 255.74kcal、P31.6/F13.5/C1.95、钠242mg；旧值不再使用。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1174.7593690248566,
-    "intake_kcal_booked": 1174.7593690248566,
-    "protein_g_estimate": 111.68240000000002,
-    "fat_g_estimate": 47.16759999999999,
-    "carbs_g_estimate": 75.3366,
-    "intake_kcal_estimate": 1174.7593690248566,
+    "intake_kcal_base_estimate": 1198.3014340344168,
+    "intake_kcal_booked": 1198.3014340344168,
+    "protein_g_estimate": 114.5824,
+    "fat_g_estimate": 51.017599999999995,
+    "carbs_g_estimate": 69.8366,
+    "intake_kcal_estimate": 1198.3014340344168,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 111.68240000000002,
-      "fat_g": 47.16759999999999,
-      "carbs_g": 75.3366
+      "protein_g": 114.5824,
+      "fat_g": 51.017599999999995,
+      "carbs_g": 69.8366
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 303,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1018.012810707457,
-      1379.462810707457
+      1103.748948374761,
+      1335.1989483747611
     ],
     "exercise_active_kcal": 1212,
     "exercise_adjusted_kcal": 909,
     "tdee_kcal_estimate": 3128.7,
-    "estimated_deficit_kcal": 1953.9406309751432,
+    "estimated_deficit_kcal": 1930.398565965583,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -346,7 +367,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
-      "snack": 47.3,
+      "snack": 50.2,
       "未分类": 64.3824
     },
     "warnings": [
@@ -367,8 +388,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 4021.9,
-    "sodium_mg_entries_with_data": 5,
+    "sodium_mg_known_sum": 4263.9,
+    "sodium_mg_entries_with_data": 6,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
