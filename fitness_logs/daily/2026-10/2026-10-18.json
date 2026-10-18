@@ -9,7 +9,8 @@
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "今日馒头实际只吃一小口，未称重，暂估熟馒头10g（可能5–20g），不按整只计算。"
+    "今日馒头实际只吃一小口，未称重，暂估熟馒头10g（可能5–20g），不按整只计算。",
+    "晚餐娃娃菜一颗未称重，暂估可食250g；魔芋结200g无本次产品标签，清汤默认无新增食用油，若有食材剩余或明显加油再原位更正。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -226,6 +227,100 @@
       "saturated_fat_g_estimate": 5.3,
       "sugar_g_estimate": 0,
       "sodium_mg_estimate": 242
+    },
+    {
+      "id": "dinner_hema_skinless_chicken_box_2",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "晚餐盒马卤鸡腿另1盒（默认去皮去骨）",
+      "reported_text": "晚饭吃了一盒盒马鸡腿",
+      "source_kind": "matched_default",
+      "basis": "用户10月18日已报告白天吃1盒盒马鸡腿，晚饭又吃另一盒，确认为两次食用；使用已接受同款口径每盒两只带皮骨170g、去皮去骨后125g可食肉，按183kcal及P27.13/F2.63/C12.13估算。按非油炸腿默认去皮且骨头不吃，不将包装重当纯肉。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579,
+      "uncertainty": "晚餐这一盒无新标签和称重，沿用用户确认的同款默认份量。"
+    },
+    {
+      "id": "dinner_baby_cabbage_250g_est",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "娃娃菜1颗做汤（可食暂估250g）",
+      "reported_text": "晚上娃娃菜墨虾丸魔芋结汤也吃了；此前准备一颗娃娃菜",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 250,
+      "quantity_g_range": [
+        180,
+        300
+      ],
+      "basis": "晚餐汤实际已吃，沿用此前计划的娃娃菜1颗，估可食250g。以清水煮娃娃菜约14kcal/100g、P约1g、F0.1g、C约2.6g/100g估算，不包含额外食用油。",
+      "kcal_base_estimate": 35,
+      "kcal_booked": 35,
+      "kcal_range": [
+        25,
+        45
+      ],
+      "protein_g_estimate": 2.5,
+      "fat_g_estimate": 0.25,
+      "carbs_g_estimate": 6.5,
+      "fruit_vegetable_g_estimate": 250,
+      "uncertainty": "一颗娃娃菜实际重量未称；按约180–300g可食量，假设没有额外放油。"
+    },
+    {
+      "description": "潮汕味道墨虾丸1包250g（煮汤）",
+      "meal": "dinner",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 250,
+      "basis": "本餐确认实际吃了此前计划的整包墨虾丸250g。采用用户之前保存的同款营养标签每100g：371kJ、P14.6g、F0.7g、C5.7g、钠508mg。全包按2.5倍折算，不重复额外添加烹饪油。",
+      "kcal_base_estimate": 221.67782026768643,
+      "kcal_booked": 221.67782026768643,
+      "kcal_range": [
+        221.67782026768643,
+        221.67782026768643
+      ],
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 1.75,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 0.75,
+      "sugar_g_estimate": 4.25,
+      "sodium_mg_estimate": 1270,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签已知，无需附加余量"
+      },
+      "id": "dinner_chaoshan_moxiawan_250g",
+      "status": "consumed",
+      "reported_text": "晚上娃娃菜墨虾丸魔芋结汤也吃了；此前准备墨虾丸一包"
+    },
+    {
+      "id": "dinner_konjac_knots_200g",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "魔芋结一盒200g（煮汤）",
+      "reported_text": "晚上娃娃菜墨虾丸魔芋结汤也吃了；魔芋结200g",
+      "source_kind": "database_estimate",
+      "quantity_g": 200,
+      "basis": "用户明确魔芋结整盒200g，晚餐汤实际已吃；产品营养标签未提供，按普通原味沥水魔芋结每100g约15kcal、P0.1/F0.05/C3.5估算；不额外计算调味油。",
+      "kcal_base_estimate": 30,
+      "kcal_booked": 30,
+      "kcal_range": [
+        15,
+        45
+      ],
+      "protein_g_estimate": 0.2,
+      "fat_g_estimate": 0.1,
+      "carbs_g_estimate": 7,
+      "uncertainty": "包装净重确认200g但具体品牌、净沥水重和营养值未确认；按常见无油魔芋结经验估算。"
     }
   ],
   "exercise_entries": [
@@ -331,32 +426,33 @@
     "2026-10-18训练结束：12:55传统力量1:22:57动态655kcal；14:22室内步行0:51:41动态557kcal、3.16km。合计动态1212kcal，按0.75折算909kcal；总消耗不重复入账。饮食记录仍open。",
     "10月18日已吃胡萝卜1根，暂按100g无油胡萝卜估40kcal，补齐此前交接摘要中的待同步食物，不重复记账。",
     "10月18日练后实吃蒜香肠1根（沿之前同款150g），另吃牛脆脆1包50g。蒜香肠按既有包装，牛脆脆本品营养标签已在随后照片中确认，按每100g2140kJ等数值完成原位更正。",
-    "2026-10-18牛脆脆原同类食品暂估约232.19kcal已被实际包装标签修正：本品50g 255.74kcal、P31.6/F13.5/C1.95、钠242mg；旧值不再使用。"
+    "2026-10-18牛脆脆原同类食品暂估约232.19kcal已被实际包装标签修正：本品50g 255.74kcal、P31.6/F13.5/C1.95、钠242mg；旧值不再使用。",
+    "2026-10-18晚餐已实吃：白天那盒之外又吃盒马卤鸡腿1盒（默认去皮去骨）；此前计划的娃娃菜一颗、潮汕墨虾丸整包250g及魔芋结200g煮汤也吃了。汤按此前计划全量吃下、未报告额外放油作无油估算。红心火龙果此前仅询问热量，没有确认吃，不计入。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1198.3014340344168,
-    "intake_kcal_booked": 1198.3014340344168,
-    "protein_g_estimate": 114.5824,
-    "fat_g_estimate": 51.017599999999995,
-    "carbs_g_estimate": 69.8366,
-    "intake_kcal_estimate": 1198.3014340344168,
+    "intake_kcal_base_estimate": 1667.9792543021033,
+    "intake_kcal_booked": 1667.9792543021033,
+    "protein_g_estimate": 180.9124,
+    "fat_g_estimate": 55.7476,
+    "carbs_g_estimate": 109.7166,
+    "intake_kcal_estimate": 1667.9792543021033,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 114.5824,
-      "fat_g": 51.017599999999995,
-      "carbs_g": 69.8366
+      "protein_g": 180.9124,
+      "fat_g": 55.7476,
+      "carbs_g": 109.7166
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 303,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1103.748948374761,
-      1335.1989483747611
+      1515.4267686424475,
+      1881.8767686424476
     ],
     "exercise_active_kcal": 1212,
     "exercise_adjusted_kcal": 909,
     "tdee_kcal_estimate": 3128.7,
-    "estimated_deficit_kcal": 1930.398565965583,
+    "estimated_deficit_kcal": 1460.7207456978965,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -365,8 +461,9 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 8,
+    "consumed_entries": 12,
     "protein_by_meal_g": {
+      "dinner": 66.33,
       "snack": 50.2,
       "未分类": 64.3824
     },
@@ -388,11 +485,11 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 4263.9,
-    "sodium_mg_entries_with_data": 6,
+    "sodium_mg_known_sum": 6112.9,
+    "sodium_mg_entries_with_data": 8,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": null,
-    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_known_sum": 250,
+    "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   }
 }
