@@ -203,6 +203,7 @@
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 217.1,
     "fruit_vegetable_g_entries_with_data": 1,
-    "fruit_vegetable_g_coverage_complete": false
+    "fruit_vegetable_g_coverage_complete": false,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。"
   }
 }
