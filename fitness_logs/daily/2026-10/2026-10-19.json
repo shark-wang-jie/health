@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-19",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-19在提供室内单车训练截图后明确说“今日饮食训练结束”；此前已记录当日传统力量训练和5条实际吃下的食物。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "早餐牛奶未重新确认品牌及瓶规格，沿历史同款悦鲜活生牛乳260mL估算；烤土豆沿用无油口径，若实际加油再原位更正。",
     "本次沙县鸡腿饭沿历史两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝套餐估算，配菜份量未确认。",
@@ -195,6 +195,20 @@
       "duration_seconds": 3552,
       "start_local": "2026-10-19T17:39:00+08:00",
       "end_local": "2026-10-19T18:38:00+08:00"
+    },
+    {
+      "id": "indoor_cycle_2026_10_19_2046",
+      "event_id": "indoor_cycle_2026_10_19_2046",
+      "type": "室内单车",
+      "start_local": "2026-10-19T20:46:00+08:00",
+      "end_local": "2026-10-19T21:28:00+08:00",
+      "duration_seconds": 2504,
+      "duration": "0:41:44",
+      "active_kcal": 450,
+      "total_kcal": 527,
+      "average_heart_rate_bpm": 146,
+      "energy_scope": "session_active",
+      "source": "用户2026-10-19 Apple Fitness截图：室内单车20:46–21:28，训练时间0:41:44，动态450kcal、总527kcal，平均心率146次/分；只计本次动态消耗，不重复记总卡。"
     }
   ],
   "recovery": {
@@ -206,7 +220,9 @@
   "corrections": [],
   "notes": [
     "2026-10-19起床空腹体重90.20kg；10月18日89.85kg，较昨日+0.35kg，为单次实测体重波动，不推断为脂肪变化。",
-    "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。10月19日训练尚未报告，饮食尚未结束。"
+    "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。后续用户已补报传统力量和室内单车并确认当日饮食训练均结束，已封账。",
+    "2026-10-19训练日最终确认：传统力量17:39–18:38，0:59:12，动态533kcal、平均心率129；室内单车20:46–21:28，0:41:44，动态450kcal、平均心率146。合计本次动态消耗983kcal，按训练折算系数0.75记入模型737.25kcal；用户明确确认今日饮食训练结束，封账。",
+    "今日截至封账共实吃5条：早餐无油烤土豆190g及牛奶一瓶暂按悦鲜活260mL；午餐沙县鸡腿饭沿历史去皮鸡腿双腿套餐；练后烤土豆约330g及盒马去皮鸡腿一盒。饮食已确认结束，但餐馆配菜、用油及部分份量仍为估算，不把模型算术差视作已核实的能量缺口。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1729.9460803059274,
@@ -222,16 +238,16 @@
       "carbs_g": 225.84999999999997
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 133.25,
+    "training_discount_kcal": 245.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1494.0460803059273,
       2004.8460803059272
     ],
-    "exercise_active_kcal": 533,
-    "exercise_adjusted_kcal": 399.75,
-    "tdee_kcal_estimate": 2623.65,
-    "estimated_deficit_kcal": 805.2039196940727,
+    "exercise_active_kcal": 983,
+    "exercise_adjusted_kcal": 737.25,
+    "tdee_kcal_estimate": 2961.15,
+    "estimated_deficit_kcal": 1142.7039196940727,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -247,9 +263,6 @@
       "snack": 35.379999999999995
     },
     "warnings": [
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
