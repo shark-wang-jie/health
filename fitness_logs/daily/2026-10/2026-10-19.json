@@ -127,7 +127,19 @@
         "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "未知餐馆用油按历史额外记账88.5kcal"
-      }
+      },
+      "protein_g_range": [
+        57,
+        84
+      ],
+      "fat_g_range": [
+        18,
+        51
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ]
     },
     {
       "id": "snack_potato_330g_19",
