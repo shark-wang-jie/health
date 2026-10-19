@@ -127,6 +127,26 @@
         "already_in_base": false,
         "reason": "未知餐馆用油按历史额外记账88.5kcal"
       }
+    },
+    {
+      "id": "snack_potato_330g_19",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "练后烤土豆约330g（无油）",
+      "reported_text": "练后大概330g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g_estimate": 330,
+      "basis": "每100g无油烤土豆93kcal、P2.5/F0.1/C21.2，按约330g。",
+      "uncertainty": "实际重量为约数，范围约300–360g，未另报用油。",
+      "kcal_base_estimate": 306.9,
+      "kcal_booked": 306.9,
+      "kcal_range": [
+        279,
+        334.8
+      ],
+      "protein_g_estimate": 8.25,
+      "fat_g_estimate": 0.33,
+      "carbs_g_estimate": 69.96
     }
   ],
   "exercise_entries": [
@@ -156,29 +176,29 @@
     "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。10月19日训练尚未报告，饮食尚未结束。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1240.0460803059273,
-    "intake_kcal_booked": 1328.5460803059273,
-    "protein_g_estimate": 84.61,
-    "fat_g_estimate": 47.16333333333334,
-    "carbs_g_estimate": 143.76,
-    "intake_kcal_estimate": 1328.5460803059273,
+    "intake_kcal_base_estimate": 1546.9460803059274,
+    "intake_kcal_booked": 1635.4460803059274,
+    "protein_g_estimate": 92.86,
+    "fat_g_estimate": 47.49333333333334,
+    "carbs_g_estimate": 213.71999999999997,
+    "intake_kcal_estimate": 1635.4460803059274,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 84.61,
-      "fat_g": 37.33,
-      "carbs_g": 143.76
+      "protein_g": 92.86,
+      "fat_g": 37.66,
+      "carbs_g": 213.71999999999997
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 133.25,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1065.0460803059273,
-      1435.0460803059273
+      1344.0460803059273,
+      1769.8460803059272
     ],
     "exercise_active_kcal": 533,
     "exercise_adjusted_kcal": 399.75,
     "tdee_kcal_estimate": 2623.65,
-    "estimated_deficit_kcal": 1295.1039196940728,
+    "estimated_deficit_kcal": 988.2039196940727,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -187,10 +207,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
       "breakfast": 14.110000000000001,
-      "lunch": 70.5
+      "lunch": 70.5,
+      "snack": 8.25
     },
     "warnings": [
       "已报告部分训练，全天训练是否报完尚未确认",
