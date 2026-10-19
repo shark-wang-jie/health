@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户2026-10-19在提供室内单车训练截图后明确说“今日饮食训练结束”；此前已记录当日传统力量训练和5条实际吃下的食物。",
+  "closure_basis": "用户2026-10-19先确认当日饮食训练结束，随后明确补报当晚实际再吃南瓜子9.6g，并再次说“今日结束”。补报已录入，饮食和训练继续保持final封账。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -180,6 +180,26 @@
       "fat_g_estimate": 2.63,
       "carbs_g_estimate": 12.13,
       "sodium_mg_estimate": 579
+    },
+    {
+      "id": "late_pumpkin_seeds_9_6g_oct19",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "当晚补吃南瓜子9.6g",
+      "reported_text": "又补了9.6g南瓜子，今日结束",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 9.6,
+      "basis": "用户明确2026-10-19封账后补报同日实际吃下南瓜子9.6g，沿此前同款营养标签每100g能量2579kJ、P31.2g/F48.8g/C8.3g、钠0mg，乘以9.6/100换算。只新增本次9.6g，不重复其他日期已吃南瓜子。",
+      "kcal_base_estimate": 59.17399617590822,
+      "kcal_booked": 59.17399617590822,
+      "kcal_range": [
+        59.17399617590822,
+        59.17399617590822
+      ],
+      "protein_g_estimate": 2.9952,
+      "fat_g_estimate": 4.6848,
+      "carbs_g_estimate": 0.7968000000000001,
+      "sodium_mg_estimate": 0
     }
   ],
   "exercise_entries": [
@@ -217,37 +237,45 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-19",
+      "type": "post_closure_addition",
+      "entry_id": "late_pumpkin_seeds_9_6g_oct19",
+      "reason": "用户明确封账后补报同日实吃南瓜子9.6g并重新确认今日结束。新增独立实际摄入，不撤销封账，不重复已记条目。"
+    }
+  ],
   "notes": [
     "2026-10-19起床空腹体重90.20kg；10月18日89.85kg，较昨日+0.35kg，为单次实测体重波动，不推断为脂肪变化。",
     "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。后续用户已补报传统力量和室内单车并确认当日饮食训练均结束，已封账。",
     "2026-10-19训练日最终确认：传统力量17:39–18:38，0:59:12，动态533kcal、平均心率129；室内单车20:46–21:28，0:41:44，动态450kcal、平均心率146。合计本次动态消耗983kcal，按训练折算系数0.75记入模型737.25kcal；用户明确确认今日饮食训练结束，封账。",
-    "今日截至封账共实吃5条：早餐无油烤土豆190g及牛奶一瓶暂按悦鲜活260mL；午餐沙县鸡腿饭沿历史去皮鸡腿双腿套餐；练后烤土豆约330g及盒马去皮鸡腿一盒。饮食已确认结束，但餐馆配菜、用油及部分份量仍为估算，不把模型算术差视作已核实的能量缺口。"
+    "今日截至封账共实吃5条：早餐无油烤土豆190g及牛奶一瓶暂按悦鲜活260mL；午餐沙县鸡腿饭沿历史去皮鸡腿双腿套餐；练后烤土豆约330g及盒马去皮鸡腿一盒。饮食已确认结束，但餐馆配菜、用油及部分份量仍为估算，不把模型算术差视作已核实的能量缺口。",
+    "2026-10-19首次封账后用户补报当晚又实际吃南瓜子9.6g，按既有同款标签2579kJ/100g估约59.18kcal；用户同时再次确认今日结束，原5条扩为6条；训练两项原值保持不变。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1729.9460803059274,
-    "intake_kcal_booked": 1818.4460803059274,
-    "protein_g_estimate": 119.99,
-    "fat_g_estimate": 50.12333333333334,
-    "carbs_g_estimate": 225.84999999999997,
-    "intake_kcal_estimate": 1818.4460803059274,
+    "intake_kcal_base_estimate": 1789.1200764818357,
+    "intake_kcal_booked": 1877.6200764818357,
+    "protein_g_estimate": 122.98519999999999,
+    "fat_g_estimate": 54.808133333333345,
+    "carbs_g_estimate": 226.64679999999996,
+    "intake_kcal_estimate": 1877.6200764818357,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 119.99,
-      "fat_g": 40.28999999999999,
-      "carbs_g": 225.84999999999997
+      "protein_g": 122.98519999999999,
+      "fat_g": 44.9748,
+      "carbs_g": 226.64679999999996
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 245.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1494.0460803059273,
-      2004.8460803059272
+      1553.2200764818356,
+      2064.0200764818355
     ],
     "exercise_active_kcal": 983,
     "exercise_adjusted_kcal": 737.25,
     "tdee_kcal_estimate": 2961.15,
-    "estimated_deficit_kcal": 1142.7039196940727,
+    "estimated_deficit_kcal": 1083.5299235181644,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -256,11 +284,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 14.110000000000001,
       "lunch": 70.5,
-      "snack": 35.379999999999995
+      "snack": 38.37519999999999
     },
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
@@ -279,7 +307,7 @@
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 735,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
