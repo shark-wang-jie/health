@@ -1,0 +1,208 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "火龙果334g为带皮重量，果肉按约217g估；土豆约100g默认无油，牛奶沿悦鲜活260mL。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.05,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.05,
+    "bmr_weight_date": "2026-10-20",
+    "bmr_kcal": 1831.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_10_8g",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "南瓜子10.8g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 10.8,
+      "basis": "沿已确认标签2579kJ、P31.2/F48.8/C8.3每100g按10.8g换算。",
+      "kcal_base_estimate": 66.57074569789675,
+      "kcal_booked": 66.57074569789675,
+      "kcal_range": [
+        66.57074569789675,
+        66.57074569789675
+      ],
+      "protein_g_estimate": 3.3696,
+      "fat_g_estimate": 5.2704,
+      "carbs_g_estimate": 0.8964,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_red_dragon_334g_with_skin",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "红心火龙果1个（带皮334g，可食约217g）",
+      "source_kind": "database_estimate",
+      "gross_weight_g": 334,
+      "edible_weight_g_estimate": 217.1,
+      "basis": "整果334g，按65%可食果肉约217g；果肉每100g约55kcal、P1/F0.2/C12。",
+      "kcal_base_estimate": 119.405,
+      "kcal_booked": 119.405,
+      "kcal_range": [
+        100,
+        140
+      ],
+      "protein_g_estimate": 2.171,
+      "fat_g_estimate": 0.4342,
+      "carbs_g_estimate": 26.052,
+      "fruit_vegetable_g_estimate": 217.1,
+      "uncertainty": "皮重未知，可食率暂按60–70%，非334g纯果肉。"
+    },
+    {
+      "id": "breakfast_potato_est100g",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "无油烤土豆约100g",
+      "source_kind": "matched_default",
+      "quantity_g_estimate": 100,
+      "basis": "沿历史无油熟烤土豆每100g93kcal、P2.5/F0.1/C21.2。",
+      "kcal_base_estimate": 93,
+      "kcal_booked": 93,
+      "kcal_range": [
+        74.4,
+        111.6
+      ],
+      "protein_g_estimate": 2.5,
+      "fat_g_estimate": 0.1,
+      "carbs_g_estimate": 21.2,
+      "uncertainty": "重量为约数，假设无油。"
+    },
+    {
+      "id": "breakfast_milk_260ml_default",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "牛奶1瓶（沿同款悦鲜活260mL）",
+      "source_kind": "matched_default",
+      "quantity_ml": 260,
+      "basis": "暂按最近确认悦鲜活260mL，标签287kJ、P3.6/F3.9/C4.8每100mL。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.36,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "uncertainty": "本次未重新确认品牌及瓶规格。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "晨起空腹88.05kg，比10月19日90.20kg低2.15kg；短期水分和糖原波动，不代表一夜减脂2.15kg。",
+    "早餐四样已实际吃下；全天饮食未结束，训练未报告。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 457.32182600382407,
+    "intake_kcal_booked": 457.32182600382407,
+    "protein_g_estimate": 17.400599999999997,
+    "fat_g_estimate": 15.944600000000001,
+    "carbs_g_estimate": 60.6284,
+    "intake_kcal_estimate": 457.32182600382407,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 17.400599999999997,
+      "fat_g": 15.944600000000001,
+      "carbs_g": 60.6284
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "intake_kcal_range": [
+      419.3168260038241,
+      496.5168260038241
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2198.1,
+    "estimated_deficit_kcal": 1740.7781739961758,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 4,
+    "protein_by_meal_g": {
+      "breakfast": 17.400599999999997
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 156,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": 217.1,
+    "fruit_vegetable_g_entries_with_data": 1,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
