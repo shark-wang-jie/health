@@ -9,7 +9,8 @@
   "training_status": "reported_training",
   "training_coverage": "partial",
   "missing_sections": [
-    "早餐牛奶未重新确认品牌及瓶规格，沿历史同款悦鲜活生牛乳260mL估算；烤土豆沿用无油口径，若实际加油再原位更正。"
+    "早餐牛奶未重新确认品牌及瓶规格，沿历史同款悦鲜活生牛乳260mL估算；烤土豆沿用无油口径，若实际加油再原位更正。",
+    "本次沙县鸡腿饭沿历史两只去皮鸡腿、米饭、炒白菜、卤蛋、不吃土豆丝套餐估算，配菜份量未确认。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -101,6 +102,31 @@
       "status": "consumed_estimated",
       "reported_text": "早饭一瓶牛奶",
       "uncertainty": "本次未说明品牌和毫升数；沿用已确认的悦鲜活生牛乳260mL默认口径。"
+    },
+    {
+      "id": "lunch_shaxian_legs_rice_19",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐沙县鸡腿饭（按常吃双去皮鸡腿套餐暂估）",
+      "reported_text": "午饭沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "basis": "沿历史套餐默认：两只去皮鸡腿、米饭、炒白菜、卤蛋，不吃土豆丝。未再次确认本份配菜及数量。",
+      "uncertainty": "本次配菜和份量未核对，历史套餐估算。",
+      "kcal_base_estimate": 885,
+      "kcal_booked": 973.5,
+      "kcal_range": [
+        710,
+        1080
+      ],
+      "protein_g_estimate": 70.5,
+      "fat_g_estimate": 36.83333333333334,
+      "carbs_g_estimate": 91,
+      "margin": {
+        "added_fat_g": 9.833333333333346,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "未知餐馆用油按历史额外记账88.5kcal"
+      }
     }
   ],
   "exercise_entries": [
@@ -130,29 +156,29 @@
     "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。10月19日训练尚未报告，饮食尚未结束。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 355.0460803059273,
-    "intake_kcal_booked": 355.0460803059273,
-    "protein_g_estimate": 14.110000000000001,
-    "fat_g_estimate": 10.33,
-    "carbs_g_estimate": 52.75999999999999,
-    "intake_kcal_estimate": 355.0460803059273,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1240.0460803059273,
+    "intake_kcal_booked": 1328.5460803059273,
+    "protein_g_estimate": 84.61,
+    "fat_g_estimate": 47.16333333333334,
+    "carbs_g_estimate": 143.76,
+    "intake_kcal_estimate": 1328.5460803059273,
+    "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 14.110000000000001,
-      "fat_g": 10.33,
-      "carbs_g": 52.75999999999999
+      "protein_g": 84.61,
+      "fat_g": 37.33,
+      "carbs_g": 143.76
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 133.25,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      355.0460803059273,
-      355.0460803059273
+      1065.0460803059273,
+      1435.0460803059273
     ],
     "exercise_active_kcal": 533,
     "exercise_adjusted_kcal": 399.75,
     "tdee_kcal_estimate": 2623.65,
-    "estimated_deficit_kcal": 2268.603919694073,
+    "estimated_deficit_kcal": 1295.1039196940728,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -161,9 +187,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "breakfast": 14.110000000000001
+      "breakfast": 14.110000000000001,
+      "lunch": 70.5
     },
     "warnings": [
       "已报告部分训练，全天训练是否报完尚未确认",
@@ -173,13 +200,13 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
