@@ -139,9 +139,17 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-20",
+      "type": "historical_comparison_correction",
+      "previous": "10月19日90.20kg；下降2.15kg",
+      "updated": "10月19日89.20kg；下降1.15kg",
+      "reason": "用户更正昨日空腹体重，本日自身晨重88.05kg保持不变。"
+    }
+  ],
   "notes": [
-    "晨起空腹88.05kg，比10月19日90.20kg低2.15kg；短期水分和糖原波动，不代表一夜减脂2.15kg。",
+    "晨起空腹88.05kg，比10月19日更正后的89.20kg低1.15kg；单日波动可能受水分和糖原影响，不代表减去1.15kg脂肪。",
     "早餐四样已实际吃下；全天饮食未结束，训练未报告。"
   ],
   "daily_summary": {
