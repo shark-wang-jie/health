@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户确认10月20日饮食训练结束且当天为休息日。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "火龙果334g为带皮重量，果肉按约217g估；土豆用户更正为约150g，默认无油，牛奶沿悦鲜活260mL。",
     "10月20日午餐沙县鸡腿饭的米饭和配菜克重未核实；沿历史双去皮鸡腿套餐默认估算973.5kcal。"
@@ -253,7 +253,7 @@
   ],
   "notes": [
     "晨起空腹88.05kg，比10月19日更正后的89.20kg低1.15kg；单日波动可能受水分和糖原影响，不代表减去1.15kg脂肪。",
-    "早餐四样已实际吃下；全天饮食未结束，训练未报告。",
+    "早餐、午餐和晚餐都已记录；用户确认当天饮食结束且没有训练，已封账。",
     "10月20日用户更正早上烤土豆为150g（原按100g），热量增加46.5kcal，蛋白质+1.25g、脂肪+0.05g、碳水+10.6g；只更正同一条，不重复入账。"
   ],
   "daily_summary": {
@@ -285,7 +285,7 @@
       1800,
       1800
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 7,
     "protein_by_meal_g": {
@@ -294,9 +294,6 @@
       "dinner": 31.88
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
