@@ -9,7 +9,7 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "火龙果334g为带皮重量，果肉按约217g估；土豆约100g默认无油，牛奶沿悦鲜活260mL。"
+    "火龙果334g为带皮重量，果肉按约217g估；土豆用户更正为约150g，默认无油，牛奶沿悦鲜活260mL。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -96,20 +96,25 @@
       "id": "breakfast_potato_est100g",
       "status": "consumed_estimated",
       "meal": "breakfast",
-      "description": "无油烤土豆约100g",
+      "description": "早餐无油烤土豆150g（用户更正）",
       "source_kind": "matched_default",
-      "quantity_g_estimate": 100,
-      "basis": "沿历史无油熟烤土豆每100g93kcal、P2.5/F0.1/C21.2。",
-      "kcal_base_estimate": 93,
-      "kcal_booked": 93,
+      "quantity_g_estimate": 150,
+      "basis": "用户2026-10-20更正当天早餐烤土豆原先约100g应为150g。按历史无油烤土豆每100g93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g，按150g换算。仅修改原早餐土豆条目，不新增一份。",
+      "kcal_base_estimate": 139.5,
+      "kcal_booked": 139.5,
       "kcal_range": [
-        74.4,
-        111.6
+        120.9,
+        158.1
       ],
-      "protein_g_estimate": 2.5,
-      "fat_g_estimate": 0.1,
-      "carbs_g_estimate": 21.2,
-      "uncertainty": "重量为约数，假设无油。"
+      "protein_g_estimate": 3.75,
+      "fat_g_estimate": 0.15,
+      "carbs_g_estimate": 31.8,
+      "uncertainty": "修正重量150g来自用户估计，实际未精确实称；沿用无油熟土豆口径，热量区间按130–170g的重量波动估算。",
+      "reported_text": "今早烤土豆应该150g",
+      "quantity_g_range": [
+        130,
+        170
+      ]
     },
     {
       "id": "breakfast_milk_260ml_default",
@@ -146,35 +151,56 @@
       "previous": "10月19日90.20kg；下降2.15kg",
       "updated": "10月19日89.20kg；下降1.15kg",
       "reason": "用户更正昨日空腹体重，本日自身晨重88.05kg保持不变。"
+    },
+    {
+      "date": "2026-10-20",
+      "type": "portion_correction",
+      "entry_id": "breakfast_potato_est100g",
+      "previous": {
+        "estimated_weight_g": 100,
+        "kcal": 93,
+        "protein": 2.5,
+        "fat": 0.1,
+        "carbs": 21.2
+      },
+      "updated": {
+        "estimated_weight_g": 150,
+        "kcal": 139.5,
+        "protein": 3.75,
+        "fat": 0.15,
+        "carbs": 31.8
+      },
+      "reason": "用户明确更正早上烤土豆应为150g，而不是原先约100g；原位更正避免重复记录。"
     }
   ],
   "notes": [
     "晨起空腹88.05kg，比10月19日更正后的89.20kg低1.15kg；单日波动可能受水分和糖原影响，不代表减去1.15kg脂肪。",
-    "早餐四样已实际吃下；全天饮食未结束，训练未报告。"
+    "早餐四样已实际吃下；全天饮食未结束，训练未报告。",
+    "10月20日用户更正早上烤土豆为150g（原按100g），热量增加46.5kcal，蛋白质+1.25g、脂肪+0.05g、碳水+10.6g；只更正同一条，不重复入账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 457.32182600382407,
-    "intake_kcal_booked": 457.32182600382407,
-    "protein_g_estimate": 17.400599999999997,
-    "fat_g_estimate": 15.944600000000001,
-    "carbs_g_estimate": 60.6284,
-    "intake_kcal_estimate": 457.32182600382407,
+    "intake_kcal_base_estimate": 503.82182600382407,
+    "intake_kcal_booked": 503.82182600382407,
+    "protein_g_estimate": 18.650599999999997,
+    "fat_g_estimate": 15.994600000000002,
+    "carbs_g_estimate": 71.22840000000001,
+    "intake_kcal_estimate": 503.82182600382407,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 17.400599999999997,
-      "fat_g": 15.944600000000001,
-      "carbs_g": 60.6284
+      "protein_g": 18.650599999999997,
+      "fat_g": 15.994600000000002,
+      "carbs_g": 71.22840000000001
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "intake_kcal_range": [
-      419.3168260038241,
-      496.5168260038241
+      465.8168260038241,
+      543.0168260038241
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2198.1,
-    "estimated_deficit_kcal": 1740.7781739961758,
+    "estimated_deficit_kcal": 1694.2781739961758,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -185,7 +211,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 17.400599999999997
+      "breakfast": 18.650599999999997
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
