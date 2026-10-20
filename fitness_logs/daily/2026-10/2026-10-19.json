@@ -15,16 +15,16 @@
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
-  "weight_measurement_note": null,
+  "weight_measurement_note": "用户2026-10-20更正10月19日空腹体重：90.20kg为误记，正确89.20kg。",
   "plan_version": "2026-09-08-v3.2",
-  "morning_weight_kg": 90.2,
+  "morning_weight_kg": 89.2,
   "profile_snapshot": {
     "sex": "男性",
     "age": 27,
     "height_cm": 173,
-    "bmr_weight_kg": 90.2,
+    "bmr_weight_kg": 89.2,
     "bmr_weight_date": "2026-10-19",
-    "bmr_kcal": 1853.25
+    "bmr_kcal": 1843.25
   },
   "energy_method": {
     "algorithm": "tdee_v1",
@@ -243,10 +243,17 @@
       "type": "post_closure_addition",
       "entry_id": "late_pumpkin_seeds_9_6g_oct19",
       "reason": "用户明确封账后补报同日实吃南瓜子9.6g并重新确认今日结束。新增独立实际摄入，不撤销封账，不重复已记条目。"
+    },
+    {
+      "date": "2026-10-20",
+      "type": "weight_correction",
+      "previous": 90.2,
+      "updated": 89.2,
+      "reason": "用户更正10月19日空腹体重"
     }
   ],
   "notes": [
-    "2026-10-19起床空腹体重90.20kg；10月18日89.85kg，较昨日+0.35kg，为单次实测体重波动，不推断为脂肪变化。",
+    "2026-10-19空腹体重89.20kg（10月20日更正原误记90.20kg），较10月18日89.85kg下降0.65kg。",
     "早餐已实际吃190g烤土豆与牛奶1瓶；烤土豆按历史无油烤制口径，牛奶暂沿历史悦鲜活生牛乳260mL标签。后续用户已补报传统力量和室内单车并确认当日饮食训练均结束，已封账。",
     "2026-10-19训练日最终确认：传统力量17:39–18:38，0:59:12，动态533kcal、平均心率129；室内单车20:46–21:28，0:41:44，动态450kcal、平均心率146。合计本次动态消耗983kcal，按训练折算系数0.75记入模型737.25kcal；用户明确确认今日饮食训练结束，封账。",
     "今日截至封账共实吃5条：早餐无油烤土豆190g及牛奶一瓶暂按悦鲜活260mL；午餐沙县鸡腿饭沿历史去皮鸡腿双腿套餐；练后烤土豆约330g及盒马去皮鸡腿一盒。饮食已确认结束，但餐馆配菜、用油及部分份量仍为估算，不把模型算术差视作已核实的能量缺口。",
@@ -274,8 +281,8 @@
     ],
     "exercise_active_kcal": 983,
     "exercise_adjusted_kcal": 737.25,
-    "tdee_kcal_estimate": 2961.15,
-    "estimated_deficit_kcal": 1083.5299235181644,
+    "tdee_kcal_estimate": 2949.15,
+    "estimated_deficit_kcal": 1071.5299235181644,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
