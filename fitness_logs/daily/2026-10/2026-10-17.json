@@ -269,28 +269,28 @@
     "fat_g_estimate": 54.86800000000001,
     "carbs_g_estimate": 201.19299999999998,
     "intake_kcal_estimate": 1786.5721797323135,
-    "food_margin_kcal": 45,
+    "food_margin_kcal": 45.0,
     "base_macro_estimates": {
       "protein_g": 114.042,
       "fat_g": 49.86800000000001,
       "carbs_g": 201.19299999999998
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 172,
+    "training_discount_kcal": 172.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1525.5721797323135,
       2116.5721797323135
     ],
-    "exercise_active_kcal": 688,
-    "exercise_adjusted_kcal": 516,
+    "exercise_active_kcal": 688.0,
+    "exercise_adjusted_kcal": 516.0,
     "tdee_kcal_estimate": 2716.5,
     "estimated_deficit_kcal": 929.9278202676865,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
