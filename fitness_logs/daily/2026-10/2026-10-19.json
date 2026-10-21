@@ -279,15 +279,15 @@
       1553.2200764818356,
       2064.0200764818355
     ],
-    "exercise_active_kcal": 983,
+    "exercise_active_kcal": 983.0,
     "exercise_adjusted_kcal": 737.25,
     "tdee_kcal_estimate": 2949.15,
     "estimated_deficit_kcal": 1071.5299235181644,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -295,7 +295,7 @@
     "protein_by_meal_g": {
       "breakfast": 14.110000000000001,
       "lunch": 70.5,
-      "snack": 38.37519999999999
+      "snack": 38.3752
     },
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
@@ -313,7 +313,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 735,
+    "sodium_mg_known_sum": 735.0,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
