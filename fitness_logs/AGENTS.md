@@ -19,3 +19,5 @@
 
 
 月度总结自动任务：`automation/monthly_review.py`由`com.wangjie.health.monthly-review` LaunchAgent在每月1日00:15及每15分钟检查。日期按Asia/Shanghai，只为已结束且有日记录、尚无总结的月份生成，已有总结保留，不自动覆盖。与每日复核共用锁、专用checkout和Git代理；隔离生成后通过jq检查，只提交新月总结并普通推送。失败保留副本，下次检查重试；断网后的月总结提交可由每日或月度任务恢复推送。状态为仓库外`state/monthly/latest.json`，日志为`~/Library/Logs/health/monthly.log`。资料缺失或未全封账仍如实标记，调度成功不等于资料完整。
+
+2026-10-21 Git同步保护：每日和月度任务在rebase前先检查本地领先提交，仅认可标准自动复核或月总结提交；其他本地提交直接交人工处理。本轮rebase失败先把原HEAD、冲突状态与补丁保存到仓库外`state/git-sync/`，再abort回到原main，保留本地提交，避免污染共用checkout。启动时已有的rebase不自动处理。

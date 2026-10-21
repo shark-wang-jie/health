@@ -55,6 +55,65 @@ class DailyReviewRecoveryTests(unittest.TestCase):
         return subprocess.run(['bash', str(SCRIPT)], env=dict(self.env, **env),
                               capture_output=True, text=True).returncode
 
+    def conflicting_commits(self, subject):
+        relative = 'fitness_logs/sync-fixture.txt'
+        (self.repo / relative).write_text('base\n')
+        self.git('add', relative)
+        self.git('commit', '-qm', 'shared conflict fixture')
+        self.git('push', '-q', 'origin', 'main')
+        peer = self.root / 'peer'
+        self.git('clone', '--quiet', str(self.remote), str(peer), cwd=self.root)
+        (self.repo / relative).write_text('local automated work\n')
+        self.git('add', relative)
+        self.git('commit', '-qm', subject)
+        original_head = self.git('rev-parse', 'HEAD')
+        (peer / relative).write_text('remote user update\n')
+        self.git('add', relative, cwd=peer)
+        self.git('commit', '-qm', 'remote user update', cwd=peer)
+        self.git('push', '-q', 'origin', 'main', cwd=peer)
+        return original_head
+
+    def assert_original_checkout(self, original_head):
+        self.assertEqual(self.git('branch', '--show-current'), 'main')
+        self.assertEqual(self.git('status', '--porcelain'), '')
+        self.assertEqual(self.git('rev-parse', 'HEAD'), original_head)
+        self.assertFalse((self.repo / '.git/rebase-merge').exists())
+        self.assertFalse((self.repo / '.git/rebase-apply').exists())
+        self.assertEqual((self.repo / 'fitness_logs/sync-fixture.txt').read_text(),
+                         'local automated work\n')
+
+    def test_sync_conflict_aborts_and_preserves_automation_commit(self):
+        original_head = self.conflicting_commits(f'fitness: automated review {TARGET}')
+        self.assertEqual(self.run_review(), 70)
+        self.assert_original_checkout(original_head)
+        self.assertEqual(self.git('log', '--format=%s', 'origin/main..HEAD'),
+                         f'fitness: automated review {TARGET}')
+        evidence = list((self.state / 'git-sync').iterdir())
+        self.assertEqual(len(evidence), 1)
+        self.assertEqual((evidence[0] / 'original-head.txt').read_text().strip(), original_head)
+        self.assertIn('UU fitness_logs/sync-fixture.txt', (evidence[0] / 'status.txt').read_text())
+        self.assertIn('local automated work', (evidence[0] / 'current-commit.patch').read_text())
+
+    def test_unrecognized_local_commit_is_rejected_before_rebase(self):
+        original_head = self.conflicting_commits('user work must stay untouched')
+        self.assertEqual(self.run_review(), 65)
+        self.assert_original_checkout(original_head)
+        self.assertFalse((self.state / 'git-sync').exists())
+
+    def test_existing_rebase_is_left_untouched(self):
+        self.conflicting_commits(f'fitness: automated review {TARGET}')
+        self.git('fetch', 'origin')
+        result = subprocess.run(['git', 'rebase', 'origin/main'], cwd=self.repo,
+                                capture_output=True)
+        self.assertNotEqual(result.returncode, 0)
+        before_status = self.git('status', '--porcelain')
+        before_head = self.git('rev-parse', 'HEAD')
+        self.assertEqual(self.run_review(), 72)
+        self.assertEqual(self.git('status', '--porcelain'), before_status)
+        self.assertEqual(self.git('rev-parse', 'HEAD'), before_head)
+        self.assertTrue((self.repo / '.git/rebase-merge').exists())
+        self.assertFalse((self.state / 'git-sync').exists())
+
     def test_quota_failure_leaves_clean_checkout_and_retry_succeeds(self):
         before = (self.repo / REL).read_bytes()
         self.assertEqual(self.run_review(FAKE_AI_EXIT='1'), 67)

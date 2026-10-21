@@ -371,6 +371,11 @@ if ! cd "$REPO_ROOT"; then
 fi
 
 actual_root="$($GIT rev-parse --show-toplevel 2>/dev/null || true)"
+if [ "$actual_root" = "$REPO_ROOT" ] && \
+   { [ -d "$($GIT rev-parse --git-path rebase-merge)" ] || [ -d "$($GIT rev-parse --git-path rebase-apply)" ]; }; then
+  log "failure reason: pre-existing rebase requires manual review; left untouched"
+  exit 72
+fi
 branch="$($GIT branch --show-current 2>/dev/null || true)"
 if [ "$actual_root" != "$REPO_ROOT" ] || [ "$branch" != "main" ]; then
   log "failure reason: expected repository root $REPO_ROOT on main; got root=$actual_root branch=$branch"
@@ -390,14 +395,6 @@ if ! network_retry "git fetch" git_network fetch origin; then
   exit 70
 fi
 
-log "git rebase origin/main: start"
-if ! $GIT rebase origin/main; then
-  log "failure reason: git rebase origin/main failed or conflicted; manual resolution required"
-  exit 70
-fi
-log "pull result: success via fetched origin/main and local rebase head=$($GIT rev-parse HEAD)"
-synced_remote_sha="$($GIT rev-parse origin/main)"
-
 ahead_count="$($GIT rev-list --count origin/main..HEAD)"
 if [ "$ahead_count" -gt 0 ]; then
   unexpected_subjects="$($GIT log --format='%s' origin/main..HEAD | /usr/bin/grep -Ev '^fitness: automated (review [0-9]{4}-[0-9]{2}-[0-9]{2}|monthly summary [0-9]{4}-[0-9]{2})$' || true)"
@@ -406,6 +403,43 @@ if [ "$ahead_count" -gt 0 ]; then
     printf '%s\n' "$unexpected_subjects"
     exit 65
   fi
+fi
+
+pre_rebase_head="$($GIT rev-parse HEAD)"
+log "git rebase origin/main: start"
+if ! $GIT rebase origin/main; then
+  # Only this run's rebase may be aborted. Keep evidence outside the durable
+  # checkout before restoring its original branch, commits and clean tree.
+  evidence_dir="$STATE_ROOT/git-sync/daily-$TARGET_DATE-$$"
+  if $MKDIR -p "$evidence_dir"; then
+    printf '%s\n' "$pre_rebase_head" >"$evidence_dir/original-head.txt"
+    $GIT status --porcelain=v1 >"$evidence_dir/status.txt"
+    $GIT diff --binary >"$evidence_dir/conflict.diff"
+    $GIT rebase --show-current-patch >"$evidence_dir/current-commit.patch" 2>/dev/null || true
+    log "git sync failure evidence: $evidence_dir"
+  fi
+  if [ -d "$($GIT rev-parse --git-path rebase-merge)" ] || [ -d "$($GIT rev-parse --git-path rebase-apply)" ]; then
+    if $GIT rebase --abort; then
+      if [ "$($GIT branch --show-current)" != "main" ] || \
+         [ "$($GIT rev-parse HEAD)" != "$pre_rebase_head" ] || \
+         [ -n "$($GIT status --porcelain)" ]; then
+        log "failure reason: aborted rebase did not restore original clean main; manual review required"
+        exit 72
+      fi
+      log "git rebase aborted; original local commits retained on main"
+    else
+      log "failure reason: could not abort this run's rebase; manual review required"
+      exit 72
+    fi
+  fi
+  log "failure reason: git rebase origin/main failed or conflicted; manual resolution required"
+  exit 70
+fi
+log "pull result: success via fetched origin/main and local rebase head=$($GIT rev-parse HEAD)"
+synced_remote_sha="$($GIT rev-parse origin/main)"
+
+ahead_count="$($GIT rev-list --count origin/main..HEAD)"
+if [ "$ahead_count" -gt 0 ]; then
   log "recovery push: found $ahead_count previously committed automated review commit(s)"
   if ! network_retry "recovery push" git_network push origin main; then
     log "failure reason: recovery push failed; commit retained locally"

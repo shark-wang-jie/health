@@ -25,6 +25,8 @@ class MonthlyReviewTests(unittest.TestCase):
         self.remote = self.root / 'remote.git'
         self.git('clone', '--quiet', str(ROOT), str(self.repo), cwd=self.root)
         shutil.copyfile(SCRIPT, self.repo / 'fitness_logs/automation/monthly_review.py')
+        # Keep a missing finished month regardless of summaries already in ROOT.
+        (self.repo / 'fitness_logs/daily/2026-09/2026-09-summary.json').unlink(missing_ok=True)
         self.git('add', '.')
         self.git('commit', '-qm', 'install monthly runner')
         self.git('init', '--bare', '--quiet', str(self.remote), cwd=self.root)
@@ -41,6 +43,67 @@ class MonthlyReviewTests(unittest.TestCase):
 
     def execute(self):
         return subprocess.run(['python3', str(SCRIPT)], env=self.env, capture_output=True).returncode
+
+    def conflicting_commits(self, subject):
+        relative = 'fitness_logs/sync-fixture.txt'
+        (self.repo / relative).write_text('base\n')
+        self.git('add', relative)
+        self.git('commit', '-qm', 'shared conflict fixture')
+        self.git('push', '-q', 'origin', 'main')
+        peer = self.root / 'peer'
+        self.git('clone', '--quiet', str(self.remote), str(peer), cwd=self.root)
+        (self.repo / relative).write_text('local automated work\n')
+        self.git('add', relative)
+        self.git('commit', '-qm', subject)
+        original_head = self.git('rev-parse', 'HEAD')
+        (peer / relative).write_text('remote user update\n')
+        self.git('add', relative, cwd=peer)
+        self.git('commit', '-qm', 'remote user update', cwd=peer)
+        self.git('push', '-q', 'origin', 'main', cwd=peer)
+        return original_head
+
+    def assert_original_checkout(self, original_head):
+        self.assertEqual(self.git('branch', '--show-current'), 'main')
+        self.assertEqual(self.git('status', '--porcelain'), '')
+        self.assertEqual(self.git('rev-parse', 'HEAD'), original_head)
+        self.assertFalse((self.repo / '.git/rebase-merge').exists())
+        self.assertFalse((self.repo / '.git/rebase-apply').exists())
+        self.assertEqual((self.repo / 'fitness_logs/sync-fixture.txt').read_text(),
+                         'local automated work\n')
+
+    def test_sync_conflict_aborts_and_preserves_automation_commit(self):
+        subject = 'fitness: automated monthly summary 2026-09'
+        original_head = self.conflicting_commits(subject)
+        self.assertEqual(self.execute(), 1)
+        self.assert_original_checkout(original_head)
+        self.assertEqual(self.git('log', '--format=%s', 'origin/main..HEAD'), subject)
+        evidence = list((self.root / 'state/git-sync').iterdir())
+        self.assertEqual(len(evidence), 1)
+        self.assertEqual((evidence[0] / 'original-head.txt').read_text().strip(), original_head)
+        self.assertIn('UU fitness_logs/sync-fixture.txt', (evidence[0] / 'status.txt').read_text())
+        self.assertIn('local automated work', (evidence[0] / 'current-commit.patch').read_text())
+
+    def test_unrecognized_local_commit_is_rejected_before_rebase(self):
+        original_head = self.conflicting_commits('user work must stay untouched')
+        self.assertEqual(self.execute(), 1)
+        self.assert_original_checkout(original_head)
+        self.assertFalse((self.root / 'state/git-sync').exists())
+        status = json.loads((self.root / 'state/monthly/latest.json').read_text())
+        self.assertIn('unrecognized local commits', status['message'])
+
+    def test_existing_rebase_is_left_untouched(self):
+        self.conflicting_commits('fitness: automated monthly summary 2026-09')
+        self.git('fetch', 'origin')
+        result = subprocess.run(['git', 'rebase', 'origin/main'], cwd=self.repo,
+                                capture_output=True)
+        self.assertNotEqual(result.returncode, 0)
+        before_status = self.git('status', '--porcelain')
+        before_head = self.git('rev-parse', 'HEAD')
+        self.assertEqual(self.execute(), 1)
+        self.assertEqual(self.git('status', '--porcelain'), before_status)
+        self.assertEqual(self.git('rev-parse', 'HEAD'), before_head)
+        self.assertTrue((self.repo / '.git/rebase-merge').exists())
+        self.assertFalse((self.root / 'state/git-sync').exists())
 
     def test_generate_push_and_preserve_on_repeat(self):
         previous = (self.repo / 'fitness_logs/daily/2026-08/2026-08-summary.json').read_bytes()

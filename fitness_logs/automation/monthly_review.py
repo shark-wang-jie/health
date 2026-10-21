@@ -104,16 +104,47 @@ def main():
         owned = True
         (lock / 'pid').write_text(str(os.getpid()))
         status('running', 0, 'monthly summary check started')
+        if any((repo / git('rev-parse', '--git-path', name)).exists()
+               for name in ('rebase-merge', 'rebase-apply')):
+            raise RuntimeError('pre-existing rebase requires manual review; left untouched')
         if git('rev-parse', '--show-toplevel') != str(repo) or git('branch', '--show-current') != 'main':
             raise RuntimeError('expected repository root on main')
         if git('status', '--porcelain'):
             raise RuntimeError('working tree has pre-existing changes')
         git('fetch', 'origin', network=True)
-        git('rebase', 'origin/main')
+        subjects = git('log', '--format=%s', 'origin/main..HEAD').splitlines()
+        if not all(AUTOMATION_COMMIT.fullmatch(s) for s in subjects):
+            raise RuntimeError('unrecognized local commits; manual review required')
+        original_head = git('rev-parse', 'HEAD')
+        try:
+            git('rebase', 'origin/main')
+        except (RuntimeError, subprocess.TimeoutExpired):
+            # A rebase found at entry belongs to someone else and was rejected
+            # above. Save evidence, then abort only the one started by this run.
+            evidence = state / 'git-sync' / f'monthly-{time.time_ns()}-{os.getpid()}'
+            try:
+                evidence.mkdir(parents=True)
+                (evidence / 'original-head.txt').write_text(original_head + '\n')
+                for name, args in (
+                        ('status.txt', ('status', '--porcelain=v1')),
+                        ('conflict.diff', ('diff', '--binary')),
+                        ('current-commit.patch', ('rebase', '--show-current-patch'))):
+                    result = subprocess.run(['/usr/bin/git', *args], cwd=repo, env=env,
+                                            text=True, capture_output=True, timeout=30)
+                    (evidence / name).write_text(result.stdout)
+                log(f'git sync failure evidence: {evidence}')
+            finally:
+                if any((repo / git('rev-parse', '--git-path', name)).exists()
+                       for name in ('rebase-merge', 'rebase-apply')):
+                    git('rebase', '--abort')
+                    if (git('branch', '--show-current') != 'main'
+                            or git('rev-parse', 'HEAD') != original_head
+                            or git('status', '--porcelain')):
+                        raise RuntimeError('aborted rebase did not restore original clean main; manual review required')
+                    log('git rebase aborted; original local commits retained on main')
+            raise
         subjects = git('log', '--format=%s', 'origin/main..HEAD').splitlines()
         if subjects:
-            if not all(AUTOMATION_COMMIT.fullmatch(s) for s in subjects):
-                raise RuntimeError('unrecognized local commits; manual review required')
             git('push', 'origin', 'main', network=True)
         base = git('rev-parse', 'HEAD')
         months = missing_months(repo, datetime.now(ZoneInfo('Asia/Shanghai')).date())
