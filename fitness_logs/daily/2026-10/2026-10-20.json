@@ -266,32 +266,33 @@
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
       "protein_g": 121.03059999999999,
-      "fat_g": 45.814600000000006,
+      "fat_g": 45.8146,
       "carbs_g": 214.63840000000002
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1502.5168260038242,
       2034.716826003824
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2198.1,
     "estimated_deficit_kcal": 361.0781739961758,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1800.0,
+      1800.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 7,
     "protein_by_meal_g": {
-      "breakfast": 18.650599999999997,
-      "lunch": 70.5,
-      "dinner": 31.88
+      "breakfast": 18.6506,
+      "dinner": 31.88,
+      "lunch": 70.5
     },
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
@@ -309,12 +310,11 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 735,
+    "sodium_mg_known_sum": 735.0,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 217.1,
     "fruit_vegetable_g_entries_with_data": 1,
-    "fruit_vegetable_g_coverage_complete": false,
-    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。"
+    "fruit_vegetable_g_coverage_complete": false
   }
 }
