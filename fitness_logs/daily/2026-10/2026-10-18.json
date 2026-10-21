@@ -457,28 +457,28 @@
     "fat_g_estimate": 55.907599999999995,
     "carbs_g_estimate": 143.6366,
     "intake_kcal_estimate": 1816.7792543021033,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
       "protein_g": 184.9124,
       "fat_g": 55.907599999999995,
       "carbs_g": 143.6366
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 303,
+    "training_discount_kcal": 303.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1664.2267686424475,
       2030.6767686424475
     ],
-    "exercise_active_kcal": 1212,
-    "exercise_adjusted_kcal": 909,
+    "exercise_active_kcal": 1212.0,
+    "exercise_adjusted_kcal": 909.0,
     "tdee_kcal_estimate": 3128.7,
     "estimated_deficit_kcal": 1311.9207456978966,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -507,7 +507,7 @@
     "sodium_mg_known_sum": 6112.9,
     "sodium_mg_entries_with_data": 8,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": 250,
+    "fruit_vegetable_g_known_sum": 250.0,
     "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   }
