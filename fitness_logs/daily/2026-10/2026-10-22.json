@@ -11,7 +11,8 @@
   "missing_sections": [
     "沙县鸡腿饭按历史双去皮鸡腿、米饭、白菜、卤蛋套餐估算，具体份量和用油未核实。",
     "盒马鸭腿一盒按2026-10-11同款两根共240g（含皮骨），默认去皮去骨可食肉约150g，热量约290kcal，是否吃皮以及这盒净重未核实。",
-    "牛奶一瓶沿此前悦鲜活260mL默认；三份烤土豆（早餐100g、练前130g、练后200g）沿无油熟重估算。"
+    "牛奶一瓶沿此前悦鲜活260mL默认；三份烤土豆（早餐100g、练前130g、练后200g）沿无油熟重估算。",
+    "下午红心火龙果338g暂按带皮称重并以65%可食果肉估算；本次是否带皮未明确，如338g是果肉净重则更正。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -223,6 +224,29 @@
       "protein_g_estimate": 40,
       "fat_g_estimate": 14,
       "carbs_g_estimate": 3
+    },
+    {
+      "id": "afternoon_red_dragon_fruit_338g_oct22",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "下午红心火龙果1个338g（暂按带皮、果肉约220g）",
+      "reported_text": "下午加餐一个红心火龙果338g",
+      "source_kind": "database_estimate",
+      "gross_weight_g": 338,
+      "edible_fraction_estimate": 0.65,
+      "edible_weight_g_estimate": 219.70000000000002,
+      "basis": "用户报告红心火龙果1个338g，暂沿此前整果带皮称重习惯，按65%可食比例约219.7g果肉，每100g约55kcal、P1.0/F0.2/C12g估算。",
+      "uncertainty": "本次未明确338g是否带皮，按历史带皮整果处理，未称果皮；若338g为去皮果肉，需原位改算。",
+      "kcal_base_estimate": 120.83500000000002,
+      "kcal_booked": 120.83500000000002,
+      "kcal_range": [
+        100,
+        145
+      ],
+      "protein_g_estimate": 2.197,
+      "fat_g_estimate": 0.43940000000000007,
+      "carbs_g_estimate": 26.364,
+      "fruit_vegetable_g_estimate": 219.70000000000002
     }
   ],
   "exercise_entries": [],
@@ -236,32 +260,33 @@
   "notes": [
     "10月22日空腹体重88.05kg，与10月21日持平。",
     "用户以一条消息报告早餐南瓜子10.9g、烤土豆100g、牛奶一瓶；午餐沙县鸡腿饭；晚间练前土豆130g；练后土豆200g与盒马鸭腿一盒。三份土豆为分别实际吃下的100g、130g、200g。",
-    "练前/练后仅为进食时序说明，未提供训练项目、时长或当次动态千卡；训练状态仍待用户提供，不添加凭空运动消耗；饮食未明示今日全部结束，保持开放。"
+    "练前/练后仅为进食时序说明，未提供训练项目、时长或当次动态千卡；训练状态仍待用户提供，不添加凭空运动消耗；饮食未明示今日全部结束，保持开放。",
+    "下午另吃红心火龙果1个338g，按此前带皮整果习惯估果肉219.7g约120.84kcal；为今天新增的独立加餐。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1820.4332217973233,
-    "intake_kcal_booked": 1908.9332217973233,
-    "protein_g_estimate": 134.01080000000002,
-    "fat_g_estimate": 66.72253333333336,
-    "carbs_g_estimate": 198.5447,
-    "intake_kcal_estimate": 1908.9332217973233,
+    "intake_kcal_base_estimate": 1941.2682217973233,
+    "intake_kcal_booked": 2029.7682217973233,
+    "protein_g_estimate": 136.20780000000002,
+    "fat_g_estimate": 67.16193333333337,
+    "carbs_g_estimate": 224.9087,
+    "intake_kcal_estimate": 2029.7682217973233,
     "food_margin_kcal": 88.5,
     "base_macro_estimates": {
-      "protein_g": 134.01080000000002,
-      "fat_g": 56.88920000000002,
-      "carbs_g": 198.5447
+      "protein_g": 136.20780000000002,
+      "fat_g": 57.32860000000002,
+      "carbs_g": 224.9087
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1575.4332217973233,
-      2105.4332217973233
+      1675.4332217973233,
+      2250.4332217973233
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2198.1,
-    "estimated_deficit_kcal": 289.1667782026766,
+    "estimated_deficit_kcal": 168.33177820267656,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -270,12 +295,13 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 15.260800000000001,
       "lunch": 70.5,
       "postworkout": 45,
-      "preworkout": 3.25
+      "preworkout": 3.25,
+      "snack": 2.197
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -299,8 +325,8 @@
     "sodium_mg_known_sum": 156,
     "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": null,
-    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_known_sum": 219.70000000000002,
+    "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   }
 }
