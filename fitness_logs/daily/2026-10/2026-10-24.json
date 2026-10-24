@@ -1,1 +1,438 @@
-{"schema_version":3,"date":"2026-10-24","timezone":"Asia/Shanghai","record_status":"final","food_log_closed":true,"closure_basis":"用户2026-10-24明确说“今天饮食训练都结束”，此前从Health读到并确认当天力量和步行两项训练；晚间又实吃一根烤蒜香肠，已作为10月24日最终饮食计入。用户还指定通宵变更期间吃的蒸饺归2026-10-24，不挪至10月25日。","food_coverage":"confirmed_complete","training_status":"reported_training","training_coverage":"confirmed_complete","missing_sections":["馄饨300g按馄饨本体重量、菜包5g与汤包10g分别整份计；若300g实际包含配料包重量，需按净含量原位更正。","汤包钠508mg、菜包钠289mg、馄饨本体估1005mg，已按整份计，若未喝完汤汁实际钠摄入可能较少。","10月24日晚最后烤蒜香肠只说一根，没有确认实际克重或是否刷油，暂沿同款150g且无额外用油；若有新标签/称重可补充更正。"],"non_energy_pending_notes":[],"trend_context":[],"weight_measurement_note":null,"plan_version":"2026-09-08-v3.2","morning_weight_kg":88.75,"profile_snapshot":{"sex":"男性","age":27,"height_cm":173,"bmr_weight_kg":88.75,"bmr_weight_date":"2026-10-24","bmr_kcal":1838.75},"energy_method":{"algorithm":"tdee_v1","activity_factor":1.2,"training_factor":0.75},"food_estimation_policy":"photo_margin_v1","targets":{"rest_day_intake_kcal_range":[1800,1800],"training_day_intake_kcal_range":[1900,2000],"protein_target_g":170,"protein_practical_g_range":[140,180],"carbohydrate_reference_g_range":[150,180],"deficit_min_kcal":400,"deficit_max_kcal":600},"intake_entries":[{"id":"breakfast_pumpkin_seeds_8_8g_oct24","status":"consumed","meal":"breakfast","description":"早餐南瓜子8.8g","reported_text":"早饭8.8g南瓜子","source_kind":"label_known_quantity","quantity_g":8.8,"basis":"沿已确认南瓜子标签：每100g能量2579kJ、P31.2/F48.8/C8.3、钠0mg。","kcal_base_estimate":54.24282982791587,"kcal_booked":54.24282982791587,"kcal_range":[54.24282982791587,54.24282982791587],"protein_g_estimate":2.7455999999999996,"fat_g_estimate":4.2943999999999996,"carbs_g_estimate":0.7304,"sodium_mg_estimate":0},{"id":"breakfast_corn_cod_wonton_300g_oct24","status":"consumed","meal":"breakfast","description":"玉米鳕鱼馄饨300g（馄饨本体）","reported_text":"300g玉米鳕鱼馄饨","source_kind":"label_known_quantity","quantity_g":300,"basis":"用户2026-10-24上传馄饨包装标签：每100g能量673kJ、P9.2/F1.2/C27.8、钠335mg，按馄饨本体300g计算。菜包和鸡汤包另按各自标签记账，不双重计入。","kcal_base_estimate":482.55258126195025,"kcal_booked":482.55258126195025,"kcal_range":[482.55258126195025,482.55258126195025],"protein_g_estimate":27.6,"fat_g_estimate":3.6,"carbs_g_estimate":83.4,"sodium_mg_estimate":1005},{"id":"breakfast_wonton_vegetable_sachet_5g_oct24","status":"consumed","meal":"breakfast","description":"馄饨菜包1份（5g）","reported_text":"一份菜包","source_kind":"label_known_quantity","quantity_g":5,"basis":"当次包装菜包营养成分表每份5g：36kJ、P1.5/F0.1/C0.4、钠289mg，按整份使用。","kcal_base_estimate":8.604206500956023,"kcal_booked":8.604206500956023,"kcal_range":[8.604206500956023,8.604206500956023],"protein_g_estimate":1.5,"fat_g_estimate":0.1,"carbs_g_estimate":0.4,"sodium_mg_estimate":289},{"id":"breakfast_wonton_chicken_soup_sachet_10g_oct24","status":"consumed","meal":"breakfast","description":"馄饨鸡汤包1份（10g）","reported_text":"一份汤包","source_kind":"label_known_quantity","quantity_g":10,"basis":"当次包装鸡汤包营养成分表每份10g：24kJ、P0.5/F0.2/C0.5、钠508mg，按整份使用。","kcal_base_estimate":5.736137667304015,"kcal_booked":5.736137667304015,"kcal_range":[5.736137667304015,5.736137667304015],"protein_g_estimate":0.5,"fat_g_estimate":0.2,"carbs_g_estimate":0.5,"sodium_mg_estimate":508},{"id":"breakfast_garlic_sausage_115g_oct24","status":"consumed_estimated","meal":"breakfast","description":"早餐另吃蒜香肠115g","reported_text":"早饭又吃了115g蒜香肠","source_kind":"matched_default","quantity_g":115,"basis":"按历史确认同款蒜香肠营养标签每100g658kJ、P12.4/F6.9/C11.3、钠808mg，以115g换算；不重复上日补吃35g。","uncertainty":"本次没有再次上传包装标签，默认与10月17–18及23日已确认的同款蒜香肠一致。","kcal_base_estimate":180.85564053537283,"kcal_booked":180.85564053537283,"kcal_range":[180.85564053537283,180.85564053537283],"protein_g_estimate":14.26,"fat_g_estimate":7.935,"carbs_g_estimate":12.995,"sodium_mg_estimate":929.2},{"id":"preworkout_potato_95g_oct24","status":"consumed_estimated","meal":"preworkout","description":"练前烤土豆95g","quantity_g":95,"source_kind":"matched_default","basis":"熟无油烤土豆93kcal/100g","uncertainty":"无油默认","kcal_base_estimate":88.35,"kcal_booked":88.35,"kcal_range":[88.35,88.35],"protein_g_estimate":2.375,"fat_g_estimate":0.095,"carbs_g_estimate":20.14},{"id":"postworkout_potato_300g_oct24","status":"consumed_estimated","meal":"postworkout","description":"练后烤土豆300g（无油默认）","reported_text":"练后吃了300g烤土豆","source_kind":"matched_default","quantity_g":300,"basis":"沿历史无油烤土豆每100g93kcal、P2.5/F0.1/C21.2。","uncertainty":"本次未报额外用油，沿无油熟重口径。","kcal_base_estimate":279,"kcal_booked":279,"kcal_range":[279,279],"protein_g_estimate":7.5,"fat_g_estimate":0.3,"carbs_g_estimate":63.6},{"id":"postworkout_hema_chicken_box_oct24","status":"consumed_estimated","meal":"postworkout","description":"练后盒马卤鸡腿一盒（去皮去骨）","reported_text":"练后一盒盒马鸡腿","source_kind":"matched_default","basis":"沿既往一盒两根含骨约170g，去皮去骨可食约125g记账183kcal、P27.13/F2.63/C12.13。","uncertainty":"此盒去皮可食重量未称重，若吃皮再更正。","kcal_base_estimate":183,"kcal_booked":183,"kcal_range":[150,235],"protein_g_estimate":27.13,"fat_g_estimate":2.63,"carbs_g_estimate":12.13,"sodium_mg_estimate":579},{"id":"postworkout_boiled_egg_one_oct24","status":"consumed_estimated","meal":"postworkout","description":"练后水煮鸡蛋1个（普通大蛋）","reported_text":"练后一个水煮蛋","source_kind":"database_estimate","quantity_pieces":1,"edible_weight_g_estimate":50,"basis":"普通大号水煮鸡蛋可食部分约50g，标准估算78kcal、P6.3/F5.3/C0.6，无额外食用油。","uncertainty":"未称重，实际鸡蛋大小及可食重量未知，参考70–90kcal。","kcal_base_estimate":78,"kcal_booked":78,"kcal_range":[70,90],"protein_g_estimate":6.3,"fat_g_estimate":5.3,"carbs_g_estimate":0.6},{"id":"afternoon_snack_hema_braised_pork_liver_150g_oct24","status":"consumed","meal":"snack","description":"加餐盒马卤猪肝一盒150g","reported_text":"加餐一盒盒马卤猪肝","source_kind":"label_known_quantity","quantity_g":150,"basis":"当次照片包装净含量150g；每100g能量687kJ、蛋白质26.3g、脂肪4.5g、碳水4.3g、钠972mg，按整包1.5倍计。","kcal_base_estimate":246.29541108986615,"kcal_booked":246.29541108986615,"kcal_range":[246.29541108986615,246.29541108986615],"protein_g_estimate":39.45,"fat_g_estimate":6.75,"carbs_g_estimate":6.45,"sodium_mg_estimate":1458},{"id":"evening_beef_crisps_50g_oct24","status":"consumed_estimated","meal":"snack","description":"晚间牛脆脆1包50g","source_kind":"matched_default","quantity_g":50,"basis":"按10月18日同款包装每100g2140kJ、蛋白质63.2g、脂肪27g、碳水3.9g、钠484mg","uncertainty":"本次未再核对包装，沿历史同款标签","kcal_base_estimate":255.736137667304,"kcal_booked":255.736137667304,"kcal_range":[255.736137667304,255.736137667304],"protein_g_estimate":31.6,"fat_g_estimate":13.5,"carbs_g_estimate":1.95,"sodium_mg_estimate":242},{"id":"late_night_konjac_oat_dumplings_500g_oct24","status":"consumed_estimated","meal":"dinner","description":"魔芋燕麦鸡胸肉蒸饺1整包500g（按已确认同款）","source_kind":"matched_default","quantity_g_estimate":500,"package_g":500,"quantity_pieces_estimate":25,"basis":"用户历史确认同款500g每包25个、每100g472kJ、P6.6/F1.9/C17、钠484mg。用户明确本包归入2026-10-24。","uncertainty":"本次未再次提供包装标签，若非历史同款需更正","kcal_base_estimate":564.0535372848948,"kcal_booked":564.0535372848948,"kcal_range":[564.0535372848948,564.0535372848948],"protein_g_estimate":33,"fat_g_estimate":9.5,"carbs_g_estimate":85,"sodium_mg_estimate":2420},{"id":"late_garlic_sausage_one_150g_oct24","status":"consumed_estimated","meal":"dinner","description":"夜间另吃烤蒜香肠一根（暂按150g，无另加油）","reported_text":"又烤了一根蒜香肠吃","source_kind":"matched_default","quantity_pieces":1,"quantity_g_estimate":150,"basis":"历史10月17–18确认同款蒜香肠每根约150g，每100g658kJ、P12.4/F6.9/C11.3、钠808mg。本次烤制暂按不额外用油，按整根150g估算。","uncertainty":"此次未称重也未确认是否同款、是否刷油，暂沿同款150g默认，热量参考212–260kcal，若实际尺寸/加油不同应更正。","kcal_base_estimate":235.8986615678776,"kcal_booked":235.8986615678776,"kcal_range":[212,260],"protein_g_estimate":18.6,"fat_g_estimate":10.35,"carbs_g_estimate":16.95,"sodium_mg_estimate":1212}],"exercise_entries":[{"id":"strength_health_2026_10_24_1254","event_id":"health_workout_strength_20261024_125402","type":"传统力量训练","source":"Health 已同步的 Apple Watch workout（用户确认当日训练结束）","source_metric":"workout","energy_scope":"session_active","active_kcal":821.8128654024392,"total_kcal":null,"health_raw_energy_field":"total_energy_kcal","duration_seconds":5346.887266993523,"start_local":"2026-10-24T12:54:02.758+08:00","end_local":"2026-10-24T14:23:09.645+08:00","source_activity":"HKWorkoutActivityType(rawValue: 50)","energy_note":"Health workout的total_energy_kcal值与此前Apple Watch动态千卡截图口径相符，按本次训练动态能量记录；该字段名可能与原生运动App口径不一致，未另加每日活动能量。"},{"id":"walking_health_2026_10_24_1425","event_id":"health_workout_walking_20261024_142519","type":"步行","source":"Health 已同步的 Apple Watch workout","source_metric":"workout","energy_scope":"session_active","active_kcal":513.831027959206,"total_kcal":null,"health_raw_energy_field":"total_energy_kcal","duration_seconds":2738.352228999138,"start_local":"2026-10-24T14:25:19.031+08:00","end_local":"2026-10-24T15:10:57.383+08:00","distance_m":2761.0722681884654,"source_activity":"HKWorkoutActivityType(rawValue: 52)","energy_note":"按运动记录能量约513.83kcal作为动态消耗估计；未计入其他全日活动能量，室内或户外步行未从数据确定。"}],"recovery":{"hunger":null,"sleep_hours":null,"training_performance":null,"fatigue_or_pain":null},"corrections":[],"notes":["晨起空腹88.75kg，较10月23日87.70kg上升1.05kg，单日体重上浮可能包括水分、钠盐、肠胃内容物波动，不能据此推断增加1.05kg脂肪。","早餐实际吃南瓜子8.8g、玉米鳕鱼馄饨300g及各一整份菜包5g、鸡汤包10g；三项包装成分表按用户2026-10-24照片分别记账。当天饮食开放、训练未知。","10月24日早餐另吃115g蒜香肠，沿已核实历史同款标签每100g658kJ计算约180.86kcal，P14.26/F7.94/C13.00；与10月23日35g不同日期，不重复。","10月24日用户明确训练结束，已直接从Health读取Apple Watch两段workout：传统力量12:54:02–14:23:09，5346.89秒，821.81kcal；步行14:25:19–15:10:57，2738.35秒，513.83kcal、2.761km。合计1335.64kcal，按0.75折算1001.73kcal。源字段total_energy_kcal与此前Apple Watch动态口径一致，未叠加每日活动能量。饮食仍开放。","10月24日训练后实际吃无油烤土豆300g、盒马卤鸡腿1盒、普通水煮鸡蛋1个，均为新增实吃，不和练前95g土豆重复。训练先前已确认结束，饮食继续开放。","10月24日下午加餐盒马卤猪肝整包150g，按本人上传标签每100g687kJ、P26.3/F4.5/C4.3、钠972mg折算，新增约246.30kcal，P39.45/F6.75/C6.45，钠1458mg。仅加餐，饮食仍开放。","用户2026-10-24晚上吃牛脆脆50g和魔芋燕麦蒸饺整包；今晚通宵工作变更，明确这包蒸饺的热量归入10月24日，而不是10月25日；通宵工作不计额外训练热量。","用户确认10月24日饮食和训练都结束，正式封账：13条实际食物，摄入约2662.33kcal、P212.56/F64.55/C304.85；两次Health workout能量合计1335.64kcal，×0.75折算1001.73kcal，模型TDEE3208.23kcal、模型算术缺口545.91kcal，属于400–600参考范围，但并非实测。夜间另吃烤蒜香肠1根沿同款150g约235.90kcal，不计额外烤油；此次未实称。通宵工作不另加运动热量。"],"daily_summary":{"intake_kcal_base_estimate":2662.325143403442,"intake_kcal_booked":2662.325143403442,"protein_g_estimate":212.5606,"fat_g_estimate":64.55439999999999,"carbs_g_estimate":304.8454,"intake_kcal_estimate":2662.325143403442,"food_margin_kcal":0,"base_macro_estimates":{"protein_g":212.5606,"fat_g":64.55439999999999,"carbs_g":304.8454},"completed_day_base_intake_balance_kcal":null,"training_discount_kcal":333.9109733404113,"assumption_note":"已按用户全部报告的13条饮食封账；同款馄饨、鸡腿、鸡蛋、蒸饺、牛脆脆及夜间蒜香肠存在估算。Health两次workout能量按历史动态口径保守×0.75折算；通宵工作不额外记训练。","intake_kcal_range":[2597.426481835564,2750.426481835564],"exercise_active_kcal":1335.6438933616453,"exercise_adjusted_kcal":1001.7329200212339,"tdee_kcal_estimate":3208.232920021234,"estimated_deficit_kcal":545.907776617792,"completed_day_estimated_deficit_kcal":null,"energy_balance_scope":"provisional_recorded_balance","intake_target_kcal_range":[1900,2000],"target_is_provisional":false,"energy_estimate_provisional":true,"consumed_entries":13,"protein_by_meal_g":{"breakfast":46.6056,"preworkout":2.375,"postworkout":40.93,"snack":71.05,"dinner":51.6},"warnings":["饮食、训练均已确认完成；食物实际份量仍有估算误差（尤其香肠是否150g、鸡腿与鸡蛋）。","Health workout的total_energy_kcal字段被按历史动态口径计算，若包含静息能量则模型运动消耗可能高估。","当天馄饨汤料、猪肝、蒸饺等钠估算较高，部分汤汁是否饮完未知。"],"interpretation":"已封账；约545.91kcal为模型全天消耗减已记账摄入的算术估算，非准确测得的实际缺口，食物与训练误差可能较大。","protein_g_range":null,"protein_g_entries_with_range":0,"protein_g_range_coverage_complete":false,"fat_g_range":null,"fat_g_entries_with_range":0,"fat_g_range_coverage_complete":false,"carbs_g_range":null,"carbs_g_entries_with_range":0,"carbs_g_range_coverage_complete":false,"fiber_g_known_sum":null,"fiber_g_entries_with_data":0,"fiber_g_coverage_complete":false,"sodium_mg_known_sum":8642.2,"sodium_mg_entries_with_data":10,"sodium_mg_coverage_complete":false,"fruit_vegetable_g_known_sum":null,"fruit_vegetable_g_entries_with_data":0,"fruit_vegetable_g_coverage_complete":false}}
+{
+  "schema_version": 3,
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-24明确说“今天饮食训练都结束”，此前从Health读到并确认当天力量和步行两项训练；晚间又实吃一根烤蒜香肠，已作为10月24日最终饮食计入。用户还指定通宵变更期间吃的蒸饺归2026-10-24，不挪至10月25日。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [
+    "馄饨300g按馄饨本体重量、菜包5g与汤包10g分别整份计；若300g实际包含配料包重量，需按净含量原位更正。",
+    "汤包钠508mg、菜包钠289mg、馄饨本体估1005mg，已按整份计，若未喝完汤汁实际钠摄入可能较少。",
+    "10月24日晚最后烤蒜香肠只说一根，没有确认实际克重或是否刷油，暂沿同款150g且无额外用油；若有新标签/称重可补充更正。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": null,
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.75,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.75,
+    "bmr_weight_date": "2026-10-24",
+    "bmr_kcal": 1838.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_8_8g_oct24",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子8.8g",
+      "reported_text": "早饭8.8g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 8.8,
+      "basis": "沿已确认南瓜子标签：每100g能量2579kJ、P31.2/F48.8/C8.3、钠0mg。",
+      "kcal_base_estimate": 54.24282982791587,
+      "kcal_booked": 54.24282982791587,
+      "kcal_range": [
+        54.24282982791587,
+        54.24282982791587
+      ],
+      "protein_g_estimate": 2.7455999999999996,
+      "fat_g_estimate": 4.2943999999999996,
+      "carbs_g_estimate": 0.7304,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_corn_cod_wonton_300g_oct24",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "玉米鳕鱼馄饨300g（馄饨本体）",
+      "reported_text": "300g玉米鳕鱼馄饨",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 300,
+      "basis": "用户2026-10-24上传馄饨包装标签：每100g能量673kJ、P9.2/F1.2/C27.8、钠335mg，按馄饨本体300g计算。菜包和鸡汤包另按各自标签记账，不双重计入。",
+      "kcal_base_estimate": 482.55258126195025,
+      "kcal_booked": 482.55258126195025,
+      "kcal_range": [
+        482.55258126195025,
+        482.55258126195025
+      ],
+      "protein_g_estimate": 27.6,
+      "fat_g_estimate": 3.6,
+      "carbs_g_estimate": 83.4,
+      "sodium_mg_estimate": 1005
+    },
+    {
+      "id": "breakfast_wonton_vegetable_sachet_5g_oct24",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "馄饨菜包1份（5g）",
+      "reported_text": "一份菜包",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 5,
+      "basis": "当次包装菜包营养成分表每份5g：36kJ、P1.5/F0.1/C0.4、钠289mg，按整份使用。",
+      "kcal_base_estimate": 8.604206500956023,
+      "kcal_booked": 8.604206500956023,
+      "kcal_range": [
+        8.604206500956023,
+        8.604206500956023
+      ],
+      "protein_g_estimate": 1.5,
+      "fat_g_estimate": 0.1,
+      "carbs_g_estimate": 0.4,
+      "sodium_mg_estimate": 289
+    },
+    {
+      "id": "breakfast_wonton_chicken_soup_sachet_10g_oct24",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "馄饨鸡汤包1份（10g）",
+      "reported_text": "一份汤包",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 10,
+      "basis": "当次包装鸡汤包营养成分表每份10g：24kJ、P0.5/F0.2/C0.5、钠508mg，按整份使用。",
+      "kcal_base_estimate": 5.736137667304015,
+      "kcal_booked": 5.736137667304015,
+      "kcal_range": [
+        5.736137667304015,
+        5.736137667304015
+      ],
+      "protein_g_estimate": 0.5,
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 0.5,
+      "sodium_mg_estimate": 508
+    },
+    {
+      "id": "breakfast_garlic_sausage_115g_oct24",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐另吃蒜香肠115g",
+      "reported_text": "早饭又吃了115g蒜香肠",
+      "source_kind": "matched_default",
+      "quantity_g": 115,
+      "basis": "按历史确认同款蒜香肠营养标签每100g658kJ、P12.4/F6.9/C11.3、钠808mg，以115g换算；不重复上日补吃35g。",
+      "uncertainty": "本次没有再次上传包装标签，默认与10月17–18及23日已确认的同款蒜香肠一致。",
+      "kcal_base_estimate": 180.85564053537283,
+      "kcal_booked": 180.85564053537283,
+      "kcal_range": [
+        180.85564053537283,
+        180.85564053537283
+      ],
+      "protein_g_estimate": 14.26,
+      "fat_g_estimate": 7.935,
+      "carbs_g_estimate": 12.995,
+      "sodium_mg_estimate": 929.2
+    },
+    {
+      "id": "preworkout_potato_95g_oct24",
+      "status": "consumed_estimated",
+      "meal": "preworkout",
+      "description": "练前烤土豆95g",
+      "quantity_g": 95,
+      "source_kind": "matched_default",
+      "basis": "熟无油烤土豆93kcal/100g",
+      "uncertainty": "无油默认",
+      "kcal_base_estimate": 88.35,
+      "kcal_booked": 88.35,
+      "kcal_range": [
+        88.35,
+        88.35
+      ],
+      "protein_g_estimate": 2.375,
+      "fat_g_estimate": 0.095,
+      "carbs_g_estimate": 20.14
+    },
+    {
+      "id": "postworkout_potato_300g_oct24",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后烤土豆300g（无油默认）",
+      "reported_text": "练后吃了300g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 300,
+      "basis": "沿历史无油烤土豆每100g93kcal、P2.5/F0.1/C21.2。",
+      "uncertainty": "本次未报额外用油，沿无油熟重口径。",
+      "kcal_base_estimate": 279,
+      "kcal_booked": 279,
+      "kcal_range": [
+        279,
+        279
+      ],
+      "protein_g_estimate": 7.5,
+      "fat_g_estimate": 0.3,
+      "carbs_g_estimate": 63.6
+    },
+    {
+      "id": "postworkout_hema_chicken_box_oct24",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后盒马卤鸡腿一盒（去皮去骨）",
+      "reported_text": "练后一盒盒马鸡腿",
+      "source_kind": "matched_default",
+      "basis": "沿既往一盒两根含骨约170g，去皮去骨可食约125g记账183kcal、P27.13/F2.63/C12.13。",
+      "uncertainty": "此盒去皮可食重量未称重，若吃皮再更正。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579
+    },
+    {
+      "id": "postworkout_boiled_egg_one_oct24",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后水煮鸡蛋1个（普通大蛋）",
+      "reported_text": "练后一个水煮蛋",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "edible_weight_g_estimate": 50,
+      "basis": "普通大号水煮鸡蛋可食部分约50g，标准估算78kcal、P6.3/F5.3/C0.6，无额外食用油。",
+      "uncertainty": "未称重，实际鸡蛋大小及可食重量未知，参考70–90kcal。",
+      "kcal_base_estimate": 78,
+      "kcal_booked": 78,
+      "kcal_range": [
+        70,
+        90
+      ],
+      "protein_g_estimate": 6.3,
+      "fat_g_estimate": 5.3,
+      "carbs_g_estimate": 0.6
+    },
+    {
+      "id": "afternoon_snack_hema_braised_pork_liver_150g_oct24",
+      "status": "consumed",
+      "meal": "snack",
+      "description": "加餐盒马卤猪肝一盒150g",
+      "reported_text": "加餐一盒盒马卤猪肝",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "basis": "当次照片包装净含量150g；每100g能量687kJ、蛋白质26.3g、脂肪4.5g、碳水4.3g、钠972mg，按整包1.5倍计。",
+      "kcal_base_estimate": 246.29541108986615,
+      "kcal_booked": 246.29541108986615,
+      "kcal_range": [
+        246.29541108986615,
+        246.29541108986615
+      ],
+      "protein_g_estimate": 39.45,
+      "fat_g_estimate": 6.75,
+      "carbs_g_estimate": 6.45,
+      "sodium_mg_estimate": 1458
+    },
+    {
+      "id": "evening_beef_crisps_50g_oct24",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "晚间牛脆脆1包50g",
+      "source_kind": "matched_default",
+      "quantity_g": 50,
+      "basis": "按10月18日同款包装每100g2140kJ、蛋白质63.2g、脂肪27g、碳水3.9g、钠484mg",
+      "uncertainty": "本次未再核对包装，沿历史同款标签",
+      "kcal_base_estimate": 255.736137667304,
+      "kcal_booked": 255.736137667304,
+      "kcal_range": [
+        255.736137667304,
+        255.736137667304
+      ],
+      "protein_g_estimate": 31.6,
+      "fat_g_estimate": 13.5,
+      "carbs_g_estimate": 1.95,
+      "sodium_mg_estimate": 242
+    },
+    {
+      "id": "late_night_konjac_oat_dumplings_500g_oct24",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "魔芋燕麦鸡胸肉蒸饺1整包500g（按已确认同款）",
+      "source_kind": "matched_default",
+      "quantity_g_estimate": 500,
+      "package_g": 500,
+      "quantity_pieces_estimate": 25,
+      "basis": "用户历史确认同款500g每包25个、每100g472kJ、P6.6/F1.9/C17、钠484mg。用户明确本包归入2026-10-24。",
+      "uncertainty": "本次未再次提供包装标签，若非历史同款需更正",
+      "kcal_base_estimate": 564.0535372848948,
+      "kcal_booked": 564.0535372848948,
+      "kcal_range": [
+        564.0535372848948,
+        564.0535372848948
+      ],
+      "protein_g_estimate": 33,
+      "fat_g_estimate": 9.5,
+      "carbs_g_estimate": 85,
+      "sodium_mg_estimate": 2420
+    },
+    {
+      "id": "late_garlic_sausage_one_150g_oct24",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "夜间另吃烤蒜香肠一根（暂按150g，无另加油）",
+      "reported_text": "又烤了一根蒜香肠吃",
+      "source_kind": "matched_default",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "历史10月17–18确认同款蒜香肠每根约150g，每100g658kJ、P12.4/F6.9/C11.3、钠808mg。本次烤制暂按不额外用油，按整根150g估算。",
+      "uncertainty": "此次未称重也未确认是否同款、是否刷油，暂沿同款150g默认，热量参考212–260kcal，若实际尺寸/加油不同应更正。",
+      "kcal_base_estimate": 235.8986615678776,
+      "kcal_booked": 235.8986615678776,
+      "kcal_range": [
+        212,
+        260
+      ],
+      "protein_g_estimate": 18.6,
+      "fat_g_estimate": 10.35,
+      "carbs_g_estimate": 16.95,
+      "sodium_mg_estimate": 1212
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_10_24_1254",
+      "event_id": "health_workout_strength_20261024_125402",
+      "type": "传统力量训练",
+      "source": "Health 已同步的 Apple Watch workout（用户确认当日训练结束）",
+      "source_metric": "workout",
+      "energy_scope": "session_active",
+      "active_kcal": 821.8128654024392,
+      "total_kcal": null,
+      "health_raw_energy_field": "total_energy_kcal",
+      "duration_seconds": 5346.887266993523,
+      "start_local": "2026-10-24T12:54:02.758+08:00",
+      "end_local": "2026-10-24T14:23:09.645+08:00",
+      "source_activity": "HKWorkoutActivityType(rawValue: 50)",
+      "energy_note": "Health workout的total_energy_kcal值与此前Apple Watch动态千卡截图口径相符，按本次训练动态能量记录；该字段名可能与原生运动App口径不一致，未另加每日活动能量。"
+    },
+    {
+      "id": "walking_health_2026_10_24_1425",
+      "event_id": "health_workout_walking_20261024_142519",
+      "type": "步行",
+      "source": "Health 已同步的 Apple Watch workout",
+      "source_metric": "workout",
+      "energy_scope": "session_active",
+      "active_kcal": 513.831027959206,
+      "total_kcal": null,
+      "health_raw_energy_field": "total_energy_kcal",
+      "duration_seconds": 2738.352228999138,
+      "start_local": "2026-10-24T14:25:19.031+08:00",
+      "end_local": "2026-10-24T15:10:57.383+08:00",
+      "distance_m": 2761.0722681884654,
+      "source_activity": "HKWorkoutActivityType(rawValue: 52)",
+      "energy_note": "按运动记录能量约513.83kcal作为动态消耗估计；未计入其他全日活动能量，室内或户外步行未从数据确定。"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "晨起空腹88.75kg，较10月23日87.70kg上升1.05kg，单日体重上浮可能包括水分、钠盐、肠胃内容物波动，不能据此推断增加1.05kg脂肪。",
+    "早餐实际吃南瓜子8.8g、玉米鳕鱼馄饨300g及各一整份菜包5g、鸡汤包10g；三项包装成分表按用户2026-10-24照片分别记账。当天饮食开放、训练未知。",
+    "10月24日早餐另吃115g蒜香肠，沿已核实历史同款标签每100g658kJ计算约180.86kcal，P14.26/F7.94/C13.00；与10月23日35g不同日期，不重复。",
+    "10月24日用户明确训练结束，已直接从Health读取Apple Watch两段workout：传统力量12:54:02–14:23:09，5346.89秒，821.81kcal；步行14:25:19–15:10:57，2738.35秒，513.83kcal、2.761km。合计1335.64kcal，按0.75折算1001.73kcal。源字段total_energy_kcal与此前Apple Watch动态口径一致，未叠加每日活动能量。饮食仍开放。",
+    "10月24日训练后实际吃无油烤土豆300g、盒马卤鸡腿1盒、普通水煮鸡蛋1个，均为新增实吃，不和练前95g土豆重复。训练先前已确认结束，饮食继续开放。",
+    "10月24日下午加餐盒马卤猪肝整包150g，按本人上传标签每100g687kJ、P26.3/F4.5/C4.3、钠972mg折算，新增约246.30kcal，P39.45/F6.75/C6.45，钠1458mg。仅加餐，饮食仍开放。",
+    "用户2026-10-24晚上吃牛脆脆50g和魔芋燕麦蒸饺整包；今晚通宵工作变更，明确这包蒸饺的热量归入10月24日，而不是10月25日；通宵工作不计额外训练热量。",
+    "用户确认10月24日饮食和训练都结束，正式封账：13条实际食物，摄入约2662.33kcal、P212.56/F64.55/C304.85；两次Health workout能量合计1335.64kcal，×0.75折算1001.73kcal，模型TDEE3208.23kcal、模型算术缺口545.91kcal，属于400–600参考范围，但并非实测。夜间另吃烤蒜香肠1根沿同款150g约235.90kcal，不计额外烤油；此次未实称。通宵工作不另加运动热量。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 2662.325143403442,
+    "intake_kcal_booked": 2662.325143403442,
+    "protein_g_estimate": 212.5606,
+    "fat_g_estimate": 64.55439999999999,
+    "carbs_g_estimate": 304.8454,
+    "intake_kcal_estimate": 2662.325143403442,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 212.5606,
+      "fat_g": 64.55439999999999,
+      "carbs_g": 304.8454
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 333.9109733404114,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      2597.426481835564,
+      2750.426481835564
+    ],
+    "exercise_active_kcal": 1335.6438933616453,
+    "exercise_adjusted_kcal": 1001.7329200212339,
+    "tdee_kcal_estimate": 3208.232920021234,
+    "estimated_deficit_kcal": 545.907776617792,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1900.0,
+      2000.0
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 13,
+    "protein_by_meal_g": {
+      "breakfast": 46.6056,
+      "dinner": 51.6,
+      "postworkout": 40.93,
+      "preworkout": 2.375,
+      "snack": 71.05000000000001
+    },
+    "warnings": [
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 8642.2,
+    "sodium_mg_entries_with_data": 10,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
