@@ -2,14 +2,13 @@
   "schema_version": 3,
   "date": "2026-10-26",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-26确认晚餐后没有其他食物、全天饮食结束；补报室内单车后，对两项训练询问是否全部结束，用户明确答复“全部结束”。按北京自然日10月26日正式封账，保留餐食估算不确定项。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "已记录17:38–18:37传统力量训练及21:34–22:35室内单车；用户尚未明确这是否为全天全部训练，training_coverage保留partial，待确认后封账。",
     "烤土豆121g目前按此前无油熟重口径，如有刷油或重量为生重应更正",
     "沙县鸡腿饭只确认一只鸡腿；米饭、炒白菜、卤蛋和土豆丝食用情况暂沿历史默认，实际如有剩余需更正。",
     "上午干脆面果脯仅有用户指定300kcal，无法确认具体宏量营养素，当前PFC为粗略占位估计。"
@@ -298,7 +297,8 @@
     "10月26日补记此前未成功同步的水煮蛋2个；上午干脆面与果脯仅按用户指定300kcal记账，包装和实际宏量未知，暂有粗估PFC占位，不把它们当已核实的蛋白、脂肪或碳水。午餐沙县鸡腿饭明确只点一只鸡腿，沿10月16日单鸡腿套餐792kcal；另外吃的盒马鸡腿一盒单独183kcal，不重复计腿。餐食数量已于当晚获用户确认全部结束。",
     "10月26日晚餐经用户更正：实际3个全蛋，无额外蛋清，另有无油默认烤土豆300g；合计513kcal、P26.4/F16.2/C65.4。早餐2个水煮蛋与121g土豆另算；用户确认晚餐后没有再吃其他食物。",
     "2026-10-26 Apple Health发现17:38–18:37传统力量训练一项，按2026-10-23同源历史截图核对该Health workout能量字段与动态千卡吻合；记录459.79kcal动态消耗。",
-    "2026-10-26用户确认全天饮食结束且晚餐后无其他食物，food_coverage更新confirmed_complete；后来补报室内单车截图（21:34–22:35，1:00:53、动态629kcal、总742kcal、均心144）。当前力量与单车分别计入，仍未收到全天训练已结束的明确确认，training_coverage保留partial、record_status保留open。"
+    "2026-10-26用户确认全天饮食结束且晚餐后无其他食物，food_coverage更新confirmed_complete；后来补报室内单车截图（21:34–22:35，1:00:53、动态629kcal、总742kcal、均心144）。力量与单车分别计入且无重复。",
+    "用户经再次明确询问今日是否只有这两项训练、训练是否全部结束，回复“全部结束”；训练覆盖更新confirmed_complete，饮食和训练均结束，record_status=final。已知食物估算不确定项仍保留，模型TDEE减记账摄入的算术差只作为模型估算，不当成实测真实缺口。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2037.5400382409177,
@@ -340,8 +340,6 @@
       "snack": 5
     },
     "warnings": [
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
