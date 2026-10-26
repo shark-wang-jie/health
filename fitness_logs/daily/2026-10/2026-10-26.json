@@ -9,7 +9,7 @@
   "training_status": "reported_training",
   "training_coverage": "partial",
   "missing_sections": [
-    "用户明确10月26日还有其他训练待补报；目前Health只同步17:38–18:37一项传统力量训练，需要补录其他训练的类型、时间、动态千卡，并确认全天训练结束。",
+    "已记录17:38–18:37传统力量训练及21:34–22:35室内单车；用户尚未明确这是否为全天全部训练，training_coverage保留partial，待确认后封账。",
     "烤土豆121g目前按此前无油熟重口径，如有刷油或重量为生重应更正",
     "沙县鸡腿饭只确认一只鸡腿；米饭、炒白菜、卤蛋和土豆丝食用情况暂沿历史默认，实际如有剩余需更正。",
     "上午干脆面果脯仅有用户指定300kcal，无法确认具体宏量营养素，当前PFC为粗略占位估计。"
@@ -260,6 +260,21 @@
       "duration_seconds": 3585.249603033066,
       "start_local": "2026-10-26T17:38:07.226+08:00",
       "end_local": "2026-10-26T18:37:52.476+08:00"
+    },
+    {
+      "id": "indoor_cycle_2026_10_26_fitness_2134",
+      "event_id": "apple_watch_indoor_cycle_2026_10_26_2134",
+      "type": "室内单车",
+      "source": "用户上传的2026-10-26 Apple Fitness训练详情截图 IMG_5954(1).jpeg",
+      "energy_scope": "session_active",
+      "active_kcal": 629,
+      "total_kcal": 742,
+      "average_heart_rate_bpm": 144,
+      "duration_seconds": 3653,
+      "start_local": "2026-10-26T21:34:00+08:00",
+      "end_local": "2026-10-26T22:35:00+08:00",
+      "time_precision": "screenshot_minute",
+      "health_sync_note": "本次查询Health暂只显示较早的力量训练；这项室内单车以Apple Fitness截图为准，后续Health同步同一事件时合并核对，不重复新增或累计。"
     }
   ],
   "recovery": {
@@ -283,7 +298,7 @@
     "10月26日补记此前未成功同步的水煮蛋2个；上午干脆面与果脯仅按用户指定300kcal记账，包装和实际宏量未知，暂有粗估PFC占位，不把它们当已核实的蛋白、脂肪或碳水。午餐沙县鸡腿饭明确只点一只鸡腿，沿10月16日单鸡腿套餐792kcal；另外吃的盒马鸡腿一盒单独183kcal，不重复计腿。餐食数量已于当晚获用户确认全部结束。",
     "10月26日晚餐经用户更正：实际3个全蛋，无额外蛋清，另有无油默认烤土豆300g；合计513kcal、P26.4/F16.2/C65.4。早餐2个水煮蛋与121g土豆另算；用户确认晚餐后没有再吃其他食物。",
     "2026-10-26 Apple Health发现17:38–18:37传统力量训练一项，按2026-10-23同源历史截图核对该Health workout能量字段与动态千卡吻合；记录459.79kcal动态消耗。",
-    "2026-10-26用户确认全天饮食结束且晚餐后无其他食物，food_coverage更新confirmed_complete；同时明确还有其他训练要补报。当前Health同日仍只显示一项传统力量训练，因此训练状态保留partial、record_status保留open，待补齐训练后才能封账。"
+    "2026-10-26用户确认全天饮食结束且晚餐后无其他食物，food_coverage更新confirmed_complete；后来补报室内单车截图（21:34–22:35，1:00:53、动态629kcal、总742kcal、均心144）。当前力量与单车分别计入，仍未收到全天训练已结束的明确确认，training_coverage保留partial、record_status保留open。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2037.5400382409177,
@@ -299,16 +314,16 @@
       "carbs_g": 239.0958
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 114.94798865085625,
+    "training_discount_kcal": 272.19798865085625,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1734.5400382409177,
       2389.540038240918
     ],
-    "exercise_active_kcal": 459.79195460342487,
-    "exercise_adjusted_kcal": 344.8439659525686,
-    "tdee_kcal_estimate": 2566.3439659525684,
-    "estimated_deficit_kcal": 456.80392771165043,
+    "exercise_active_kcal": 1088.791954603425,
+    "exercise_adjusted_kcal": 816.5939659525687,
+    "tdee_kcal_estimate": 3038.093965952569,
+    "estimated_deficit_kcal": 928.5539277116509,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
