@@ -327,8 +327,8 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -355,7 +355,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 579,
+    "sodium_mg_known_sum": 579.0,
     "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
