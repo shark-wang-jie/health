@@ -1,1 +1,353 @@
-{"schema_version":3,"date":"2026-10-26","timezone":"Asia/Shanghai","record_status":"open","food_log_closed":false,"closure_basis":null,"food_coverage":"partial","training_status":"unknown","training_coverage":"unknown","missing_sections":["尚未报告10月26日训练或明确休息","烤土豆121g目前按此前无油熟重口径，如有刷油或重量为生重应更正","沙县鸡腿饭只确认一只鸡腿；米饭、炒白菜、卤蛋和土豆丝食用情况暂沿历史默认，实际如有剩余需更正。","上午干脆面果脯仅有用户指定300kcal，无法确认具体宏量营养素，当前PFC为粗略占位估计。","晚餐后是否还有食物待报告，今日饮食仍开放。"],"non_energy_pending_notes":[],"trend_context":["10月25日用户主动选择放纵餐与休息日，不记录体重、饮食热量和训练，依约保持10月25日不建每日文件。","10月26日晨起空腹90kg，较最近有记录的10月24日空腹88.75kg增加1.25kg。期间通宵工作、改变饮食内容及可能盐分、水分、糖原、胃肠内容物变化；短期体重变化不能直接等于脂肪增加。"],"weight_measurement_note":"用户明确报空腹体重90kg。","plan_version":"2026-09-08-v3.2","morning_weight_kg":90,"profile_snapshot":{"sex":"男性","age":27,"height_cm":173,"bmr_weight_kg":90,"bmr_weight_date":"2026-10-26","bmr_kcal":1851.25},"energy_method":{"algorithm":"tdee_v1","activity_factor":1.2,"training_factor":0.75},"food_estimation_policy":"photo_margin_v1","targets":{"rest_day_intake_kcal_range":[1800,1800],"training_day_intake_kcal_range":[1900,2000],"protein_target_g":170,"protein_practical_g_range":[140,180],"carbohydrate_reference_g_range":[150,180],"deficit_min_kcal":400,"deficit_max_kcal":600},"intake_entries":[{"id":"breakfast_pumpkin_seeds_8_6g_oct26","status":"consumed","meal":"breakfast","description":"早餐南瓜子8.6g","reported_text":"早饭8.6g南瓜子","source_kind":"label_known_quantity","quantity_g":8.6,"basis":"沿已确认同款南瓜子每100g能量2579kJ、蛋白质31.2g、脂肪48.8g、碳水8.3g、钠0mg，按8.6g折算。","kcal_base_estimate":53.01003824091777,"kcal_booked":53.01003824091777,"kcal_range":[53.01003824091777,53.01003824091777],"protein_g_estimate":2.6832,"fat_g_estimate":4.1968,"carbs_g_estimate":0.7138000000000001,"sodium_mg_estimate":0},{"id":"breakfast_roasted_potato_121g_oct26","status":"consumed_estimated","meal":"breakfast","description":"早餐烤土豆121g（按无油熟重默认）","reported_text":"121g烤土豆","source_kind":"matched_default","quantity_g":121,"basis":"沿此前无油烤土豆每100g93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g的熟重口径，按121g折算。","uncertainty":"本次未单独确认是否刷油或称重状态，暂按历史无油烤熟后的重量。","kcal_base_estimate":112.53,"kcal_booked":112.53,"kcal_range":[112.53,112.53],"protein_g_estimate":3.025,"fat_g_estimate":0.12100000000000001,"carbs_g_estimate":25.651999999999997},{"id":"breakfast_boiled_eggs_2_oct26","status":"consumed_estimated","meal":"breakfast","description":"早餐另外吃水煮鸡蛋2个","reported_text":"又吃了两个水煮蛋","source_kind":"database_estimate","quantity_pieces":2,"basis":"沿既往普通大号水煮鸡蛋每只78kcal、P6.3/F5.3/C0.6，两只合计，无用油。","uncertainty":"鸡蛋实际大小和去壳重量未称重，能量参考140–180kcal。","kcal_base_estimate":156,"kcal_booked":156,"kcal_range":[140,180],"protein_g_estimate":12.6,"fat_g_estimate":10.6,"carbs_g_estimate":1.2},{"id":"morning_instant_noodles_preserved_fruit_snacks_300kcal_oct26","status":"consumed_estimated","meal":"snack","description":"上午干脆面与果脯零食若干（按用户指定300千卡记账）","reported_text":"上午吃了些干脆面和果脯零食，你就按照三百卡记录","source_kind":"database_estimate","basis":"用户亲自指定这批零食合计300kcal，不再按照片/重量推算额外热量；食物比例和包装未知。P5/F12/C43仅为用于记录的近似组成假设，并非标签实测。","uncertainty":"实际份量及干脆面、果脯比例未知；只将300kcal视为用户确认的记账目标，宏量PFC占位粗估且误差可能很大。","kcal_base_estimate":300,"kcal_booked":300,"kcal_range":[300,300],"protein_g_estimate":5,"fat_g_estimate":12,"carbs_g_estimate":43,"protein_g_range":[0,15],"fat_g_range":[0,25],"carbs_g_range":[10,75]},{"id":"lunch_shaxian_one_skinless_leg_oct26","status":"consumed_estimated","meal":"lunch","description":"午餐沙县鸡腿饭（本次只点1只鸡腿）","reported_text":"中午吃了沙县鸡腿饭，但是只点了一个鸡腿","source_kind":"matched_default","basis":"沿2026-10-16同款单去皮鸡腿套餐：双腿套餐基础885kcal，扣除另只去皮鸡腿165kcal后基础720kcal；米饭、炒白菜、卤蛋沿同款整份默认，土豆丝不吃；餐馆未知烹调用油按额外72kcal余量。","uncertainty":"本次仅确定一只鸡腿；米饭、白菜、卤蛋是否全吃及鸡腿实际大小、用油未知，后续可按实际情况更正。","kcal_base_estimate":720,"kcal_booked":792,"kcal_range":[490,960],"protein_g_estimate":44.5,"fat_g_estimate":28.5,"carbs_g_estimate":91,"protein_g_range":[27,64],"fat_g_range":[8,47],"carbs_g_range":[73,118],"margin":{"added_fat_g":8,"added_carbs_g":0,"already_in_base":false,"reason":"单鸡腿沙县套餐未知餐馆烹调用油，按历史10%额外油脂余量72kcal"}},{"id":"lunch_hema_chicken_box_oct26","status":"consumed_estimated","meal":"lunch","description":"午餐额外盒马卤鸡腿1盒（默认去皮去骨）","reported_text":"额外吃了一盒盒马鸡腿","source_kind":"matched_default","basis":"沿10月23–24日用户确认同款：一盒2根、含皮骨毛重约170g，去皮去骨可食肉约125g，按183kcal、P27.13/F2.63/C12.13，钠579mg。与沙县鸡腿饭的单鸡腿是两份不同食物。","uncertainty":"当前一盒去皮可食重量未称重；默认非炸鸡腿不吃皮和骨，若吃皮或不同产品须更正。","kcal_base_estimate":183,"kcal_booked":183,"kcal_range":[150,235],"protein_g_estimate":27.13,"fat_g_estimate":2.63,"carbs_g_estimate":12.13,"sodium_mg_estimate":579},{"id":"dinner_whole_eggs_3_oct26","status":"consumed_estimated","meal":"dinner","description":"晚餐全蛋3个","source_kind":"database_estimate","quantity_pieces":3,"basis":"更正为3个全蛋，每个78kcal、P6.3/F5.3/C0.6","uncertainty":"鸡蛋实际大小未称重","kcal_base_estimate":234,"kcal_booked":234,"kcal_range":[210,270],"protein_g_estimate":18.9,"fat_g_estimate":15.9,"carbs_g_estimate":1.8,"reported_text":"鸡蛋再更正一下 是吃了三个全蛋"},{"id":"dinner_potato_300g_oct26","status":"consumed_estimated","meal":"dinner","description":"晚餐烤土豆300g","source_kind":"matched_default","quantity_g":300,"basis":"按无油熟土豆每100g93千卡、P2.5/F0.1/C21.2","uncertainty":"默认无油熟重","kcal_base_estimate":279,"kcal_booked":279,"kcal_range":[279,279],"protein_g_estimate":7.5,"fat_g_estimate":0.3,"carbs_g_estimate":63.6}],"exercise_entries":[],"recovery":{"hunger":null,"sleep_hours":null,"training_performance":null,"fatigue_or_pain":null},"corrections":[{"date":"2026-10-26","reason":"晚餐更正为3个全蛋，撤销此前另外2个蛋清的记录；早餐2个水煮蛋不变。","original_kcal":190,"corrected_kcal":234,"delta_kcal":44}],"notes":["用户2026-10-26报告空腹90kg及早餐南瓜子8.6g、烤土豆121g；只记录已实吃内容，训练未知，饮食未结束。","遵循用户10月25日休息放纵餐不记录任何体重/饮食/训练的明确约定，今天新建10月26日记录，不回填10月25日。","10月26日补记此前未成功同步的水煮蛋2个；上午干脆面与果脯仅按用户指定300kcal记账，包装和实际宏量未知，暂有粗估PFC占位，不把它们当已核实的蛋白、脂肪或碳水。午餐沙县鸡腿饭明确只点一只鸡腿，沿10月16日单鸡腿套餐792kcal；另外吃的盒马鸡腿一盒单独183kcal，不重复计腿。全天饮食与训练尚未确认结束。","10月26日晚餐实吃2个全蛋、额外2个蛋清、烤土豆300g（暂沿无油熟重口径），合计469kcal、P27.3/F11.02/C65.28。与早餐两蛋和121g土豆为不同份；当前未确认饮食及训练结束。"],"daily_summary":{"intake_kcal_base_estimate":2037.5400382409177,"intake_kcal_booked":2109.540038240918,"protein_g_estimate":121.33819999999999,"fat_g_estimate":74.24780000000001,"carbs_g_estimate":239.0958,"intake_kcal_estimate":2109.540038240918,"food_margin_kcal":72,"base_macro_estimates":{"protein_g":121.33819999999999,"fat_g":66.24780000000001,"carbs_g":239.0958},"completed_day_base_intake_balance_kcal":null,"training_discount_kcal":0,"assumption_note":"仅统计截至10月26日晚餐已经报告的9条食物。训练状态未知、饮食未封账，不将模型差值作为全天缺口；300kcal零食宏量粗估，餐馆单鸡腿饭沿历史份量口径。","intake_kcal_range":[1734.5400382409177,2389.540038240918],"exercise_active_kcal":0,"exercise_adjusted_kcal":0,"tdee_kcal_estimate":2221.5,"estimated_deficit_kcal":111.95996175908226,"completed_day_estimated_deficit_kcal":null,"energy_balance_scope":"provisional_recorded_balance","intake_target_kcal_range":[1800,1800],"target_is_provisional":true,"energy_estimate_provisional":true,"consumed_entries":8,"protein_by_meal_g":{"breakfast":18.3082,"snack":5,"lunch":71.63,"dinner":26.4},"warnings":["当天饮食仍开放，不能推算完整一天的摄入与缺口","训练状态尚未由用户确认全部情况","上午零食固定300kcal，PFC只是粗估，不可视为标签实测","沙县鸡腿饭仅一只鸡腿，盒马鸡腿另算；午餐配菜份量沿历史估算"],"interpretation":"截至目前的热量和粗估宏量，不是全天封账数据；当前训练未知，暂不输出全天热量缺口。","protein_g_range":null,"protein_g_entries_with_range":2,"protein_g_range_coverage_complete":false,"fat_g_range":null,"fat_g_entries_with_range":2,"fat_g_range_coverage_complete":false,"carbs_g_range":null,"carbs_g_entries_with_range":2,"carbs_g_range_coverage_complete":false,"fiber_g_known_sum":null,"fiber_g_entries_with_data":0,"fiber_g_coverage_complete":false,"sodium_mg_known_sum":579,"sodium_mg_entries_with_data":2,"sodium_mg_coverage_complete":false,"fruit_vegetable_g_known_sum":null,"fruit_vegetable_g_entries_with_data":0,"fruit_vegetable_g_coverage_complete":false}}
+{
+  "schema_version": 3,
+  "date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
+  "missing_sections": [
+    "Health已同步17:38–18:37一项传统力量训练；全天训练是否结束、是否有未同步的其他训练，待用户确认。",
+    "烤土豆121g目前按此前无油熟重口径，如有刷油或重量为生重应更正",
+    "沙县鸡腿饭只确认一只鸡腿；米饭、炒白菜、卤蛋和土豆丝食用情况暂沿历史默认，实际如有剩余需更正。",
+    "上午干脆面果脯仅有用户指定300kcal，无法确认具体宏量营养素，当前PFC为粗略占位估计。",
+    "晚餐后是否还有食物待报告，今日饮食仍开放。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "10月25日用户主动选择放纵餐与休息日，不记录体重、饮食热量和训练，依约保持10月25日不建每日文件。",
+    "10月26日晨起空腹90kg，较最近有记录的10月24日空腹88.75kg增加1.25kg。期间通宵工作、改变饮食内容及可能盐分、水分、糖原、胃肠内容物变化；短期体重变化不能直接等于脂肪增加。"
+  ],
+  "weight_measurement_note": "用户明确报空腹体重90kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 90,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 90,
+    "bmr_weight_date": "2026-10-26",
+    "bmr_kcal": 1851.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_8_6g_oct26",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子8.6g",
+      "reported_text": "早饭8.6g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 8.6,
+      "basis": "沿已确认同款南瓜子每100g能量2579kJ、蛋白质31.2g、脂肪48.8g、碳水8.3g、钠0mg，按8.6g折算。",
+      "kcal_base_estimate": 53.01003824091777,
+      "kcal_booked": 53.01003824091777,
+      "kcal_range": [
+        53.01003824091777,
+        53.01003824091777
+      ],
+      "protein_g_estimate": 2.6832,
+      "fat_g_estimate": 4.1968,
+      "carbs_g_estimate": 0.7138000000000001,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_roasted_potato_121g_oct26",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐烤土豆121g（按无油熟重默认）",
+      "reported_text": "121g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 121,
+      "basis": "沿此前无油烤土豆每100g93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g的熟重口径，按121g折算。",
+      "uncertainty": "本次未单独确认是否刷油或称重状态，暂按历史无油烤熟后的重量。",
+      "kcal_base_estimate": 112.53,
+      "kcal_booked": 112.53,
+      "kcal_range": [
+        112.53,
+        112.53
+      ],
+      "protein_g_estimate": 3.025,
+      "fat_g_estimate": 0.12100000000000001,
+      "carbs_g_estimate": 25.651999999999997
+    },
+    {
+      "id": "breakfast_boiled_eggs_2_oct26",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐另外吃水煮鸡蛋2个",
+      "reported_text": "又吃了两个水煮蛋",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 2,
+      "basis": "沿既往普通大号水煮鸡蛋每只78kcal、P6.3/F5.3/C0.6，两只合计，无用油。",
+      "uncertainty": "鸡蛋实际大小和去壳重量未称重，能量参考140–180kcal。",
+      "kcal_base_estimate": 156,
+      "kcal_booked": 156,
+      "kcal_range": [
+        140,
+        180
+      ],
+      "protein_g_estimate": 12.6,
+      "fat_g_estimate": 10.6,
+      "carbs_g_estimate": 1.2
+    },
+    {
+      "id": "morning_instant_noodles_preserved_fruit_snacks_300kcal_oct26",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "上午干脆面与果脯零食若干（按用户指定300千卡记账）",
+      "reported_text": "上午吃了些干脆面和果脯零食，你就按照三百卡记录",
+      "source_kind": "database_estimate",
+      "basis": "用户亲自指定这批零食合计300kcal，不再按照片/重量推算额外热量；食物比例和包装未知。P5/F12/C43仅为用于记录的近似组成假设，并非标签实测。",
+      "uncertainty": "实际份量及干脆面、果脯比例未知；只将300kcal视为用户确认的记账目标，宏量PFC占位粗估且误差可能很大。",
+      "kcal_base_estimate": 300,
+      "kcal_booked": 300,
+      "kcal_range": [
+        300,
+        300
+      ],
+      "protein_g_estimate": 5,
+      "fat_g_estimate": 12,
+      "carbs_g_estimate": 43,
+      "protein_g_range": [
+        0,
+        15
+      ],
+      "fat_g_range": [
+        0,
+        25
+      ],
+      "carbs_g_range": [
+        10,
+        75
+      ]
+    },
+    {
+      "id": "lunch_shaxian_one_skinless_leg_oct26",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐沙县鸡腿饭（本次只点1只鸡腿）",
+      "reported_text": "中午吃了沙县鸡腿饭，但是只点了一个鸡腿",
+      "source_kind": "matched_default",
+      "basis": "沿2026-10-16同款单去皮鸡腿套餐：双腿套餐基础885kcal，扣除另只去皮鸡腿165kcal后基础720kcal；米饭、炒白菜、卤蛋沿同款整份默认，土豆丝不吃；餐馆未知烹调用油按额外72kcal余量。",
+      "uncertainty": "本次仅确定一只鸡腿；米饭、白菜、卤蛋是否全吃及鸡腿实际大小、用油未知，后续可按实际情况更正。",
+      "kcal_base_estimate": 720,
+      "kcal_booked": 792,
+      "kcal_range": [
+        490,
+        960
+      ],
+      "protein_g_estimate": 44.5,
+      "fat_g_estimate": 28.5,
+      "carbs_g_estimate": 91,
+      "protein_g_range": [
+        27,
+        64
+      ],
+      "fat_g_range": [
+        8,
+        47
+      ],
+      "carbs_g_range": [
+        73,
+        118
+      ],
+      "margin": {
+        "added_fat_g": 8,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "单鸡腿沙县套餐未知餐馆烹调用油，按历史10%额外油脂余量72kcal"
+      }
+    },
+    {
+      "id": "lunch_hema_chicken_box_oct26",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐额外盒马卤鸡腿1盒（默认去皮去骨）",
+      "reported_text": "额外吃了一盒盒马鸡腿",
+      "source_kind": "matched_default",
+      "basis": "沿10月23–24日用户确认同款：一盒2根、含皮骨毛重约170g，去皮去骨可食肉约125g，按183kcal、P27.13/F2.63/C12.13，钠579mg。与沙县鸡腿饭的单鸡腿是两份不同食物。",
+      "uncertainty": "当前一盒去皮可食重量未称重；默认非炸鸡腿不吃皮和骨，若吃皮或不同产品须更正。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579
+    },
+    {
+      "id": "dinner_whole_eggs_3_oct26",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "晚餐全蛋3个",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 3,
+      "basis": "更正为3个全蛋，每个78kcal、P6.3/F5.3/C0.6",
+      "uncertainty": "鸡蛋实际大小未称重",
+      "kcal_base_estimate": 234,
+      "kcal_booked": 234,
+      "kcal_range": [
+        210,
+        270
+      ],
+      "protein_g_estimate": 18.9,
+      "fat_g_estimate": 15.9,
+      "carbs_g_estimate": 1.8,
+      "reported_text": "鸡蛋再更正一下 是吃了三个全蛋"
+    },
+    {
+      "id": "dinner_potato_300g_oct26",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "晚餐烤土豆300g",
+      "source_kind": "matched_default",
+      "quantity_g": 300,
+      "basis": "按无油熟土豆每100g93千卡、P2.5/F0.1/C21.2",
+      "uncertainty": "默认无油熟重",
+      "kcal_base_estimate": 279,
+      "kcal_booked": 279,
+      "kcal_range": [
+        279,
+        279
+      ],
+      "protein_g_estimate": 7.5,
+      "fat_g_estimate": 0.3,
+      "carbs_g_estimate": 63.6
+    }
+  ],
+  "exercise_entries": [
+    {
+      "id": "strength_2026_10_26_health_173807",
+      "event_id": "apple_watch_strength_2026_10_26_173807",
+      "type": "传统力量训练",
+      "source": "Apple Health同步的王洁的Apple Watch（2026-10-26）",
+      "energy_scope": "session_active",
+      "active_kcal": 459.79195460342487,
+      "total_kcal": null,
+      "health_raw_total_energy_kcal": 459.79195460342487,
+      "energy_interpretation_basis": "Health的workout字段虽名为total_energy_kcal，2026-10-23同一Apple Watch力量训练返回475.67kcal，与用户Apple Fitness截图动态475kcal吻合（总601kcal），故沿同一来源将本次459.79kcal记为动态热量；未叠加活动圆环。",
+      "duration_seconds": 3585.249603033066,
+      "start_local": "2026-10-26T17:38:07.226+08:00",
+      "end_local": "2026-10-26T18:37:52.476+08:00"
+    }
+  ],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [
+    {
+      "date": "2026-10-26",
+      "reason": "晚餐更正为3个全蛋，撤销此前另外2个蛋清的记录；早餐2个水煮蛋不变。",
+      "original_kcal": 190,
+      "corrected_kcal": 234,
+      "delta_kcal": 44
+    }
+  ],
+  "notes": [
+    "用户2026-10-26报告空腹90kg及早餐南瓜子8.6g、烤土豆121g；只记录已实吃内容，训练未知，饮食未结束。",
+    "遵循用户10月25日休息放纵餐不记录任何体重/饮食/训练的明确约定，今天新建10月26日记录，不回填10月25日。",
+    "10月26日补记此前未成功同步的水煮蛋2个；上午干脆面与果脯仅按用户指定300kcal记账，包装和实际宏量未知，暂有粗估PFC占位，不把它们当已核实的蛋白、脂肪或碳水。午餐沙县鸡腿饭明确只点一只鸡腿，沿10月16日单鸡腿套餐792kcal；另外吃的盒马鸡腿一盒单独183kcal，不重复计腿。全天饮食与训练尚未确认结束。",
+    "10月26日晚餐经用户更正：实际3个全蛋，无额外蛋清，另有无油默认烤土豆300g；合计513kcal、P26.4/F16.2/C65.4。早餐2个水煮蛋与121g土豆另算；饮食仍开放。",
+    "2026-10-26 Apple Health发现17:38–18:37传统力量训练一项，按2026-10-23同源历史截图核对该Health workout能量字段与动态千卡吻合；记录459.79kcal动态消耗，训练完整性仍部分确认，待用户明确是否还有训练。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 2037.5400382409177,
+    "intake_kcal_booked": 2109.540038240918,
+    "protein_g_estimate": 121.3382,
+    "fat_g_estimate": 74.2478,
+    "carbs_g_estimate": 239.0958,
+    "intake_kcal_estimate": 2109.540038240918,
+    "food_margin_kcal": 72.00000000000023,
+    "base_macro_estimates": {
+      "protein_g": 121.3382,
+      "fat_g": 66.2478,
+      "carbs_g": 239.0958
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 114.94798865085625,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      1734.5400382409177,
+      2389.540038240918
+    ],
+    "exercise_active_kcal": 459.79195460342487,
+    "exercise_adjusted_kcal": 344.8439659525686,
+    "tdee_kcal_estimate": 2566.3439659525684,
+    "estimated_deficit_kcal": 456.80392771165043,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1900,
+      2000
+    ],
+    "target_is_provisional": false,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 8,
+    "protein_by_meal_g": {
+      "breakfast": 18.3082,
+      "dinner": 26.4,
+      "lunch": 71.63,
+      "snack": 5
+    },
+    "warnings": [
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 2,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 2,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 2,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 579,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
