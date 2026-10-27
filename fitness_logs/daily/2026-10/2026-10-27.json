@@ -2,15 +2,16 @@
   "schema_version": 3,
   "date": "2026-10-27",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-10-27明确确认今天饮食训练结束，并提供当晚室内单车Apple Fitness训练详情截图；当日两项训练和七项实吃食物均已记账。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "已确认截至练后共7项实际食物；当天是否还有后续摄入及全天饮食结束情况尚未确认。",
-    "已报告健身房力量训练50分钟、估算动态消耗300kcal；全天训练是否全部结束尚未确认。"
+    "早餐牛奶只说一瓶，暂沿历史同款悦鲜活260mL；若当次实际产品/容量不同需更正。",
+    "练前两个猕猴桃可食重量和品种未称量，暂按普通中等大小可食150g估算。",
+    "沙县双鸡腿套餐、盒马卤鸡腿可食重量、餐馆烹调用油及土豆是否额外加油仍沿历史默认估算；力量训练300kcal也是用户自行指定的非设备测量估值。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [
@@ -253,6 +254,23 @@
       "duration_seconds": 3000,
       "energy_interpretation_basis": "不是设备测量值。按照用户明确要求，将本次50分钟力量训练的动态消耗以300kcal作为人工估算值，仅按0.75系数计入模型，不叠加其他活动热量。",
       "uncertainty": "训练动作和强度、真实运动动态热量未知，300kcal为粗估，不作为实测值或严格热量消耗证据；未报告具体开始结束时刻。"
+    },
+    {
+      "id": "indoor_cycle_2026_10_27_fitness_2123",
+      "event_id": "apple_watch_indoor_cycle_2026_10_27_2123",
+      "type": "室内单车",
+      "source": "用户上传2026-10-27 Apple Fitness室内单车训练截图 IMG_5972.jpeg（Apple Watch）",
+      "energy_scope": "session_active",
+      "active_kcal": 403,
+      "total_kcal": 489,
+      "average_heart_rate_bpm": 132,
+      "duration_seconds": 2773,
+      "elapsed_seconds": 2780,
+      "start_local": "2026-10-27T21:23:00+08:00",
+      "end_local": "2026-10-27T22:09:00+08:00",
+      "time_precision": "screenshot_minute",
+      "energy_interpretation_basis": "截图明确区分动态403kcal与总489kcal，仅将动态403kcal记入当次训练。截图显示体能训练时间46分13秒、经过时间46分20秒、平均心率132次/分钟；起止时刻只显示分钟。",
+      "health_sync_note": "若日后Apple Health同步同一时段室内单车，须与该event_id核对合并，不可重复累计；与白天未佩戴手表的50分钟力量训练是两次不同运动。"
     }
   ],
   "recovery": {
@@ -273,9 +291,10 @@
   "notes": [
     "用户2026-10-27报告空腹88.40kg；早餐实吃牛奶一瓶、南瓜子8.1g。牛奶品牌容量未在本次单独确认，暂沿已确认悦鲜活260mL同款。",
     "早餐后来明确又吃烤土豆100g，按历史无油熟重口径另增一条93kcal；不是更正已有牛奶或南瓜子。",
-    "午餐用户确认沙县鸡腿饭、两只去皮鸡腿，米饭最初描述约一拳并曾暂按130g记账，随后明确要求当天也按250g熟重计算；现已原位更正为米饭250g/312.5kcal，其余白菜、卤蛋沿同款，土豆丝不吃；基础837.5kcal、含额外未知用油余量记账921.25kcal。今日饮食和训练仍开放。",
-    "健身房力量训练50分钟，用户明确说未佩戴手表无法提供准确热量，指定先按300kcal动态运动消耗人工估算；训练已发生但全天是否还有其他训练、饮食是否结束均未确认，不封账。",
-    "用户追加练前实吃两个猕猴桃，未称重暂按可食150g估91.5kcal；练后另吃无油熟重默认烤土豆260g（241.8kcal）和盒马去皮去骨卤鸡腿1盒（183kcal）。与早餐土豆、午餐沙县鸡腿是不同摄入，不重复或替换原条目。"
+    "午餐用户确认沙县鸡腿饭、两只去皮鸡腿，米饭最初描述约一拳并曾暂按130g记账，随后明确要求当天也按250g熟重计算；现已原位更正为米饭250g/312.5kcal，其余白菜、卤蛋沿同款，土豆丝不吃；基础837.5kcal、含额外未知用油余量记账921.25kcal。",
+    "健身房力量训练50分钟，用户未佩戴手表，明确指定300kcal动态运动消耗人工估算；本次能耗不是设备测量值。",
+    "用户追加练前实吃两个猕猴桃，未称重暂按可食150g估91.5kcal；练后另吃无油熟重默认烤土豆260g（241.8kcal）和盒马去皮去骨卤鸡腿1盒（183kcal）。与早餐土豆、午餐沙县鸡腿是不同摄入，不重复或替换原条目。",
+    "用户2026-10-27晚明确确认全天饮食训练全部结束；截图新确认21:23–22:09室内单车训练时长46分13秒、动态403kcal（总489kcal不计入）、平均心率132；与早前50分钟人工估算300kcal力量训练分别计入，当天共两项动态703kcal。按BMR1835.25×1.2+703×0.75估模型消耗2729.55kcal，减账面1758.82kcal得模型算术差约970.73kcal；因食物与力量训练估值不确定，不能当成实测真实缺口。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1675.0741395793498,
@@ -291,16 +310,16 @@
       "carbs_g": 201.31896666666665
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 75.0,
+    "training_discount_kcal": 175.75,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1453.0741395793498,
       1993.0741395793498
     ],
-    "exercise_active_kcal": 300.0,
-    "exercise_adjusted_kcal": 225.0,
-    "tdee_kcal_estimate": 2427.2999999999997,
-    "estimated_deficit_kcal": 668.47586042065,
+    "exercise_active_kcal": 703.0,
+    "exercise_adjusted_kcal": 527.25,
+    "tdee_kcal_estimate": 2729.5499999999997,
+    "estimated_deficit_kcal": 970.72586042065,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -317,9 +336,6 @@
       "preworkout": 1.65
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
