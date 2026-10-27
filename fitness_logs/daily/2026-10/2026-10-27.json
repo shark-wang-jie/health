@@ -9,7 +9,7 @@
   "training_status": "reported_training",
   "training_coverage": "partial",
   "missing_sections": [
-    "截至午餐已确认4项实际食物；后续摄入及全天饮食结束情况尚未确认。",
+    "已确认截至练后共7项实际食物；当天是否还有后续摄入及全天饮食结束情况尚未确认。",
     "已报告健身房力量训练50分钟、估算动态消耗300kcal；全天训练是否全部结束尚未确认。"
   ],
   "non_energy_pending_notes": [],
@@ -178,6 +178,67 @@
           "kcal_estimate": 75
         }
       ]
+    },
+    {
+      "id": "preworkout_kiwifruit_two_oct27",
+      "status": "consumed_estimated",
+      "meal": "preworkout",
+      "description": "练前猕猴桃2个（暂按普通中等个头、去皮可食约150g）",
+      "reported_text": "练前吃了两个猕猴桃",
+      "source_kind": "database_estimate",
+      "quantity_count": 2,
+      "quantity_g_estimate": 150,
+      "basis": "用户确认实吃2个，但未称重或说明品种。暂按普通绿心猕猴桃中等果每个可食部分约75g、两只约150g；按常见食物成分每100g约61kcal、P1.1/F0.5/C14.7估算。",
+      "uncertainty": "品种、大小、去皮可食重量均未确认；150g是可食部分估量，实际称重或金果等不同品种时应更正。",
+      "kcal_base_estimate": 91.5,
+      "kcal_booked": 91.5,
+      "kcal_range": [
+        75,
+        120
+      ],
+      "protein_g_estimate": 1.65,
+      "fat_g_estimate": 0.75,
+      "carbs_g_estimate": 22.05
+    },
+    {
+      "id": "postworkout_roasted_potato_260g_oct27",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后烤土豆260g（沿无油熟重默认）",
+      "reported_text": "练后260g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 260,
+      "basis": "沿历史同款无油烤熟土豆每100g93kcal、P2.5/F0.1/C21.2；按练后实际报告260g折算。与早餐100g为两次不同摄入。",
+      "uncertainty": "本次未重复确认是否无油、称重为熟重；沿既有默认，若额外刷油或称重为生重需更正。",
+      "kcal_base_estimate": 241.8,
+      "kcal_booked": 241.8,
+      "kcal_range": [
+        241.8,
+        241.8
+      ],
+      "protein_g_estimate": 6.5,
+      "fat_g_estimate": 0.26,
+      "carbs_g_estimate": 55.12
+    },
+    {
+      "id": "postworkout_hema_chicken_box_oct27",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后盒马卤鸡腿1盒（默认去皮去骨）",
+      "reported_text": "练后一盒盒马鸡腿",
+      "source_kind": "matched_default",
+      "basis": "沿10月23–26日已确认同款：每盒两根含皮骨约170g，去皮去骨可食肉约125g，暂估183kcal、P27.13/F2.63/C12.13、钠579mg。与午餐沙县去皮鸡腿2只为另一次摄入。",
+      "uncertainty": "非油炸鸡腿沿历史默认去皮且不吃骨；本盒实际可食重量未称重，若本次吃皮或产品改变需更正。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579
     }
   ],
   "exercise_entries": [
@@ -213,32 +274,33 @@
     "用户2026-10-27报告空腹88.40kg；早餐实吃牛奶一瓶、南瓜子8.1g。牛奶品牌容量未在本次单独确认，暂沿已确认悦鲜活260mL同款。",
     "早餐后来明确又吃烤土豆100g，按历史无油熟重口径另增一条93kcal；不是更正已有牛奶或南瓜子。",
     "午餐用户确认沙县鸡腿饭、两只去皮鸡腿，米饭最初描述约一拳并曾暂按130g记账，随后明确要求当天也按250g熟重计算；现已原位更正为米饭250g/312.5kcal，其余白菜、卤蛋沿同款，土豆丝不吃；基础837.5kcal、含额外未知用油余量记账921.25kcal。今日饮食和训练仍开放。",
-    "健身房力量训练50分钟，用户明确说未佩戴手表无法提供准确热量，指定先按300kcal动态运动消耗人工估算；训练已发生但全天是否还有其他训练、饮食是否结束均未确认，不封账。"
+    "健身房力量训练50分钟，用户明确说未佩戴手表无法提供准确热量，指定先按300kcal动态运动消耗人工估算；训练已发生但全天是否还有其他训练、饮食是否结束均未确认，不封账。",
+    "用户追加练前实吃两个猕猴桃，未称重暂按可食150g估91.5kcal；练后另吃无油熟重默认烤土豆260g（241.8kcal）和盒马去皮去骨卤鸡腿1盒（183kcal）。与早餐土豆、午餐沙县鸡腿是不同摄入，不重复或替换原条目。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1158.7741395793498,
-    "intake_kcal_booked": 1242.5241395793498,
-    "protein_g_estimate": 83.72053333333332,
-    "fat_g_estimate": 50.331688888888884,
-    "carbs_g_estimate": 112.01896666666666,
-    "intake_kcal_estimate": 1242.5241395793498,
+    "intake_kcal_base_estimate": 1675.0741395793498,
+    "intake_kcal_booked": 1758.8241395793498,
+    "protein_g_estimate": 119.00053333333332,
+    "fat_g_estimate": 53.971688888888885,
+    "carbs_g_estimate": 201.31896666666665,
+    "intake_kcal_estimate": 1758.8241395793498,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 83.72053333333332,
-      "fat_g": 41.02613333333333,
-      "carbs_g": 112.01896666666666
+      "protein_g": 119.00053333333332,
+      "fat_g": 44.66613333333333,
+      "carbs_g": 201.31896666666665
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 75.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      986.2741395793498,
-      1396.2741395793498
+      1453.0741395793498,
+      1993.0741395793498
     ],
     "exercise_active_kcal": 300.0,
     "exercise_adjusted_kcal": 225.0,
     "tdee_kcal_estimate": 2427.2999999999997,
-    "estimated_deficit_kcal": 1184.77586042065,
+    "estimated_deficit_kcal": 668.47586042065,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -247,10 +309,12 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 14.3872,
-      "lunch": 69.33333333333333
+      "lunch": 69.33333333333333,
+      "postworkout": 33.629999999999995,
+      "preworkout": 1.65
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -271,8 +335,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 156.0,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 735.0,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
