@@ -1,41 +1,42 @@
 {
-  "version": "2026-10-16-v4",
-  "policy": "固定同款；历史参考不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
+  "version": "2026-10-27-v5",
+  "policy": "固定同款；2026-10-27起沙县鸡腿饭默认熟米饭250g，已完成历史不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
   "foods": {
     "shaxian_two_skinless_legs": {
       "entry": {
-        "description": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
+        "description": "沙县：两只去皮鸡腿、默认熟米饭250g、炒白菜、卤蛋全吃；不吃土豆丝",
         "meal": "未分类",
         "source_kind": "matched_default",
-        "basis": "沙县：两只去皮鸡腿、米饭、炒白菜、卤蛋全吃；不吃土豆丝",
-        "kcal_base_estimate": 885,
-        "kcal_booked": 973.5000000000001,
+        "basis": "用户2026-10-27明确今后沙县米饭默认按250g熟重，熟米饭按125kcal/100g记312.5kcal；双去皮鸡腿、炒白菜、卤蛋沿历史同款，土豆丝不吃。历史300g/360kcal双腿套餐基础885，替换米饭后基础837.5，另加10%未知餐馆用油余量83.75。只对新默认口径生效，实际称重/明确份量优先。",
+        "kcal_base_estimate": 837.5,
+        "kcal_booked": 921.25,
         "kcal_range": [
-          710,
-          1080
+          665,
+          1075
         ],
-        "protein_g_estimate": 70.5,
-        "fat_g_estimate": 36.83333333333334,
-        "carbs_g_estimate": 91,
+        "protein_g_estimate": 69.33333333333333,
+        "fat_g_estimate": 36.138888888888886,
+        "carbs_g_estimate": 77.66666666666666,
         "margin": {
-          "added_fat_g": 9.833333333333346,
+          "added_fat_g": 9.305555555555555,
           "added_carbs_g": 0,
           "already_in_base": false,
-          "reason": "未知烹调用油增加约10%热量记账余量"
+          "reason": "按新默认基础837.5kcal加10%未知餐馆用油余量83.75kcal"
         },
-        "uncertainty": "沿用历史默认份量，实际吃下份量优先",
+        "uncertainty": "默认250g熟米饭为用户选择的估算口径，未称重，具体实际食用量优先；双去皮鸡腿可食重、餐馆用油及配菜仍有估算误差。",
         "protein_g_range": [
-          57,
+          53,
           84
         ],
         "fat_g_range": [
-          18,
-          51
+          17,
+          53
         ],
         "carbs_g_range": [
-          73,
-          118
-        ]
+          58,
+          107
+        ],
+        "quantity_rice_g_estimate": 250
       }
     },
     "milk_260ml": {
