@@ -5,11 +5,11 @@
   "record_status": "open",
   "food_log_closed": false,
   "closure_basis": null,
-  "food_coverage": "partial",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "partial",
   "missing_sections": [
-    "截至练后已确认6项实际食物；其他后续摄入和全天训练是否全部结束尚未确认。",
+    "用户已确认10月28日全天饮食结束，共7项实际摄入；力量训练虽结束，但全天是否还有其他训练（如室内单车）尚未确认。",
     "青芥蟹饭团本次未重新提供包装，暂沿2026-09多次记录的历史同款105g/个、95kcal/个；若当次规格或标签不同需更正。"
   ],
   "non_energy_pending_notes": [],
@@ -233,6 +233,29 @@
       "protein_g_estimate": 12.6,
       "fat_g_estimate": 10.6,
       "carbs_g_estimate": 1.2
+    },
+    {
+      "id": "evening_lays_tube_original_seven_chips_oct28",
+      "status": "consumed_estimated",
+      "meal": "evening_snack",
+      "description": "晚间乐事桶装原味薯片7片（暂按16.33g）",
+      "reported_text": "晚上又吃了七片乐事桶装原味薯片",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 7,
+      "quantity_g_estimate": 16.333333333333332,
+      "basis": "用户实吃7片、未称重。暂借鉴乐事Stax原味桶装常见每12片约28g的片数重量比例，推7片约16.33g；中国乐事无限原味桶装产品资料每100g约2079kJ、P6.6/F27/C56.9，折算本次约81.16kcal。不同地区桶装配方和单片大小可能不同，此处并非本次包装实测标签。",
+      "uncertainty": "没有实际称重或本次桶装营养标签，7片重量为约数；若是104g/40g以外不同桶装系列，营养可能不同。若提供清晰标签或称重可据实更正。",
+      "product_reference_url": "https://www.foodtalks.cn/product/5732",
+      "piece_weight_reference_url": "https://www.kroger.com/p/lays-stax-original-potato-chips/0002840005509",
+      "kcal_base_estimate": 81.15917782026769,
+      "kcal_booked": 81.15917782026769,
+      "kcal_range": [
+        65,
+        115
+      ],
+      "protein_g_estimate": 1.078,
+      "fat_g_estimate": 4.41,
+      "carbs_g_estimate": 9.293666666666665
     }
   ],
   "exercise_entries": [
@@ -272,32 +295,33 @@
     "魔芋燕麦蒸饺沿历史同款每包500g/25个（10个约200g）和每100g472kJ、P6.6/F1.9/C17估算；牛奶暂沿历史悦鲜活260mL同款，若本次品牌规格变化再更正。当天训练未报告，不等于确认休息。",
     "午餐用户报告沙县鸡腿饭，沿2026-10-27确定的统一默认：米饭熟重250g（312.5kcal）、两只去皮鸡腿、白菜和卤蛋、土豆丝不吃；本餐基础837.5kcal加未知用油余量83.75kcal，合计记账921.25kcal。若本次餐点或剩饭与默认不同应原位更正，不重复新增。",
     "用户确认当天健身房力量训练已经结束。Health显示一项传统力量训练17:45:52–18:45:11、约59分19秒、同源字段total_energy_kcal约494.26kcal，沿历史截图校对暂记动态494.26kcal，不叠加Watch活动圆环；全天其他训练是否还有待确认。",
-    "练后又实吃青芥蟹饭团2个，经用户提醒重新查询GitHub 2026-09-17、09-22等历史同款每个105g/95kcal，已经将本日饭团原位从暂估400kcal更正为190kcal、P3.8/F7.4/C26.8、钠772mg；另吃茶叶蛋2个，按普通全蛋同款156kcal，均为独立摄入，不重复记账。"
+    "练后又实吃青芥蟹饭团2个，经用户提醒重新查询GitHub 2026-09-17、09-22等历史同款每个105g/95kcal，已经将本日饭团原位从暂估400kcal更正为190kcal、P3.8/F7.4/C26.8、钠772mg；另吃茶叶蛋2个，按普通全蛋同款156kcal，均为独立摄入，不重复记账。",
+    "用户晚间追加实吃乐事桶装原味薯片7片，未称重，暂以7/12×28g约16.33g及参考原味桶装每100g2079kJ估约81.16kcal，P1.08/F4.41/C9.29，因桶装系列和片重未核实保留65–115kcal估算范围。用户明确确认10月28日全天饮食结束；训练是否还有其他项目尚未确认，保留record_status=open。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1640.477533460803,
-    "intake_kcal_booked": 1724.227533460803,
-    "protein_g_estimate": 110.97653333333332,
-    "fat_g_estimate": 72.27568888888888,
-    "carbs_g_estimate": 152.86046666666664,
-    "intake_kcal_estimate": 1724.227533460803,
+    "intake_kcal_base_estimate": 1721.6367112810706,
+    "intake_kcal_booked": 1805.3867112810706,
+    "protein_g_estimate": 112.05453333333332,
+    "fat_g_estimate": 76.68568888888888,
+    "carbs_g_estimate": 162.1541333333333,
+    "intake_kcal_estimate": 1805.3867112810706,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 110.97653333333332,
-      "fat_g": 62.97013333333332,
-      "carbs_g": 152.86046666666664
+      "protein_g": 112.05453333333332,
+      "fat_g": 67.38013333333332,
+      "carbs_g": 162.1541333333333
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 123.56505347976093,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1451.977533460803,
-      1901.977533460803
+      1516.977533460803,
+      2016.977533460803
     ],
     "exercise_active_kcal": 494.2602139190438,
     "exercise_adjusted_kcal": 370.69516043928286,
     "tdee_kcal_estimate": 2568.195160439283,
-    "estimated_deficit_kcal": 843.96762697848,
+    "estimated_deficit_kcal": 762.8084491582124,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -306,14 +330,14 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 25.243199999999998,
+      "evening_snack": 1.078,
       "lunch": 69.33333333333333,
       "postworkout": 16.4
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
       "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
