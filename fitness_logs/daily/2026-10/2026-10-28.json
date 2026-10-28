@@ -9,7 +9,7 @@
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "午餐沙县双鸡腿饭的配菜、鸡腿可食重量及用油沿历史默认估算，早餐牛奶规格和晚间桶装薯片单片重量未重新称量或核实标签，仍存在摄入估算误差。",
+    "午餐沙县双鸡腿饭的配菜、鸡腿可食重量及用油沿历史默认估算，早餐牛奶规格和晚间桶装薯片单片重量未重新称量或核实标签，练后新补报135g酸奶暂沿历史同款营养标签，仍存在摄入估算误差。",
     "青芥蟹饭团本次未重新提供包装，暂沿2026-09多次记录的历史同款105g/个、95kcal/个；若当次规格或标签不同需更正。"
   ],
   "non_energy_pending_notes": [],
@@ -256,6 +256,37 @@
       "protein_g_estimate": 1.078,
       "fat_g_estimate": 4.41,
       "carbs_g_estimate": 9.293666666666665
+    },
+    {
+      "id": "postworkout_bucket_yogurt_135g_oct28_late_report",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后大桶原味发酵乳酸奶135g（历史按克称重同款；用户将原报145g更正为135g）",
+      "reported_text": "原报练后145g酸奶，用户随后明确更正实际吃135g；营养成分表仍和大桶酸奶一致",
+      "source_kind": "matched_default",
+      "catalog_id": "yogurt_bucket_100g",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_g": 135,
+      "servings": 1.35,
+      "basis": "用户于10月28日当天饮食训练封账后补报练后酸奶，起初报145g，随后明确更正实际吃135g，且营养表与此前大桶酸奶一致。已核对GitHub 2026-09-01记录及food_catalog.json中yogurt_bucket_100g；历史同款大桶原味发酵乳标签每100g348kJ、蛋白质4g、脂肪5g、碳水5.6g、钠40mg、钙125mg，按135/100倍折算，不使用120g杯装或300g零脂款口径。",
+      "uncertainty": "本次没有重新拍摄酸奶营养标签，按用户指定历史同款；若本次品牌、配方不同须凭当次标签原位更正。",
+      "kcal_base_estimate": 112.2848948374761,
+      "kcal_booked": 112.2848948374761,
+      "kcal_range": [
+        112.2848948374761,
+        112.2848948374761
+      ],
+      "protein_g_estimate": 5.4,
+      "fat_g_estimate": 6.75,
+      "carbs_g_estimate": 7.56,
+      "sodium_mg_estimate": 54,
+      "calcium_mg_estimate": 168.75,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿历史同款标签按更正后的135g折算，无额外加成"
+      }
     }
   ],
   "exercise_entries": [
@@ -305,6 +336,13 @@
       "original_kcal": 400,
       "corrected_kcal": 190,
       "delta_kcal": -210
+    },
+    {
+      "date": "2026-10-28",
+      "reason": "用户明确更正刚补报练后大桶原味发酵乳的实际重量，从145g更正为135g，历史同款营养标签不变；此次尚未成功同步GitHub，最终仅提交135g这一份，不新增第二份酸奶。",
+      "original_kcal": 120.60229445506691,
+      "corrected_kcal": 112.2848948374761,
+      "delta_kcal": -8.317399617590809
     }
   ],
   "notes": [
@@ -314,32 +352,33 @@
     "用户确认当天健身房力量训练已经结束。Health显示一项传统力量训练17:45:52–18:45:11、约59分19秒、同源字段total_energy_kcal约494.26kcal，沿历史截图校对暂记动态494.26kcal，不叠加Watch活动圆环；全天其他训练是否还有待确认。",
     "练后又实吃青芥蟹饭团2个，经用户提醒重新查询GitHub 2026-09-17、09-22等历史同款每个105g/95kcal，已经将本日饭团原位从暂估400kcal更正为190kcal、P3.8/F7.4/C26.8、钠772mg；另吃茶叶蛋2个，按普通全蛋同款156kcal，均为独立摄入，不重复记账。",
     "用户晚间追加实吃乐事桶装原味薯片7片，未称重，暂以7/12×28g约16.33g及参考原味桶装每100g2079kJ估约81.16kcal，P1.08/F4.41/C9.29，因桶装系列和片重未核实保留65–115kcal估算范围。用户明确确认10月28日全天饮食结束。",
-    "用户随后上传10月28日室内单车Apple Fitness截图并确认当日训练全部结束：21:22–22:07、训练45:29、经过45:32、动态471kcal、总555kcal、均心144。Health也同步同一事件21:22:01–22:07:31、字段total_energy_kcal=472.64，取截图明确动态471kcal一次，不重复计入Health读数或活动圆环。连同此前17:45–18:45传统力量训练暂估动态494.26kcal，两项独立训练合计约965.26动态kcal，按0.75折算约723.95kcal。饮食训练均确认结束，正式final封账，但饮食份量和餐馆油等仍有估算误差，模型差值不视为实测真实缺口。"
+    "用户随后上传10月28日室内单车Apple Fitness截图并确认当日训练全部结束：21:22–22:07、训练45:29、经过45:32、动态471kcal、总555kcal、均心144。Health也同步同一事件21:22:01–22:07:31、字段total_energy_kcal=472.64，取截图明确动态471kcal一次，不重复计入Health读数或活动圆环。连同此前17:45–18:45传统力量训练暂估动态494.26kcal，两项独立训练合计约965.26动态kcal，按0.75折算约723.95kcal。饮食训练均确认结束，正式final封账，但饮食份量和餐馆油等仍有估算误差，模型差值不视为实测真实缺口。",
+    "10月28日首次封账后，用户明确补报练后大桶原味发酵乳酸奶，初报145g后更正实际只吃135g、标签与历史同款相同；按GitHub 2026-09-01曾按克计量的历史同款及食物库yogurt_bucket_100g（每100g348kJ、P4/F5/C5.6）增加独立第8条约112.28kcal、P5.4/F6.75/C7.56，未覆盖当晚已记录的饭团和茶叶蛋，也不将其计为10月29日。此前145g草稿因GitHub授权被拒绝尚未同步，后续只需提交135g更正版本，不重复加两份酸奶。饮食训练仍按用户已确认完整保留final，重新计算摄入及模型差额。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1721.6367112810706,
-    "intake_kcal_booked": 1805.3867112810706,
-    "protein_g_estimate": 112.05453333333332,
-    "fat_g_estimate": 76.68568888888888,
-    "carbs_g_estimate": 162.1541333333333,
-    "intake_kcal_estimate": 1805.3867112810706,
+    "intake_kcal_base_estimate": 1833.9216061185466,
+    "intake_kcal_booked": 1917.6716061185466,
+    "protein_g_estimate": 117.45453333333333,
+    "fat_g_estimate": 83.43568888888888,
+    "carbs_g_estimate": 169.7141333333333,
+    "intake_kcal_estimate": 1917.6716061185466,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 112.05453333333332,
-      "fat_g": 67.38013333333332,
-      "carbs_g": 162.1541333333333
+      "protein_g": 117.45453333333333,
+      "fat_g": 74.13013333333332,
+      "carbs_g": 169.7141333333333
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 241.315053479761,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1516.977533460803,
-      2016.977533460803
+      1629.262428298279,
+      2129.2624282982792
     ],
     "exercise_active_kcal": 965.2602139190437,
     "exercise_adjusted_kcal": 723.9451604392827,
     "tdee_kcal_estimate": 2921.4451604392825,
-    "estimated_deficit_kcal": 1116.058449158212,
+    "estimated_deficit_kcal": 1003.7735543207359,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -348,12 +387,12 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 25.243199999999998,
       "evening_snack": 1.078,
       "lunch": 69.33333333333333,
-      "postworkout": 16.4
+      "postworkout": 21.8
     },
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
@@ -371,8 +410,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1896.0,
-    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_known_sum": 1950.0,
+    "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
