@@ -1,7 +1,33 @@
 {
-  "version": "2026-10-27-v5",
+  "version": "2026-10-28-v6",
   "policy": "固定同款；2026-10-27起沙县鸡腿饭默认熟米饭250g，已完成历史不自动追改；实际标签/份量优先。额外热量余量是操作约定，并非测量校正。",
   "foods": {
+    "wasabi_crab_riceball_105g": {
+      "entry": {
+        "description": "青芥蟹味柳饭团1个，历史同款105g",
+        "meal": "未分类",
+        "source_kind": "matched_default",
+        "quantity_g": 105,
+        "basis": "用户2026-10-28提醒查询历史同款；GitHub 2026-09-01、09-07、09-15、09-17、09-21、09-22、09-28、09-29等记录确认每个105g、历史包装每100g378kJ、P1.8/F3.5/C12.8、钠368mg，历史按1个约95kcal、P1.9/F3.7/C13.4、钠386mg。每次实际规格/标签优先。",
+        "kcal_base_estimate": 95,
+        "kcal_booked": 95,
+        "kcal_range": [
+          95,
+          95
+        ],
+        "protein_g_estimate": 1.9,
+        "fat_g_estimate": 3.7,
+        "carbs_g_estimate": 13.4,
+        "sodium_mg_estimate": 386,
+        "margin": {
+          "added_fat_g": 0,
+          "added_carbs_g": 0,
+          "already_in_base": false,
+          "reason": "沿历史已确认同款标签，不额外加成"
+        },
+        "uncertainty": "仅适用与2026年9月历史同款105g规格一致的饭团，本次品牌或包装如变化须按当次标签更正。"
+      }
+    },
     "shaxian_two_skinless_legs": {
       "entry": {
         "description": "沙县：两只去皮鸡腿、默认熟米饭250g、炒白菜、卤蛋全吃；不吃土豆丝",
