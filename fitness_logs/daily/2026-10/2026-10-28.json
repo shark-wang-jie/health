@@ -1,0 +1,198 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "目前仅确认早餐3项真实摄入，全天后续饮食和训练均未确认结束。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "2026-10-28空腹88.00kg，较10月27日88.40kg下降0.40kg、较10月26日90.00kg下降2.00kg。短时变化可能有水分、盐分、糖原及肠胃内容物影响，观察7天均值，不等同全部脂肪下降。"
+  ],
+  "weight_measurement_note": "用户明确报告2026-10-28晨起空腹体重88.0kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.0,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.0,
+    "bmr_weight_date": "2026-10-28",
+    "bmr_kcal": 1831.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_8_6g_oct28",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子8.6g",
+      "reported_text": "早饭8.6g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 8.6,
+      "basis": "历史已确认同款标签每100g能量2579kJ、P31.2/F48.8/C8.3、钠0mg，按实际报告8.6g折算。",
+      "kcal_base_estimate": 53.01003824091777,
+      "kcal_booked": 53.01003824091777,
+      "kcal_range": [
+        53.01003824091777,
+        53.01003824091777
+      ],
+      "protein_g_estimate": 2.6832,
+      "fat_g_estimate": 4.1968,
+      "carbs_g_estimate": 0.7138,
+      "sodium_mg_estimate": 0
+    },
+    {
+      "id": "breakfast_konjac_oat_dumplings_10pcs_oct28",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐魔芋燕麦鸡胸肉蒸饺10个（历史同款每包500g/25个，推算200g）",
+      "reported_text": "早饭10个魔芋燕麦蒸饺",
+      "source_kind": "matched_default",
+      "quantity_pieces": 10,
+      "quantity_g_estimate": 200,
+      "basis": "沿历史已确认同款魔芋燕麦鸡胸肉蒸饺每包500g共25个；每个约20g、10个约200g，营养标签每100g472kJ、P6.6/F1.9/C17、钠484mg。当前未单独称重，若不同产品或单只规格改变应更正。",
+      "uncertainty": "按历史同款平均单只20g推算总重量200g，并非本次称重或拍摄包装。",
+      "kcal_base_estimate": 225.62141491395792,
+      "kcal_booked": 225.62141491395792,
+      "kcal_range": [
+        225.62141491395792,
+        225.62141491395792
+      ],
+      "protein_g_estimate": 13.2,
+      "fat_g_estimate": 3.8,
+      "carbs_g_estimate": 34,
+      "sodium_mg_estimate": 968
+    },
+    {
+      "id": "breakfast_milk_260ml_oct28",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐牛奶1瓶（暂沿历史悦鲜活260mL同款）",
+      "reported_text": "早饭一瓶牛奶",
+      "source_kind": "matched_default",
+      "quantity_ml": 260,
+      "basis": "用户本次只报告一瓶牛奶，暂沿历史已确认悦鲜活生牛乳260mL同款；2026-10-13标签每100mL287kJ、P3.6/F3.9/C4.8，整瓶按260mL计。",
+      "uncertainty": "本次未单独确认品牌或瓶容量，若产品或规格变更需据实更正。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.36,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.02,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-10-28晨起空腹体重88.00kg。早餐实吃南瓜子8.6g、魔芋燕麦鸡胸肉蒸饺10个、牛奶1瓶，三条分别记账，无新增其他食物。",
+    "魔芋燕麦蒸饺沿历史同款每包500g/25个（10个约200g）和每100g472kJ、P6.6/F1.9/C17估算；牛奶暂沿历史悦鲜活260mL同款，若本次品牌规格变化再更正。当天训练未报告，不等于确认休息。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 456.97753346080304,
+    "intake_kcal_booked": 456.97753346080304,
+    "protein_g_estimate": 25.243199999999998,
+    "fat_g_estimate": 18.1368,
+    "carbs_g_estimate": 47.193799999999996,
+    "intake_kcal_estimate": 456.97753346080304,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 25.243199999999998,
+      "fat_g": 18.1368,
+      "carbs_g": 47.193799999999996
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      456.97753346080304,
+      456.97753346080304
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2197.5,
+    "estimated_deficit_kcal": 1740.522466539197,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 25.243199999999998
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1124.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
