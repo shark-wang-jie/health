@@ -99,6 +99,68 @@
       "sugar_g_estimate": 12.48,
       "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325
+    },
+    {
+      "id": "lunch_chicken_mushroom_nut_pasta_oct29",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐番茄口鸡肉菌菇坚果意面一整份（熟面条至少300g，鸡胸肉约80g熟重）",
+      "reported_text": "午饭鸡胸蘑菇坚果意面，鸡胸大概80g熟重；照片和订单显示413kal/份；用户补充番茄口且熟意面应该至少300g，而非原先估的120–160g",
+      "source_kind": "photo_estimate",
+      "quantity_servings": 1,
+      "cooked_chicken_breast_g_estimate": 80,
+      "cooked_pasta_g_minimum_estimate": 300,
+      "basis": "用户在看到120–160g熟意面估算后明确更正：番茄口、面条吃了很多口，煮熟面条应至少300g；因此原商家菜单标示413kal/整份明显可能低估，不再按413kcal作为基础总热量。按熟意面300g约471–474kcal、其中鸡胸肉80g熟重约132kcal，另含菌菇番茄酱及图片可见坚果碎粗估合计约100kcal，整份基础暂估710kcal；未知实际用油及面条超过300g的可能性，先按餐馆10%余量71kcal记账合计781kcal。鸡胸包含在这份意面内，不单独叠加；宏量P46/F20.59/C105仅为组合估算，其中脂肪已含约7.89g额外油脂余量。",
+      "uncertainty": "300g为用户对熟面条的至少量估算，非单独称重且可能高于300g；照片无法定量坚果、酱汁和油。菜单标示413kal可能与实际份量不符。估算范围650–1050kcal不代表置信区间；若日后称出实际熟面重、明确剩余或商家提供成分表，可原位更正。",
+      "merchant_listed_kcal_per_serving": 413,
+      "kcal_base_estimate": 710,
+      "kcal_booked": 781,
+      "kcal_range": [
+        650,
+        1050
+      ],
+      "protein_g_estimate": 46,
+      "fat_g_estimate": 20.58888888888889,
+      "carbs_g_estimate": 105,
+      "protein_g_range": [
+        40,
+        60
+      ],
+      "fat_g_range": [
+        12,
+        36
+      ],
+      "carbs_g_range": [
+        95,
+        145
+      ],
+      "margin": {
+        "added_fat_g": 7.888888888888889,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "熟面至少300g后据食材重量重估整份基础710kcal，未知餐馆用油及份量再加10%即71kcal记账余量；与同盒鸡胸肉不重复计入"
+      }
+    },
+    {
+      "id": "lunch_hema_braised_chicken_leg_box_oct29",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐额外盒马卤鸡腿一盒（历史同款，默认去皮去骨）",
+      "reported_text": "午饭鸡胸蘑菇坚果意面外加一盒盒马鸡腿；照片可见另盒两只卤鸡腿",
+      "source_kind": "matched_default",
+      "quantity_boxes": 1,
+      "basis": "沿2026-10-27和更早历史盒马卤鸡腿同款：每盒两根带皮带骨包装约170g，按用户非油炸鸡腿默认去皮去骨可食肉约125g估算为183kcal、蛋白质27.13g、脂肪2.63g、碳水12.13g、钠579mg。与意面内80g熟鸡胸肉是独立食物，分别记账，不重复。",
+      "uncertainty": "照片虽可见两根鸡腿，但本次未核实去皮、去骨后的实际肉重；若实际吃了鸡皮或本盒产品不同，需原位更正。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "sodium_mg_estimate": 579
     }
   ],
   "exercise_entries": [],
@@ -108,35 +170,44 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-29",
+      "reason": "用户确认意面为番茄口且仅熟面条就至少300g，修正原按商家413kal及误判熟面120–160g计出的整份454.30kcal；鸡胸80g熟重仍包含在整份内。上次午餐版本因GitHub权限拒绝未成功同步，后续只需提交这份更正，不重复新增意面。",
+      "original_kcal": 454.3,
+      "corrected_kcal": 781,
+      "delta_kcal": 326.7
+    }
+  ],
   "notes": [
     "2026-10-29晨起空腹体重87.80kg。早餐实际吃魔芋燕麦鸡胸肉蒸饺15只，用户纠正最初称呼荞麦燕麦并明确为历史同款；按500g/25只、每只20g，合计约300g、338.43kcal；另实喝牛奶一瓶，沿历史悦鲜活260mL约178.35kcal。两条分别记账，不重复。",
-    "本日饮食尚未结束，训练尚未报告，不将当前摄入与模型基础消耗的差额作为全天缺口；蒸饺重量为历史单只平均推算，牛奶本次品牌规格未复核。"
+    "本日饮食尚未结束，训练尚未报告，不将当前摄入与模型基础消耗的差额作为全天缺口；蒸饺重量为历史单只平均推算，牛奶本次品牌规格未复核。",
+    "午餐用户实吃番茄口鸡肉菌菇坚果意面一整份，订单截图写413kal/份，但后来明确熟面条至少300g，纠正先前仅120–160g的估计；以熟面约471–474kcal、80g熟鸡胸约132kcal及菌菇番茄酱、坚果碎重估整份基础710kcal，再加餐馆用油和份量不明余量71kcal，共记781kcal、P约46/F20.59/C105，实际熟面还可能超过300g。80g鸡胸已包含于意面，不单独加。另盒马卤鸡腿一盒按历史去皮去骨同款183kcal独立记账，与意面内鸡胸不重复。上述午餐早期草稿曾因GitHub工具授权拒绝未提交成功，本次只以更正后的最新版本为准，勿补录旧草稿。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 516.7782026768642,
-    "intake_kcal_booked": 516.7782026768642,
-    "protein_g_estimate": 29.16,
-    "fat_g_estimate": 15.84,
-    "carbs_g_estimate": 63.480000000000004,
-    "intake_kcal_estimate": 516.7782026768642,
-    "food_margin_kcal": 0.0,
+    "intake_kcal_base_estimate": 1409.778202676864,
+    "intake_kcal_booked": 1480.778202676864,
+    "protein_g_estimate": 102.28999999999999,
+    "fat_g_estimate": 39.058888888888895,
+    "carbs_g_estimate": 180.61,
+    "intake_kcal_estimate": 1480.778202676864,
+    "food_margin_kcal": 71.0,
     "base_macro_estimates": {
-      "protein_g": 29.16,
-      "fat_g": 15.84,
-      "carbs_g": 63.480000000000004
+      "protein_g": 102.28999999999999,
+      "fat_g": 31.170000000000005,
+      "carbs_g": 180.61
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      516.7782026768642,
-      516.7782026768642
+      1316.778202676864,
+      1801.778202676864
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2195.1,
-    "estimated_deficit_kcal": 1678.3217973231358,
+    "estimated_deficit_kcal": 714.3217973231358,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -145,9 +216,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 29.16
+      "breakfast": 29.16,
+      "lunch": 73.13
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -156,20 +228,20 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1608.0,
-    "sodium_mg_entries_with_data": 2,
-    "sodium_mg_coverage_complete": true,
+    "sodium_mg_known_sum": 2187.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
