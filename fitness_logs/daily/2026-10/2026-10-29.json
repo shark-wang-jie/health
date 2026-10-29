@@ -8,7 +8,10 @@
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "黑胡椒烤肠品牌规格及每根实际重量未知；现按100g临时假设估算，待实际包装标签或称重更正。",
+    "本次力量训练未提供Fitness截图直接核对动态/总能量；426.59000624806714kcal暂沿历史同源校对作为动态估值，待截图核对。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [
     "2026-10-29晨起空腹体重87.80kg，较10月28日88.00kg下降0.20kg；短期变化可能受水分、糖原和胃肠内容物影响，继续看多天平均趋势。"
@@ -231,7 +234,7 @@
       "type": "传统力量训练",
       "source": "Apple Health，王洁的Apple Watch；2026-10-29 17:43:28–18:43:14（Asia/Shanghai）",
       "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
-      "energy_scope": "session_active_interpreted",
+      "energy_scope": "session_active",
       "active_kcal": 426.59000624806714,
       "total_kcal": null,
       "duration_seconds": 3586.2588109970093,
@@ -270,14 +273,14 @@
     "fat_g_estimate": 70.9588888888889,
     "carbs_g_estimate": 250.41,
     "intake_kcal_estimate": 2175.778202676864,
-    "food_margin_kcal": 71,
+    "food_margin_kcal": 71.0,
     "base_macro_estimates": {
       "protein_g": 135.39,
       "fat_g": 63.07000000000001,
       "carbs_g": 250.41
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 106.64750156201679,
+    "training_discount_kcal": 106.64750156201677,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1931.778202676864,
@@ -290,8 +293,8 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -302,8 +305,7 @@
       "postworkout": 33.1
     },
     "warnings": [
-      "当日已封账，但意面份量、黑胡椒烤肠重量等营养估算存在误差",
-      "模型估算差额约339.26千卡，不是实测真实缺口"
+      "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
@@ -318,7 +320,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 2187,
+    "sodium_mg_known_sum": 2187.0,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
