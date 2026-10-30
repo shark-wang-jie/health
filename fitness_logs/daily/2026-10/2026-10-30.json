@@ -1,0 +1,309 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "2026-10-30晨起空腹体重88.10kg，较10月29日87.80kg+0.30kg；单次变化不代表脂肪增加。"
+  ],
+  "weight_measurement_note": "用户报告2026-10-30早晨空腹体重88.10kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.1,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.1,
+    "bmr_weight_date": "2026-10-30",
+    "bmr_kcal": 1832.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seed_9g_20261030",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子9g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 9,
+      "basis": "用户报告实际食用9g；历史同款标签每100g2579kJ、P31.2/F48.8/C8.3，按9g换算。",
+      "kcal_base_estimate": 55.47562141491395,
+      "kcal_booked": 55.47562141491395,
+      "kcal_range": [
+        55.47562141491395,
+        55.47562141491395
+      ],
+      "protein_g_estimate": 2.808,
+      "fat_g_estimate": 4.392,
+      "carbs_g_estimate": 0.747
+    },
+    {
+      "id": "breakfast_milk_1bottle_20261030",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐牛奶一瓶（暂沿历史悦鲜活260mL）",
+      "source_kind": "matched_default",
+      "quantity_ml": 260,
+      "calalog_id": "milk_260ml",
+      "basis": "用户报告一瓶牛奶，沿10月13日起历史悦鲜活260mL标签每100mL287kJ、P3.6/F3.9/C4.8折算，本次品牌与容量未重新核实。",
+      "uncertainty": "若当次牛奶并非悦鲜活260mL，应按包装原位更正。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.36,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325
+    },
+    {
+      "id": "lunch_rice_20261030",
+      "meal": "lunch",
+      "description": "白米饭约240g熟重，基本吃完",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "两张餐前餐后照片对比，米饭基本吃完，估约240g熟重。",
+      "kcal_base_estimate": 300,
+      "kcal_booked": 300,
+      "kcal_range": [
+        285,
+        330
+      ],
+      "protein_g_estimate": 6.2,
+      "fat_g_estimate": 0.7,
+      "carbs_g_estimate": 69,
+      "uncertainty": "实际食用量、肥瘦比例和烹调油根据餐前餐后照片推估，未称重。",
+      "quantity_g_estimate": 240
+    },
+    {
+      "id": "lunch_spine_pork_20261030",
+      "meal": "lunch",
+      "description": "较肥的脊骨肉，去骨吃下约80g",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "用户说脊骨肉肥的也不少；餐后留明显骨头，净肉暂估80g肥瘦混合。",
+      "kcal_base_estimate": 300,
+      "kcal_booked": 300,
+      "kcal_range": [
+        250,
+        350
+      ],
+      "protein_g_estimate": 17,
+      "fat_g_estimate": 25.5,
+      "carbs_g_estimate": 0.5,
+      "uncertainty": "实际食用量、肥瘦比例和烹调油根据餐前餐后照片推估，未称重。",
+      "quantity_g_estimate": 80
+    },
+    {
+      "id": "lunch_twice_cooked_pork_20261030",
+      "meal": "lunch",
+      "description": "油大偏肥的回锅肉，约60g含附着油",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "用户明确深色肉是回锅肉、偏肥且油大；餐后仍剩肉和大量红油，剩余部分未计，估吃入约60g肉及附着油汁。",
+      "kcal_base_estimate": 320,
+      "kcal_booked": 320,
+      "kcal_range": [
+        265,
+        390
+      ],
+      "protein_g_estimate": 11,
+      "fat_g_estimate": 28.5,
+      "carbs_g_estimate": 5,
+      "uncertainty": "实际食用量、肥瘦比例和烹调油根据餐前餐后照片推估，未称重。",
+      "quantity_g_estimate": 60
+    },
+    {
+      "id": "lunch_cucumber_egg_20261030",
+      "meal": "lunch",
+      "description": "黄瓜炒鸡蛋约100g，部分剩余",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "照片显示黄瓜炒蛋有剩余，按吃进去部分约100g估算。",
+      "kcal_base_estimate": 120,
+      "kcal_booked": 120,
+      "kcal_range": [
+        110,
+        165
+      ],
+      "protein_g_estimate": 5,
+      "fat_g_estimate": 9.5,
+      "carbs_g_estimate": 3.5,
+      "uncertainty": "实际食用量、肥瘦比例和烹调油根据餐前餐后照片推估，未称重。",
+      "quantity_g_estimate": 100
+    },
+    {
+      "id": "lunch_clear_soup_20261030",
+      "meal": "lunch",
+      "description": "清汤一小碗喝完",
+      "status": "consumed_estimated",
+      "source_kind": "photo_estimate",
+      "basis": "用户明确补充午餐清汤喝完；按清淡汤带少量菜叶估20kcal。",
+      "kcal_base_estimate": 20,
+      "kcal_booked": 20,
+      "kcal_range": [
+        10,
+        35
+      ],
+      "protein_g_estimate": 1,
+      "fat_g_estimate": 1.2,
+      "carbs_g_estimate": 1.5,
+      "uncertainty": "实际食用量、肥瘦比例和烹调油根据餐前餐后照片推估，未称重。",
+      "quantity_bowls": 1
+    },
+    {
+      "id": "dinner_garlic_sausage_20261030",
+      "status": "consumed_estimated",
+      "meal": "dinner",
+      "description": "蒜香肠一根（暂沿历史同款150g）",
+      "reported_text": "晚饭一根蒜香肠",
+      "source_kind": "matched_default",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "用户报告一根蒜香肠；沿10月24日历史同款每根暂估150g，标签每100g658kJ、P12.4/F6.9/C11.3、钠808mg；无额外加油报告。",
+      "uncertainty": "本次未再次确认品牌、每根重量及烹调加油；若与历史同款不同须更正。",
+      "kcal_base_estimate": 235.8986615678776,
+      "kcal_booked": 235.8986615678776,
+      "kcal_range": [
+        212,
+        260
+      ],
+      "protein_g_estimate": 18.6,
+      "fat_g_estimate": 10.35,
+      "carbs_g_estimate": 16.95,
+      "sodium_mg_estimate": 1212
+    },
+    {
+      "id": "dinner_hema_chicken_legs_20261030",
+      "meal": "dinner",
+      "description": "盒马卤鸡腿一盒，默认去皮去骨",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "basis": "历史同款盒马卤鸡腿一盒约两只，含骨带皮包装约170g，默认去皮去骨可食肉约125g估183kcal，用户未提供本次新规格。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "uncertainty": "本次实际可食净肉重量和是否去皮尚未重新确认，采用既定非油炸鸡腿去皮去骨默认值。",
+      "quantity_boxes": 1,
+      "quantity_edible_g_estimate": 125
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "10月30日早餐：9g南瓜子、牛奶一瓶（暂按悦鲜活260mL）；午餐照片前后比对：白米饭、较肥脊骨肉、偏肥油大回锅肉、黄瓜炒蛋和清汤（用户确认喝完）；晚餐：蒜香肠一根、盒马卤鸡腿一盒。",
+    "午餐参考估算1060kcal，范围920–1270kcal；餐后骨头、剩肉/剩菜/大量红油不全部计入。",
+    "本日仍开放，训练状况和其他饮食尚未确认，不根据已记录的食物推断整日最终缺口。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 1712.7203632887188,
+    "intake_kcal_booked": 1712.7203632887188,
+    "protein_g_estimate": 98.09799999999998,
+    "fat_g_estimate": 92.91199999999999,
+    "carbs_g_estimate": 121.807,
+    "intake_kcal_estimate": 1712.7203632887188,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 98.09799999999998,
+      "fat_g": 92.91199999999999,
+      "carbs_g": 121.807
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      1515.8217017208412,
+      1998.8217017208412
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2198.7,
+    "estimated_deficit_kcal": 485.97963671128105,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 9,
+    "protein_by_meal_g": {
+      "breakfast": 12.168,
+      "lunch": 40.2,
+      "dinner": 45.730000000000004
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1368,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
