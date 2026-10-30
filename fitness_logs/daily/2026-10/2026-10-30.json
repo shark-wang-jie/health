@@ -2,13 +2,16 @@
   "schema_version": 3,
   "date": "2026-10-30",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
-  "missing_sections": [],
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户于2026-10-30晚明确确认：今日训练饮食结束",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [
+    "回锅肉和脊骨肉偏肥、烹调油与实际食用净重均仅照片估计，实际摄入热量存在显著不确定性；蒜香肠和盒马鸡腿按历史同款份量暂估。",
+    "Health本次骑行workout接口total_energy_kcal按历史同源动态口径暂记，缺本次Fitness动态千卡截图直接校验。"
+  ],
   "non_energy_pending_notes": [],
   "trend_context": [
     "2026-10-30晨起空腹体重88.10kg，较10月29日87.80kg+0.30kg；单次变化不代表脂肪增加。"
@@ -228,9 +231,42 @@
       "uncertainty": "本次实际可食净肉重量和是否去皮尚未重新确认，采用既定非油炸鸡腿去皮去骨默认值。",
       "quantity_boxes": 1,
       "quantity_edible_g_estimate": 125
+    },
+    {
+      "id": "postworkout_baked_potato_165g_20261030",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "description": "有氧后烤土豆165g（按历史无油熟重）",
+      "quantity_g": 165,
+      "source_kind": "matched_default",
+      "basis": "用户实际吃下165g；沿用历史无油烤熟土豆每100g93kcal、蛋白质2.5g、脂肪0.1g、碳水21.2g。",
+      "uncertainty": "本次未确认是否加油及称重为生熟重，暂沿历史无油熟重。",
+      "kcal_base_estimate": 153.45,
+      "kcal_booked": 153.45,
+      "kcal_range": [
+        153.45,
+        153.45
+      ],
+      "protein_g_estimate": 4.125,
+      "fat_g_estimate": 0.165,
+      "carbs_g_estimate": 34.98
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "cycling_2026_10_30_214233",
+      "event_id": "health_workout_2026_10_30_214233",
+      "type": "室内骑行（Health HKWorkoutActivityType13）",
+      "source": "Apple Health Apple Watch 2026-10-30 21:42:33–22:17:17 Asia/Shanghai",
+      "energy_scope": "session_active",
+      "active_kcal": 306.88230634592264,
+      "total_kcal": null,
+      "duration_seconds": 2084.2344949245453,
+      "start_local": "2026-10-30T21:42:33.502000+08:00",
+      "end_local": "2026-10-30T22:17:17.736000+08:00",
+      "basis": "Health记录total_energy_kcal=306.8823，沿历史同源截图比对的动态口径暂记；本次未获Fitness动态/总能量截图，待校验。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -241,50 +277,50 @@
   "notes": [
     "10月30日早餐：9g南瓜子、牛奶一瓶（暂按悦鲜活260mL）；午餐照片前后比对：白米饭、较肥脊骨肉、偏肥油大回锅肉、黄瓜炒蛋和清汤（用户确认喝完）；晚餐：蒜香肠一根、盒马卤鸡腿一盒。",
     "午餐参考估算1060kcal，范围920–1270kcal；餐后骨头、剩肉/剩菜/大量红油不全部计入。",
-    "本日仍开放，训练状况和其他饮食尚未确认，不根据已记录的食物推断整日最终缺口。"
+    "10月30日有氧21:42–22:17，Health记录306.88kcal暂作动态；练后165g烤土豆记153.45kcal。用户确认全天饮食、训练均结束；封账但保留估算不确定性。",
+    "用户最终确认10月30日整日饮食、训练结束，已封账；食物重量和用油、Health动态消耗仍有估算误差，记录在missing_sections中，最终已验证的缺口保持null。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1712.7203632887188,
-    "intake_kcal_booked": 1712.7203632887188,
-    "protein_g_estimate": 98.09799999999998,
-    "fat_g_estimate": 92.91199999999999,
-    "carbs_g_estimate": 121.807,
-    "intake_kcal_estimate": 1712.7203632887188,
+    "intake_kcal_base_estimate": 1866.1703632887188,
+    "intake_kcal_booked": 1866.1703632887188,
+    "protein_g_estimate": 102.22299999999998,
+    "fat_g_estimate": 93.077,
+    "carbs_g_estimate": 156.787,
+    "intake_kcal_estimate": 1866.1703632887188,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 98.09799999999998,
-      "fat_g": 92.91199999999999,
-      "carbs_g": 121.807
+      "protein_g": 102.22299999999998,
+      "fat_g": 93.077,
+      "carbs_g": 156.787
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 76.72057658648066,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1515.8217017208412,
-      1998.8217017208412
+      1669.2717017208413,
+      2152.271701720841
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2198.7,
-    "estimated_deficit_kcal": 485.97963671128105,
+    "exercise_active_kcal": 306.88230634592264,
+    "exercise_adjusted_kcal": 230.16172975944198,
+    "tdee_kcal_estimate": 2428.861729759442,
+    "estimated_deficit_kcal": 562.6913664707231,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 9,
+    "consumed_entries": 10,
     "protein_by_meal_g": {
       "breakfast": 12.168,
       "lunch": 40.2,
-      "dinner": 45.730000000000004
+      "dinner": 45.730000000000004,
+      "postworkout": 4.125
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
