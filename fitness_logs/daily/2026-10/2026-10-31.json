@@ -1,0 +1,196 @@
+{
+  "schema_version": 3,
+  "date": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "2026-10-31晨起空腹体重87.80kg，比2026-10-30的88.10kg下降0.30kg；短期波动不等同于脂肪变化。"
+  ],
+  "weight_measurement_note": "用户报告2026-10-31晨起空腹体重87.80kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 87.8,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.8,
+    "bmr_weight_date": "2026-10-31",
+    "bmr_kcal": 1829.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seed_9g_20261031",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子9g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 9,
+      "basis": "用户明确报告食用南瓜子9g；沿已核对同款标签每100g2579kJ、P31.2g/F48.8g/C8.3g换算，没有额外用油。",
+      "kcal_base_estimate": 55.47562141491395,
+      "kcal_booked": 55.47562141491395,
+      "kcal_range": [
+        55.47562141491395,
+        55.47562141491395
+      ],
+      "protein_g_estimate": 2.808,
+      "fat_g_estimate": 4.392,
+      "carbs_g_estimate": 0.747,
+      "reported_text": "空腹体重87.80，早饭9g南瓜子"
+    },
+    {
+      "id": "breakfast_garlic_sausage_one_20261031",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐蒜香肠1根（暂按历史同款150g）",
+      "reported_text": "早饭一根蒜香肠",
+      "source_kind": "matched_default",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "用户报告蒜香肠一根，暂沿之前已确认同款每根150g，标签每100g658kJ、蛋白质12.4g、脂肪6.9g、碳水11.3g、钠808mg；本次未提供新称重/包装，未报告额外烹饪油。",
+      "uncertainty": "历史同款单根150g属于暂估；本次实际品牌、克重、额外用油未重新核对。",
+      "kcal_base_estimate": 235.8986615678776,
+      "kcal_booked": 235.8986615678776,
+      "kcal_range": [
+        212,
+        260
+      ],
+      "protein_g_estimate": 18.6,
+      "fat_g_estimate": 10.35,
+      "carbs_g_estimate": 16.95,
+      "sodium_mg_estimate": 1212
+    },
+    {
+      "id": "breakfast_milk_one_bottle_20261031",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐牛奶1瓶（暂沿历史悦鲜活260mL）",
+      "reported_text": "早饭一瓶牛奶",
+      "source_kind": "matched_default",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_ml": 260,
+      "basis": "用户报告牛奶一瓶。暂沿此前已核对悦鲜活生牛乳260mL规格，标签每100mL287kJ、P3.6g/F3.9g/C4.8g、钠60mg、钙125mg。",
+      "uncertainty": "本次未提供牛奶瓶身或规格，如不是历史260mL同款需据实际包装更正原条目。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.360000000000001,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.0200000000000005,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-10-31晨起空腹体重87.80kg（昨日88.10kg）。早餐实际食用南瓜子9g、蒜香肠一根及牛奶一瓶；南瓜子按历史标签9g，香肠暂沿历史单根150g，牛奶暂沿历史悦鲜活260mL，三者各记录一条，避免重复。",
+    "截至早餐仅部分饮食已报告；训练状态未知，不把未知当作0或确认休息。今日未封账，暂不报告全天最终缺口。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 469.7203632887189,
+    "intake_kcal_booked": 469.7203632887189,
+    "protein_g_estimate": 30.768,
+    "fat_g_estimate": 24.882,
+    "carbs_g_estimate": 30.177,
+    "intake_kcal_estimate": 469.7203632887189,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 30.768,
+      "fat_g": 24.882,
+      "carbs_g": 30.177
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      445.8217017208413,
+      493.8217017208413
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2195.1,
+    "estimated_deficit_kcal": 1725.379636711281,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 30.768
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1368,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
