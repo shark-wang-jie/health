@@ -8,10 +8,11 @@
   "food_coverage": "partial",
   "training_status": "reported_training",
   "training_coverage": "partial",
-  "missing_sections": [],
-  "non_energy_pending_notes": [
-    "Health运动记录显示两段完成，但用户尚未确认10月31日全天饮食和训练是否全部结束。",
+  "missing_sections": [
     "两段workout只有total_energy_kcal，没有本次动态能量直接核验；用户更正为室内爬坡步行，因此不再判定716.65kcal异常；active_kcal仍暂null，仅因total与动态能量需要区分，防止重复记账。"
+  ],
+  "non_energy_pending_notes": [
+    "Health运动记录显示两段完成，但用户尚未确认10月31日全天饮食和训练是否全部结束。"
   ],
   "trend_context": [
     "2026-10-31晨起空腹体重87.80kg，比2026-10-30的88.10kg下降0.30kg；短期波动不等同于脂肪变化。"
@@ -337,7 +338,21 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-31",
+      "entry_id": "walking_health_2026_10_31_205213",
+      "type": "training_type_correction",
+      "previous": {
+        "interpretation": "普通平地步行，716.65kcal明显偏高"
+      },
+      "updated": {
+        "type": "室内爬坡步行（用户明确更正）",
+        "interpretation": "爬坡强度可解释较高能耗，不再仅凭距离判为异常；active_kcal仍为null，保留原始total_kcal=716.648"
+      },
+      "reason": "补存当日notes及交接摘要已明确保存的用户晚间更正；不新增训练，不改原始读数；原更正的具体时刻未记录。"
+    }
+  ],
   "notes": [
     "2026-10-31晨起空腹体重87.80kg（昨日88.10kg）。早餐实际食用南瓜子9g、蒜香肠一根及牛奶一瓶；南瓜子按历史标签9g，香肠暂沿历史单根150g，牛奶暂沿历史悦鲜活260mL，三者各记录一条，避免重复。",
     "2026-10-31追加上次提交被阻断的沙县鸡腿饭、练前烤土豆150g和去皮盒马鸭腿一盒；不可视为本次新吃第二份。",
@@ -359,21 +374,21 @@
       "carbs_g": 188.43966666666665
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1931.5740917782027,
       2724.5740917782027
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2195.1,
     "estimated_deficit_kcal": -171.03775334608054,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -389,9 +404,10 @@
       "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
       "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "已见两次训练，但动态能量尚无可靠数据，暂不计入训练加成；当前TDEE与摄入差不可视为真实全天缺口。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -404,7 +420,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1472,
+    "sodium_mg_known_sum": 1472.0,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 235.3,
