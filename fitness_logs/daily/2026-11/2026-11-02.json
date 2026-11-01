@@ -1,0 +1,169 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "2026-11-02晨起空腹86.95kg，比2026-11-01的87.70kg下降0.75kg；单日大幅下降可能含水分与胃肠内容物变化，不等同于0.75kg脂肪减少。"
+  ],
+  "weight_measurement_note": "用户2026-11-02晨起报告空腹体重86.95kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 86.95,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 86.95,
+    "bmr_weight_date": "2026-11-02",
+    "bmr_kcal": 1820.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seed_8_7g_nov02",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子8.7g",
+      "reported_text": "早饭8.7g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 8.7,
+      "basis": "用户报告实际吃南瓜子8.7g，沿历史已核对同款标签每100g2579kJ、P31.2/F48.8/C8.3g，按0.087份折算，无额外用油。",
+      "kcal_base_estimate": 53.626434034416825,
+      "kcal_booked": 53.626434034416825,
+      "kcal_range": [
+        53.626434034416825,
+        53.626434034416825
+      ],
+      "protein_g_estimate": 2.7144,
+      "fat_g_estimate": 4.2456,
+      "carbs_g_estimate": 0.7221
+    },
+    {
+      "id": "breakfast_six_no_sausage_one_150g_nov02",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐六号肠1根，暂按历史同款150g",
+      "reported_text": "早饭一根六号肠",
+      "source_kind": "matched_default",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "用户报告吃六号肠一根，沿GitHub既有同款默认每根150g，已核对该款标签每100g735kJ、蛋白质13.9g、脂肪9.1g、碳水9.5g。历史该款整根记263.50kcal，与蒜香肠150g的另一标签不同。",
+      "uncertainty": "本次没有再称六号肠单根重量或出示包装，按此前已明确同款每根150g估算；本次若非同款或尺寸不同应按实际包装及重量原位更正。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        240,
+        290
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.649999999999999,
+      "carbs_g_estimate": 14.25
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-02早餐实际食用南瓜子8.7g、六号肠1根。六号肠沿GitHub历史同款150g每100g735kJ，不得使用蒜香肠每100g658kJ的不同标签；如本次重量/产品不同，原位更正原条目。",
+    "目前仅早餐及空腹体重报告，训练状态未知，全天尚未结束；不能将未报运动视为确定休息，也不将暂算收支当最终全天缺口。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 317.13025812619503,
+    "intake_kcal_booked": 317.13025812619503,
+    "protein_g_estimate": 23.564400000000003,
+    "fat_g_estimate": 17.895599999999998,
+    "carbs_g_estimate": 14.9721,
+    "intake_kcal_estimate": 317.13025812619503,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 23.564400000000003,
+      "fat_g": 17.895599999999998,
+      "carbs_g": 14.9721
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      293.62643403441683,
+      343.62643403441683
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2184.9,
+    "estimated_deficit_kcal": 1867.769741873805,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 23.564400000000003
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
