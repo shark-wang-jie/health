@@ -2,14 +2,20 @@
   "schema_version": 3,
   "date": "2026-11-01",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
-  "missing_sections": [],
-  "non_energy_pending_notes": [],
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-11-01下午明确说“今天饮食训练都结束”，包括练后吃完一整个正常加酱的七层皇堡。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [
+    "Apple Health当日两段workout只取得total_energy_kcal分别约419.00和527.70，尚未确认动态消耗；active_kcal=null，模型无法给出可信的全天最终热量缺口，不得与活动圆环重复累加。",
+    "汉堡王七层皇堡约2070kcal是本对话配料拆分估算，不是中国区该款官方营养表实测；份量、是否含芝士和酱料有较宽误差。"
+  ],
+  "non_energy_pending_notes": [
+    "11月1日用户已确认全部饮食与训练结束，无需重复追问封账；后续有新标签、运动截图时仅原位修正旧条目。",
+    "用户昨日确认室内爬坡，仅适用于10月31日；11月1日这段Health rawValue52先按步行训练存档，不擅自判定为爬坡。"
+  ],
   "trend_context": [
     "今日空腹体重87.70kg，前一日87.80kg，日波动不能直接换算脂肪变化。"
   ],
@@ -119,9 +125,62 @@
       "protein_g_estimate": 3.5,
       "fat_g_estimate": 0.14,
       "carbs_g_estimate": 29.68
+    },
+    {
+      "id": "postworkout_burgerking_whopper_seven_patties_normal_sauce_20261101",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "汉堡王七层皇堡1个，整只吃完，正常加酱",
+      "reported_text": "已经训练结束，练后吃了一个七层皇堡，正常加了酱，今天饮食训练都结束",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "beef_patties": 7,
+      "basis": "用户明确整只七层皇堡吃完、正常加酱。中国区该版本未取得对应官方营养表，沿本对话估算：7片牛肉饼约1645kcal，面包胚约240kcal，正常份量酱约160kcal，蔬菜约25kcal，合计暂估2070kcal；酱料已含在总量中不重复加成。",
+      "uncertainty": "七片肉饼大小、实际配方、酱料份量和是否加芝士未按本次包装实测；本对话粗估1850–2250kcal，蛋白质/脂肪/碳水为估计而非官方标签。",
+      "kcal_base_estimate": 2070,
+      "kcal_booked": 2070,
+      "kcal_range": [
+        1850,
+        2250
+      ],
+      "protein_g_estimate": 148,
+      "fat_g_estimate": 145,
+      "carbs_g_estimate": 49
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_01_130217",
+      "event_id": "apple_health_workout_2026_11_01_130217",
+      "type": "传统力量训练",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "source": "Apple Health，王洁的Apple Watch，2026-11-01 13:02:17–14:10:34，Asia/Shanghai",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "total_kcal": 418.99949313602343,
+      "duration_seconds": 4097.104447007179,
+      "start_local": "2026-11-01T13:02:17.601000+08:00",
+      "end_local": "2026-11-01T14:10:34.706000+08:00",
+      "energy_interpretation_basis": "Apple Health workout接口返回total_energy_kcal约419.00，仅保留原始字段。本次未核实是否等于动态热量，不直接代入active_kcal或叠加活动圆环。",
+      "uncertainty": "缺少本次Fitness截图直接区分动态与总能量。"
+    },
+    {
+      "id": "walking_health_2026_11_01_141317",
+      "event_id": "apple_health_workout_2026_11_01_141317",
+      "type": "步行训练（Health记录类别）",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 52)",
+      "source": "Apple Health，王洁的Apple Watch，2026-11-01 14:13:17–15:19:38，Asia/Shanghai",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "total_kcal": 527.7027863386021,
+      "duration_seconds": 3980.9979469776154,
+      "total_distance_m": 4074.3476544963196,
+      "start_local": "2026-11-01T14:13:17.039000+08:00",
+      "end_local": "2026-11-01T15:19:38.037000+08:00",
+      "energy_interpretation_basis": "Apple Health workout rawValue52记录本次步行距离约4.07km、接口total_energy_kcal527.70。用户前一日明确另一段活动是室内爬坡，但今天这段尚未单独确认坡度/室内性质，不自动继承昨日设定，也不把total直接当动态。",
+      "uncertainty": "是否室内爬坡、坡度与当次Fitness动态/总热量尚未核实，active_kcal先null。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -131,51 +190,53 @@
   "corrections": [],
   "notes": [
     "早餐大桶酸奶273g，昨晚剩余小河虾烤成品93g连壳全部吃完；昨晚烤成193g总量，昨晚吃100g，今天吃93g。",
-    "此外又吃烤土豆140g，沿历史无油熟重计算。日记录仍开放，训练未知。"
+    "此外又吃烤土豆140g，沿历史无油熟重计算。日记录仍开放，训练未知。",
+    "用户明确11月1日所有饮食训练结束；练后整只汉堡王七层皇堡正常酱料已吃，按前次粗估2070kcal、P148/F145/C49记一份；酱料包含不额外计。",
+    "Health同日力量训练13:02–14:10原始total418.9995kcal、步行训练14:13–15:19原始total527.7028kcal。两段原始total合计946.70kcal，但没有单次已确认动态能量；全天缺口保持null。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 543.2650095602294,
-    "intake_kcal_booked": 543.2650095602294,
-    "protein_g_estimate": 51.620000000000005,
-    "fat_g_estimate": 16.580000000000002,
-    "carbs_g_estimate": 47.757999999999996,
-    "intake_kcal_estimate": 543.2650095602294,
+    "intake_kcal_base_estimate": 2613.2650095602294,
+    "intake_kcal_booked": 2613.2650095602294,
+    "protein_g_estimate": 199.62,
+    "fat_g_estimate": 161.58,
+    "carbs_g_estimate": 96.758,
+    "intake_kcal_estimate": 2613.2650095602294,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 51.620000000000005,
-      "fat_g": 16.580000000000002,
-      "carbs_g": 47.757999999999996
+      "protein_g": 199.62,
+      "fat_g": 161.58,
+      "carbs_g": 96.758
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      487.46500956022936,
-      599.0650095602293
+      2337.465009560229,
+      2849.0650095602296
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2193.9,
-    "estimated_deficit_kcal": 1650.6349904397707,
+    "estimated_deficit_kcal": -419.3650095602293,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 48.12,
+      "breakfast": 48.120000000000005,
+      "postworkout": 148,
       "snack": 3.5
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "已报告训练有消耗缺失：仅计已知训练消耗",
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "已确认完整日饮食与训练，但运动动态消耗未被直接核验，当前模型仅含基础活动消耗，算术差不能视为真实全天盈余或缺口。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
