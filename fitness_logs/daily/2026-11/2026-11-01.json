@@ -1,0 +1,198 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "今日空腹体重87.70kg，前一日87.80kg，日波动不能直接换算脂肪变化。"
+  ],
+  "weight_measurement_note": "11月1日用户报告晨起空腹87.70kg",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 87.7,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.7,
+    "bmr_weight_date": "2026-11-01",
+    "bmr_kcal": 1828.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_bucket_yogurt_273g_nov01",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "description": "大桶原味发酵乳酸奶273g（历史同款）",
+      "reported_text": "早饭273g酸奶",
+      "source_kind": "matched_default",
+      "catalog_id": "yogurt_bucket_100g",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_g": 273,
+      "basis": "11月1日吃历史同款大桶酸奶273g，已核验同款每100g348kJ、P4/F5/C5.6g乘2.73。",
+      "uncertainty": "本次没有再核对营养标签，如更换产品需原位更正。",
+      "kcal_base_estimate": 227.0650095602294,
+      "kcal_booked": 227.0650095602294,
+      "kcal_range": [
+        227.0650095602294,
+        227.0650095602294
+      ],
+      "protein_g_estimate": 10.92,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 15.288,
+      "sodium_mg_estimate": 109.2,
+      "calcium_mg_estimate": 341.25
+    },
+    {
+      "id": "breakfast_leftover_river_shrimp_93g_nov01",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "description": "昨晚剩余烤小河虾93g成品连壳吃",
+      "reported_text": "昨晚剩下的河虾，烤完直接带壳吃的",
+      "source_kind": "database_estimate",
+      "quantity_cooked_g": 93,
+      "cooked_batch_g": 193,
+      "raw_batch_with_shell_g": 500,
+      "linked_prior_date": "2026-10-31",
+      "linked_prior_entry_id": "postworkout_river_shrimp_100g_roasted_oct31",
+      "basis": "昨晚整批小河虾生500g、空气炸锅烤后193g，10月31日连壳吃100g，11月1日把剩余93g连壳吃完。沿同一批每100g熟品暂估200kcal、P40/F3/C3折算93%，不重复计虾壳或原料整批。",
+      "uncertainty": "93g由烤后193g减昨日食用100g推算，并非本次单独称重；烤虾连壳食用已确认，但生壳、虾肉可消化能量不确定。",
+      "kcal_base_estimate": 186,
+      "kcal_booked": 186,
+      "kcal_range": [
+        130.2,
+        241.8
+      ],
+      "protein_g_estimate": 37.2,
+      "fat_g_estimate": 2.79,
+      "carbs_g_estimate": 2.79
+    },
+    {
+      "id": "snack_roasted_potato_140g_nov01",
+      "meal": "snack",
+      "status": "consumed_estimated",
+      "description": "新增烤土豆140g（暂按无油熟重）",
+      "reported_text": "又吃了140g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 140,
+      "basis": "按已核验历史无油熟重烤土豆每100g93kcal、P2.5/F0.1/C21.2，实际140g记130.2kcal；与10月31日的烤土豆150g不同，是新食用。",
+      "uncertainty": "本次未单独确认烤土豆是否加油、140g是否熟重，沿历史口径暂估。",
+      "kcal_base_estimate": 130.2,
+      "kcal_booked": 130.2,
+      "kcal_range": [
+        130.2,
+        130.2
+      ],
+      "protein_g_estimate": 3.5,
+      "fat_g_estimate": 0.14,
+      "carbs_g_estimate": 29.68
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "早餐大桶酸奶273g，昨晚剩余小河虾烤成品93g连壳全部吃完；昨晚烤成193g总量，昨晚吃100g，今天吃93g。",
+    "此外又吃烤土豆140g，沿历史无油熟重计算。日记录仍开放，训练未知。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 543.2650095602294,
+    "intake_kcal_booked": 543.2650095602294,
+    "protein_g_estimate": 51.620000000000005,
+    "fat_g_estimate": 16.580000000000002,
+    "carbs_g_estimate": 47.757999999999996,
+    "intake_kcal_estimate": 543.2650095602294,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 51.620000000000005,
+      "fat_g": 16.580000000000002,
+      "carbs_g": 47.757999999999996
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      487.46500956022936,
+      599.0650095602293
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2193.9,
+    "estimated_deficit_kcal": 1650.6349904397707,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 48.12,
+      "snack": 3.5
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 109.2,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
