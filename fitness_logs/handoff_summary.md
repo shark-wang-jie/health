@@ -1,6 +1,6 @@
 # 健身记录交接摘要
 
-更新时间：2026-11-01 下午（全天饮食训练已确认完成并封账，运动动态能量待核对）
+更新时间：2026-11-01（已补全10月31日及11月1日模型热量缺口）
 
 ## 工作位置及操作
 
@@ -17,14 +17,14 @@
 - 上午大桶原味酸奶273g按历史同款标签**227.07kcal**；昨晚同批500g生鲜小河虾烤成193g、10月31日连壳已吃100g，11月1日连壳吃完剩余93g，**186.00kcal**，两天相加刚好193g、不可重复计；另吃无油熟重口径烤土豆140g，**130.20kcal**。
 - **练后整只吃完汉堡王七层皇堡，正常加酱**，沿本会话前次拆解粗估**2070kcal、P148g/F145g/C49g**，范围约1850–2250kcal。此值不是中国区官方实测；肉饼大小、酱料、是否有芝士等会影响结果。酱料已含在估算中，不单独叠加、不将询价重复记账。
 - Apple Health（Apple Watch）同日两段训练：**传统力量训练13:02:17–14:10:34，68分17秒，workout total_energy_kcal=419.00**；**步行训练14:13:17–15:19:38，66分21秒，4.07km，workout total_energy_kcal=527.70**。Health rawValue50/52，原始total合计**946.70kcal**。11月1日步行是否室内爬坡未单独确认，不能自动沿用10月31日的运动设定。
-- 两段`total_energy_kcal`未经当次Fitness动态热量校核，不直接用作动态热量，也不叠加活动圆环；`active_kcal=null`、`completed_day_estimated_deficit_kcal=null`、`energy_estimate_provisional=true`。本次封账是对全天饮食训练是否结束的确认，**不是已经核定真实热量缺口**。
+- **已补全模型热量缺口**：苹果HKWorkout.totalEnergyBurned定义为训练累计动态能量，因此两段运动合计**946.70kcal**，按tdee_v1的0.75训练系数折算**710.03kcal**。基础活动BMR1828.25×1.2=**2193.90kcal**，模型全天TDEE=**2903.93kcal**；减摄入**2613.27kcal**得**290.66kcal估算缺口**，`completed_day_estimated_deficit_kcal=290.66`、`energy_balance_scope=completed_day_estimate`、`energy_estimate_provisional=false`。汉堡能量和手表消耗存在估算误差，结果不是精确实测；不与活动圆环重复计入。
 - 10月31日和更早的记录保持不变；本次日JSON和交接摘要需要一个Git commit原子同步及回读。
 
 ## 最新封账日：2026-10-31
 
 - **10月31日用户已确认全天饮食及训练结束，正式封账**：`record_status=final`、`food_log_closed=true`、`food_coverage=confirmed_complete`、`training_status=reported_training`、`training_coverage=confirmed_complete`，无需再问是否结束。
 - 空腹体重87.80kg；9条食物累计**2366.14kcal、P196.60g/F91.64g/C188.44g**。早餐南瓜子9g、蒜香肠一根、牛奶一瓶；午餐沙县双去皮鸡腿饭米饭250g、白菜卤蛋、不吃土豆丝（含餐馆未知油脂余量83.75kcal）；练前烤土豆150g和盒马鸭腿一盒明确去皮；练后小河虾一批生500g烤成193g、当晚**连壳实际吃100g成品**（暂估200kcal），带皮火龙果362g、大桶酸奶260g；河虾余下的93g在11月1日早上吃完，**不能算在10月31日**。
-- Health两次运动：传统力量训练19:38–20:51（`total_energy_kcal=611.75`）、室内爬坡步行20:52–21:56（4.02km、`total_energy_kcal=716.65`）；爬坡使能量消耗较高可合理解释，不把步行误判平地。Health仅有workout总能量字段，动态能量未核实，`active_kcal=null`且`missing_sections`保留口径不明，最终可信热量缺口null，不重复叠加活动圆环。
+- **已补全模型热量缺口**：Health两段分别是传统力量训练611.75kcal和用户确认的室内爬坡步行716.65kcal（4.02km），根据Apple HKWorkout.totalEnergyBurned定义作累计运动动态消耗，合计**1328.40kcal**，乘0.75训练系数折算**996.30kcal**。基础活动BMR1829.25×1.2=**2195.10kcal**，全天模型TDEE=**3191.40kcal**，减摄入**2366.14kcal**得**825.26kcal估算缺口**，`completed_day_estimated_deficit_kcal=825.26`、`energy_balance_scope=completed_day_estimate`、`energy_estimate_provisional=false`。不重复加活动圆环，设备消耗和食品份量仍含估算误差。
 - 食物净重与烹调油、河虾壳可消化程度仍有估算误差；原9项食物与2段训练不重复新增。之前已封账日期不变。
 
 ## 最新封账日：2026-10-30

@@ -8,11 +8,10 @@
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [
-    "Health两段workout只取得total_energy_kcal值611.75和716.65，没有本次直接核实的动态能量，active_kcal=null，不能重复叠加，最终可信缺口仍未确定。"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [
-    "用户已确认全天结束；河虾明确连壳食用，当天吃100g，剩余93g于11月1日吃完。"
+    "当日全天饮食和训练均已确认结束；食品份量、烹调油与连壳河虾营养估计仍有不确定性。",
+    "Apple HealthKit训练累计动态能量已作为模型输入；手表消耗读数有测量误差，最终缺口仅是模型估算。"
   ],
   "trend_context": [
     "2026-10-31晨起空腹体重87.80kg，比2026-10-30的88.10kg下降0.30kg；短期波动不等同于脂肪变化。"
@@ -307,13 +306,13 @@
       "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
       "source": "Health Apple Watch 2026-10-31 19:38:44–20:51:36（Asia/Shanghai）",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 611.7508053197627,
       "total_kcal": 611.7508053197627,
       "duration_seconds": 4372.501618027687,
       "start_local": "2026-10-31T19:38:44.029+08:00",
       "end_local": "2026-10-31T20:51:36.531+08:00",
-      "energy_interpretation_basis": "Health workout接口返回total_energy_kcal=611.75kcal，未取得当次Fitness动态能量截图；仅留原始运动总能量，不未经核对将其算为动态。",
-      "uncertainty": "动态能量未直接核验；模型不能把total_energy_kcal直接当作session_active与每日活动能量重复计。"
+      "energy_interpretation_basis": "Health workout 字段total_energy_kcal=611.750805kcal，按Apple官方HKWorkout.totalEnergyBurned定义是本次运动的累计动态消耗。本条在tdee_v1模型乘训练系数0.75，仅计算一次、不与活动圆环累加。",
+      "uncertainty": "设备提供的运动动态热量为估计值而非实测精确消耗，可能受心率、运动模式与佩戴情况影响。"
     },
     {
       "id": "walking_health_2026_10_31_205213",
@@ -322,14 +321,14 @@
       "activity_raw": "HKWorkoutActivityType(rawValue: 52)",
       "source": "Health Apple Watch 2026-10-31 20:52:13–21:56:11（Asia/Shanghai）；用户补充明确为室内爬坡步行",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 716.648,
       "total_kcal": 716.648,
       "duration_seconds": 3838.282180070877,
       "start_local": "2026-10-31T20:52:13.405+08:00",
       "end_local": "2026-10-31T21:56:11.687+08:00",
       "total_distance_m": 4022.329112984706,
-      "energy_interpretation_basis": "Health workout返回total_energy_kcal=716.648kcal、距离4.02km。用户明确此为室内爬坡步行，不是普通平地步行；坡度可显著提高消耗，因此不应仅凭步行距离将此值标为异常。仍未直接核对该字段是总能量还是动态能量，本次继续原样记录total_kcal、不额外叠加活动能量。",
-      "uncertainty": "用户已明确是室内爬坡步行，较高能耗有强度解释；坡度、速度和当次Fitness动态/总热量分项尚未核实，不能仅凭total字段确定session_active值。"
+      "energy_interpretation_basis": "Health workout 字段total_energy_kcal=716.648000kcal，按Apple官方HKWorkout.totalEnergyBurned定义是本次运动的累计动态消耗。本条在tdee_v1模型乘训练系数0.75，仅计算一次、不与活动圆环累加。",
+      "uncertainty": "设备提供的运动动态热量为估计值而非实测精确消耗，可能受心率、运动模式与佩戴情况影响。"
     }
   ],
   "recovery": {
@@ -357,9 +356,10 @@
     "2026-10-31晨起空腹体重87.80kg（昨日88.10kg）。早餐实际食用南瓜子9g、蒜香肠一根及牛奶一瓶；南瓜子按历史标签9g，香肠暂沿历史单根150g，牛奶暂沿历史悦鲜活260mL，三者各记录一条，避免重复。",
     "2026-10-31追加上次提交被阻断的沙县鸡腿饭、练前烤土豆150g和去皮盒马鸭腿一盒；不可视为本次新吃第二份。",
     "练后新报河虾生500g→烤后193g、实吃100g，整批果肉/可食量不详按200kcal暂估；带皮火龙果362g按65%可食235.3g记129.42kcal；大桶酸奶260g按已确认同款标签记216.25kcal。",
-    "Health 10月31日两段训练：传统力量训练19:38:44–20:51:36、原始total_energy_kcal611.75；室内爬坡步行20:52:13–21:56:11、距离4.02km、原始total_energy_kcal716.65。均未取得当次动态值，不把两段的total作为活动热量叠加，不能据此确认最终热量缺口。",
-    "用户2026-10-31晚补充纠正：第二段workout是室内爬坡步行，不是普通平地步行。高度爬坡导致更高能耗可以合理，之前说716.65kcal明显偏高并不严谨，已更正此判断；total_energy_kcal和动态能耗字段区分仍保留。",
-    "当日已确认饮食训练全部结束。10月31日烤虾100g连壳吃，次日剩下93g连壳吃，不重复记录；运动动态值仍未核实。"
+    "Apple Health 10月31日运动记录：力量训练动态611.75kcal、室内爬坡步行动态716.65kcal，按苹果HKWorkout.totalEnergyBurned定义计入模型且不重复叠加活动圆环。",
+    "用户2026-10-31确认第二段为室内爬坡步行，高消耗存在坡度强度解释。HealthKit totalEnergyBurned按训练动态能量口径计入模型。",
+    "当日已确认饮食训练全部结束。10月31日烤虾100g连壳吃，次日剩下93g连壳吃，不重复记录；运动动态值已按HealthKit字段定义恢复模型计算。",
+    "2026-11-01补正运动字段口径：BMR1829.25×1.2 + 运动动态1328.40×0.75 = TDEE3191.40 kcal；记录摄入2366.14 kcal，估算缺口825.26 kcal。是模型估算、不是精确实测。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2282.3877533460804,
@@ -374,25 +374,25 @@
       "fat_g": 82.33593333333334,
       "carbs_g": 188.43966666666665
     },
-    "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "completed_day_base_intake_balance_kcal": 909.0113506437415,
+    "training_discount_kcal": 332.0997013299407,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1931.5740917782027,
       2724.5740917782027
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
-    "tdee_kcal_estimate": 2195.1,
-    "estimated_deficit_kcal": -171.03775334608054,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "exercise_active_kcal": 1328.3988053197627,
+    "exercise_adjusted_kcal": 996.299103989822,
+    "tdee_kcal_estimate": 3191.399103989822,
+    "estimated_deficit_kcal": 825.2613506437415,
+    "completed_day_estimated_deficit_kcal": 825.2613506437415,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 30.768,
@@ -401,10 +401,7 @@
       "postworkout": 52.753,
       "preworkout": 3.75
     },
-    "warnings": [
-      "已报告训练有消耗缺失：仅计已知训练消耗",
-      "存在影响能量解释或完整性的待确认项"
-    ],
+    "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
@@ -418,7 +415,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1472.0,
+    "sodium_mg_known_sum": 1472,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 235.3,
