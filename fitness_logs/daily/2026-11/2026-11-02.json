@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户于2026-11-02 23:08（Asia/Shanghai）明确确认刚完成有氧，今天所有饮食及训练均已结束。",
+  "closure_basis": "用户于2026-11-02 23:08（Asia/Shanghai）明确确认刚完成有氧，今天所有饮食及训练均已结束。 2026-11-03凌晨用户明确补报一袋即食鸡胸肉，指定计入已封账的11月2日，保留原封账状态及既有训练。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -15,7 +15,8 @@
     "用户已经确认2026-11-02全天饮食训练全部结束，无须再次追问封账；如以后提供新标签和实际份量，则仅原位更正。",
     "沙县餐用餐份量沿固定双去皮鸡腿与250g熟饭口径，含83.75kcal餐馆油脂余量。",
     "盒马鸡腿一盒按历史去皮去骨净肉约125g、183kcal估计；当次是否带皮食用没有明确，若吃皮要原位上调。两款饭团沿历史同款105g营养标签。",
-    "Apple Watch两段运动动态热量是设备估算值，不能视为精确实测；有氧原始活动类型为HKWorkoutActivityType(rawValue:13)骑行，室内或户外不明确。"
+    "Apple Watch两段运动动态热量是设备估算值，不能视为精确实测；有氧原始活动类型为HKWorkoutActivityType(rawValue:13)骑行，室内或户外不明确。",
+    "2026-11-03凌晨跨日补报鸡胸肉一袋100g，按用户指定记入11月2日，未建立11月3日摄入条目；11月2日仍处于用户已确认封账状态。"
   ],
   "trend_context": [
     "2026-11-02晨起空腹86.95kg，比2026-11-01的87.70kg下降0.75kg；单日大幅下降可能含水分与胃肠内容物变化，不等同于0.75kg脂肪减少。"
@@ -266,6 +267,27 @@
       "quantity_boxes": 1,
       "quantity_edible_g_estimate": 125,
       "reported_text": "再加一盒盒马鸡腿"
+    },
+    {
+      "id": "late_night_ready_to_eat_chicken_breast_100g_nov02",
+      "status": "consumed",
+      "meal": "late_night",
+      "description": "即食鸡胸肉100g一袋，用户指定补入2026-11-02",
+      "reported_text": "刚刚吃了一袋，热量计入2号",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "basis": "2026-11-03 00:12左右（Asia/Shanghai）用户确认吃了照片所示即食鸡胸肉一袋100g，明确要求热量记入11月2日。照片包装每100g能量527kJ、蛋白质28.6g、脂肪1.1g、碳水0g、钠232mg。已确认整袋100g，按527/4.184换算125.9560kcal；原先只问热量尚未记账，本次第一次明确吃了。",
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        125.95602294455067,
+        125.95602294455067
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232
     }
   ],
   "exercise_entries": [
@@ -312,6 +334,12 @@
       "reason": "自动语义复核：炖奶条目明确保留实际甜度、份量及剩余量未确认，属于影响能量解释的未决项，不能仅列入non_energy_pending_notes。按README移入missing_sections；封账及覆盖确认、食物估值与原训练读数不变，最终全天缺口由工具重算为null。原notes中的897.58kcal保留为当时模型算术差。",
       "original_value": "瑞幸木薯桃胶炖奶按单杯320kcal估算（250–400kcal），缺少该款官方营养表；沙县餐用餐份量沿固定双去皮鸡腿与250g熟饭口径，含83.75kcal餐馆油脂余量。",
       "corrected_value": "瑞幸木薯桃胶炖奶：整杯普通甜度为暂定，实际甜度、配料份量及是否剩余未确认；暂保留320kcal（250–400kcal）及原宏量估算，待实际食用说明或官方标签后原位更正。"
+    },
+    {
+      "date": "2026-11-03T00:12:00+08:00",
+      "reason": "用户于11月3日凌晨明确补报新吃下一袋鸡胸肉100g，要求计入11月2日。原11月2日已封账，补记一条实际摄入并重算，不删除其他历史记录、不更改训练，也不把这一袋写到11月3日。",
+      "original_value": "2026-11-02共有8项已记录实际摄入，记账2056.8064913957933kcal；即食鸡胸肉仅曾询问热量、未计入。",
+      "corrected_value": "2026-11-02增加第9项已实际吃的即食鸡胸肉100g，包装527kJ=125.9560kcal，全天记账2182.762514340344kcal。"
     }
   ],
   "notes": [
@@ -324,50 +352,52 @@
     "2026-11-02在已登记的练后两个饭团之后又吃烤土豆128g，沿历史无油熟重每100g93kcal，新增119.04kcal；实际用油和生熟重未再次确认。",
     "2026-11-02另吃盒马鸡腿一盒，沿历史盒马卤鸡腿约2根、去皮去骨净肉125g、183kcal/P27.13/F2.63/C12.13默认；本次去皮与否未确认，如吃皮需原位调整。鸡腿不是同仓库盒马鸭腿290kcal。",
     "2026-11-02用户确认当晚有氧结束、当天所有饮食及训练均已结束。Apple Health新增骑行有氧22:02:38–23:03:14，60分36秒，累计动态605.03kcal；此前力量训练累计动态420.95kcal。两段合计1025.98kcal，×0.75=769.49kcal，不叠加活动圆环。",
-    "2026-11-02封账估算：BMR1820.75×1.2=2184.90；两段运动动态1025.98×0.75=769.49；模型全天TDEE=2954.39，减记账摄入2056.81，得到估算热量缺口897.58kcal。高于400–600kcal目标，但不把这视作精确测量或要求额外运动。"
+    "2026-11-02封账估算：BMR1820.75×1.2=2184.90；两段运动动态1025.98×0.75=769.49；模型全天TDEE=2954.39，减记账摄入2056.81，得到估算热量缺口897.58kcal。高于400–600kcal目标，但不把这视作精确测量或要求额外运动。",
+    "2026-11-03上海时间凌晨用户明确说刚吃完即食鸡胸肉100g一袋，并指示热量补入11月2日（而非11月3日）；按包装527kJ/100g计125.96kcal、P28.6/F1.1/C0、钠232mg，独立新增第9条食物。之前11月2日已封账，现属用户主动跨日补记，不改变力量及有氧记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1973.0564913957935,
-    "intake_kcal_booked": 2056.8064913957933,
-    "protein_g_estimate": 135.43773333333334,
-    "fat_g_estimate": 73.48248888888888,
+    "intake_kcal_base_estimate": 2099.0125143403443,
+    "intake_kcal_booked": 2182.762514340344,
+    "protein_g_estimate": 164.03773333333334,
+    "fat_g_estimate": 74.58248888888888,
     "carbs_g_estimate": 211.26976666666664,
-    "intake_kcal_estimate": 2056.8064913957933,
-    "food_margin_kcal": 83.74999999999977,
+    "intake_kcal_estimate": 2182.762514340344,
+    "food_margin_kcal": 83.74999999999955,
     "base_macro_estimates": {
-      "protein_g": 135.43773333333334,
-      "fat_g": 64.17693333333332,
+      "protein_g": 164.03773333333334,
+      "fat_g": 65.27693333333332,
       "carbs_g": 211.26976666666664
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 256.4950929123145,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1674.0526673040154,
-      2369.0526673040154
+      1800.008690248566,
+      2495.008690248566
     ],
     "exercise_active_kcal": 1025.9803716492577,
     "exercise_adjusted_kcal": 769.4852787369432,
     "tdee_kcal_estimate": 2954.3852787369433,
-    "estimated_deficit_kcal": 897.57878734115,
+    "estimated_deficit_kcal": 771.6227643965995,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 8,
+    "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 31.564400000000003,
+      "late_night": 28.6,
       "lunch": 69.33333333333333,
       "postworkout": 34.54
     },
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "interpretation": "按既定tdee_v1对已确认日已记录摄入与训练动态值计算的算术估计差额；瑞幸炖奶食用配方/甜度/是否剩余仍待确认，现有missing_sections按README保留，故不作为完整可靠的最终热量缺口。食物及手表能耗均非精确实测。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -380,8 +410,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 726.2,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 958.2,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
