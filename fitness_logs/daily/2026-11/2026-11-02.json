@@ -6,10 +6,12 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [],
-  "non_energy_pending_notes": [],
+  "non_energy_pending_notes": [
+    "Apple Health当天17:43–18:43已同步一段力量训练，用户报告训练后吃了两个饭团；本次只确认这段已经完成，未确认全天饮食/所有训练结束，因此尚不封账。"
+  ],
   "trend_context": [
     "2026-11-02晨起空腹86.95kg，比2026-11-01的87.70kg下降0.75kg；单日大幅下降可能含水分与胃肠内容物变化，不等同于0.75kg脂肪减少。"
   ],
@@ -111,9 +113,132 @@
       "protein_g_estimate": 8,
       "fat_g_estimate": 9,
       "carbs_g_estimate": 52
+    },
+    {
+      "id": "lunch_shaxian_two_skinless_legs_250g_rice_nov02",
+      "status": "consumed_estimated",
+      "meal": "lunch",
+      "description": "午餐沙县鸡腿饭（历史默认两只去皮鸡腿、熟米饭250g、白菜卤蛋全吃，土豆丝不吃）",
+      "reported_text": "中午沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-10-27-v5",
+      "basis": "2026-11-02用户报告中午沙县鸡腿饭；沿2026-10-27已定稿沙县同款默认：两只去皮鸡腿、250g熟米饭（312.5kcal）、炒白菜与卤蛋正常食用、土豆丝不吃；基础837.5kcal加未知餐馆用油10%余量83.75kcal，合计921.25kcal；参照2026-10-28历史条目。",
+      "uncertainty": "本次未另外提供照片、鸡腿净肉重量和实际食用份量；双鸡腿、去皮、米饭250g及配菜食用情况沿历史用户默认，如本次不同须原位更正。",
+      "quantity_rice_g_estimate": 250,
+      "kcal_base_estimate": 837.5,
+      "kcal_booked": 921.25,
+      "kcal_range": [
+        665,
+        1075
+      ],
+      "protein_g_estimate": 69.33333333333333,
+      "fat_g_estimate": 36.138888888888886,
+      "carbs_g_estimate": 77.66666666666666,
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        17,
+        53
+      ],
+      "carbs_g_range": [
+        58,
+        107
+      ],
+      "margin": {
+        "added_fat_g": 9.305555555555555,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "餐馆未知油脂按基础837.5kcal的10%加83.75kcal余量"
+      },
+      "components": [
+        {
+          "food": "去皮鸡腿",
+          "amount": "默认2只",
+          "kcal_estimate": 380
+        },
+        {
+          "food": "熟米饭",
+          "amount": "默认250g",
+          "kcal_estimate": 312.5
+        },
+        {
+          "food": "炒白菜",
+          "amount": "历史同款一份默认",
+          "kcal_estimate": 70
+        },
+        {
+          "food": "卤蛋",
+          "amount": "历史同款一个默认",
+          "kcal_estimate": 75
+        }
+      ]
+    },
+    {
+      "id": "postworkout_wasabi_crab_riceball_105g_nov02",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "青芥蟹味柳饭团1个（沿历史同款105g）",
+      "reported_text": "晚上无氧练后一个青芥蟹饭团",
+      "source_kind": "matched_default",
+      "catalog_id": "wasabi_crab_riceball_105g",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_count": 1,
+      "quantity_g_estimate": 105,
+      "basis": "用户11月2日明确无氧训练后吃一个青芥蟹饭团；查询GitHub历史2026-09多次同款及2026-10-28记录：一只105g，历史标签每100g378kJ，P1.8/F3.5/C12.8，钠368mg；仓库定稿每只约95kcal、P1.9/F3.7/C13.4/钠386mg。只计一只。",
+      "uncertainty": "本次没有新包装标签或独立称重，沿此前已确认同款105g默认；若规格变化按本次标签更正。",
+      "kcal_base_estimate": 95,
+      "kcal_booked": 95,
+      "kcal_range": [
+        95,
+        95
+      ],
+      "protein_g_estimate": 1.9,
+      "fat_g_estimate": 3.7,
+      "carbs_g_estimate": 13.4,
+      "sodium_mg_estimate": 386
+    },
+    {
+      "id": "postworkout_seafood_quartet_riceball_105g_nov02",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "海鲜四重奏饭团1个，沿2026-10-12历史同款105g",
+      "reported_text": "晚上无氧练后一个海鲜四重奏饭团",
+      "source_kind": "matched_default",
+      "basis": "用户报告无氧训练后吃一个海鲜四重奏饭团；2026-10-12同款包装真实标签每100g404kJ，P2.2/F3.8/C13.3、钠324mg，历史实吃105g记101.38623326959848kcal、P2.31/F3.99/C13.965，钠340.2mg，直接沿同款标签，未套用普通饭团。",
+      "kcal_base_estimate": 101.38623326959848,
+      "kcal_booked": 101.38623326959848,
+      "kcal_range": [
+        101.38623326959848,
+        101.38623326959848
+      ],
+      "protein_g_estimate": 2.31,
+      "fat_g_estimate": 3.99,
+      "carbs_g_estimate": 13.965,
+      "sodium_mg_estimate": 340.2,
+      "quantity_g_estimate": 105,
+      "uncertainty": "本次未复核包装及实际重量，沿2026-10-12已确认的105g同款默认，如产品或标签不同需原位更正。"
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_02_174307",
+      "event_id": "apple_health_workout_2026_11_02_174307",
+      "type": "传统力量训练（无氧）",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "source": "Apple Health 王洁的Apple Watch 2026-11-02 17:43:07–18:43:09（Asia/Shanghai），用户明确无氧训练结束后吃饭团",
+      "energy_scope": "session_active",
+      "active_kcal": 420.9545248474279,
+      "total_kcal": 420.9545248474279,
+      "duration_seconds": 3601.9892719984055,
+      "start_local": "2026-11-02T17:43:07.200000+08:00",
+      "end_local": "2026-11-02T18:43:09.190000+08:00",
+      "energy_interpretation_basis": "Apple Health当天唯一一段workout，接口返回total_energy_kcal420.9545248474279。按HKWorkout.totalEnergyBurned官方定义视为训练累计动态能量，参照仓库tdee_v1方法仅一次计入并乘0.75折算，不叠加活动圆环。",
+      "uncertainty": "Watch动态能耗为设备估计值，有运动模式与佩戴误差。用户已说此段无氧训练完成，但没有确认全天没有其他训练。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -124,64 +249,69 @@
   "notes": [
     "2026-11-02早餐实际食用南瓜子8.7g、六号肠1根。六号肠沿GitHub历史同款150g每100g735kJ，不得使用蒜香肠每100g658kJ的不同标签；如本次重量/产品不同，原位更正原条目。",
     "目前仅早餐及空腹体重报告，训练状态未知，全天尚未结束；不能将未报运动视为确定休息，也不将暂算收支当最终全天缺口。",
-    "2026-11-02早上用户补报已吃一杯瑞幸新品木薯桃胶炖奶（此前只有询价，未入账）；按本会话先前估算320kcal、范围250–400kcal记为第三条早餐摄入。默认全杯普通配方，糖浆和木薯份量、宏量估计均有明显误差，待有标签时原位更正。"
+    "2026-11-02早上用户补报已吃一杯瑞幸新品木薯桃胶炖奶（此前只有询价，未入账）；按本会话先前估算320kcal、范围250–400kcal记为第三条早餐摄入。默认全杯普通配方，糖浆和木薯份量、宏量估计均有明显误差，待有标签时原位更正。",
+    "2026-11-02午餐已吃沙县鸡腿饭，沿此前定稿双去皮鸡腿、250g米饭、白菜、卤蛋无土豆丝默认，记921.25kcal，含83.75kcal餐馆油脂余量；无本次独立称重。",
+    "2026-11-02力量训练后已吃青芥蟹饭团一只（历史105g/95kcal）和海鲜四重奏饭团一只（2026-10-12历史标签105g/101.39kcal）。用户特别要求从Git历史读取，不用无标签泛化估算；两只分别记账，不重复。",
+    "Health记录当天17:43:07–18:43:09力量训练60分02秒，累计动态能量420.95kcal，tdee_v1训练折算系数0.75，不叠加活动圆环。全天饮食训练未明确报完，开放状态只报告暂算值。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 637.130258126195,
-    "intake_kcal_booked": 637.130258126195,
-    "protein_g_estimate": 31.564400000000003,
-    "fat_g_estimate": 26.895599999999998,
-    "carbs_g_estimate": 66.9721,
-    "intake_kcal_estimate": 637.130258126195,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1671.0164913957935,
+    "intake_kcal_booked": 1754.7664913957935,
+    "protein_g_estimate": 105.10773333333334,
+    "fat_g_estimate": 70.72448888888889,
+    "carbs_g_estimate": 172.00376666666665,
+    "intake_kcal_estimate": 1754.7664913957935,
+    "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 31.564400000000003,
-      "fat_g": 26.895599999999998,
-      "carbs_g": 66.9721
+      "protein_g": 105.10773333333334,
+      "fat_g": 61.41893333333333,
+      "carbs_g": 172.00376666666665
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 105.23863121185695,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      543.6264340344169,
-      743.6264340344169
+      1405.0126673040154,
+      2015.0126673040154
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2184.9,
-    "estimated_deficit_kcal": 1547.769741873805,
+    "exercise_active_kcal": 420.9545248474279,
+    "exercise_adjusted_kcal": 315.7158936355709,
+    "tdee_kcal_estimate": 2500.615893635571,
+    "estimated_deficit_kcal": 745.8494022397774,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
-      "breakfast": 31.564400000000003
+      "breakfast": 31.564400000000003,
+      "lunch": 69.33333333333333,
+      "postworkout": 4.21
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 726.2,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
