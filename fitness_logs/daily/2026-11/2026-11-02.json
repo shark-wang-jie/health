@@ -8,10 +8,12 @@
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [],
+  "missing_sections": [
+    "瑞幸木薯桃胶炖奶：整杯普通甜度为暂定，实际甜度、配料份量及是否剩余未确认；暂保留320kcal（250–400kcal）及原宏量估算，待实际食用说明或官方标签后原位更正。"
+  ],
   "non_energy_pending_notes": [
     "用户已经确认2026-11-02全天饮食训练全部结束，无须再次追问封账；如以后提供新标签和实际份量，则仅原位更正。",
-    "瑞幸木薯桃胶炖奶按单杯320kcal估算（250–400kcal），缺少该款官方营养表；沙县餐用餐份量沿固定双去皮鸡腿与250g熟饭口径，含83.75kcal餐馆油脂余量。",
+    "沙县餐用餐份量沿固定双去皮鸡腿与250g熟饭口径，含83.75kcal餐馆油脂余量。",
     "盒马鸡腿一盒按历史去皮去骨净肉约125g、183kcal估计；当次是否带皮食用没有明确，若吃皮要原位上调。两款饭团沿历史同款105g营养标签。",
     "Apple Watch两段运动动态热量是设备估算值，不能视为精确实测；有氧原始活动类型为HKWorkoutActivityType(rawValue:13)骑行，室内或户外不明确。"
   ],
@@ -304,7 +306,14 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-03T00:02:40+08:00",
+      "reason": "自动语义复核：炖奶条目明确保留实际甜度、份量及剩余量未确认，属于影响能量解释的未决项，不能仅列入non_energy_pending_notes。按README移入missing_sections；封账及覆盖确认、食物估值与原训练读数不变，最终全天缺口由工具重算为null。原notes中的897.58kcal保留为当时模型算术差。",
+      "original_value": "瑞幸木薯桃胶炖奶按单杯320kcal估算（250–400kcal），缺少该款官方营养表；沙县餐用餐份量沿固定双去皮鸡腿与250g熟饭口径，含83.75kcal餐馆油脂余量。",
+      "corrected_value": "瑞幸木薯桃胶炖奶：整杯普通甜度为暂定，实际甜度、配料份量及是否剩余未确认；暂保留320kcal（250–400kcal）及原宏量估算，待实际食用说明或官方标签后原位更正。"
+    }
+  ],
   "notes": [
     "2026-11-02早餐实际食用南瓜子8.7g、六号肠1根。六号肠沿GitHub历史同款150g每100g735kJ，不得使用蒜香肠每100g658kJ的不同标签；如本次重量/产品不同，原位更正原条目。",
     "目前仅早餐及空腹体重报告，训练状态未知，全天尚未结束；不能将未报运动视为确定休息，也不将暂算收支当最终全天缺口。",
@@ -330,7 +339,7 @@
       "fat_g": 64.17693333333332,
       "carbs_g": 211.26976666666664
     },
-    "completed_day_base_intake_balance_kcal": 981.3287873411498,
+    "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 256.4950929123145,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
@@ -341,22 +350,24 @@
     "exercise_adjusted_kcal": 769.4852787369432,
     "tdee_kcal_estimate": 2954.3852787369433,
     "estimated_deficit_kcal": 897.57878734115,
-    "completed_day_estimated_deficit_kcal": 897.57878734115,
-    "energy_balance_scope": "completed_day_estimate",
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": false,
+    "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 31.564400000000003,
       "lunch": 69.33333333333333,
       "postworkout": 34.54
     },
-    "warnings": [],
-    "interpretation": "基于历史食品标签/套餐份量估算与Apple Watch运动动态读数的模型热量缺口；不是精确实测，也不是可信真实缺口下限。",
+    "warnings": [
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
