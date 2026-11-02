@@ -382,8 +382,8 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -397,7 +397,7 @@
     "warnings": [
       "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "按既定tdee_v1对已确认日已记录摄入与训练动态值计算的算术估计差额；瑞幸炖奶食用配方/甜度/是否剩余仍待确认，现有missing_sections按README保留，故不作为完整可靠的最终热量缺口。食物及手表能耗均非精确实测。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
