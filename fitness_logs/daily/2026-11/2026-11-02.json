@@ -91,6 +91,26 @@
       "protein_g_estimate": 20.85,
       "fat_g_estimate": 13.649999999999999,
       "carbs_g_estimate": 14.25
+    },
+    {
+      "id": "breakfast_luckin_tapioca_peach_gum_milk_one_cup_nov02",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "瑞幸木薯桃胶炖奶一杯（正常配方，按整杯喝完暂估）",
+      "reported_text": "早上吃了一杯瑞幸新品桃胶木薯",
+      "source_kind": "database_estimate",
+      "quantity_cups": 1,
+      "basis": "用户2026-11-02报告已实际喝/吃一杯瑞幸新品桃胶木薯，即前述截图‘瑞幸木薯桃胶炖奶’。沿本对话已解释的单杯估算320kcal（牛乳奶底约120–160、木薯约50–100、桃胶银耳等10–30、糖浆等40–90，具体份量未知），计入一次实吃。未提供完整官方营养表、克重、甜度或实际剩余量。宏量只是以P8/F9/C52g作320kcal等级的粗配平假设，并非官方测值。",
+      "uncertainty": "全杯、普通甜度为暂定，配料实重、糖浆量以及是否去糖/剩余未确认；320kcal为推算值，参考范围250–400kcal。宏量估计P8/F9/C52g极不确定；如有官方成分表或用户更正，原位修改不新增重复。",
+      "kcal_base_estimate": 320,
+      "kcal_booked": 320,
+      "kcal_range": [
+        250,
+        400
+      ],
+      "protein_g_estimate": 8,
+      "fat_g_estimate": 9,
+      "carbs_g_estimate": 52
     }
   ],
   "exercise_entries": [],
@@ -103,32 +123,33 @@
   "corrections": [],
   "notes": [
     "2026-11-02早餐实际食用南瓜子8.7g、六号肠1根。六号肠沿GitHub历史同款150g每100g735kJ，不得使用蒜香肠每100g658kJ的不同标签；如本次重量/产品不同，原位更正原条目。",
-    "目前仅早餐及空腹体重报告，训练状态未知，全天尚未结束；不能将未报运动视为确定休息，也不将暂算收支当最终全天缺口。"
+    "目前仅早餐及空腹体重报告，训练状态未知，全天尚未结束；不能将未报运动视为确定休息，也不将暂算收支当最终全天缺口。",
+    "2026-11-02早上用户补报已吃一杯瑞幸新品木薯桃胶炖奶（此前只有询价，未入账）；按本会话先前估算320kcal、范围250–400kcal记为第三条早餐摄入。默认全杯普通配方，糖浆和木薯份量、宏量估计均有明显误差，待有标签时原位更正。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 317.13025812619503,
-    "intake_kcal_booked": 317.13025812619503,
-    "protein_g_estimate": 23.564400000000003,
-    "fat_g_estimate": 17.895599999999998,
-    "carbs_g_estimate": 14.9721,
-    "intake_kcal_estimate": 317.13025812619503,
+    "intake_kcal_base_estimate": 637.130258126195,
+    "intake_kcal_booked": 637.130258126195,
+    "protein_g_estimate": 31.564400000000003,
+    "fat_g_estimate": 26.895599999999998,
+    "carbs_g_estimate": 66.9721,
+    "intake_kcal_estimate": 637.130258126195,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 23.564400000000003,
-      "fat_g": 17.895599999999998,
-      "carbs_g": 14.9721
+      "protein_g": 31.564400000000003,
+      "fat_g": 26.895599999999998,
+      "carbs_g": 66.9721
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      293.62643403441683,
-      343.62643403441683
+      543.6264340344169,
+      743.6264340344169
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2184.9,
-    "estimated_deficit_kcal": 1867.769741873805,
+    "estimated_deficit_kcal": 1547.769741873805,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -137,9 +158,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "breakfast": 23.564400000000003
+      "breakfast": 31.564400000000003
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
