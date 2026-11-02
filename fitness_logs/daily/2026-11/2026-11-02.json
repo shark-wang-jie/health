@@ -10,7 +10,8 @@
   "training_coverage": "partial",
   "missing_sections": [],
   "non_energy_pending_notes": [
-    "Apple Health当天17:43–18:43已同步一段力量训练，用户报告训练后吃了两个饭团；本次只确认这段已经完成，未确认全天饮食/所有训练结束，因此尚不封账。"
+    "Apple Health当天17:43–18:43已同步一段力量训练，用户报告训练后吃了两个饭团；本次只确认这段已经完成，未确认全天饮食/所有训练结束，因此尚不封账。",
+    "盒马卤鸡腿本次是否吃皮未单独确认，目前先沿历史去皮去骨默认；烤土豆128g暂沿无油熟重。"
   ],
   "trend_context": [
     "2026-11-02晨起空腹86.95kg，比2026-11-01的87.70kg下降0.75kg；单日大幅下降可能含水分与胃肠内容物变化，不等同于0.75kg脂肪减少。"
@@ -220,6 +221,47 @@
       "sodium_mg_estimate": 340.2,
       "quantity_g_estimate": 105,
       "uncertainty": "本次未复核包装及实际重量，沿2026-10-12已确认的105g同款默认，如产品或标签不同需原位更正。"
+    },
+    {
+      "id": "postworkout_roasted_potato_128g_nov02",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "description": "练后另吃无油烤土豆128g（沿历史熟重口径）",
+      "reported_text": "再加128g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 128,
+      "basis": "用户2026-11-02在练后饭团记录后补报又吃烤土豆128g；沿过去多次无油烤熟土豆每100g93kcal、P2.5/F0.1/C21.2g标签，按128g熟重记119.04kcal，P3.2/F0.128/C27.136，和本日之前未记录的土豆独立。",
+      "uncertainty": "本次没有确认额外刷油和128g是生重或熟重，暂沿历史无油熟重；若不同则原位更正。",
+      "kcal_base_estimate": 119.04,
+      "kcal_booked": 119.04,
+      "kcal_range": [
+        119.04,
+        119.04
+      ],
+      "protein_g_estimate": 3.2,
+      "fat_g_estimate": 0.128,
+      "carbs_g_estimate": 27.136
+    },
+    {
+      "id": "postworkout_hema_chicken_legs_one_box_nov02",
+      "meal": "postworkout",
+      "description": "盒马卤鸡腿一盒（沿历史非油炸去皮去骨默认，暂估净肉125g）",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "basis": "用户在11月2日训练后餐食之后补报另吃盒马鸡腿一盒。沿2026-10-30及更早的盒马卤鸡腿历史同款：一盒两只、带皮带骨包装约170g，暂按去皮去骨可食净肉125g估183kcal、P27.13/F2.63/C12.13。用户未明确此次是否吃鸡皮，去皮是历史默认、非本次已确认，不是盒马鸭腿一盒290kcal。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "uncertainty": "本次只说一盒盒马鸡腿，未明确是历史卤鸡腿同款、是否去皮、实际净肉重或有额外加油；暂按历史非油炸去皮去骨默认估值150–235kcal，如连皮食用或产品不同应原位更正。",
+      "quantity_boxes": 1,
+      "quantity_edible_g_estimate": 125,
+      "reported_text": "再加一盒盒马鸡腿"
     }
   ],
   "exercise_entries": [
@@ -252,32 +294,34 @@
     "2026-11-02早上用户补报已吃一杯瑞幸新品木薯桃胶炖奶（此前只有询价，未入账）；按本会话先前估算320kcal、范围250–400kcal记为第三条早餐摄入。默认全杯普通配方，糖浆和木薯份量、宏量估计均有明显误差，待有标签时原位更正。",
     "2026-11-02午餐已吃沙县鸡腿饭，沿此前定稿双去皮鸡腿、250g米饭、白菜、卤蛋无土豆丝默认，记921.25kcal，含83.75kcal餐馆油脂余量；无本次独立称重。",
     "2026-11-02力量训练后已吃青芥蟹饭团一只（历史105g/95kcal）和海鲜四重奏饭团一只（2026-10-12历史标签105g/101.39kcal）。用户特别要求从Git历史读取，不用无标签泛化估算；两只分别记账，不重复。",
-    "Health记录当天17:43:07–18:43:09力量训练60分02秒，累计动态能量420.95kcal，tdee_v1训练折算系数0.75，不叠加活动圆环。全天饮食训练未明确报完，开放状态只报告暂算值。"
+    "Health记录当天17:43:07–18:43:09力量训练60分02秒，累计动态能量420.95kcal，tdee_v1训练折算系数0.75，不叠加活动圆环。全天饮食训练未明确报完，开放状态只报告暂算值。",
+    "2026-11-02在已登记的练后两个饭团之后又吃烤土豆128g，沿历史无油熟重每100g93kcal，新增119.04kcal；实际用油和生熟重未再次确认。",
+    "2026-11-02另吃盒马鸡腿一盒，沿历史盒马卤鸡腿约2根、去皮去骨净肉125g、183kcal/P27.13/F2.63/C12.13默认；本次去皮与否未确认，如吃皮需原位调整。鸡腿不是同仓库盒马鸭腿290kcal。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1671.0164913957935,
-    "intake_kcal_booked": 1754.7664913957935,
-    "protein_g_estimate": 105.10773333333334,
-    "fat_g_estimate": 70.72448888888889,
-    "carbs_g_estimate": 172.00376666666665,
-    "intake_kcal_estimate": 1754.7664913957935,
-    "food_margin_kcal": 83.75,
+    "intake_kcal_base_estimate": 1973.0564913957935,
+    "intake_kcal_booked": 2056.8064913957933,
+    "protein_g_estimate": 135.43773333333334,
+    "fat_g_estimate": 73.48248888888888,
+    "carbs_g_estimate": 211.26976666666664,
+    "intake_kcal_estimate": 2056.8064913957933,
+    "food_margin_kcal": 83.74999999999977,
     "base_macro_estimates": {
-      "protein_g": 105.10773333333334,
-      "fat_g": 61.41893333333333,
-      "carbs_g": 172.00376666666665
+      "protein_g": 135.43773333333334,
+      "fat_g": 64.17693333333332,
+      "carbs_g": 211.26976666666664
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 105.23863121185695,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1405.0126673040154,
-      2015.0126673040154
+      1674.0526673040154,
+      2369.0526673040154
     ],
     "exercise_active_kcal": 420.9545248474279,
     "exercise_adjusted_kcal": 315.7158936355709,
     "tdee_kcal_estimate": 2500.615893635571,
-    "estimated_deficit_kcal": 745.8494022397774,
+    "estimated_deficit_kcal": 443.8094022397777,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -286,11 +330,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 31.564400000000003,
       "lunch": 69.33333333333333,
-      "postworkout": 4.21
+      "postworkout": 34.54
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
