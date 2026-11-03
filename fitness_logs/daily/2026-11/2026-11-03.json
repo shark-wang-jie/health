@@ -10,7 +10,8 @@
   "training_coverage": "unknown",
   "missing_sections": [],
   "non_energy_pending_notes": [
-    "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。"
+    "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。",
+    "上午脆枣约80g为估算重量，包装仅提供能量2300kJ/100g，缺三大营养素标签；记账热量439.77kcal，宏量为明确标注的非实测占位粗估。"
   ],
   "trend_context": [
     "空腹体重较昨日86.95kg上升0.30kg，单日波动不等于脂肪增重。",
@@ -120,6 +121,71 @@
       "sugar_g_estimate": 12.48,
       "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325
+    },
+    {
+      "id": "morning_snack_crispy_jujube_approx80g_nov03",
+      "status": "consumed_estimated",
+      "meal": "morning_snack",
+      "description": "上午加餐脆枣约80g",
+      "reported_text": "上午加餐脆枣大概80g，每百克2300kj",
+      "source_kind": "database_estimate",
+      "quantity_g_estimate": 80,
+      "estimated_weight_range_g": [
+        70,
+        90
+      ],
+      "label_energy_kj_per_100g": 2300,
+      "basis": "用户2026-11-03上午明确实吃脆枣约80g，包装能量每100g2300kJ，按80g计算2300*0.8/4.184=439.77kcal；若实际70–90g则估384.80–494.74kcal。宏量P4/F24/C52g仅为约440kcal等级的临时占位估计，不是此商品真实标签，不应作为已知摄入值。此前尝试Git同步失败，远端核验未有此条，现首次补录。",
+      "uncertainty": "约80g未称重；只提供包装能量信息，蛋白质/脂肪/碳水未提供标签，P4/F24/C52g是结构化记录的非实测粗估，不确定性高。",
+      "kcal_base_estimate": 439.7705544933078,
+      "kcal_booked": 439.7705544933078,
+      "kcal_range": [
+        384.79923518164435,
+        494.7418738049713
+      ],
+      "protein_g_estimate": 4,
+      "fat_g_estimate": 24,
+      "carbs_g_estimate": 52
+    },
+    {
+      "description": "午餐沙县鸡腿饭（历史默认双去皮鸡腿、250g熟米饭、炒白菜、卤蛋、不吃土豆丝）",
+      "meal": "lunch",
+      "source_kind": "matched_default",
+      "basis": "用户11月3日实际吃沙县鸡腿饭，沿2026-10-27后的已确认默认：两只去皮鸡腿、熟米饭250g按312.5kcal、白菜和卤蛋正常、土豆丝不吃。基础837.5kcal，餐馆未知烹调用油余量10%=83.75kcal，记账921.25kcal；非本次称重，若本次配菜或鸡腿数不同则原位修改。",
+      "kcal_base_estimate": 837.5,
+      "kcal_booked": 921.25,
+      "kcal_range": [
+        665,
+        1075
+      ],
+      "protein_g_estimate": 69.33333333333333,
+      "fat_g_estimate": 36.138888888888886,
+      "carbs_g_estimate": 77.66666666666666,
+      "margin": {
+        "added_fat_g": 9.305555555555555,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按新默认基础837.5kcal加10%未知餐馆用油余量83.75kcal"
+      },
+      "uncertainty": "本次未提供实际鸡腿净重、米饭称重、用油量，沿已确认同款默认估计；若本次不同请按实际更正。",
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        17,
+        53
+      ],
+      "carbs_g_range": [
+        58,
+        107
+      ],
+      "quantity_rice_g_estimate": 250,
+      "id": "lunch_shaxian_two_skinless_legs_250g_rice_nov03",
+      "status": "consumed_estimated",
+      "reported_text": "午饭沙县鸡腿饭",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-10-27-v5"
     }
   ],
   "exercise_entries": [],
@@ -132,32 +198,34 @@
   "corrections": [],
   "notes": [
     "11月3日早餐南瓜子7.5g、六号肠一根、牛奶一瓶，均沿历史标签；本日尚未结束，训练未报告。",
-    "凌晨鸡胸肉已按用户指定记入11月2日，不再计入今日。"
+    "凌晨鸡胸肉已按用户指定记入11月2日，不再计入今日。",
+    "11月3日上午脆枣约80g（每100g能量2300kJ），按约80g记439.77kcal，之前Git同步未成功，现仅补记一次；宏量P4/F24/C52属估计占位非营养标签。",
+    "11月3日午餐沙县鸡腿饭按历史双去皮鸡腿、250g熟饭、白菜与卤蛋、无土豆丝，含10%餐馆未知用油余量记921.25kcal；本次未核对份量，若不同原位更正。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 488.0795889101338,
-    "intake_kcal_booked": 488.0795889101338,
-    "protein_g_estimate": 32.550000000000004,
-    "fat_g_estimate": 27.45,
-    "carbs_g_estimate": 27.3525,
-    "intake_kcal_estimate": 488.0795889101338,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1765.3501434034415,
+    "intake_kcal_booked": 1849.1001434034415,
+    "protein_g_estimate": 105.88333333333333,
+    "fat_g_estimate": 87.58888888888889,
+    "carbs_g_estimate": 157.01916666666665,
+    "intake_kcal_estimate": 1849.1001434034415,
+    "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 32.550000000000004,
-      "fat_g": 27.45,
-      "carbs_g": 27.3525
+      "protein_g": 105.88333333333333,
+      "fat_g": 78.28333333333333,
+      "carbs_g": 157.01916666666665
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      464.57576481835565,
-      514.5757648183557
+      1514.375,
+      2084.317638623327
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2188.5,
-    "estimated_deficit_kcal": 1700.4204110898663,
+    "estimated_deficit_kcal": 339.3998565965585,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -166,24 +234,26 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
-      "breakfast": 32.550000000000004
+      "breakfast": 32.550000000000004,
+      "lunch": 69.33333333333333,
+      "morning_snack": 4
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
-    "interpretation": "只完成早餐记账，全天消耗与缺口待全天饮食训练结束后再算。",
+    "interpretation": "截至午饭已记录5条食物含上午脆枣补报；当天饮食与训练尚未完结，不计算最终全天缺口。脆枣重量及宏量为估计。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
