@@ -9,13 +9,12 @@
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "王中王一根重量未知、芥末蚕豆约100g但品牌及营养表未知，这两项可显著改变记账热量；暂按参考品40g/根和526kcal/100g估算，待包装或实际重量再更正。",
-    "2026-11-03晚间第二段无氧训练：用户22:16明确说刚做完，Health当时仅同步17:37–18:47第一段。第二段的起止时间、时长与动态消耗均未同步且没有用户截图，因此本日模型TDEE暂只含第一段601.04kcal，不能报最终热量盈余/缺口；待下一次Health同步或用户提供数据，原位补全。"
+    "王中王一根重量未知、芥末蚕豆约100g但品牌及营养表未知，这两项可显著改变记账热量；暂按参考品40g/根和526kcal/100g估算，待包装或实际重量再更正。"
   ],
   "non_energy_pending_notes": [
     "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。",
     "上午脆枣约80g为估算重量，包装仅提供能量2300kJ/100g，缺三大营养素标签；记账热量439.77kcal，宏量为明确标注的非实测占位粗估。",
-    "2026-11-03 22:16 用户已明确饮食和训练均结束，日记录已封账；晚间第二段无氧已登记，但尚无Apple Health记录，缺失时长和动态热量，等待同期Health补传；此前一段17:37–18:47不能重复计入。"
+    "2026-11-03晚间有氧已由用户截图与随后Health双重核对：21:14–22:15室内单车动态654.17kcal，截图总热量767kcal不计入模型，已原位更正最初误称的第二段无氧；本日仍由用户确认封账。"
   ],
   "trend_context": [
     "空腹体重较昨日86.95kg上升0.30kg，单日波动不等于脂肪增重。",
@@ -291,20 +290,25 @@
       "uncertainty": "Apple Watch训练热量是设备估计值非精确实测；本次强度、具体负荷未报告；用户未确认今日是否还有其他训练或饮食。"
     },
     {
-      "id": "strength_user_2026_11_03_late_session_2216",
-      "event_id": "user_reported_strength_2026_11_03_evening_second_session_2216",
-      "type": "传统力量训练（无氧），晚间第二段（Apple Health暂未同步）",
-      "source": "用户2026-11-03 22:16 Asia/Shanghai直接报告「刚刚做完了无氧」，与当日已同步17:37–18:47无氧在时间上不同；用户同时确认全天饮食训练结束",
+      "id": "indoor_cycling_health_2026_11_03_211429",
+      "event_id": "apple_health_workout_2026_11_03_211429",
+      "type": "室内单车有氧",
+      "source": "2026-11-03 用户上传Apple Fitness截图：室内单车2026-11-03 21:14–22:15、动态654kcal、总767kcal、平均心率143次/分钟。Health随后同步Apple Watch workout rawValue13，21:14:29.928–22:15:39.750，total_energy_kcal=654.1668822980362。用户确认当天饮食训练结束。",
       "energy_scope": "session_active",
-      "active_kcal": null,
-      "total_kcal": null,
-      "start_local": null,
-      "end_local": null,
-      "reported_at_local": "2026-11-03T22:16:00+08:00",
-      "duration_seconds": null,
-      "sync_status": "not_yet_present_in_apple_health",
-      "energy_interpretation_basis": "11月3日22:16查询Apple Health 2026-11-03全日workout，只有一条17:37–18:47训练记录（601.0399718820014kcal）；后来的训练仅有用户亲自确认，不能重用第一段热量或按时间推测，待手表同步或用户提供训练记录后原位补齐，不应重新新增第三段。",
-      "uncertainty": "这段晚间无氧训练的准确开始/结束时刻、时长、Apple Watch运动动态消耗均未知，不能把null视为零；不和17:37的第一段合并。"
+      "active_kcal": 654.1668822980362,
+      "total_kcal": 654.1668822980362,
+      "start_local": "2026-11-03T21:14:29.928000+08:00",
+      "end_local": "2026-11-03T22:15:39.750000+08:00",
+      "duration_seconds": 3669.822184920311,
+      "sync_status": "synced_and_verified",
+      "energy_interpretation_basis": "用户截图明确此项是21:14–22:15室内单车有氧，动态654kcal、总热量767kcal；随后Apple Health单独workout给出动态654.1668822980362kcal。按tdee_v1只用该段动态654.1668822980362×0.75，不用总767、不叠加活动圆环；与17:37–18:47力量训练601.0399718820014kcal是时间不重叠的两段训练。",
+      "uncertainty": "手表动态能量是运动估算值，个体与训练模式可能存在误差；已确认有氧种类和时段，本项不再缺失能量。",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 13)",
+      "mean_heart_rate_bpm_from_screenshot": 143,
+      "screenshot_total_energy_kcal": 767,
+      "screenshot_active_energy_kcal": 654,
+      "prior_placeholder_id": "strength_user_2026_11_03_late_session_2216",
+      "prior_placeholder_event_id": "user_reported_strength_2026_11_03_evening_second_session_2216"
     }
   ],
   "recovery": {
@@ -313,7 +317,30 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-03T22:21:00+08:00",
+      "reason": "用户上传Apple Fitness当天21:14–22:15室内单车截图，明确2026-11-03 22:16所说刚做完的运动实际是有氧；Apple Health现已同步同一段骑行 workout，精确起止21:14:29.928–22:15:39.750、动态654.1668822980362kcal。按原位更正替代未同步的第二段“无氧”占位，非新增第三段，避免双算。图片显示总热量767kcal但只用动态654kcal；恢复模型缺口计算，保留餐食规格未决。",
+      "original_value": {
+        "id": "strength_user_2026_11_03_late_session_2216",
+        "event_id": "user_reported_strength_2026_11_03_evening_second_session_2216",
+        "type": "传统力量训练（无氧），晚间第二段（Apple Health暂未同步）",
+        "active_kcal": null,
+        "start_local": null,
+        "end_local": null
+      },
+      "corrected_value": {
+        "id": "indoor_cycling_health_2026_11_03_211429",
+        "event_id": "apple_health_workout_2026_11_03_211429",
+        "type": "室内单车有氧",
+        "active_kcal": 654.1668822980362,
+        "start_local": "2026-11-03T21:14:29.928000+08:00",
+        "end_local": "2026-11-03T22:15:39.750000+08:00",
+        "screenshot_total_energy_kcal": 767,
+        "mean_heart_rate_bpm_from_screenshot": 143
+      }
+    }
+  ],
   "notes": [
     "11月3日早餐南瓜子7.5g、六号肠一根、牛奶一瓶，均沿历史标签；本日尚未结束，训练未报告。",
     "凌晨鸡胸肉已按用户指定记入11月2日，不再计入今日。",
@@ -321,9 +348,10 @@
     "11月3日午餐沙县鸡腿饭按历史双去皮鸡腿、250g熟饭、白菜与卤蛋、无土豆丝，含10%餐馆未知用油余量记921.25kcal；本次未核对份量，若不同原位更正。",
     "2026-11-03练前王中王火腿肠一根参考常见40g 81.26kcal，芥末蚕豆约100g暂按同类产品526kcal/100g；这两样均未获得具体实际包装，保留不确定性和热量范围。",
     "2026-11-03练后茶叶蛋3个按75kcal/个共225kcal；水果玉米1根按约132g可食粒共148kcal，不计玉米棒。",
-    "Apple Health训练17:37:39–18:47:10传统力量训练69分32秒，训练动态601.04kcal、0.75折算450.78kcal；当晚22:16用户另报刚完成第二段无氧，Apple Health暂未显示第二段。全天已确认结束，封账但暂不算最终缺口。",
-    "2026-11-03用户22:16明确说刚做完无氧并确认全天饮食训练结束；此前17:37–18:47无氧已同步601.04kcal，但刚刚晚间的第二段无氧尚未在Health全日查询中出现，按用户报告单独建训练事件，active_kcal=null；封账不等于第二段运动能耗已知。",
-    "2026-11-03已记摄入2829.36kcal，模型BMR1823.75×1.2=2188.50，加已知17:37无氧601.04×0.75=450.78，合计已知组件模型消耗2639.28kcal；摄入减已知模型消耗暂为190.08kcal，但未含晚上第二段无氧，绝不能作为当日最终热量盈余或缺口。"
+    "2026-11-03 17:37–18:47第一段力量训练69分32秒动态601.04kcal；当晚21:14–22:15为用户截图确认且Health随后同步的室内单车有氧，非第二段力量训练。两段分别计入动态能量，不相互重复。",
+    "2026-11-03用户22:16确认全天饮食训练结束；此前将21点后训练暂记成未同步的第二段无氧，已被随后的用户截图与Health确认为21:14–22:15室内单车有氧，原位更正，动态654.17kcal。",
+    "2026-11-03曾因晚间训练尚未同步仅计算已知无氧动态601.04kcal，数学差额-190.08kcal；随后用户截图与Health补足第二段室内单车动态654.17kcal，这条旧算式已失效，使用当前daily_summary重新计算。",
+    "2026-11-03用户截图室内单车21:14–22:15、体能训练1:01:09、动态654kcal、总767kcal、平均心率143；Health查询得到第二段workout 21:14:29.928–22:15:39.750、rawValue13、动态654.166882kcal。原位修正原本误判“第二段无氧且未同步”的占位记录。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2745.6120936902485,
@@ -339,16 +367,16 @@
       "carbs_g": 228.11916666666667
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 150.25999297050032,
+    "training_discount_kcal": 313.8017135450094,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       2279.375,
       3399.317638623327
     ],
-    "exercise_active_kcal": 601.0399718820014,
-    "exercise_adjusted_kcal": 450.7799789115011,
-    "tdee_kcal_estimate": 2639.279978911501,
-    "estimated_deficit_kcal": -190.08211477874738,
+    "exercise_active_kcal": 1255.2068541800377,
+    "exercise_adjusted_kcal": 941.4051406350283,
+    "tdee_kcal_estimate": 3129.905140635028,
+    "estimated_deficit_kcal": 300.5430469447797,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -366,10 +394,9 @@
       "preworkout": 22.9
     },
     "warnings": [
-      "已报告训练有消耗缺失：仅计已知训练消耗",
       "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "用户已确认11月3日全天饮食训练结束，但22:16报告的晚间第二段无氧尚无Apple Health运动时长和动态消耗；当前模型TDEE和能量差额仅含已知17:37无氧，不可作为全天最终热量盈余/缺口。王中王、芥末蚕豆及脆枣的食物估算仍有明显不确定性。",
+    "interpretation": "11月3日全天饮食与训练已确认结束，Apple Health已同步17:37–18:47无氧与21:14–22:15室内单车有氧两段。以既定BMR×1.2+运动动态×0.75估算，收支差额约300.54kcal；王中王规格和芥末蚕豆品牌及营养标签未核实，保留missing_sections，因此正式completed_day_estimated_deficit_kcal仍为null，不能称为精确实测的最终缺口。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
