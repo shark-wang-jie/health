@@ -6,12 +6,15 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
-  "missing_sections": [],
+  "training_status": "reported_training",
+  "training_coverage": "partial",
+  "missing_sections": [
+    "王中王一根重量未知、芥末蚕豆约100g但品牌及营养表未知，这两项可显著改变记账热量；暂按参考品40g/根和526kcal/100g估算，待包装或实际重量再更正。"
+  ],
   "non_energy_pending_notes": [
     "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。",
-    "上午脆枣约80g为估算重量，包装仅提供能量2300kJ/100g，缺三大营养素标签；记账热量439.77kcal，宏量为明确标注的非实测占位粗估。"
+    "上午脆枣约80g为估算重量，包装仅提供能量2300kJ/100g，缺三大营养素标签；记账热量439.77kcal，宏量为明确标注的非实测占位粗估。",
+    "已读Apple Health一段无氧训练17:37–18:47；用户只确认训练后吃茶叶蛋与玉米，尚未确认11月3日整天饮食和训练结束，不封账。"
   ],
   "trend_context": [
     "空腹体重较昨日86.95kg上升0.30kg，单日波动不等于脂肪增重。",
@@ -186,9 +189,107 @@
       "reported_text": "午饭沙县鸡腿饭",
       "catalog_id": "shaxian_two_skinless_legs",
       "catalog_version": "2026-10-27-v5"
+    },
+    {
+      "id": "preworkout_wangzhongwang_ham_sausage_one_approx40g_nov03",
+      "status": "consumed_estimated",
+      "meal": "preworkout",
+      "description": "练前王中王火腿肠一根（暂按40g常见规格）",
+      "reported_text": "练前吃了一根王中王火腿肠",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 40,
+      "basis": "用户报告训练前吃王中王火腿肠一根，未给本次规格。按市售双汇王中王优级40g/根参考品每100g850kJ、P12.5/F14/C7，计40g=81.26kcal；这仅是类似商品参考，不认定本次一定为40g规格/同配方。",
+      "uncertainty": "一根实际净重、品牌具体系列和包装标签未确认，可能与40g参考规格不同；暂取约60–185kcal范围，包装/重量应优先更正。",
+      "kcal_base_estimate": 81.26195028680688,
+      "kcal_booked": 81.26195028680688,
+      "kcal_range": [
+        60,
+        185
+      ],
+      "protein_g_estimate": 5,
+      "fat_g_estimate": 5.6,
+      "carbs_g_estimate": 2.8
+    },
+    {
+      "id": "preworkout_wasabi_fava_beans_approx100g_nov03",
+      "status": "consumed_estimated",
+      "meal": "preworkout",
+      "description": "练前芥末味脆蚕豆约100g",
+      "reported_text": "练前大概100g芥末蚕豆",
+      "source_kind": "database_estimate",
+      "quantity_g_estimate": 100,
+      "basis": "用户报告练前吃芥末蚕豆约100g，未提供品牌或包装。暂参考同类甘源芥末味调味蚕豆公开营养表每100g能量2199kJ≈526kcal、P17.9/F34.3/C36.8，并取526kcal为记账估值；本次实际商品与甘源同款未确认，不能把该标签当实际测值。",
+      "uncertainty": "约100g未独立称重，具体品牌、烘烤/油炸、附着调味粉或油及营养标签未核实；取400–650kcal估算范围，包装会使数值调整。",
+      "kcal_base_estimate": 526,
+      "kcal_booked": 526,
+      "kcal_range": [
+        400,
+        650
+      ],
+      "protein_g_estimate": 17.9,
+      "fat_g_estimate": 34.3,
+      "carbs_g_estimate": 36.8
+    },
+    {
+      "id": "postworkout_tea_eggs_three_nov03",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后茶叶蛋3个（整颗蛋，不含蛋壳）",
+      "reported_text": "练后三个茶叶蛋",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 3,
+      "basis": "用户报告训练后吃3个茶叶蛋，按常见中等大小去壳熟蛋每个约75kcal、P6.5/F5/C0.5g，合计225kcal；没有当次克重或独立包装营养表。",
+      "uncertainty": "茶叶蛋每颗大小、盐卤和糖用量未称重，合计按195–270kcal估算；未计算不可食蛋壳。",
+      "kcal_base_estimate": 225,
+      "kcal_booked": 225,
+      "kcal_range": [
+        195,
+        270
+      ],
+      "protein_g_estimate": 19.5,
+      "fat_g_estimate": 15,
+      "carbs_g_estimate": 1.5
+    },
+    {
+      "id": "postworkout_fruit_sweet_corn_one_nov03",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后水果玉米1根（可食玉米粒约132g）",
+      "reported_text": "练后一根水果玉米",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "quantity_edible_g_estimate": 132,
+      "basis": "用户报告练后吃1根水果玉米，未称实际可食玉米粒。按中等玉米可食部分约132g、112kcal/100g的参考，计约148kcal（未把玉米棒/外皮算入可食热量）；宏量P4/F1.6/C30g为品种粗估。",
+      "uncertainty": "玉米棒大小、可食粒重量、烹调方式未报告；范围110–210kcal，若额外刷油/黄油或有称重需更正。",
+      "kcal_base_estimate": 148,
+      "kcal_booked": 148,
+      "kcal_range": [
+        110,
+        210
+      ],
+      "protein_g_estimate": 4,
+      "fat_g_estimate": 1.6,
+      "carbs_g_estimate": 30
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_03_173739",
+      "event_id": "apple_health_workout_2026_11_03_173739",
+      "type": "传统力量训练（无氧）",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "source": "Apple Health 王洁的Apple Watch 2026-11-03 17:37:39.114–18:47:10.793 (+08:00)，用户报告刚完成无氧、训练后吃茶叶蛋和水果玉米",
+      "energy_scope": "session_active",
+      "active_kcal": 601.0399718820014,
+      "total_kcal": 601.0399718820014,
+      "duration_seconds": 4171.679002046585,
+      "start_local": "2026-11-03T17:37:39.114000+08:00",
+      "end_local": "2026-11-03T18:47:10.793000+08:00",
+      "energy_interpretation_basis": "Apple Health同期唯一workout，HKWorkoutActivityType(rawValue:50)，接口total_energy_kcal=601.0399718820014按之前确立的HKWorkout.totalEnergyBurned累计动态训练热量口径记录，按tdee_v1只一次×0.75折算，不叠加全天活动圆环。",
+      "uncertainty": "Apple Watch训练热量是设备估计值非精确实测；本次强度、具体负荷未报告；用户未确认今日是否还有其他训练或饮食。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -200,52 +301,58 @@
     "11月3日早餐南瓜子7.5g、六号肠一根、牛奶一瓶，均沿历史标签；本日尚未结束，训练未报告。",
     "凌晨鸡胸肉已按用户指定记入11月2日，不再计入今日。",
     "11月3日上午脆枣约80g（每100g能量2300kJ），按约80g记439.77kcal，之前Git同步未成功，现仅补记一次；宏量P4/F24/C52属估计占位非营养标签。",
-    "11月3日午餐沙县鸡腿饭按历史双去皮鸡腿、250g熟饭、白菜与卤蛋、无土豆丝，含10%餐馆未知用油余量记921.25kcal；本次未核对份量，若不同原位更正。"
+    "11月3日午餐沙县鸡腿饭按历史双去皮鸡腿、250g熟饭、白菜与卤蛋、无土豆丝，含10%餐馆未知用油余量记921.25kcal；本次未核对份量，若不同原位更正。",
+    "2026-11-03练前王中王火腿肠一根参考常见40g 81.26kcal，芥末蚕豆约100g暂按同类产品526kcal/100g；这两样均未获得具体实际包装，保留不确定性和热量范围。",
+    "2026-11-03练后茶叶蛋3个按75kcal/个共225kcal；水果玉米1根按约132g可食粒共148kcal，不计玉米棒。",
+    "Apple Health训练17:37:39–18:47:10传统力量训练69分32秒，训练动态601.04kcal、0.75折算450.78kcal；截至当前无其他已证实训练，全天未封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1765.3501434034415,
-    "intake_kcal_booked": 1849.1001434034415,
-    "protein_g_estimate": 105.88333333333333,
-    "fat_g_estimate": 87.58888888888889,
-    "carbs_g_estimate": 157.01916666666665,
-    "intake_kcal_estimate": 1849.1001434034415,
+    "intake_kcal_base_estimate": 2745.6120936902485,
+    "intake_kcal_booked": 2829.3620936902485,
+    "protein_g_estimate": 152.28333333333333,
+    "fat_g_estimate": 144.08888888888887,
+    "carbs_g_estimate": 228.11916666666667,
+    "intake_kcal_estimate": 2829.3620936902485,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 105.88333333333333,
-      "fat_g": 78.28333333333333,
-      "carbs_g": 157.01916666666665
+      "protein_g": 152.28333333333333,
+      "fat_g": 134.78333333333333,
+      "carbs_g": 228.11916666666667
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 150.25999297050032,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1514.375,
-      2084.317638623327
+      2279.375,
+      3399.317638623327
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2188.5,
-    "estimated_deficit_kcal": 339.3998565965585,
+    "exercise_active_kcal": 601.0399718820014,
+    "exercise_adjusted_kcal": 450.7799789115011,
+    "tdee_kcal_estimate": 2639.279978911501,
+    "estimated_deficit_kcal": -190.08211477874738,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 32.550000000000004,
       "lunch": 69.33333333333333,
-      "morning_snack": 4
+      "morning_snack": 4,
+      "postworkout": 23.5,
+      "preworkout": 22.9
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "已报告部分训练，全天训练是否报完尚未确认",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "截至午饭已记录5条食物含上午脆枣补报；当天饮食与训练尚未完结，不计算最终全天缺口。脆枣重量及宏量为估计。",
+    "interpretation": "11月3日尚未封账；当前模型消耗减已记9项摄入的差额仅供暂算参考，非实际全天盈余或缺口。王中王实际每根克重与蚕豆品牌营养标签待确认，其他产品亦有估算误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
