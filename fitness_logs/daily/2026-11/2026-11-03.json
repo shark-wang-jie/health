@@ -1,0 +1,198 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [],
+  "non_energy_pending_notes": [
+    "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。"
+  ],
+  "trend_context": [
+    "空腹体重较昨日86.95kg上升0.30kg，单日波动不等于脂肪增重。",
+    "凌晨吃的鸡胸肉用户指定计入11月2日，不能重复。"
+  ],
+  "weight_measurement_note": "晨起空腹体重87.25kg",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 87.25,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.25,
+    "bmr_weight_date": "2026-11-03",
+    "bmr_kcal": 1823.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seed_7_5g_nov03",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "南瓜子7.5g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 7.5,
+      "basis": "用户实吃7.5g，沿10月31日历史标签2579kJ/100g、P31.2/F48.8/C8.3折算。",
+      "kcal_base_estimate": 46.22968451242829,
+      "kcal_booked": 46.22968451242829,
+      "kcal_range": [
+        46.22968451242829,
+        46.22968451242829
+      ],
+      "protein_g_estimate": 2.34,
+      "fat_g_estimate": 3.6600000000000006,
+      "carbs_g_estimate": 0.6225,
+      "reported_text": "早饭7.5g南瓜子"
+    },
+    {
+      "id": "breakfast_six_no_sausage_one_150g_nov03",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "六号肠一根，沿历史同款150g",
+      "reported_text": "早饭一根六号肠",
+      "source_kind": "matched_default",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "沿11月2日历史六号肠单根150g、每100g735kJ/P13.9/F9.1/C9.5，非蒜香肠。",
+      "uncertainty": "本次单根重量及包装未核对，历史同款默认，产品不同则更正。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        240,
+        290
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.649999999999999,
+      "carbs_g_estimate": 14.25
+    },
+    {
+      "id": "breakfast_milk_one_bottle_260ml_nov03",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "牛奶一瓶，沿历史悦鲜活260mL",
+      "reported_text": "早饭一瓶牛奶",
+      "source_kind": "matched_default",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_ml": 260,
+      "basis": "沿之前悦鲜活生牛乳260mL、每100mL287kJ/P3.6/F3.9/C4.8标签。",
+      "uncertainty": "本次品牌容量未确认，暂按历史260mL同款，实际不同则更正。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.360000000000001,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.0200000000000005,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "11月3日早餐南瓜子7.5g、六号肠一根、牛奶一瓶，均沿历史标签；本日尚未结束，训练未报告。",
+    "凌晨鸡胸肉已按用户指定记入11月2日，不再计入今日。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 488.0795889101338,
+    "intake_kcal_booked": 488.0795889101338,
+    "protein_g_estimate": 32.550000000000004,
+    "fat_g_estimate": 27.45,
+    "carbs_g_estimate": 27.3525,
+    "intake_kcal_estimate": 488.0795889101338,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 32.550000000000004,
+      "fat_g": 27.45,
+      "carbs_g": 27.3525
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      464.57576481835565,
+      514.5757648183557
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2188.5,
+    "estimated_deficit_kcal": 1700.4204110898663,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 32.550000000000004
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+    ],
+    "interpretation": "只完成早餐记账，全天消耗与缺口待全天饮食训练结束后再算。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 156,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
