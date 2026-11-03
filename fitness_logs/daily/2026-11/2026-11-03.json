@@ -2,19 +2,20 @@
   "schema_version": 3,
   "date": "2026-11-03",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户于2026-11-03 22:16（Asia/Shanghai）明确表示刚完成晚间无氧且今天所有饮食及训练结束；已记录晚间第二段无氧但Apple Health暂未同步时长和动态能耗，保持missing_sections及能量结果暂算。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "王中王一根重量未知、芥末蚕豆约100g但品牌及营养表未知，这两项可显著改变记账热量；暂按参考品40g/根和526kcal/100g估算，待包装或实际重量再更正。"
+    "王中王一根重量未知、芥末蚕豆约100g但品牌及营养表未知，这两项可显著改变记账热量；暂按参考品40g/根和526kcal/100g估算，待包装或实际重量再更正。",
+    "2026-11-03晚间第二段无氧训练：用户22:16明确说刚做完，Health当时仅同步17:37–18:47第一段。第二段的起止时间、时长与动态消耗均未同步且没有用户截图，因此本日模型TDEE暂只含第一段601.04kcal，不能报最终热量盈余/缺口；待下一次Health同步或用户提供数据，原位补全。"
   ],
   "non_energy_pending_notes": [
     "六号肠与牛奶规格沿既有历史同款，若本次不同则按实际标签更正。",
     "上午脆枣约80g为估算重量，包装仅提供能量2300kJ/100g，缺三大营养素标签；记账热量439.77kcal，宏量为明确标注的非实测占位粗估。",
-    "已读Apple Health一段无氧训练17:37–18:47；用户只确认训练后吃茶叶蛋与玉米，尚未确认11月3日整天饮食和训练结束，不封账。"
+    "2026-11-03 22:16 用户已明确饮食和训练均结束，日记录已封账；晚间第二段无氧已登记，但尚无Apple Health记录，缺失时长和动态热量，等待同期Health补传；此前一段17:37–18:47不能重复计入。"
   ],
   "trend_context": [
     "空腹体重较昨日86.95kg上升0.30kg，单日波动不等于脂肪增重。",
@@ -288,6 +289,22 @@
       "end_local": "2026-11-03T18:47:10.793000+08:00",
       "energy_interpretation_basis": "Apple Health同期唯一workout，HKWorkoutActivityType(rawValue:50)，接口total_energy_kcal=601.0399718820014按之前确立的HKWorkout.totalEnergyBurned累计动态训练热量口径记录，按tdee_v1只一次×0.75折算，不叠加全天活动圆环。",
       "uncertainty": "Apple Watch训练热量是设备估计值非精确实测；本次强度、具体负荷未报告；用户未确认今日是否还有其他训练或饮食。"
+    },
+    {
+      "id": "strength_user_2026_11_03_late_session_2216",
+      "event_id": "user_reported_strength_2026_11_03_evening_second_session_2216",
+      "type": "传统力量训练（无氧），晚间第二段（Apple Health暂未同步）",
+      "source": "用户2026-11-03 22:16 Asia/Shanghai直接报告「刚刚做完了无氧」，与当日已同步17:37–18:47无氧在时间上不同；用户同时确认全天饮食训练结束",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "total_kcal": null,
+      "start_local": null,
+      "end_local": null,
+      "reported_at_local": "2026-11-03T22:16:00+08:00",
+      "duration_seconds": null,
+      "sync_status": "not_yet_present_in_apple_health",
+      "energy_interpretation_basis": "11月3日22:16查询Apple Health 2026-11-03全日workout，只有一条17:37–18:47训练记录（601.0399718820014kcal）；后来的训练仅有用户亲自确认，不能重用第一段热量或按时间推测，待手表同步或用户提供训练记录后原位补齐，不应重新新增第三段。",
+      "uncertainty": "这段晚间无氧训练的准确开始/结束时刻、时长、Apple Watch运动动态消耗均未知，不能把null视为零；不和17:37的第一段合并。"
     }
   ],
   "recovery": {
@@ -304,7 +321,9 @@
     "11月3日午餐沙县鸡腿饭按历史双去皮鸡腿、250g熟饭、白菜与卤蛋、无土豆丝，含10%餐馆未知用油余量记921.25kcal；本次未核对份量，若不同原位更正。",
     "2026-11-03练前王中王火腿肠一根参考常见40g 81.26kcal，芥末蚕豆约100g暂按同类产品526kcal/100g；这两样均未获得具体实际包装，保留不确定性和热量范围。",
     "2026-11-03练后茶叶蛋3个按75kcal/个共225kcal；水果玉米1根按约132g可食粒共148kcal，不计玉米棒。",
-    "Apple Health训练17:37:39–18:47:10传统力量训练69分32秒，训练动态601.04kcal、0.75折算450.78kcal；截至当前无其他已证实训练，全天未封账。"
+    "Apple Health训练17:37:39–18:47:10传统力量训练69分32秒，训练动态601.04kcal、0.75折算450.78kcal；当晚22:16用户另报刚完成第二段无氧，Apple Health暂未显示第二段。全天已确认结束，封账但暂不算最终缺口。",
+    "2026-11-03用户22:16明确说刚做完无氧并确认全天饮食训练结束；此前17:37–18:47无氧已同步601.04kcal，但刚刚晚间的第二段无氧尚未在Health全日查询中出现，按用户报告单独建训练事件，active_kcal=null；封账不等于第二段运动能耗已知。",
+    "2026-11-03已记摄入2829.36kcal，模型BMR1823.75×1.2=2188.50，加已知17:37无氧601.04×0.75=450.78，合计已知组件模型消耗2639.28kcal；摄入减已知模型消耗暂为190.08kcal，但未含晚上第二段无氧，绝不能作为当日最终热量盈余或缺口。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2745.6120936902485,
@@ -347,12 +366,10 @@
       "preworkout": 22.9
     },
     "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "已报告训练有消耗缺失：仅计已知训练消耗",
       "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "11月3日尚未封账；当前模型消耗减已记9项摄入的差额仅供暂算参考，非实际全天盈余或缺口。王中王实际每根克重与蚕豆品牌营养标签待确认，其他产品亦有估算误差。",
+    "interpretation": "用户已确认11月3日全天饮食训练结束，但22:16报告的晚间第二段无氧尚无Apple Health运动时长和动态消耗；当前模型TDEE和能量差额仅含已知17:37无氧，不可作为全天最终热量盈余/缺口。王中王、芥末蚕豆及脆枣的食物估算仍有明显不确定性。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
