@@ -8,9 +8,7 @@
   "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
-  "missing_sections": [
-    "早餐火龙果377g未确认是带皮整果还是去皮果肉净重；暂按历史带皮65%可食比例，若是净果肉则应约207.35kcal，需用户确认。"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [
     "牛奶暂按悦鲜活260mL同款，一瓶实际品牌/容量未单独确认。"
   ],
@@ -79,24 +77,25 @@
       "id": "breakfast_dragon_fruit_377g_assumed_gross_20261104",
       "status": "consumed_estimated",
       "meal": "breakfast",
-      "description": "火龙果377g（暂按带皮整果称重）",
+      "description": "火龙果377g（用户确认带皮称重，可食果肉约245.05g）",
       "reported_text": "早饭377g火龙果",
       "source_kind": "matched_default",
       "gross_weight_g": 377,
       "edible_fraction_estimate": 0.65,
       "edible_weight_g_estimate": 245.05,
-      "basis": "用户报告火龙果377g但未说是否带皮。沿10月31日明确整果带皮362g及65%可食果肉的历史默认，暂估377g带皮、果肉245.05g，按每100g果肉55kcal、P1/F0.2/C12得134.78kcal。若这次377g为去皮果肉，则约207.35kcal，需原位更正。",
-      "uncertainty": "377g是否带皮未确认；历史带皮整果65%可食只是暂用默认。带皮的果肉率可约55–75%；若净果肉377g，热量另为207.35kcal。",
+      "basis": "用户2026-11-04早餐报火龙果377g，随后明确确认“带皮称重的”。整果实称377g，沿2026-10-31同样带皮火龙果按65%可食果肉率估约245.05g果肉，再按55kcal/100g果肉、P1/F0.2/C12g计算134.78kcal。377g整果重量已确认，65%出肉率及每100g能量仍属参考估算，没把果皮算作已吃。",
+      "uncertainty": "377g带皮整果重量已由用户明确确认，不再待确认是否去皮。果皮占比未称重，沿历史55–75%可食比例参考，本次按65%约245.05g果肉，热量134.78kcal，参考范围114.04–155.51kcal；火龙果品种未确认。",
       "kcal_base_estimate": 134.7775,
       "kcal_booked": 134.7775,
       "kcal_range": [
-        114.0425,
-        207.35
+        114.04250000000002,
+        155.51250000000002
       ],
       "protein_g_estimate": 2.4505,
       "fat_g_estimate": 0.4901,
       "carbs_g_estimate": 29.406,
-      "fruit_vegetable_g_estimate": 245.05
+      "fruit_vegetable_g_estimate": 245.05,
+      "gross_weight_confirmed": true
     },
     {
       "id": "breakfast_milk_one_bottle_260ml_20261104",
@@ -132,9 +131,17 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-04",
+      "reason": "用户明确回应“带皮称重的”，确认早餐火龙果377g为整果带皮重量。只修改原火龙果条目的依据及估算区间并清除之前带皮/净重待确认项；未新增食物，也未改变134.78kcal的主估值。",
+      "original_value": "用户报告火龙果377g但未说是否带皮。沿10月31日明确整果带皮362g及65%可食果肉的历史默认，暂估377g带皮、果肉245.05g，按每100g果肉55kcal、P1/F0.2/C12得134.78kcal。若这次377g为去皮果肉，则约207.35kcal，需原位更正。",
+      "corrected_value": "确认整果带皮377g，可食果肉暂沿历史65%估245.05g、134.7775kcal。"
+    }
+  ],
   "notes": [
-    "2026-11-04上午报告空腹87.15kg，早餐南瓜子7.7g、火龙果377g暂按带皮整果、牛奶一瓶暂按悦鲜活260mL。今天未结束，未确认其他餐食和训练。"
+    "2026-11-04上午报告空腹87.15kg，早餐南瓜子7.7g、火龙果377g已确认带皮整果、牛奶一瓶暂按悦鲜活260mL。今天未结束，未确认其他餐食和训练。",
+    "2026-11-04用户确认早餐火龙果377g是带皮整果实称；按历史65%果肉率可食245.05g，热量134.78kcal不变。只需更正原有火龙果条目与估算区间，已删除带皮/去皮的missing_sections待确认，不重复新增餐食。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 360.5860564053537,
@@ -154,7 +161,7 @@
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       339.8510564053537,
-      433.1585564053537
+      381.3210564053537
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
@@ -175,10 +182,9 @@
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
-      "存在影响能量解释或完整性的待确认项"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
-    "interpretation": "仅11月4日已吃早餐，训练及全天其他进食未报告，火龙果是否带皮需用户确认，暂不结算全天缺口。",
+    "interpretation": "截至11月4日早餐三项真实摄入。火龙果整果377g带皮称重已由用户确认，果肉率65%仍是历史估算；全天饮食与训练尚未结束，当前模型算术差不是最终全天缺口。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
