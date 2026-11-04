@@ -10,7 +10,8 @@
   "training_coverage": "unknown",
   "missing_sections": [],
   "non_energy_pending_notes": [
-    "牛奶暂按悦鲜活260mL同款，一瓶实际品牌/容量未单独确认。"
+    "牛奶暂按悦鲜活260mL同款，一瓶实际品牌/容量未单独确认。",
+    "黄油法棍20g没有同款营养标签，热量暂按80kcal及经验范围60–110kcal，若有商品包装/具体含油量应原位更正；本次餐食与训练尚未全部报告。"
   ],
   "trend_context": [
     "11月4日晨起87.15kg，较11月3日87.25kg下降0.10kg，不能判定单日脂肪下降。"
@@ -158,6 +159,87 @@
         "reason": "标签和食用量明确，不额外加成"
       },
       "uncertainty": "用户确认与2026-09-30 90g记录为同款且应按90g计；本次未重新拍摄包装，标签沿历史同款。"
+    },
+    {
+      "description": "午餐沙县鸡腿饭（沿双去皮鸡腿、250g熟米饭、白菜、卤蛋，不吃土豆丝）",
+      "meal": "lunch",
+      "source_kind": "matched_default",
+      "basis": "用户2026-11-04实吃沙县鸡腿饭，沿已确认固定同款默认：2只去皮鸡腿、250g熟米饭、炒白菜、卤蛋吃下、土豆丝不吃，基础837.5kcal＋10%餐馆未知用油余量83.75kcal，记921.25kcal；本次如鸡腿数量/配菜实际不同需原位更正。",
+      "kcal_base_estimate": 837.5,
+      "kcal_booked": 921.25,
+      "kcal_range": [
+        665,
+        1075
+      ],
+      "protein_g_estimate": 69.33333333333333,
+      "fat_g_estimate": 36.138888888888886,
+      "carbs_g_estimate": 77.66666666666666,
+      "margin": {
+        "added_fat_g": 9.305555555555555,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "按新默认基础837.5kcal加10%未知餐馆用油余量83.75kcal"
+      },
+      "uncertainty": "本次没有照片/米饭称重或鸡腿净肉重量；双去皮鸡腿、250g熟饭、白菜、卤蛋、不吃土豆丝沿历史固定口径，店内实际用油有误差。",
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        17,
+        53
+      ],
+      "carbs_g_range": [
+        58,
+        107
+      ],
+      "quantity_rice_g_estimate": 250,
+      "id": "lunch_shaxian_two_skinless_legs_250g_rice_nov04",
+      "status": "consumed_estimated",
+      "reported_text": "午饭沙县鸡腿饭",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-10-27-v5"
+    },
+    {
+      "id": "afternoon_snack_butter_baguette_approx20g_nov04",
+      "status": "consumed_estimated",
+      "meal": "afternoon_snack",
+      "description": "下午加餐黄油法棍约20g",
+      "reported_text": "下午加餐大概20g黄油法棍",
+      "source_kind": "database_estimate",
+      "quantity_g_estimate": 20,
+      "basis": "用户2026-11-04报告下午实际吃约20g黄油法棍。未找到历史同款包装营养标签，按黄油法棍含添加黄油、面包的经验热量密度约400kcal/100g暂计20g=80kcal，参考合理范围约60–110kcal，具体品牌与黄油用量可显著影响。宏量粗估P1.7/F2.8/C11.8g以便结构化统计，非本次营养标签。",
+      "uncertainty": "重量用户约20g，实际面包是否夹馅或涂多少黄油未知；本次没有包装营养标签，热量60–110kcal、宏量为粗估，后续提供产品标签时原位更正。",
+      "kcal_base_estimate": 80,
+      "kcal_booked": 80,
+      "kcal_range": [
+        60,
+        110
+      ],
+      "protein_g_estimate": 1.7,
+      "fat_g_estimate": 2.8,
+      "carbs_g_estimate": 11.8
+    },
+    {
+      "id": "afternoon_snack_six_no_sausage_half_75g_nov04",
+      "status": "consumed_estimated",
+      "meal": "afternoon_snack",
+      "description": "下午加餐六号肠半根（沿历史整根150g，估75g）",
+      "reported_text": "下午又吃了半根六号肠",
+      "source_kind": "matched_default",
+      "quantity_pieces": 0.5,
+      "quantity_g_estimate": 75,
+      "basis": "用户报告下午实吃六号肠半根。沿2026-11-02和此前同款整根150g、每100g735kJ/P13.9/F9.1/C9.5，半根暂按75g，记131.75kcal、P10.425/F6.825/C7.125；不得和蒜香肠另一标签混用。",
+      "uncertainty": "本次半根重量没有独立称量，按历史单根150g的一半估75g；实际品牌或规格不同则更正。",
+      "kcal_base_estimate": 131.7519120458891,
+      "kcal_booked": 131.7519120458891,
+      "kcal_range": [
+        120,
+        145
+      ],
+      "protein_g_estimate": 10.425,
+      "fat_g_estimate": 6.824999999999999,
+      "carbs_g_estimate": 7.125
     }
   ],
   "exercise_entries": [],
@@ -178,32 +260,34 @@
   "notes": [
     "2026-11-04上午报告空腹87.15kg，早餐南瓜子7.7g、火龙果377g已确认带皮整果、牛奶一瓶暂按悦鲜活260mL。今天未结束，未确认其他餐食和训练。",
     "2026-11-04用户确认早餐火龙果377g是带皮整果实称；按历史65%果肉率可食245.05g，热量134.78kcal不变。只需更正原有火龙果条目与估算区间，已删除带皮/去皮的missing_sections待确认，不重复新增餐食。",
-    "2026-11-04上午实吃手撕牛肉干一包。初称125g，后用户明确确认是9月30日曾记录的同款90g、按90g记账。复用9月30日真实营养标签每100g1092kJ/P45.3/F8/C1.5/钠631mg：本次234.89kcal/P40.77/F7.20/C1.35/钠567.9mg。只增一份，不记录125g另一份。"
+    "2026-11-04上午实吃手撕牛肉干一包。初称125g，后用户明确确认是9月30日曾记录的同款90g、按90g记账。复用9月30日真实营养标签每100g1092kJ/P45.3/F8/C1.5/钠631mg：本次234.89kcal/P40.77/F7.20/C1.35/钠567.9mg。只增一份，不记录125g另一份。",
+    "2026-11-04午饭沙县双去皮鸡腿饭，沿历史固定两只鸡腿、250g熟饭、白菜卤蛋不吃土豆丝（含餐馆用油10%）记921.25kcal；如本次份量不同需原位更正。",
+    "2026-11-04下午实际吃黄油法棍约20g，无同款标签按400kcal/100g估80kcal（范围60–110kcal，宏量粗估）；另吃六号肠半根沿历史整根150g折75g记131.75kcal，非蒜香肠。本日仍未封账，训练状态未知。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 595.4808938814531,
-    "intake_kcal_booked": 595.4808938814531,
-    "protein_g_estimate": 54.9829,
-    "fat_g_estimate": 21.5877,
-    "carbs_g_estimate": 43.875099999999996,
-    "intake_kcal_estimate": 595.4808938814531,
-    "food_margin_kcal": 0,
+    "intake_kcal_base_estimate": 1644.7328059273423,
+    "intake_kcal_booked": 1728.4828059273423,
+    "protein_g_estimate": 136.44123333333334,
+    "fat_g_estimate": 67.35158888888888,
+    "carbs_g_estimate": 140.46676666666667,
+    "intake_kcal_estimate": 1728.4828059273423,
+    "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 54.9829,
-      "fat_g": 21.5877,
-      "carbs_g": 43.875099999999996
+      "protein_g": 136.44123333333334,
+      "fat_g": 58.04603333333333,
+      "carbs_g": 140.46676666666667
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      574.7458938814531,
-      616.2158938814531
+      1419.745893881453,
+      1946.2158938814532
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2187.2999999999997,
-    "estimated_deficit_kcal": 1591.8191061185466,
+    "estimated_deficit_kcal": 458.81719407265746,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -212,9 +296,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
+      "afternoon_snack": 12.125,
       "breakfast": 14.212900000000001,
+      "lunch": 69.33333333333333,
       "morning_snack": 40.77
     },
     "warnings": [
@@ -222,15 +308,15 @@
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
-    "interpretation": "11月4日只报告早餐3项及上午加餐同款90g牛肉干，训练与其他餐食未报完，当前TDEE减累计摄入不是最终全天缺口。火龙果带皮称重确认，果肉可食率仍是历史估算。牛肉干直接沿9月30日用户确认同款90g真实营养标签。",
+    "interpretation": "截至11月4日下午已有7项食物：早饭3项、上午同款牛肉干90g、午餐沙县鸡腿饭、下午黄油法棍约20g和半根六号肠。当天食物及训练尚未结束，按BMR×1.2减已记录摄入只是暂算差额，不能当作实际日缺口。黄油法棍无标签，沙县及半根六号肠使用历史同款默认估值。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
