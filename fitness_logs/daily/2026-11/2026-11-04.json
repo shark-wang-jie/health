@@ -122,6 +122,42 @@
       "sugar_g_estimate": 12.48,
       "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325
+    },
+    {
+      "id": "morning_snack_shredded_beef_jerky_90g_nov04",
+      "status": "consumed",
+      "meal": "morning_snack",
+      "description": "上午加餐手撕牛肉干一包90g（用户确认与2026-09-30同款）",
+      "reported_text": "早上加餐一包手撕牛肉干；先误说125g，后更正“那就是这款，还是按照90g记录”",
+      "source_kind": "label_known_quantity",
+      "basis": "用户2026-11-04上午实吃一包手撕牛肉干，最初口述125g并让参考旧记录，经查9月30日同款90g，用户明确确认“那就是这款，还是按照90g记录”。严格沿2026-09-30同款营养标签，每100g1092kJ、蛋白质45.3g、脂肪8.0g、碳水1.5g、钠631mg，按90g折算234.8948374760994kcal、P40.77/F7.20/C1.35、钠567.9mg，直接按同款标签计算，无额外余量。不是10月15日1483kJ的江湖狼部落风干牛肉，也不是125g份量。",
+      "quantity_g": 90,
+      "kcal_base_estimate": 234.8948374760994,
+      "kcal_booked": 234.8948374760994,
+      "kcal_range": [
+        234.8948374760994,
+        234.8948374760994
+      ],
+      "protein_g_estimate": 40.77,
+      "fat_g_estimate": 7.2,
+      "carbs_g_estimate": 1.35,
+      "sodium_mg_estimate": 567.9,
+      "nutrition_per_100g": {
+        "energy_kj": 1092,
+        "protein_g": 45.3,
+        "fat_g": 8,
+        "saturated_fat_g": 3.5,
+        "carbs_g": 1.5,
+        "sugar_g": 0,
+        "sodium_mg": 631
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签和食用量明确，不额外加成"
+      },
+      "uncertainty": "用户确认与2026-09-30 90g记录为同款且应按90g计；本次未重新拍摄包装，标签沿历史同款。"
     }
   ],
   "exercise_entries": [],
@@ -141,32 +177,33 @@
   ],
   "notes": [
     "2026-11-04上午报告空腹87.15kg，早餐南瓜子7.7g、火龙果377g已确认带皮整果、牛奶一瓶暂按悦鲜活260mL。今天未结束，未确认其他餐食和训练。",
-    "2026-11-04用户确认早餐火龙果377g是带皮整果实称；按历史65%果肉率可食245.05g，热量134.78kcal不变。只需更正原有火龙果条目与估算区间，已删除带皮/去皮的missing_sections待确认，不重复新增餐食。"
+    "2026-11-04用户确认早餐火龙果377g是带皮整果实称；按历史65%果肉率可食245.05g，热量134.78kcal不变。只需更正原有火龙果条目与估算区间，已删除带皮/去皮的missing_sections待确认，不重复新增餐食。",
+    "2026-11-04上午实吃手撕牛肉干一包。初称125g，后用户明确确认是9月30日曾记录的同款90g、按90g记账。复用9月30日真实营养标签每100g1092kJ/P45.3/F8/C1.5/钠631mg：本次234.89kcal/P40.77/F7.20/C1.35/钠567.9mg。只增一份，不记录125g另一份。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 360.5860564053537,
-    "intake_kcal_booked": 360.5860564053537,
-    "protein_g_estimate": 14.212900000000001,
-    "fat_g_estimate": 14.3877,
-    "carbs_g_estimate": 42.525099999999995,
-    "intake_kcal_estimate": 360.5860564053537,
+    "intake_kcal_base_estimate": 595.4808938814531,
+    "intake_kcal_booked": 595.4808938814531,
+    "protein_g_estimate": 54.9829,
+    "fat_g_estimate": 21.5877,
+    "carbs_g_estimate": 43.875099999999996,
+    "intake_kcal_estimate": 595.4808938814531,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 14.212900000000001,
-      "fat_g": 14.3877,
-      "carbs_g": 42.525099999999995
+      "protein_g": 54.9829,
+      "fat_g": 21.5877,
+      "carbs_g": 43.875099999999996
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      339.8510564053537,
-      381.3210564053537
+      574.7458938814531,
+      616.2158938814531
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2187.2999999999997,
-    "estimated_deficit_kcal": 1826.713943594646,
+    "estimated_deficit_kcal": 1591.8191061185466,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -175,16 +212,17 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 14.212900000000001
+      "breakfast": 14.212900000000001,
+      "morning_snack": 40.77
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
-    "interpretation": "截至11月4日早餐三项真实摄入。火龙果整果377g带皮称重已由用户确认，果肉率65%仍是历史估算；全天饮食与训练尚未结束，当前模型算术差不是最终全天缺口。",
+    "interpretation": "11月4日只报告早餐3项及上午加餐同款90g牛肉干，训练与其他餐食未报完，当前TDEE减累计摄入不是最终全天缺口。火龙果带皮称重确认，果肉可食率仍是历史估算。牛肉干直接沿9月30日用户确认同款90g真实营养标签。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
@@ -197,8 +235,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 156,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 723.9,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 245.05,
     "fruit_vegetable_g_entries_with_data": 1,
