@@ -4,9 +4,9 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户确认11月4日休息日不训练，并在报告鸡肉肠、盒马鸡腿和烤土豆后明确说“今天饮食也结束”。",
+  "closure_basis": "用户已明确11月4日全天饮食结束；先前称休息日不训练，但随后上传19:03–20:05室内单车已完成的Apple Fitness截图及Health数据，故不取消饮食封账，只原位更正训练状态为有氧训练日并重算模型消耗。",
   "food_coverage": "confirmed_complete",
-  "training_status": "confirmed_rest",
+  "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
     "盒马鸡腿是否吃皮及实际去骨净肉重量未确认，暂按历史同款估值。",
@@ -15,7 +15,8 @@
   "non_energy_pending_notes": [
     "牛奶暂按悦鲜活260mL同款，一瓶实际品牌/容量未单独确认。",
     "黄油法棍20g没有同款营养标签，热量暂按80kcal及经验范围60–110kcal，若有商品包装/具体含油量应原位更正；本次餐食与训练尚未全部报告。",
-    "70g烤土豆为实际吃下重量，此前建议的60g不是新增进食，不能双计。"
+    "70g烤土豆为实际吃下重量，此前建议的60g不是新增进食，不能双计。",
+    "11月4日19:03–20:05的室内单车已经截图和Health重复核对为同一次运动，曾确认为休息日的标记已纠正为训练日；记录一次运动动态568.62kcal、按tdee_v1计426.47kcal。已确认饮食结束，仍封账。"
   ],
   "trend_context": [
     "11月4日晨起87.15kg，较11月3日87.25kg下降0.10kg，不能判定单日脂肪下降。"
@@ -316,7 +317,27 @@
       "carbs_g_estimate": 14.84
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "indoor_cycling_health_2026_11_04_190336",
+      "event_id": "apple_health_workout_2026_11_04_190336",
+      "type": "室内单车有氧",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 13)",
+      "source": "用户2026-11-04上传Apple Fitness截图：室内单车19:03–20:05、体能训练1:01:44、动态567kcal、总热量681kcal、平均心率135次/分；随后Health全日workout返回同一段Apple Watch记录19:03:36.094–20:05:20.394，duration3704.30秒，接口total_energy_kcal568.6233804362308，与截图动态567kcal接近，按动态使用。",
+      "energy_scope": "session_active",
+      "active_kcal": 568.6233804362308,
+      "total_kcal": 681,
+      "duration_seconds": 3704.3000860214233,
+      "start_local": "2026-11-04T19:03:36.094000+08:00",
+      "end_local": "2026-11-04T20:05:20.394000+08:00",
+      "mean_heart_rate_bpm_from_screenshot": 135,
+      "screenshot_active_energy_kcal": 567,
+      "screenshot_total_energy_kcal": 681,
+      "sync_status": "synced_verified",
+      "energy_interpretation_basis": "依据用户截图，单次室内单车动态567kcal、总681kcal；Apple Health同步了相同时段原始workout，所提供total_energy_kcal=568.6233804362308，与截图动态567接近而非截图总681，故依历史运动口径把Health这一数值作为动态估计并×0.75，仅计一次。不可同时累加截图567、总681或活动圆环。",
+      "uncertainty": "手表估测动态卡路里并非精确实测；截图动态567与Health同步568.623存在约1.62kcal小差异，按Health精确值计。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -329,6 +350,22 @@
       "reason": "用户明确回应“带皮称重的”，确认早餐火龙果377g为整果带皮重量。只修改原火龙果条目的依据及估算区间并清除之前带皮/净重待确认项；未新增食物，也未改变134.78kcal的主估值。",
       "original_value": "用户报告火龙果377g但未说是否带皮。沿10月31日明确整果带皮362g及65%可食果肉的历史默认，暂估377g带皮、果肉245.05g，按每100g果肉55kcal、P1/F0.2/C12得134.78kcal。若这次377g为去皮果肉，则约207.35kcal，需原位更正。",
       "corrected_value": "确认整果带皮377g，可食果肉暂沿历史65%估245.05g、134.7775kcal。"
+    },
+    {
+      "date": "2026-11-04T20:06:00+08:00",
+      "reason": "原先11月4日18点前用户表示今天休息不训练，后于20:06提供刚完成的同日晚间室内单车截图，Health确认19:03:36–20:05:20有一次骑行。真实记录优先于之前休息日计划；将已封账日训练状态从confirmed_rest原位改为reported_training并新增真实的一条运动。饮食10项、土豆70g和食物封账均不更改。",
+      "original_value": {
+        "training_status": "confirmed_rest",
+        "training_coverage": "confirmed_complete",
+        "exercise_entries": 0
+      },
+      "corrected_value": {
+        "training_status": "reported_training",
+        "training_coverage": "confirmed_complete",
+        "type": "室内单车有氧",
+        "active_kcal": 568.6233804362308,
+        "event_id": "apple_health_workout_2026_11_04_190336"
+      }
     }
   ],
   "notes": [
@@ -337,7 +374,9 @@
     "2026-11-04上午实吃手撕牛肉干一包。初称125g，后用户明确确认是9月30日曾记录的同款90g、按90g记账。复用9月30日真实营养标签每100g1092kJ/P45.3/F8/C1.5/钠631mg：本次234.89kcal/P40.77/F7.20/C1.35/钠567.9mg。只增一份，不记录125g另一份。",
     "2026-11-04午饭沙县双去皮鸡腿饭，沿历史固定两只鸡腿、250g熟饭、白菜卤蛋不吃土豆丝（含餐馆用油10%）记921.25kcal；如本次份量不同需原位更正。",
     "2026-11-04下午实际吃黄油法棍约20g，无同款标签按400kcal/100g估80kcal（范围60–110kcal，宏量粗估）；另吃六号肠半根沿历史整根150g折75g记131.75kcal，非蒜香肠。本日仍未封账，训练状态未知。",
-    "11月4日晚餐鸡肉肠4根共200g（包装593kJ/100g）、盒马鸡腿一盒、无油熟重口径烤土豆实吃70g；今日休息无训练，饮食已确认结束。"
+    "11月4日晚餐鸡肉肠4根共200g（包装593kJ/100g）、盒马鸡腿一盒、无油熟重口径烤土豆实吃70g；今日休息无训练，饮食已确认结束。",
+    "2026-11-04 20:06用户提供同日晚间19:03–20:05室内单车完训截图，体能训练1:01:44、动态567、总681、平均心率135；Health核验19:03:36–20:05:20同一workout，动态匹配568.623kcal，按0.75系数调整模型消耗。早先休息日无训练说法已被此事实更正，不另记第二段运动。",
+    "用户描述晚餐鸡肉肠吃得嘴咸，觉得钠高并通过骑车排汗；按照片鸡肉肠200g钠1190mg（约3.0g食盐当量），出汗不能量化抵消钠摄入，不因此再增加燃脂或排钠功效，建议运动后正常补水；上述主观症状及动机不改变食物营养标签记录。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2176.2936089866157,
@@ -353,21 +392,21 @@
       "carbs_g": 182.03676666666667
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 142.15584510905774,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1918.3066969407264,
       2529.7766969407267
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2187.2999999999997,
-    "estimated_deficit_kcal": -72.74360898661598,
+    "exercise_active_kcal": 568.6233804362308,
+    "exercise_adjusted_kcal": 426.4675353271731,
+    "tdee_kcal_estimate": 2613.767535327173,
+    "estimated_deficit_kcal": 353.7239263405572,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -380,9 +419,10 @@
       "dinner": 67.48
     },
     "warnings": [
-      "当天已确认休息无训练及饮食结束，但盒马鸡腿和黄油法棍仍使用估算值，模型收支不是实测"
+      "11月4日先报休息日，但晚间有已由截图+Health确认的室内单车有氧，训练现已按真实记录更正",
+      "食物已确认结束但盒马鸡腿是否去皮、黄油法棍标签仍是估算，数学模型差额非精确实测"
     ],
-    "interpretation": "11月4日正式封账。无训练，10项已吃食物摄入约2260.04kcal、P203.92/F77.65/C182.04；非训练TDEE约2187.30kcal，算术估计盈余约72.74kcal。盒马鸡腿是否去皮及黄油法棍能量不确定，所以completed_day_estimated_deficit_kcal=null。烤土豆仅实际吃70g一份。",
+    "interpretation": "11月4日正式封账10项食物摄入2260.04kcal，用户当晚改为完成室内单车一段，Apple Fitness截图动态567kcal，Health同步568.623kcal，按历史运动动态×0.75计426.47kcal，非运动基础2187.30kcal，模型TDEE2613.77kcal，差额估算缺口353.72kcal。因盒马鸡腿和黄油法棍食物估算不确定，completed_day_estimated_deficit_kcal仍为null。截图总热量681kcal不能同时叠加。骑车出汗不能量化抵消200g鸡肉肠钠1190mg。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
