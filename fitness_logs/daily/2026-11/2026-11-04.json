@@ -2,16 +2,20 @@
   "schema_version": 3,
   "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
-  "missing_sections": [],
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户确认11月4日休息日不训练，并在报告鸡肉肠、盒马鸡腿和烤土豆后明确说“今天饮食也结束”。",
+  "food_coverage": "confirmed_complete",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
+  "missing_sections": [
+    "盒马鸡腿是否吃皮及实际去骨净肉重量未确认，暂按历史同款估值。",
+    "下午黄油法棍20g没有实际商品营养标签，暂按约80kcal估算。"
+  ],
   "non_energy_pending_notes": [
     "牛奶暂按悦鲜活260mL同款，一瓶实际品牌/容量未单独确认。",
-    "黄油法棍20g没有同款营养标签，热量暂按80kcal及经验范围60–110kcal，若有商品包装/具体含油量应原位更正；本次餐食与训练尚未全部报告。"
+    "黄油法棍20g没有同款营养标签，热量暂按80kcal及经验范围60–110kcal，若有商品包装/具体含油量应原位更正；本次餐食与训练尚未全部报告。",
+    "70g烤土豆为实际吃下重量，此前建议的60g不是新增进食，不能双计。"
   ],
   "trend_context": [
     "11月4日晨起87.15kg，较11月3日87.25kg下降0.10kg，不能判定单日脂肪下降。"
@@ -240,6 +244,76 @@
       "protein_g_estimate": 10.425,
       "fat_g_estimate": 6.824999999999999,
       "carbs_g_estimate": 7.125
+    },
+    {
+      "id": "dinner_chicken_sausage_200g_nov04",
+      "meal": "dinner",
+      "status": "consumed",
+      "description": "晚餐鸡肉肠4根200g（用户提供包装标签）",
+      "reported_text": "鸡肉肠四根共二百克",
+      "source_kind": "label_known_quantity",
+      "quantity_pieces": 4,
+      "quantity_g": 200,
+      "basis": "本次照片包装营养表每100g593kJ、蛋白质19.3g、脂肪3.8g、碳水7.3g、钠595mg。4根共200g按两倍计283.46kcal、P38.6/F7.6/C14.6、钠1190mg；与六号肠营养标签不同。",
+      "uncertainty": "用户报告总重200g且包装标签清楚，未报告额外烹调用油。",
+      "nutrition_per_100g": {
+        "energy_kj": 593,
+        "protein_g": 19.3,
+        "fat_g": 3.8,
+        "carbs_g": 7.3,
+        "sodium_mg": 595
+      },
+      "kcal_base_estimate": 283.4608030592734,
+      "kcal_booked": 283.4608030592734,
+      "kcal_range": [
+        283.4608030592734,
+        283.4608030592734
+      ],
+      "protein_g_estimate": 38.6,
+      "fat_g_estimate": 7.6,
+      "carbs_g_estimate": 14.6,
+      "sodium_mg_estimate": 1190
+    },
+    {
+      "id": "dinner_hema_chicken_legs_one_box_nov04",
+      "meal": "dinner",
+      "description": "晚餐盒马鸡腿一盒（历史去皮去骨口径）",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "basis": "沿11月2日同款非炸卤鸡腿历史默认：含骨带皮包装约170g，去皮去骨净肉暂估125g，记183kcal，P27.13/F2.63/C12.13。本次是否吃鸡皮未核实。",
+      "kcal_base_estimate": 183,
+      "kcal_booked": 183,
+      "kcal_range": [
+        150,
+        235
+      ],
+      "protein_g_estimate": 27.13,
+      "fat_g_estimate": 2.63,
+      "carbs_g_estimate": 12.13,
+      "uncertainty": "鸡皮是否实际吃下和净肉重量均未确认；历史同款估值150–235kcal，若不同应原位更正。",
+      "quantity_boxes": 1,
+      "quantity_edible_g_estimate": 125,
+      "reported_text": "今晚又吃了一盒盒马鸡腿"
+    },
+    {
+      "id": "dinner_roasted_potato_70g_nov04",
+      "meal": "dinner",
+      "status": "consumed_estimated",
+      "description": "晚餐烤土豆70g（沿无油熟重口径）",
+      "reported_text": "好，只吃了70g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 70,
+      "basis": "用户明确实际吃下70g烤土豆。按历史无油烤熟每100g93kcal、P2.5/F0.1/C21.2，计65.10kcal、P1.75/F0.07/C14.84。之前建议60g只是咨询，不另记。",
+      "uncertainty": "本次没有单独确认70g是生重或熟重、有无刷油；暂沿历史无油熟重口径。",
+      "kcal_base_estimate": 65.1,
+      "kcal_booked": 65.1,
+      "kcal_range": [
+        65.1,
+        65.1
+      ],
+      "protein_g_estimate": 1.75,
+      "fat_g_estimate": 0.07,
+      "carbs_g_estimate": 14.84
     }
   ],
   "exercise_entries": [],
@@ -262,53 +336,53 @@
     "2026-11-04用户确认早餐火龙果377g是带皮整果实称；按历史65%果肉率可食245.05g，热量134.78kcal不变。只需更正原有火龙果条目与估算区间，已删除带皮/去皮的missing_sections待确认，不重复新增餐食。",
     "2026-11-04上午实吃手撕牛肉干一包。初称125g，后用户明确确认是9月30日曾记录的同款90g、按90g记账。复用9月30日真实营养标签每100g1092kJ/P45.3/F8/C1.5/钠631mg：本次234.89kcal/P40.77/F7.20/C1.35/钠567.9mg。只增一份，不记录125g另一份。",
     "2026-11-04午饭沙县双去皮鸡腿饭，沿历史固定两只鸡腿、250g熟饭、白菜卤蛋不吃土豆丝（含餐馆用油10%）记921.25kcal；如本次份量不同需原位更正。",
-    "2026-11-04下午实际吃黄油法棍约20g，无同款标签按400kcal/100g估80kcal（范围60–110kcal，宏量粗估）；另吃六号肠半根沿历史整根150g折75g记131.75kcal，非蒜香肠。本日仍未封账，训练状态未知。"
+    "2026-11-04下午实际吃黄油法棍约20g，无同款标签按400kcal/100g估80kcal（范围60–110kcal，宏量粗估）；另吃六号肠半根沿历史整根150g折75g记131.75kcal，非蒜香肠。本日仍未封账，训练状态未知。",
+    "11月4日晚餐鸡肉肠4根共200g（包装593kJ/100g）、盒马鸡腿一盒、无油熟重口径烤土豆实吃70g；今日休息无训练，饮食已确认结束。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1644.7328059273423,
-    "intake_kcal_booked": 1728.4828059273423,
-    "protein_g_estimate": 136.44123333333334,
-    "fat_g_estimate": 67.35158888888888,
-    "carbs_g_estimate": 140.46676666666667,
-    "intake_kcal_estimate": 1728.4828059273423,
+    "intake_kcal_base_estimate": 2176.2936089866157,
+    "intake_kcal_booked": 2260.0436089866157,
+    "protein_g_estimate": 203.92123333333333,
+    "fat_g_estimate": 77.65158888888887,
+    "carbs_g_estimate": 182.03676666666667,
+    "intake_kcal_estimate": 2260.0436089866157,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 136.44123333333334,
-      "fat_g": 58.04603333333333,
-      "carbs_g": 140.46676666666667
+      "protein_g": 203.92123333333333,
+      "fat_g": 68.34603333333331,
+      "carbs_g": 182.03676666666667
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1419.745893881453,
-      1946.2158938814532
+      1918.3066969407264,
+      2529.7766969407267
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2187.2999999999997,
-    "estimated_deficit_kcal": 458.81719407265746,
+    "estimated_deficit_kcal": -72.74360898661598,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
       1800,
       1800
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 10,
     "protein_by_meal_g": {
-      "afternoon_snack": 12.125,
       "breakfast": 14.212900000000001,
+      "morning_snack": 40.77,
       "lunch": 69.33333333333333,
-      "morning_snack": 40.77
+      "afternoon_snack": 12.125,
+      "dinner": 67.48
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
+      "当天已确认休息无训练及饮食结束，但盒马鸡腿和黄油法棍仍使用估算值，模型收支不是实测"
     ],
-    "interpretation": "截至11月4日下午已有7项食物：早饭3项、上午同款牛肉干90g、午餐沙县鸡腿饭、下午黄油法棍约20g和半根六号肠。当天食物及训练尚未结束，按BMR×1.2减已记录摄入只是暂算差额，不能当作实际日缺口。黄油法棍无标签，沙县及半根六号肠使用历史同款默认估值。",
+    "interpretation": "11月4日正式封账。无训练，10项已吃食物摄入约2260.04kcal、P203.92/F77.65/C182.04；非训练TDEE约2187.30kcal，算术估计盈余约72.74kcal。盒马鸡腿是否去皮及黄油法棍能量不确定，所以completed_day_estimated_deficit_kcal=null。烤土豆仅实际吃70g一份。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -321,8 +395,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 723.9,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1913.9,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 245.05,
     "fruit_vegetable_g_entries_with_data": 1,
