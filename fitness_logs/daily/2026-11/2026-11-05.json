@@ -117,6 +117,30 @@
       "protein_g_estimate": 3.75,
       "fat_g_estimate": 0.15,
       "carbs_g_estimate": 31.8
+    },
+    {
+      "id": "morning_snack_dragon_fruit_367g_gross_nov05",
+      "status": "consumed_estimated",
+      "meal": "morning_snack",
+      "description": "上午加餐火龙果367g（带皮整果，果肉暂估238.55g）",
+      "reported_text": "又吃了一个367g带皮火龙果",
+      "source_kind": "matched_default",
+      "gross_weight_g": 367,
+      "edible_fraction_estimate": 0.65,
+      "edible_weight_g_estimate": 238.55,
+      "basis": "用户明确实吃一颗367g带皮称重的火龙果，沿11月4日同款带皮整果65%出肉率和55kcal/100g果肉估算可食238.55g，记131.20kcal、P2.3855/F0.4771/C28.626。果皮不计入吃下重量。",
+      "uncertainty": "用户已明确带皮367g；65%果肉率及55kcal/100g为历史估算，不是实测净果肉，果肉率55%-75%热量估111.02–151.39kcal。",
+      "kcal_base_estimate": 131.20250000000001,
+      "kcal_booked": 131.20250000000001,
+      "kcal_range": [
+        111.01750000000003,
+        151.38750000000002
+      ],
+      "protein_g_estimate": 2.3855,
+      "fat_g_estimate": 0.4771,
+      "carbs_g_estimate": 28.626,
+      "fruit_vegetable_g_estimate": 238.55,
+      "gross_weight_confirmed": true
     }
   ],
   "exercise_entries": [],
@@ -128,32 +152,33 @@
   },
   "corrections": [],
   "notes": [
-    "11月5日晨起空腹87.45kg；早餐南瓜子6.3g、鸡小胸一包100g、烤土豆150g。鸡小胸暂沿11月2日相近即食鸡胸肉标签；烤土豆暂按无油熟重。全天尚未结束。"
+    "11月5日晨起空腹87.45kg；早餐南瓜子6.3g、鸡小胸一包100g、烤土豆150g。鸡小胸暂沿11月2日相近即食鸡胸肉标签；烤土豆暂按无油熟重。全天尚未结束。",
+    "11月5日上午新增带皮火龙果367g一颗，按历史65%出肉率估果肉238.55g、热量131.20kcal；今天开放，其他早餐条目不变。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 304.28895793499044,
-    "intake_kcal_booked": 304.28895793499044,
-    "protein_g_estimate": 34.3156,
-    "fat_g_estimate": 4.324400000000001,
-    "carbs_g_estimate": 32.322900000000004,
-    "intake_kcal_estimate": 304.28895793499044,
+    "intake_kcal_base_estimate": 435.4914579349904,
+    "intake_kcal_booked": 435.4914579349904,
+    "protein_g_estimate": 36.701100000000004,
+    "fat_g_estimate": 4.801500000000001,
+    "carbs_g_estimate": 60.94890000000001,
+    "intake_kcal_estimate": 435.4914579349904,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 34.3156,
-      "fat_g": 4.324400000000001,
-      "carbs_g": 32.322900000000004
+      "protein_g": 36.701100000000004,
+      "fat_g": 4.801500000000001,
+      "carbs_g": 60.94890000000001
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      278.33293499043975,
-      368.33293499043975
+      389.3504349904398,
+      519.7204349904398
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2190.9,
-    "estimated_deficit_kcal": 1886.6110420650098,
+    "estimated_deficit_kcal": 1755.4085420650097,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -162,16 +187,17 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 34.3156
+      "breakfast": 34.3156,
+      "morning_snack": 2.3855
     },
     "warnings": [
-      "鸡小胸一包100g未确认与历史即食鸡胸肉同款，沿相近标签估算",
-      "训练状态未确认：仅按基础活动暂算，不代表休息日",
-      "全天饮食完整性未确认，不能计算最终热量缺口"
+      "鸡小胸100g尚未确认同款营养标签，沿历史相近即食鸡胸肉估算",
+      "带皮火龙果367g确定，但果肉率65%仍是参考估值",
+      "今天其他饮食与训练尚未结束，暂不算全天热量缺口"
     ],
-    "interpretation": "11月5日只记录晨重和三项早餐，鸡小胸按相近历史包装估计、土豆按无油熟重默认。全天饮食与训练未确认完成，BMR×1.2减早餐仅为临时算术对照，不是最终日热量缺口。",
+    "interpretation": "11月5日目前4项已吃，含新增带皮火龙果367g（估果肉238.55g）；累计435.49kcal、P36.70/F4.80/C60.95。全天未封账、训练未知。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 0,
     "protein_g_range_coverage_complete": false,
@@ -187,8 +213,8 @@
     "sodium_mg_known_sum": 232,
     "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": null,
-    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_known_sum": 238.55,
+    "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   }
 }
