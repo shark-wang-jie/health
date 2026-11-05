@@ -1,0 +1,194 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "鸡小胸一包100g未提供本次产品营养标签，暂用11月2日即食鸡胸肉每100g527kJ/P28.6/F1.1/C0作相近参考，实际产品如不同需原位更正。"
+  ],
+  "non_energy_pending_notes": [
+    "烤土豆150g暂沿历史无油烤后熟重口径，若实际是生重或有刷油需更正。",
+    "11月5日仅晨重和早餐三项，其他饮食与是否训练尚未确认，不封账。"
+  ],
+  "trend_context": [
+    "11月5日空腹87.45kg，较11月4日空腹87.15kg增加0.30kg；此前晚餐鸡肉肠200g含钠1190mg、晚上有氧单车约62分钟出汗较多，次晨体重变化可能受水分/糖原/盐分波动影响，不能按0.30kg脂肪增长判断。"
+  ],
+  "weight_measurement_note": "用户2026-11-05晨起空腹体重87.45kg，较上日增加0.30kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 87.45,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.45,
+    "bmr_weight_date": "2026-11-05",
+    "bmr_kcal": 1825.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_6_3g_nov05",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子6.3g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 6.3,
+      "basis": "用户2026-11-05晨起报实际吃南瓜子6.3g。沿历史已核对同款标签每100g2579kJ、P31.2/F48.8/C8.3g，按6.3g等比例计算，无额外用油。",
+      "kcal_base_estimate": 38.83293499043976,
+      "kcal_booked": 38.83293499043976,
+      "kcal_range": [
+        38.83293499043976,
+        38.83293499043976
+      ],
+      "protein_g_estimate": 1.9655999999999996,
+      "fat_g_estimate": 3.0744000000000002,
+      "carbs_g_estimate": 0.5228999999999999,
+      "reported_text": "早饭6.3g南瓜子"
+    },
+    {
+      "id": "breakfast_chicken_tender_breast_pack_100g_nov05",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐鸡小胸一包100g（暂按历史即食鸡胸肉营养标签）",
+      "reported_text": "早饭一包100g鸡小胸",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "basis": "用户2026-11-05报告已吃鸡小胸一包100g，但未提供本包照片或品牌。仓库检索未找到更确切的鸡小胸历史标签，暂借用2026-11-02即食鸡胸肉100g标签每100g527kJ、P28.6/F1.1/C0、钠232mg，记125.96kcal和P28.6g。这只是相近产品参考，不能断定鸡小胸为当时同款；得到本包营养表需原位更正。",
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232,
+      "uncertainty": "鸡小胸不是已确认和11月2日即食鸡胸肉同款；100g重量明确，但实际品牌配方和营养标签尚缺，125.96kcal是暂估，参考范围约100–190kcal，宏量按相近品暂估。"
+    },
+    {
+      "id": "breakfast_roasted_potato_150g_nov05",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "description": "早餐烤土豆150g（沿历史无油熟重口径）",
+      "reported_text": "早饭150g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 150,
+      "basis": "用户2026-11-05报告早餐吃150g烤土豆；沿此前多次无油烤熟土豆每100g93kcal、P2.5/F0.1/C21.2g，暂把150g视为烤后熟重、不额外刷油，计139.5kcal、P3.75/F0.15/C31.8。若是烤前生重或刷油，则本条原位更正。",
+      "uncertainty": "本次未确认150g称的是烤前生重还是烤后熟重、是否刷油；沿历史无油熟重默认，具体烹调方式不同热量会变。",
+      "kcal_base_estimate": 139.5,
+      "kcal_booked": 139.5,
+      "kcal_range": [
+        139.5,
+        139.5
+      ],
+      "protein_g_estimate": 3.75,
+      "fat_g_estimate": 0.15,
+      "carbs_g_estimate": 31.8
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "11月5日晨起空腹87.45kg；早餐南瓜子6.3g、鸡小胸一包100g、烤土豆150g。鸡小胸暂沿11月2日相近即食鸡胸肉标签；烤土豆暂按无油熟重。全天尚未结束。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 304.28895793499044,
+    "intake_kcal_booked": 304.28895793499044,
+    "protein_g_estimate": 34.3156,
+    "fat_g_estimate": 4.324400000000001,
+    "carbs_g_estimate": 32.322900000000004,
+    "intake_kcal_estimate": 304.28895793499044,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 34.3156,
+      "fat_g": 4.324400000000001,
+      "carbs_g": 32.322900000000004
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      278.33293499043975,
+      368.33293499043975
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2190.9,
+    "estimated_deficit_kcal": 1886.6110420650098,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 34.3156
+    },
+    "warnings": [
+      "鸡小胸一包100g未确认与历史即食鸡胸肉同款，沿相近标签估算",
+      "训练状态未确认：仅按基础活动暂算，不代表休息日",
+      "全天饮食完整性未确认，不能计算最终热量缺口"
+    ],
+    "interpretation": "11月5日只记录晨重和三项早餐，鸡小胸按相近历史包装估计、土豆按无油熟重默认。全天饮食与训练未确认完成，BMR×1.2减早餐仅为临时算术对照，不是最终日热量缺口。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 232,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
