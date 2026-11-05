@@ -6,15 +6,16 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [
     "鸡小胸一包100g未提供本次产品营养标签，暂用11月2日即食鸡胸肉每100g527kJ/P28.6/F1.1/C0作相近参考，实际产品如不同需原位更正。"
   ],
   "non_energy_pending_notes": [
     "烤土豆150g暂沿历史无油烤后熟重口径，若实际是生重或有刷油需更正。",
     "11月5日仅晨重和早餐三项，其他饮食与是否训练尚未确认，不封账。",
-    "用户询问如果晚餐吃无油烤熟土豆210g、再补100g/包鸡小胸需几包蛋白质：这属于尚未确认实际吃下的晚餐计划，不可将210g土豆或两包鸡小胸登记为已吃。按照已吃早餐/上午水果和沙县午餐P106.03g，假设晚餐210g土豆P5.25g，至170g还差58.72g；暂按鸡小胸历史相近标签P28.6g/100g，2包可达约168.48g，3包超过170g但并无必要。若用户后续实际吃了再计账。"
+    "用户询问如果晚餐吃无油烤熟土豆210g、再补100g/包鸡小胸需几包蛋白质：这属于尚未确认实际吃下的晚餐计划，不可将210g土豆或两包鸡小胸登记为已吃。按照已吃早餐/上午水果和沙县午餐P106.03g，假设晚餐210g土豆P5.25g，至170g还差58.72g；暂按鸡小胸历史相近标签P28.6g/100g，2包可达约168.48g，3包超过170g但并无必要。若用户后续实际吃了再计账。",
+    "练前、练后各100g鸡小胸、各100g烤土豆，练后另喝牛奶一瓶；实际土豆合计200g，不是先前讨论的210g。今天未确认饮食训练结束。"
   ],
   "trend_context": [
     "11月5日空腹87.45kg，较11月4日空腹87.15kg增加0.30kg；此前晚餐鸡肉肠200g含钠1190mg、晚上有氧单车约62分钟出汗较多，次晨体重变化可能受水分/糖原/盐分波动影响，不能按0.30kg脂肪增长判断。"
@@ -181,9 +182,135 @@
       "status": "consumed_estimated",
       "reported_text": "中午沙县鸡腿饭",
       "catalog_id": "shaxian_two_skinless_legs"
+    },
+    {
+      "id": "preworkout_chicken_tender_100g_nov05",
+      "status": "consumed_estimated",
+      "meal": "preworkout",
+      "description": "练前鸡小胸100g一包",
+      "reported_text": "练前鸡小胸100g一包",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "basis": "用户确认2026-11-05练前、练后分别实吃鸡小胸100g一包（同早餐称呼）；暂沿历史相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0估125.96kcal，实际本产品标签未知。",
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232,
+      "uncertainty": "实际鸡小胸产品营养标签未确认，仅沿相近即食鸡胸肉估算。"
+    },
+    {
+      "id": "preworkout_roasted_potato_100g_nov05",
+      "meal": "preworkout",
+      "status": "consumed_estimated",
+      "description": "练前烤土豆100g",
+      "reported_text": "练前烤土豆100g",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "basis": "用户明确2026-11-05练前和练后分别各实吃100g烤土豆，两次合计200g。沿历史无油烤熟100g93kcal/P2.5/F0.1/C21.2g。此前咨询的210g不计入。",
+      "uncertainty": "单次100g重量明确，是否烤后熟重和有无额外用油暂沿历史默认。",
+      "kcal_base_estimate": 93,
+      "kcal_booked": 93,
+      "kcal_range": [
+        93,
+        93
+      ],
+      "protein_g_estimate": 2.5,
+      "fat_g_estimate": 0.1,
+      "carbs_g_estimate": 21.2
+    },
+    {
+      "id": "postworkout_chicken_tender_100g_nov05",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后鸡小胸100g一包",
+      "reported_text": "练后鸡小胸100g一包",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "basis": "用户确认2026-11-05练前、练后分别实吃鸡小胸100g一包（同早餐称呼）；暂沿历史相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0估125.96kcal，实际本产品标签未知。",
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232,
+      "uncertainty": "实际鸡小胸产品营养标签未确认，仅沿相近即食鸡胸肉估算。"
+    },
+    {
+      "id": "postworkout_roasted_potato_100g_nov05",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "description": "练后烤土豆100g",
+      "reported_text": "练后烤土豆100g",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "basis": "用户明确2026-11-05练前和练后分别各实吃100g烤土豆，两次合计200g。沿历史无油烤熟100g93kcal/P2.5/F0.1/C21.2g。此前咨询的210g不计入。",
+      "uncertainty": "单次100g重量明确，是否烤后熟重和有无额外用油暂沿历史默认。",
+      "kcal_base_estimate": 93,
+      "kcal_booked": 93,
+      "kcal_range": [
+        93,
+        93
+      ],
+      "protein_g_estimate": 2.5,
+      "fat_g_estimate": 0.1,
+      "carbs_g_estimate": 21.2
+    },
+    {
+      "id": "postworkout_milk_260ml_nov05",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后牛奶一瓶（暂按悦鲜活260mL）",
+      "reported_text": "练后再加一瓶牛奶",
+      "source_kind": "matched_default",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_ml": 260,
+      "basis": "用户2026-11-05练后喝一瓶牛奶，沿历史悦鲜活鲜牛乳260mL每100mL287kJ/P3.6/F3.9/C4.8计178.35kcal。",
+      "uncertainty": "本次品牌容量未重复确认，暂用历史260mL同款。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.360000000000001,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.0200000000000005,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156,
+      "calcium_mg_estimate": 325
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_05_173852",
+      "event_id": "apple_health_workout_2026_11_05_173852",
+      "type": "传统力量训练（无氧）",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "source": "Apple Health 用户Apple Watch：2026-11-05 17:38:52.809–18:39:13.412，传统力量训练，60分21秒。",
+      "energy_scope": "session_active",
+      "active_kcal": 375.83109511834806,
+      "total_kcal": 375.83109511834806,
+      "duration_seconds": 3620.6027059555054,
+      "start_local": "2026-11-05T17:38:52.809000+08:00",
+      "end_local": "2026-11-05T18:39:13.412000+08:00",
+      "energy_interpretation_basis": "与此前训练日志一致，Apple Health workout提供375.83109511834806kcal，作为训练动态估算，乘0.75折算，不叠加其他活动圆环。",
+      "uncertainty": "Apple Watch估计的运动消耗，今天是否有后续未同步训练尚不清楚。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -194,54 +321,56 @@
   "notes": [
     "11月5日晨起空腹87.45kg；早餐南瓜子6.3g、鸡小胸一包100g、烤土豆150g。鸡小胸暂沿11月2日相近即食鸡胸肉标签；烤土豆暂按无油熟重。全天尚未结束。",
     "11月5日上午新增带皮火龙果367g一颗，按历史65%出肉率估果肉238.55g、热量131.20kcal；今天开放，其他早餐条目不变。",
-    "2026-11-05中午实吃沙县鸡腿饭，按历史固定双去皮鸡腿、熟饭250g、白菜卤蛋不吃土豆丝，餐馆油脂余量10%，记921.25kcal、P69.33/F36.14/C77.67，非本次称重。"
+    "2026-11-05中午实吃沙县鸡腿饭，按历史固定双去皮鸡腿、熟饭250g、白菜卤蛋不吃土豆丝，餐馆油脂余量10%，记921.25kcal、P69.33/F36.14/C77.67，非本次称重。",
+    "11月5日中午沙县已记一次，重复报告不重记。练前练后各一包100g鸡小胸和100g无油烤土豆，两餐分别计入；练后牛奶一瓶。",
+    "Health 17:38–18:39一段传统力量训练，动态375.83kcal，折算281.87kcal；今日仍开放。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1272.9914579349904,
-    "intake_kcal_booked": 1356.7414579349904,
-    "protein_g_estimate": 106.03443333333334,
-    "fat_g_estimate": 40.94038888888889,
-    "carbs_g_estimate": 138.61556666666667,
-    "intake_kcal_estimate": 1356.7414579349904,
+    "intake_kcal_base_estimate": 1889.2495841300188,
+    "intake_kcal_booked": 1972.9995841300188,
+    "protein_g_estimate": 177.59443333333334,
+    "fat_g_estimate": 53.480388888888896,
+    "carbs_g_estimate": 193.49556666666663,
+    "intake_kcal_estimate": 1972.9995841300188,
     "food_margin_kcal": 83.75,
     "base_macro_estimates": {
-      "protein_g": 106.03443333333334,
-      "fat_g": 31.634833333333333,
-      "carbs_g": 138.61556666666667
+      "protein_g": 177.59443333333334,
+      "fat_g": 44.17483333333334,
+      "carbs_g": 193.49556666666663
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 93.957773779587,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1054.3504349904397,
-      1594.7204349904398
+      1618.6965152963671,
+      2339.066515296367
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2190.9,
-    "estimated_deficit_kcal": 834.1585420650097,
+    "exercise_active_kcal": 375.83109511834806,
+    "exercise_adjusted_kcal": 281.87332133876106,
+    "tdee_kcal_estimate": 2472.773321338761,
+    "estimated_deficit_kcal": 499.7737372087422,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 10,
     "protein_by_meal_g": {
       "breakfast": 34.3156,
       "morning_snack": 2.3855,
-      "lunch": 69.33333333333333
+      "lunch": 69.33333333333333,
+      "preworkout": 31.1,
+      "postworkout": 40.46
     },
     "warnings": [
-      "鸡小胸100g尚未确认同款营养标签，沿历史相近品估算",
-      "火龙果367g带皮重量明确，果肉率65%为历史估算",
-      "沙县餐馆食物沿历史标准份量与10%用油余量估计",
-      "训练状态未知，全天饮食仍未结束，不计算最终缺口",
-      "晚间烤土豆210g与另加鸡小胸2包仅为计划，不计实际摄入"
+      "鸡小胸未提供这款真实标签，早餐及练前后共3包使用相近即食鸡胸肉口径",
+      "练前后各100g烤土豆已确认，仍按历史无油熟重",
+      "今天未确认全天饮食训练结束，不作最终缺口"
     ],
-    "interpretation": "截至11月5日午餐，5项实吃食物，包括早餐3项、上午带皮火龙果367g及中午沙县双去皮鸡腿饭。当前累计约1356.74kcal、蛋白106.03g。用户仅问假设晚间吃210g烤土豆并用100g/包鸡小胸补蛋白时需多少包；两者均未确认实际吃下，不在本次入账。当天训练未知且饮食未结束，不算最终缺口。",
+    "interpretation": "截至11月5日练后10项实吃，含中午沙县只记一次、练前后鸡小胸100g与烤土豆100g各一份、练后牛奶一瓶。总1973.00kcal、P177.59g。Health无氧375.83kcal，按0.75折算281.87kcal。当天未封账。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
@@ -254,8 +383,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 232,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 852,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 238.55,
     "fruit_vegetable_g_entries_with_data": 1,
