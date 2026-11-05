@@ -9,7 +9,7 @@
     "timezone": "亚洲/上海"
   },
   "month_end_date": "2026-10-31",
-  "generated_at": "2026-11-01T00:10:31+08:00",
+  "generated_at": "2026-11-05T23:16:52+08:00",
   "finalized": false,
   "coverage": {
     "calendar_days": 31,
@@ -47,12 +47,11 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
-    ],
-    "partial_dates": [],
-    "open_dates": [
+      "2026-10-30",
       "2026-10-31"
     ],
+    "partial_dates": [],
+    "open_dates": [],
     "unknown_completion_dates": [],
     "weight_missing_dates": []
   },
@@ -69,12 +68,12 @@
   },
   "energy_summary_by_algorithm": {
     "tdee_v1": {
-      "total_estimated_deficit_kcal": 2571,
-      "days_with_completed_day_estimate": 2,
-      "excluded_provisional_days": 28,
-      "average_estimated_deficit_kcal": 1285.5,
-      "total_estimated_tdee_kcal": 87336.1,
-      "total_adjusted_training_kcal": 21096.1,
+      "total_estimated_deficit_kcal": 3396.2,
+      "days_with_completed_day_estimate": 3,
+      "excluded_provisional_days": 27,
+      "average_estimated_deficit_kcal": 1132.1,
+      "total_estimated_tdee_kcal": 88332.4,
+      "total_adjusted_training_kcal": 22092.4,
       "formula": "BMR × activity_factor + 原始训练动态消耗 × training_factor − 偏高记账摄入",
       "interpretation": "按偏高摄入估算的缺口，不是真实缺口下限；系数未经个人验证。",
       "base_intake_summary": {
@@ -86,10 +85,11 @@
       "complete_data_subset": {
         "dates": [
           "2026-10-08",
-          "2026-10-10"
+          "2026-10-10",
+          "2026-10-31"
         ],
-        "recorded_days": 2,
-        "average_estimated_deficit_kcal": 1285.5,
+        "recorded_days": 3,
+        "average_estimated_deficit_kcal": 1132.1,
         "note": "完整资料子集，仍是估算；未完成日的暂算差额不计入缺口合计"
       },
       "provisional_or_unconfirmed_dates": [
@@ -119,8 +119,7 @@
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
-        "2026-10-30",
-        "2026-10-31"
+        "2026-10-30"
       ],
       "coefficient_variants": [
         {
@@ -438,13 +437,6 @@
         "Health本次骑行workout接口total_energy_kcal按历史同源动态口径暂记，缺本次Fitness动态千卡截图直接校验。"
       ],
       "food_coverage": "confirmed_complete"
-    },
-    {
-      "date": "2026-10-31",
-      "missing_sections": [
-        "两段workout只有total_energy_kcal，没有本次动态能量直接核验；用户更正为室内爬坡步行，因此不再判定716.65kcal异常；active_kcal仍暂null，仅因total与动态能量需要区分，防止重复记账。"
-      ],
-      "food_coverage": "partial"
     }
   ],
   "weight_summary": {
@@ -535,8 +527,8 @@
     "new_intake_target_comparison": {
       "below": 2,
       "within": 0,
-      "above": 0,
-      "excluded_incomplete_days": 28,
+      "above": 1,
+      "excluded_incomplete_days": 27,
       "interpretation": "相对初始摄入安排的描述，不是合格评分；低于区间不自动代表更好"
     },
     "base_macro_summaries": {
@@ -563,8 +555,8 @@
     "days_without_exercise_entries": 3,
     "total_sessions": 51,
     "sessions_with_duration": 51,
-    "sessions_with_kcal": 49,
-    "total_active_or_estimated_kcal_from_daily_summaries": 28128.3,
+    "sessions_with_kcal": 51,
+    "total_active_or_estimated_kcal_from_daily_summaries": 29456.7,
     "highest_exercise_kcal_day": {
       "date": "2026-10-05",
       "value": 1755.8
@@ -588,7 +580,7 @@
       "strength": {
         "sessions": 19,
         "recorded_duration_min": 1311.3,
-        "active_or_estimated_kcal": 10176.5
+        "active_or_estimated_kcal": 10788.2
       },
       "strength_training": {
         "sessions": 2,
@@ -608,7 +600,7 @@
       "室内爬坡步行（用户明确更正）": {
         "sessions": 1,
         "recorded_duration_min": 64,
-        "active_or_estimated_kcal": 0
+        "active_or_estimated_kcal": 716.6
       },
       "室内骑行（Health HKWorkoutActivityType13）": {
         "sessions": 1,
@@ -668,7 +660,6 @@
   },
   "assessment": [
     "本月只保存 30/31 天日记录，月度均值和总量不能代表完整月份。",
-    "缺少当日结束确认的记录：2026-10-31；月度统计按已报告内容计算。",
     "本月首次至末次有记录体重变化 -1.40 千克。",
     "有蛋白质汇总的 30 天中，按记录区间下限达到参考目标 0 天；另列点估算统计，均非确定测量或饮食质量评分。",
     "记录到 27 个运动日、51 次训练。"
@@ -2244,7 +2235,7 @@
       "source_summary_status": null
     },
     {
-      "provisional_recorded_balance_kcal": -171.03775334608054,
+      "provisional_recorded_balance_kcal": null,
       "protein_range_available": false,
       "algorithm": "tdee_v1",
       "energy_method": {
@@ -2253,18 +2244,16 @@
         "training_factor": 0.75
       },
       "intake_kcal_base_estimate": 2282.3877533460804,
-      "exercise_adjusted_kcal": 0.0,
-      "tdee_kcal_estimate": 2195.1,
-      "estimated_deficit_kcal": null,
+      "exercise_adjusted_kcal": 996.299103989822,
+      "tdee_kcal_estimate": 3191.399103989822,
+      "estimated_deficit_kcal": 825.2613506437415,
       "intake_target_kcal_range": [
         1900.0,
         2000.0
       ],
       "date": "2026-10-31",
-      "record_status": "open",
-      "missing_sections": [
-        "两段workout只有total_energy_kcal，没有本次动态能量直接核验；用户更正为室内爬坡步行，因此不再判定716.65kcal异常；active_kcal仍暂null，仅因total与动态能量需要区分，防止重复记账。"
-      ],
+      "record_status": "final",
+      "missing_sections": [],
       "morning_weight_kg": 87.8,
       "bmr_kcal": 1829.25,
       "intake_kcal_estimate": 2366.1377533460804,
@@ -2279,12 +2268,12 @@
       },
       "fat_g_estimate": 91.6414888888889,
       "carbs_g_estimate": 188.43966666666665,
-      "food_coverage": "partial",
-      "energy_estimate_provisional": true,
+      "food_coverage": "confirmed_complete",
+      "energy_estimate_provisional": false,
       "training_status": "reported_training",
       "protein_g_estimate": 196.60433333333336,
       "protein_g_range": null,
-      "exercise_active_or_estimated_kcal": 0,
+      "exercise_active_or_estimated_kcal": 1328.4,
       "conservative_deficit_kcal": null,
       "intake_limit_kcal": null,
       "protein_target_g": 170,
