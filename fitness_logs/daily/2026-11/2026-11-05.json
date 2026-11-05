@@ -2,12 +2,12 @@
   "schema_version": 3,
   "date": "2026-11-05",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-11-05 22:25之后用户明确“今天饮食训练全部结束”，此前已记录11项实际饮食及Apple Health核验两段训练（17:38–18:39力量、21:11–22:12室内单车），本次仅更正日结束与完整性状态，不添加新食物或运动。未核实鸡小胸/酸奶标签与第二段workout动态能量的估算误差仍保留。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "鸡小胸一包100g未提供本次产品营养标签，暂用11月2日即食鸡胸肉每100g527kJ/P28.6/F1.1/C0作相近参考，实际产品如不同需原位更正。",
     "晚间酸奶252g尚未确认是否与最近大桶原味发酵乳同款，暂沿348kJ/100g口径估算，若换款需修订。",
@@ -15,9 +15,8 @@
   ],
   "non_energy_pending_notes": [
     "烤土豆150g暂沿历史无油烤后熟重口径，若实际是生重或有刷油需更正。",
-    "11月5日仅晨重和早餐三项，其他饮食与是否训练尚未确认，不封账。",
     "用户询问如果晚餐吃无油烤熟土豆210g、再补100g/包鸡小胸需几包蛋白质：这属于尚未确认实际吃下的晚餐计划，不可将210g土豆或两包鸡小胸登记为已吃。按照已吃早餐/上午水果和沙县午餐P106.03g，假设晚餐210g土豆P5.25g，至170g还差58.72g；暂按鸡小胸历史相近标签P28.6g/100g，2包可达约168.48g，3包超过170g但并无必要。若用户后续实际吃了再计账。",
-    "练前、练后各100g鸡小胸、各100g烤土豆，练后另喝牛奶一瓶；实际土豆合计200g，不是先前讨论的210g。今天未确认饮食训练结束。"
+    "11月5日用户已明确全部饮食、全部训练结束，已正式封账。晚间有氧以Health第二条室内单车为准，不能重复记此前误说的无氧。"
   ],
   "trend_context": [
     "11月5日空腹87.45kg，较11月4日空腹87.15kg增加0.30kg；此前晚餐鸡肉肠200g含钠1190mg、晚上有氧单车约62分钟出汗较多，次晨体重变化可能受水分/糖原/盐分波动影响，不能按0.30kg脂肪增长判断。"
@@ -371,7 +370,8 @@
     "11月5日中午沙县已记一次，重复报告不重记。练前练后各一包100g鸡小胸和100g无油烤土豆，两餐分别计入；练后牛奶一瓶。",
     "Health 17:38–18:39一段传统力量训练，动态375.83kcal，折算281.87kcal；今日仍开放。",
     "用户先口述晚上又加了无氧，随即明确更正为有氧。Health同步21:11–22:12一段室内单车（rawValue13），与更正一致，新增一条有氧，不重复录入一条口述无氧。",
-    "晚间有氧后实吃酸奶252g，暂按近期常吃大桶原味发酵乳每100g348kJ/P4/F5/C5.6估209.60kcal，等用户确认是否同款。今天尚未确认所有饮食与训练结束，维持开放。"
+    "晚间有氧后实吃酸奶252g，暂按近期常吃大桶原味发酵乳每100g348kJ/P4/F5/C5.6估209.60kcal，等用户确认是否同款。今天尚未确认所有饮食与训练结束，维持开放。",
+    "2026-11-05用户确认全天饮食训练全部结束，正式封账。全天11项摄入2182.60kcal，P187.67/F66.08/C207.61；下午力量375.83kcal与晚间有氧581.35kcal共2条Health workout，按75%折算717.89kcal，模型TDEE2908.79kcal，收支算术估计缺口726.19kcal。鸡小胸/酸奶产品标签及Health晚间动态口径仍有不确定性，completed_day_estimated_deficit_kcal保持null。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2098.8480544933072,
@@ -403,7 +403,7 @@
       1900,
       2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 11,
     "protein_by_meal_g": {
@@ -415,12 +415,11 @@
       "late_postworkout": 10.08
     },
     "warnings": [
-      "本次酸奶252g按历史大桶原味发酵乳估算，未确认同款标签",
-      "鸡小胸早餐及练前后3包沿相近即食鸡胸肉标签估算",
-      "晚上第二段室内单车workout 581.35kcal原始字段未区分动态/总热量，按既有运动口径暂估计入",
-      "饮食训练尚未确认当天全部结束，模型收支仅为临时对照"
+      "今日饮食及训练已明确全部结束，但鸡小胸、酸奶营养尚按相近历史标签估计",
+      "晚间室内单车Health字段total_energy_kcal未由本次截图核验其与动态卡路里的对应关系，依既定0.75折算为估计",
+      "模型估算缺口不是精确实测的热量差额，不应当成保证体重变化的数值"
     ],
-    "interpretation": "11月5日截至晚间新增252g酸奶及第二段室内单车有氧后，已吃11项累计约2182.60kcal，P187.67g。Apple Health两段训练：17:38–18:39力量375.83kcal、21:11–22:12室内单车581.35kcal，总计模型训练能量957.19kcal，折算75%=717.89kcal；基础活动2190.90kcal，模型TDEE2908.79kcal。全天未确认饮食训练结束且食物规格/运动能量有估算差异，不能报为最终实际缺口。",
+    "interpretation": "11月5日用户明确饮食与训练全部结束，封账11项已吃食物：2182.60kcal/P187.67/F66.08/C207.61。Health核验17:38–18:39传统力量375.83kcal及21:11–22:12室内单车有氧581.35kcal两段，运动估值合计957.19kcal按0.75折算717.89kcal，加基础2190.90kcal，模型TDEE2908.79kcal，算术估计缺口726.19kcal。鸡小胸和酸奶标签及晚间Health total_energy与动态能量口径尚存不确定性，completed_day_estimated_deficit_kcal=null，能量收支仍 provisional_recorded_balance；仅实际吃下计入，不重复午饭、土豆及有氧。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
