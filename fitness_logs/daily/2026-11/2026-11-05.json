@@ -346,14 +346,19 @@
       "type": "室内单车有氧",
       "activity_raw": "HKWorkoutActivityType(rawValue: 13)",
       "source": "用户明确更正晚上做的是有氧；Apple Health已同步11月5日21:11:12.894–22:12:18.276室内单车一段，duration3665.382438秒，接口total_energy_kcal581.3542961582002。用户口述与Health运动类型一致，计一次。",
-      "energy_scope": "session_workout_energy_estimate",
-      "active_kcal": 581.3542961582002,
+      "energy_scope": "session_active",
+      "active_kcal": null,
       "total_kcal": 581.3542961582002,
       "duration_seconds": 3665.3824380636215,
       "start_local": "2026-11-05T21:11:12.894000+08:00",
       "end_local": "2026-11-05T22:12:18.276000+08:00",
-      "energy_interpretation_basis": "Apple Health字段total_energy_kcal=581.3542961582002，按既有训练日运动能量估值乘0.75参与模型消耗，原始Health字段未区分动态和总消耗，本次没有Fitness截图独立核对；不重复计算用户口述或活动圆环。",
-      "uncertainty": "Apple Health的total_energy_kcal不一定等同Fitness所显示的动态能量，581.35只是本次workout能量估值；如另提供动态截图，可按口径原位更正。"
+      "energy_interpretation_basis": "原始Apple Health total_energy_kcal=581.3542961582002保留在total_kcal；本次未区分动态和总消耗，不能直接作为动态消耗参与模型。active_kcal暂为null，待核实本次训练动态千卡；原估算及依据保留在original_energy_estimate。",
+      "uncertainty": "Apple Health的total_energy_kcal不一定等同Fitness所显示的动态能量，581.35只是本次workout能量估值；如另提供动态截图，可按口径原位更正。",
+      "original_energy_estimate": {
+        "energy_scope": "session_workout_energy_estimate",
+        "active_kcal": 581.3542961582002,
+        "energy_interpretation_basis": "Apple Health字段total_energy_kcal=581.3542961582002，按既有训练日运动能量估值乘0.75参与模型消耗，原始Health字段未区分动态和总消耗，本次没有Fitness截图独立核对；不重复计算用户口述或活动圆环。"
+      }
     }
   ],
   "recovery": {
@@ -371,7 +376,8 @@
     "Health 17:38–18:39一段传统力量训练，动态375.83kcal，折算281.87kcal；今日仍开放。",
     "用户先口述晚上又加了无氧，随即明确更正为有氧。Health同步21:11–22:12一段室内单车（rawValue13），与更正一致，新增一条有氧，不重复录入一条口述无氧。",
     "晚间有氧后实吃酸奶252g，暂按近期常吃大桶原味发酵乳每100g348kJ/P4/F5/C5.6估209.60kcal，等用户确认是否同款。今天尚未确认所有饮食与训练结束，维持开放。",
-    "2026-11-05用户确认全天饮食训练全部结束，正式封账。全天11项摄入2182.60kcal，P187.67/F66.08/C207.61；下午力量375.83kcal与晚间有氧581.35kcal共2条Health workout，按75%折算717.89kcal，模型TDEE2908.79kcal，收支算术估计缺口726.19kcal。鸡小胸/酸奶产品标签及Health晚间动态口径仍有不确定性，completed_day_estimated_deficit_kcal保持null。"
+    "2026-11-05用户确认全天饮食训练全部结束，正式封账。全天11项摄入2182.60kcal，P187.67/F66.08/C207.61；下午力量375.83kcal与晚间有氧581.35kcal共2条Health workout，按75%折算717.89kcal，模型TDEE2908.79kcal，收支算术估计缺口726.19kcal。鸡小胸/酸奶产品标签及Health晚间动态口径仍有不确定性，completed_day_estimated_deficit_kcal保持null。",
+    "确定性修复：晚间单车581.3542961582002kcal原始读数及原估算依据完整保留，但动态/总能量口径未核实，动态消耗改为null，不计入模型。此前封账备注中的717.89kcal折算消耗、2908.79kcal TDEE和726.19kcal差额是修复前暂估，现以重算daily_summary为准；封账及饮食训练完整性确认不变。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2098.8480544933072,
@@ -387,39 +393,38 @@
       "carbs_g": 207.60756666666663
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 239.29634781913705,
+    "training_discount_kcal": 93.957773779587,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1828.2949856596558,
       2548.664985659656
     ],
-    "exercise_active_kcal": 957.1853912765482,
-    "exercise_adjusted_kcal": 717.8890434574112,
-    "tdee_kcal_estimate": 2908.789043457411,
-    "estimated_deficit_kcal": 726.1909889641038,
+    "exercise_active_kcal": 375.83109511834806,
+    "exercise_adjusted_kcal": 281.87332133876106,
+    "tdee_kcal_estimate": 2472.773321338761,
+    "estimated_deficit_kcal": 290.17526684545373,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 11,
     "protein_by_meal_g": {
       "breakfast": 34.3156,
-      "morning_snack": 2.3855,
+      "late_postworkout": 10.08,
       "lunch": 69.33333333333333,
-      "preworkout": 31.1,
+      "morning_snack": 2.3855,
       "postworkout": 40.46,
-      "late_postworkout": 10.08
+      "preworkout": 31.1
     },
     "warnings": [
-      "今日饮食及训练已明确全部结束，但鸡小胸、酸奶营养尚按相近历史标签估计",
-      "晚间室内单车Health字段total_energy_kcal未由本次截图核验其与动态卡路里的对应关系，依既定0.75折算为估计",
-      "模型估算缺口不是精确实测的热量差额，不应当成保证体重变化的数值"
+      "已报告训练有消耗缺失：仅计已知训练消耗",
+      "存在影响能量解释或完整性的待确认项"
     ],
-    "interpretation": "11月5日用户明确饮食与训练全部结束，封账11项已吃食物：2182.60kcal/P187.67/F66.08/C207.61。Health核验17:38–18:39传统力量375.83kcal及21:11–22:12室内单车有氧581.35kcal两段，运动估值合计957.19kcal按0.75折算717.89kcal，加基础2190.90kcal，模型TDEE2908.79kcal，算术估计缺口726.19kcal。鸡小胸和酸奶标签及晚间Health total_energy与动态能量口径尚存不确定性，completed_day_estimated_deficit_kcal=null，能量收支仍 provisional_recorded_balance；仅实际吃下计入，不重复午饭、土豆及有氧。",
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
