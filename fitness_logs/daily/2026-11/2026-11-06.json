@@ -10,7 +10,8 @@
   "training_coverage": "unknown",
   "missing_sections": [
     "早餐酸奶165g是否与历史大桶原味发酵乳（每100g348kJ）同款仍未核实；暂沿历史口径，换款后需原位更正。",
-    "早餐鸡小胸一包暂沿11月5日100g/包及相近即食鸡胸肉527kJ/100g估算，本次包装容量与营养标签未核实。"
+    "早餐鸡小胸一包暂沿11月5日100g/包及相近即食鸡胸肉527kJ/100g估算，本次包装容量与营养标签未核实。",
+    "早餐追加面包45g仅由实际重量与照片确认，产品/营养标签未核实；按普通切片面包暂估117kcal、P4.05/F1.8/C21.6，若有营养表需原位更正。"
   ],
   "non_energy_pending_notes": [
     "今天仅报告早餐，未确认午晚餐及全天饮食/训练结束；保持记录开放，不推断未报告的食物或运动。"
@@ -121,6 +122,26 @@
       "carbs_g_estimate": 0,
       "sodium_mg_estimate": 232,
       "uncertainty": "本次仅报告一包，100g/包沿昨日同名食物默认，并非本次称重或标签核对。产品可能与相近即食鸡胸肉不同，125.96kcal为暂估，参考范围100–190kcal；若实重不同及时原位更正。"
+    },
+    {
+      "id": "breakfast_bread_slice_45g_nov06",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐追加切片面包45g（按普通面包暂估）",
+      "reported_text": "早饭又吃了这样一片面包45g（附照片）",
+      "source_kind": "photo_estimate",
+      "quantity_g": 45,
+      "basis": "用户2026-11-06在早餐3项已记录后明确又吃一片面包，实际重量45g并附照片；本次没有可确认的营养标签值，暂按普通切片面包每100g约260kcal、P9/F4/C48g，45g记117kcal、P4.05/F1.8/C21.6，非同款标签实测。",
+      "uncertainty": "包装/营养标签未确认；面包种类、配方与含油含糖量会改变估值。暂估45g约95–155kcal；如有包装营养表可原位更正。",
+      "kcal_base_estimate": 117,
+      "kcal_booked": 117,
+      "kcal_range": [
+        95,
+        155
+      ],
+      "protein_g_estimate": 4.05,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 21.6
     }
   ],
   "exercise_entries": [],
@@ -132,32 +153,33 @@
   },
   "corrections": [],
   "notes": [
-    "2026-11-06早：空腹86.90kg；实吃南瓜子6.5g、酸奶165g、鸡小胸一包。酸奶暂按历史大桶原味发酵乳，鸡小胸沿最近每包100g相近营养标签估算；食物共3条，仅早餐，全天饮食与训练尚未结束。"
+    "2026-11-06早：空腹86.90kg；实吃南瓜子6.5g、酸奶165g、鸡小胸一包。酸奶暂按历史大桶原味发酵乳，鸡小胸沿最近每包100g相近营养标签估算；食物共3条，仅早餐，全天饮食与训练尚未结束。",
+    "11月6日早餐又实吃一片面包45g，按普通切片面包暂估117kcal，作为第4条早餐摄入新增，不覆盖前三条、不额外加油脂余量。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 303.2588432122371,
-    "intake_kcal_booked": 303.2588432122371,
-    "protein_g_estimate": 37.228,
-    "fat_g_estimate": 12.522,
-    "carbs_g_estimate": 9.779499999999999,
-    "intake_kcal_estimate": 303.2588432122371,
+    "intake_kcal_base_estimate": 420.2588432122371,
+    "intake_kcal_booked": 420.2588432122371,
+    "protein_g_estimate": 41.278,
+    "fat_g_estimate": 14.322000000000001,
+    "carbs_g_estimate": 31.3795,
+    "intake_kcal_estimate": 420.2588432122371,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 37.228,
-      "fat_g": 12.522,
-      "carbs_g": 9.779499999999999
+      "protein_g": 41.278,
+      "fat_g": 14.322000000000001,
+      "carbs_g": 31.3795
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      245.06572657743786,
-      440.0657265774379
+      340.0657265774379,
+      595.0657265774379
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 1881.0411567877627,
+    "estimated_deficit_kcal": 1764.0411567877627,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -166,9 +188,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 37.228
+      "breakfast": 41.278
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
