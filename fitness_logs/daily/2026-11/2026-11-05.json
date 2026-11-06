@@ -11,10 +11,10 @@
   "missing_sections": [
     "鸡小胸一包100g未提供本次产品营养标签，暂用11月2日即食鸡胸肉每100g527kJ/P28.6/F1.1/C0作相近参考，实际产品如不同需原位更正。",
     "晚间酸奶252g尚未确认是否与最近大桶原味发酵乳同款，暂沿348kJ/100g口径估算，若换款需修订。",
-    "晚上室内单车同步workout仅提供total_energy_kcal=581.35，未另核对Fitness截图中的动态卡路里数值。"
+    "晚上室内单车同步workout仅提供total_energy_kcal=581.35，未另核对Fitness截图中的动态卡路里数值。",
+    "早餐150g及练前、练后各100g烤土豆暂沿历史无油烤后熟重口径；本次生熟重及是否刷油未确认，若不同需原位更正。"
   ],
   "non_energy_pending_notes": [
-    "烤土豆150g暂沿历史无油烤后熟重口径，若实际是生重或有刷油需更正。",
     "用户询问如果晚餐吃无油烤熟土豆210g、再补100g/包鸡小胸需几包蛋白质：这属于尚未确认实际吃下的晚餐计划，不可将210g土豆或两包鸡小胸登记为已吃。按照已吃早餐/上午水果和沙县午餐P106.03g，假设晚餐210g土豆P5.25g，至170g还差58.72g；暂按鸡小胸历史相近标签P28.6g/100g，2包可达约168.48g，3包超过170g但并无必要。若用户后续实际吃了再计账。",
     "11月5日用户已明确全部饮食、全部训练结束，已正式封账。晚间有氧以Health第二条室内单车为准，不能重复记此前误说的无氧。"
   ],
@@ -338,7 +338,7 @@
       "start_local": "2026-11-05T17:38:52.809000+08:00",
       "end_local": "2026-11-05T18:39:13.412000+08:00",
       "energy_interpretation_basis": "与此前训练日志一致，Apple Health workout提供375.83109511834806kcal，作为训练动态估算，乘0.75折算，不叠加其他活动圆环。",
-      "uncertainty": "Apple Watch估计的运动消耗，今天是否有后续未同步训练尚不清楚。"
+      "uncertainty": "Apple Watch估计的运动消耗，非实测；用户已确认全天训练全部结束，当天共两段训练。"
     },
     {
       "id": "evening_indoor_cycling_health_2026_11_05_211112",
@@ -367,7 +367,46 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-05",
+      "reason": "补录notes及交接摘要中已保留的用户口述更正；不新增训练，保留现有id和event_id。",
+      "original_value": "用户先口述晚上又加了无氧。",
+      "corrected_value": {
+        "type": "室内单车有氧",
+        "event_id": "apple_health_workout_2026_11_05_211112",
+        "basis": "用户随即明确更正为有氧，与Health 21:11–22:12同一段室内单车一致。"
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "reason": "将既有确定性修复备注及original_energy_estimate补录为结构化更正历史；不再次修改能量或原始读数。",
+      "original_value": {
+        "energy_scope": "session_workout_energy_estimate",
+        "active_kcal": 581.3542961582002,
+        "energy_interpretation_basis": "Apple Health字段total_energy_kcal=581.3542961582002，按既有训练日运动能量估值乘0.75参与模型消耗，原始Health字段未区分动态和总消耗，本次没有Fitness截图独立核对；不重复计算用户口述或活动圆环。"
+      },
+      "corrected_value": {
+        "event_id": "apple_health_workout_2026_11_05_211112",
+        "energy_scope": "session_active",
+        "active_kcal": null,
+        "total_kcal": 581.3542961582002,
+        "basis": "原始Apple Health total_energy_kcal=581.3542961582002保留在total_kcal；本次未区分动态和总消耗，不能直接作为动态消耗参与模型。active_kcal暂为null，待核实本次训练动态千卡；原估算及依据保留在original_energy_estimate。"
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "reason": "语义复核：生熟重及刷油影响能量解释，移至missing_sections；按已有全天结束确认更新力量训练的过时备注，保留设备估算不确定性。",
+      "original_value": {
+        "non_energy_pending_note": "烤土豆150g暂沿历史无油烤后熟重口径，若实际是生重或有刷油需更正。",
+        "strength_uncertainty": "Apple Watch估计的运动消耗，今天是否有后续未同步训练尚不清楚。"
+      },
+      "corrected_value": {
+        "missing_section": "早餐150g及练前、练后各100g烤土豆暂沿历史无油烤后熟重口径；本次生熟重及是否刷油未确认，若不同需原位更正。",
+        "strength_uncertainty": "Apple Watch估计的运动消耗，非实测；用户已确认全天训练全部结束，当天共两段训练。"
+      }
+    }
+  ],
   "notes": [
     "11月5日晨起空腹87.45kg；早餐南瓜子6.3g、鸡小胸一包100g、烤土豆150g。鸡小胸暂沿11月2日相近即食鸡胸肉标签；烤土豆暂按无油熟重。全天尚未结束。",
     "11月5日上午新增带皮火龙果367g一颗，按历史65%出肉率估果肉238.55g、热量131.20kcal；今天开放，其他早餐条目不变。",
