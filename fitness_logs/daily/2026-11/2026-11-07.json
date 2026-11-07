@@ -11,14 +11,15 @@
   "missing_sections": [
     "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
     "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
-    "练后荞麦薄皮素包1袋营养表清晰，但本次照片未显示袋重；暂按同名野人日记荠菜鸡蛋素包500g/袋（15只）估算1021.75kcal，真实袋重/吃下数量待确认。",
     "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
-    "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。"
+    "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。",
+    "素包已确认整袋500g，练后实吃半袋250g，余250g计划晚间吃，须等用户确认实际吃下才将计划状态转实吃；晚间另计划鸡小胸一包。"
   ],
   "non_energy_pending_notes": [
     "今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
     "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。",
-    "用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。"
+    "用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。",
+    "2026-11-07晚间计划剩余素包250g及鸡小胸1包尚未确认实吃，两条状态planned；不计入当前累计。"
   ],
   "trend_context": [
     "11月6日空腹86.90kg，11月7日空腹88.65kg，单日+1.75kg；昨天晚间自由饮食未记录，不能准确归因体重上升，也不通过节食或补偿训练对冲。"
@@ -169,25 +170,25 @@
     },
     {
       "id": "postworkout_buckwheat_veggie_buns_bag_nov07",
-      "description": "练后荞麦薄皮素包（荠菜鸡蛋）1袋，暂按同名500g装",
-      "reported_text": "一包荞麦薄皮素包（上传包装营养表）",
-      "status": "consumed_estimated",
+      "description": "练后荞麦薄皮素包（荠菜鸡蛋）500g整袋中的半袋250g",
+      "reported_text": "用户先确认整袋规格500g，后纠正练后实际只吃一半250g",
+      "status": "consumed",
       "meal": "postworkout",
-      "source_kind": "matched_default",
-      "quantity_bags": 1,
-      "quantity_g_estimate": 500,
-      "basis": "本次用户照片已确认荞麦薄皮素包荠菜鸡蛋包装每100g855kJ/P7.3/F10.6/C19.9/钠420mg；同名野人日记荠菜鸡蛋素包公开销售规格500g/袋15只，用户说吃一包，暂按整袋500g记账。用户本袋净含量未从照片读到，500g非实物核实。",
-      "uncertainty": "整袋重量并未从本次照片确认；500g取同名商品的公开销售规格，仅供暂估。如包装实际重量或实吃数量不同必须原位修正。此条参考范围按约350–600g估算以体现规格不确定，并非实测置信区间。",
-      "kcal_base_estimate": 1021.7495219885277,
-      "kcal_booked": 1021.7495219885277,
+      "source_kind": "label_known_quantity",
+      "quantity_bags": 0.5,
+      "basis": "用户确认本袋净含量500g，但练后实际仅吃其中半袋250g；本次包装每100g855kJ/P7.3/F10.6/C19.9/钠420mg，按实吃250g换算。其余250g计划晚间吃但尚未吃，不加入当前摄入；本条原位更正此前错误的整袋500g实吃。",
+      "uncertainty": "半袋按500g净重的1/2即250g计算；用户若实吃不等于一半可据实更正。",
+      "kcal_base_estimate": 510.87476099426385,
+      "kcal_booked": 510.87476099426385,
       "kcal_range": [
-        715.2246653919693,
-        1226.0994263862333
+        510.87476099426385,
+        510.87476099426385
       ],
-      "protein_g_estimate": 36.5,
-      "fat_g_estimate": 53,
-      "carbs_g_estimate": 99.5,
-      "sodium_mg_estimate": 2100
+      "protein_g_estimate": 18.25,
+      "fat_g_estimate": 26.5,
+      "carbs_g_estimate": 49.75,
+      "sodium_mg_estimate": 1050,
+      "quantity_g": 250
     },
     {
       "id": "postworkout_chicken_crunchy_balls_200g_nov07",
@@ -210,6 +211,72 @@
       "fat_g_estimate": 11,
       "carbs_g_estimate": 12,
       "sodium_mg_estimate": 762
+    },
+    {
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232,
+      "uncertainty": "本次没有本包包装重量与标签；沿历史每包100g和相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0/钠232mg估算，产品如不同应原位调整。",
+      "id": "postworkout_chicken_tender_1pack_100g_nov07",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后鸡小胸1包（暂按历史100g）",
+      "reported_text": "练后吃了一包鸡小胸",
+      "basis": "用户明确2026-11-07练后已吃一包鸡小胸。沿近期历史每包100g、相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0/钠232mg估算；这包独立于早餐一包。"
+    },
+    {
+      "id": "dinner_planned_remaining_buckwheat_veggie_buns_250g_nov07",
+      "status": "planned",
+      "meal": "dinner",
+      "description": "晚餐计划吃剩下半袋荞麦薄皮素包250g（尚未吃）",
+      "reported_text": "剩下的准备晚上再吃一半",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 250,
+      "quantity_bags": 0.5,
+      "basis": "用户确认整袋荞麦薄皮素包500g，练后已吃半袋250g；剩余250g只是计划今晚再吃。与练后条目配对，但目前不计入实际摄入，吃下后将同一id改状态，不重复增条。",
+      "uncertainty": "计划量并非已吃量；等实际确认。",
+      "kcal_base_estimate": 510.87476099426385,
+      "kcal_booked": 510.87476099426385,
+      "kcal_range": [
+        510.87476099426385,
+        510.87476099426385
+      ],
+      "protein_g_estimate": 18.25,
+      "fat_g_estimate": 26.5,
+      "carbs_g_estimate": 49.75,
+      "sodium_mg_estimate": 1050
+    },
+    {
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232,
+      "uncertainty": "本次没有本包包装重量与标签；沿历史每包100g和相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0/钠232mg估算，产品如不同应原位调整。",
+      "id": "dinner_planned_chicken_tender_1pack_100g_nov07",
+      "status": "planned",
+      "meal": "dinner",
+      "description": "晚餐计划鸡小胸1包（尚未吃）",
+      "reported_text": "晚上再吃一包鸡小胸",
+      "basis": "用户2026-11-07表示晚上计划再吃一包鸡小胸，尚非已吃。沿历史每包100g参考标签，仅作计划备查，不能加入摄入总量。"
     }
   ],
   "exercise_entries": [
@@ -251,35 +318,59 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-07",
+      "entry_id": "postworkout_buckwheat_veggie_buns_bag_nov07",
+      "reason": "用户先确认整袋500g，但明确练后只吃半袋250g；另外半袋仅计划晚上吃，避免把包装规格当实际摄入。",
+      "old_value": {
+        "status": "consumed_estimated",
+        "description": "练后荞麦薄皮素包（荠菜鸡蛋）1袋，暂按同名500g装",
+        "quantity_g_estimate": 500,
+        "kcal_booked": 1021.7495219885277,
+        "protein_g_estimate": 36.5,
+        "fat_g_estimate": 53,
+        "carbs_g_estimate": 99.5
+      },
+      "new_value": {
+        "status": "consumed",
+        "quantity_g": 250,
+        "kcal_booked": 510.87476099426385,
+        "protein_g_estimate": 18.25,
+        "fat_g_estimate": 26.5,
+        "carbs_g_estimate": 49.75
+      }
+    }
+  ],
   "notes": [
     "11月7日用户报告早餐南瓜子6.1g、烤土豆原报140g后立即更正为155g、鸡小胸一包。土豆只记更正后的155g，不重复计算140g。",
-    "2026-11-07练后用户实吃火龙果433g带皮、烤土豆170g、荞麦薄皮素包荠菜鸡蛋一袋（暂按500g）及此前鸡肉脆骨丸一包（暂按200g），4条唯一新增，不推断晚餐或封账。"
+    "2026-11-07练后用户实吃火龙果433g带皮、烤土豆170g、荞麦薄皮素包荠菜鸡蛋一袋（暂按500g）及此前鸡肉脆骨丸一包（暂按200g），4条唯一新增，不推断晚餐或封账。",
+    "2026-11-07更正：素包整袋确实500g但练后仅实吃250g，原500g记账改为250g；练后另实吃鸡小胸一包。晚上余250g素包+鸡小胸一包只列计划，不重复计算。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1895.6992686424474,
-    "intake_kcal_booked": 1895.6992686424474,
-    "protein_g_estimate": 104.34270000000001,
-    "fat_g_estimate": 68.9647,
-    "carbs_g_estimate": 214.6803,
-    "intake_kcal_estimate": 1895.6992686424474,
+    "intake_kcal_base_estimate": 1510.780530592734,
+    "intake_kcal_booked": 1510.780530592734,
+    "protein_g_estimate": 114.6927,
+    "fat_g_estimate": 43.5647,
+    "carbs_g_estimate": 164.9303,
+    "intake_kcal_estimate": 1510.780530592734,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 104.34270000000001,
-      "fat_g": 68.9647,
-      "carbs_g": 214.6803
+      "protein_g": 114.6927,
+      "fat_g": 43.5647,
+      "carbs_g": 164.9303
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1539.4033891013382,
-      2187.9081500956027
+      1435.0534847036329,
+      1662.683484703633
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2205.2999999999997,
-    "estimated_deficit_kcal": 309.6007313575524,
+    "estimated_deficit_kcal": 694.5194694072657,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -288,10 +379,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 34.3782,
-      "postworkout": 69.9645
+      "postworkout": 80.31450000000001
     },
     "warnings": [
       "已报告训练有消耗缺失：仅计已知训练消耗",
@@ -312,8 +403,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3094,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 2276,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 281.45,
     "fruit_vegetable_g_entries_with_data": 1,
