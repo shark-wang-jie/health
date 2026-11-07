@@ -1,0 +1,196 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-07",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
+    "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。"
+  ],
+  "non_energy_pending_notes": [
+    "今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
+    "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。"
+  ],
+  "trend_context": [
+    "11月6日空腹86.90kg，11月7日空腹88.65kg，单日+1.75kg；昨天晚间自由饮食未记录，不能准确归因体重上升，也不通过节食或补偿训练对冲。"
+  ],
+  "weight_measurement_note": "用户2026-11-07报告晨起空腹88.65kg，较11月6日86.90kg升1.75kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.65,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.65,
+    "bmr_weight_date": "2026-11-07",
+    "bmr_kcal": 1837.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_6_1g_nov07",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子6.1g",
+      "reported_text": "早饭6.1g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 6.1,
+      "basis": "用户2026-11-07报告早餐实吃南瓜子6.1g；沿已确认历史同款标签每100g2579kJ、P31.2g/F48.8g/C8.3g换算，无额外用油。",
+      "kcal_base_estimate": 37.60014340344168,
+      "kcal_booked": 37.60014340344168,
+      "kcal_range": [
+        37.60014340344168,
+        37.60014340344168
+      ],
+      "protein_g_estimate": 1.9031999999999998,
+      "fat_g_estimate": 2.9768,
+      "carbs_g_estimate": 0.5063
+    },
+    {
+      "id": "breakfast_roasted_potato_155g_nov07",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐烤土豆155g（历史无油烤熟口径）",
+      "reported_text": "早饭140g烤土豆，随后明确更正为155g",
+      "source_kind": "matched_default",
+      "quantity_g": 155,
+      "basis": "用户2026-11-07先报140g随后纠正为155g，仅以最终实际重量155g计入。按历史无油烤熟土豆每100g93kcal、P2.5/F0.1/C21.2g，默认155g为烤后熟重，无额外刷油。",
+      "uncertainty": "本次未确认155g是否为烤后熟重和是否另刷油；沿历史默认，若有实际变化可原位更正。",
+      "kcal_base_estimate": 144.15,
+      "kcal_booked": 144.15,
+      "kcal_range": [
+        144.15,
+        144.15
+      ],
+      "protein_g_estimate": 3.875,
+      "fat_g_estimate": 0.155,
+      "carbs_g_estimate": 32.86
+    },
+    {
+      "id": "breakfast_chicken_tender_1pack_100g_nov07",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐鸡小胸1包（暂按历史100g/包及相近营养标签）",
+      "reported_text": "早饭一包鸡小胸",
+      "source_kind": "matched_default",
+      "quantity_g": 100,
+      "quantity_bags": 1,
+      "basis": "用户2026-11-07早餐确认实吃一包鸡小胸，未提供本包重量或营养表。沿前几日鸡小胸每包100g及相近即食鸡胸肉每100g527kJ、P28.6/F1.1/C0、钠232mg暂估；如实际包装不同按实物更正。",
+      "uncertainty": "本次只确认一包，100g净重沿用历史，不是本次称重；同款标签不明，125.96kcal和宏量为相近产品暂估，热量参考范围100–190kcal。",
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
+      "kcal_range": [
+        100,
+        190
+      ],
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 232
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "11月7日用户报告早餐南瓜子6.1g、烤土豆原报140g后立即更正为155g、鸡小胸一包。土豆只记更正后的155g，不重复计算140g。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 307.70616634799234,
+    "intake_kcal_booked": 307.70616634799234,
+    "protein_g_estimate": 34.3782,
+    "fat_g_estimate": 4.2318,
+    "carbs_g_estimate": 33.3663,
+    "intake_kcal_estimate": 307.70616634799234,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 34.3782,
+      "fat_g": 4.2318,
+      "carbs_g": 33.3663
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      281.7501434034417,
+      371.7501434034417
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2205.2999999999997,
+    "estimated_deficit_kcal": 1897.5938336520073,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 34.3782
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 232,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
