@@ -6,15 +6,19 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
     "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
-    "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。"
+    "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
+    "练后荞麦薄皮素包1袋营养表清晰，但本次照片未显示袋重；暂按同名野人日记荠菜鸡蛋素包500g/袋（15只）估算1021.75kcal，真实袋重/吃下数量待确认。",
+    "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
+    "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。"
   ],
   "non_energy_pending_notes": [
     "今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
-    "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。"
+    "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。",
+    "用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。"
   ],
   "trend_context": [
     "11月6日空腹86.90kg，11月7日空腹88.65kg，单日+1.75kg；昨天晚间自由饮食未记录，不能准确归因体重上升，也不通过节食或补偿训练对冲。"
@@ -118,9 +122,129 @@
       "fat_g_estimate": 1.1,
       "carbs_g_estimate": 0,
       "sodium_mg_estimate": 232
+    },
+    {
+      "id": "postworkout_dragon_fruit_433g_gross_nov07",
+      "description": "练后火龙果433g带皮，估可食果肉281.45g",
+      "reported_text": "练后433g带皮火龙果",
+      "source_kind": "matched_default",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "gross_weight_g": 433,
+      "edible_fraction_estimate": 0.65,
+      "edible_weight_g_estimate": 281.45,
+      "gross_weight_confirmed": true,
+      "basis": "用户2026-11-07明确练后实吃433g带皮火龙果；沿近期同款65%可食出肉率估281.45g果肉，按每100g果肉55kcal、蛋白质1g、脂肪0.2g、碳水12g计算；果皮不计入吃下重量。",
+      "uncertainty": "433g带皮实重确认，果皮未称；可食比例暂用65%，55%-75%作参考。果肉热量与品种也有差别。",
+      "kcal_base_estimate": 154.7975,
+      "kcal_booked": 154.7975,
+      "kcal_range": [
+        130.98250000000002,
+        178.6125
+      ],
+      "protein_g_estimate": 2.8145,
+      "fat_g_estimate": 0.5629,
+      "carbs_g_estimate": 33.774,
+      "fruit_vegetable_g_estimate": 281.45
+    },
+    {
+      "id": "postworkout_roasted_potato_170g_nov07",
+      "description": "练后烤土豆170g（暂沿无油烤熟熟重）",
+      "reported_text": "练后170烤土豆",
+      "source_kind": "matched_default",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "quantity_g": 170,
+      "basis": "用户2026-11-07练后吃烤土豆170g，按此前无油烤熟熟重每100g93kcal/P2.5/F0.1/C21.2换算；当次没有单独说明是否刷油或称生重。",
+      "uncertainty": "沿历史无油熟重默认；如加油或为生重需原位更正。",
+      "kcal_base_estimate": 158.1,
+      "kcal_booked": 158.1,
+      "kcal_range": [
+        158.1,
+        158.1
+      ],
+      "protein_g_estimate": 4.25,
+      "fat_g_estimate": 0.17,
+      "carbs_g_estimate": 36.04
+    },
+    {
+      "id": "postworkout_buckwheat_veggie_buns_bag_nov07",
+      "description": "练后荞麦薄皮素包（荠菜鸡蛋）1袋，暂按同名500g装",
+      "reported_text": "一包荞麦薄皮素包（上传包装营养表）",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "source_kind": "matched_default",
+      "quantity_bags": 1,
+      "quantity_g_estimate": 500,
+      "basis": "本次用户照片已确认荞麦薄皮素包荠菜鸡蛋包装每100g855kJ/P7.3/F10.6/C19.9/钠420mg；同名野人日记荠菜鸡蛋素包公开销售规格500g/袋15只，用户说吃一包，暂按整袋500g记账。用户本袋净含量未从照片读到，500g非实物核实。",
+      "uncertainty": "整袋重量并未从本次照片确认；500g取同名商品的公开销售规格，仅供暂估。如包装实际重量或实吃数量不同必须原位修正。此条参考范围按约350–600g估算以体现规格不确定，并非实测置信区间。",
+      "kcal_base_estimate": 1021.7495219885277,
+      "kcal_booked": 1021.7495219885277,
+      "kcal_range": [
+        715.2246653919693,
+        1226.0994263862333
+      ],
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 53,
+      "carbs_g_estimate": 99.5,
+      "sodium_mg_estimate": 2100
+    },
+    {
+      "id": "postworkout_chicken_crunchy_balls_200g_nov07",
+      "description": "练后野人日记高蛋白魔芋鸡肉脆骨丸1包（沿10月21日同款200g）",
+      "reported_text": "再加一包之前吃过的鸡肉脆骨丸",
+      "source_kind": "matched_default",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "quantity_bags": 1,
+      "quantity_g_estimate": 200,
+      "basis": "用户2026-11-07确认实吃之前吃过的鸡肉脆骨丸一包，匹配2026-10-21同款野人日记魔芋鸡肉脆骨丸，历史包装已核验200g、每100g530kJ/P13.2/F5.5/C6.0/钠381mg；本次无新包装，按200g整包估。",
+      "uncertainty": "本次未再拍包装净含量及标签；沿2026-10-21同款200g/包，若改版或容量不同需原位更正。",
+      "kcal_base_estimate": 253.34608030592733,
+      "kcal_booked": 253.34608030592733,
+      "kcal_range": [
+        253.34608030592733,
+        253.34608030592733
+      ],
+      "protein_g_estimate": 26.4,
+      "fat_g_estimate": 11,
+      "carbs_g_estimate": 12,
+      "sodium_mg_estimate": 762
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_07_133111",
+      "event_id": "apple_health_workout_2026_11_07_133111",
+      "type": "传统力量训练",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "start_local": "2026-11-07T13:31:11.866000+08:00",
+      "end_local": "2026-11-07T14:35:47.117000+08:00",
+      "duration_seconds": 3875.251329064369,
+      "source": "Apple Health Apple Watch workout 2026-11-07 13:31:11至14:35:47，原始能量字段total_energy_kcal=442.167；用户16:15明确今天训练结束。",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "total_kcal": 442.16701248017296,
+      "energy_interpretation_basis": "Health原始total_energy_kcal并未由Fitness截图核对成动态千卡，暂不计入动态消耗或0.75模型；留待截图核对。",
+      "uncertainty": "Apple Watch运动能量估值非实测，原始Health能量不能未经核对就认定为动态消耗。"
+    },
+    {
+      "id": "indoor_walk_health_2026_11_07_143825",
+      "event_id": "apple_health_workout_2026_11_07_143825",
+      "type": "室内步行",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 52)",
+      "start_local": "2026-11-07T14:38:25.954000+08:00",
+      "end_local": "2026-11-07T15:43:25.192000+08:00",
+      "duration_seconds": 3899.238093018532,
+      "distance_km": 4.091185901330318,
+      "source": "Apple Health Apple Watch workout 2026-11-07 14:38:25至15:43:25，距离4091.19m，原始能量字段total_energy_kcal=711.161；用户16:15明确今天训练结束。",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "total_kcal": 711.161439427945,
+      "energy_interpretation_basis": "Health原始total_energy_kcal未核对Apple Fitness动态千卡，保留原始值，不将全天活动圆环或者总能量作为动态消耗；待截图核对。",
+      "uncertainty": "Apple Watch估值非实测，暂不把API的total_energy_kcal作为已经核实的动态能量。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -129,46 +253,48 @@
   },
   "corrections": [],
   "notes": [
-    "11月7日用户报告早餐南瓜子6.1g、烤土豆原报140g后立即更正为155g、鸡小胸一包。土豆只记更正后的155g，不重复计算140g。"
+    "11月7日用户报告早餐南瓜子6.1g、烤土豆原报140g后立即更正为155g、鸡小胸一包。土豆只记更正后的155g，不重复计算140g。",
+    "2026-11-07练后用户实吃火龙果433g带皮、烤土豆170g、荞麦薄皮素包荠菜鸡蛋一袋（暂按500g）及此前鸡肉脆骨丸一包（暂按200g），4条唯一新增，不推断晚餐或封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 307.70616634799234,
-    "intake_kcal_booked": 307.70616634799234,
-    "protein_g_estimate": 34.3782,
-    "fat_g_estimate": 4.2318,
-    "carbs_g_estimate": 33.3663,
-    "intake_kcal_estimate": 307.70616634799234,
+    "intake_kcal_base_estimate": 1895.6992686424474,
+    "intake_kcal_booked": 1895.6992686424474,
+    "protein_g_estimate": 104.34270000000001,
+    "fat_g_estimate": 68.9647,
+    "carbs_g_estimate": 214.6803,
+    "intake_kcal_estimate": 1895.6992686424474,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 34.3782,
-      "fat_g": 4.2318,
-      "carbs_g": 33.3663
+      "protein_g": 104.34270000000001,
+      "fat_g": 68.9647,
+      "carbs_g": 214.6803
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      281.7501434034417,
-      371.7501434034417
+      1539.4033891013382,
+      2187.9081500956027
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2205.2999999999997,
-    "estimated_deficit_kcal": 1897.5938336520073,
+    "estimated_deficit_kcal": 309.6007313575524,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
-      "breakfast": 34.3782
+      "breakfast": 34.3782,
+      "postworkout": 69.9645
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
@@ -186,11 +312,11 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 232,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 3094,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": null,
-    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_known_sum": 281.45,
+    "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   }
 }
