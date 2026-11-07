@@ -13,13 +13,10 @@
     "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
     "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
     "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。",
-    "用户已确认当天饮食结束，但此前仅按早餐、练后/傍晚所报告条目记账；没有逐餐确认未报告的午餐，food_coverage保持partial，不能认定绝对完整。",
-    "今天两段Apple Health运动的原始total_energy_kcal尚未核对为Fitness动态千卡，active_kcal仍为null，故全天运动模型消耗与缺口不可确认。"
+    "用户已确认当天饮食结束，但此前仅按早餐、练后/傍晚所报告条目记账；没有逐餐确认未报告的午餐，food_coverage保持partial，不能认定绝对完整。"
   ],
   "non_energy_pending_notes": [
-    "今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
     "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。",
-    "用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。",
     "用户21:36明确晚间计划鸡小胸一包没有吃，当日饮食结束且已封账；不能再将该计划误记为已吃。"
   ],
   "trend_context": [
@@ -356,6 +353,50 @@
       "old_status": "planned",
       "new_status": "not_eaten",
       "kcal_added_to_consumed": 0
+    },
+    {
+      "date": "2026-11-07",
+      "reason": "语义复核依据当日21:36封账说明及16:15训练结束说明，将已过期的阶段状态备注移入notes保留历史，并合并重复的训练动态能量待确认项。",
+      "old_value": {
+        "non_energy_pending_notes": [
+          "今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
+          "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。",
+          "用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。",
+          "用户21:36明确晚间计划鸡小胸一包没有吃，当日饮食结束且已封账；不能再将该计划误记为已吃。"
+        ],
+        "missing_sections": [
+          "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
+          "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
+          "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
+          "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。",
+          "用户已确认当天饮食结束，但此前仅按早餐、练后/傍晚所报告条目记账；没有逐餐确认未报告的午餐，food_coverage保持partial，不能认定绝对完整。",
+          "今天两段Apple Health运动的原始total_energy_kcal尚未核对为Fitness动态千卡，active_kcal仍为null，故全天运动模型消耗与缺口不可确认。"
+        ]
+      },
+      "new_value": {
+        "non_energy_pending_notes": [
+          "昨天11月6日自由饮食且运动两段，今天体重较昨日上升1.75kg可能包含水分、糖原和肠胃内容物，不能直接等同脂肪。",
+          "用户21:36明确晚间计划鸡小胸一包没有吃，当日饮食结束且已封账；不能再将该计划误记为已吃。"
+        ],
+        "missing_sections": [
+          "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
+          "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
+          "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
+          "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。",
+          "用户已确认当天饮食结束，但此前仅按早餐、练后/傍晚所报告条目记账；没有逐餐确认未报告的午餐，food_coverage保持partial，不能认定绝对完整。"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "entry_id": "breakfast_roasted_potato_155g_nov07",
+      "reason": "补存源条目reported_text、basis及当日notes已明确记载的用户重量更正；当前条目已按155g计算。",
+      "old_value": {
+        "quantity_g": 140
+      },
+      "new_value": {
+        "quantity_g": 155
+      }
     }
   ],
   "notes": [
@@ -363,7 +404,9 @@
     "2026-11-07练后用户实吃火龙果433g带皮、烤土豆170g、荞麦薄皮素包荠菜鸡蛋一袋（暂按500g）及此前鸡肉脆骨丸一包（暂按200g），4条唯一新增，不推断晚餐或封账。",
     "2026-11-07更正：素包整袋确实500g但练后仅实吃250g，原500g记账改为250g；练后另实吃鸡小胸一包。晚上余250g素包+鸡小胸一包只列计划，不重复计算。",
     "2026-11-07 17:42 用户确认傍晚把剩余荞麦薄皮素包250g吃完，直接将对应planned条目转为consumed。今日该素包整袋500g已实吃完，分为练后250g和傍晚250g两条，不重复记整袋。晚间另1包鸡小胸仍为planned，尚未确认吃下。",
-    "2026-11-07 21:36用户确认今日饮食结束并要求封账；晚间计划的鸡小胸1包明确未吃，原计划条目转not_eaten。当天早餐及练后实吃的另外两包鸡小胸保留。累计9项已吃2021.66kcal/P132.94/F70.06/C214.68，今天不再补餐食。"
+    "2026-11-07 21:36用户确认今日饮食结束并要求封账；晚间计划的鸡小胸1包明确未吃，原计划条目转not_eaten。当天早餐及练后实吃的另外两包鸡小胸保留。累计9项已吃2021.66kcal/P132.94/F70.06/C214.68，今天不再补餐食。",
+    "历史阶段备注（已被当日21:36封账状态取代）：今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
+    "历史阶段备注（已被当日21:36封账状态取代）：用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2021.655291586998,
@@ -372,36 +415,36 @@
     "fat_g_estimate": 70.0647,
     "carbs_g_estimate": 214.6803,
     "intake_kcal_estimate": 2021.655291586998,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
       "protein_g": 132.9427,
       "fat_g": 70.0647,
       "carbs_g": 214.6803
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1945.9282456978967,
       2173.558245697897
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2205.2999999999997,
     "estimated_deficit_kcal": 183.6447084130018,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 34.3782,
-      "postworkout": 80.31450000000001,
-      "dinner": 18.25
+      "dinner": 18.25,
+      "postworkout": 80.3145
     },
     "warnings": [
       "已报告训练有消耗缺失：仅计已知训练消耗",
@@ -421,7 +464,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3326,
+    "sodium_mg_known_sum": 3326.0,
     "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 281.45,
