@@ -14,7 +14,8 @@
   ],
   "non_energy_pending_notes": [
     "今天仅报告早餐和空腹体重，全天饮食及训练情况尚未结束或确认，不推断没有午晚餐或当日休息。",
-    "上午食物实际为南瓜子5.5g、鸡小胸一包和素包一整袋500g，最初上报的烤土豆155g明确未吃。今天目前只记录上午，不能当作全天摄入。"
+    "上午食物实际为南瓜子5.5g、鸡小胸一包和素包一整袋500g，最初上报的烤土豆155g明确未吃。今天目前只记录上午，不能当作全天摄入。",
+    "用户仅报告练前吃猪肝50g；是否最终进行了训练、训练内容与消耗尚未报告，训练状态仍为unknown。"
   ],
   "trend_context": [
     "11月7日晨起88.65kg；11月8日晨起88.20kg，单日-0.45kg，不能认定为单日脂肪变化。"
@@ -163,6 +164,26 @@
       "carbs_g_estimate": 7.5600000000000005,
       "sodium_mg_estimate": 54,
       "calcium_mg_estimate": 168.75
+    },
+    {
+      "id": "preworkout_braised_pork_liver_50g_nov08",
+      "status": "consumed",
+      "meal": "preworkout",
+      "description": "练前卤猪肝50g（此前150g盒装标签）",
+      "reported_text": "练前吃了五十克 猪肝",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 50,
+      "basis": "用户2026-11-08明确练前实际吃50g猪肝。沿前文所拍酱卤猪肝150g盒装标签，整盒能量246.30kcal、蛋白质39.45g、脂肪6.75g、碳水6.45g、钠1458mg；按1/3盒即50g换算。剩余100g未报告吃下，绝不计入。",
+      "kcal_base_estimate": 82.1,
+      "kcal_booked": 82.1,
+      "kcal_range": [
+        82.1,
+        82.1
+      ],
+      "protein_g_estimate": 13.15,
+      "fat_g_estimate": 2.25,
+      "carbs_g_estimate": 2.15,
+      "sodium_mg_estimate": 486
     }
   ],
   "exercise_entries": [],
@@ -184,32 +205,33 @@
   ],
   "notes": [
     "2026-11-08用户更正上午烤土豆155g没吃，原土豆条目标记not_eaten，实际吃昨日同款荞麦薄皮素包500g整袋，按包装标签1021.75kcal，不重复计入土豆。鸡小胸1包与南瓜子5.5g仍为已吃。",
-    "2026-11-08上午更正土豆未吃改素包500g后，用户补报加餐酸奶135g：确认为已吃，暂借用历史大桶原味发酵乳营养口径；无本次品牌/标签，后续可原位修订。"
+    "2026-11-08上午更正土豆未吃改素包500g后，用户补报加餐酸奶135g：确认为已吃，暂借用历史大桶原味发酵乳营养口径；无本次品牌/标签，后续可原位修订。",
+    "2026-11-08练前实际吃卤猪肝50g；沿此前150g盒装标签按1/3计82.10kcal、P13.15/F2.25/C2.15/钠486mg。未吃的100g不计入；'练前'表示进食时机，不代表当天训练已经结束。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1293.8922084130018,
-    "intake_kcal_booked": 1293.8922084130018,
-    "protein_g_estimate": 72.21600000000001,
-    "fat_g_estimate": 63.534,
-    "carbs_g_estimate": 107.51650000000001,
-    "intake_kcal_estimate": 1293.8922084130018,
+    "intake_kcal_base_estimate": 1375.9922084130017,
+    "intake_kcal_booked": 1375.9922084130017,
+    "protein_g_estimate": 85.36600000000001,
+    "fat_g_estimate": 65.78399999999999,
+    "carbs_g_estimate": 109.66650000000001,
+    "intake_kcal_estimate": 1375.9922084130017,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 72.21600000000001,
-      "fat_g": 63.534,
-      "carbs_g": 107.51650000000001
+      "protein_g": 85.36600000000001,
+      "fat_g": 65.78399999999999,
+      "carbs_g": 109.66650000000001
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1241.6512906309752,
-      1417.6512906309752
+      1323.751290630975,
+      1499.751290630975
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2199.9,
-    "estimated_deficit_kcal": 906.0077915869983,
+    "estimated_deficit_kcal": 823.9077915869984,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -218,10 +240,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "breakfast": 66.816,
-      "snack": 5.4
+      "snack": 5.4,
+      "preworkout": 13.15
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -242,8 +265,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 2386,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 2872,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
