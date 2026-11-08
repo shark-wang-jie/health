@@ -9,11 +9,12 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "烤土豆155g按历史无油烤熟熟重每100g93kcal估算，本次未单独确认是否加油以及称量是否为烤后熟重。",
-    "鸡小胸一包沿历史100g/包和相近即食鸡胸肉每100g527kJ暂估，本次包装净重及营养成分标签尚未核实。"
+    "鸡小胸一包沿历史100g/包和相近即食鸡胸肉每100g527kJ暂估，本次包装净重及营养成分标签尚未核实。",
+    "加餐酸奶135g品牌与当次营养表未核实，暂沿历史大桶原味发酵乳每100g348kJ/P4/F5/C5.6估算。"
   ],
   "non_energy_pending_notes": [
-    "今天仅报告早餐和空腹体重，全天饮食及训练情况尚未结束或确认，不推断没有午晚餐或当日休息。"
+    "今天仅报告早餐和空腹体重，全天饮食及训练情况尚未结束或确认，不推断没有午晚餐或当日休息。",
+    "上午食物实际为南瓜子5.5g、鸡小胸一包和素包一整袋500g，最初上报的烤土豆155g明确未吃。今天目前只记录上午，不能当作全天摄入。"
   ],
   "trend_context": [
     "11月7日晨起88.65kg；11月8日晨起88.20kg，单日-0.45kg，不能认定为单日脂肪变化。"
@@ -100,14 +101,14 @@
     },
     {
       "id": "breakfast_roasted_potato_155g_nov08",
-      "status": "consumed_estimated",
+      "status": "not_eaten",
       "meal": "breakfast",
-      "description": "早餐烤土豆155g（沿历史无油烤熟口径）",
-      "reported_text": "155g烤土豆",
+      "description": "上午原计划烤土豆155g（明确未吃）",
+      "reported_text": "用户先报上午烤土豆155g，随后更正：上午烤土豆没吃，改吃一包素包",
       "source_kind": "matched_default",
       "quantity_g": 155,
-      "basis": "用户2026-11-08报告早餐吃烤土豆155g，沿历史无油烤熟土豆每100g93kcal/P2.5/F0.1/C21.2计算，默认烤后熟重，不额外刷油。",
-      "uncertainty": "本次尚未确认是烤前生重还是烤后熟重以及是否另加油；按历史无油熟重暂估，如实际不同需原位更正。",
+      "basis": "用户2026-11-08明确更正上午155g烤土豆并没有吃，改吃一包同款素包。此前已记的土豆原位改为not_eaten，所有热量和宏量不计入当天实际摄入。",
+      "uncertainty": "未吃已确认；历史每100g93kcal的营养数据仅作原记录对照，不计入当日累计。",
       "kcal_base_estimate": 144.15,
       "kcal_booked": 144.15,
       "kcal_range": [
@@ -117,6 +118,51 @@
       "protein_g_estimate": 3.875,
       "fat_g_estimate": 0.155,
       "carbs_g_estimate": 32.86
+    },
+    {
+      "id": "morning_buckwheat_veggie_buns_500g_nov08",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "上午荞麦薄皮素包（荠菜鸡蛋）1包500g",
+      "reported_text": "上午烤土豆没吃，改吃一包素包",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 500,
+      "quantity_bags": 1,
+      "basis": "用户2026-11-08明确用一整包素包替代原报但未吃的上午155g烤土豆；根据紧邻上下文沿昨日同款荞麦薄皮素包荠菜鸡蛋口径，用户已确认规格500g，包装标签每100g855kJ/P7.3g/F10.6g/C19.9g/钠420mg。按500g整袋实吃计算；若此次是其他素包或未吃完整袋可原位更正。",
+      "kcal_base_estimate": 1021.7495219885277,
+      "kcal_booked": 1021.7495219885277,
+      "kcal_range": [
+        1021.7495219885277,
+        1021.7495219885277
+      ],
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 53,
+      "carbs_g_estimate": 99.5,
+      "sodium_mg_estimate": 2100
+    },
+    {
+      "id": "snack_yogurt_135g_nov08",
+      "status": "consumed_estimated",
+      "meal": "snack",
+      "description": "上午加餐酸奶135g（暂沿历史大桶原味发酵乳）",
+      "reported_text": "加餐135g酸奶",
+      "source_kind": "matched_default",
+      "catalog_id": "yogurt_bucket_100g",
+      "catalog_version": "2026-10-28-v6",
+      "quantity_g": 135,
+      "basis": "用户2026-11-08报告实际加餐酸奶135g，品牌/当次包装标签未知；沿11月6日同类酸奶历史大桶原味发酵乳每100g348kJ/P4g/F5g/C5.6g/钠40mg口径，以实际135g计算。如实际为零脂或浓缩酸奶，应原位更正。",
+      "uncertainty": "已确认食用135g，未核对本次产品标签，仅借用历史同款营养数据。暂估热量参考范围约86–172kcal，具体因酸奶类型不同而变化。",
+      "kcal_base_estimate": 112.2848948374761,
+      "kcal_booked": 112.2848948374761,
+      "kcal_range": [
+        86,
+        172
+      ],
+      "protein_g_estimate": 5.4,
+      "fat_g_estimate": 6.75,
+      "carbs_g_estimate": 7.5600000000000005,
+      "sodium_mg_estimate": 54,
+      "calcium_mg_estimate": 168.75
     }
   ],
   "exercise_entries": [],
@@ -126,34 +172,44 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-08",
+      "entry_id": "breakfast_roasted_potato_155g_nov08",
+      "reason": "用户更正上午烤土豆未吃，换成昨天同款素包一包500g",
+      "old_status": "consumed_estimated",
+      "new_status": "not_eaten",
+      "kcal_removed_from_consumed": 144.15
+    }
+  ],
   "notes": [
-    "11月8日早餐已实吃南瓜子5.5g、一包鸡小胸、烤土豆155g，均仅记一次；按历史同款口径暂估。"
+    "2026-11-08用户更正上午烤土豆155g没吃，原土豆条目标记not_eaten，实际吃昨日同款荞麦薄皮素包500g整袋，按包装标签1021.75kcal，不重复计入土豆。鸡小胸1包与南瓜子5.5g仍为已吃。",
+    "2026-11-08上午更正土豆未吃改素包500g后，用户补报加餐酸奶135g：确认为已吃，暂借用历史大桶原味发酵乳营养口径；无本次品牌/标签，后续可原位修订。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 304.0077915869981,
-    "intake_kcal_booked": 304.0077915869981,
-    "protein_g_estimate": 34.191,
-    "fat_g_estimate": 3.939,
-    "carbs_g_estimate": 33.3165,
-    "intake_kcal_estimate": 304.0077915869981,
+    "intake_kcal_base_estimate": 1293.8922084130018,
+    "intake_kcal_booked": 1293.8922084130018,
+    "protein_g_estimate": 72.21600000000001,
+    "fat_g_estimate": 63.534,
+    "carbs_g_estimate": 107.51650000000001,
+    "intake_kcal_estimate": 1293.8922084130018,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 34.191,
-      "fat_g": 3.939,
-      "carbs_g": 33.3165
+      "protein_g": 72.21600000000001,
+      "fat_g": 63.534,
+      "carbs_g": 107.51650000000001
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      278.0517686424474,
-      368.0517686424474
+      1241.6512906309752,
+      1417.6512906309752
     ],
     "exercise_active_kcal": 0,
     "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2199.9,
-    "estimated_deficit_kcal": 1895.892208413002,
+    "estimated_deficit_kcal": 906.0077915869983,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -162,9 +218,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 34.191
+      "breakfast": 66.816,
+      "snack": 5.4
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -185,8 +242,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 232,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 2386,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
