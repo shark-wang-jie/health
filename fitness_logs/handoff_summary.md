@@ -1,5 +1,5 @@
 # 健身记录交接摘要
-更新时间：2026-11-08 20:58北京时间（用户确认全天饮食训练结束，11月8日正式封账）
+更新时间：2026-11-08 夜间（补记11月7日健腹轮4组及次日膝前受压疼痛线索；11月8日仍已封账）
 
 ## 2026-11-08 已封账
 - 用户明确：“晚上吃了242g萝卜，又吃了一小包鸡小胸，今天饮食训练都结束”。按Asia/Shanghai日期2026-11-08封账，record_status=final、food_log_closed=true、training_status=reported_training、training_coverage=confirmed_complete、food_coverage=partial。饮食覆盖partial为谨慎口径，不能证明未逐餐核实的其他食物一概没吃。
@@ -11,7 +11,7 @@
 - **今日共10项已吃、1项明确未吃；记录摄入约2285.70kcal、蛋白质181.33g、脂肪89.90g、碳水185.52g。** 鸡小胸各包估算、酸奶品种及萝卜数据库值有不确定性，当前总量不是全部产品实测值。
 - 健康数据核实：Apple Health今天2次workout，均来自Apple Watch：传统力量13:55:09–15:09:37，约74分28秒，原始workout能量**740.94kcal**；室内步行15:12:29–16:17:50，约65分21秒，4.058km，原始workout能量**821.87kcal**。两次合计约139分49秒。用户明确全天训练完成，但原始API total_energy_kcal不能在未校对Apple Fitness截图前冒充当次**动态千卡**，两条active_kcal=null，不重复叠加全天活动环。
 - 基于体重88.20kg，模型BMR=1833.25kcal，沿BMR×1.2＋已核准训练动态千卡×0.75计算。因训练动态能量未核对且食物完整性保留partial，**completed_day_estimated_deficit_kcal=null**，只能封账当日的已知摄入与已知训练事实，不能宣布实际热量缺口。
-- 11月7日与以往已封账历史保持不变；用户最近报告按压髌骨时轻微不适而正常走路、深蹲、上下楼无痛，训练安排应注意恢复，不推断疼痛已恶化。
+- 11月8日用户补充：前一日（11月7日）健腹轮做了4组，怀疑跪地时膝盖前方被反复压迫，是仅按压髌骨附近时轻度疼痛的原因；正常走路、深蹲、上下楼无痛。**这是用户自述的可能机制，尚非医学确诊。** 已追溯补记11月7日力量训练的动作备注，以及11月8日恢复/疼痛观察。**没有新增独立Apple Watch训练，也没有更改任何日摄入、运动能量或封账状态。** 建议短期避免直接跪压，使用厚软垫或护膝，留意是否肿、红、热、痛。
 
 ## 2026-11-07 已封账
 - 用户明确今天饮食结束并要求封账，原计划晚餐鸡小胸1包**实际没吃**，从planned原位更正为not_eaten，不纳入当天总量。早餐及练后分别实吃的另外两包鸡小胸不变。
@@ -20,6 +20,8 @@
 - 训练完成、确认两段：Apple Health力量13:31–14:35，原始workout能量442.17kcal；室内步行14:38–15:43，4.09公里，原始能量711.16kcal。**本次未提供Apple Fitness动态千卡截图，两条运动active_kcal=null**；不可将API原始能量或全天活动圆环直接视为核准动态值。
 - **日JSON状态record_status=final，food_log_closed=true，training_status=reported_training，training_coverage=confirmed_complete，food_coverage=partial。** 用户确认当天饮食结束并封账，但先前仅报告早餐及训练后/傍晚进食，未逐餐核实午餐是否存在，按仓库规则不自动宣称所有餐食完整；同时训练动态千卡未核准，**completed_day_estimated_deficit_kcal=null，不计算全天最终热量缺口**。后续若有确切资料可原位更正。
 - 鸡小胸单包规格及营养标签沿历史100g参考估算；土豆沿无油熟重，带皮火龙果按65%可食比例，属于已有估算口径。今日记录已结束，不再把没吃的最后一包鸡小胸加回。
+
+- 追溯训练动作补充：用户2026-11-08补报**11月7日做跪姿健腹轮4组**（具体次数未报），推测膝前方受地面压迫，继而出现仅按压髌骨前方疼痛。已附于11月7日原力量训练条目和备注；不新增workout，不推断疼痛为明确滑囊炎。
 
 ## 2026-11-06 最新封账日
 - 用户今晚确认训练已结束、下午至晚上饮食不再记录，明确要求封账。record_status=final，food_log_closed=true，food_coverage=partial，training_status=reported_training，training_coverage=confirmed_complete。

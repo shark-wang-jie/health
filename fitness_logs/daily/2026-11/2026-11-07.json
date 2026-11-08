@@ -290,7 +290,8 @@
       "active_kcal": null,
       "total_kcal": 442.16701248017296,
       "energy_interpretation_basis": "Health原始total_energy_kcal并未由Fitness截图核对成动态千卡，暂不计入动态消耗或0.75模型；留待截图核对。",
-      "uncertainty": "Apple Watch运动能量估值非实测，原始Health能量不能未经核对就认定为动态消耗。"
+      "uncertainty": "Apple Watch运动能量估值非实测，原始Health能量不能未经核对就认定为动态消耗。",
+      "reported_movement_note": "用户2026-11-08补报：前一日（2026-11-07）做健腹轮4组，怀疑跪姿时膝盖前方反复受压引起次日局部按压痛。该动作的具体时间是否落入此Apple Watch力量训练段未独立核实，作为当日动作补充备注而非新增独立训练事件；组数4、次数和负重未报告，未另计能量。"
     },
     {
       "id": "indoor_walk_health_2026_11_07_143825",
@@ -406,7 +407,8 @@
     "2026-11-07 17:42 用户确认傍晚把剩余荞麦薄皮素包250g吃完，直接将对应planned条目转为consumed。今日该素包整袋500g已实吃完，分为练后250g和傍晚250g两条，不重复记整袋。晚间另1包鸡小胸仍为planned，尚未确认吃下。",
     "2026-11-07 21:36用户确认今日饮食结束并要求封账；晚间计划的鸡小胸1包明确未吃，原计划条目转not_eaten。当天早餐及练后实吃的另外两包鸡小胸保留。累计9项已吃2021.66kcal/P132.94/F70.06/C214.68，今天不再补餐食。",
     "历史阶段备注（已被当日21:36封账状态取代）：今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
-    "历史阶段备注（已被当日21:36封账状态取代）：用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。"
+    "历史阶段备注（已被当日21:36封账状态取代）：用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。",
+    "2026-11-08追溯补记：用户回想11月7日做过4组健腹轮，认为膝盖局部按压痛可能由健腹轮跪地直接压迫引起，而非一般运动负荷。属于用户自我判断，非确诊；保留原Apple Watch两段训练及能量值，不新增训练时段、不重复计运动消耗。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2021.655291586998,
@@ -415,28 +417,28 @@
     "fat_g_estimate": 70.0647,
     "carbs_g_estimate": 214.6803,
     "intake_kcal_estimate": 2021.655291586998,
-    "food_margin_kcal": 0.0,
+    "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 132.9427,
       "fat_g": 70.0647,
       "carbs_g": 214.6803
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "training_discount_kcal": 0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1945.9282456978967,
       2173.558245697897
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
     "tdee_kcal_estimate": 2205.2999999999997,
     "estimated_deficit_kcal": 183.6447084130018,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -464,7 +466,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3326.0,
+    "sodium_mg_known_sum": 3326,
     "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 281.45,
