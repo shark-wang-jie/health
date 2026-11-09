@@ -325,7 +325,8 @@
     "11月6日早餐又实吃一片面包45g，按普通切片面包暂估117kcal，作为第4条早餐摄入新增，不覆盖前三条、不额外加油脂余量。",
     "11月6日牛奶吐司45g已按标签原位更正；午餐沙县鸡腿饭按历史双去皮鸡腿250g熟米饭套餐；上午实吃约45g荞麦锅巴。下午约45g锅巴经用户更正为练前计划，后续是否吃下未知，保留planned。晚间已按用户要求封账，全天饮食覆盖不完整。",
     "11月6日下午起至晚上为用户选择的自由饮食时段：不逐项记录、不估算自由饮食摄入、不按0kcal处理；晚上待用户报告运动记录。",
-    "11月6日两段Apple Watch截图核验：力量70分34秒动态635/总760千卡，室内步行62分16秒4.08km动态741/总856千卡；仅计动态1376千卡，乘0.75折算1032千卡，饮食部分缺失并已按用户要求封账。"
+    "11月6日两段Apple Watch截图核验：力量70分34秒动态635/总760千卡，室内步行62分16秒4.08km动态741/总856千卡；仅计动态1376千卡，乘0.75折算1032千卡，饮食部分缺失并已按用户要求封账。",
+    "2026-11-09系统复核近15日：2026-11-06原tdee_v1运算正确，力量动态635+室内步行741均按0.75折算，TDEE3216.30kcal；但当天自由饮食的下午和晚上故意不记，已知1519.96kcal仅部分摄入，原summary估算差额1696.34kcal绝不能展示为真实全天缺口。现新增calorie_balance_review明确user_facing_daily_deficit_estimate=null，并保留训练与饮食原有来源，不能虚构未知食物来生成最终数字。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1436.2057839388144,
@@ -341,21 +342,21 @@
       "carbs_g": 145.45116666666667
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 344.0,
+    "training_discount_kcal": 344,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1185.5915391969406,
       1830.43379541109
     ],
-    "exercise_active_kcal": 1376.0,
-    "exercise_adjusted_kcal": 1032.0,
+    "exercise_active_kcal": 1376,
+    "exercise_adjusted_kcal": 1032,
     "tdee_kcal_estimate": 3216.2999999999997,
     "estimated_deficit_kcal": 1696.3442160611853,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -388,5 +389,20 @@
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "calorie_balance_review": {
+    "date": "2026-11-06",
+    "preferred_method": "tdee_v1",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": null,
+      "method": "tdee_v1",
+      "reason": "User explicitly chose not to log any food from afternoon through evening on 2026-11-06. Actual full-day energy intake is unknown. Cannot produce a meaningful day deficit without inventing food."
+    },
+    "known_food_only_arithmetic_difference_kcal": 1696.3442160611853,
+    "known_food_only_arithmetic_label": "NOT an actual daily deficit: recorded intake incomplete by explicit user choice",
+    "known_session_active_kcal": 1376,
+    "estimated_tdee_kcal": 3216.2999999999997,
+    "estimated_logged_intake_kcal": 1519.9557839388144,
+    "source": "User-reported full meal omission; Apple Fitness verified 635+741 active kcal; all training included at 0.75 coefficient"
   }
 }

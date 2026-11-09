@@ -12,7 +12,6 @@
     "鸡小胸一包沿历史100g/包和相近即食鸡胸肉每100g527kJ暂估，本次包装净重及营养成分标签尚未核实。",
     "加餐酸奶135g品牌与当次营养表未核实，暂沿历史大桶原味发酵乳每100g348kJ/P4/F5/C5.6估算。",
     "本日晚餐鸡小胸仅称“一小包”，未确认单包净重与当次包装标签，暂沿历史100g/包计算；更正后会影响今日热量与蛋白质总计。",
-    "已记录11月8日Apple Health两段完整运动（力量和室内步行），但仅获得原始workout总能量字段，未核实各段Apple Fitness动态千卡，active_kcal暂为null，不能给全天最终热量缺口。",
     "用户已明确饮食结束并要求封账，但餐食只有逐次上报的实际进食项目，未独立核实全天所有未提及餐次；food_coverage按保守口径仍为partial。"
   ],
   "non_energy_pending_notes": [
@@ -306,10 +305,12 @@
       "duration_seconds": 4468.0195100307465,
       "source": "2026-11-08 Apple Health Apple Watch workout 13:55:09–15:09:37，原始total_energy_kcal=740.9423。用户20:58确认今天所有训练结束。",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 740.9423221267023,
       "total_kcal": 740.9423221267023,
-      "energy_interpretation_basis": "Health原始total_energy_kcal没有对照Apple Fitness运动详情截图核实为当次动态千卡，不计入动态能量×0.75模型；不可将全天活动能量替代当次运动。",
-      "uncertainty": "未核对Apple Fitness动态消耗，Apple Watch运动能量本身亦属估值。"
+      "energy_interpretation_basis": "依Apple HealthKit官方HKWorkout.totalEnergyBurned定义，此为本次运动累计active energy（动态能量），虽然连接返回字段名total_energy_kcal。与此前同一Apple Watch的Apple Fitness动态千卡截图逐项对比匹配（2026-10-28、11-03、11-04、11-06），因此按source-matched HKWorkout口径录入当次动态能量，原tdee_v1中只按0.75折算一次，绝不叠加全天活动圆环。Apple官方：https://developer.apple.com/documentation/healthkit/hkworkout",
+      "uncertainty": "已核对官方HKWorkout字段含义与历史同设备截图映射；运动动态能量仍是手表算法估值、不是代谢室实测。本次可能没有独立Apple Fitness截图，但不影响Health workout字段定义。如后续截图与同期同一事件数据有差异，以截图确认后原位更正。",
+      "raw_health_workout_total_energy_kcal": 740.9423221267023,
+      "raw_health_field_interpretation": "HKWorkout.totalEnergyBurned = workout active energy, NOT Fitness inclusive gross calories"
     },
     {
       "id": "indoor_walk_health_2026_11_08_151229",
@@ -322,10 +323,12 @@
       "distance_km": 4.058027595537249,
       "source": "2026-11-08 Apple Health Apple Watch workout 15:12:29–16:17:50，距离4058.03m，原始total_energy_kcal=821.869。用户20:58确认今天所有训练结束。",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 821.8690000000009,
       "total_kcal": 821.8690000000009,
-      "energy_interpretation_basis": "Health原始total_energy_kcal未经Apple Fitness截图核对为当次动态千卡，保留原始值但不纳入0.75模型，不能当成已核实主动消耗。",
-      "uncertainty": "当次Apple Watch动态千卡仍未核实，运动消耗估计值存在误差。"
+      "energy_interpretation_basis": "依Apple HealthKit官方HKWorkout.totalEnergyBurned定义，此为本次运动累计active energy（动态能量），虽然连接返回字段名total_energy_kcal。与此前同一Apple Watch的Apple Fitness动态千卡截图逐项对比匹配（2026-10-28、11-03、11-04、11-06），因此按source-matched HKWorkout口径录入当次动态能量，原tdee_v1中只按0.75折算一次，绝不叠加全天活动圆环。Apple官方：https://developer.apple.com/documentation/healthkit/hkworkout",
+      "uncertainty": "已核对官方HKWorkout字段含义与历史同设备截图映射；运动动态能量仍是手表算法估值、不是代谢室实测。本次可能没有独立Apple Fitness截图，但不影响Health workout字段定义。如后续截图与同期同一事件数据有差异，以截图确认后原位更正。",
+      "raw_health_workout_total_energy_kcal": 821.8690000000009,
+      "raw_health_field_interpretation": "HKWorkout.totalEnergyBurned = workout active energy, NOT Fitness inclusive gross calories"
     }
   ],
   "recovery": {
@@ -364,6 +367,20 @@
         "用户2026-11-08 20:58已确认当天饮食和训练结束并封账；已记录两段训练，training_coverage=confirmed_complete；全天食物覆盖仍为partial，相关待确认项见missing_sections。",
         "上午实际摄入南瓜子5.5g、鸡小胸一包和素包500g；烤土豆155g明确未吃。后续加餐、练前、练后及晚餐已记录，全天累计以daily_summary为准。"
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "entry_id": "strength_health_2026_11_08_135509",
+      "from_active_kcal": null,
+      "to_active_kcal": 740.9423221267023,
+      "reason": "纠正此前把Health workout total_energy_kcal误判为Apple Fitness含静息的总消耗、因此把运动动态设为null。官方HKWorkout.totalEnergyBurned是本次累计动态消耗，历史同Apple Watch截图已交叉核对；恢复按既定tdee_v1训练×75%计入。"
+    },
+    {
+      "date": "2026-11-09",
+      "entry_id": "indoor_walk_health_2026_11_08_151229",
+      "from_active_kcal": null,
+      "to_active_kcal": 821.8690000000009,
+      "reason": "纠正此前把Health workout total_energy_kcal误判为Apple Fitness含静息的总消耗、因此把运动动态设为null。官方HKWorkout.totalEnergyBurned是本次累计动态消耗，历史同Apple Watch截图已交叉核对；恢复按既定tdee_v1训练×75%计入。"
     }
   ],
   "notes": [
@@ -373,7 +390,8 @@
     "2026-11-08练后确认实吃小白菜蒸饺270g整包、前述卤猪肝剩余100g、鸡小胸66g。卤猪肝同盒150g已按练前50g＋练后100g全部记入，避免重复；鸡小胸66g按历史近似营养标签估算。训练已进行但项目及消耗仍待补录。",
     "2026-11-08用户计划今晚吃完图中的紫皮红心萝卜492g（无明确已吃确认），仅记录为planned，暂估113.16kcal，不能提前计入今日实际摄入2104.08kcal。后续若确认吃完则原位转consumed_estimated，若只吃一部分则按实吃重量更正。",
     "2026-11-08 20:58 用户明确“晚上吃了242g萝卜，又吃了一小包鸡小胸，今天饮食训练都结束”；将原萝卜492g planned条目原位更正为242g已吃，并新增晚间小包鸡小胸暂估1包100g；当日封账，两个Apple Health workout已获取但动态千卡缺失，不计算完成日缺口。",
-    "疼痛原因补充（2026-11-08）：膝盖在特定姿势轻按髌骨前方疼，走路、深蹲、上下楼无疼痛；用户自认为前一天（11月7日）健腹轮做4组时跪地压迫所致，暂把局部接触压力列为更可疑诱因，不归因为整个力量/步行训练量，也不能仅靠此自诊。建议暂避跪压、使用软垫、观察红肿热痛。"
+    "疼痛原因补充（2026-11-08）：膝盖在特定姿势轻按髌骨前方疼，走路、深蹲、上下楼无疼痛；用户自认为前一天（11月7日）健腹轮做4组时跪地压迫所致，暂把局部接触压力列为更可疑诱因，不归因为整个力量/步行训练量，也不能仅靠此自诊。建议暂避跪压、使用软垫、观察红肿热痛。",
+    "2026-11-09用户要求复核最近计算错误并固定原规则。Apple HealthKit官方HKWorkout.totalEnergyBurned是单次运动累计动态能量，先前将2条该数据误写为active_kcal=null已原位更正。继续使用原tdee_v1：BMR 1833.25×1.2=2199.90 + 训练动态 1562.81×0.75=1172.11，估TDEE 3372.01；减已记录摄入 2285.70 => 估算差额 1086.31 kcal。饮食虽已封账，但food_coverage=partial，可能有未逐餐核实的摄入；这只是已记录食物与按原公式估算消耗的算术差，不应当作验证后的完整全天实际缺口。 不再用BMR+全天动态等其他公式，用户明确封账与原食物/训练事件均不改变。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2285.6992447418734,
@@ -382,28 +400,28 @@
     "fat_g_estimate": 89.90199999999999,
     "carbs_g_estimate": 185.52250000000004,
     "intake_kcal_estimate": 2285.6992447418734,
-    "food_margin_kcal": 0.0,
+    "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 181.32800000000003,
       "fat_g": 89.90199999999999,
       "carbs_g": 185.52250000000004
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "training_discount_kcal": 390.7028305316758,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       2137.4313288718927,
       2505.211328871893
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
-    "tdee_kcal_estimate": 2199.9,
-    "estimated_deficit_kcal": -85.79924474187328,
+    "exercise_active_kcal": 1562.811322126703,
+    "exercise_adjusted_kcal": 1172.1084915950273,
+    "tdee_kcal_estimate": 3372.0084915950274,
+    "estimated_deficit_kcal": 1086.309246853154,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -416,7 +434,6 @@
       "snack": 5.4
     },
     "warnings": [
-      "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
       "存在影响能量解释或完整性的待确认项"
     ],
@@ -436,8 +453,29 @@
     "sodium_mg_known_sum": 4229.12,
     "sodium_mg_entries_with_data": 7,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": 242.0,
+    "fruit_vegetable_g_known_sum": 242,
     "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "calorie_balance_review": {
+    "date": "2026-11-08",
+    "preferred_method": "tdee_v1",
+    "primary_calculation_formula": "BMR*1.2 + (sum of per-session HKWorkout active energy)*0.75 - logged intake",
+    "training_energy_source": "Apple Health HKWorkout.totalEnergyBurned; Apple Watch origin; validated field semantics against Apple official documentation and prior same-device screenshots; not inclusive total calories",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 1086.309246853154,
+      "value_rounded_kcal": 1086,
+      "method": "tdee_v1",
+      "bmr_kcal": 1833.25,
+      "base_activity_kcal": 2199.9,
+      "session_active_kcal_sum": 1562.811322126703,
+      "session_active_kcal_booked_75pct": 1172.1084915950273,
+      "tdee_kcal_estimate": 3372.0084915950274,
+      "intake_kcal_estimate": 2285.6992447418734,
+      "scope": "provisional_recorded_balance",
+      "uncertainty": "饮食虽已封账，但food_coverage=partial，可能有未逐餐核实的摄入；这只是已记录食物与按原公式估算消耗的算术差，不应当作验证后的完整全天实际缺口。"
+    },
+    "excluded_energy": "Do not add daily activeEnergyBurned/Move ring, gross workout calories, or raw workout energy a second time; exercise sessions are included once at 75%.",
+    "verified_scope": "Source semantics and arithmetic verified; food and device expenditure remain estimates."
   }
 }

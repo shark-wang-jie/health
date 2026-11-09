@@ -9,7 +9,7 @@
 
 - 男，27岁，173厘米；最新空腹体重91.80公斤（09-08）。BMR按米夫林公式作参考，不作为最低摄入需要或饮食上限。生日未知，年龄不擅自推算。
 - 初始摄入安排：休息日约1800千卡，训练日约1900–2000千卡。日均估算缺口参考400–600千卡，每周下降约0.3–0.6公斤；这些是当前个人执行目标，不是人人适用的处方，也不要求两套数值每天恰好同时满足。
-- 初始模型 `tdee_v1`：BMR×1.2＋当次训练动态千卡×0.75。久坐假设、1.2和0.75均为待校准模型参数；保留原始训练消耗，不叠加全天活动圆环、不加总千卡。步数可以记录以解释活动变化，不再机械换算加到消耗中。
+- 初始模型 `tdee_v1`：BMR×1.2＋当次训练动态千卡×0.75。久坐假设、1.2和0.75均为待校准模型参数；保留原始训练消耗，不叠加全天活动圆环、不加总千卡。 **2026-11-09口径核查：公式与系数保持不变。** 对来源明确的Apple Health `HKWorkout.totalEnergyBurned`，虽然ChatGPT Health工具导出字段名为`total_energy_kcal`，Apple官方说明其为**该次workout累计动态能量**，不是Fitness页面包含静息热量的“总千卡”。同一Apple Watch的2026-10-28、11-03、11-04、11-06截图与Health运动值相符。此类同源workout的动态千卡填入`exercise_entries[].active_kcal`，乘0.75一次；保留原始字段以便追溯，若用户的同一次运动详情截图出现冲突再原位更正。**不能因字段名`total_energy_kcal`误将其视作含静息“总千卡”而清零，也不能从该值再扣运动期间BMR。** Apple官方原文参考：https://developer.apple.com/documentation/healthkit/hkworkout 。不适用来源未知的非HKWorkout数值、Fitness明确标注的含静息“总千卡”、全天活动圆环数值。步数可以记录以解释活动变化，不再机械换算加到消耗中。
 - 蛋白质170克保留为参考目标；当前实际安排可参考约140–180克/日，分散到3–4次进食，优先正餐中稳定供应。不为凑170克硬塞食物。运动人群一般证据范围约1.4–2.0克/公斤/日，不等于当前体重越高就必须无限加量。
 - 碳水150–180克是旧计划参考，按训练、饥饿和总饮食灵活调整，不当作硬上限。正常保留膳食脂肪，不为增加蛋白质挤掉全部主食、蔬菜或脂肪。
 - 饮食质量同时看蔬果、多样性、全谷豆类和纤维。WHO一般参考为蔬果至少400克/日、食物来源纤维至少25克/日；未报告不填造，微量营养或纤维缺失不当作零。总碳水不能直接写成糖。
@@ -27,7 +27,7 @@
 3. 只修改真实条目。`id`稳定且唯一；重复消息不新增，明确又吃一份才用新id；更正替换原条目并在`corrections`记录时间、原值、新值和依据。
 4. 更新饮食完整性、训练状态、待确认项；重新计算 `python3 fitness_logs/record_tools.py recalculate 路径`。工具检查条目、公式和状态，运行jq后原子写入。
 5. 独立检查用 `python3 fitness_logs/record_tools.py validate 路径`。语法正确不等于数值正确；工具还检查求和、BMR、余量、宏量范围、消耗来源和重复id。检查通过不无故重复。
-6. 日报用`python3 fitness_logs/record_tools.py report 日文件路径`生成一致表述：基础/含余量摄入、基础蛋白质/脂肪/碳水及重要不确定项；资料完整时再列模型TDEE和按含余量摄入估算的缺口。开放日只称“截至目前”；`estimated_deficit_kcal`为兼容保留的模型消耗减已记录摄入，必须结合`energy_balance_scope`解释。日报最终缺口使用`completed_day_estimated_deficit_kcal`，未封账或关键资料不完整时为null，不把当前差额当成最终全天缺口。不以大缺口作为成功指标。
+6. 日报用`python3 fitness_logs/record_tools.py report 日文件路径`生成一致表述：基础/含余量摄入、基础蛋白质/脂肪/碳水及重要不确定项；资料完整时再列模型TDEE和按含余量摄入估算的缺口。开放日只称“截至目前”；`estimated_deficit_kcal`为兼容保留的模型消耗减已记录摄入，必须结合`energy_balance_scope`解释。日报最终缺口使用`completed_day_estimated_deficit_kcal`，未封账或关键资料不完整时为null，不把当前差额当成最终全天缺口。 **呈报补充（不改计算公式）：** 用户已明确封账且已确认全部训练，若剩余只是食物品牌、份量估算误差或日内未逐餐核实的`food_coverage=partial`，可显示`daily_summary.estimated_deficit_kcal`或带`calorie_balance_review`的**按已记录摄入暂估差额**，明确覆盖不足与估值误差，不宣称精确最终缺口；但像2026-11-06这样用户明确有整段自由饮食未记录，缺少实际全天摄入，就**不呈报该算术差为全天缺口**。不得以`BMR+全天动态卡路里`替代固定的`tdee_v1`，不得在纵向对比时混用算法。不以大缺口作为成功指标。
 
 ## 食物估算与口径
 
@@ -52,7 +52,7 @@
 
 - `energy_method`明确`algorithm: tdee_v1`、`activity_factor: 1.2`、`training_factor: 0.75`；`food_estimation_policy: photo_margin_v1`。方法变更必须保存生效日期与理由；摄入口径变化的窗口不混合校准。活动系数变化须单列解释，不能因反推消耗而同时拟合BMR、运动误差和食物误差，现有数据无法分别辨识它们。
 - `profile_snapshot`保留体重来源日期、身高、年龄、公式参数及BMR。`daily_summary`由同一计算逻辑生成，禁止在不同文件凭记忆手写总数。
-- `training_status`区分`unknown`、`confirmed_rest`、`reported_training`。训练能量未知允许null并报告暂估，不用总千卡顶替动态消耗；`energy_scope`只能是`session_active`。另用`training_coverage`区分unknown/partial/confirmed_complete：有一段训练不代表全天训练报完。明确休息或用户确认当天训练全部结束可判完整，不需要重复问。
+- `training_status`区分`unknown`、`confirmed_rest`、`reported_training`。训练能量未知允许null并注明；**这里不允许顶替动态消耗的“总千卡”指Fitness明确含静息的总消耗，而非官方定义为动态的HKWorkout.totalEnergyBurned字段**；`energy_scope`只能是`session_active`。另用`training_coverage`区分unknown/partial/confirmed_complete：有一段训练不代表全天训练报完。明确休息或用户确认当天训练全部结束可判完整，不需要重复问。
 - 每次训练须有稳定`event_id`；同一次骑行若手表和单车都记录，选择一份当次动态消耗计入，其余读数嵌在同一条目作对照，不能相加。不同训练才新增事件。跨午夜训练保留实际起止时间，默认按开始日归属一次，若明确拆分须避免重计。训练动作细节和恢复信息按用户实际报告保存。
 - `food_coverage`区分`unknown`、`partial`、`confirmed_complete`。未报告早餐不能写成没吃；确认当天记录结束不自动等于全部餐食已核实。
 - `record_status`为open/final/partial；final须有`closure_basis`且`food_log_closed=true`。用户确认结束，或开始新一天且前一天无新增记录，可封账；`missing_sections`和条目不确定性继续保留，封账后允许明确补报更正。

@@ -12,7 +12,6 @@
     "早餐烤土豆155g暂按历史无油烤熟土豆、称量熟重每100g93kcal的默认口径，烤前/烤后重量及是否额外用油未确认。",
     "早餐鸡小胸一包沿最近100g/包口径与相近即食鸡胸肉营养标签暂估，本次具体包装净重和营养标签未核实。",
     "练后火龙果433g带皮按65%可食果肉估算；练后170g烤土豆沿无油熟重默认；鸡肉脆骨丸沿10月21日200g同款历史标签，规格可据实际更正。",
-    "2026-11-07 Apple Health已同步力量与室内步行两段workout，原始total_energy_kcal分别442.17和711.16；未取得本次Fitness动态千卡截图，active_kcal保留null，不把总能量/活动圆环当动态消耗。",
     "用户已确认当天饮食结束，但此前仅按早餐、练后/傍晚所报告条目记账；没有逐餐确认未报告的午餐，food_coverage保持partial，不能认定绝对完整。"
   ],
   "non_energy_pending_notes": [
@@ -287,11 +286,13 @@
       "duration_seconds": 3875.251329064369,
       "source": "Apple Health Apple Watch workout 2026-11-07 13:31:11至14:35:47，原始能量字段total_energy_kcal=442.167；用户16:15明确今天训练结束。",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 442.16701248017296,
       "total_kcal": 442.16701248017296,
-      "energy_interpretation_basis": "Health原始total_energy_kcal并未由Fitness截图核对成动态千卡，暂不计入动态消耗或0.75模型；留待截图核对。",
-      "uncertainty": "Apple Watch运动能量估值非实测，原始Health能量不能未经核对就认定为动态消耗。",
-      "reported_movement_note": "用户2026-11-08补报：前一日（2026-11-07）做健腹轮4组，怀疑跪姿时膝盖前方反复受压引起次日局部按压痛。该动作的具体时间是否落入此Apple Watch力量训练段未独立核实，作为当日动作补充备注而非新增独立训练事件；组数4、次数和负重未报告，未另计能量。"
+      "energy_interpretation_basis": "依Apple HealthKit官方HKWorkout.totalEnergyBurned定义，此为本次运动累计active energy（动态能量），虽然连接返回字段名total_energy_kcal。与此前同一Apple Watch的Apple Fitness动态千卡截图逐项对比匹配（2026-10-28、11-03、11-04、11-06），因此按source-matched HKWorkout口径录入当次动态能量，原tdee_v1中只按0.75折算一次，绝不叠加全天活动圆环。Apple官方：https://developer.apple.com/documentation/healthkit/hkworkout",
+      "uncertainty": "已核对官方HKWorkout字段含义与历史同设备截图映射；运动动态能量仍是手表算法估值、不是代谢室实测。本次可能没有独立Apple Fitness截图，但不影响Health workout字段定义。如后续截图与同期同一事件数据有差异，以截图确认后原位更正。",
+      "reported_movement_note": "用户2026-11-08补报：前一日（2026-11-07）做健腹轮4组，怀疑跪姿时膝盖前方反复受压引起次日局部按压痛。该动作的具体时间是否落入此Apple Watch力量训练段未独立核实，作为当日动作补充备注而非新增独立训练事件；组数4、次数和负重未报告，未另计能量。",
+      "raw_health_workout_total_energy_kcal": 442.16701248017296,
+      "raw_health_field_interpretation": "HKWorkout.totalEnergyBurned = workout active energy, NOT Fitness inclusive gross calories"
     },
     {
       "id": "indoor_walk_health_2026_11_07_143825",
@@ -304,10 +305,12 @@
       "distance_km": 4.091185901330318,
       "source": "Apple Health Apple Watch workout 2026-11-07 14:38:25至15:43:25，距离4091.19m，原始能量字段total_energy_kcal=711.161；用户16:15明确今天训练结束。",
       "energy_scope": "session_active",
-      "active_kcal": null,
+      "active_kcal": 711.161439427945,
       "total_kcal": 711.161439427945,
-      "energy_interpretation_basis": "Health原始total_energy_kcal未核对Apple Fitness动态千卡，保留原始值，不将全天活动圆环或者总能量作为动态消耗；待截图核对。",
-      "uncertainty": "Apple Watch估值非实测，暂不把API的total_energy_kcal作为已经核实的动态能量。"
+      "energy_interpretation_basis": "依Apple HealthKit官方HKWorkout.totalEnergyBurned定义，此为本次运动累计active energy（动态能量），虽然连接返回字段名total_energy_kcal。与此前同一Apple Watch的Apple Fitness动态千卡截图逐项对比匹配（2026-10-28、11-03、11-04、11-06），因此按source-matched HKWorkout口径录入当次动态能量，原tdee_v1中只按0.75折算一次，绝不叠加全天活动圆环。Apple官方：https://developer.apple.com/documentation/healthkit/hkworkout",
+      "uncertainty": "已核对官方HKWorkout字段含义与历史同设备截图映射；运动动态能量仍是手表算法估值、不是代谢室实测。本次可能没有独立Apple Fitness截图，但不影响Health workout字段定义。如后续截图与同期同一事件数据有差异，以截图确认后原位更正。",
+      "raw_health_workout_total_energy_kcal": 711.161439427945,
+      "raw_health_field_interpretation": "HKWorkout.totalEnergyBurned = workout active energy, NOT Fitness inclusive gross calories"
     }
   ],
   "recovery": {
@@ -398,6 +401,20 @@
       "new_value": {
         "quantity_g": 155
       }
+    },
+    {
+      "date": "2026-11-09",
+      "entry_id": "strength_health_2026_11_07_133111",
+      "from_active_kcal": null,
+      "to_active_kcal": 442.16701248017296,
+      "reason": "纠正此前把Health workout total_energy_kcal误判为Apple Fitness含静息的总消耗、因此把运动动态设为null。官方HKWorkout.totalEnergyBurned是本次累计动态消耗，历史同Apple Watch截图已交叉核对；恢复按既定tdee_v1训练×75%计入。"
+    },
+    {
+      "date": "2026-11-09",
+      "entry_id": "indoor_walk_health_2026_11_07_143825",
+      "from_active_kcal": null,
+      "to_active_kcal": 711.161439427945,
+      "reason": "纠正此前把Health workout total_energy_kcal误判为Apple Fitness含静息的总消耗、因此把运动动态设为null。官方HKWorkout.totalEnergyBurned是本次累计动态消耗，历史同Apple Watch截图已交叉核对；恢复按既定tdee_v1训练×75%计入。"
     }
   ],
   "notes": [
@@ -408,7 +425,8 @@
     "2026-11-07 21:36用户确认今日饮食结束并要求封账；晚间计划的鸡小胸1包明确未吃，原计划条目转not_eaten。当天早餐及练后实吃的另外两包鸡小胸保留。累计9项已吃2021.66kcal/P132.94/F70.06/C214.68，今天不再补餐食。",
     "历史阶段备注（已被当日21:36封账状态取代）：今天仅报告早餐，全天饮食是否完整和训练状态未确认，不推断休息或不吃。",
     "历史阶段备注（已被当日21:36封账状态取代）：用户说今天训练结束，训练两段已完整报备；当天饮食尚未确认结束，仍为开放记录。",
-    "2026-11-08追溯补记：用户回想11月7日做过4组健腹轮，认为膝盖局部按压痛可能由健腹轮跪地直接压迫引起，而非一般运动负荷。属于用户自我判断，非确诊；保留原Apple Watch两段训练及能量值，不新增训练时段、不重复计运动消耗。"
+    "2026-11-08追溯补记：用户回想11月7日做过4组健腹轮，认为膝盖局部按压痛可能由健腹轮跪地直接压迫引起，而非一般运动负荷。属于用户自我判断，非确诊；保留原Apple Watch两段训练及能量值，不新增训练时段、不重复计运动消耗。",
+    "2026-11-09用户要求复核最近计算错误并固定原规则。Apple HealthKit官方HKWorkout.totalEnergyBurned是单次运动累计动态能量，先前将2条该数据误写为active_kcal=null已原位更正。继续使用原tdee_v1：BMR 1837.75×1.2=2205.30 + 训练动态 1153.33×0.75=865.00，估TDEE 3070.30；减已记录摄入 2021.66 => 估算差额 1048.64 kcal。饮食虽已封账，但food_coverage=partial，可能有未逐餐核实的摄入；这只是已记录食物与按原公式估算消耗的算术差，不应当作验证后的完整全天实际缺口。 不再用BMR+全天动态等其他公式，用户明确封账与原食物/训练事件均不改变。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2021.655291586998,
@@ -417,28 +435,28 @@
     "fat_g_estimate": 70.0647,
     "carbs_g_estimate": 214.6803,
     "intake_kcal_estimate": 2021.655291586998,
-    "food_margin_kcal": 0.0,
+    "food_margin_kcal": 0,
     "base_macro_estimates": {
       "protein_g": 132.9427,
       "fat_g": 70.0647,
       "carbs_g": 214.6803
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "training_discount_kcal": 288.3321129770295,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       1945.9282456978967,
       2173.558245697897
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
-    "tdee_kcal_estimate": 2205.2999999999997,
-    "estimated_deficit_kcal": 183.6447084130018,
+    "exercise_active_kcal": 1153.328451908118,
+    "exercise_adjusted_kcal": 864.9963389310885,
+    "tdee_kcal_estimate": 3070.296338931088,
+    "estimated_deficit_kcal": 1048.64104734409,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900.0,
-      2000.0
+      1900,
+      2000
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -449,7 +467,6 @@
       "postworkout": 80.3145
     },
     "warnings": [
-      "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
       "存在影响能量解释或完整性的待确认项"
     ],
@@ -466,11 +483,32 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3326.0,
+    "sodium_mg_known_sum": 3326,
     "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 281.45,
     "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "calorie_balance_review": {
+    "date": "2026-11-07",
+    "preferred_method": "tdee_v1",
+    "primary_calculation_formula": "BMR*1.2 + (sum of per-session HKWorkout active energy)*0.75 - logged intake",
+    "training_energy_source": "Apple Health HKWorkout.totalEnergyBurned; Apple Watch origin; validated field semantics against Apple official documentation and prior same-device screenshots; not inclusive total calories",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 1048.64104734409,
+      "value_rounded_kcal": 1049,
+      "method": "tdee_v1",
+      "bmr_kcal": 1837.75,
+      "base_activity_kcal": 2205.2999999999997,
+      "session_active_kcal_sum": 1153.328451908118,
+      "session_active_kcal_booked_75pct": 864.9963389310885,
+      "tdee_kcal_estimate": 3070.296338931088,
+      "intake_kcal_estimate": 2021.655291586998,
+      "scope": "provisional_recorded_balance",
+      "uncertainty": "饮食虽已封账，但food_coverage=partial，可能有未逐餐核实的摄入；这只是已记录食物与按原公式估算消耗的算术差，不应当作验证后的完整全天实际缺口。"
+    },
+    "excluded_energy": "Do not add daily activeEnergyBurned/Move ring, gross workout calories, or raw workout energy a second time; exercise sessions are included once at 75%.",
+    "verified_scope": "Source semantics and arithmetic verified; food and device expenditure remain estimates."
   }
 }
