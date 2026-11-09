@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户2026-11-09傍晚明确：“饮食结束了，晚上应该会补一会有氧”。仅确认饮食今日不再摄入并封账；晚间有氧为未来可能计划，未确认开始或完成，故training_status=unknown、training_coverage=unknown、exercise_entries暂空。运动后可对今日记录做后续补充修订。 用户2026-11-09 21:14明确当天训练已结束，Health核实晚间有一条20:15–21:13步行有氧约58分29秒/3.973km；只修改训练信息，饮食封账保持。",
+  "closure_basis": "2026-11-09（Asia/Shanghai）用户先确认“饮食结束了”，21:14确认“今天训练结束”，随后明确要求“封账”。当天饮食7项已报告实吃，总摄入估计2374.67kcal；训练Apple Health已核实晚间仅一条Apple Watch步行20:15:10–21:13:38，共58分29秒、约3.97km。正式封账后record_status=final、food_log_closed=true、training_status=reported_training、training_coverage=confirmed_complete。食物份量、单次训练动态千卡仍有不确定性，food_coverage=partial、completed_day_estimated_deficit_kcal=null；只在用户明确纠正或提供可靠运动动态数据时原位修订，不重复新增旧食物/训练。",
   "food_coverage": "partial",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -17,9 +17,9 @@
     "今日20:15–21:13的步行有氧已确认完成，单次workout的total_energy_kcal=619.31属于Health原始运动能量口径，但未核实是否动态千卡，故不把619.31直接算为训练主动消耗；当前exercise_entries[0].active_kcal=null。Health当天累计动态896kcal/基础1480kcal为截至同步时的当天统计，不能与BMR×1.2模型或单次workout重复叠加，全天最终缺口保留未定。"
   ],
   "non_energy_pending_notes": [
-    "18:24已实际报告下午与晚间合计无油烤土豆480g（不要拆成两个各480g）、与午餐分开的额外去皮卤鸡小腿3根、荞麦锅巴约50g；午餐2根鸡腿仍独立保留，旧计划零食不另计。",
     "用户补充所有土豆烤后冷藏约24h，可有RS3；今日碳水、热量仍用历史土豆熟重估算，待实际产品分析前不能按估测抗性淀粉克数直接扣除能量，且抗性淀粉可被肠道菌群发酵供能。",
-    "用户明确11月9日训练结束：Health只有1条walking运动20:15:10–21:13:38，58分28.78秒，3.973km，总能量原始值619.31kcal，训练动态千卡未知。全天Health动态能量当前896kcal、基础能量1480kcal、步数10323、运动圆环约62min均为当前同步日累计，不可重复叠加到本条运动或TDEE。"
+    "用户明确11月9日训练结束：Health只有1条walking运动20:15:10–21:13:38，58分28.78秒，3.973km，总能量原始值619.31kcal，训练动态千卡未知。全天Health动态能量当前896kcal、基础能量1480kcal、步数10323、运动圆环约62min均为当前同步日累计，不可重复叠加到本条运动或TDEE。",
+    "11月9日饮食与运动均已正式封账；训练event_id对应Apple Watch步行1条，除非实测数据或用户更正，不再新增。完整日热量差额仍为临时模型结果而非最终实测缺口。"
   ],
   "trend_context": [
     "2026-11-08晨起空腹88.20kg；2026-11-09晨起空腹87.70kg，单日下降0.50kg，水分、糖原和胃肠内容物会影响短期体重变化，不等于单日脂肪减少。"
@@ -277,7 +277,8 @@
     "2026-11-09傍晚用户明确今天饮食结束，7项已记录实吃合计2309.57kcal/P195.89/F50.82/C267.63；今天食物录入完结，无新增计划食物。晚上仅可能做一会有氧，尚未确认实做，不记exercise_entries或主动消耗，也不按预期训练推算最终缺口；待实际锻炼结束后再补训练。",
     "2026-11-09后续补充：全天750g烤土豆（熟重）均是烤后冷藏约24h食用，研究显示冷藏使RS3抗性淀粉增加，但个体批次抗性淀粉克数、复热方式和实际可利用热量未测。此750g与先前逐项200g+480g=680g冲突，按最新明确总量以早餐200g保留、下午晚间550g更正，增量70g对应热量+65.10kcal、P+1.75g、F+0.07g、C+14.84g。不重复录入总量750g为新餐。保留封账，后续如仅为取整可再更正。",
     "2026-11-09后续确认：用户明确750g烤熟土豆均在冰箱冷藏约24小时后直接凉吃、没有再次加热。该条件有利于保留冷却产生的RS3抗性淀粉，但具体克数和可利用热量未实测，不能把抗性淀粉视为零热量，也不凭此扣减当天碳水或能量；仍以2374.67kcal、P197.64g/F50.89g/C282.47g封账，运动状态继续待确认。",
-    "2026-11-09 21:14北京时间用户明确“读取health 今天训练结束”。Health按Asia/Shanghai查询11月9日workout仅1条，Apple Watch walking，20:15:10.152–21:13:38.930（3508.78秒，58分29秒），运动距离3973.39m（3.97km）；Health workout原始total_energy_kcal=619.306kcal但未核对session active，因此训练条目active_kcal=null，不按619计算运动动态消耗。Apple Health当天截至同步约21:14累计动态activeEnergyBurned=896kcal、基础basalEnergyBurned=1480kcal、步数10323、exerciseTime62min，属于今日累计且日未完结；其中动态896不能再与base BMR×1.2+训练raw619简单相加。饮食仍是7项2374.67kcal/P197.64/F50.89/C282.47，不新增食物；训练coverage=confirmed_complete，全天消耗/缺口依然是估算而非实测。"
+    "2026-11-09 21:14北京时间用户明确“读取health 今天训练结束”。Health按Asia/Shanghai查询11月9日workout仅1条，Apple Watch walking，20:15:10.152–21:13:38.930（3508.78秒，58分29秒），运动距离3973.39m（3.97km）；Health workout原始total_energy_kcal=619.306kcal但未核对session active，因此训练条目active_kcal=null，不按619计算运动动态消耗。Apple Health当天截至同步约21:14累计动态activeEnergyBurned=896kcal、基础basalEnergyBurned=1480kcal、步数10323、exerciseTime62min，属于今日累计且日未完结；其中动态896不能再与base BMR×1.2+训练raw619简单相加。饮食仍是7项2374.67kcal/P197.64/F50.89/C282.47，不新增食物；训练coverage=confirmed_complete，全天消耗/缺口依然是估算而非实测。",
+    "2026-11-09 晚间用户最终明确“封账”，再次确认当天饮食和训练均已全部结束。 记录保留当天空腹体重87.70kg、摄入2374.67kcal/P197.64g/F50.89g/C282.47g、步行有氧1次58分29秒、3.973km。Health原始workout能量619.31kcal未确认为单次动态千卡，不纳入TDEE模型；历史自动汇总的当天动态896kcal为截至当时的累计读数，不算最终精确缺口。无需再等待另一次训练确认，后续如有纠错只原位更正。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2374.6694550669217,
