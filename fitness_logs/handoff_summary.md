@@ -1,5 +1,5 @@
 # 健身记录交接摘要
-更新时间：2026-11-09傍晚（用户确认今日饮食结束、运动尚待核实；更新基础消耗估算）
+更新时间：2026-11-09后续更正（750g烤土豆均冷藏约24h，修订原有680g记录；饮食已结束、运动待核实）
 
 ## 2026-11-09 饮食已结束，运动待确认
 - **空腹体重87.70kg**，较2026-11-08的88.20kg下降0.50kg；单日变化有水分和糖原等波动，不能直接当作减脂0.5kg。
@@ -12,6 +12,8 @@
 - **截至2026-11-09 18:24，已报告实吃共7条、累计约2309.57kcal、P195.89g/F50.82g/C267.63g**，记录热量参考范围约2061–2595kcal，较大不确定性来自午餐鸡腿净肉/油和下午晚间去皮鸡小腿及锅巴约重。用户后续明确饮食结束，record_status=final、food_log_closed=true、food_coverage=partial；未确认是否实际休息或做轻度有氧，training_status=unknown、training_coverage=unknown。**绝不将BMR×1.2预估消耗差额当成今天最终热量缺口。**
 - **2026-11-09傍晚用户明确：“饮食结束了，晚上应该会补一会有氧”。** 已确认全天饮食结束，`record_status=final`、`food_log_closed=true`、`food_coverage=partial`（未独立核实所有未提及餐次），**实吃7项、2309.57kcal/P195.89g/F50.82g/C267.63g**保持不变；原先计划的火龙果等未确认实吃，不补录。晚上有氧是计划，不是已完成训练，故`training_status=unknown`、`training_coverage=unknown`、`exercise_entries=[]`，尚无核准active_kcal，不推算最终缺口，`completed_day_estimated_deficit_kcal=null`。今晨空腹87.70kg，按男性27岁/173cm的Mifflin公式**BMR=1828.25kcal**，日常基础活动参考**BMR×1.2=2193.90kcal**，这两项均为估算，不含未来可能进行的晚间有氧；已记录食物与无运动基础活动参考之差+115.67kcal不能称为实测盈余。运动确认后再补训练数据，不能依据计划推断已完成。
 - **2026-11-09用户明确要求将今日午餐版本作为今后“沙县鸡腿饭”默认**：双鸡腿（历史同款默认去皮）、卤蛋1个、熟米饭250g、少油白菜约300g，固定参考850kcal/P68.5g/F27.5g/C79.7g、区间730–980kcal。不再用昨天刚改的750kcal无蛋/少量白菜版本作默认；食物目录 `shaxian_two_skinless_legs` 已升级至2026-11-09-v8。未来报告“沙县鸡腿饭”/相同上下文“鸡腿饭”时采用该模板，若当次缺卤蛋、鸡腿带皮或饭/白菜份量不同则按实修正。**今日已记的午餐850kcal不另加第二条、已封账历史不自动追改。** 南瓜子按标签，鸡小胸按相近款待核口径。
+
+**11月9日后续土豆重量及冷藏说明（比上述早期累计优先）：** 用户最新明确“我今天吃的750g烤土豆全是放在冰箱冷藏过一整天”，与原先早餐200g＋下午晚间480g=680g相差70g。**按最新750g实吃修正**，早餐200g不变，下午晚间原位由480g改550g，未新增新餐。土豆全天热量由632.40kcal改为697.50kcal（+65.10），日总**2374.67kcal、P197.64g/F50.89g/C282.47g**，仍是7项食物，`record_status=final`、`food_log_closed=true`、`training_status=unknown`。冷藏24h可增加RS3抗性淀粉但具体量未实测，熟土豆热量和碳水继续沿原有参考值记账，**不把RS估算量直接从热量扣除，也不将其当零热量**。如果750g只是约数而原先480g才是准确称重，再按实更正。运动尚未确认，`completed_day_estimated_deficit_kcal=null`。
 
 ## 2026-11-08 已封账
 - 用户明确：“晚上吃了242g萝卜，又吃了一小包鸡小胸，今天饮食训练都结束”。按Asia/Shanghai日期2026-11-08封账，record_status=final、food_log_closed=true、training_status=reported_training、training_coverage=confirmed_complete、food_coverage=partial。饮食覆盖partial为谨慎口径，不能证明未逐餐核实的其他食物一概没吃。
