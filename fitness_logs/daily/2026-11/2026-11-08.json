@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "2026-11-08 20:58北京时间用户明确报告当天饮食和训练均已结束，并更正实际吃紫皮萝卜242g及新增晚餐鸡小胸一小包。当天Apple Health两段workout已读取，训练覆盖用户确认结束，动态千卡未核实，按现行规则维持消耗与全天缺口为暂估，明确保存不完整/待确认资料。",
+  "closure_basis": "2026-11-08 20:58北京时间用户明确报告当天饮食和训练均已结束，并更正实际吃紫皮萝卜242g及新增晚餐鸡小胸一小包。当天Apple Health两段workout已读取，训练覆盖用户确认结束；2026-11-09已按HKWorkout官方字段定义及历史同设备截图映射核实动态能量口径，恢复两条active_kcal并按tdee_v1折算一次。设备能量及食物营养仍为估值，food_coverage=partial，保留食物待确认项与暂估差额口径，completed_day_estimated_deficit_kcal仍为null。",
   "food_coverage": "partial",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -381,6 +381,13 @@
       "from_active_kcal": null,
       "to_active_kcal": 821.8690000000009,
       "reason": "纠正此前把Health workout total_energy_kcal误判为Apple Fitness含静息的总消耗、因此把运动动态设为null。官方HKWorkout.totalEnergyBurned是本次累计动态消耗，历史同Apple Watch截图已交叉核对；恢复按既定tdee_v1训练×75%计入。"
+    },
+    {
+      "date": "2026-11-09",
+      "field": "closure_basis",
+      "reason": "语义复核：封账依据仍称动态千卡未核实，与现有两条训练记录及2026-11-09恢复active_kcal的更正历史不一致；同步当前核查状态，保留原封账事实、食物覆盖不足及估值不确定性。",
+      "old_value": "2026-11-08 20:58北京时间用户明确报告当天饮食和训练均已结束，并更正实际吃紫皮萝卜242g及新增晚餐鸡小胸一小包。当天Apple Health两段workout已读取，训练覆盖用户确认结束，动态千卡未核实，按现行规则维持消耗与全天缺口为暂估，明确保存不完整/待确认资料。",
+      "new_value": "2026-11-08 20:58北京时间用户明确报告当天饮食和训练均已结束，并更正实际吃紫皮萝卜242g及新增晚餐鸡小胸一小包。当天Apple Health两段workout已读取，训练覆盖用户确认结束；2026-11-09已按HKWorkout官方字段定义及历史同设备截图映射核实动态能量口径，恢复两条active_kcal并按tdee_v1折算一次。设备能量及食物营养仍为估值，food_coverage=partial，保留食物待确认项与暂估差额口径，completed_day_estimated_deficit_kcal仍为null。"
     }
   ],
   "notes": [
@@ -400,7 +407,7 @@
     "fat_g_estimate": 89.90199999999999,
     "carbs_g_estimate": 185.52250000000004,
     "intake_kcal_estimate": 2285.6992447418734,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
       "protein_g": 181.32800000000003,
       "fat_g": 89.90199999999999,
@@ -420,8 +427,8 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
@@ -453,7 +460,7 @@
     "sodium_mg_known_sum": 4229.12,
     "sodium_mg_entries_with_data": 7,
     "sodium_mg_coverage_complete": false,
-    "fruit_vegetable_g_known_sum": 242,
+    "fruit_vegetable_g_known_sum": 242.0,
     "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
   },
