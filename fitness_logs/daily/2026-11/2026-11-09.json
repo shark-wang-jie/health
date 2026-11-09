@@ -1,0 +1,195 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "目前仅确认早餐摄入，午餐、晚餐和加餐仍未报告，尚不能确定全天实际摄入。",
+    "鸡小胸170g为用户报告实吃克数，营养成分暂沿历史相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0估算；实际当次产品营养标签未确认。"
+  ],
+  "non_energy_pending_notes": [
+    "用户前一晚计划11月9日休息、最多轻度有氧；目前尚未汇报今天是否实际进行运动，不提前认定为confirmed_rest。",
+    "此前曾计划午餐沙县双去皮鸡腿饭（新目录少油无默认卤蛋约750kcal）、晚餐烤土豆与鸡小胸、火龙果和荞麦锅巴加餐，但目前都未明确已吃，不计入实际摄入。"
+  ],
+  "trend_context": [
+    "2026-11-08晨起空腹88.20kg；2026-11-09晨起空腹87.70kg，单日下降0.50kg，水分、糖原和胃肠内容物会影响短期体重变化，不等于单日脂肪减少。"
+  ],
+  "weight_measurement_note": "用户2026-11-09 08:06北京时间报告晨起空腹体重87.70kg，较11月8日88.20kg减少0.50kg。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 87.7,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.7,
+    "bmr_weight_date": "2026-11-09",
+    "bmr_kcal": 1828.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_roasted_potato_200g_nov09",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐无油烤土豆熟重200g",
+      "reported_text": "早饭200g烤土豆",
+      "source_kind": "matched_default",
+      "quantity_g": 200,
+      "basis": "用户2026-11-09报告早餐实际吃无油烤土豆200g，沿此前相同熟重每100g93kcal/P2.5g/F0.1g/C21.2g的估算口径；明确熟重200g、没有报告加油，未额外加成。",
+      "uncertainty": "营养估值沿历史同款无油烤熟土豆参考，土豆品种、烘烤水分及调味尚未逐项核实。",
+      "kcal_base_estimate": 186,
+      "kcal_booked": 186,
+      "kcal_range": [
+        186,
+        186
+      ],
+      "protein_g_estimate": 5,
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 42.4
+    },
+    {
+      "id": "breakfast_pumpkin_seeds_6_3g_nov09",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子6.3g",
+      "reported_text": "6.3g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 6.3,
+      "basis": "用户2026-11-09确认实吃6.3g南瓜子，沿历史已核验同款每100g2579kJ、P31.2/F48.8/C8.3，按实际重量等比例换算。",
+      "kcal_base_estimate": 38.83293499043976,
+      "kcal_booked": 38.83293499043976,
+      "kcal_range": [
+        38.83293499043976,
+        38.83293499043976
+      ],
+      "protein_g_estimate": 1.9656,
+      "fat_g_estimate": 3.0744,
+      "carbs_g_estimate": 0.5229
+    },
+    {
+      "id": "breakfast_chicken_tender_170g_nov09",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐鸡小胸170g（按相近即食鸡胸肉营养标签暂估）",
+      "reported_text": "170g鸡小胸",
+      "source_kind": "matched_default",
+      "quantity_g": 170,
+      "basis": "用户2026-11-09实际报告早餐鸡小胸170g；只按170g计算，不把170g误当成再加一包；暂沿近期相近即食鸡胸肉每100g527kJ、P28.6/F1.1/C0、钠232mg口径，具体当次包装未核实。",
+      "uncertainty": "170g食用重量由用户明确报告，但当次鸡小胸品牌与标签未核实；214.13kcal/P48.62g等是沿历史相近款估算。",
+      "kcal_base_estimate": 214.12523900573612,
+      "kcal_booked": 214.12523900573612,
+      "kcal_range": [
+        170,
+        285
+      ],
+      "protein_g_estimate": 48.62,
+      "fat_g_estimate": 1.8699999999999999,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 394.4
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-09 08:06：用户实际已吃早餐烤熟土豆200g、南瓜子6.3g、鸡小胸170g，空腹体重87.70kg；此前讨论的11月9日午晚餐计划不视为已吃。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 438.9581739961759,
+    "intake_kcal_booked": 438.9581739961759,
+    "protein_g_estimate": 55.5856,
+    "fat_g_estimate": 5.1444,
+    "carbs_g_estimate": 42.9229,
+    "intake_kcal_estimate": 438.9581739961759,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 55.5856,
+      "fat_g": 5.1444,
+      "carbs_g": 42.9229
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      394.83293499043975,
+      509.83293499043975
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2193.9,
+    "estimated_deficit_kcal": 1754.9418260038242,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 55.5856
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 394.4,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
