@@ -279,7 +279,8 @@
     "2026-11-09后续确认：用户明确750g烤熟土豆均在冰箱冷藏约24小时后直接凉吃、没有再次加热。该条件有利于保留冷却产生的RS3抗性淀粉，但具体克数和可利用热量未实测，不能把抗性淀粉视为零热量，也不凭此扣减当天碳水或能量；仍以2374.67kcal、P197.64g/F50.89g/C282.47g封账，运动状态继续待确认。",
     "2026-11-09 21:14北京时间用户明确“读取health 今天训练结束”。Health按Asia/Shanghai查询11月9日workout仅1条，Apple Watch walking，20:15:10.152–21:13:38.930（3508.78秒，58分29秒），运动距离3973.39m（3.97km）；Health workout原始total_energy_kcal=619.306kcal但未核对session active，因此训练条目active_kcal=null，不按619计算运动动态消耗。Apple Health当天截至同步约21:14累计动态activeEnergyBurned=896kcal、基础basalEnergyBurned=1480kcal、步数10323、exerciseTime62min，属于今日累计且日未完结；其中动态896不能再与base BMR×1.2+训练raw619简单相加。饮食仍是7项2374.67kcal/P197.64/F50.89/C282.47，不新增食物；训练coverage=confirmed_complete，全天消耗/缺口依然是估算而非实测。",
     "2026-11-09 晚间用户最终明确“封账”，再次确认当天饮食和训练均已全部结束。 记录保留当天空腹体重87.70kg、摄入2374.67kcal/P197.64g/F50.89g/C282.47g、步行有氧1次58分29秒、3.973km。Health原始workout能量619.31kcal未确认为单次动态千卡，不纳入TDEE模型；历史自动汇总的当天动态896kcal为截至当时的累计读数，不算最终精确缺口。无需再等待另一次训练确认，后续如有纠错只原位更正。",
-    "2026-11-09封账后热量缺口复核：用户要求恢复估算缺口并核对算法。Health本次Apple Watch 11/9动态能量全天已同步899kcal、基础消耗已同步1734kcal（仍非满24小时），训练时段707条心率平均约131.6次/分（112–142），步行58分29秒/3.973km，workout原始总能量619.31kcal。用全天BMR公式1828.25+Health当天动态899=2727.25kcal，与当天饮食估算2374.67比较，得暂估缺口+352.58kcal；不可再叠加workout619.31或BMR×1.2的活动部分。原tdee_v1假设619.31是当次动态，则缺口约283.71kcal；如果619.31是包括当次约74.25静息消耗的总消耗，则模型缺口约228.03kcal。这是不同口径的情景，不是可信区间。因单次动态千卡未独立确认及食物量有估算，标准completed_day_estimated_deficit_kcal仍null、每日summary仍由record_tools算，不将-180.77kcal的缺省占位读成真实盈余。报告给用户须展示适当明确的暂估热量缺口，不应因其并非实测而拒绝计算。"
+    "2026-11-09封账后热量缺口复核：用户要求恢复估算缺口并核对算法。Health本次Apple Watch 11/9动态能量全天已同步899kcal、基础消耗已同步1734kcal（仍非满24小时），训练时段707条心率平均约131.6次/分（112–142），步行58分29秒/3.973km，workout原始总能量619.31kcal。用全天BMR公式1828.25+Health当天动态899=2727.25kcal，与当天饮食估算2374.67比较，得暂估缺口+352.58kcal；不可再叠加workout619.31或BMR×1.2的活动部分。原tdee_v1假设619.31是当次动态，则缺口约283.71kcal；如果619.31是包括当次约74.25静息消耗的总消耗，则模型缺口约228.03kcal。这是不同口径的情景，不是可信区间。因单次动态千卡未独立确认及食物量有估算，标准completed_day_estimated_deficit_kcal仍null、每日summary仍由record_tools算，不将-180.77kcal的缺省占位读成真实盈余。报告给用户须展示适当明确的暂估热量缺口，不应因其并非实测而拒绝计算。",
+    "2026-11-09后续口径纠错：用户指出应始终按原tdee_v1公式[BMR×1.2＋单次训练动态消耗×0.75−摄入]算每日缺口。承认前次以BMR＋全天Health动态899计算~352.58并作为主报告是错误的口径切换。恢复原口径为主：BMR=1828.25、base=2193.90、workout原始619.306暂作为session active代理，折算0.75=464.48，TDEE暂估2658.38，饮食2374.67，**报告估算缺口283.71kcal**；若workout total含约74.25kcal静息则缺口约228.03。单次训练动态仍未独立核实，exercise_entries.active_kcal=null、标准completed_day_estimated_deficit_kcal=null，仅在calorie_balance_review.user_facing_daily_deficit_estimate保存带前提的旧公式情景估算。不可把899日动态及619训练消耗叠加，也不可将353视为同口径记录。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2374.6694550669217,
@@ -358,7 +359,7 @@
       "expression": "24h formula BMR + Apple Health day-to-date activeEnergyBurned - estimated logged food kcal",
       "tdee_kcal_estimate": 2727.25,
       "deficit_kcal_estimate": 352.5805449330783,
-      "interpretation": "Main provisional comparison for user-facing feedback; not fully completed 24h measurement, not interchangeable with existing tdee_v1 output. Do not add workout energy to all-day active calories or add activity factor to all-day active energy."
+      "interpretation": "Secondary alternative comparison ONLY, not the user's ongoing model, do not headline or record as the daily default deficit. May be sensitive to incomplete day sync; must not combine with workout energy."
     },
     "existing_tdee_v1_scenarios": {
       "expression": "BMR×1.2 + session active calories×0.75 - food; session active calories not independently verified",
@@ -374,6 +375,18 @@
       "max_bpm": 142,
       "average_bpm_approx": 131.6
     },
-    "further_caveats": "Device active energy and food kcal are both estimates; 1734 kcal is only synced basal for the not-yet-ended calendar day and is not a separate amount to add to 24h BMR. Historic formula-based BMR and device basal energy are different methods. 619.31 kcal workout energy is already part of device day activity and must not be double counted."
+    "further_caveats": "Device active energy and food kcal are both estimates; 1734 kcal is only synced basal for the not-yet-ended calendar day and is not a separate amount to add to 24h BMR. Historic formula-based BMR and device basal energy are different methods. 619.31 kcal workout energy is already part of device day activity and must not be double counted. User reconfirmed original 75% workout discount model as sole main reporting convention; previous headline ~353 kcal came from a different method and is not directly comparable. Standard completed_day_estimated_deficit_kcal remains null due to missing verified session-active kcal and partial food coverage, but supplemental display estimate ~284 kcal can be shown with assumption.",
+    "preferred_method": "tdee_v1",
+    "preferred_method_reason": "用户原方案固定使用BMR×1.2＋单次运动动态千卡×0.75−摄入。禁止默认改为公式BMR+全天Health动态能量，也不得把两种算法的缺口混入同一纵向趋势。",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 283.7101641803574,
+      "value_rounded_kcal": 284,
+      "method": "tdee_v1_original_discounted_session_exercise",
+      "formula": "(1828.25×1.2)+(619.3061589963718×0.75)−2374.6694550669217",
+      "workout_active_energy_assumption": "619.31kcal workout totalEnergy is temporarily proxied as session active (not confirmed); this is an assumed training active kcal for a display-only estimate, not a verified active_kcal measurement or an instruction to override exercise_entries.",
+      "if_workout_total_includes_rest_kcal_estimate": 228.02505445850966,
+      "training_kcal_discount_factor": 0.75,
+      "uncertainty": "If raw workout energy includes resting portion during 58m29s, estimate 74.25kcal resting then ~228.03 kcal deficit. The two scenarios are not an empirical interval; neither is fully validated."
+    }
   }
 }
