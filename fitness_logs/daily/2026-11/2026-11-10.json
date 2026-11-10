@@ -17,7 +17,8 @@
   "non_energy_pending_notes": [
     "此前谈过火龙果约475g带皮，但11月9日并未确认吃下；今天首次按用户上午加餐报告计入本日，不能将同颗水果再加回昨日。",
     "体重11月9日87.70kg→今天86.90kg，隔日变动-0.80kg；可能由水分糖原或肠道内容物变化解释，不能认作净减脂0.80kg。",
-    "用户2026-11-10补充：照片中的罗宋芝士面包150g计划晚上训练后吃。整盒约426.63kcal、P10.35g/F10.05g/C72.75g；目前仅planned，**不得提前并入当前累计385.14kcal**；练后如果报告确实吃下，再将同id原位改为consumed，不重复新增。搭配鸡小胸100g仅为建议，用户尚未报告要吃，不登记。"
+    "用户2026-11-10补充：照片中的罗宋芝士面包150g计划晚上训练后吃。整盒约426.63kcal、P10.35g/F10.05g/C72.75g；目前仅planned，**不得提前并入当前累计385.14kcal**；练后如果报告确实吃下，再将同id原位改为consumed，不重复新增。搭配鸡小胸100g仅为建议，用户尚未报告要吃，不登记。",
+    "2026-11-10追加两项饮食计划（未吃，不计入当前385.14kcal）：中午沙县双鸡腿＋卤蛋＋250g熟饭＋300g少油白菜预计850kcal；晚间面包150g之外再加鸡小胸180g预计226.72kcal。连同已计划面包426.63kcal和当前早餐/火龙果385.14kcal，若全部按计划实吃，预计全天1888.49kcal/P144.65/F53.22/C202.48。仅按项目推演，不构成当天已实吃或已完成训练，训练日目标1900–2000kcal参考。"
   ],
   "trend_context": [
     {
@@ -155,6 +156,63 @@
       "carbs_g_estimate": 72.75,
       "sugar_g_estimate": 18.75,
       "source_product_label": "用户2026-11-10上传罗宋芝士面包营养标签照片，生产日期2026-11-09，整盒150g"
+    },
+    {
+      "id": "planned_lunch_shaxian_2legs_egg_rice250_cabbage300_nov10",
+      "status": "planned",
+      "meal": "lunch",
+      "description": "计划午餐沙县双鸡腿饭：两根去皮鸡腿、一个卤蛋、熟米饭250g、少油白菜约300g",
+      "reported_text": "今天的计划是中午正常沙县鸡腿饭",
+      "source_kind": "matched_default",
+      "quantity_rice_g_estimate": 250,
+      "quantity_cabbage_g_estimate": 300,
+      "chicken_legs_count": 2,
+      "braised_egg_count": 1,
+      "basis": "用户2026-11-10拟定中午正常沙县鸡腿饭；沿11月9日已确认的最新默认850kcal/P68.5/F27.5/C79.7，含去皮鸡腿2根、卤蛋1个、250g熟米饭、300g少油白菜。仅为计划，午餐吃完再确认实际配料和份量，以免将计划误报实吃。",
+      "uncertainty": "仅计划未吃，套餐仍以今日最终实际食用为准；若无卤蛋、鸡腿带皮、米饭或白菜份量不同须按实更正。",
+      "kcal_base_estimate": 850,
+      "kcal_booked": 850,
+      "kcal_range": [
+        730,
+        980
+      ],
+      "protein_g_estimate": 68.5,
+      "fat_g_estimate": 27.5,
+      "carbs_g_estimate": 79.7,
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        16,
+        42
+      ],
+      "carbs_g_range": [
+        69,
+        91
+      ],
+      "fruit_vegetable_g_estimate": 300
+    },
+    {
+      "id": "planned_postworkout_chicken_tender_180g_nov10",
+      "status": "planned",
+      "meal": "postworkout",
+      "description": "计划晚间训练后鸡小胸180g（历史相近即食鸡胸肉标签估算）",
+      "reported_text": "晚上练后这个面包再加180g鸡小胸",
+      "source_kind": "matched_default",
+      "quantity_g": 180,
+      "basis": "用户2026-11-10明确计划练后在整盒罗宋芝士面包外另吃180g鸡小胸；仅计划、尚未确认吃下。按2026-11-09已用相近款每100g527kJ/P28.6/F1.1/C0线性估算，待实际产品标签或实吃净重确认后转入实吃，不能提前计入当前累积。",
+      "uncertainty": "本次品牌/标签未确认；180g为用户计划食用重量，不等于已吃。当次如未全部吃完须按实吃调整。",
+      "kcal_base_estimate": 226.72084130019118,
+      "kcal_booked": 226.72084130019118,
+      "kcal_range": [
+        180,
+        301.7647058823529
+      ],
+      "protein_g_estimate": 51.48,
+      "fat_g_estimate": 1.98,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 417.59999999999997
     }
   ],
   "exercise_entries": [],
@@ -168,7 +226,8 @@
   "notes": [
     "2026-11-10 08:01北京时间空腹体重86.90kg；早餐南瓜子6g、牛奶一瓶（沿悦鲜活260mL）；上午加餐前天提到的带皮约475g火龙果（65%可食率估约309g果肉），前一天只计划未确认吃下，不重复补11月9日。",
     "当日仍开放，未确认其他餐次或训练；继续使用固定tdee_v1(BMR×1.2+单次训练动态×0.75-已记录摄入)，不把当前记录食物的模型差额当全天缺口。",
-    "2026-11-10新计划：用户“这个准备晚上练后吃”，指照片标识的罗宋芝士面包150g。依据1190kJ/100g，整盒约426.63kcal、蛋白质10.35g、脂肪10.05g、碳水72.75g。仅规划postworkout条目（status=planned），保留早晨3项摄入累计不变，后续只有明确吃了才转consumed。"
+    "2026-11-10新计划：用户“这个准备晚上练后吃”，指照片标识的罗宋芝士面包150g。依据1190kJ/100g，整盒约426.63kcal、蛋白质10.35g、脂肪10.05g、碳水72.75g。仅规划postworkout条目（status=planned），保留早晨3项摄入累计不变，后续只有明确吃了才转consumed。",
+    "2026-11-10用户明确午餐沙县双鸡腿饭、练后整盒罗宋芝士面包加鸡小胸180g均为计划，不新增已吃；日计划总计约1888.49kcal、P144.65/F53.22/C202.48，已吃累计暂保留385.14kcal，训练与封账状态不变。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 385.14232791587,
@@ -232,5 +291,30 @@
     "fruit_vegetable_g_known_sum": 308.75,
     "fruit_vegetable_g_entries_with_data": 1,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "planned_day_forecast": {
+    "date": "2026-11-10",
+    "status": "plan_only_not_actual",
+    "included_actual_entry_ids": [
+      "breakfast_pumpkin_seeds_6g_nov10",
+      "breakfast_milk_260ml_nov10",
+      "morning_snack_dragon_fruit_approx475g_gross_nov10"
+    ],
+    "included_planned_entry_ids": [
+      "planned_postworkout_luosong_cheese_bread_150g_nov10",
+      "planned_lunch_shaxian_2legs_egg_rice250_cabbage300_nov10",
+      "planned_postworkout_chicken_tender_180g_nov10"
+    ],
+    "projected_if_all_consumed": {
+      "kcal": 1888.4884082217973,
+      "protein_g": 144.6495,
+      "fat_g": 53.2155,
+      "carbs_g": 202.478
+    },
+    "assumptions": "已计早餐南瓜子6g/历史悦鲜活260mL/上午火龙果按带皮475g×65%出肉；午餐按沙县双去皮鸡腿+卤蛋+熟米饭250g+少油白菜300g、850kcal；晚间训练后整盒罗宋芝士面包150g约426.63kcal+鸡小胸180g暂沿527kJ/100g。全部按计划吃完才会达上列总量。训练运动量尚未报告，不能计算当日最终缺口。",
+    "training_day_goal_kcal": [
+      1900,
+      2000
+    ]
   }
 }
