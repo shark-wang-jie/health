@@ -6,22 +6,24 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [
     "今晨牛奶只报一瓶，暂沿悦鲜活260mL历史规格，本次品牌与瓶容量仍未核实。",
     "火龙果按前次提到的约475g带皮估算，当次未重新称重，可食出肉率暂估65%；若不是此前这颗/不同净重需更正。",
     "用户将火龙果列为上午加餐，暂按晨间实吃报告计入；若只是计划尚未吃，需原位改成planned，不累计实吃。",
     "午餐沙县鸡腿饭已实吃，但本次仅报告名称，按照近期固定双去皮鸡腿、卤蛋、250g米饭、300g少油白菜约850kcal估算，实际鸡腿和配菜份量、是否吃完可按实修订。",
     "下午荞麦锅巴实际报告50g，暂沿历史同款每100g1667kJ估算，包装标签与今日是否同品牌未再次核实。",
-    "截至15:32晚间练后面包150g及鸡小胸180g仍仅为计划，实际运动也未确认，保持当日开放。"
+    "2026-11-10 19:22已确认罗宋芝士面包是**整盒150g内含两块各75g**，练前练后各吃一块；不能误作两盒300g或重复入账。",
+    "已报告练后吃完面包、鸡小胸与额外40g锅巴，Apple Health核实17:38–18:40传统力量训练486.74kcal，但用户未明确今日所有进食与训练都结束；保留open、food_coverage=partial、training_coverage=partial，缺口仅为当前已记录模型差额。"
   ],
   "non_energy_pending_notes": [
     "此前谈过火龙果约475g带皮，但11月9日并未确认吃下；今天首次按用户上午加餐报告计入本日，不能将同颗水果再加回昨日。",
     "体重11月9日87.70kg→今天86.90kg，隔日变动-0.80kg；可能由水分糖原或肠道内容物变化解释，不能认作净减脂0.80kg。",
     "用户2026-11-10补充：照片中的罗宋芝士面包150g计划晚上训练后吃。整盒约426.63kcal、P10.35g/F10.05g/C72.75g；目前仅planned，**不得提前并入当前累计385.14kcal**；练后如果报告确实吃下，再将同id原位改为consumed，不重复新增。搭配鸡小胸100g仅为建议，用户尚未报告要吃，不登记。",
     "2026-11-10追加两项饮食计划（未吃，不计入当前385.14kcal）：中午沙县双鸡腿＋卤蛋＋250g熟饭＋300g少油白菜预计850kcal；晚间面包150g之外再加鸡小胸180g预计226.72kcal。连同已计划面包426.63kcal和当前早餐/火龙果385.14kcal，若全部按计划实吃，预计全天1888.49kcal/P144.65/F53.22/C202.48。仅按项目推演，不构成当天已实吃或已完成训练，训练日目标1900–2000kcal参考。",
-    "2026-11-10 15:32：用户确认午餐沙县鸡腿饭已吃、下午50g荞麦锅巴已吃；午餐由原计划条目原位改实吃，锅巴按历史每100g1667kJ增加独立下午加餐。晚间面包150g与鸡小胸180g仍为planned，实际摄入累计更新，不提前封账。"
+    "2026-11-10 15:32：用户确认午餐沙县鸡腿饭已吃、下午50g荞麦锅巴已吃；午餐由原计划条目原位改实吃，锅巴按历史每100g1667kJ增加独立下午加餐。晚间面包150g与鸡小胸180g仍为planned，实际摄入累计更新，不提前封账。",
+    "2026-11-10晚间数量更正：同一盒罗宋芝士面包150g含两块各75g，练前一块练后一块，不能多计一盒150g（426.63kcal）；练后实吃鸡小胸180g和额外荞麦锅巴40g，与下午既有50g分开。Health核实一条17:38–18:40力量训练486.74动态千卡，按0.75计入模型一次。"
   ],
   "trend_context": [
     {
@@ -141,13 +143,13 @@
     },
     {
       "id": "planned_postworkout_luosong_cheese_bread_150g_nov10",
-      "status": "planned",
-      "meal": "postworkout",
-      "description": "计划晚间训练后食用罗宋芝士面包整盒150g",
-      "reported_text": "这个准备晚上练后吃",
+      "status": "consumed",
+      "meal": "pre_and_postworkout",
+      "description": "罗宋芝士面包整盒150g（盒内两个，每个75g，练前练后分别吃一个）",
+      "reported_text": "练前练后把面包吃完了，早上那盒一盒两个一共150g",
       "source_kind": "label_known_quantity",
       "quantity_g": 150,
-      "basis": "用户2026-11-10上传包装照片：罗宋芝士面包，净含量150g；标签每100g能量1190kJ、P6.9g/F6.7g/C48.5g、糖12.5g。按整盒150g换算。用户说“准备晚上练后吃”，尚未确认食用，故status=planned；不计入当天实吃、宏量或热量缺口。",
+      "basis": "用户2026-11-10上传包装照片：罗宋芝士面包，净含量150g；标签每100g能量1190kJ、P6.9g/F6.7g/C48.5g、糖12.5g。按整盒150g换算。用户说“准备晚上练后吃”，尚未确认食用，故status=planned；不计入当天实吃、宏量或热量缺口。 2026-11-10 19:22用户再次明确：早上照片中的**同一盒150g**包含两块面包，练前、练后各吃一块约75g，合计150g。原计划单盒150g原位改实吃；绝不是两盒各150g，不新加第二盒，避免多算426.63kcal。",
       "kcal_base_estimate": 426.62523900573615,
       "kcal_booked": 426.62523900573615,
       "kcal_range": [
@@ -158,7 +160,17 @@
       "fat_g_estimate": 10.05,
       "carbs_g_estimate": 72.75,
       "sugar_g_estimate": 18.75,
-      "source_product_label": "用户2026-11-10上传罗宋芝士面包营养标签照片，生产日期2026-11-09，整盒150g"
+      "source_product_label": "用户2026-11-10上传罗宋芝士面包营养标签照片，生产日期2026-11-09，整盒150g",
+      "portion_timing": [
+        {
+          "meal": "preworkout",
+          "quantity_g": 75
+        },
+        {
+          "meal": "postworkout",
+          "quantity_g": 75
+        }
+      ]
     },
     {
       "id": "planned_lunch_shaxian_2legs_egg_rice250_cabbage300_nov10",
@@ -198,13 +210,13 @@
     },
     {
       "id": "planned_postworkout_chicken_tender_180g_nov10",
-      "status": "planned",
+      "status": "consumed_estimated",
       "meal": "postworkout",
-      "description": "计划晚间训练后鸡小胸180g（历史相近即食鸡胸肉标签估算）",
-      "reported_text": "晚上练后这个面包再加180g鸡小胸",
+      "description": "训练后实吃鸡小胸180g（暂沿历史即食鸡胸肉每100g527kJ营养）",
+      "reported_text": "练后吃了180g鸡小胸",
       "source_kind": "matched_default",
       "quantity_g": 180,
-      "basis": "用户2026-11-10明确计划练后在整盒罗宋芝士面包外另吃180g鸡小胸；仅计划、尚未确认吃下。按2026-11-09已用相近款每100g527kJ/P28.6/F1.1/C0线性估算，待实际产品标签或实吃净重确认后转入实吃，不能提前计入当前累积。",
+      "basis": "用户2026-11-10明确计划练后在整盒罗宋芝士面包外另吃180g鸡小胸；仅计划、尚未确认吃下。按2026-11-09已用相近款每100g527kJ/P28.6/F1.1/C0线性估算，待实际产品标签或实吃净重确认后转入实吃，不能提前计入当前累积。 用户2026-11-10 19:22明确已经练后吃下180g，将唯一原planned条目转为consumed_estimated，不重复追加一份。",
       "uncertainty": "本次品牌/标签未确认；180g为用户计划食用重量，不等于已吃。当次如未全部吃完须按实吃调整。",
       "kcal_base_estimate": 226.72084130019118,
       "kcal_booked": 226.72084130019118,
@@ -236,65 +248,115 @@
       "protein_g_estimate": 2.8,
       "fat_g_estimate": 1.4,
       "carbs_g_estimate": 41.75
+    },
+    {
+      "id": "postworkout_buckwheat_crisps_extra_40g_nov10",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "训练后另外吃荞麦锅巴40g（与下午50g为不同一份）",
+      "reported_text": "练后还吃了40g荞麦锅巴",
+      "source_kind": "matched_default",
+      "quantity_g": 40,
+      "basis": "用户2026-11-10 19:22明确训练后另外实吃荞麦锅巴40g，独立于下午已记50g；当日总90g。按历史同款每100g1667kJ、P5.6/F2.8/C83.5计算，40g约159.37kcal/P2.24/F1.12/C33.4。未重复计算下午50g或前一天锅巴。",
+      "uncertainty": "用户报告训练后另外40g，包装未再次核实，沿历史同款按实际报告重量换算；若当天为另一品牌或量有更正时修改此条。",
+      "kcal_base_estimate": 159.36902485659655,
+      "kcal_booked": 159.36902485659655,
+      "kcal_range": [
+        127.49521988527725,
+        191.24282982791587
+      ],
+      "protein_g_estimate": 2.2399999999999998,
+      "fat_g_estimate": 1.1199999999999999,
+      "carbs_g_estimate": 33.4
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_health_2026_11_10_173842",
+      "event_id": "apple_health_workout_2026_11_10_173842",
+      "type": "传统力量训练",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "start_local": "2026-11-10T17:38:42.584000+08:00",
+      "end_local": "2026-11-10T18:40:13.898000+08:00",
+      "duration_seconds": 3691.3140169382095,
+      "source": "Apple Health synced workout from 王洁的Apple Watch, queried 2026-11-10T00:00 to 2026-11-11T00:00 Asia/Shanghai, one session found at query time",
+      "energy_scope": "session_active",
+      "active_kcal": 486.7398545595903,
+      "total_kcal": 486.7398545595903,
+      "raw_health_workout_total_energy_kcal": 486.7398545595903,
+      "energy_interpretation_basis": "Health返回字段workout.total_energy_kcal对应HKWorkout.totalEnergyBurned，根据已建立的官方字段含义及同源Apple Watch/Fitness截图交叉验证，它表示单次训练动态热量；486.74kcal只记录一次，按用户既定tdee_v1训练系数0.75折算，不加全天活动圆环，也不额外扣单次静息代谢。",
+      "uncertainty": "Apple Watch运动动态千卡是设备估计值，非代谢实测；目前Health同步仅见一条力量训练，用户尚未明确本日全部训练是否结束，training_coverage=partial。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-10",
+      "entry_id": "planned_postworkout_luosong_cheese_bread_150g_nov10",
+      "reason": "用户纠正误读：面包一盒两个，整盒一共150g，练前/练后各75g。保留原计划150g条目原位改实吃，不能再加第二盒。",
+      "from_status": "planned",
+      "to_status": "consumed",
+      "quantity_g": 150,
+      "per_piece_g": 75
+    }
+  ],
   "notes": [
     "2026-11-10 08:01北京时间空腹体重86.90kg；早餐南瓜子6g、牛奶一瓶（沿悦鲜活260mL）；上午加餐前天提到的带皮约475g火龙果（65%可食率估约309g果肉），前一天只计划未确认吃下，不重复补11月9日。",
     "当日仍开放，未确认其他餐次或训练；继续使用固定tdee_v1(BMR×1.2+单次训练动态×0.75-已记录摄入)，不把当前记录食物的模型差额当全天缺口。",
     "2026-11-10新计划：用户“这个准备晚上练后吃”，指照片标识的罗宋芝士面包150g。依据1190kJ/100g，整盒约426.63kcal、蛋白质10.35g、脂肪10.05g、碳水72.75g。仅规划postworkout条目（status=planned），保留早晨3项摄入累计不变，后续只有明确吃了才转consumed。",
     "2026-11-10用户明确午餐沙县双鸡腿饭、练后整盒罗宋芝士面包加鸡小胸180g均为计划，不新增已吃；日计划总计约1888.49kcal、P144.65/F53.22/C202.48，已吃累计暂保留385.14kcal，训练与封账状态不变。",
-    "2026-11-10 15:32午餐已吃沙县鸡腿饭（沿最新含卤蛋的850kcal常吃默认）及下午另外50g荞麦锅巴（历史同款199.2113kcal）。午餐planned原位转consumed_estimated；锅巴新加1条consumed_estimated，不与11/9锅巴重复。若完成晚间计划则全天将达2087.70kcal，不等于当前实吃。"
+    "2026-11-10 15:32午餐已吃沙县鸡腿饭（沿最新含卤蛋的850kcal常吃默认）及下午另外50g荞麦锅巴（历史同款199.2113kcal）。午餐planned原位转consumed_estimated；锅巴新加1条consumed_estimated，不与11/9锅巴重复。若完成晚间计划则全天将达2087.70kcal，不等于当前实吃。",
+    "2026-11-10 19:22用户报告练前和练后吃完早上照片中同一盒面包（两个共150g）、练后鸡小胸180g及另外40g荞麦锅巴；之前下午50g锅巴仍为另外一份，当天锅巴累计90g。面包原planned150g仅原位转consumed，鸡小胸原planned180g转consumed_estimated，锅巴新增加40g条目；绝不按两盒300g算。Health同日Apple Watch同步17:38–18:40一条传统力量训练61分31秒、动态486.7399kcal，×0.75=365.05kcal，只计一次。用户未声明全部饮食/训练封账，保持open及training_coverage=partial。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1434.3536089866157,
-    "intake_kcal_booked": 1434.3536089866157,
-    "protein_g_estimate": 85.6195,
-    "fat_g_estimate": 42.5855,
-    "carbs_g_estimate": 171.478,
-    "intake_kcal_estimate": 1434.3536089866157,
+    "intake_kcal_base_estimate": 2247.06871414914,
+    "intake_kcal_booked": 2247.06871414914,
+    "protein_g_estimate": 149.6895,
+    "fat_g_estimate": 55.735499999999995,
+    "carbs_g_estimate": 277.628,
+    "intake_kcal_estimate": 2247.06871414914,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 85.6195,
-      "fat_g": 42.5855,
-      "carbs_g": 171.478
+      "protein_g": 149.6895,
+      "fat_g": 55.735499999999995,
+      "carbs_g": 277.628
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 121.68496363989755,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1248.3863527724666,
-      1630.320865200765
+      1982.50681166348,
+      2549.95363991677
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 749.9463910133841,
+    "exercise_active_kcal": 486.7398545595903,
+    "exercise_adjusted_kcal": 365.05489091969275,
+    "tdee_kcal_estimate": 2549.3548909196925,
+    "estimated_deficit_kcal": 302.28617677055263,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 11.232,
       "morning_snack": 3.0875,
+      "pre_and_postworkout": 10.35,
       "lunch": 68.5,
+      "postworkout": 53.72,
       "afternoon_snack": 2.8
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
@@ -311,8 +373,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 156,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 573.5999999999999,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": 608.75,
     "fruit_vegetable_g_entries_with_data": 2,
@@ -320,18 +382,18 @@
   },
   "planned_day_forecast": {
     "date": "2026-11-10",
-    "status": "partial_actual_remaining_plan",
+    "status": "superseded_by_reported_actual",
     "included_actual_entry_ids": [
       "breakfast_pumpkin_seeds_6g_nov10",
       "breakfast_milk_260ml_nov10",
       "morning_snack_dragon_fruit_approx475g_gross_nov10",
-      "planned_lunch_shaxian_2legs_egg_rice250_cabbage300_nov10",
-      "afternoon_snack_buckwheat_crisps_50g_nov10"
-    ],
-    "included_planned_entry_ids": [
       "planned_postworkout_luosong_cheese_bread_150g_nov10",
-      "planned_postworkout_chicken_tender_180g_nov10"
+      "planned_lunch_shaxian_2legs_egg_rice250_cabbage300_nov10",
+      "planned_postworkout_chicken_tender_180g_nov10",
+      "afternoon_snack_buckwheat_crisps_50g_nov10",
+      "postworkout_buckwheat_crisps_extra_40g_nov10"
     ],
+    "included_planned_entry_ids": [],
     "projected_if_all_consumed": {
       "kcal": 2087.699689292543,
       "protein_g": 147.4495,
@@ -342,6 +404,13 @@
     "training_day_goal_kcal": [
       1900,
       2000
-    ]
+    ],
+    "actual_snapshot_at_report": {
+      "kcal": 2247.06871414914,
+      "protein_g": 149.6895,
+      "fat_g": 55.735499999999995,
+      "carbs_g": 277.628
+    },
+    "supersession_reason": "19:22用户确认面包一盒两块150g已吃、鸡小胸180g已吃并额外加40g锅巴；旧计划预测2087.70kcal不含新增40g，已被当前实际记录2247.07kcal取代，不以旧计划数作为今日新累计。"
   }
 }
