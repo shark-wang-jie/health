@@ -219,7 +219,7 @@
       "source_kind": "matched_default",
       "quantity_g": 180,
       "basis": "用户2026-11-10明确计划练后在整盒罗宋芝士面包外另吃180g鸡小胸；仅计划、尚未确认吃下。按2026-11-09已用相近款每100g527kJ/P28.6/F1.1/C0线性估算，待实际产品标签或实吃净重确认后转入实吃，不能提前计入当前累积。 用户2026-11-10 19:22明确已经练后吃下180g，将唯一原planned条目转为consumed_estimated，不重复追加一份。",
-      "uncertainty": "本次品牌/标签未确认；180g为用户计划食用重量，不等于已吃。当次如未全部吃完须按实吃调整。",
+      "uncertainty": "用户2026-11-10 19:22已确认练后实吃鸡小胸180g；本次品牌/标签未确认，暂沿历史相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0估算，若实际产品标签不同须原位更正。",
       "kcal_base_estimate": 226.72084130019118,
       "kcal_booked": 226.72084130019118,
       "kcal_range": [
@@ -321,6 +321,13 @@
       "to_status": "consumed",
       "quantity_g": 150,
       "per_piece_g": 75
+    },
+    {
+      "date": "2026-11-10",
+      "entry_id": "planned_postworkout_chicken_tender_180g_nov10",
+      "reason": "每日语义复核：依据本条reported_text、basis及19:22记录，消除仍将已确认实吃180g称为计划的过期不确定性描述；保留品牌与营养标签待核实，不改变摄入数值或稳定id。",
+      "from_uncertainty": "本次品牌/标签未确认；180g为用户计划食用重量，不等于已吃。当次如未全部吃完须按实吃调整。",
+      "to_uncertainty": "用户2026-11-10 19:22已确认练后实吃鸡小胸180g；本次品牌/标签未确认，暂沿历史相近即食鸡胸肉每100g527kJ/P28.6/F1.1/C0估算，若实际产品标签不同须原位更正。"
     }
   ],
   "notes": [
@@ -340,7 +347,7 @@
     "fat_g_estimate": 55.735499999999995,
     "carbs_g_estimate": 277.628,
     "intake_kcal_estimate": 2247.06871414914,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
       "protein_g": 149.6895,
       "fat_g": 55.735499999999995,
@@ -360,19 +367,19 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
+      "afternoon_snack": 2.8,
       "breakfast": 11.232,
-      "morning_snack": 3.0875,
-      "pre_and_postworkout": 10.35,
       "lunch": 68.5,
+      "morning_snack": 3.0875,
       "postworkout": 53.72,
-      "afternoon_snack": 2.8
+      "pre_and_postworkout": 10.35
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
