@@ -14,14 +14,15 @@
     "早餐空气炸锅烤红薯200g沿先前烤熟后称重、无额外油的约90kcal/100g口径；是否为全部可食重量及烤制失水程度可能改变实际热量。",
     "早餐后加餐荞麦锅巴描述‘小半包吃完了，大概二百克’；200g为估计的本次吃下净重，尚未称重或核对整包规格，若实际吃下不是200g须原位修订，热量变化较大。",
     "午餐按最新默认沙县双去皮鸡腿＋卤蛋＋熟饭250g＋少油白菜300g估850kcal，尚未逐项核实今天实际份量。",
-    "练后吐司仅报告一片，没有重量和包装，暂沿11月6日用户曾实吃一片45g同名牛奶吐司营养标签估116.16kcal，实际片重/品牌如不同要更正。",
-    "鸡小胸100g用户已确认吃下，品牌/具体营养标签未提供，暂按近期相近即食鸡胸肉约125.96kcal估算。"
+    "鸡小胸100g用户已确认吃下，品牌/具体营养标签未提供，暂按近期相近即食鸡胸肉约125.96kcal估算。",
+    "2026-11-11用户明确练后这片吐司不是历史45g牛奶吐司，而是更小的普通吐司；暂按普通吐司35g、93kcal估算，实际净重及产品标签未核实，可能影响热量，应以实际包装和重量为准。"
   ],
   "non_energy_pending_notes": [
     "用户2026-11-10为11月11日曾计划：午餐标准沙县双鸡腿饭（含卤蛋）、烤红薯全天合计640g、鸡肉肠4×50g、鸡小胸100g。11月11日08:15已确认鸡肉肠200g和红薯200g实吃；如仍按原计划，另有红薯440g、午餐沙县鸡腿饭、鸡小胸100g尚未确认实吃，均不计入当前摄入，也不擅自当作最终会吃下。",
     "2026-11-11 12:12：早餐后用户报告很饿，额外吃下约200g荞麦锅巴；午餐正常吃沙县鸡腿饭。前日计划剩余440g红薯和鸡小胸100g未报告吃下，依然只记作历史计划，不提前计实吃。",
     "2026-11-11 18:08：下午练前另吃100g烤红薯，已实际计入；用户未报告此次力量/有氧训练已经开始或完成，暂不登记任何workout。",
-    "2026-11-11 20:52用户明确‘无氧后’吃吐司1片＋鸡小胸100g，新增实际练后食物；已用Health核实Apple Watch一条18:12–19:05传统力量训练动态366.358kcal。用户未明确全天饮食或训练已结束，晚间有氧未报告，不应假定或计入。"
+    "2026-11-11 20:52用户明确‘无氧后’吃吐司1片＋鸡小胸100g，新增实际练后食物；已用Health核实Apple Watch一条18:12–19:05传统力量训练动态366.358kcal。用户未明确全天饮食或训练已结束，晚间有氧未报告，不应假定或计入。",
+    "2026-11-11晚间用户纠正：练后吐司是比45g牛奶吐司更小的普通吐司，不应再使用历史同款标签。只改原id估重为35g，绝不新增第二片，其他吃下食物和训练不变。"
   ],
   "trend_context": [],
   "weight_measurement_note": "2026-11-11用户晨报空腹86.90kg，较2026-11-10空腹86.90kg持平。",
@@ -216,30 +217,29 @@
       "id": "postworkout_toast_slice_est_45g_nov11",
       "status": "consumed_estimated",
       "meal": "postworkout",
-      "description": "无氧后实吃牛奶吐司1片（暂沿11月6日历史同款45g/片）",
-      "reported_text": "无氧后吃了一片吐司",
-      "source_kind": "matched_default",
+      "description": "训练后实吃普通原味吐司1片（比之前45g牛奶吐司小，暂按35g估量）",
+      "reported_text": "无氧后吃了一片吐司；用户随后明确不是之前的牛奶吐司，比那个小一点，按普通吐司计算",
+      "source_kind": "database_estimate",
       "quantity_pieces": 1,
-      "quantity_g_estimate": 45,
-      "basis": "2026-11-11 20:52用户明确练后吃了吐司一片，未报当次重量/品牌，按2026-11-06实吃一片45g牛奶吐司历史标签每100g1080kJ/P8.8/F5.2/C45.4/钠230mg暂估。以45g估116.16kcal/P3.96/F2.34/C20.43/钠103.5mg；该片是否与11月6日同款、重量是否45g未核实，随后有包装或克数可原位更正；不能当作用户今日明确称重45g。",
-      "uncertainty": "本次只说‘一片吐司’，没有报告重量或产品；按11月6日历史同名45g牛奶吐司暂估。片重、成分不同热量可变化，参考85–155kcal；本次实际是否为历史同款未确认。",
+      "quantity_g_estimate": 35,
+      "basis": "用户2026-11-11 20:52报告练后吐司1片，随后澄清这片不是11月6日45g的牛奶吐司，而是尺寸更小的普通吐司。遵照用户更正，把同一已吃条目原位由“历史牛奶吐司45g标签”改为“普通原味吐司暂按35g”，借常见普通吐司营养参考每100g约265kcal/P9g/F3.2g/C49g估算；35g约92.75kcal/P3.15g/F1.12g/C17.15g。35g是模型粗估不是用户报告的称重，真实片重/配方不明，后续有实际重量或包装时再同id更正，不增加第二片。",
+      "uncertainty": "用户明确否认与45g牛奶吐司同款，仅说尺寸比它小；暂按普通吐司35g点估算，不是实测净重。按每片约25–40g、不同配方每100g约260–280kcal，提供参考热量区间约65–115kcal（非置信区间）；如有真实称重、品牌、黄油/糖或烘烤加料，应重算。",
       "nutrition_per_100g": {
-        "energy_kj": 1080,
-        "protein_g": 8.8,
-        "fat_g": 5.2,
-        "carbs_g": 45.4,
-        "sodium_mg": 230
+        "energy_kcal_estimate": 265,
+        "protein_g": 9,
+        "fat_g": 3.2,
+        "carbs_g": 49,
+        "source": "通用普通吐司估算值，非本次包装标签"
       },
-      "kcal_base_estimate": 116.1567877629063,
-      "kcal_booked": 116.1567877629063,
+      "kcal_base_estimate": 92.75,
+      "kcal_booked": 92.75,
       "kcal_range": [
-        85,
-        155
+        65,
+        115
       ],
-      "protein_g_estimate": 3.96,
-      "fat_g_estimate": 2.34,
-      "carbs_g_estimate": 20.43,
-      "sodium_mg_estimate": 103.5
+      "protein_g_estimate": 3.15,
+      "fat_g_estimate": 1.1199999999999999,
+      "carbs_g_estimate": 17.15
     },
     {
       "id": "postworkout_chicken_tender_100g_nov11",
@@ -287,37 +287,61 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-11",
+      "entry_id": "postworkout_toast_slice_est_45g_nov11",
+      "reason": "用户明确纠正：此吐司不是此前45g牛奶吐司，而是更小的普通吐司；同一片原位替换计算，不重复记食。",
+      "before": {
+        "id": "postworkout_toast_slice_est_45g_nov11",
+        "description": "无氧后实吃牛奶吐司1片（暂沿11月6日历史同款45g/片）",
+        "quantity_g_estimate": 45,
+        "kcal_booked": 116.1567877629063,
+        "protein_g_estimate": 3.96,
+        "fat_g_estimate": 2.34,
+        "carbs_g_estimate": 20.43
+      },
+      "after": {
+        "description": "训练后实吃普通原味吐司1片（比之前45g牛奶吐司小，暂按35g估量）",
+        "quantity_g_estimate": 35,
+        "kcal_booked": 92.75,
+        "protein_g_estimate": 3.15,
+        "fat_g_estimate": 1.1199999999999999,
+        "carbs_g_estimate": 17.15
+      }
+    }
+  ],
   "notes": [
     "2026-11-11 08:15北京时间：空腹体重86.90kg，早餐实吃南瓜子6.9g、同款鸡肉肠4根总200g、空气炸锅烤红薯熟重200g；共约505.99kcal/P44.75/F11.27/C56.57。早餐均已食用，当日其余餐次和训练尚未报告，open、food_log_closed=false、training_status=unknown。固定tdee_v1 BMR1820.25×1.2＋运动动态×0.75－已记录摄入，从未更改。",
     "2026-11-11 12:12：早餐后仍非常饿，上午荞麦锅巴‘小半包’已吃完，用户粗估吃下200g，暂按历史包装每100g1667kJ计796.85kcal；午餐实际吃默认沙县双鸡腿饭850kcal。与原早餐505.99合计约2152.84kcal/P124.45/F44.37/C303.27。其余餐次、全天训练未报告，按open、training_status=unknown，不计算全天最终缺口。",
     "2026-11-11 18:08用户下午练前另外实吃空气炸锅烤熟红薯100g，沿无油熟重口径90kcal/P2/F0.15/C20.7。与早餐200g为两次不同进食，今日烤红薯已实吃300g，原定计划未吃剩余不可提前记入。只表明准备训练，未确认训练已完成，training_status仍unknown，日开放。",
-    "2026-11-11 20:52练后吐司1片暂按11月6日旧同款45g标签记116.1568kcal/P3.96/F2.34/C20.43，鸡小胸100g暂沿相近包装记125.9560kcal/P28.6/F1.1/C0。Health同日力量18:12:44–19:05:34动态366.358kcal，×0.75=274.7685kcal；全天实吃累计按旧午间锅巴约200g记2484.95kcal/P159.01/F47.96/C344.40。仍open，不计算最终缺口；确认全部训练和饮食结束后才封账。"
+    "2026-11-11 20:52练后吐司1片暂按11月6日旧同款45g标签记116.1568kcal/P3.96/F2.34/C20.43，鸡小胸100g暂沿相近包装记125.9560kcal/P28.6/F1.1/C0。Health同日力量18:12:44–19:05:34动态366.358kcal，×0.75=274.7685kcal；全天实吃累计按旧午间锅巴约200g记2484.95kcal/P159.01/F47.96/C344.40。仍open，不计算最终缺口；确认全部训练和饮食结束后才封账。",
+    "2026-11-11练后吐司纠错：用户否认与11/6牛奶吐司同款，普通吐司比45g那片小。原已吃单片条目原位改为普通吐司暂按35g、常见每100g265kcal/P9/F3.2/C49，即92.75kcal/P3.15/F1.12/C17.15，不是真实称重。今日累计据此修订；未封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2484.9500478011473,
-    "intake_kcal_booked": 2484.9500478011473,
-    "protein_g_estimate": 159.0128,
-    "fat_g_estimate": 47.95719999999999,
-    "carbs_g_estimate": 344.4027,
-    "intake_kcal_estimate": 2484.9500478011473,
+    "intake_kcal_base_estimate": 2461.543260038241,
+    "intake_kcal_booked": 2461.543260038241,
+    "protein_g_estimate": 158.2028,
+    "fat_g_estimate": 46.737199999999994,
+    "carbs_g_estimate": 341.12269999999995,
+    "intake_kcal_estimate": 2461.543260038241,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 159.0128,
-      "fat_g": 47.95719999999999,
-      "carbs_g": 344.4027
+      "protein_g": 158.2028,
+      "fat_g": 46.737199999999994,
+      "carbs_g": 341.12269999999995
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 91.5894999999993,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      2148.4682122370937,
-      2937.2062619502867
+      2128.4682122370937,
+      2897.2062619502867
     ],
     "exercise_active_kcal": 366.3579999999973,
     "exercise_adjusted_kcal": 274.76849999999797,
     "tdee_kcal_estimate": 2459.0684999999976,
-    "estimated_deficit_kcal": -25.881547801149736,
+    "estimated_deficit_kcal": -2.474760038243403,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -332,7 +356,7 @@
       "morning_snack": 11.2,
       "lunch": 68.5,
       "preworkout": 2,
-      "postworkout": 32.56
+      "postworkout": 31.75
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -353,8 +377,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1525.5,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 1422,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
