@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-11",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "今日只报告早餐；午餐、晚餐及训练情况仍未确认，按开放日记录，不把未报告当作没有。",
+    "早餐鸡肉肠按用户前一天明确的50g/根、11月4日同款593kJ/100g标签估算；如更换品牌或包装，按本次标签更正。",
+    "早餐空气炸锅烤红薯200g沿先前烤熟后称重、无额外油的约90kcal/100g口径；是否为全部可食重量及烤制失水程度可能改变实际热量。"
+  ],
+  "non_energy_pending_notes": [
+    "用户2026-11-10为11月11日曾计划：午餐标准沙县双鸡腿饭（含卤蛋）、烤红薯全天合计640g、鸡肉肠4×50g、鸡小胸100g。11月11日08:15已确认鸡肉肠200g和红薯200g实吃；如仍按原计划，另有红薯440g、午餐沙县鸡腿饭、鸡小胸100g尚未确认实吃，均不计入当前摄入，也不擅自当作最终会吃下。"
+  ],
+  "trend_context": [],
+  "weight_measurement_note": "2026-11-11用户晨报空腹86.90kg，较2026-11-10空腹86.90kg持平。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 86.9,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 86.9,
+    "bmr_weight_date": "2026-11-11",
+    "bmr_kcal": 1820.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_pumpkin_seeds_6p9g_nov11",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐南瓜子6.9g",
+      "reported_text": "早饭6.9g南瓜子",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 6.9,
+      "basis": "用户2026-11-11早晨明确实吃南瓜子6.9g；沿2026-11-10同款历史核验标签每100g2579kJ/P31.2/F48.8/C8.3换算，不额外上浮。",
+      "kcal_base_estimate": 42.53130975143404,
+      "kcal_booked": 42.53130975143404,
+      "kcal_range": [
+        42.53130975143404,
+        42.53130975143404
+      ],
+      "protein_g_estimate": 2.1528,
+      "fat_g_estimate": 3.3671999999999995,
+      "carbs_g_estimate": 0.5727000000000001
+    },
+    {
+      "id": "breakfast_chicken_sausages_4x50g_200g_nov11",
+      "status": "consumed",
+      "meal": "breakfast",
+      "description": "早餐鸡肉肠4根共200g（每根50g，沿11月4日同款包装）",
+      "reported_text": "早饭200g鸡肉肠",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 200,
+      "quantity_pieces": 4,
+      "basis": "用户2026-11-11早餐实吃鸡肉肠200g。用户前一日明确“之前吃过的50g一根的鸡肉肠4根”，匹配2026-11-04用户实际吃过的同款4根200g标签；每100g593kJ/P19.3g/F3.8g/C7.3g、钠595mg。按两倍换算，无额外用油报告；与150g/根的六号肠或蒜香肠标签不混用。",
+      "nutrition_per_100g": {
+        "energy_kj": 593,
+        "protein_g": 19.3,
+        "fat_g": 3.8,
+        "carbs_g": 7.3,
+        "sodium_mg": 595
+      },
+      "kcal_base_estimate": 283.4608030592734,
+      "kcal_booked": 283.4608030592734,
+      "kcal_range": [
+        283.4608030592734,
+        283.4608030592734
+      ],
+      "protein_g_estimate": 38.6,
+      "fat_g_estimate": 7.6,
+      "carbs_g_estimate": 14.6,
+      "sodium_mg_estimate": 1190
+    },
+    {
+      "id": "breakfast_airfryer_baked_sweet_potato_cooked_200g_nov11",
+      "status": "consumed_estimated",
+      "meal": "breakfast",
+      "description": "早餐空气炸锅烤红薯200g（烤熟后称重）",
+      "reported_text": "早饭200g烤红薯",
+      "source_kind": "matched_default",
+      "quantity_g": 200,
+      "weight_basis": "cooked_weight_edible_assumed",
+      "basis": "用户2026-11-10明确之前640g红薯是在空气炸锅烤熟后称重、未提额外加油；今晨报告早餐吃200g烤红薯，沿前次约90kcal/P2g/F0.15g/C20.7g每100g的烤熟可食份量估算。200g约180kcal/P4/F0.3/C41.4。红薯烤制失水、品种和是否带皮影响密度，参考200g约180–220kcal；如200g包含弃掉的皮或本次加油，应更正。",
+      "uncertainty": "本次沿前日空气炸锅无油烤红薯的烤熟称重口径，假定200g为吃下的可食部分；烤制脱水程度、品种和是否有皮未核实，使用180–220kcal作为估算范围而非精确数值。",
+      "kcal_base_estimate": 180,
+      "kcal_booked": 180,
+      "kcal_range": [
+        180,
+        220
+      ],
+      "protein_g_estimate": 4,
+      "fat_g_estimate": 0.3,
+      "carbs_g_estimate": 41.4
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-11 08:15北京时间：空腹体重86.90kg，早餐实吃南瓜子6.9g、同款鸡肉肠4根总200g、空气炸锅烤红薯熟重200g；共约505.99kcal/P44.75/F11.27/C56.57。早餐均已食用，当日其余餐次和训练尚未报告，open、food_log_closed=false、training_status=unknown。固定tdee_v1 BMR1820.25×1.2＋运动动态×0.75－已记录摄入，从未更改。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 505.99211281070745,
+    "intake_kcal_booked": 505.99211281070745,
+    "protein_g_estimate": 44.7528,
+    "fat_g_estimate": 11.267199999999999,
+    "carbs_g_estimate": 56.5727,
+    "intake_kcal_estimate": 505.99211281070745,
+    "food_margin_kcal": 0,
+    "base_macro_estimates": {
+      "protein_g": 44.7528,
+      "fat_g": 11.267199999999999,
+      "carbs_g": 56.5727
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      505.99211281070745,
+      545.9921128107075
+    ],
+    "exercise_active_kcal": 0,
+    "exercise_adjusted_kcal": 0,
+    "tdee_kcal_estimate": 2184.2999999999997,
+    "estimated_deficit_kcal": 1678.3078871892922,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800,
+      1800
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 44.7528
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1190,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
