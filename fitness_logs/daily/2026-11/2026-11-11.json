@@ -342,7 +342,7 @@
     "fat_g_estimate": 46.737199999999994,
     "carbs_g_estimate": 341.12269999999995,
     "intake_kcal_estimate": 2461.543260038241,
-    "food_margin_kcal": 0,
+    "food_margin_kcal": 0.0,
     "base_macro_estimates": {
       "protein_g": 158.2028,
       "fat_g": 46.737199999999994,
@@ -362,18 +362,18 @@
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1900,
-      2000
+      1900.0,
+      2000.0
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 44.7528,
-      "morning_snack": 11.2,
       "lunch": 68.5,
-      "preworkout": 2,
-      "postworkout": 31.75
+      "morning_snack": 11.2,
+      "postworkout": 31.75,
+      "preworkout": 2
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -392,7 +392,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1422,
+    "sodium_mg_known_sum": 1422.0,
     "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
