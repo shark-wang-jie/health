@@ -2,24 +2,25 @@
   "schema_version": 3,
   "date": "2026-11-12",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户北京时间2026-11-12夜明确“今天晚上有氧结束了 封账”，确认当天饮食与训练均结束；Health当日查询完整返回两条不同Apple Watch workout：17:43–18:39力量、21:41–22:42室内单车。沿用已有9项实吃，不将为11月13日准备的生538g→熟406g红薯算作今日摄入。food_coverage=partial仅保留对食品标签/净肉重量未核实的事实。",
   "food_coverage": "partial",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "截至2026-11-12 18:46，今日已报告早餐、上午加餐、午餐、无氧后食物（熟红薯140g＋余下鸡腿4根＋海鲜四重奏饭团1个）；Apple Health已同步一条力量训练，全天训练/饮食是否全部结束尚未确认，日记录保持open。",
     "一瓶牛奶按历史悦鲜活260mL同款包装暂估，今次实际品牌容量未核对。",
     "120g烤红薯沿2026-11-11实测空气炸锅烤前336.4g、烤后269.7g的生熟重量系数，按今日吃下熟重120g计算；是否同批、食用净重含皮、品种等有估算误差。",
     "午餐照片中鸡小腿带皮外观明显，暂按用户一直沿用的去皮吃法估算；若午餐实际连皮食用或可食净肉重量不同需修正，不能依据照片直接确认去皮。",
     "马记永拉面600kcal为餐馆常规一碗及照片估值，不是官方营养标签，面量、肉量、汤及油未知；预计参考450–750kcal。",
-    "海鲜四重奏饭团仅知道吃了1个，品牌、净重和配料/营养表未知；暂用通用110g、210kcal/P6/F6/C33并保留160–280kcal范围，如提供标签应原位更正。"
+    "海鲜四重奏饭团仅知道吃了1个，品牌、净重和配料/营养表未知；暂用通用110g、210kcal/P6/F6/C33并保留160–280kcal范围，如提供标签应原位更正。",
+    "用户已确认11月12日全部饮食和运动结束、日已封账；food_coverage=partial只代表马记永兰州拉面、海鲜四重奏饭团、9根去皮卤鸡小腿及红薯等食物量和标签存在估算误差，不代表仍有待吃食物。"
   ],
   "non_energy_pending_notes": [
     "用户2026-11-11晚为2026-11-12安排午餐三根去皮卤鸡小腿＋一份马记永兰州拉面、晚餐烤红薯200g＋三根卤鸡小腿；早餐原拟一根六号肠和一瓶牛奶，后改考虑200g鸡肉肠。2026-11-12早晨已经确认早餐实际是200g鸡肉肠和一瓶牛奶、另有南瓜子6.9g，上午另外吃了熟重红薯120g；午餐与晚餐的计划未报告实吃，不累计。",
     "2026-11-12 12:26鸡腿一碗实际9根而不是原计划6根：午餐实吃5根，剩下4根准备练后吃，记录为planned而非consumed；后续如已吃4根则同稳定id转为consumed_estimated，防止重复累计。",
-    "2026-11-12 18:46：练后报告4根鸡腿已经吃下，原同一碗9根全部吃完（午餐5＋练后4）；计划条目原位转实吃，不增加另一个4根条目。另吃烤红薯熟重140g、海鲜四重奏饭团1个；今天红薯实际120＋140=260g。Apple Health查到17:43–18:39单次传统力量，尚未确认训练全部结束。"
+    "2026-11-12 18:46：练后报告4根鸡腿已经吃下，原同一碗9根全部吃完（午餐5＋练后4）；计划条目原位转实吃，不增加另一个4根条目。另吃烤红薯熟重140g、海鲜四重奏饭团1个；今天红薯实际120＋140=260g。Apple Health查到17:43–18:39单次传统力量，尚未确认训练全部结束。",
+    "为11月13日另烤红薯：生538g→熟406g（熟重约114kcal/100g，仅备餐），未计入11月12日实吃或今日日结。"
   ],
   "trend_context": [],
   "weight_measurement_note": "2026-11-12用户早晨明确报告空腹体重86.85kg，较2026-11-11的86.90kg少0.05kg，可能为正常日常体重与水分波动，不据此推断脂肪变化。",
@@ -285,7 +286,22 @@
       "active_kcal": 422.46344430647787,
       "raw_health_workout_total_energy_kcal": 422.46344430647787,
       "energy_interpretation_basis": "同款Apple Watch HKWorkout.totalEnergyBurned的单次训练动态值，固定×0.75记录，不把全天活动圆环重复相加。",
-      "uncertainty": "设备估算非直接实测真实能量；截至18:46仅见一条力量，不等于用户确认今日全部训练结束。"
+      "uncertainty": "Apple Watch运动消耗是设备估计，用户2026-11-12夜确认当天全部训练结束；Health同日核实下午力量及晚间室内单车是两段不重叠的训练，只各计一次。"
+    },
+    {
+      "id": "evening_indoor_cycling_health_2026_11_12_214141",
+      "event_id": "apple_health_workout_2026_11_12_214141",
+      "type": "室内单车有氧",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 13)",
+      "start_local": "2026-11-12T21:41:41.207000+08:00",
+      "end_local": "2026-11-12T22:42:34.000000+08:00",
+      "duration_seconds": 3652.7935490608215,
+      "source": "Apple Health 2026-11-12 Asia/Shanghai当日完整workout查询，Apple Watch独立室内单车；用户夜间明确全部训练结束并封账。",
+      "energy_scope": "session_active",
+      "active_kcal": 657.1349999999973,
+      "raw_health_workout_total_energy_kcal": 657.1349999999973,
+      "energy_interpretation_basis": "Apple Watch同源HKWorkout.totalEnergyBurned作为当次动态能量，使用固定0.75系数且只计一次；不与全天活动能量圆环叠加。",
+      "uncertainty": "手表训练能量为设备估计，不是准确实测值；当日全部运动结束已获用户确认。"
     }
   ],
   "recovery": {
@@ -298,7 +314,8 @@
   "notes": [
     "2026-11-12 10:18北京时间：空腹86.85kg（前日86.90，差-0.05kg）；早餐实吃南瓜子6.9g、鸡肉肠200g、牛奶一瓶（暂沿悦鲜活260mL），上午加餐空气炸锅烤红薯熟重120g（按昨晚生336.4g→烤后269.7g折算）。共4项已吃633.06kcal/P52.51/F21.26/C57.74，其中红薯128.72kcal。用户只报告至上午，午晚餐计划非实吃，训练未知，open、不封账、不把暂时的TDEE−摄入当最终全天缺口。",
     "2026-11-12 12:26用户照片报告午餐马记永兰州牛肉拉面1碗（暂600kcal/P25/F16/C89）和卤鸡小腿实吃5根（按历史周一同等大小去皮5根625kcal/P95/F27.17/C2.5），另4根仅计划练后吃。当前实吃6项约1858.06kcal/P172.51/F64.42/C149.24；尚未封账。",
-    "2026-11-12 18:46：用户练后实吃熟红薯140g（按80.17%出成率估150.18kcal）、同一碗余下卤鸡小腿4根（从planned原位变consumed_estimated，约500kcal）、海鲜四重奏饭团1个（无同款标签，暂210kcal）。Health力量17:43:41–18:39:11，单次动态422.46kcal，×0.75折算316.85kcal；仍open、training_coverage=partial。"
+    "2026-11-12 18:46：用户练后实吃熟红薯140g（按80.17%出成率估150.18kcal）、同一碗余下卤鸡小腿4根（从planned原位变consumed_estimated，约500kcal）、海鲜四重奏饭团1个（无同款标签，暂210kcal）。Health力量17:43:41–18:39:11，单次动态422.46kcal，×0.75折算316.85kcal；仍open、training_coverage=partial。",
+    "2026-11-12夜封账：用户明确有氧结束并请求封账，视为今日全部进食训练结束。Health查得两段：力量17:43–18:39动态422.4634kcal，室内单车21:41–22:42动态657.1350kcal，共1079.5984kcal×0.75=809.6988kcal。BMR1819.75×1.2=2183.70、TDEE2993.40、已记录进食9项2718.24，模型估算缺口275.16kcal。食品记录仍有估算范围，strict complete field为null；2026-11-13备餐红薯不入本日。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2718.2371178478174,
@@ -314,16 +331,16 @@
       "carbs_g": 219.33721612903227
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 105.61586107661947,
+    "training_discount_kcal": 269.89961107661884,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       2344.338193116635,
       3119.338193116635
     ],
-    "exercise_active_kcal": 422.46344430647787,
-    "exercise_adjusted_kcal": 316.8475832298584,
-    "tdee_kcal_estimate": 2500.547583229858,
-    "estimated_deficit_kcal": -217.68953461795945,
+    "exercise_active_kcal": 1079.5984443064751,
+    "exercise_adjusted_kcal": 809.6988332298563,
+    "tdee_kcal_estimate": 2993.398833229856,
+    "estimated_deficit_kcal": 275.16171538203844,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -341,8 +358,6 @@
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -364,5 +379,29 @@
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "calorie_balance_review": {
+    "date": "2026-11-12",
+    "preferred_method": "tdee_v1",
+    "report_scope": "user_confirmed_complete_food_and_training_model_estimate",
+    "source": "User confirms cardio finished and final closure; full local-day Apple Health workout query found two nonoverlapping Apple Watch workouts.",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 275.16171538203844,
+      "value_rounded_kcal": 275,
+      "method": "tdee_v1",
+      "formula": "BMR×1.2 + Σ(single-session Apple Health workout dynamic kcal)×0.75 − recorded food kcal",
+      "bmr_kcal": 1819.75,
+      "base_activity_kcal": 2183.7,
+      "session_active_kcal_sum": 1079.5984443064751,
+      "session_active_kcal_booked_75pct": 809.6988332298563,
+      "tdee_kcal_estimate": 2993.398833229856,
+      "intake_kcal_estimate": 2718.2371178478174,
+      "training_complete": true,
+      "food_log_closed": true,
+      "food_coverage": "partial",
+      "interpretation": "今日全部饮食训练确认结束，按9项已记录实吃和2段Apple Watch运动估算缺口275.16kcal；餐食重量和品牌未完全核实，非精确真实缺口。"
+    },
+    "excluded_double_counts": "不加全天动态能量圆环、不重复算原已记录力量；为明天烤的红薯不算今天实际进食。",
+    "uncertainty": "午餐鸡腿5根＋练后4根为同一碗9根，净肉重量、是否去皮及卤汁未知；饭团无明确包装净重和标签，拉面估600kcal；设备运动消耗也有误差。"
   }
 }
