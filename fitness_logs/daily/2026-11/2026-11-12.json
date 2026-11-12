@@ -6,18 +6,20 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [
-    "截至2026-11-12 12:26，上午实吃4项、午餐实吃马记永兰州牛肉拉面1碗及鸡小腿5根；剩余4根只有练后计划，未确认实吃；晚餐和全天训练尚未确认，日记录保持open。",
+    "截至2026-11-12 18:46，今日已报告早餐、上午加餐、午餐、无氧后食物（熟红薯140g＋余下鸡腿4根＋海鲜四重奏饭团1个）；Apple Health已同步一条力量训练，全天训练/饮食是否全部结束尚未确认，日记录保持open。",
     "一瓶牛奶按历史悦鲜活260mL同款包装暂估，今次实际品牌容量未核对。",
     "120g烤红薯沿2026-11-11实测空气炸锅烤前336.4g、烤后269.7g的生熟重量系数，按今日吃下熟重120g计算；是否同批、食用净重含皮、品种等有估算误差。",
     "午餐照片中鸡小腿带皮外观明显，暂按用户一直沿用的去皮吃法估算；若午餐实际连皮食用或可食净肉重量不同需修正，不能依据照片直接确认去皮。",
-    "马记永拉面600kcal为餐馆常规一碗及照片估值，不是官方营养标签，面量、肉量、汤及油未知；预计参考450–750kcal。"
+    "马记永拉面600kcal为餐馆常规一碗及照片估值，不是官方营养标签，面量、肉量、汤及油未知；预计参考450–750kcal。",
+    "海鲜四重奏饭团仅知道吃了1个，品牌、净重和配料/营养表未知；暂用通用110g、210kcal/P6/F6/C33并保留160–280kcal范围，如提供标签应原位更正。"
   ],
   "non_energy_pending_notes": [
     "用户2026-11-11晚为2026-11-12安排午餐三根去皮卤鸡小腿＋一份马记永兰州拉面、晚餐烤红薯200g＋三根卤鸡小腿；早餐原拟一根六号肠和一瓶牛奶，后改考虑200g鸡肉肠。2026-11-12早晨已经确认早餐实际是200g鸡肉肠和一瓶牛奶、另有南瓜子6.9g，上午另外吃了熟重红薯120g；午餐与晚餐的计划未报告实吃，不累计。",
-    "2026-11-12 12:26鸡腿一碗实际9根而不是原计划6根：午餐实吃5根，剩下4根准备练后吃，记录为planned而非consumed；后续如已吃4根则同稳定id转为consumed_estimated，防止重复累计。"
+    "2026-11-12 12:26鸡腿一碗实际9根而不是原计划6根：午餐实吃5根，剩下4根准备练后吃，记录为planned而非consumed；后续如已吃4根则同稳定id转为consumed_estimated，防止重复累计。",
+    "2026-11-12 18:46：练后报告4根鸡腿已经吃下，原同一碗9根全部吃完（午餐5＋练后4）；计划条目原位转实吃，不增加另一个4根条目。另吃烤红薯熟重140g、海鲜四重奏饭团1个；今天红薯实际120＋140=260g。Apple Health查到17:43–18:39单次传统力量，尚未确认训练全部结束。"
   ],
   "trend_context": [],
   "weight_measurement_note": "2026-11-12用户早晨明确报告空腹体重86.85kg，较2026-11-11的86.90kg少0.05kg，可能为正常日常体重与水分波动，不据此推断脂肪变化。",
@@ -207,13 +209,13 @@
     {
       "id": "planned_postworkout_braised_drumsticks_4_nov12",
       "meal": "postworkout",
-      "status": "planned",
-      "description": "原一碗9根鸡小腿剩余4根，用户计划练后再吃，未确认实吃",
-      "reported_text": "剩下四个准备练后吃",
+      "status": "consumed_estimated",
+      "description": "练后实吃余下4根卤鸡小腿（与午餐5根为同一碗共9根；历史默认去皮不吃骨）",
+      "reported_text": "无氧练后……四个鸡腿（午餐后余下的四个）",
       "source_kind": "matched_default",
       "quantity_pieces": 4,
-      "basis": "同一份9根卤鸡小腿，午餐5根已吃，剩余4根仅计划训练后进食。按周一去皮卤鸡小腿历史3根375kcal/P57/F16.3/C1.5估计未来4根500kcal/P76/F21.73/C2，但status=planned，本日实际摄入绝不计入；如果后续吃下则把本条原位改成consumed_estimated，不能重复新增。",
-      "uncertainty": "剩余四根尚未吃，仅为计划；和午餐五根为同一碗，去皮状态及熟净肉重未确认。",
+      "basis": "同一份9根卤鸡小腿，午餐5根已吃，剩余4根仅计划训练后进食。按周一去皮卤鸡小腿历史3根375kcal/P57/F16.3/C1.5估计未来4根500kcal/P76/F21.73/C2，但status=planned，本日实际摄入绝不计入；如果后续吃下则把本条原位改成consumed_estimated，不能重复新增。 2026-11-12 18:46用户确认无氧练后已经吃下原计划剩余4根，本条原位从planned转为consumed_estimated，不再新增第二组4根，今日共9根鸡小腿实吃。",
+      "uncertainty": "用户明确练后实吃4根，但实际是否去皮、肉净重及卤汁含油量未知；暂沿周一同等尺寸去皮不吃骨默认估500kcal/P76/F21.73/C2。图片显示鸡皮未去除的外观，若实际连皮食用需更正。",
       "kcal_base_estimate": 500,
       "kcal_booked": 500,
       "kcal_range": [
@@ -223,9 +225,69 @@
       "protein_g_estimate": 76,
       "fat_g_estimate": 21.733333333333334,
       "carbs_g_estimate": 2
+    },
+    {
+      "id": "postworkout_airfryer_baked_sweet_potato_140g_nov12",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后烤红薯熟重140g（按昨晚生熟出成率估算）",
+      "reported_text": "无氧练后140g烤红薯",
+      "source_kind": "database_estimate",
+      "quantity_g": 140,
+      "weight_basis": "baked_weight_assumed_edible",
+      "raw_equivalent_g_estimate": 174.6236559139785,
+      "baked_weight_yield_ratio": 0.8017241379310345,
+      "basis": "用户2026-11-12无氧后明确实吃140g烤红薯，沿11月11晚空气炸锅生336.4g→熟269.7g、出成率80.17%实测，140g熟红薯等同生约174.62g，通用生红薯86kcal/100g得约150.18kcal；P1.6/F0.1/C20.1每100g生重的通用估值按比例换算。和上午120g红薯为不同一份，今日熟红薯总260g；无额外加油仅历史默认。",
+      "uncertainty": "本次报告140g红薯，暂推定是空气炸锅烤熟后可食重量，若本批烤制失水不同、皮/尾端没吃、加油或品种不同应改写；热量范围约130–175kcal，不是精确实测营养。",
+      "kcal_base_estimate": 150.17634408602152,
+      "kcal_booked": 150.17634408602152,
+      "kcal_range": [
+        130,
+        175
+      ],
+      "protein_g_estimate": 2.793978494623656,
+      "fat_g_estimate": 0.1746236559139785,
+      "carbs_g_estimate": 35.09935483870968
+    },
+    {
+      "id": "postworkout_seafood_quartet_riceball_1pc_nov12",
+      "status": "consumed_estimated",
+      "meal": "postworkout",
+      "description": "练后海鲜四重奏饭团1个（包装重量/营养未提供，暂通用估算）",
+      "reported_text": "无氧练后……一个海鲜四重奏饭团",
+      "source_kind": "database_estimate",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 110,
+      "basis": "2026-11-12用户报告练后实吃1个名称为‘海鲜四重奏’的饭团。仓库常用食物中只有‘青芥蟹味柳饭团105g’，并非本款；仓库搜索未找到海鲜四重奏确切包装，公开搜索也无该品准确营养表。因当次重量、品牌及馅料/酱料未知，先以常见海鲜口味饭团一只约100–125g中点110g估约210kcal/P6/F6/C33，不冒充官方标签；若用户提供包装净重/每100g营养，按当次标签原位更正。",
+      "uncertainty": "未提供产品净重、营养标签、购买品牌和是否有高脂沙拉酱/油炸馅料，210kcal为通用粗估，暂参考160–280kcal；不能混用既有‘青芥蟹味柳饭团’95kcal的不同产品标签。",
+      "kcal_base_estimate": 210,
+      "kcal_booked": 210,
+      "kcal_range": [
+        160,
+        280
+      ],
+      "protein_g_estimate": 6,
+      "fat_g_estimate": 6,
+      "carbs_g_estimate": 33
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "strength_apple_health_2026_11_12_174341",
+      "event_id": "apple_health_workout_2026_11_12_174341",
+      "type": "传统力量训练（无氧）",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "start_local": "2026-11-12T17:43:41.724000+08:00",
+      "end_local": "2026-11-12T18:39:11.041000+08:00",
+      "duration_seconds": 3329.3173030614853,
+      "source": "Apple Health 2026-11-12 Asia/Shanghai 00:00–24:00 workout query, Apple Watch single session, synced by 18:46",
+      "energy_scope": "session_active",
+      "active_kcal": 422.46344430647787,
+      "raw_health_workout_total_energy_kcal": 422.46344430647787,
+      "energy_interpretation_basis": "同款Apple Watch HKWorkout.totalEnergyBurned的单次训练动态值，固定×0.75记录，不把全天活动圆环重复相加。",
+      "uncertainty": "设备估算非直接实测真实能量；截至18:46仅见一条力量，不等于用户确认今日全部训练结束。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -235,49 +297,51 @@
   "corrections": [],
   "notes": [
     "2026-11-12 10:18北京时间：空腹86.85kg（前日86.90，差-0.05kg）；早餐实吃南瓜子6.9g、鸡肉肠200g、牛奶一瓶（暂沿悦鲜活260mL），上午加餐空气炸锅烤红薯熟重120g（按昨晚生336.4g→烤后269.7g折算）。共4项已吃633.06kcal/P52.51/F21.26/C57.74，其中红薯128.72kcal。用户只报告至上午，午晚餐计划非实吃，训练未知，open、不封账、不把暂时的TDEE−摄入当最终全天缺口。",
-    "2026-11-12 12:26用户照片报告午餐马记永兰州牛肉拉面1碗（暂600kcal/P25/F16/C89）和卤鸡小腿实吃5根（按历史周一同等大小去皮5根625kcal/P95/F27.17/C2.5），另4根仅计划练后吃。当前实吃6项约1858.06kcal/P172.51/F64.42/C149.24；尚未封账。"
+    "2026-11-12 12:26用户照片报告午餐马记永兰州牛肉拉面1碗（暂600kcal/P25/F16/C89）和卤鸡小腿实吃5根（按历史周一同等大小去皮5根625kcal/P95/F27.17/C2.5），另4根仅计划练后吃。当前实吃6项约1858.06kcal/P172.51/F64.42/C149.24；尚未封账。",
+    "2026-11-12 18:46：用户练后实吃熟红薯140g（按80.17%出成率估150.18kcal）、同一碗余下卤鸡小腿4根（从planned原位变consumed_estimated，约500kcal）、海鲜四重奏饭团1个（无同款标签，暂210kcal）。Health力量17:43:41–18:39:11，单次动态422.46kcal，×0.75折算316.85kcal；仍open、training_coverage=partial。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1858.060773761796,
-    "intake_kcal_booked": 1858.060773761796,
-    "protein_g_estimate": 172.50763870967742,
-    "fat_g_estimate": 64.42354408602151,
-    "carbs_g_estimate": 149.2378612903226,
-    "intake_kcal_estimate": 1858.060773761796,
+    "intake_kcal_base_estimate": 2718.2371178478174,
+    "intake_kcal_booked": 2718.2371178478174,
+    "protein_g_estimate": 257.30161720430107,
+    "fat_g_estimate": 92.33150107526882,
+    "carbs_g_estimate": 219.33721612903227,
+    "intake_kcal_estimate": 2718.2371178478174,
     "food_margin_kcal": 0,
     "base_macro_estimates": {
-      "protein_g": 172.50763870967742,
-      "fat_g": 64.42354408602151,
-      "carbs_g": 149.2378612903226
+      "protein_g": 257.30161720430107,
+      "fat_g": 92.33150107526882,
+      "carbs_g": 219.33721612903227
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0,
+    "training_discount_kcal": 105.61586107661947,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1614.3381931166348,
-      2104.338193116635
+      2344.338193116635,
+      3119.338193116635
     ],
-    "exercise_active_kcal": 0,
-    "exercise_adjusted_kcal": 0,
-    "tdee_kcal_estimate": 2183.7,
-    "estimated_deficit_kcal": 325.6392262382037,
+    "exercise_active_kcal": 422.46344430647787,
+    "exercise_adjusted_kcal": 316.8475832298584,
+    "tdee_kcal_estimate": 2500.547583229858,
+    "estimated_deficit_kcal": -217.68953461795945,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800,
-      1800
+      1900,
+      2000
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 50.1128,
       "morning_snack": 2.3948387096774195,
-      "lunch": 120
+      "lunch": 120,
+      "postworkout": 84.79397849462366
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
