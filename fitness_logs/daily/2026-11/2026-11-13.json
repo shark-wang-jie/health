@@ -2,22 +2,24 @@
   "schema_version": 3,
   "date": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户确认饮食训练全部结束并要求封账，随后明确今天训练也暂停。",
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "截至2026-11-13午餐，已报告早餐3项及午餐同批剩余烤红薯；其他午餐食物、晚餐及训练未报告，不自动补全。",
+    "晚餐驴肉馆用餐不方便计量，菜品和份量未报告。整餐摄入未知，924.49kcal仅为已量化早午餐，不代表全天摄入，不报告全天缺口。",
     "牛奶仍沿悦鲜活260mL历史默认；当次包装未核验。",
     "红薯只说吃了三分之一，按昨日完整熟重406g的1/3估135.33g；烤前生538g的1/3估179.33g，净重、是否去皮可能影响热量。"
   ],
   "non_energy_pending_notes": [
     "昨日备餐红薯生538g→熟406g，今日早餐约1/3、午餐剩余2/3已吃完，整批只计一次。",
-    "此前计划南瓜子8g、午餐鸡小胸200g、晚间去驴肉馆仍未确认吃下，不计入。"
+    "此前计划南瓜子8g和午餐鸡小胸200g未确认吃下，不计入。驴肉馆晚餐已确认用餐，整餐未量化。"
   ],
-  "trend_context": [],
+  "trend_context": [
+    "2026-11-13自述感冒、肩膀疼，今日及接下来几天暂停训练，保留疾病和活动变化背景。"
+  ],
   "weight_measurement_note": "2026-11-13早晨空腹87.30kg，较11月12日86.85kg增加0.45kg。前一日大量卤鸡腿、拉面和力量有氧训练后可能水分/消化道波动，不能仅凭一次晨重认定为脂肪增加。",
   "plan_version": "2026-09-08-v3.2",
   "morning_weight_kg": 87.3,
@@ -176,12 +178,20 @@
     "hunger": null,
     "sleep_hours": null,
     "training_performance": null,
-    "fatigue_or_pain": null
+    "fatigue_or_pain": "用户自述肩膀有点疼、有点感冒，需要休息。具体侧别、诱因、症状及严重程度未报告，未医学确诊。",
+    "training_pause": {
+      "reported_date": "2026-11-13",
+      "start_date": "2026-11-13",
+      "end_date": null,
+      "reason": "肩膀疼及感冒自述，今天及接下来几天暂停训练",
+      "resume_basis": "恢复日期未定，不自动宣布恢复，不预建未来实际休息日。"
+    }
   },
   "corrections": [],
   "notes": [
     "2026-11-13 08:42北京时间用户报空腹87.30kg，较昨日86.85kg+0.45kg；早餐实吃鸡肉肠200g、牛奶1瓶（暂沿悦鲜活260mL）、昨日生538g→烤后406g红薯的1/3（熟重约135.33g，约154.23kcal）。目前累计616.03kcal/P50.83g/F17.92g/C63.13g，3项已吃。南瓜子8g是前日计划但未报告吃下，不计；午晚餐与训练未报告，open、不封账。",
-    "2026-11-13午餐用户确认吃了剩下的烤红薯：新增本批2/3约270.67g熟重，308.45kcal/P5.74/F0.36/C72.09。整批今日吃完；未确认其他食物或训练，保持open。"
+    "2026-11-13午餐用户确认吃了剩下的烤红薯：新增本批2/3约270.67g熟重，308.45kcal/P5.74/F0.36/C72.09。整批今日吃完；未确认其他食物或训练，保持open。",
+    "2026-11-13封账：用户确认饮食训练全部结束，晚餐驴肉馆无法计量，热量未知。已量化4项924.49kcal/P56.57/F18.28/C135.22仅为早午餐。随后明确今天训练也暂停，确认休息；肩膀疼、感冒自述，接下来几天暂停训练，恢复日期未知。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 924.4868833652008,
@@ -213,7 +223,7 @@
       1800.0,
       1800.0
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 4,
     "protein_by_meal_g": {
@@ -221,9 +231,7 @@
       "lunch": 5.738666666666667
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -245,5 +253,26 @@
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "unquantified_meals": [
+    {
+      "id": "dinner_donkey_restaurant_nov13",
+      "meal": "dinner",
+      "consumption_confirmed": true,
+      "description": "晚餐驴肉馆用餐，不方便计量",
+      "kcal_estimate": null,
+      "protein_g_estimate": null,
+      "fat_g_estimate": null,
+      "carbs_g_estimate": null,
+      "basis": "用户明确饮食结束，晚餐整餐无法计量；不虚构菜品份量，未知不计为零。"
+    }
+  ],
+  "training_confirmation_basis": "用户明确补充今天训练也暂停，确认休息；Health同日workout查询无记录仅作辅助核对。",
+  "calorie_balance_review": {
+    "date": "2026-11-13",
+    "preferred_method": "tdee_v1",
+    "report_scope": "full_day_intake_unknown_due_to_unquantified_dinner",
+    "user_facing_daily_deficit_estimate": null,
+    "interpretation": "整段晚餐摄入未知，不得以部分摄入计算并呈报全天缺口，summary兼容差额仅为部分记录算术差。"
   }
 }

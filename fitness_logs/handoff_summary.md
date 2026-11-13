@@ -1,5 +1,14 @@
 # 健身记录交接摘要
-更新时间：2026-11-12夜（11月12日全部饮食和两段训练正式封账）
+更新时间：2026-11-13（今日饮食训练已封账；今日及接下来几天暂停训练）
+
+## 2026-11-13 已封账，晚餐未量化
+- 空腹87.30kg。用户明确全部饮食训练结束并封账，随后明确今天训练也暂停：record_status=final、food_log_closed=true、training_status=confirmed_rest、training_coverage=confirmed_complete。
+- 已量化早午餐4项合计924.49kcal，P56.57/F18.28/C135.22g，**仅部分摄入，不是全天总量**。早餐鸡肉肠200g、牛奶1瓶及红薯1/3；午餐吃完同批余下2/3。红薯整批生538g→熟406g，今日全部吃完，仅计一次。
+- 晚餐驴肉馆用餐不方便计量，保存在unquantified_meals，热量/宏量为null；food_coverage=partial。不估填、不算零，不以924.49kcal计算全天缺口。completed_day_estimated_deficit_kcal及用户可见全天缺口为null。
+- 计划南瓜子8g、午餐鸡小胸200g未确认吃下，不自动加入。
+- 用户自述肩膀有点疼、有点感冒，需要休息；**今天以及接下来几天暂停训练**，结束日期未定。记录为自述而非诊断，不自行宣布恢复；不提前创建未来休息日事实、不修改长期计划版本，不建议补偿性节食或加练。
+- Health查询上海11月13日workout无记录；今日休息以用户明确补充为依据，不以空查询推断。
+- 继续沿固定tdee_v1及现行食物口径，更正保留稳定id，原子提交并回读。历史详单以对应日JSON为准。
 
 ## 2026-11-12 已封账
 - **用户明确当晚有氧结束并要求封账**：record_status=final、food_log_closed=true、training_status=reported_training、training_coverage=confirmed_complete。food_coverage=partial仅由于餐食估算误差，并非仍有食物没吃完。
