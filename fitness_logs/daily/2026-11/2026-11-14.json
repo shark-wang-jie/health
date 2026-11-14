@@ -1,0 +1,274 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "截至下午已报告早午餐和加餐，晚餐及全天结束未确认。",
+    "酸奶品牌及约400g份量、仙贝小包净重、25g鸡肉肠产品标签未核实。",
+    "单鸡腿饭其他配菜沿历史默认，实际份量未核实。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "身体尚未完全恢复，近期肩膀疼和感冒自述，暂停训练安排延续。"
+  ],
+  "weight_measurement_note": "用户明确今天没有称体重，morning_weight_kg=null；BMR仅沿最近11月13日87.30kg，不作为今日实测体重。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": null,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 87.3,
+    "bmr_weight_date": "2026-11-13",
+    "bmr_kcal": 1824.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "description": "早餐酸奶约400g，暂沿历史大桶原味发酵乳",
+      "meal": "breakfast",
+      "source_kind": "matched_default",
+      "basis": "已确认同款每100克348千焦、蛋白质4克、脂肪5克、碳水5.6克；份数须为实际已知克数/100",
+      "kcal_base_estimate": 332.69598470363286,
+      "kcal_booked": 332.69598470363286,
+      "kcal_range": [
+        280,
+        400
+      ],
+      "protein_g_estimate": 16.0,
+      "fat_g_estimate": 20.0,
+      "carbs_g_estimate": 22.4,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "约400g非精确称量；本次品牌未说明，暂沿历史大桶每100g348kJ/P4/F5/C5.6，不是确认本次标签。",
+      "id": "breakfast_yogurt_approx400g_nov14",
+      "status": "consumed_estimated",
+      "catalog_id": "yogurt_bucket_100g",
+      "catalog_version": "2026-11-09-v8",
+      "servings": 4.0,
+      "quantity_g_estimate": 400,
+      "reported_text": "早饭大概四百克酸奶"
+    },
+    {
+      "description": "悦鲜活生牛乳260mL（营养标签2026-10-13更新，瓶规格经用户确认）",
+      "meal": "breakfast",
+      "source_kind": "matched_default",
+      "quantity_ml": 260,
+      "basis": "2026-10-13当次悦鲜活生牛乳标签每100mL：能量287kJ、蛋白质3.6g、脂肪3.9g、饱和脂肪2.7g、碳水4.8g、糖（乳糖）4.8g、钠60mg、钙125mg。用户明确确认整瓶260mL。按实际260mL换算，不额外加成。",
+      "kcal_base_estimate": 178.34608030592733,
+      "kcal_booked": 178.34608030592733,
+      "kcal_range": [
+        178.34608030592733,
+        178.34608030592733
+      ],
+      "protein_g_estimate": 9.360000000000001,
+      "fat_g_estimate": 10.14,
+      "carbs_g_estimate": 12.48,
+      "saturated_fat_g_estimate": 7.0200000000000005,
+      "sugar_g_estimate": 12.48,
+      "sodium_mg_estimate": 156.0,
+      "calcium_mg_estimate": 325,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "按标签含量与历史260mL默认规格，不额外加成"
+      },
+      "id": "breakfast_milk_bottle_nov14",
+      "status": "consumed_estimated",
+      "catalog_id": "milk_260ml",
+      "catalog_version": "2026-11-09-v8",
+      "servings": 1.0,
+      "uncertainty": "品牌规格未另说明，沿悦鲜活260mL历史同款。",
+      "reported_text": "一瓶牛奶"
+    },
+    {
+      "description": "沙县单去皮鸡腿饭：鸡腿1根、卤蛋1个、熟饭250g、少油白菜约300g（其他配菜沿默认）",
+      "meal": "lunch",
+      "source_kind": "matched_default",
+      "basis": "沿11月9日起850kcal双鸡腿默认，按用户明确改为1根，减去1根去皮鸡腿约195kcal，暂655kcal。宏量从默认P68.5/F27.5/C79.7减估一根P28.5/F8.5/C0，得P40/F19/C79.7；其余卤蛋、熟米饭250g、白菜300g沿套餐默认。已含少量油，不另加10%。",
+      "kcal_base_estimate": 655,
+      "kcal_booked": 655,
+      "kcal_range": [
+        550,
+        780
+      ],
+      "protein_g_estimate": 40,
+      "fat_g_estimate": 19,
+      "carbs_g_estimate": 79.7,
+      "margin": {
+        "added_fat_g": 0.0,
+        "added_carbs_g": 0.0,
+        "already_in_base": false,
+        "reason": "低油白菜的约3g用油/27kcal已含在850kcal的基础估算，不另加10%不确定餐馆用油余量；不确定性通过730–980kcal范围表达。"
+      },
+      "uncertainty": "仅鸡腿1根为当次明确数量；其余饭菜和卤蛋沿默认，去皮及可食净肉重未实称，宏量为近似。",
+      "quantity_rice_g_estimate": 250,
+      "id": "lunch_shaxian_single_leg_nov14",
+      "status": "consumed_estimated",
+      "catalog_id": "shaxian_two_skinless_legs",
+      "catalog_version": "2026-11-09-v8",
+      "servings": 1.0,
+      "reported_text": "午饭沙县鸡腿饭 但是只点了一个鸡腿"
+    },
+    {
+      "id": "afternoon_senbei_small_bag_nov14",
+      "meal": "afternoon_snack",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "description": "旺旺仙贝1小包，暂假设双片独立小袋约6g",
+      "reported_text": "下午一小包旺旺仙贝",
+      "quantity_g_estimate": 6,
+      "basis": "未提供包装净重，暂按双片独立小袋约6g。参考公开零售标签每100g477kcal/P4.2/F17.9/C74.8，估28.62kcal/P0.252/F1.074/C4.488；非本次中国大陆包装核实标签。",
+      "source_url": "https://shop.pxgo.com.tw/hourArrive/goods/246614-20464773-4710144201206",
+      "uncertainty": "小包实际克数、片数及版本未核实，参考20–60kcal；若不是双片小袋需原位更正。",
+      "kcal_base_estimate": 28.62,
+      "kcal_booked": 28.62,
+      "kcal_range": [
+        20,
+        60
+      ],
+      "protein_g_estimate": 0.252,
+      "fat_g_estimate": 1.074,
+      "carbs_g_estimate": 4.488
+    },
+    {
+      "id": "afternoon_chicken_sausage_25g_nov14",
+      "meal": "afternoon_snack",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "description": "鸡肉肠1根25g，暂借历史同类标签",
+      "reported_text": "一根25g鸡肉肠",
+      "quantity_g": 25,
+      "quantity_pieces": 1,
+      "basis": "25g来自用户明确报告；先借用历史鸡肉肠每100g593kJ/P19.3/F3.8/C7.3缩放为25g，35.43kcal/P4.825/F0.95/C1.825。历史单根50g，本次25g规格不同，不能宣称已核实同款。",
+      "uncertainty": "本次单根25g与历史50g不同，品牌和配方未确认，暂估范围25–70kcal，实际标签优先原位更正。",
+      "kcal_base_estimate": 35.43260038240918,
+      "kcal_booked": 35.43260038240918,
+      "kcal_range": [
+        25,
+        70
+      ],
+      "protein_g_estimate": 4.825,
+      "fat_g_estimate": 0.95,
+      "carbs_g_estimate": 1.825
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": "用户今日自述身体还没完全恢复；延续昨日肩膀疼、感冒自述，不推断已痊愈。",
+    "training_pause": {
+      "reported_date": "2026-11-13",
+      "start_date": "2026-11-13",
+      "end_date": null,
+      "reason": "此前明确接下来几天暂停训练，今日身体尚未完全恢复；尚未确认今日全天结束。"
+    }
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-14用户未称重；早餐约400g酸奶、牛奶1瓶；午餐沙县鸡腿饭改为单鸡腿；下午仙贝小包和25g鸡肉肠。只记本次5项；日内仍open，训练unknown不等于已恢复训练或确认全天休息。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 1230.0946653919693,
+    "intake_kcal_booked": 1230.0946653919693,
+    "protein_g_estimate": 70.437,
+    "fat_g_estimate": 51.164,
+    "carbs_g_estimate": 120.893,
+    "intake_kcal_estimate": 1230.0946653919693,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 70.437,
+      "fat_g": 51.164,
+      "carbs_g": 120.893
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      1053.3460803059274,
+      1488.3460803059274
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2189.1,
+    "estimated_deficit_kcal": 959.0053346080306,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 5,
+    "protein_by_meal_g": {
+      "afternoon_snack": 5.077,
+      "breakfast": 25.36,
+      "lunch": 40
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 156.0,
+    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
