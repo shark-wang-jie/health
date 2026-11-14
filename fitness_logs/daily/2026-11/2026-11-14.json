@@ -9,13 +9,16 @@
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "截至下午已报告早午餐和加餐，晚餐及全天结束未确认。",
+    "用户表示今晚热量不计，提到KFC、豆沙包、两包泡面；整段晚餐不量化，不以此前约1230kcal当作全天摄入或计算全天缺口。未明确各项已吃完或全天结束。",
     "酸奶品牌及约400g份量、仙贝小包净重、25g鸡肉肠产品标签未核实。",
     "单鸡腿饭其他配菜沿历史默认，实际份量未核实。"
   ],
-  "non_energy_pending_notes": [],
+  "non_energy_pending_notes": [
+    "用户计划明天恢复清淡饮食；仅为未来安排，不自动加入次日实吃或改变长期目标。"
+  ],
   "trend_context": [
-    "身体尚未完全恢复，近期肩膀疼和感冒自述，暂停训练安排延续。"
+    "身体尚未完全恢复，近期肩膀疼和感冒自述，暂停训练安排延续。",
+    "11月14日晚间报告浑身无力、很难受；晚餐不计热量，疾病和摄入缺失保留。"
   ],
   "weight_measurement_note": "用户明确今天没有称体重，morning_weight_kg=null；BMR仅沿最近11月13日87.30kg，不作为今日实测体重。",
   "plan_version": "2026-09-08-v3.2",
@@ -67,12 +70,12 @@
         280,
         400
       ],
-      "protein_g_estimate": 16.0,
-      "fat_g_estimate": 20.0,
+      "protein_g_estimate": 16,
+      "fat_g_estimate": 20,
       "carbs_g_estimate": 22.4,
       "margin": {
-        "added_fat_g": 0.0,
-        "added_carbs_g": 0.0,
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "沿用固定规格基础口径，不机械加成"
       },
@@ -81,7 +84,7 @@
       "status": "consumed_estimated",
       "catalog_id": "yogurt_bucket_100g",
       "catalog_version": "2026-11-09-v8",
-      "servings": 4.0,
+      "servings": 4,
       "quantity_g_estimate": 400,
       "reported_text": "早饭大概四百克酸奶"
     },
@@ -102,11 +105,11 @@
       "carbs_g_estimate": 12.48,
       "saturated_fat_g_estimate": 7.0200000000000005,
       "sugar_g_estimate": 12.48,
-      "sodium_mg_estimate": 156.0,
+      "sodium_mg_estimate": 156,
       "calcium_mg_estimate": 325,
       "margin": {
-        "added_fat_g": 0.0,
-        "added_carbs_g": 0.0,
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "按标签含量与历史260mL默认规格，不额外加成"
       },
@@ -114,7 +117,7 @@
       "status": "consumed_estimated",
       "catalog_id": "milk_260ml",
       "catalog_version": "2026-11-09-v8",
-      "servings": 1.0,
+      "servings": 1,
       "uncertainty": "品牌规格未另说明，沿悦鲜活260mL历史同款。",
       "reported_text": "一瓶牛奶"
     },
@@ -133,8 +136,8 @@
       "fat_g_estimate": 19,
       "carbs_g_estimate": 79.7,
       "margin": {
-        "added_fat_g": 0.0,
-        "added_carbs_g": 0.0,
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "低油白菜的约3g用油/27kcal已含在850kcal的基础估算，不另加10%不确定餐馆用油余量；不确定性通过730–980kcal范围表达。"
       },
@@ -144,7 +147,7 @@
       "status": "consumed_estimated",
       "catalog_id": "shaxian_two_skinless_legs",
       "catalog_version": "2026-11-09-v8",
-      "servings": 1.0,
+      "servings": 1,
       "reported_text": "午饭沙县鸡腿饭 但是只点了一个鸡腿"
     },
     {
@@ -195,7 +198,7 @@
     "hunger": null,
     "sleep_hours": null,
     "training_performance": null,
-    "fatigue_or_pain": "用户今日自述身体还没完全恢复；延续昨日肩膀疼、感冒自述，不推断已痊愈。",
+    "fatigue_or_pain": "用户今日自述身体还没完全恢复；延续昨日肩膀疼、感冒自述，不推断已痊愈。 晚间进一步自述‘今天浑身无力很难受’；体温、是否气短胸痛、饮水及排尿情况未报告，不能认定仅普通感冒。",
     "training_pause": {
       "reported_date": "2026-11-13",
       "start_date": "2026-11-13",
@@ -205,7 +208,8 @@
   },
   "corrections": [],
   "notes": [
-    "2026-11-14用户未称重；早餐约400g酸奶、牛奶1瓶；午餐沙县鸡腿饭改为单鸡腿；下午仙贝小包和25g鸡肉肠。只记本次5项；日内仍open，训练unknown不等于已恢复训练或确认全天休息。"
+    "2026-11-14用户未称重；早餐约400g酸奶、牛奶1瓶；午餐沙县鸡腿饭改为单鸡腿；下午仙贝小包和25g鸡肉肠。只记本次5项；日内仍open，训练unknown不等于已恢复训练或确认全天休息。",
+    "11月14日晚：用户自述浑身无力很难受，提到晚餐KFC、豆沙包、两包泡面并明确今晚热量不计，明天计划恢复清淡饮食。保留晚餐原话，不估填热量、不计为零，不宣称全部已吃完；未明确封账，保持open。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1230.0946653919693,
@@ -270,5 +274,39 @@
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
+  },
+  "unquantified_meals": [
+    {
+      "id": "dinner_kfc_buns_instant_noodles_nov14",
+      "meal": "dinner",
+      "reported_text": "晚上吃点好的 kfc 豆沙包 两包泡面 今晚热量不计了",
+      "description": "用户提到晚餐KFC、豆沙包、两包泡面，要求不计热量",
+      "consumption_confirmed": null,
+      "consumption_note": "原话未明确已全部吃下，保留晚餐安排及不量化指令，不补造实吃数量。",
+      "reported_items": [
+        {
+          "name": "KFC",
+          "quantity": null
+        },
+        {
+          "name": "豆沙包",
+          "quantity": null
+        },
+        {
+          "name": "泡面",
+          "quantity_packages": 2
+        }
+      ],
+      "kcal_estimate": null,
+      "protein_g_estimate": null,
+      "fat_g_estimate": null,
+      "carbs_g_estimate": null
+    }
+  ],
+  "calorie_balance_review": {
+    "date": "2026-11-14",
+    "report_scope": "unquantified_dinner_no_full_day_balance",
+    "user_facing_daily_deficit_estimate": null,
+    "interpretation": "晚餐整段不量化，已量化1230.09kcal仅早午餐和下午加餐，不能据此报告全天缺口。"
   }
 }
