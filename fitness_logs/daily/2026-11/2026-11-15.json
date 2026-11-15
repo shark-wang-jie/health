@@ -1,0 +1,179 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "仅确认早餐，午晚餐及今天全天训练尚未报告。",
+    "红薯本批生熟重量未提供，暂沿历史无油烤熟默认；鸡蛋做法和大小未知。"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [
+    "近期身体不适、暂停训练安排；11月13日晚餐未量化，11月14日晚间不计热量且未确认全部实吃。今日体重差异不能直接归为脂肪。"
+  ],
+  "weight_measurement_note": "用户报告11月15日空腹88.20kg。11月14日明确未称重；与最近实测11月13日87.30kg相比+0.90kg，是两次测量间差异，非昨日单日变化。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 88.2,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 88.2,
+    "bmr_weight_date": "2026-11-15",
+    "bmr_kcal": 1833.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_baked_sweet_potato_290g_nov15",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "description": "烤红薯290g，暂按无油烤后可食熟重",
+      "reported_text": "早饭290g烤红薯",
+      "quantity_g": 290,
+      "weight_basis": "baked_edible_weight_assumed",
+      "basis": "本次未提供该批烤前生重和整批熟重，不能套用11月12或13日另一批出成率。沿仓库reference/food_defaults.md无油烤熟蜜薯每100g120–150kcal、中位135kcal，290g暂391.5kcal。宏量粗估每100g P1.6/F0.2/C31.5，非标签实测。",
+      "uncertainty": "暂按熟重可食部分且无额外加油；品种、失水程度、皮是否吃下未知，参考348–435kcal。本批若有实测生熟重则原位修正。",
+      "kcal_base_estimate": 391.5,
+      "kcal_booked": 391.5,
+      "kcal_range": [
+        348,
+        435
+      ],
+      "protein_g_estimate": 4.64,
+      "fat_g_estimate": 0.58,
+      "carbs_g_estimate": 91.35
+    },
+    {
+      "id": "breakfast_whole_eggs_two_nov15",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "source_kind": "database_estimate",
+      "description": "全蛋2个，暂按普通大小水煮或无额外用油",
+      "reported_text": "两个鸡蛋",
+      "quantity_pieces": 2,
+      "basis": "按普通大小全蛋每个约75kcal，两个约150kcal/P12.6/F10.6/C1.2；暂假设无额外烹调油，未报告只吃蛋白，不扣蛋黄。",
+      "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考130–170kcal不含未知额外油。",
+      "kcal_base_estimate": 150,
+      "kcal_booked": 150,
+      "kcal_range": [
+        130,
+        170
+      ],
+      "protein_g_estimate": 12.6,
+      "fat_g_estimate": 10.6,
+      "carbs_g_estimate": 1.2
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null,
+    "training_pause": {
+      "reported_date": "2026-11-13",
+      "start_date": "2026-11-13",
+      "end_date": null,
+      "reason": "此前自述肩膀疼、感冒并计划暂停几天；11月14日晚浑身无力，11月15日尚未更新恢复程度，不推断痊愈。"
+    }
+  },
+  "corrections": [],
+  "notes": [
+    "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 541.5,
+    "intake_kcal_booked": 541.5,
+    "protein_g_estimate": 17.24,
+    "fat_g_estimate": 11.18,
+    "carbs_g_estimate": 92.55,
+    "intake_kcal_estimate": 541.5,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 17.24,
+      "fat_g": 11.18,
+      "carbs_g": 92.55
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      478.0,
+      605.0
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2199.9,
+    "estimated_deficit_kcal": 1658.4,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 17.24
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": null,
+    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  }
+}
