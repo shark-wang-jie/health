@@ -11,7 +11,7 @@
   "missing_sections": [
     "已确认早餐和练后餐，训练全天结束；其他餐食及全天饮食结束未确认，不默认漏报餐为零。",
     "红薯本批生熟重量未提供，暂沿历史无油烤熟默认；鸡蛋做法和大小未知。",
-    "重庆小面标签是否包含另附调料及额外用油未知；墨虾丸沿历史250g同款。"
+    "重庆小面另用酱料已按照片35g一份补记；暂按一份全计，实际放入份数及剩汤摄入不明。墨虾丸沿历史250g同款。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [
@@ -127,7 +127,7 @@
       "quantity_g": 240,
       "quantity_packages": 2,
       "basis": "用户今日包装照片每100g1330kJ/P10.2/F1.4/C65/钠345mg，明确每包120g；两包240g按标签换算。此前仅询问未录入，本次首次确认实吃。",
-      "uncertainty": "本次标签是否含另附调料未明确；额外油、调料、汤汁摄入未报告，未虚构计入。",
+      "uncertainty": "两包面仍按原面条照片每包120g计；本次补充另用35g酱料，独立条目仅计一次。额外用油未报告。",
       "kcal_base_estimate": 762.906309751434,
       "kcal_booked": 762.906309751434,
       "kcal_range": [
@@ -187,6 +187,29 @@
       "protein_g_estimate": 18.9,
       "fat_g_estimate": 15.9,
       "carbs_g_estimate": 1.8
+    },
+    {
+      "id": "postworkout_noodle_sauce_35g_nov15",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "description": "重庆小面所用酱料1份35g，暂按全份计入",
+      "reported_text": "重庆小面调味用的这个配料 35g的（附标签照片）",
+      "quantity_g": 35,
+      "quantity_packages_assumed": 1,
+      "basis": "本次照片右侧酱料栏每份35g：482kJ、蛋白质2.4g、脂肪7.2g、饱和脂肪3.3g、碳水10.3g、糖5.1g；482/4.184=115.20kcal。按用户本次35g描述暂记两包面共用一份酱料，非每包面各一份；左侧面饼80g栏不使用，不替换先前重庆小面120g标签。",
+      "uncertainty": "用户说明35g配料，暂假设共用一整份并全计；如用多包、未全放或剩汤未喝，应按实际原位更正，不直接认为汤料全部吃下。钠行被遮挡未可靠核实，保留未知。",
+      "kcal_base_estimate": 115.20076481835564,
+      "kcal_booked": 115.20076481835564,
+      "kcal_range": [
+        115.20076481835564,
+        115.20076481835564
+      ],
+      "protein_g_estimate": 2.4,
+      "fat_g_estimate": 7.2,
+      "carbs_g_estimate": 10.3,
+      "saturated_fat_g_estimate": 3.3,
+      "sugar_g_estimate": 5.1
     }
   ],
   "exercise_entries": [
@@ -257,32 +280,33 @@
   "notes": [
     "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。",
     "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。",
-    "11月15日用户确认今日训练结束，Health查得骑行、力量、步行共3段；练后实吃重庆小面240g、历史同款墨虾丸250g、全蛋3个。此前面条仅咨询，不重复。今日全蛋蛋类共6个（早餐3、练后3）。仅训练确认完成，饮食仍open。"
+    "11月15日用户确认今日训练结束，Health查得骑行、力量、步行共3段；练后实吃重庆小面240g、历史同款墨虾丸250g、全蛋3个。此前面条仅咨询，不重复。今日全蛋蛋类共6个（早餐3、练后3）。仅训练确认完成，饮食仍open。",
+    "11月15日补充练后面条所用配料照片：仅用右侧酱料35g栏482kJ/P2.4/F7.2/C10.3，暂按两包面共一份全计约115.20kcal。面条240g不重复，左侧80g面饼标签不适用于先前面条。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1826.0841300191205,
-    "intake_kcal_booked": 1826.0841300191205,
-    "protein_g_estimate": 103.41999999999999,
-    "fat_g_estimate": 37.49,
-    "carbs_g_estimate": 265.2,
-    "intake_kcal_estimate": 1826.0841300191205,
+    "intake_kcal_base_estimate": 1941.284894837476,
+    "intake_kcal_booked": 1941.284894837476,
+    "protein_g_estimate": 105.82,
+    "fat_g_estimate": 44.690000000000005,
+    "carbs_g_estimate": 275.5,
+    "intake_kcal_estimate": 1941.284894837476,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 103.41999999999999,
-      "fat_g": 37.49,
-      "carbs_g": 265.2
+      "protein_g": 105.82,
+      "fat_g": 44.690000000000005,
+      "carbs_g": 275.5
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.181538149679,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1722.5841300191205,
-      1929.5841300191205
+      1837.784894837476,
+      2044.784894837476
     ],
     "exercise_active_kcal": 1460.726152598716,
     "exercise_adjusted_kcal": 1095.544614449037,
     "tdee_kcal_estimate": 3295.444614449037,
-    "estimated_deficit_kcal": 1469.3604844299166,
+    "estimated_deficit_kcal": 1354.159719611561,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -291,10 +315,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 6,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
       "breakfast": 23.54,
-      "postworkout": 79.88
+      "postworkout": 82.28
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
