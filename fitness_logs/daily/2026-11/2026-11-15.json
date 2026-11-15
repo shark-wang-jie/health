@@ -95,6 +95,26 @@
       "protein_g_estimate": 12.6,
       "fat_g_estimate": 10.6,
       "carbs_g_estimate": 1.2
+    },
+    {
+      "id": "breakfast_extra_tea_egg_one_nov15",
+      "meal": "breakfast",
+      "status": "consumed_estimated",
+      "source_kind": "database_estimate",
+      "description": "早餐另吃茶叶蛋1个（全蛋）",
+      "reported_text": "又吃了一个茶叶蛋",
+      "quantity_pieces": 1,
+      "basis": "用户明确又吃一个，独立于已记录的2个鸡蛋；按普通大小茶叶蛋约75kcal/P6.3/F5.3/C0.6估算，无额外用油。",
+      "uncertainty": "实际蛋大小及卤汁配方未提供，参考65–85kcal；钠含量未知，不填零。",
+      "kcal_base_estimate": 75,
+      "kcal_booked": 75,
+      "kcal_range": [
+        65,
+        85
+      ],
+      "protein_g_estimate": 6.3,
+      "fat_g_estimate": 5.3,
+      "carbs_g_estimate": 0.6
     }
   ],
   "exercise_entries": [],
@@ -112,32 +132,33 @@
   },
   "corrections": [],
   "notes": [
-    "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。"
+    "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。",
+    "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 541.5,
-    "intake_kcal_booked": 541.5,
-    "protein_g_estimate": 17.24,
-    "fat_g_estimate": 11.18,
-    "carbs_g_estimate": 92.55,
-    "intake_kcal_estimate": 541.5,
+    "intake_kcal_base_estimate": 616.5,
+    "intake_kcal_booked": 616.5,
+    "protein_g_estimate": 23.54,
+    "fat_g_estimate": 16.48,
+    "carbs_g_estimate": 93.14999999999999,
+    "intake_kcal_estimate": 616.5,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 17.24,
-      "fat_g": 11.18,
-      "carbs_g": 92.55
+      "protein_g": 23.54,
+      "fat_g": 16.48,
+      "carbs_g": 93.14999999999999
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      478.0,
-      605.0
+      543.0,
+      690.0
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2199.9,
-    "estimated_deficit_kcal": 1658.4,
+    "estimated_deficit_kcal": 1583.4,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -146,9 +167,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "breakfast": 17.24
+      "breakfast": 23.54
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
