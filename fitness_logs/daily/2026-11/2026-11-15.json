@@ -2,16 +2,15 @@
   "schema_version": 3,
   "date": "2026-11-15",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户明确‘就按照全部吃完计算吧 今天饮食训练全部是结束’，按35g酱料全部计入并确认全天饮食训练结束。",
   "food_coverage": "partial",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "已确认早餐和练后餐，训练全天结束；其他餐食及全天饮食结束未确认，不默认漏报餐为零。",
     "红薯本批生熟重量未提供，暂沿历史无油烤熟默认；鸡蛋做法和大小未知。",
-    "重庆小面另用酱料已按照片35g一份补记；暂按一份全计，实际放入份数及剩汤摄入不明。墨虾丸沿历史250g同款。"
+    "重庆小面调味酱料35g已获用户明确按全部吃完计算；墨虾丸沿历史250g同款，未重拍标签。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [
@@ -191,14 +190,14 @@
     {
       "id": "postworkout_noodle_sauce_35g_nov15",
       "meal": "postworkout",
-      "status": "consumed_estimated",
-      "source_kind": "matched_default",
-      "description": "重庆小面所用酱料1份35g，暂按全份计入",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "description": "重庆小面酱料35g，用户确认按全部吃完计",
       "reported_text": "重庆小面调味用的这个配料 35g的（附标签照片）",
       "quantity_g": 35,
       "quantity_packages_assumed": 1,
-      "basis": "本次照片右侧酱料栏每份35g：482kJ、蛋白质2.4g、脂肪7.2g、饱和脂肪3.3g、碳水10.3g、糖5.1g；482/4.184=115.20kcal。按用户本次35g描述暂记两包面共用一份酱料，非每包面各一份；左侧面饼80g栏不使用，不替换先前重庆小面120g标签。",
-      "uncertainty": "用户说明35g配料，暂假设共用一整份并全计；如用多包、未全放或剩汤未喝，应按实际原位更正，不直接认为汤料全部吃下。钠行被遮挡未可靠核实，保留未知。",
+      "basis": "本次照片右侧酱料栏每份35g：482kJ、蛋白质2.4g、脂肪7.2g、饱和脂肪3.3g、碳水10.3g、糖5.1g；482/4.184=115.20kcal。按用户本次35g描述暂记两包面共用一份酱料，非每包面各一份；左侧面饼80g栏不使用，不替换先前重庆小面120g标签。 用户随后明确按全部吃完计算，原115.20kcal保持不变，不重复增加。",
+      "uncertainty": "35g全份计入获用户确认；钠行被遮挡未可靠核实，保留未知。",
       "kcal_base_estimate": 115.20076481835564,
       "kcal_booked": 115.20076481835564,
       "kcal_range": [
@@ -281,7 +280,8 @@
     "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。",
     "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。",
     "11月15日用户确认今日训练结束，Health查得骑行、力量、步行共3段；练后实吃重庆小面240g、历史同款墨虾丸250g、全蛋3个。此前面条仅咨询，不重复。今日全蛋蛋类共6个（早餐3、练后3）。仅训练确认完成，饮食仍open。",
-    "11月15日补充练后面条所用配料照片：仅用右侧酱料35g栏482kJ/P2.4/F7.2/C10.3，暂按两包面共一份全计约115.20kcal。面条240g不重复，左侧80g面饼标签不适用于先前面条。"
+    "11月15日补充练后面条所用配料照片：仅用右侧酱料35g栏482kJ/P2.4/F7.2/C10.3，暂按两包面共一份全计约115.20kcal。面条240g不重复，左侧80g面饼标签不适用于先前面条。",
+    "11月15日用户确认35g酱料按全部吃完计算，并确认全天饮食训练结束，正式封账。不新增食物、不改变既有热量；食材份量及数据库估值误差使food_coverage保留partial，允许带前提展示按已记录摄入的模型估算缺口，非实测。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1941.284894837476,
@@ -322,7 +322,6 @@
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -345,5 +344,22 @@
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
   },
-  "training_confirmation_basis": "用户明确今天训练已经结束；Health上海当日查询3段不同时间Apple Watch运动，全部各计一次。"
+  "training_confirmation_basis": "用户明确今天训练已经结束；Health上海当日查询3段不同时间Apple Watch运动，全部各计一次。",
+  "calorie_balance_review": {
+    "date": "2026-11-15",
+    "preferred_method": "tdee_v1",
+    "report_scope": "user_confirmed_complete_food_and_training_model_estimate",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 1354.159719611561,
+      "bmr_kcal": 1833.25,
+      "session_active_kcal_sum": 1460.726152598716,
+      "session_active_kcal_booked_75pct": 1095.544614449037,
+      "tdee_kcal_estimate": 3295.444614449037,
+      "intake_kcal_estimate": 1941.284894837476,
+      "food_log_closed": true,
+      "training_complete": true,
+      "food_coverage": "partial",
+      "interpretation": "用户确认全天饮食训练结束；按已记录7项饮食和3段训练，固定BMR×1.2＋训练动态×0.75－摄入计算。餐食及设备误差仍在，不是实测缺口；strict completed字段保留null。"
+    }
+  }
 }
