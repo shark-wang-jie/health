@@ -6,11 +6,12 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "仅确认早餐，午晚餐及今天全天训练尚未报告。",
-    "红薯本批生熟重量未提供，暂沿历史无油烤熟默认；鸡蛋做法和大小未知。"
+    "已确认早餐和练后餐，训练全天结束；其他餐食及全天饮食结束未确认，不默认漏报餐为零。",
+    "红薯本批生熟重量未提供，暂沿历史无油烤熟默认；鸡蛋做法和大小未知。",
+    "重庆小面标签是否包含另附调料及额外用油未知；墨虾丸沿历史250g同款。"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [
@@ -115,9 +116,129 @@
       "protein_g_estimate": 6.3,
       "fat_g_estimate": 5.3,
       "carbs_g_estimate": 0.6
+    },
+    {
+      "id": "postworkout_chongqing_noodles_240g_nov15",
+      "meal": "postworkout",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "description": "练后重庆小面2包，每包120g，共240g",
+      "reported_text": "练后两包重庆小面",
+      "quantity_g": 240,
+      "quantity_packages": 2,
+      "basis": "用户今日包装照片每100g1330kJ/P10.2/F1.4/C65/钠345mg，明确每包120g；两包240g按标签换算。此前仅询问未录入，本次首次确认实吃。",
+      "uncertainty": "本次标签是否含另附调料未明确；额外油、调料、汤汁摄入未报告，未虚构计入。",
+      "kcal_base_estimate": 762.906309751434,
+      "kcal_booked": 762.906309751434,
+      "kcal_range": [
+        762.906309751434,
+        762.906309751434
+      ],
+      "protein_g_estimate": 24.48,
+      "fat_g_estimate": 3.36,
+      "carbs_g_estimate": 156,
+      "sodium_mg_estimate": 828
+    },
+    {
+      "description": "潮汕味道墨虾丸250g/包",
+      "meal": "postworkout",
+      "source_kind": "matched_default",
+      "quantity_g": 250,
+      "basis": "包装标签每100g：371kJ、蛋白质14.6g、脂肪0.7g、饱和脂肪0.3g、碳水5.7g、糖1.7g、钠508mg；用户确认一包250g。仅建立食物库，不能自动记为已吃。 2026-11-15用户明确练后吃一包，沿历史同款250g换算，不重复记入。",
+      "kcal_base_estimate": 221.67782026768643,
+      "kcal_booked": 221.67782026768643,
+      "kcal_range": [
+        221.67782026768643,
+        221.67782026768643
+      ],
+      "protein_g_estimate": 36.5,
+      "fat_g_estimate": 1.75,
+      "carbs_g_estimate": 14.25,
+      "saturated_fat_g_estimate": 0.75,
+      "sugar_g_estimate": 4.25,
+      "sodium_mg_estimate": 1270,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签已知，无需附加余量"
+      },
+      "id": "postworkout_moxiawan_one_bag_nov15",
+      "status": "consumed_estimated",
+      "reported_text": "一包墨虾丸",
+      "uncertainty": "本次未提供新包装，沿历史同款250g；若规格变化须原位更正。"
+    },
+    {
+      "id": "postworkout_whole_eggs_three_nov15",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "source_kind": "database_estimate",
+      "description": "练后另吃全蛋3个，暂按无额外用油",
+      "reported_text": "练后三个鸡蛋",
+      "quantity_pieces": 3,
+      "basis": "用户明确练后实吃3个，独立于早餐2个鸡蛋和1个茶叶蛋；每个75kcal，无额外油暂估。",
+      "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考130–170kcal不含未知额外油。",
+      "kcal_base_estimate": 225,
+      "kcal_booked": 225,
+      "kcal_range": [
+        195,
+        255
+      ],
+      "protein_g_estimate": 18.9,
+      "fat_g_estimate": 15.9,
+      "carbs_g_estimate": 1.8
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "apple_health_workout_1794704807150",
+      "event_id": "apple_health_workout_1794704807150",
+      "type": "骑行",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 13)",
+      "start_local": "2026-11-15T09:06:47.150000+08:00",
+      "end_local": "2026-11-15T09:46:08.703000+08:00",
+      "duration_seconds": 2361.552831053734,
+      "distance_m": null,
+      "source": "Apple Health / 王洁的Apple Watch",
+      "energy_scope": "session_active",
+      "active_kcal": 267.40480696706817,
+      "raw_health_workout_total_energy_kcal": 267.40480696706817,
+      "energy_interpretation_basis": "已核实同源HKWorkout.totalEnergyBurned单次动态能量，只乘0.75一次，不加全天活动圆环。",
+      "uncertainty": "设备估计非实测代谢；用户确认全天训练结束。"
+    },
+    {
+      "id": "apple_health_workout_1794718769814",
+      "event_id": "apple_health_workout_1794718769814",
+      "type": "传统力量训练",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 50)",
+      "start_local": "2026-11-15T12:59:29.814000+08:00",
+      "end_local": "2026-11-15T14:11:52.477000+08:00",
+      "duration_seconds": 4342.663423895836,
+      "distance_m": null,
+      "source": "Apple Health / 王洁的Apple Watch",
+      "energy_scope": "session_active",
+      "active_kcal": 473.678036438846,
+      "raw_health_workout_total_energy_kcal": 473.678036438846,
+      "energy_interpretation_basis": "已核实同源HKWorkout.totalEnergyBurned单次动态能量，只乘0.75一次，不加全天活动圆环。",
+      "uncertainty": "设备估计非实测代谢；用户确认全天训练结束。"
+    },
+    {
+      "id": "apple_health_workout_1794723538352",
+      "event_id": "apple_health_workout_1794723538352",
+      "type": "步行",
+      "activity_raw": "HKWorkoutActivityType(rawValue: 52)",
+      "start_local": "2026-11-15T14:18:58.352000+08:00",
+      "end_local": "2026-11-15T15:22:20.738000+08:00",
+      "duration_seconds": 3802.3851289749146,
+      "distance_m": 4046.141102090943,
+      "source": "Apple Health / 王洁的Apple Watch",
+      "energy_scope": "session_active",
+      "active_kcal": 719.6433091928018,
+      "raw_health_workout_total_energy_kcal": 719.6433091928018,
+      "energy_interpretation_basis": "已核实同源HKWorkout.totalEnergyBurned单次动态能量，只乘0.75一次，不加全天活动圆环。",
+      "uncertainty": "设备估计非实测代谢；用户确认全天训练结束。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -127,52 +248,55 @@
       "reported_date": "2026-11-13",
       "start_date": "2026-11-13",
       "end_date": null,
-      "reason": "此前自述肩膀疼、感冒并计划暂停几天；11月14日晚浑身无力，11月15日尚未更新恢复程度，不推断痊愈。"
+      "reason": "此前自述肩膀疼、感冒并计划暂停几天；11月14日晚浑身无力，11月15日尚未更新恢复程度，不推断痊愈。 用户随后明确今日训练已结束，实际训练已恢复；身体恢复程度仍未报告，不认定痊愈。",
+      "actual_training_resumed_date": "2026-11-15",
+      "status": "training_resumed_health_recovery_unconfirmed"
     }
   },
   "corrections": [],
   "notes": [
     "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。",
-    "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。"
+    "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。",
+    "11月15日用户确认今日训练结束，Health查得骑行、力量、步行共3段；练后实吃重庆小面240g、历史同款墨虾丸250g、全蛋3个。此前面条仅咨询，不重复。今日全蛋蛋类共6个（早餐3、练后3）。仅训练确认完成，饮食仍open。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 616.5,
-    "intake_kcal_booked": 616.5,
-    "protein_g_estimate": 23.54,
-    "fat_g_estimate": 16.48,
-    "carbs_g_estimate": 93.14999999999999,
-    "intake_kcal_estimate": 616.5,
+    "intake_kcal_base_estimate": 1826.0841300191205,
+    "intake_kcal_booked": 1826.0841300191205,
+    "protein_g_estimate": 103.41999999999999,
+    "fat_g_estimate": 37.49,
+    "carbs_g_estimate": 265.2,
+    "intake_kcal_estimate": 1826.0841300191205,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 23.54,
-      "fat_g": 16.48,
-      "carbs_g": 93.14999999999999
+      "protein_g": 103.41999999999999,
+      "fat_g": 37.49,
+      "carbs_g": 265.2
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "training_discount_kcal": 365.181538149679,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      543.0,
-      690.0
+      1722.5841300191205,
+      1929.5841300191205
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
-    "tdee_kcal_estimate": 2199.9,
-    "estimated_deficit_kcal": 1583.4,
+    "exercise_active_kcal": 1460.726152598716,
+    "exercise_adjusted_kcal": 1095.544614449037,
+    "tdee_kcal_estimate": 3295.444614449037,
+    "estimated_deficit_kcal": 1469.3604844299166,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800.0,
-      1800.0
+      1900.0,
+      2000.0
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
-      "breakfast": 23.54
+      "breakfast": 23.54,
+      "postworkout": 79.88
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
@@ -190,11 +314,12 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 2098.0,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
-  }
+  },
+  "training_confirmation_basis": "用户明确今天训练已经结束；Health上海当日查询3段不同时间Apple Watch运动，全部各计一次。"
 }
