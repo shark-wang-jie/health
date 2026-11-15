@@ -176,7 +176,7 @@
       "reported_text": "练后三个鸡蛋",
       "quantity_pieces": 3,
       "basis": "用户明确练后实吃3个，独立于早餐2个鸡蛋和1个茶叶蛋；每个75kcal，无额外油暂估。",
-      "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考130–170kcal不含未知额外油。",
+      "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考195–255kcal不含未知额外油。",
       "kcal_base_estimate": 225,
       "kcal_booked": 225,
       "kcal_range": [
@@ -317,6 +317,18 @@
         "user_facing_deficit_kcal": 557.3145953285784
       },
       "note": "新增真实加餐，原有条目和稳定id保留；此前封账汇总由本次重算替代。"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "semantic_review",
+      "entry_id": "postworkout_whole_eggs_three_nov15",
+      "old_value": {
+        "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考130–170kcal不含未知额外油。"
+      },
+      "new_value": {
+        "uncertainty": "鸡蛋大小和做法未说明；若煎炒用油或实际只吃蛋白须原位更正，当前参考195–255kcal不含未知额外油。"
+      },
+      "basis": "该条目明确为3个全蛋，已有kcal_range为195–255kcal；原说明误沿用2个全蛋的130–170kcal。仅同步文字范围，不改变数量、热量或宏量。"
     }
   ],
   "notes": [
