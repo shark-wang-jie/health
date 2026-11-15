@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "用户明确‘就按照全部吃完计算吧 今天饮食训练全部是结束’，按35g酱料全部计入并确认全天饮食训练结束。",
+  "closure_basis": "用户明确‘就按照全部吃完计算吧 今天饮食训练全部是结束’，按35g酱料全部计入并确认全天饮食训练结束。 其后用户补报夜间加餐200g荞麦锅巴，作为已封账日追加更正纳入，训练完成状态不变。",
   "food_coverage": "partial",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -209,6 +209,32 @@
       "carbs_g_estimate": 10.3,
       "saturated_fat_g_estimate": 3.3,
       "sugar_g_estimate": 5.1
+    },
+    {
+      "description": "夜间加餐荞麦锅巴200g，沿历史同款",
+      "meal": "late_snack",
+      "source_kind": "matched_default",
+      "basis": "用户封账后明确新增实吃200g，沿历史同款每100g1667kJ/P5.6/F2.8/C83.5按2倍计算，796.85kcal/P11.2/F5.6/C167。不重复既有任何食物。",
+      "kcal_base_estimate": 796.8451242829827,
+      "kcal_booked": 796.8451242829827,
+      "kcal_range": [
+        796.8451242829827,
+        796.8451242829827
+      ],
+      "protein_g_estimate": 11.2,
+      "fat_g_estimate": 5.6,
+      "carbs_g_estimate": 167,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "沿用固定规格基础口径，不机械加成"
+      },
+      "uncertainty": "200g为本次报告量，未说明是否实秤；产品标签沿历史同款，包装变化需原位更正。",
+      "id": "late_snack_buckwheat_cracker_200g_nov15",
+      "status": "consumed_estimated",
+      "quantity_g": 200,
+      "reported_text": "晚上太饿了 加餐二百克荞麦锅巴"
     }
   ],
   "exercise_entries": [
@@ -262,7 +288,7 @@
     }
   ],
   "recovery": {
-    "hunger": null,
+    "hunger": "晚上太饿，封账后新增荞麦锅巴200g。",
     "sleep_hours": null,
     "training_performance": null,
     "fatigue_or_pain": null,
@@ -275,38 +301,56 @@
       "status": "training_resumed_health_recovery_unconfirmed"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-15",
+      "type": "post_closure_addition",
+      "entry_id": "late_snack_buckwheat_cracker_200g_nov15",
+      "basis": "晚上太饿了 加餐二百克荞麦锅巴",
+      "old_value": {
+        "intake_kcal": 1941.284894837476,
+        "user_facing_deficit_kcal": 1354.159719611561
+      },
+      "new_value": {
+        "added_kcal": 796.8451242829827,
+        "intake_kcal": 2738.1300191204587,
+        "user_facing_deficit_kcal": 557.3145953285784
+      },
+      "note": "新增真实加餐，原有条目和稳定id保留；此前封账汇总由本次重算替代。"
+    }
+  ],
   "notes": [
     "11月15日空腹88.20kg，早餐实吃烤红薯290g、全蛋2个。红薯暂沿仓库无油烤熟135kcal/100g，未使用别批出成率；鸡蛋暂按无额外油。日记录open，不报全天缺口。",
     "11月15日早餐追加茶叶蛋1个，约75kcal，独立于此前全蛋2个；早餐累计蛋类3个，非更正或重复报餐。",
     "11月15日用户确认今日训练结束，Health查得骑行、力量、步行共3段；练后实吃重庆小面240g、历史同款墨虾丸250g、全蛋3个。此前面条仅咨询，不重复。今日全蛋蛋类共6个（早餐3、练后3）。仅训练确认完成，饮食仍open。",
     "11月15日补充练后面条所用配料照片：仅用右侧酱料35g栏482kJ/P2.4/F7.2/C10.3，暂按两包面共一份全计约115.20kcal。面条240g不重复，左侧80g面饼标签不适用于先前面条。",
-    "11月15日用户确认35g酱料按全部吃完计算，并确认全天饮食训练结束，正式封账。不新增食物、不改变既有热量；食材份量及数据库估值误差使food_coverage保留partial，允许带前提展示按已记录摄入的模型估算缺口，非实测。"
+    "11月15日用户确认35g酱料按全部吃完计算，并确认全天饮食训练结束，正式封账。不新增食物、不改变既有热量；食材份量及数据库估值误差使food_coverage保留partial，允许带前提展示按已记录摄入的模型估算缺口，非实测。",
+    "11月15日夜间因饥饿补报实吃荞麦锅巴200g，新增796.85kcal/P11.2/F5.6/C167。更新已封账日及交接，不把旧1941.28kcal摄入和1354.16kcal缺口继续作为最终值。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1941.284894837476,
-    "intake_kcal_booked": 1941.284894837476,
-    "protein_g_estimate": 105.82,
-    "fat_g_estimate": 44.690000000000005,
-    "carbs_g_estimate": 275.5,
-    "intake_kcal_estimate": 1941.284894837476,
+    "intake_kcal_base_estimate": 2738.1300191204587,
+    "intake_kcal_booked": 2738.1300191204587,
+    "protein_g_estimate": 117.02,
+    "fat_g_estimate": 50.290000000000006,
+    "carbs_g_estimate": 442.5,
+    "intake_kcal_estimate": 2738.1300191204587,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 105.82,
-      "fat_g": 44.690000000000005,
-      "carbs_g": 275.5
+      "protein_g": 117.02,
+      "fat_g": 50.290000000000006,
+      "carbs_g": 442.5
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 365.181538149679,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1837.784894837476,
-      2044.784894837476
+      2634.6300191204587,
+      2841.6300191204587
     ],
     "exercise_active_kcal": 1460.726152598716,
     "exercise_adjusted_kcal": 1095.544614449037,
     "tdee_kcal_estimate": 3295.444614449037,
-    "estimated_deficit_kcal": 1354.159719611561,
+    "estimated_deficit_kcal": 557.3145953285784,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -315,9 +359,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 23.54,
+      "late_snack": 11.2,
       "postworkout": 82.28
     },
     "warnings": [
@@ -350,16 +395,16 @@
     "preferred_method": "tdee_v1",
     "report_scope": "user_confirmed_complete_food_and_training_model_estimate",
     "user_facing_daily_deficit_estimate": {
-      "value_kcal": 1354.159719611561,
+      "value_kcal": 557.3145953285784,
       "bmr_kcal": 1833.25,
       "session_active_kcal_sum": 1460.726152598716,
       "session_active_kcal_booked_75pct": 1095.544614449037,
       "tdee_kcal_estimate": 3295.444614449037,
-      "intake_kcal_estimate": 1941.284894837476,
+      "intake_kcal_estimate": 2738.1300191204587,
       "food_log_closed": true,
       "training_complete": true,
       "food_coverage": "partial",
-      "interpretation": "用户确认全天饮食训练结束；按已记录7项饮食和3段训练，固定BMR×1.2＋训练动态×0.75－摄入计算。餐食及设备误差仍在，不是实测缺口；strict completed字段保留null。"
+      "interpretation": "用户已确认全天饮食训练结束，封账后追加夜间荞麦锅巴200g，现共8项饮食和3段训练。固定BMR×1.2＋训练动态×0.75－已记录摄入；餐食及设备误差仍在，非实测缺口，strict completed字段保留null。"
     }
   }
 }
