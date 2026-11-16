@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-09-v8",
+  "version": "2026-11-16-v9",
   "policy": "2026-11-09起按用户明确指令：以后提到“沙县鸡腿饭”/语境中的“鸡腿饭”，默认用11月9日午餐版本：两根去皮鸡腿（去皮沿历史习惯、当次以实际为准）、卤蛋1个、熟米饭250g、少油白菜约300g，约850kcal/P68.5g/F27.5g/C79.7g，热量参考范围730–980kcal；原750kcal无蛋少量白菜版本已废止为默认。历史已封账不自动追改；实际食物、数量、鸡皮和标签优先；仅确认已吃时录入，计划不计实际摄入。",
   "foods": {
     "wasabi_crab_riceball_105g": {
@@ -355,6 +355,34 @@
           "added_carbs_g": 0,
           "already_in_base": false,
           "reason": "标签已知，无需附加余量"
+        }
+      }
+    },
+    "seafood_quartet_riceball_105g": {
+      "entry": {
+        "meal": "未分类",
+        "source_kind": "label_known_quantity",
+        "description": "海鲜四重奏饭团1个105g，本次包装标签已核实",
+        "quantity_pieces": 1,
+        "basis": "用户2026-11-16确认海鲜四重奏饭团105g，提供标签每100g404kJ、P2.2/F3.8/C13.3、钠324mg。只用于此同款规格，实际包装优先；新增目录不自动改写历史实吃。",
+        "uncertainty": "按当次可读标签及用户确认105g计算；不把此标签自动追用于未核实的历史产品。",
+        "kcal_base_estimate": 101.38623326959848,
+        "kcal_booked": 101.38623326959848,
+        "kcal_range": [
+          101.38623326959848,
+          101.38623326959848
+        ],
+        "protein_g_estimate": 2.31,
+        "fat_g_estimate": 3.99,
+        "carbs_g_estimate": 13.965,
+        "quantity_g": 105,
+        "sodium_mg_estimate": 340.2,
+        "nutrition_per_100g": {
+          "energy_kj": 404,
+          "protein_g": 2.2,
+          "fat_g": 3.8,
+          "carbs_g": 13.3,
+          "sodium_mg": 324
         }
       }
     }

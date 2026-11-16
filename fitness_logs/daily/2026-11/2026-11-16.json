@@ -10,8 +10,8 @@
   "training_coverage": "partial",
   "missing_sections": [
     "已确认按早上计划的饮食执行并额外吃饭团；尚未明确全天饮食训练全部结束，保持open。",
-    "Health当日workout查询未返回记录，保留用户已训练事实；训练项目及动态热量待同步，不估填、不当作确认休息。",
-    "牛奶与鸡小胸沿历史规格；饭团规格标签未知，其他餐食份量有估算误差。"
+    "用户确认未戴手表，今日一小时力量已授权按近期4次同类训练时长加权平均暂估；非设备实测。",
+    "牛奶与鸡小胸沿历史规格；饭团105g及本次标签已核实，其他餐食份量有估算误差。"
   ],
   "non_energy_pending_notes": [
     "本批红薯471g熟重分早餐120g、练前120g、晚餐231g全部吃完，只计一次。"
@@ -224,33 +224,107 @@
     {
       "id": "postworkout_seafood_quartet_riceball_one_nov16",
       "meal": "postworkout",
-      "status": "consumed_estimated",
-      "source_kind": "database_estimate",
-      "description": "练后额外海鲜四重奏饭团1个，沿此前暂估",
+      "status": "consumed",
+      "source_kind": "label_known_quantity",
+      "description": "海鲜四重奏饭团1个105g，本次包装标签已核实",
       "reported_text": "练后额外加了一个海鲜四重奏饭团",
       "quantity_pieces": 1,
-      "basis": "沿11月12日同名海鲜四重奏饭团暂估210kcal/P6/F6/C33；品牌规格及标签仍未核实，不套用青芥蟹饭团95kcal。此次明确额外实吃1个，新建独立条目。",
-      "uncertainty": "实际净重、品牌、酱料及营养标签未知；通用估计范围160–280kcal，实际标签优先更正。",
-      "kcal_base_estimate": 210,
-      "kcal_booked": 210,
+      "basis": "用户2026-11-16提供当次包装照片并确认105g。标签每100g：404kJ、P2.2/F3.8/C13.3、钠324mg。按1.05倍换算：101.39kcal/P2.31/F3.99/C13.965/钠340.2mg。替换原210kcal通用暂估，保留原id，不新增一份。",
+      "uncertainty": "按当次可读标签及用户确认105g计算；不把此标签自动追用于未核实的历史产品。",
+      "kcal_base_estimate": 101.38623326959848,
+      "kcal_booked": 101.38623326959848,
       "kcal_range": [
-        160,
-        280
+        101.38623326959848,
+        101.38623326959848
       ],
-      "protein_g_estimate": 6,
-      "fat_g_estimate": 6,
-      "carbs_g_estimate": 33
+      "protein_g_estimate": 2.31,
+      "fat_g_estimate": 3.99,
+      "carbs_g_estimate": 13.965,
+      "quantity_g": 105,
+      "sodium_mg_estimate": 340.2,
+      "nutrition_per_100g": {
+        "energy_kj": 404,
+        "protein_g": 2.2,
+        "fat_g": 3.8,
+        "carbs_g": 13.3,
+        "sodium_mg": 324
+      },
+      "catalog_id": "seafood_quartet_riceball_105g",
+      "catalog_version": "2026-11-16-v9"
     }
   ],
   "exercise_entries": [
     {
       "id": "user_reported_training_nov16_pending_health",
       "event_id": "user_reported_training_2026_11_16_pending_health",
-      "type": "用户确认今日已训练，项目和分段待同步",
-      "source": "用户本次说明按早上计划训练、练后加餐；Health当日查询暂未返回workout",
+      "type": "力量训练1小时（历史同类强度估算）",
+      "source": "用户确认今天忘带手表，要求按历史平均强度估算；并确认训练类型为力量",
       "energy_scope": "session_active",
-      "active_kcal": null,
-      "uncertainty": "项目、时长、动态热量及全天是否全部结束未明确。后续Health同步后应匹配并替换此占位，不能重复算训练。"
+      "active_kcal": 433.3097287783255,
+      "uncertainty": "今日无手表实测；动作、负荷、组间休息及身体恢复可影响实际消耗。此为记账点估计，不代表今日强度已获测量。",
+      "duration_seconds": 3600,
+      "estimate_method": "近7日同源力量训练动态能量合计 / 时长合计 × 3600秒",
+      "reference_sessions": [
+        {
+          "metric": "workout",
+          "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+          "source_name": "王洁的Apple Watch",
+          "kind": "workout",
+          "start_time_ms": 1794303522584,
+          "start_time_local": "2026-11-10T17:38:42.584000+08:00",
+          "end_time_ms": 1794307213898,
+          "end_time_local": "2026-11-10T18:40:13.898000+08:00",
+          "activity": "HKWorkoutActivityType(rawValue: 50)",
+          "duration_sec": 3691.3140169382095,
+          "total_energy_kcal": 486.7398545595903,
+          "total_distance_m": null
+        },
+        {
+          "metric": "workout",
+          "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+          "source_name": "王洁的Apple Watch",
+          "kind": "workout",
+          "start_time_ms": 1794391964952,
+          "start_time_local": "2026-11-11T18:12:44.952000+08:00",
+          "end_time_ms": 1794395134591,
+          "end_time_local": "2026-11-11T19:05:34.591000+08:00",
+          "activity": "HKWorkoutActivityType(rawValue: 50)",
+          "duration_sec": 3169.639065027237,
+          "total_energy_kcal": 366.3579999999973,
+          "total_distance_m": null
+        },
+        {
+          "metric": "workout",
+          "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+          "source_name": "王洁的Apple Watch",
+          "kind": "workout",
+          "start_time_ms": 1794476621724,
+          "start_time_local": "2026-11-12T17:43:41.724000+08:00",
+          "end_time_ms": 1794479951041,
+          "end_time_local": "2026-11-12T18:39:11.041000+08:00",
+          "activity": "HKWorkoutActivityType(rawValue: 50)",
+          "duration_sec": 3329.3173030614853,
+          "total_energy_kcal": 422.46344430647787,
+          "total_distance_m": null
+        },
+        {
+          "metric": "workout",
+          "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+          "source_name": "王洁的Apple Watch",
+          "kind": "workout",
+          "start_time_ms": 1794718769814,
+          "start_time_local": "2026-11-15T12:59:29.814000+08:00",
+          "end_time_ms": 1794723112477,
+          "end_time_local": "2026-11-15T14:11:52.477000+08:00",
+          "activity": "HKWorkoutActivityType(rawValue: 50)",
+          "duration_sec": 4342.663423895836,
+          "total_energy_kcal": 473.678036438846,
+          "total_distance_m": null
+        }
+      ],
+      "reference_total_duration_seconds": 14532.933808922768,
+      "reference_total_active_kcal": 1749.2393353049115,
+      "energy_interpretation_basis": "参考11月10、11、12、15日4段Apple Watch力量动态能量；今天为推算非实测。active_kcal填未经折扣估值，统一重算时仅乘0.75一次。"
     }
   ],
   "recovery": {
@@ -259,37 +333,182 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-11-16",
+      "entry_id": "postworkout_seafood_quartet_riceball_one_nov16",
+      "reason": "用户提供本次105g包装标签，替换通用暂估，不新增份数",
+      "old_value": {
+        "id": "postworkout_seafood_quartet_riceball_one_nov16",
+        "meal": "postworkout",
+        "status": "consumed_estimated",
+        "source_kind": "database_estimate",
+        "description": "练后额外海鲜四重奏饭团1个，沿此前暂估",
+        "reported_text": "练后额外加了一个海鲜四重奏饭团",
+        "quantity_pieces": 1,
+        "basis": "沿11月12日同名海鲜四重奏饭团暂估210kcal/P6/F6/C33；品牌规格及标签仍未核实，不套用青芥蟹饭团95kcal。此次明确额外实吃1个，新建独立条目。",
+        "uncertainty": "实际净重、品牌、酱料及营养标签未知；通用估计范围160–280kcal，实际标签优先更正。",
+        "kcal_base_estimate": 210,
+        "kcal_booked": 210,
+        "kcal_range": [
+          160,
+          280
+        ],
+        "protein_g_estimate": 6,
+        "fat_g_estimate": 6,
+        "carbs_g_estimate": 33
+      },
+      "new_value": {
+        "id": "postworkout_seafood_quartet_riceball_one_nov16",
+        "meal": "postworkout",
+        "status": "consumed",
+        "source_kind": "label_known_quantity",
+        "description": "海鲜四重奏饭团1个105g，本次包装标签已核实",
+        "reported_text": "练后额外加了一个海鲜四重奏饭团",
+        "quantity_pieces": 1,
+        "basis": "用户2026-11-16提供当次包装照片并确认105g。标签每100g：404kJ、P2.2/F3.8/C13.3、钠324mg。按1.05倍换算：101.39kcal/P2.31/F3.99/C13.965/钠340.2mg。替换原210kcal通用暂估，保留原id，不新增一份。",
+        "uncertainty": "按当次可读标签及用户确认105g计算；不把此标签自动追用于未核实的历史产品。",
+        "kcal_base_estimate": 101.38623326959848,
+        "kcal_booked": 101.38623326959848,
+        "kcal_range": [
+          101.38623326959848,
+          101.38623326959848
+        ],
+        "protein_g_estimate": 2.31,
+        "fat_g_estimate": 3.99,
+        "carbs_g_estimate": 13.965,
+        "quantity_g": 105,
+        "sodium_mg_estimate": 340.2,
+        "nutrition_per_100g": {
+          "energy_kj": 404,
+          "protein_g": 2.2,
+          "fat_g": 3.8,
+          "carbs_g": 13.3,
+          "sodium_mg": 324
+        },
+        "catalog_id": "seafood_quartet_riceball_105g",
+        "catalog_version": "2026-11-16-v9"
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "entry_id": "user_reported_training_nov16_pending_health",
+      "reason": "用户说明忘戴手表并授权按历史平均强度估算1小时力量训练，原位替换未知消耗占位",
+      "old_value": {
+        "id": "user_reported_training_nov16_pending_health",
+        "event_id": "user_reported_training_2026_11_16_pending_health",
+        "type": "用户确认今日已训练，项目和分段待同步",
+        "source": "用户本次说明按早上计划训练、练后加餐；Health当日查询暂未返回workout",
+        "energy_scope": "session_active",
+        "active_kcal": null,
+        "uncertainty": "项目、时长、动态热量及全天是否全部结束未明确。后续Health同步后应匹配并替换此占位，不能重复算训练。"
+      },
+      "new_value": {
+        "id": "user_reported_training_nov16_pending_health",
+        "event_id": "user_reported_training_2026_11_16_pending_health",
+        "type": "力量训练1小时（历史同类强度估算）",
+        "source": "用户确认今天忘带手表，要求按历史平均强度估算；并确认训练类型为力量",
+        "energy_scope": "session_active",
+        "active_kcal": 433.3097287783255,
+        "uncertainty": "今日无手表实测；动作、负荷、组间休息及身体恢复可影响实际消耗。此为记账点估计，不代表今日强度已获测量。",
+        "duration_seconds": 3600,
+        "estimate_method": "近7日同源力量训练动态能量合计 / 时长合计 × 3600秒",
+        "reference_sessions": [
+          {
+            "metric": "workout",
+            "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+            "source_name": "王洁的Apple Watch",
+            "kind": "workout",
+            "start_time_ms": 1794303522584,
+            "start_time_local": "2026-11-10T17:38:42.584000+08:00",
+            "end_time_ms": 1794307213898,
+            "end_time_local": "2026-11-10T18:40:13.898000+08:00",
+            "activity": "HKWorkoutActivityType(rawValue: 50)",
+            "duration_sec": 3691.3140169382095,
+            "total_energy_kcal": 486.7398545595903,
+            "total_distance_m": null
+          },
+          {
+            "metric": "workout",
+            "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+            "source_name": "王洁的Apple Watch",
+            "kind": "workout",
+            "start_time_ms": 1794391964952,
+            "start_time_local": "2026-11-11T18:12:44.952000+08:00",
+            "end_time_ms": 1794395134591,
+            "end_time_local": "2026-11-11T19:05:34.591000+08:00",
+            "activity": "HKWorkoutActivityType(rawValue: 50)",
+            "duration_sec": 3169.639065027237,
+            "total_energy_kcal": 366.3579999999973,
+            "total_distance_m": null
+          },
+          {
+            "metric": "workout",
+            "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+            "source_name": "王洁的Apple Watch",
+            "kind": "workout",
+            "start_time_ms": 1794476621724,
+            "start_time_local": "2026-11-12T17:43:41.724000+08:00",
+            "end_time_ms": 1794479951041,
+            "end_time_local": "2026-11-12T18:39:11.041000+08:00",
+            "activity": "HKWorkoutActivityType(rawValue: 50)",
+            "duration_sec": 3329.3173030614853,
+            "total_energy_kcal": 422.46344430647787,
+            "total_distance_m": null
+          },
+          {
+            "metric": "workout",
+            "source_bundle_identifier": "com.apple.health.F8F29264-E035-4F88-B03C-C2B434E9C622",
+            "source_name": "王洁的Apple Watch",
+            "kind": "workout",
+            "start_time_ms": 1794718769814,
+            "start_time_local": "2026-11-15T12:59:29.814000+08:00",
+            "end_time_ms": 1794723112477,
+            "end_time_local": "2026-11-15T14:11:52.477000+08:00",
+            "activity": "HKWorkoutActivityType(rawValue: 50)",
+            "duration_sec": 4342.663423895836,
+            "total_energy_kcal": 473.678036438846,
+            "total_distance_m": null
+          }
+        ],
+        "reference_total_duration_seconds": 14532.933808922768,
+        "reference_total_active_kcal": 1749.2393353049115,
+        "energy_interpretation_basis": "参考11月10、11、12、15日4段Apple Watch力量动态能量；今天为推算非实测。active_kcal填未经折扣估值，统一重算时仅乘0.75一次。"
+      }
+    }
+  ],
   "notes": [
     "11月16日晨空腹87.60kg，早餐实喝牛奶2瓶。另询问红薯生538g→烤后471g热量，整批暂462.68kcal、熟重每100g约98.23kcal，仅计算未计实际摄入。",
     "11月16日早餐追加本批烤红薯熟重120g，按生538g→熟471g折算约117.88kcal；整批剩余351g未计，不重复计整批。",
     "用户列出午饭沙县鸡腿饭、练前红薯120g、晚饭剩余红薯及鸡小胸2包并询问全天摄入，未明确已吃，先记计划。红薯晚餐余231g。后续确认吃下按原id转状态，不重复；当天仍open。",
-    "11月16日晚确认按早上计划饮食训练执行：午饭沙县鸡腿饭、练前120g熟红薯、晚餐剩余231g熟红薯和鸡小胸2包均原位转实吃，额外饭团1个暂210kcal。Health暂未查到workout，训练事实保留，动态消耗null，未确认全天结束不封账。"
+    "11月16日晚确认按早上计划饮食训练执行：午饭沙县鸡腿饭、练前120g熟红薯、晚餐剩余231g熟红薯和鸡小胸2包均原位转实吃，额外饭团1个暂210kcal。Health暂未查到workout，训练事实保留，动态消耗null，未确认全天结束不封账。",
+    "11月16日晚饭团标签更正：海鲜四重奏105g按每100g404kJ/P2.2/F3.8/C13.3/钠324mg，原210kcal原位替换为101.39kcal，今日总摄入减少108.61kcal。保留corrections，未自动追改11月12日已封账饭团。",
+    "用户确认忘戴手表，要求按平均强度估算一小时力量。近7日4次力量合计242.22分钟、1749.24动态kcal，时长加权每小时433.31kcal，固定×0.75后324.98kcal；原位替换占位，不追加第二段。仍未明确全天封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2131.284206500956,
-    "intake_kcal_booked": 2131.284206500956,
-    "protein_g_estimate": 159.028,
-    "fat_g_estimate": 56.518,
-    "carbs_g_estimate": 245.798,
-    "intake_kcal_estimate": 2131.284206500956,
+    "intake_kcal_base_estimate": 2022.6704397705544,
+    "intake_kcal_booked": 2022.6704397705544,
+    "protein_g_estimate": 155.338,
+    "fat_g_estimate": 54.508,
+    "carbs_g_estimate": 226.763,
+    "intake_kcal_estimate": 2022.6704397705544,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 159.028,
-      "fat_g": 56.518,
-      "carbs_g": 245.798
+      "protein_g": 155.338,
+      "fat_g": 54.508,
+      "carbs_g": 226.763
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 0.0,
+    "training_discount_kcal": 108.32743219458138,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1839.1921606118547,
-      2546.192160611855
+      1780.5783938814532,
+      2367.5783938814534
     ],
-    "exercise_active_kcal": 0.0,
-    "exercise_adjusted_kcal": 0.0,
-    "tdee_kcal_estimate": 2192.7,
-    "estimated_deficit_kcal": 61.41579349904396,
+    "exercise_active_kcal": 433.3097287783255,
+    "exercise_adjusted_kcal": 324.98229658374413,
+    "tdee_kcal_estimate": 2517.682296583744,
+    "estimated_deficit_kcal": 495.01185681318975,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -303,11 +522,10 @@
       "breakfast": 20.91312101910828,
       "dinner": 61.42175796178344,
       "lunch": 68.5,
-      "postworkout": 6,
+      "postworkout": 2.31,
       "preworkout": 2.19312101910828
     },
     "warnings": [
-      "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
       "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
@@ -326,8 +544,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 776.0,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1116.2,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
