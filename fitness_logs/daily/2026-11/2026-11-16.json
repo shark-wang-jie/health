@@ -203,23 +203,23 @@
       "id": "planned_dinner_chicken_tenders_two_bags_nov16",
       "status": "consumed_estimated",
       "meal": "dinner",
-      "description": "晚饭鸡小胸2包，暂沿每包100g，共200g",
-      "reported_text": "两包鸡小胸",
+      "description": "晚饭鸡小胸实吃1包，暂沿每包100g；另一包未吃",
+      "reported_text": "有一包鸡小胸没吃 换了一根六号肠",
       "source_kind": "matched_default",
-      "quantity_g": 200,
-      "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
+      "quantity_g": 100,
+      "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。 后续明确原两包中一包没吃，原位改为实吃1包100g，未吃的一包已扣除；稳定id保留。",
       "uncertainty": "本次包装净重、品牌标签未提供，暂沿历史每包100g及相近产品营养；实际包装优先。",
-      "kcal_base_estimate": 251.91204588910134,
-      "kcal_booked": 251.91204588910134,
+      "kcal_base_estimate": 125.95602294455067,
+      "kcal_booked": 125.95602294455067,
       "kcal_range": [
-        200,
-        380
+        100,
+        190
       ],
-      "protein_g_estimate": 57.2,
-      "fat_g_estimate": 2.2,
+      "protein_g_estimate": 28.6,
+      "fat_g_estimate": 1.1,
       "carbs_g_estimate": 0,
-      "sodium_mg_estimate": 464,
-      "quantity_packages": 2
+      "sodium_mg_estimate": 232,
+      "quantity_packages": 1
     },
     {
       "id": "postworkout_seafood_quartet_riceball_one_nov16",
@@ -251,6 +251,27 @@
       },
       "catalog_id": "seafood_quartet_riceball_105g",
       "catalog_version": "2026-11-16-v9"
+    },
+    {
+      "id": "dinner_six_no_sausage_one_150g_nov16",
+      "meal": "dinner",
+      "status": "consumed_estimated",
+      "source_kind": "matched_default",
+      "description": "晚饭六号肠1根，沿历史150g同款",
+      "reported_text": "换了一根六号肠",
+      "quantity_pieces": 1,
+      "quantity_g_estimate": 150,
+      "basis": "查11月3日整根和11月4日半根记录：六号肠单根150g，每100g735kJ/P13.9/F9.1/C9.5。整根263.50kcal/P20.85/F13.65/C14.25；不同于鸡肉肠和蒜香肠。用户明确替换未吃的鸡小胸一包，本条为实吃新增，原鸡小胸已相应扣减。",
+      "uncertainty": "当次包装和重量未核实，暂沿历史单根150g同款，参考240–290kcal。",
+      "kcal_base_estimate": 263.5038240917782,
+      "kcal_booked": 263.5038240917782,
+      "kcal_range": [
+        240,
+        290
+      ],
+      "protein_g_estimate": 20.85,
+      "fat_g_estimate": 13.65,
+      "carbs_g_estimate": 14.25
     }
   ],
   "exercise_entries": [
@@ -475,6 +496,56 @@
         "reference_total_active_kcal": 1749.2393353049115,
         "energy_interpretation_basis": "参考11月10、11、12、15日4段Apple Watch力量动态能量；今天为推算非实测。active_kcal填未经折扣估值，统一重算时仅乘0.75一次。"
       }
+    },
+    {
+      "date": "2026-11-16",
+      "entry_id": "planned_dinner_chicken_tenders_two_bags_nov16",
+      "reason": "用户明确两包鸡小胸中一包没吃，换六号肠一根",
+      "old_value": {
+        "id": "planned_dinner_chicken_tenders_two_bags_nov16",
+        "status": "consumed_estimated",
+        "meal": "dinner",
+        "description": "晚饭鸡小胸2包，暂沿每包100g，共200g",
+        "reported_text": "两包鸡小胸",
+        "source_kind": "matched_default",
+        "quantity_g": 200,
+        "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
+        "uncertainty": "本次包装净重、品牌标签未提供，暂沿历史每包100g及相近产品营养；实际包装优先。",
+        "kcal_base_estimate": 251.91204588910134,
+        "kcal_booked": 251.91204588910134,
+        "kcal_range": [
+          200,
+          380
+        ],
+        "protein_g_estimate": 57.2,
+        "fat_g_estimate": 2.2,
+        "carbs_g_estimate": 0,
+        "sodium_mg_estimate": 464,
+        "quantity_packages": 2
+      },
+      "new_value": {
+        "id": "planned_dinner_chicken_tenders_two_bags_nov16",
+        "status": "consumed_estimated",
+        "meal": "dinner",
+        "description": "晚饭鸡小胸实吃1包，暂沿每包100g；另一包未吃",
+        "reported_text": "有一包鸡小胸没吃 换了一根六号肠",
+        "source_kind": "matched_default",
+        "quantity_g": 100,
+        "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。 后续明确原两包中一包没吃，原位改为实吃1包100g，未吃的一包已扣除；稳定id保留。",
+        "uncertainty": "本次包装净重、品牌标签未提供，暂沿历史每包100g及相近产品营养；实际包装优先。",
+        "kcal_base_estimate": 125.95602294455067,
+        "kcal_booked": 125.95602294455067,
+        "kcal_range": [
+          100,
+          190
+        ],
+        "protein_g_estimate": 28.6,
+        "fat_g_estimate": 1.1,
+        "carbs_g_estimate": 0,
+        "sodium_mg_estimate": 232,
+        "quantity_packages": 1
+      },
+      "replacement_entry_id": "dinner_six_no_sausage_one_150g_nov16"
     }
   ],
   "notes": [
@@ -483,32 +554,33 @@
     "用户列出午饭沙县鸡腿饭、练前红薯120g、晚饭剩余红薯及鸡小胸2包并询问全天摄入，未明确已吃，先记计划。红薯晚餐余231g。后续确认吃下按原id转状态，不重复；当天仍open。",
     "11月16日晚确认按早上计划饮食训练执行：午饭沙县鸡腿饭、练前120g熟红薯、晚餐剩余231g熟红薯和鸡小胸2包均原位转实吃，额外饭团1个暂210kcal。Health暂未查到workout，训练事实保留，动态消耗null，未确认全天结束不封账。",
     "11月16日晚饭团标签更正：海鲜四重奏105g按每100g404kJ/P2.2/F3.8/C13.3/钠324mg，原210kcal原位替换为101.39kcal，今日总摄入减少108.61kcal。保留corrections，未自动追改11月12日已封账饭团。",
-    "用户确认忘戴手表，要求按平均强度估算一小时力量。近7日4次力量合计242.22分钟、1749.24动态kcal，时长加权每小时433.31kcal，固定×0.75后324.98kcal；原位替换占位，不追加第二段。仍未明确全天封账。"
+    "用户确认忘戴手表，要求按平均强度估算一小时力量。近7日4次力量合计242.22分钟、1749.24动态kcal，时长加权每小时433.31kcal，固定×0.75后324.98kcal；原位替换占位，不追加第二段。仍未明确全天封账。",
+    "11月16日晚更正：鸡小胸两包中一包未吃，原位从200g改为100g，减125.96kcal；换成六号肠一根历史150g约263.50kcal，净增加137.55kcal。保留原id和corrections，不把未吃鸡小胸继续累计。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2022.6704397705544,
-    "intake_kcal_booked": 2022.6704397705544,
-    "protein_g_estimate": 155.338,
-    "fat_g_estimate": 54.508,
-    "carbs_g_estimate": 226.763,
-    "intake_kcal_estimate": 2022.6704397705544,
+    "intake_kcal_base_estimate": 2160.2182409177817,
+    "intake_kcal_booked": 2160.2182409177817,
+    "protein_g_estimate": 147.588,
+    "fat_g_estimate": 67.058,
+    "carbs_g_estimate": 241.013,
+    "intake_kcal_estimate": 2160.2182409177817,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 155.338,
-      "fat_g": 54.508,
-      "carbs_g": 226.763
+      "protein_g": 147.588,
+      "fat_g": 67.058,
+      "carbs_g": 241.013
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 108.32743219458138,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1780.5783938814532,
-      2367.5783938814534
+      1920.5783938814532,
+      2467.5783938814534
     ],
     "exercise_active_kcal": 433.3097287783255,
     "exercise_adjusted_kcal": 324.98229658374413,
     "tdee_kcal_estimate": 2517.682296583744,
-    "estimated_deficit_kcal": 495.01185681318975,
+    "estimated_deficit_kcal": 357.4640556659624,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -517,10 +589,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 7,
+    "consumed_entries": 8,
     "protein_by_meal_g": {
       "breakfast": 20.91312101910828,
-      "dinner": 61.42175796178344,
+      "dinner": 53.67175796178344,
       "lunch": 68.5,
       "postworkout": 2.31,
       "preworkout": 2.19312101910828
@@ -544,7 +616,7 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1116.2,
+    "sodium_mg_known_sum": 884.2,
     "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
