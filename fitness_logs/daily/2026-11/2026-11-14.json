@@ -2,14 +2,14 @@
   "schema_version": 3,
   "date": "2026-11-14",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-11-17 用户确认 11-14 晚餐（KFC、豆沙包、两包泡面）确已吃，并明确放纵餐不量化；全天按已记录早午餐合计，晚餐只记事实不估热量、不并入摄入合计。",
   "food_coverage": "partial",
   "training_status": "unknown",
   "training_coverage": "unknown",
   "missing_sections": [
-    "用户表示今晚热量不计，提到KFC、豆沙包、两包泡面；整段晚餐不量化，不以此前约1230kcal当作全天摄入或计算全天缺口。未明确各项已吃完或全天结束。",
+    "晚餐已由用户确认吃过（KFC、豆沙包、两包泡面），按用户放纵餐不量化要求未估热量；当日摄入合计仅为已记录的早午餐，不可当作全天摄入或全天缺口。",
     "酸奶品牌及约400g份量、仙贝小包净重、25g鸡肉肠产品标签未核实。",
     "单鸡腿饭其他配菜沿历史默认，实际份量未核实。"
   ],
@@ -209,7 +209,8 @@
   "corrections": [],
   "notes": [
     "2026-11-14用户未称重；早餐约400g酸奶、牛奶1瓶；午餐沙县鸡腿饭改为单鸡腿；下午仙贝小包和25g鸡肉肠。只记本次5项；日内仍open，训练unknown不等于已恢复训练或确认全天休息。",
-    "11月14日晚：用户自述浑身无力很难受，提到晚餐KFC、豆沙包、两包泡面并明确今晚热量不计，明天计划恢复清淡饮食。保留晚餐原话，不估填热量、不计为零，不宣称全部已吃完；未明确封账，保持open。"
+    "11月14日晚：用户自述浑身无力很难受，提到晚餐KFC、豆沙包、两包泡面并明确今晚热量不计，明天计划恢复清淡饮食。保留晚餐原话，不估填热量、不计为零，不宣称全部已吃完；未明确封账，保持open。",
+    "2026-11-17 用户确认11-14晚餐已吃（KFC、豆沙包、两包泡面），按放纵餐不量化口径只记录事实、不估热量、不计入摄入合计；该日随后封账，因整段晚餐未量化，全天实际缺口不可报数，completed_day_estimated_deficit_kcal 保持 null。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 1230.0946653919693,
@@ -252,7 +253,6 @@
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -308,5 +308,20 @@
     "report_scope": "unquantified_dinner_no_full_day_balance",
     "user_facing_daily_deficit_estimate": null,
     "interpretation": "晚餐整段不量化，已量化1230.09kcal仅早午餐和下午加餐，不能据此报告全天缺口。"
-  }
+  },
+  "unquantified_intake": [
+    {
+      "event_id": "intake_2026-11-14_dinner_01",
+      "meal": "dinner",
+      "items": [
+        "KFC",
+        "豆沙包",
+        "两包泡面"
+      ],
+      "status": "consumed",
+      "quantified": false,
+      "policy": "cheat_meal_no_quantification",
+      "basis": "用户2026-11-17确认已吃；明确要求放纵餐不量化、不记份量"
+    }
+  ]
 }

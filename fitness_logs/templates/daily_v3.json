@@ -50,6 +50,7 @@
     "deficit_max_kcal": 600
   },
   "intake_entries": [],
+  "unquantified_intake": [],
   "exercise_entries": [],
   "recovery": {
     "hunger": null,
