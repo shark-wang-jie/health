@@ -6,14 +6,15 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "reported_training",
+  "training_coverage": "partial",
   "missing_sections": [
-    "仅确认早餐两瓶牛奶及同批烤红薯熟重120g，其他饮食与训练尚未报告。",
-    "牛奶沿历史260mL同款，今日包装未核实。"
+    "已确认按早上计划的饮食执行并额外吃饭团；尚未明确全天饮食训练全部结束，保持open。",
+    "Health当日workout查询未返回记录，保留用户已训练事实；训练项目及动态热量待同步，不估填、不当作确认休息。",
+    "牛奶与鸡小胸沿历史规格；饭团规格标签未知，其他餐食份量有估算误差。"
   ],
   "non_energy_pending_notes": [
-    "本批红薯熟重471g，早餐实吃120g已记；余351g未确认吃下，不计入摄入。"
+    "本批红薯471g熟重分早餐120g、练前120g、晚餐231g全部吃完，只计一次。"
   ],
   "trend_context": [
     "近期曾自述感冒、肩膀疼及浑身无力，11月15日已恢复训练；今日恢复程度未报告，不推断痊愈。"
@@ -115,10 +116,10 @@
       "carbs_g_estimate": 27.55108280254777
     },
     {
-      "description": "计划午饭沙县默认双去皮鸡腿饭（含卤蛋）",
+      "description": "午饭沙县默认双去皮鸡腿饭（含卤蛋）",
       "meal": "lunch",
       "source_kind": "matched_default",
-      "basis": "用户2026-11-09午餐实际吃两根鸡腿、1个卤蛋、熟米饭250g、少油白菜约300g，并明确指示今后将这一版本作为默认的“沙县鸡腿饭”。沿当天已记录的同款口径：米饭250g×125kcal/100g=312.5kcal，去皮鸡腿2根暂约390kcal，白菜300g约45kcal，少量烹调油约27kcal，卤蛋1个约75kcal；合计约849.5kcal，取整850kcal。不另加10%油脂余量。历史去皮习惯作为默认假设，但若用户明确当次连皮或实际重量不同则按实际调整。此前750kcal为无卤蛋、少量白菜的旧版，不再作为未来默认，已封账历史记录不自动追改。",
+      "basis": "用户2026-11-09午餐实际吃两根鸡腿、1个卤蛋、熟米饭250g、少油白菜约300g，并明确指示今后将这一版本作为默认的“沙县鸡腿饭”。沿当天已记录的同款口径：米饭250g×125kcal/100g=312.5kcal，去皮鸡腿2根暂约390kcal，白菜300g约45kcal，少量烹调油约27kcal，卤蛋1个约75kcal；合计约849.5kcal，取整850kcal。不另加10%油脂余量。历史去皮习惯作为默认假设，但若用户明确当次连皮或实际重量不同则按实际调整。此前750kcal为无卤蛋、少量白菜的旧版，不再作为未来默认，已封账历史记录不自动追改。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
       "kcal_base_estimate": 850,
       "kcal_booked": 850,
       "kcal_range": [
@@ -149,21 +150,21 @@
       ],
       "quantity_rice_g_estimate": 250,
       "id": "planned_lunch_shaxian_nov16",
-      "status": "planned",
+      "status": "consumed_estimated",
       "reported_text": "午饭沙县鸡腿饭"
     },
     {
       "id": "planned_preworkout_sweet_potato_120g_nov16",
       "meal": "preworkout",
-      "status": "planned",
+      "status": "consumed_estimated",
       "source_kind": "database_estimate",
-      "description": "计划preworkout同批烤红薯熟重120g",
+      "description": "preworkout同批烤红薯熟重120g",
       "reported_text": "下午练前加餐120g烤红薯",
       "quantity_g": 120,
       "weight_basis": "baked_edible_weight_assumed",
       "batch_id": "baked_sweet_potato_batch_538raw_471cooked_nov16",
       "raw_equivalent_g_estimate": 137.0700636942675,
-      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。",
+      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
       "uncertainty": "默认无额外油糖、120g为可食熟重；品种、皮和通用营养值有误差，热量参考100–140kcal。",
       "kcal_base_estimate": 117.88025477707005,
       "kcal_booked": 117.88025477707005,
@@ -178,16 +179,16 @@
     {
       "id": "planned_dinner_remaining_sweet_potato_231g_nov16",
       "meal": "dinner",
-      "status": "planned",
+      "status": "consumed_estimated",
       "source_kind": "database_estimate",
-      "description": "计划dinner同批烤红薯熟重231g",
+      "description": "dinner同批烤红薯熟重231g",
       "reported_text": "晚饭剩下烤红薯",
       "quantity_g": 231,
       "weight_basis": "baked_edible_weight_assumed",
       "batch_id": "baked_sweet_potato_batch_538raw_471cooked_nov16",
       "raw_equivalent_g_estimate": 263.85987261146494,
-      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。",
-      "uncertainty": "默认无额外油糖、120g为可食熟重；品种、皮和通用营养值有误差，热量参考100–140kcal。",
+      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
+      "uncertainty": "晚餐余量由本批471g减早餐120g及练前120g得231g；默认可食无额外油糖，品种及通用营养有误差，参考192.5–269.5kcal。",
       "kcal_base_estimate": 226.91949044585985,
       "kcal_booked": 226.91949044585985,
       "kcal_range": [
@@ -200,13 +201,13 @@
     },
     {
       "id": "planned_dinner_chicken_tenders_two_bags_nov16",
-      "status": "planned",
+      "status": "consumed_estimated",
       "meal": "dinner",
-      "description": "计划晚饭鸡小胸2包，暂沿每包100g，共200g",
+      "description": "晚饭鸡小胸2包，暂沿每包100g，共200g",
       "reported_text": "两包鸡小胸",
       "source_kind": "matched_default",
       "quantity_g": 200,
-      "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。",
+      "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。 11月16日晚用户确认按早上计划饮食执行，本条原位转实吃，保留id，不新增重复份。",
       "uncertainty": "本次包装净重、品牌标签未提供，暂沿历史每包100g及相近产品营养；实际包装优先。",
       "kcal_base_estimate": 251.91204588910134,
       "kcal_booked": 251.91204588910134,
@@ -219,9 +220,39 @@
       "carbs_g_estimate": 0,
       "sodium_mg_estimate": 464,
       "quantity_packages": 2
+    },
+    {
+      "id": "postworkout_seafood_quartet_riceball_one_nov16",
+      "meal": "postworkout",
+      "status": "consumed_estimated",
+      "source_kind": "database_estimate",
+      "description": "练后额外海鲜四重奏饭团1个，沿此前暂估",
+      "reported_text": "练后额外加了一个海鲜四重奏饭团",
+      "quantity_pieces": 1,
+      "basis": "沿11月12日同名海鲜四重奏饭团暂估210kcal/P6/F6/C33；品牌规格及标签仍未核实，不套用青芥蟹饭团95kcal。此次明确额外实吃1个，新建独立条目。",
+      "uncertainty": "实际净重、品牌、酱料及营养标签未知；通用估计范围160–280kcal，实际标签优先更正。",
+      "kcal_base_estimate": 210,
+      "kcal_booked": 210,
+      "kcal_range": [
+        160,
+        280
+      ],
+      "protein_g_estimate": 6,
+      "fat_g_estimate": 6,
+      "carbs_g_estimate": 33
     }
   ],
-  "exercise_entries": [],
+  "exercise_entries": [
+    {
+      "id": "user_reported_training_nov16_pending_health",
+      "event_id": "user_reported_training_2026_11_16_pending_health",
+      "type": "用户确认今日已训练，项目和分段待同步",
+      "source": "用户本次说明按早上计划训练、练后加餐；Health当日查询暂未返回workout",
+      "energy_scope": "session_active",
+      "active_kcal": null,
+      "uncertainty": "项目、时长、动态热量及全天是否全部结束未明确。后续Health同步后应匹配并替换此占位，不能重复算训练。"
+    }
+  ],
   "recovery": {
     "hunger": null,
     "sleep_hours": null,
@@ -232,65 +263,71 @@
   "notes": [
     "11月16日晨空腹87.60kg，早餐实喝牛奶2瓶。另询问红薯生538g→烤后471g热量，整批暂462.68kcal、熟重每100g约98.23kcal，仅计算未计实际摄入。",
     "11月16日早餐追加本批烤红薯熟重120g，按生538g→熟471g折算约117.88kcal；整批剩余351g未计，不重复计整批。",
-    "用户列出午饭沙县鸡腿饭、练前红薯120g、晚饭剩余红薯及鸡小胸2包并询问全天摄入，未明确已吃，先记计划。红薯晚餐余231g。后续确认吃下按原id转状态，不重复；当天仍open。"
+    "用户列出午饭沙县鸡腿饭、练前红薯120g、晚饭剩余红薯及鸡小胸2包并询问全天摄入，未明确已吃，先记计划。红薯晚餐余231g。后续确认吃下按原id转状态，不重复；当天仍open。",
+    "11月16日晚确认按早上计划饮食训练执行：午饭沙县鸡腿饭、练前120g熟红薯、晚餐剩余231g熟红薯和鸡小胸2包均原位转实吃，额外饭团1个暂210kcal。Health暂未查到workout，训练事实保留，动态消耗null，未确认全天结束不封账。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 474.5724153889247,
-    "intake_kcal_booked": 474.5724153889247,
-    "protein_g_estimate": 20.91312101910828,
-    "fat_g_estimate": 20.41707006369427,
-    "carbs_g_estimate": 52.511082802547776,
-    "intake_kcal_estimate": 474.5724153889247,
+    "intake_kcal_base_estimate": 2131.284206500956,
+    "intake_kcal_booked": 2131.284206500956,
+    "protein_g_estimate": 159.028,
+    "fat_g_estimate": 56.518,
+    "carbs_g_estimate": 245.798,
+    "intake_kcal_estimate": 2131.284206500956,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 20.91312101910828,
-      "fat_g": 20.41707006369427,
-      "carbs_g": 52.511082802547776
+      "protein_g": 159.028,
+      "fat_g": 56.518,
+      "carbs_g": 245.798
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      456.69216061185466,
-      496.69216061185466
+      1839.1921606118547,
+      2546.192160611855
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2192.7,
-    "estimated_deficit_kcal": 1718.1275846110752,
+    "estimated_deficit_kcal": 61.41579349904396,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
-      1800.0,
-      1800.0
+      1900.0,
+      2000.0
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 7,
     "protein_by_meal_g": {
-      "breakfast": 20.91312101910828
+      "breakfast": 20.91312101910828,
+      "dinner": 61.42175796178344,
+      "lunch": 68.5,
+      "postworkout": 6,
+      "preworkout": 2.19312101910828
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "已报告训练有消耗缺失：仅计已知训练消耗",
       "饮食完整性未确认：合计仅含已记录摄入",
+      "已报告部分训练，全天训练是否报完尚未确认",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 312.0,
-    "sodium_mg_entries_with_data": 1,
+    "sodium_mg_known_sum": 776.0,
+    "sodium_mg_entries_with_data": 2,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
@@ -300,7 +337,7 @@
     {
       "id": "baked_sweet_potato_batch_538raw_471cooked_nov16",
       "food": "烤红薯",
-      "status": "partially_consumed",
+      "status": "fully_consumed",
       "raw_weight_g": 538,
       "baked_weight_g": 471,
       "baked_yield_ratio": 0.8754646840148699,
@@ -311,10 +348,10 @@
       "protein_g_batch_estimate": 8.608,
       "fat_g_batch_estimate": 0.538,
       "carbs_g_batch_estimate": 108.138,
-      "basis": "用户只要求计算热量，未报告吃下；按此前通用生红薯86kcal/100g，用本批实测生538g→熟471g换算。默认无额外加油糖。与11月13日生538g→熟406g是不同批，不混用出成率。 后续早餐确认吃下熟重120g，已单独记入intake_entries，余351g未确认吃下。",
+      "basis": "用户只要求计算热量，未报告吃下；按此前通用生红薯86kcal/100g，用本批实测生538g→熟471g换算。默认无额外加油糖。与11月13日生538g→熟406g是不同批，不混用出成率。 后续早餐确认吃下熟重120g，已单独记入intake_entries，余351g未确认吃下。 11月16日晚确认按计划吃完，合计熟重471g，仅各餐条目入总量，批次元数据不重复累计。",
       "uncertainty": "品种、皮和可食净重及数据库营养值存在误差，烤后失水不自行减少整批热量。",
-      "consumed_baked_weight_g": 120,
-      "remaining_baked_weight_g": 351
+      "consumed_baked_weight_g": 471,
+      "remaining_baked_weight_g": 0
     }
   ],
   "planned_day_intake_review": {
@@ -323,6 +360,6 @@
     "protein_g_estimate": 153.028,
     "fat_g_estimate": 50.518,
     "carbs_g_estimate": 212.798,
-    "note": "仅用于用户全天安排咨询，不等于全天实际已吃；后续确认后原位改状态，不能再新增同份。"
+    "note": "仅用于用户全天安排咨询，不等于全天实际已吃；后续确认后原位改状态，不能再新增同份。 11月16日晚已确认这些计划全部吃下，相关条目原位转换；另加饭团，请以daily_summary为当前总数。"
   }
 }
