@@ -2,17 +2,16 @@
   "schema_version": 3,
   "date": "2026-11-16",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "用户2026-11-17 00:06明确回复‘结束’，确认11月16日全天饮食与训练均结束；晚间室内单车截图已补入，力量段仍为授权历史估算。",
   "food_coverage": "partial",
   "training_status": "reported_training",
-  "training_coverage": "partial",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "已确认按早上计划的饮食执行并额外吃饭团；尚未明确全天饮食训练全部结束，保持open。",
-    "用户确认未戴手表，今日一小时力量已授权按近期4次同类训练时长加权平均暂估；非设备实测。",
-    "牛奶与鸡小胸沿历史规格；饭团105g及本次标签已核实，其他餐食份量有估算误差。",
-    "11月16日晚间室内单车已由Apple Watch截图确认（动态505千卡）；是否还有其他训练及全天饮食是否结束仍未确认。"
+    "力量段无手表实测，按近7日4次同类力量时长加权平均暂估，动作与负荷未报告。",
+    "牛奶与鸡小胸沿历史规格，六号肠沿历史150g同款；除饭团105g本次标签外，其他餐食份量有估算误差。",
+    "身体与肩膀恢复程度未报告，不推断痊愈。"
   ],
   "non_energy_pending_notes": [
     "本批红薯471g熟重分早餐120g、练前120g、晚餐231g全部吃完，只计一次。"
@@ -575,7 +574,8 @@
     "11月16日晚饭团标签更正：海鲜四重奏105g按每100g404kJ/P2.2/F3.8/C13.3/钠324mg，原210kcal原位替换为101.39kcal，今日总摄入减少108.61kcal。保留corrections，未自动追改11月12日已封账饭团。",
     "用户确认忘戴手表，要求按平均强度估算一小时力量。近7日4次力量合计242.22分钟、1749.24动态kcal，时长加权每小时433.31kcal，固定×0.75后324.98kcal；原位替换占位，不追加第二段。仍未明确全天封账。",
     "11月16日晚更正：鸡小胸两包中一包未吃，原位从200g改为100g，减125.96kcal；换成六号肠一根历史150g约263.50kcal，净增加137.55kcal。保留原id和corrections，不把未吃鸡小胸继续累计。",
-    "11月17日00:01用户补报11月16日晚间有氧：Apple Fitness截图显示室内单车21:56–22:58、时长1:01:07、动态千卡505、总千卡数618、平均心率128、耗能适中。按次日起始日归属11月16日新增独立event，与力量训练是不同两段；618含静息不采用。"
+    "11月17日00:01用户补报11月16日晚间有氧：Apple Fitness截图显示室内单车21:56–22:58、时长1:01:07、动态千卡505、总千卡数618、平均心率128、耗能适中。按次日起始日归属11月16日新增独立event，与力量训练是不同两段；618含静息不采用。",
+    "11月17日00:06用户回复‘结束’，确认11月16日全天饮食与训练结束，封账为final；晚间室内单车505动态千卡已计入，力量段仍为授权估算，不因封账改为实测。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 2160.2182409177817,
@@ -619,8 +619,6 @@
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
-      "已报告部分训练，全天训练是否报完尚未确认",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
@@ -671,5 +669,22 @@
     "fat_g_estimate": 50.518,
     "carbs_g_estimate": 212.798,
     "note": "仅用于用户全天安排咨询，不等于全天实际已吃；后续确认后原位改状态，不能再新增同份。 11月16日晚已确认这些计划全部吃下，相关条目原位转换；另加饭团，请以daily_summary为当前总数。"
+  },
+  "calorie_balance_review": {
+    "date": "2026-11-16",
+    "preferred_method": "tdee_v1",
+    "report_scope": "user_confirmed_complete_food_and_training_model_estimate",
+    "user_facing_daily_deficit_estimate": {
+      "value_kcal": 736.214055665962,
+      "bmr_kcal": 1827.25,
+      "session_active_kcal_sum": 938.3097287783255,
+      "session_active_kcal_booked_75pct": 703.7322965837441,
+      "tdee_kcal_estimate": 2896.4322965837437,
+      "intake_kcal_estimate": 2160.2182409177817,
+      "food_log_closed": true,
+      "training_complete": true,
+      "food_coverage": "partial",
+      "interpretation": "用户已确认全天饮食训练结束。固定BMR×1.2＋训练动态×0.75－已记录摄入；力量段为历史估算、牛奶/鸡小胸/六号肠沿历史规格，餐食与设备误差仍在，非实测缺口，strict completed字段保留null。"
+    }
   }
 }

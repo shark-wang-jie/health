@@ -1,14 +1,14 @@
 # 健身记录交接摘要
-更新时间：2026-11-17 00:05（补报11月16日晚室内单车；11-16仍开放未封账）
+更新时间：2026-11-17 00:08（11-16 已封账）
 
-## 2026-11-16 目前开放
-- 状态：record_status=open、food_log_closed=false、food_coverage=partial、training_status=reported_training、training_coverage=partial。未确认全天饮食及训练结束，不封账，不把暂算差额称最终全天缺口。
+## 2026-11-16 已封账
+- 状态：用户2026-11-17 00:06回复“结束”，record_status=final、food_log_closed=true、training_status=reported_training、training_coverage=confirmed_complete、food_coverage=partial（仅剩份量与历史规格的估值误差，不再询问是否结束）。
 - 晨起空腹87.60kg（11-15为88.20kg，-0.60kg；单日变化不等于脂肪变化）。
 - 已记录8项实吃合计2160.22kcal、P147.59/F67.06/C241.01g：牛奶2瓶520mL、早餐本批烤红薯熟120g、午餐沙县双去皮鸡腿饭含卤蛋、练前红薯120g、晚餐余红薯231g、鸡小胸1包100g、练后海鲜四重奏饭团105g、六号肠1根。
 - 今日更正已生效勿回退：鸡小胸200g→100g并单独加六号肠一根（稳定id与corrections保留，不算两包）；饭团按本次标签105g原位替换210→101.39kcal；本批红薯生538g→熟471g分早餐120＋练前120＋晚餐231一次吃完，只计一次，批次元数据不重复累计，不套11-13的406g出成率。食物库2026-11-16-v9，不追改11-12历史饭团。
 - 训练2段：① 力量1小时，用户忘戴手表，授权按近7日4次同类力量时长加权平均433.31kcal（历史推算，非实测）；② 室内单车21:56–22:58，Apple Watch截图动态505kcal，总千卡618为含静息不采用、均心128，独立event_id。两段合计动态938.31kcal，×0.75=703.73kcal，各计一次不叠加圆环。
-- 暂算：BMR1827.25×1.2＋703.73＝TDEE2896.43，减已记录2160.22＝差额约736.21kcal（provisional_recorded_balance；completed_day_estimated_deficit_kcal=null，仍非最终全天缺口）。
-- 待确认：全天饮食/训练是否结束；身体与肩膀恢复程度未报告，不推断痊愈；牛奶、鸡小胸、六号肠仍沿历史规格估算。
+- 封账后模型估算：BMR1827.25×1.2＋703.73＝TDEE2896.43，减已记录2160.22＝**缺口约736.21kcal**。这是tdee_v1模型估算、非实测；strict `completed_day_estimated_deficit_kcal` 仍为null，用户可见值存于 `calorie_balance_review.user_facing_daily_deficit_estimate`，不以大缺口评价成功。
+- 保留不确定项：力量段为授权历史估算（无手表实测，动作负荷未报）；牛奶/鸡小胸沿历史规格、六号肠沿历史150g；身体与肩膀恢复程度未报告，不推断痊愈。
 - 11-14仍open：约1230.09kcal仅为已量化早午餐，晚间KFC、豆沙包、两包泡面未明确吃完且要求不计，不得当全天摄入或算缺口。11-13已封账，晚餐驴肉馆未量化。
 
 ## 2026-11-15 已封账
