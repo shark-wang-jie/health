@@ -113,6 +113,112 @@
       "protein_g_estimate": 2.19312101910828,
       "fat_g_estimate": 0.1370700636942675,
       "carbs_g_estimate": 27.55108280254777
+    },
+    {
+      "description": "计划午饭沙县默认双去皮鸡腿饭（含卤蛋）",
+      "meal": "lunch",
+      "source_kind": "matched_default",
+      "basis": "用户2026-11-09午餐实际吃两根鸡腿、1个卤蛋、熟米饭250g、少油白菜约300g，并明确指示今后将这一版本作为默认的“沙县鸡腿饭”。沿当天已记录的同款口径：米饭250g×125kcal/100g=312.5kcal，去皮鸡腿2根暂约390kcal，白菜300g约45kcal，少量烹调油约27kcal，卤蛋1个约75kcal；合计约849.5kcal，取整850kcal。不另加10%油脂余量。历史去皮习惯作为默认假设，但若用户明确当次连皮或实际重量不同则按实际调整。此前750kcal为无卤蛋、少量白菜的旧版，不再作为未来默认，已封账历史记录不自动追改。",
+      "kcal_base_estimate": 850,
+      "kcal_booked": 850,
+      "kcal_range": [
+        730,
+        980
+      ],
+      "protein_g_estimate": 68.5,
+      "fat_g_estimate": 27.5,
+      "carbs_g_estimate": 79.7,
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "低油白菜的约3g用油/27kcal已含在850kcal的基础估算，不另加10%不确定餐馆用油余量；不确定性通过730–980kcal范围表达。"
+      },
+      "uncertainty": "鸡腿两根实际去皮与可食熟肉重未逐根确认；熟米饭250g和白菜300g虽由用户报告但可能是估量；卤蛋、油量及调料存在误差。参考730–980kcal，实际如未吃卤蛋、带皮、米饭/白菜重量不同，应原位调整。",
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        16,
+        42
+      ],
+      "carbs_g_range": [
+        69,
+        91
+      ],
+      "quantity_rice_g_estimate": 250,
+      "id": "planned_lunch_shaxian_nov16",
+      "status": "planned",
+      "reported_text": "午饭沙县鸡腿饭"
+    },
+    {
+      "id": "planned_preworkout_sweet_potato_120g_nov16",
+      "meal": "preworkout",
+      "status": "planned",
+      "source_kind": "database_estimate",
+      "description": "计划preworkout同批烤红薯熟重120g",
+      "reported_text": "下午练前加餐120g烤红薯",
+      "quantity_g": 120,
+      "weight_basis": "baked_edible_weight_assumed",
+      "batch_id": "baked_sweet_potato_batch_538raw_471cooked_nov16",
+      "raw_equivalent_g_estimate": 137.0700636942675,
+      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。",
+      "uncertainty": "默认无额外油糖、120g为可食熟重；品种、皮和通用营养值有误差，热量参考100–140kcal。",
+      "kcal_base_estimate": 117.88025477707005,
+      "kcal_booked": 117.88025477707005,
+      "kcal_range": [
+        100,
+        140
+      ],
+      "protein_g_estimate": 2.19312101910828,
+      "fat_g_estimate": 0.1370700636942675,
+      "carbs_g_estimate": 27.55108280254777
+    },
+    {
+      "id": "planned_dinner_remaining_sweet_potato_231g_nov16",
+      "meal": "dinner",
+      "status": "planned",
+      "source_kind": "database_estimate",
+      "description": "计划dinner同批烤红薯熟重231g",
+      "reported_text": "晚饭剩下烤红薯",
+      "quantity_g": 231,
+      "weight_basis": "baked_edible_weight_assumed",
+      "batch_id": "baked_sweet_potato_batch_538raw_471cooked_nov16",
+      "raw_equivalent_g_estimate": 263.85987261146494,
+      "basis": "本批生538g→熟471g，早餐已吃120g；计划练前120g、晚饭余231g。按本批生重86kcal/100g分摊，未确认吃下不累计。",
+      "uncertainty": "默认无额外油糖、120g为可食熟重；品种、皮和通用营养值有误差，热量参考100–140kcal。",
+      "kcal_base_estimate": 226.91949044585985,
+      "kcal_booked": 226.91949044585985,
+      "kcal_range": [
+        192.5,
+        269.5
+      ],
+      "protein_g_estimate": 4.221757961783439,
+      "fat_g_estimate": 0.26385987261146493,
+      "carbs_g_estimate": 53.03583439490446
+    },
+    {
+      "id": "planned_dinner_chicken_tenders_two_bags_nov16",
+      "status": "planned",
+      "meal": "dinner",
+      "description": "计划晚饭鸡小胸2包，暂沿每包100g，共200g",
+      "reported_text": "两包鸡小胸",
+      "source_kind": "matched_default",
+      "quantity_g": 200,
+      "basis": "沿历史单包100g假设，两包共200g；每100g527kJ/P28.6/F1.1/C0，约251.91kcal/P57.2/F2.2/C0。未确认实吃，仅计划。",
+      "uncertainty": "本次包装净重、品牌标签未提供，暂沿历史每包100g及相近产品营养；实际包装优先。",
+      "kcal_base_estimate": 251.91204588910134,
+      "kcal_booked": 251.91204588910134,
+      "kcal_range": [
+        200,
+        380
+      ],
+      "protein_g_estimate": 57.2,
+      "fat_g_estimate": 2.2,
+      "carbs_g_estimate": 0,
+      "sodium_mg_estimate": 464,
+      "quantity_packages": 2
     }
   ],
   "exercise_entries": [],
@@ -125,7 +231,8 @@
   "corrections": [],
   "notes": [
     "11月16日晨空腹87.60kg，早餐实喝牛奶2瓶。另询问红薯生538g→烤后471g热量，整批暂462.68kcal、熟重每100g约98.23kcal，仅计算未计实际摄入。",
-    "11月16日早餐追加本批烤红薯熟重120g，按生538g→熟471g折算约117.88kcal；整批剩余351g未计，不重复计整批。"
+    "11月16日早餐追加本批烤红薯熟重120g，按生538g→熟471g折算约117.88kcal；整批剩余351g未计，不重复计整批。",
+    "用户列出午饭沙县鸡腿饭、练前红薯120g、晚饭剩余红薯及鸡小胸2包并询问全天摄入，未明确已吃，先记计划。红薯晚餐余231g。后续确认吃下按原id转状态，不重复；当天仍open。"
   ],
   "daily_summary": {
     "intake_kcal_base_estimate": 474.5724153889247,
@@ -209,5 +316,13 @@
       "consumed_baked_weight_g": 120,
       "remaining_baked_weight_g": 351
     }
-  ]
+  ],
+  "planned_day_intake_review": {
+    "scope": "confirmed_breakfast_plus_planned_remaining_meals",
+    "kcal_booked": 1921.2842065009559,
+    "protein_g_estimate": 153.028,
+    "fat_g_estimate": 50.518,
+    "carbs_g_estimate": 212.798,
+    "note": "仅用于用户全天安排咨询，不等于全天实际已吃；后续确认后原位改状态，不能再新增同份。"
+  }
 }
