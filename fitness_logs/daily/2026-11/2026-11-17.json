@@ -183,26 +183,26 @@
       "meal": "lunch"
     },
     {
-      "id": "snack_baked_sweet_potato_193_5g_nov17",
+      "id": "snack_baked_sweet_potato_161g_nov17",
       "meal": "afternoon_snack",
-      "description": "下午加餐吃掉本批剩余烤红薯的一半（熟重193.5g）",
+      "description": "下午加餐吃本批烤红薯熟重161g",
       "source_kind": "database_estimate",
-      "quantity_g": 193.5,
+      "quantity_g": 161,
       "weight_basis": "cooked",
       "reported_text": "下午加餐吃了剩下的一半红薯",
       "status": "consumed_estimated",
-      "kcal_base_estimate": 229.62,
-      "kcal_booked": 229.62,
+      "kcal_base_estimate": 191.06,
+      "kcal_booked": 191.06,
       "kcal_range": [
-        229.62,
-        229.62
+        191.06,
+        191.06
       ],
-      "protein_g_estimate": 4.27,
-      "fat_g_estimate": 0.27,
-      "carbs_g_estimate": 53.67,
+      "protein_g_estimate": 3.55,
+      "fat_g_estimate": 0.22,
+      "carbs_g_estimate": 44.65,
       "sodium_mg_estimate": null,
-      "basis": "本批生603g→烤熟437g，早餐已吃50g，剩387g；本次吃一半193.5g，折生重约267g；按生红薯每100g86kcal/P1.6/F0.1/C20.1折算约229.62kcal。",
-      "uncertainty": "按本批实测生熟比折算，无油烤制。",
+      "basis": "本批生603g→烤熟437g，早餐吃50g；2026-11-17晚用户实测剩下的那块为熟重226g，故下午实吃437-50-226=161g，折生重约222g；按生红薯每100g86kcal/P1.6/F0.1/C20.1折算约191.06kcal。",
+      "uncertainty": "份量由“整批437g − 早餐50g − 实测剩余226g”倒推，不是直接称重。",
       "margin": {
         "added_fat_g": 0,
         "added_carbs_g": 0,
@@ -251,24 +251,24 @@
     {
       "id": "dinner_baked_sweet_potato_193_5g_nov17",
       "meal": "dinner",
-      "description": "当晚未吃的最后一块烤红薯（本批437g中剩193.5g熟重）",
+      "description": "当晚未吃的烤红薯（实测熟重226g）",
       "source_kind": "database_estimate",
-      "quantity_g": 193.5,
+      "quantity_g": 226,
       "weight_basis": "cooked",
       "reported_text": "晚上吃剩下的红薯",
       "status": "not_eaten",
-      "kcal_base_estimate": 229.62,
-      "kcal_booked": 229.62,
+      "kcal_base_estimate": 268.19,
+      "kcal_booked": 268.19,
       "kcal_range": [
-        229.62,
-        229.62
+        268.19,
+        268.19
       ],
-      "protein_g_estimate": 4.27,
-      "fat_g_estimate": 0.27,
-      "carbs_g_estimate": 53.67,
+      "protein_g_estimate": 4.98,
+      "fat_g_estimate": 0.31,
+      "carbs_g_estimate": 62.63,
       "sodium_mg_estimate": null,
-      "basis": "本批生603g→烤熟437g，早餐50g、下午193.5g；剩余193.5g当晚因吃完面包、喝水后已饱未吃，改记not_eaten，暂不计入摄入。用户称晚上带回去称实际重量，若再吃或重量有出入另行调整。",
-      "uncertainty": "重量仍为本批推算值193.5g，用户将实际称重；是否当晚或次日再吃待确认。",
+      "basis": "用户2026-11-17晚实测本批剩余一块熟重226g，因吃完面包、喝水后已饱未吃，记not_eaten不计入摄入；折生重约312g，能量约268.19kcal。若之后再吃需改回实吃并按当日/次日归属。",
+      "uncertainty": "已称重226g；是否次日再吃待确认。",
       "margin": {
         "added_fat_g": 0,
         "added_carbs_g": 0,
@@ -377,29 +377,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2272.3860803059274,
-    "intake_kcal_booked": 2272.3860803059274,
-    "protein_g_estimate": 179.13,
-    "fat_g_estimate": 65.83000000000001,
-    "carbs_g_estimate": 238.19,
-    "intake_kcal_estimate": 2272.3860803059274,
+    "intake_kcal_base_estimate": 2233.8260803059275,
+    "intake_kcal_booked": 2233.8260803059275,
+    "protein_g_estimate": 178.41000000000003,
+    "fat_g_estimate": 65.78,
+    "carbs_g_estimate": 229.17,
+    "intake_kcal_estimate": 2233.8260803059275,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 179.13,
-      "fat_g": 65.83000000000001,
-      "carbs_g": 238.19
+      "protein_g": 178.41000000000003,
+      "fat_g": 65.78,
+      "carbs_g": 229.17
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 111.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      2152.3860803059274,
-      2402.3860803059274
+      2113.8260803059275,
+      2363.8260803059275
     ],
     "exercise_active_kcal": 444.0,
     "exercise_adjusted_kcal": 333.0,
     "tdee_kcal_estimate": 2524.5,
-    "estimated_deficit_kcal": 252.1139196940726,
+    "estimated_deficit_kcal": 290.67391969407254,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -410,7 +410,7 @@
     "energy_estimate_provisional": true,
     "consumed_entries": 8,
     "protein_by_meal_g": {
-      "afternoon_snack": 24.66,
+      "afternoon_snack": 23.94,
       "breakfast": 63.02,
       "dinner": 22.95,
       "lunch": 68.5
