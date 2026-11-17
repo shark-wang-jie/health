@@ -181,6 +181,72 @@
       "catalog_id": "shaxian_two_skinless_legs",
       "catalog_version": "2026-11-16-v9",
       "meal": "lunch"
+    },
+    {
+      "id": "snack_baked_sweet_potato_193_5g_nov17",
+      "meal": "afternoon_snack",
+      "description": "下午加餐吃掉本批剩余烤红薯的一半（熟重193.5g）",
+      "source_kind": "database_estimate",
+      "quantity_g": 193.5,
+      "weight_basis": "cooked",
+      "reported_text": "下午加餐吃了剩下的一半红薯",
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 229.62,
+      "kcal_booked": 229.62,
+      "kcal_range": [
+        229.62,
+        229.62
+      ],
+      "protein_g_estimate": 4.27,
+      "fat_g_estimate": 0.27,
+      "carbs_g_estimate": 53.67,
+      "sodium_mg_estimate": null,
+      "basis": "本批生603g→烤熟437g，早餐已吃50g，剩387g；本次吃一半193.5g，折生重约267g；按生红薯每100g86kcal/P1.6/F0.1/C20.1折算约229.62kcal。",
+      "uncertainty": "按本批实测生熟比折算，无油烤制。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无油烤制"
+      }
+    },
+    {
+      "id": "snack_beef_jerky_45g_nov17",
+      "meal": "afternoon_snack",
+      "description": "下午加餐手撕牛肉干45g（同2026-11-04的90g每片款，吃半片）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 45,
+      "reported_text": "吃了之前吃过的90g每片的牛肉干45g",
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 117.45,
+      "kcal_booked": 117.45,
+      "kcal_range": [
+        117.45,
+        117.45
+      ],
+      "protein_g_estimate": 20.39,
+      "fat_g_estimate": 3.6,
+      "carbs_g_estimate": 0.68,
+      "saturated_fat_g_estimate": 1.58,
+      "sugar_g_estimate": 0.0,
+      "sodium_mg_estimate": 283.95,
+      "basis": "用户2026-11-17报吃45g；沿2026-11-04确认的2026-09-30同款90g/片手撕牛肉干标签（每100g 1092kJ/P45.3/F8.0/饱和3.5/C1.5/Na631mg），45g≈117.45kcal。",
+      "uncertainty": "本次未重新拍包装，沿历史同款；若为其他品牌需替换。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签值，不额外加成"
+      },
+      "nutrition_per_100g": {
+        "energy_kj": 1092,
+        "protein_g": 45.3,
+        "fat_g": 8,
+        "saturated_fat_g": 3.5,
+        "carbs_g": 1.5,
+        "sugar_g": 0,
+        "sodium_mg": 631
+      }
     }
   ],
   "exercise_entries": [],
@@ -193,29 +259,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1348.6860803059274,
-    "intake_kcal_booked": 1348.6860803059274,
-    "protein_g_estimate": 131.52,
-    "fat_g_estimate": 41.31,
-    "carbs_g_estimate": 109.89,
-    "intake_kcal_estimate": 1348.6860803059274,
+    "intake_kcal_base_estimate": 1695.7560803059275,
+    "intake_kcal_booked": 1695.7560803059275,
+    "protein_g_estimate": 156.18,
+    "fat_g_estimate": 45.18000000000001,
+    "carbs_g_estimate": 164.24,
+    "intake_kcal_estimate": 1695.7560803059275,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 131.52,
-      "fat_g": 41.31,
-      "carbs_g": 109.89
+      "protein_g": 156.18,
+      "fat_g": 45.18000000000001,
+      "carbs_g": 164.24
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1228.6860803059274,
-      1478.6860803059274
+      1575.7560803059275,
+      1825.7560803059275
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2191.5,
-    "estimated_deficit_kcal": 842.8139196940726,
+    "estimated_deficit_kcal": 495.7439196940725,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -224,8 +290,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
+      "afternoon_snack": 24.66,
       "breakfast": 63.02,
       "lunch": 68.5
     },
@@ -247,8 +314,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1392.0,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1675.95,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
