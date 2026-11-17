@@ -49,7 +49,66 @@
     "deficit_min_kcal": 400,
     "deficit_max_kcal": 600
   },
-  "intake_entries": [],
+  "intake_entries": [
+    {
+      "id": "breakfast_cumin_chicken_tender_240g_nov17",
+      "meal": "breakfast",
+      "description": "早餐孜然鸡小胸生重240g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 240,
+      "weight_basis": "raw",
+      "reported_text": "早饭吃了240g孜然鸡小胸",
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 261.0,
+      "kcal_booked": 261.0,
+      "kcal_range": [
+        261.0,
+        261.0
+      ],
+      "protein_g_estimate": 52.56,
+      "fat_g_estimate": 3.6,
+      "carbs_g_estimate": 3.84,
+      "saturated_fat_g_estimate": 1.68,
+      "sugar_g_estimate": 0.0,
+      "sodium_mg_estimate": 1236,
+      "basis": "用户2026-11-17报早餐生重240g；沿包装标签每100g 455kJ/P21.9/F1.5（饱和0.7）/C1.6（糖0）/Na515mg，折算240g≈261kcal。生制品，未计额外烹调油。",
+      "uncertainty": "按标签生重计算；实际烹调加油未计入，若煎烤用油需另补。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签值按生重，未额外加成"
+      }
+    },
+    {
+      "id": "breakfast_baked_sweet_potato_50g_nov17",
+      "meal": "breakfast",
+      "description": "早餐同批烤红薯熟重50g",
+      "source_kind": "database_estimate",
+      "quantity_g": 50,
+      "weight_basis": "cooked",
+      "reported_text": "早饭50g烤红薯",
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 59.34,
+      "kcal_booked": 59.34,
+      "kcal_range": [
+        59.34,
+        59.34
+      ],
+      "protein_g_estimate": 1.1,
+      "fat_g_estimate": 0.07,
+      "carbs_g_estimate": 13.87,
+      "sodium_mg_estimate": null,
+      "basis": "本批生603g→烤后437g（缩水1.38倍），50g熟重对应生重约69g；按生红薯每100g86kcal/P1.6/F0.1/C20.1折算，约59.34kcal。",
+      "uncertainty": "按本批实测生熟比折算，未加油。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "无油烤制"
+      }
+    }
+  ],
   "exercise_entries": [],
   "recovery": {
     "hunger": null,
@@ -60,29 +119,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 0.0,
-    "intake_kcal_booked": 0.0,
-    "protein_g_estimate": 0.0,
-    "fat_g_estimate": 0.0,
-    "carbs_g_estimate": 0.0,
-    "intake_kcal_estimate": 0.0,
+    "intake_kcal_base_estimate": 320.34000000000003,
+    "intake_kcal_booked": 320.34000000000003,
+    "protein_g_estimate": 53.660000000000004,
+    "fat_g_estimate": 3.67,
+    "carbs_g_estimate": 17.71,
+    "intake_kcal_estimate": 320.34000000000003,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 0.0,
-      "fat_g": 0.0,
-      "carbs_g": 0.0
+      "protein_g": 53.660000000000004,
+      "fat_g": 3.67,
+      "carbs_g": 17.71
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      0.0,
-      0.0
+      320.34000000000003,
+      320.34000000000003
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2191.5,
-    "estimated_deficit_kcal": 2191.5,
+    "estimated_deficit_kcal": 1871.1599999999999,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -91,8 +150,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 0,
-    "protein_by_meal_g": {},
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 53.660000000000004
+    },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -111,8 +172,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": null,
-    "sodium_mg_entries_with_data": 0,
+    "sodium_mg_known_sum": 1236.0,
+    "sodium_mg_entries_with_data": 1,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
