@@ -154,24 +154,25 @@
       "source_kind": "photo_estimate",
       "reported_text": "午饭芥兰牛肉饭",
       "status": "consumed_estimated",
-      "kcal_base_estimate": 750.0,
-      "kcal_booked": 750.0,
+      "kcal_base_estimate": 815.0,
+      "kcal_booked": 815.0,
       "kcal_range": [
-        650.0,
-        850.0
+        700.0,
+        900.0
       ],
-      "protein_g_estimate": 42.0,
+      "protein_g_estimate": 43.3,
       "fat_g_estimate": 28.0,
-      "carbs_g_estimate": 85.0,
+      "carbs_g_estimate": 98.0,
       "sodium_mg_estimate": 1700,
-      "basis": "用户2026-11-18拍照并说明为芥兰牛肉饭外卖。照片目测：熟米饭约250g、牛肉片约130g熟重、芥兰/青菜约100g，油与酱汁较多（叶面反光、卤汁厚）。按米饭250g约310kcal、牛肉130g约210kcal、油约15g约135kcal、青菜约60kcal，合计约715，取750kcal记；区间650–850反映饭量与油量不确定。",
-      "uncertainty": "未称重；饭量、牛肉片数、油量均由照片估算。若米饭未吃完或牛肉偏少应下调。",
+      "basis": "用户2026-11-18拍照并说明为芥兰牛肉饭外卖，随后更正米饭约300g。目测照片：熟米饭约300g、牛肉片约130g熟重、芥兰/青菜约100g，油与酱汁较多。按米饭300g×125kcal/100g=375kcal、牛肉130g约210kcal、用油约15g约135kcal、青菜约60kcal，合计约780，取815kcal记（含少量酱汁糖分余量）；区间700–900反映油量与菜量不确定。",
+      "uncertainty": "未称重；米饭已由用户更正为约300g；牛肉片数、油量仍由照片估算。",
       "margin": {
         "added_fat_g": 0,
         "added_carbs_g": 0,
         "already_in_base": false,
         "reason": "外卖油量已含在750kcal基础估算中，不确定性用650–850区间表达"
-      }
+      },
+      "quantity_rice_g_estimate": 300
     }
   ],
   "exercise_entries": [],
@@ -184,29 +185,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1312.33,
-    "intake_kcal_booked": 1312.33,
-    "protein_g_estimate": 113.3,
+    "intake_kcal_base_estimate": 1377.33,
+    "intake_kcal_booked": 1377.33,
+    "protein_g_estimate": 114.6,
     "fat_g_estimate": 41.77,
-    "carbs_g_estimate": 119.81,
-    "intake_kcal_estimate": 1312.33,
+    "carbs_g_estimate": 132.81,
+    "intake_kcal_estimate": 1377.33,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 113.3,
+      "protein_g": 114.6,
       "fat_g": 41.77,
-      "carbs_g": 119.81
+      "carbs_g": 132.81
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1212.33,
-      1412.33
+      1262.33,
+      1462.33
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2186.1,
-    "estimated_deficit_kcal": 873.77,
+    "estimated_deficit_kcal": 808.77,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -218,7 +219,7 @@
     "consumed_entries": 4,
     "protein_by_meal_g": {
       "breakfast": 71.3,
-      "lunch": 42.0
+      "lunch": 43.3
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
