@@ -211,6 +211,44 @@
         "sugar_g": 0,
         "sodium_mg": 631
       }
+    },
+    {
+      "id": "preworkout_rozen_cheese_bread_150g_nov18",
+      "meal": "preworkout",
+      "description": "练前吃罗宋芝士面包整块150g（同11-17款）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 150,
+      "reported_text": "练前吃了昨天的同款面包",
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 426.63,
+      "kcal_booked": 426.63,
+      "kcal_range": [
+        426.63,
+        426.63
+      ],
+      "protein_g_estimate": 10.35,
+      "fat_g_estimate": 10.05,
+      "carbs_g_estimate": 72.75,
+      "saturated_fat_g_estimate": 5.7,
+      "sugar_g_estimate": 18.75,
+      "sodium_mg_estimate": null,
+      "basis": "用户2026-11-18晚报练前吃同款罗宋芝士面包整块150g；沿11-17包装标签（每100g 1190kJ/P6.9/F6.7/饱和3.8/C48.5/糖12.5/钠27mg），150g≈426.63kcal。标签钠27mg/100g不可信，不计入钠合计。",
+      "uncertainty": "同款但未重拍包装；钠不可信未计。",
+      "nutrition_per_100g": {
+        "energy_kj": 1190,
+        "protein_g": 6.9,
+        "fat_g": 6.7,
+        "saturated_fat_g": 3.8,
+        "carbs_g": 48.5,
+        "sugar_g": 12.5,
+        "sodium_mg": 27
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签值，不额外加成"
+      }
     }
   ],
   "exercise_entries": [],
@@ -223,29 +261,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1494.78,
-    "intake_kcal_booked": 1494.78,
-    "protein_g_estimate": 134.99,
-    "fat_g_estimate": 45.370000000000005,
-    "carbs_g_estimate": 133.49,
-    "intake_kcal_estimate": 1494.78,
+    "intake_kcal_base_estimate": 1921.4099999999999,
+    "intake_kcal_booked": 1921.4099999999999,
+    "protein_g_estimate": 145.34,
+    "fat_g_estimate": 55.42,
+    "carbs_g_estimate": 206.24,
+    "intake_kcal_estimate": 1921.4099999999999,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 134.99,
-      "fat_g": 45.370000000000005,
-      "carbs_g": 133.49
+      "protein_g": 145.34,
+      "fat_g": 55.42,
+      "carbs_g": 206.24
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1379.78,
-      1579.78
+      1806.4099999999999,
+      2006.4099999999999
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2186.1,
-    "estimated_deficit_kcal": 691.3199999999999,
+    "estimated_deficit_kcal": 264.69000000000005,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -254,11 +292,12 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "afternoon_snack": 20.39,
       "breakfast": 71.3,
-      "lunch": 43.3
+      "lunch": 43.3,
+      "preworkout": 10.35
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
