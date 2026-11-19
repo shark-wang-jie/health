@@ -150,6 +150,32 @@
         69,
         91
       ]
+    },
+    {
+      "id": "dinner_yogurt_521g_nov19",
+      "meal": "dinner",
+      "description": "晚上吃大桶原味发酵乳521g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 521.0,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 433.32,
+      "kcal_booked": 433.32,
+      "kcal_range": [
+        433.32,
+        433.32
+      ],
+      "protein_g_estimate": 20.84,
+      "fat_g_estimate": 26.05,
+      "carbs_g_estimate": 29.18,
+      "sodium_mg_estimate": 411.6,
+      "basis": "用户2026-11-19报晚上吃521g大桶原味酸奶（用户提供重量）；沿 food_catalog.json yogurt_bucket_100g（每100g 348kJ/P4.0/F5.0/C5.6），521.0g≈433.32kcal。",
+      "uncertainty": "重量为用户报告；沿已确认的大桶酸奶口径。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签值"
+      }
     }
   ],
   "exercise_entries": [],
@@ -162,29 +188,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1519.74,
-    "intake_kcal_booked": 1519.74,
-    "protein_g_estimate": 125.7,
-    "fat_g_estimate": 56.400000000000006,
-    "carbs_g_estimate": 120.6,
-    "intake_kcal_estimate": 1519.74,
+    "intake_kcal_base_estimate": 1953.06,
+    "intake_kcal_booked": 1953.06,
+    "protein_g_estimate": 146.54,
+    "fat_g_estimate": 82.45,
+    "carbs_g_estimate": 149.78,
+    "intake_kcal_estimate": 1953.06,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 125.7,
-      "fat_g": 56.400000000000006,
-      "carbs_g": 120.6
+      "protein_g": 146.54,
+      "fat_g": 82.45,
+      "carbs_g": 149.78
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1392.8899999999999,
-      1649.74
+      1826.2099999999998,
+      2083.06
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 664.5599999999997,
+    "estimated_deficit_kcal": 231.23999999999978,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -193,9 +219,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 5,
     "protein_by_meal_g": {
       "breakfast": 57.2,
+      "dinner": 20.84,
       "lunch": 68.5
     },
     "warnings": [
@@ -217,8 +244,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3191.5,
-    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_known_sum": 3603.1,
+    "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
