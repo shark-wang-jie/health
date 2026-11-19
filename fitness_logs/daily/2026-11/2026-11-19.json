@@ -5,12 +5,10 @@
   "record_status": "open",
   "food_log_closed": false,
   "closure_basis": null,
-  "food_coverage": "partial",
+  "food_coverage": "confirmed_complete",
   "training_status": "unknown",
   "training_coverage": "unknown",
-  "missing_sections": [
-    "饮食：午餐、晚餐、加餐尚未报告"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
@@ -176,6 +174,38 @@
         "already_in_base": false,
         "reason": "标签值"
       }
+    },
+    {
+      "id": "evening_buckwheat_cracker_216g_nov19",
+      "meal": "evening_snack",
+      "description": "晚上又吃荞麦锅巴216g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 216.0,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 860.59,
+      "kcal_booked": 860.59,
+      "kcal_range": [
+        860.59,
+        860.59
+      ],
+      "protein_g_estimate": 12.1,
+      "fat_g_estimate": 6.05,
+      "carbs_g_estimate": 180.36,
+      "sodium_mg_estimate": null,
+      "basis": "用户2026-11-19报又吃216g荞麦锅巴并声明「今天饮食结束」；沿历史同款包装标签每100g 1667kJ/P5.6/F2.8/C83.5（2026-11-06起多次使用），216.0g≈860.59kcal。标签无钠数据，钠不计入。",
+      "uncertainty": "重量为用户报告216g；沿历史同款标签，未重拍包装。",
+      "nutrition_per_100g": {
+        "energy_kj": 1667,
+        "protein_g": 5.6,
+        "fat_g": 2.8,
+        "carbs_g": 83.5
+      },
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": false,
+        "reason": "标签值"
+      }
     }
   ],
   "exercise_entries": [],
@@ -188,29 +218,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1953.06,
-    "intake_kcal_booked": 1953.06,
-    "protein_g_estimate": 146.54,
-    "fat_g_estimate": 82.45,
-    "carbs_g_estimate": 149.78,
-    "intake_kcal_estimate": 1953.06,
+    "intake_kcal_base_estimate": 2813.65,
+    "intake_kcal_booked": 2813.65,
+    "protein_g_estimate": 158.64,
+    "fat_g_estimate": 88.5,
+    "carbs_g_estimate": 330.14,
+    "intake_kcal_estimate": 2813.65,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 146.54,
-      "fat_g": 82.45,
-      "carbs_g": 149.78
+      "protein_g": 158.64,
+      "fat_g": 88.5,
+      "carbs_g": 330.14
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1826.2099999999998,
-      2083.06
+      2686.7999999999997,
+      2943.65
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 231.23999999999978,
+    "estimated_deficit_kcal": -629.3500000000004,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -219,17 +249,16 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 57.2,
       "dinner": 20.84,
+      "evening_snack": 12.1,
       "lunch": 68.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
-      "存在影响能量解释或完整性的待确认项"
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额"
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
@@ -246,7 +275,7 @@
     "fiber_g_coverage_complete": false,
     "sodium_mg_known_sum": 3603.1,
     "sodium_mg_entries_with_data": 5,
-    "sodium_mg_coverage_complete": true,
+    "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
