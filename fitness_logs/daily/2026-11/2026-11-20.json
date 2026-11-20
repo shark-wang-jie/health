@@ -158,6 +158,53 @@
         "already_in_base": true,
         "reason": "默认条目已含油量"
       }
+    },
+    {
+      "id": "dinner_konjac_oat_dumplings_500g_nov20",
+      "meal": "dinner",
+      "description": "晚饭魔芋燕麦鸡胸肉蒸饺整包500g（25个×20g）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 500,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 564.05,
+      "kcal_booked": 564.05,
+      "kcal_range": [
+        564.05,
+        564.05
+      ],
+      "protein_g_estimate": 33.0,
+      "fat_g_estimate": 9.5,
+      "carbs_g_estimate": 85.0,
+      "sodium_mg_estimate": 2420,
+      "basis": "用户2026-11-20报晚饭吃一包魔芋燕麦蒸饺；匹配2026-10-16/17已核验同款（整包500g/25个、每个20g；标签每100g 472kJ/P6.6/F1.9/C17/钠484mg），整包=564.05kcal。",
+      "uncertainty": "沿历史同款标签，未重拍包装；若为其他品牌/净重应更正。",
+      "nutrition_per_100g": {
+        "energy_kj": 472,
+        "protein_g": 6.6,
+        "fat_g": 1.9,
+        "carbs_g": 17,
+        "sodium_mg": 484
+      }
+    },
+    {
+      "id": "dinner_yogurt_from_yuexianxian_260ml_nov20",
+      "meal": "dinner",
+      "description": "晚饭自制酸奶（悦鲜活牛奶260mL发酵）",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 260,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 178.35,
+      "kcal_booked": 178.35,
+      "kcal_range": [
+        171.5,
+        178.35
+      ],
+      "protein_g_estimate": 8.6,
+      "fat_g_estimate": 8.8,
+      "carbs_g_estimate": 12.5,
+      "sodium_mg_estimate": 104,
+      "basis": "用户2026-11-20报喝一瓶悦鲜活做的酸奶；发酵不改变能量与宏量，按同容量牛奶口径260mL=178.35kcal（若250mL则约171.5）。",
+      "uncertainty": "未加糖/未滤乳清假设；瓶装规格沿用260mL。"
     }
   ],
   "exercise_entries": [],
@@ -172,29 +219,29 @@
     "2026-11-20 当晚飞成都、11-23（周一）返回：期间不训练、不称重、饮食想起来才记（见README「2026-11-20至2026-11-23旅行中断期」）。今天训练状态按用户说明记 confirmed_rest。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1207.25,
-    "intake_kcal_booked": 1207.25,
-    "protein_g_estimate": 87.07,
-    "fat_g_estimate": 40.910000000000004,
-    "carbs_g_estimate": 113.43,
-    "intake_kcal_estimate": 1207.25,
+    "intake_kcal_base_estimate": 1949.6499999999999,
+    "intake_kcal_booked": 1949.6499999999999,
+    "protein_g_estimate": 128.67,
+    "fat_g_estimate": 59.21000000000001,
+    "carbs_g_estimate": 210.93,
+    "intake_kcal_estimate": 1949.6499999999999,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 87.07,
-      "fat_g": 40.910000000000004,
-      "carbs_g": 113.43
+      "protein_g": 128.67,
+      "fat_g": 59.21000000000001,
+      "carbs_g": 210.93
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1080.4,
-      1337.25
+      1815.95,
+      2079.65
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 977.0499999999997,
+    "estimated_deficit_kcal": 234.64999999999986,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -203,9 +250,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 18.57,
+      "dinner": 41.6,
       "lunch": 68.5
     },
     "warnings": [
@@ -226,8 +274,8 @@
     "fiber_g_known_sum": 5.0,
     "fiber_g_entries_with_data": 1,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1950.0,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 4474.0,
+    "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
