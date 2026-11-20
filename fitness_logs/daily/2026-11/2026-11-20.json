@@ -2,16 +2,13 @@
   "schema_version": 3,
   "date": "2026-11-20",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-11-20 18:12 用户明确「今天饮食结束 封账」。饮食：早餐（牛奶260mL、南瓜子7.6g、酵母蛋白吐司50g）、午饭（沙县鸡腿饭默认双去皮版850kcal）、晚饭（魔芋燕麦鸡胸肉蒸饺整包500g、悦鲜活自制酸奶260mL）均已报告并记录；用户确认此后无其他进食（当晚飞成都）。训练：用户2026-11-20明确「这几天都不训练了」，按confirmed_rest记，训练覆盖确认完整。钠合计未覆盖：南瓜子历史标签无钠数据未计入，故钠为已知项之和4474.0mg。当日账面缺口234.65kcal，低于400–600参考区；因无训练且摄入略超1800目标，属轻度维持偏减。",
+  "food_coverage": "confirmed_complete",
   "training_status": "confirmed_rest",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [
-    "旅行期：饮食仅按用户报告记录，未报告部分视为未知（不补0、不按均值补齐）",
-    "旅行期：不称重，次日及11-21～11-23无晨重"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
@@ -231,7 +228,7 @@
       "fat_g": 59.21000000000001,
       "carbs_g": 210.93
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": 234.64999999999986,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
@@ -242,25 +239,21 @@
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2184.2999999999997,
     "estimated_deficit_kcal": 234.64999999999986,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "completed_day_estimated_deficit_kcal": 234.64999999999986,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1800.0,
       1800.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 18.57,
       "dinner": 41.6,
       "lunch": 68.5
     },
-    "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
-      "存在影响能量解释或完整性的待确认项"
-    ],
+    "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
@@ -281,5 +274,5 @@
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
   },
-  "energy_estimate_provisional": null
+  "energy_estimate_provisional": false
 }
