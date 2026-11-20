@@ -6,11 +6,11 @@
   "food_log_closed": false,
   "closure_basis": null,
   "food_coverage": "partial",
-  "training_status": "unknown",
-  "training_coverage": "unknown",
+  "training_status": "confirmed_rest",
+  "training_coverage": "confirmed_complete",
   "missing_sections": [
-    "饮食：午餐、晚餐、加餐尚未报告",
-    "训练：尚未报告"
+    "旅行期：饮食仅按用户报告记录，未报告部分视为未知（不补0、不按均值补齐）",
+    "旅行期：不称重，次日及11-21～11-23无晨重"
   ],
   "non_energy_pending_notes": [],
   "trend_context": [],
@@ -129,7 +129,9 @@
     "fatigue_or_pain": null
   },
   "corrections": [],
-  "notes": [],
+  "notes": [
+    "2026-11-20 当晚飞成都、11-23（周一）返回：期间不训练、不称重、饮食想起来才记（见README「2026-11-20至2026-11-23旅行中断期」）。今天训练状态按用户说明记 confirmed_rest。"
+  ],
   "daily_summary": {
     "intake_kcal_base_estimate": 357.25,
     "intake_kcal_booked": 357.25,
@@ -160,14 +162,13 @@
       1800.0,
       1800.0
     ],
-    "target_is_provisional": true,
+    "target_is_provisional": false,
     "energy_estimate_provisional": true,
     "consumed_entries": 3,
     "protein_by_meal_g": {
       "breakfast": 18.57
     },
     "warnings": [
-      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
       "饮食完整性未确认：合计仅含已记录摄入",
       "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
       "存在影响能量解释或完整性的待确认项"
