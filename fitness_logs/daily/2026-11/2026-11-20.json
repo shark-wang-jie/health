@@ -119,6 +119,45 @@
       "sodium_mg_estimate": 146,
       "basis": "用户2026-11-20报一包酵母蛋白吐司；2026-11-18已确认一包50g，沿当日标签每100g 1105kJ/P15.2/F1.8/C41.2/纤维10/钠292mg。",
       "uncertainty": "标签值；一包规格已确认50g。"
+    },
+    {
+      "id": "lunch_shaxian_two_legs_nov20",
+      "meal": "lunch",
+      "description": "午饭沙县鸡腿饭（默认双去皮鸡腿+卤蛋1个+米饭250g+少油白菜300g）",
+      "source_kind": "matched_default",
+      "catalog_ref": "shaxian_two_skinless_legs",
+      "servings": 1,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 850.0,
+      "kcal_booked": 850.0,
+      "kcal_range": [
+        730.0,
+        980.0
+      ],
+      "protein_g_estimate": 68.5,
+      "fat_g_estimate": 27.5,
+      "carbs_g_estimate": 79.7,
+      "sodium_mg_estimate": 1700,
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        16,
+        42
+      ],
+      "carbs_g_range": [
+        69,
+        91
+      ],
+      "basis": "用户2026-11-20报午饭沙县鸡腿饭，未说明去皮/鸡腿数量；沿 food_catalog.json 默认 shaxian_two_skinless_legs（2026-11-09用户确认，850kcal，区间730–980）。",
+      "uncertainty": "未复拍照片；若只吃一只鸡腿或未去皮应下调（单腿版约655kcal/P40）。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": true,
+        "reason": "默认条目已含油量"
+      }
     }
   ],
   "exercise_entries": [],
@@ -133,29 +172,29 @@
     "2026-11-20 当晚飞成都、11-23（周一）返回：期间不训练、不称重、饮食想起来才记（见README「2026-11-20至2026-11-23旅行中断期」）。今天训练状态按用户说明记 confirmed_rest。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 357.25,
-    "intake_kcal_booked": 357.25,
-    "protein_g_estimate": 18.57,
-    "fat_g_estimate": 13.410000000000002,
-    "carbs_g_estimate": 33.730000000000004,
-    "intake_kcal_estimate": 357.25,
+    "intake_kcal_base_estimate": 1207.25,
+    "intake_kcal_booked": 1207.25,
+    "protein_g_estimate": 87.07,
+    "fat_g_estimate": 40.910000000000004,
+    "carbs_g_estimate": 113.43,
+    "intake_kcal_estimate": 1207.25,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 18.57,
-      "fat_g": 13.410000000000002,
-      "carbs_g": 33.730000000000004
+      "protein_g": 87.07,
+      "fat_g": 40.910000000000004,
+      "carbs_g": 113.43
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      350.4,
-      357.25
+      1080.4,
+      1337.25
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2184.2999999999997,
-    "estimated_deficit_kcal": 1827.0499999999997,
+    "estimated_deficit_kcal": 977.0499999999997,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -164,9 +203,10 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
-      "breakfast": 18.57
+      "breakfast": 18.57,
+      "lunch": 68.5
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -175,19 +215,19 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": 5.0,
     "fiber_g_entries_with_data": 1,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 250.0,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 1950.0,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
