@@ -164,6 +164,29 @@
       "estimate_method": "Apple Watch 实测（第三方算法，非实验室量热）",
       "uncertainty": "手表估算误差；无动作/负荷明细。",
       "energy_interpretation_basis": "截图动态千卡427、总千卡533、时长0:59:56、平均心率117；active_kcal填实测值，统一重算时仅乘0.75一次。"
+    },
+    {
+      "id": "apple_watch_indoor_cycle_nov24",
+      "event_id": "apple_watch_workout_2026_11_24_cycle",
+      "type": "室内单车（Apple Watch 记录）",
+      "source": "用户上传 Apple Watch 训练摘要截图：2026-11-24 22:16–22:57",
+      "energy_scope": "session_active",
+      "active_kcal": 461.0,
+      "total_kcal": 537.0,
+      "duration_seconds": 2455,
+      "duration_display": "0:40:55",
+      "avg_heart_rate_bpm": 142,
+      "start_local": "2026-11-24T22:16:00+08:00",
+      "end_local": "2026-11-24T22:57:00+08:00",
+      "location": null,
+      "weather": {
+        "temp_c": 5,
+        "humidity_pct": 67,
+        "aqi": 55
+      },
+      "estimate_method": "Apple Watch 实测（第三方算法，非实验室量热）",
+      "uncertainty": "手表估算误差；平均心率142属高强度，无功率计数据。",
+      "energy_interpretation_basis": "截图动态千卡461、总千卡537、时长0:40:55、平均心率142；active_kcal填实测值，统一重算时仅乘0.75一次。"
     }
   ],
   "recovery": {
@@ -190,16 +213,16 @@
       "carbs_g": 112.7
     },
     "completed_day_base_intake_balance_kcal": null,
-    "training_discount_kcal": 106.75,
+    "training_discount_kcal": 222.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
       971.5,
       1268.35
     ],
-    "exercise_active_kcal": 427.0,
-    "exercise_adjusted_kcal": 320.25,
-    "tdee_kcal_estimate": 2515.35,
-    "estimated_deficit_kcal": 1402.3999999999999,
+    "exercise_active_kcal": 888.0,
+    "exercise_adjusted_kcal": 666.0,
+    "tdee_kcal_estimate": 2861.1,
+    "estimated_deficit_kcal": 1748.1499999999999,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
