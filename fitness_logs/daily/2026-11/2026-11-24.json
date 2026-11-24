@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "record_status": "final",
   "food_log_closed": true,
-  "closure_basis": "2026-11-24 23:09 用户「吃完了 封账」。饮食：早餐（牛奶260mL、赣南脐橙1个）、午饭（沙县鸡腿饭默认850kcal）、晚饭（本批烤红薯熟重124g、赣南脐橙1个）、睡前（鸡肉肠200g、全蛋2个）均已报告；用户确认饮食结束。训练：两节——传统力量59:56（动态427）、室内单车40:55（动态461），合计动态888，training_coverage=confirmed_complete。摄入1750.09，训练日目标1900–2000，低于下限约150（缺口1111，高于400–600参考区上限，因两练+蛋白补充偏晚）。钠约3420mg（鸡肉肠1190+全蛋300+午饭1700+牛奶104+橙4等），明显偏高，明日体重可能受钠水影响。午饭为照片估算（米饭按300g）；烤红薯按本批生645g→熟578g折算熟重96.0kcal/100g（本批专用，不跨批）。",
+  "closure_basis": "2026-11-24 23:09 用户「吃完了 封账」。饮食：早餐（牛奶260mL、赣南脐橙1个）、午饭（沙县鸡腿饭默认850kcal）、晚饭（本批烤红薯熟重124g、赣南脐橙1个）、睡前（鸡肉肠200g、全蛋3个、酵母蛋白吐司50g）均已报告；用户确认饮食结束。训练：两节——传统力量59:56（动态427）、室内单车40:55（动态461），合计动态888，training_coverage=confirmed_complete。摄入1957.10，训练日目标1900–2000（落在区间内）；缺口904，高于400–600参考区上限，因当日两练动态888。。钠约3420mg（鸡肉肠1190+全蛋300+午饭1700+牛奶104+橙4等），明显偏高，明日体重可能受钠水影响。午饭为照片估算（米饭按300g）；烤红薯按本批生645g→熟578g折算熟重96.0kcal/100g（本批专用，不跨批）。 2026-11-24 23:32 用户补充「又多吃了一个鸡蛋 一个酵母蛋白吐司 今天正式封账」，已并入睡前加餐并重算，此为最终封账口径。",
   "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
@@ -217,6 +217,47 @@
       "sodium_mg_estimate": 300,
       "basis": "用户2026-11-24报吃两个全蛋；沿11-15/11-17历史口径（2个=150kcal、P12.6/F10.6、Na300）。",
       "uncertainty": "蛋大小差异按区间135–165。"
+    },
+    {
+      "id": "late_snack_whole_egg_3_nov24",
+      "meal": "late_snack",
+      "description": "封账前又吃全蛋1个（约50g，无额外用油）",
+      "source_kind": "database_estimate",
+      "quantity_g": 50,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 75.0,
+      "kcal_booked": 75.0,
+      "kcal_range": [
+        67.5,
+        82.5
+      ],
+      "protein_g_estimate": 6.3,
+      "fat_g_estimate": 5.3,
+      "carbs_g_estimate": 0.35,
+      "sodium_mg_estimate": 150,
+      "basis": "用户2026-11-24报又吃一个鸡蛋；沿历史茶叶蛋/全蛋75kcal、P6.3/F5.3单枚口径。",
+      "uncertainty": "按单枚约50g估。"
+    },
+    {
+      "id": "late_snack_yeast_toast_50g_nov24",
+      "meal": "late_snack",
+      "description": "封账前酵母蛋白吐司50g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 50,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 132.05,
+      "kcal_booked": 132.05,
+      "kcal_range": [
+        132.05,
+        132.05
+      ],
+      "protein_g_estimate": 7.6,
+      "fat_g_estimate": 0.9,
+      "carbs_g_estimate": 20.6,
+      "fiber_g_estimate": 5.0,
+      "sodium_mg_estimate": 146,
+      "basis": "用户2026-11-24报再吃50g酵母蛋白吐司；沿本月同款标签1105kJ/100g（P15.2/F1.8/C41.2/纤维10.0/Na292）。",
+      "uncertainty": "按50g整片计。"
     }
   ],
   "exercise_entries": [
@@ -278,30 +319,30 @@
     "2026-11-21～11-23 成都旅行中断期未逐日记录（用户约定不称重、不训练、饮食想起来才记，期间无报告）；11-24 恢复常规记录。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1750.05,
-    "intake_kcal_booked": 1750.05,
-    "protein_g_estimate": 133.01999999999998,
-    "fat_g_estimate": 55.18000000000001,
-    "carbs_g_estimate": 176.30999999999997,
-    "intake_kcal_estimate": 1750.05,
+    "intake_kcal_base_estimate": 1957.1,
+    "intake_kcal_booked": 1957.1,
+    "protein_g_estimate": 146.92,
+    "fat_g_estimate": 61.38,
+    "carbs_g_estimate": 197.25999999999996,
+    "intake_kcal_estimate": 1957.1,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 133.01999999999998,
-      "fat_g": 55.18000000000001,
-      "carbs_g": 176.30999999999997
+      "protein_g": 146.92,
+      "fat_g": 61.38,
+      "carbs_g": 197.25999999999996
     },
-    "completed_day_base_intake_balance_kcal": 1111.05,
+    "completed_day_base_intake_balance_kcal": 904.0,
     "training_discount_kcal": 222.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1579.0,
-      1945.85
+      1778.55,
+      2160.4
     ],
     "exercise_active_kcal": 888.0,
     "exercise_adjusted_kcal": 666.0,
     "tdee_kcal_estimate": 2861.1,
-    "estimated_deficit_kcal": 1111.05,
-    "completed_day_estimated_deficit_kcal": 1111.05,
+    "estimated_deficit_kcal": 904.0,
+    "completed_day_estimated_deficit_kcal": 904.0,
     "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900.0,
@@ -309,11 +350,11 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": false,
-    "consumed_entries": 7,
+    "consumed_entries": 9,
     "protein_by_meal_g": {
       "breakfast": 10.2,
       "dinner": 3.12,
-      "late_snack": 51.2,
+      "late_snack": 65.1,
       "lunch": 68.5
     },
     "warnings": [],
@@ -327,11 +368,11 @@
     "carbs_g_range": null,
     "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
-    "fiber_g_known_sum": null,
-    "fiber_g_entries_with_data": 0,
+    "fiber_g_known_sum": 5.0,
+    "fiber_g_entries_with_data": 1,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3298.0,
-    "sodium_mg_entries_with_data": 6,
+    "sodium_mg_known_sum": 3594.0,
+    "sodium_mg_entries_with_data": 8,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
