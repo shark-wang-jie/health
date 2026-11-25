@@ -171,6 +171,27 @@
         "already_in_base": true,
         "reason": "默认条目已含油量"
       }
+    },
+    {
+      "id": "postworkout_navel_orange_nov25",
+      "meal": "postworkout",
+      "description": "练后吃赣南脐橙1个（可食约180g）",
+      "source_kind": "database_estimate",
+      "quantity_g": 180,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 84.6,
+      "kcal_booked": 84.6,
+      "kcal_range": [
+        70.0,
+        110.0
+      ],
+      "protein_g_estimate": 1.6,
+      "fat_g_estimate": 0.2,
+      "carbs_g_estimate": 20.5,
+      "sugar_g_estimate": 16.0,
+      "sodium_mg_estimate": 2,
+      "basis": "用户2026-11-25报练后吃一个脐橙；沿本月脐橙口径47kcal/100g、中等果可食180g计84.6kcal。",
+      "uncertainty": "未称重，按中等果估。"
     }
   ],
   "exercise_entries": [
@@ -209,29 +230,29 @@
     "2026-11-25 晨重86.25，为10月建库以来最低（此前低点86.85于11-11、86.90于11-13/11-19/11-20）。相对11-24的87.80一夜-1.55kg，判断主要为钠水排出（11-24钠3594mg）与两练后糖原耗竭相关的水分，非脂肪。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1379.42,
-    "intake_kcal_booked": 1379.42,
-    "protein_g_estimate": 99.59,
-    "fat_g_estimate": 40.59,
-    "carbs_g_estimate": 149.16000000000003,
-    "intake_kcal_estimate": 1379.42,
+    "intake_kcal_base_estimate": 1464.02,
+    "intake_kcal_booked": 1464.02,
+    "protein_g_estimate": 101.19,
+    "fat_g_estimate": 40.790000000000006,
+    "carbs_g_estimate": 169.66000000000003,
+    "intake_kcal_estimate": 1464.02,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 99.59,
-      "fat_g": 40.59,
-      "carbs_g": 149.16000000000003
+      "protein_g": 101.19,
+      "fat_g": 40.790000000000006,
+      "carbs_g": 169.66000000000003
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 101.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1237.97,
-      1534.8200000000002
+      1307.97,
+      1644.8200000000002
     ],
     "exercise_active_kcal": 404.0,
     "exercise_adjusted_kcal": 303.0,
     "tdee_kcal_estimate": 2479.5,
-    "estimated_deficit_kcal": 1100.08,
+    "estimated_deficit_kcal": 1015.48,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -240,11 +261,12 @@
     ],
     "target_is_provisional": false,
     "energy_estimate_provisional": true,
-    "consumed_entries": 5,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 29.490000000000002,
       "lunch": 68.5,
-      "morning_snack": 1.6
+      "morning_snack": 1.6,
+      "postworkout": 1.6
     },
     "warnings": [
       "饮食完整性未确认：合计仅含已记录摄入",
@@ -264,8 +286,8 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 2401.0,
-    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_known_sum": 2403.0,
+    "sodium_mg_entries_with_data": 5,
     "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
