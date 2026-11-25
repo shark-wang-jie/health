@@ -1,0 +1,190 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "饮食：午饭、晚饭、加餐尚未报告",
+    "训练：尚未报告"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 86.25,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 86.25,
+    "bmr_weight_date": "2026-11-25",
+    "bmr_kcal": 1813.75
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_sweet_potato_130g_nov25",
+      "meal": "breakfast",
+      "description": "早餐烤红薯熟重130g（11-24同批：生645g→熟578g）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 130,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 124.72,
+      "kcal_booked": 124.72,
+      "kcal_range": [
+        124.72,
+        124.72
+      ],
+      "protein_g_estimate": 1.59,
+      "fat_g_estimate": 0.29,
+      "carbs_g_estimate": 29.16,
+      "basis": "用户2026-11-25报早餐130g烤红薯，判断为11-24同批剩余（生645g→熟578g，熟重96.0kcal/100g）。若为其他批需改按该批生熟比折算。",
+      "uncertainty": "未确认是否为同批；若红薯明显更干/更湿，单位热量会变。"
+    },
+    {
+      "id": "breakfast_chicken_sausage_100g_nov25",
+      "meal": "breakfast",
+      "description": "早餐鸡肉肠100g（2根，每根50g）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 141.75,
+      "kcal_booked": 141.75,
+      "kcal_range": [
+        141.75,
+        141.75
+      ],
+      "protein_g_estimate": 19.3,
+      "fat_g_estimate": 3.8,
+      "carbs_g_estimate": 7.3,
+      "sodium_mg_estimate": 595,
+      "basis": "用户2026-11-25报100g鸡肉肠；沿593kJ/100g同款标签（P19.3/F3.8/C7.3/Na595）。",
+      "uncertainty": "按同款标签计。"
+    },
+    {
+      "id": "breakfast_milk_260ml_nov25",
+      "meal": "breakfast",
+      "description": "早餐牛奶1瓶260mL",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 260,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 178.35,
+      "kcal_booked": 178.35,
+      "kcal_range": [
+        171.5,
+        178.35
+      ],
+      "protein_g_estimate": 8.6,
+      "fat_g_estimate": 8.8,
+      "carbs_g_estimate": 12.5,
+      "sodium_mg_estimate": 104,
+      "basis": "用户2026-11-25报一瓶牛奶；沿悦鲜活260mL/瓶口径178.35kcal。若250mL约171.5kcal。",
+      "uncertainty": "瓶装规格沿用260mL。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-25 晨重86.25，为10月建库以来最低（此前低点86.85于11-11、86.90于11-13/11-19/11-20）。相对11-24的87.80一夜-1.55kg，判断主要为钠水排出（11-24钠3594mg）与两练后糖原耗竭相关的水分，非脂肪。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 444.82000000000005,
+    "intake_kcal_booked": 444.82000000000005,
+    "protein_g_estimate": 29.490000000000002,
+    "fat_g_estimate": 12.89,
+    "carbs_g_estimate": 48.96,
+    "intake_kcal_estimate": 444.82000000000005,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 29.490000000000002,
+      "fat_g": 12.89,
+      "carbs_g": 48.96
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      437.97,
+      444.82000000000005
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2176.5,
+    "estimated_deficit_kcal": 1731.6799999999998,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 3,
+    "protein_by_meal_g": {
+      "breakfast": 29.490000000000002
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 699.0,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": false,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "energy_estimate_provisional": null
+}
