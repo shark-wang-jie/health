@@ -2,16 +2,13 @@
   "schema_version": 3,
   "date": "2026-11-25",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-11-25 23:23 用户「封账」。饮食：早餐（烤红薯熟重130g、鸡肉肠100g、牛奶260mL）、上午加餐（赣南脐橙1个）、午饭（沙县鸡腿饭默认850kcal）、练后（赣南脐橙1个）、晚饭（烤红薯熟重230g、全蛋4个、孜然鸡小胸生重108g、悦鲜活自制酸奶260mL）均已报告并确认结束。份量更正：晚饭红薯先报280g，用户更正为230g（未吃完），已按230g计入并记录corrections。 训练：传统力量49:16（动态404、均心124，18:19–19:08），training_coverage=confirmed_complete。摄入2280.55、蛋白161.46，超出训练日目标1900–2000约280–380；完成日缺口198.95，低于400–600参考区。原因：餐次结构以碳水为主（红薯210g熟重、沙县米饭、橙子3个），蛋白补充集中于晚饭。钠3663mg偏高。红薯按11-24批口径（生645g→熟578g，熟重96.0kcal/100g），本批已吃484g、余94g。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [
-    "饮食：午饭、晚饭、加餐尚未报告",
-    "训练：尚未报告"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
@@ -331,7 +328,7 @@
       "fat_g": 72.92,
       "carbs_g": 236.88000000000002
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": 198.95000000000027,
     "training_discount_kcal": 101.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
@@ -342,14 +339,14 @@
     "exercise_adjusted_kcal": 303.0,
     "tdee_kcal_estimate": 2479.5,
     "estimated_deficit_kcal": 198.95000000000027,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "completed_day_estimated_deficit_kcal": 198.95000000000027,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900.0,
       2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
+    "energy_estimate_provisional": false,
     "consumed_entries": 10,
     "protein_by_meal_g": {
       "breakfast": 29.490000000000002,
@@ -358,11 +355,7 @@
       "morning_snack": 1.6,
       "postworkout": 1.6
     },
-    "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
-      "存在影响能量解释或完整性的待确认项"
-    ],
+    "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
@@ -383,5 +376,5 @@
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
   },
-  "energy_estimate_provisional": null
+  "energy_estimate_provisional": false
 }
