@@ -196,21 +196,22 @@
     {
       "id": "dinner_sweet_potato_280g_nov25",
       "meal": "dinner",
-      "description": "晚饭烤红薯熟重280g（11-24同批：生645g→熟578g）",
+      "description": "晚饭烤红薯熟重230g（11-24同批：生645g→熟578g）",
       "source_kind": "label_known_quantity",
-      "quantity_g": 280.0,
+      "quantity_g": 230.0,
       "status": "consumed_estimated",
-      "kcal_base_estimate": 268.71,
-      "kcal_booked": 268.71,
+      "kcal_base_estimate": 220.73,
+      "kcal_booked": 220.73,
       "kcal_range": [
-        268.71,
-        268.71
+        220.73,
+        220.73
       ],
-      "protein_g_estimate": 3.43,
-      "fat_g_estimate": 0.62,
-      "carbs_g_estimate": 62.81,
-      "basis": "用户2026-11-25报晚饭烤红薯熟重280g；本批生645g→熟578g，熟重96.0kcal/100g，280g≈268.71kcal。本批剩余：578−124(11-24)−130(11-25早)−280=44g。",
-      "uncertainty": "按同批口径；若为新一批需改按该批生熟比。"
+      "protein_g_estimate": 2.82,
+      "fat_g_estimate": 0.51,
+      "carbs_g_estimate": 51.59,
+      "basis": "用户2026-11-25先报280g，随后更正「红薯没吃完 只吃了230g」；本批生645g→熟578g，熟重96.0kcal/100g，230g≈220.73kcal。本批累计已吃：124(11-24晚)+130(11-25早)+230=484g，剩94g。",
+      "uncertainty": "按同批口径；若为新一批需改按该批生熟比。",
+      "correction_note": "2026-11-25 用户更正份量 280g→230g，热量 268.71→220.73"
     },
     {
       "id": "dinner_whole_eggs_4_nov25",
@@ -304,34 +305,43 @@
     "training_performance": null,
     "fatigue_or_pain": null
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "at": "2026-11-25T21:00:00+08:00",
+      "field": "intake_entries.dinner_sweet_potato_280g_nov25.quantity_g",
+      "from": 280,
+      "to": 230,
+      "reason": "用户更正：红薯未吃完，实吃230g",
+      "by": "user"
+    }
+  ],
   "notes": [
     "2026-11-25 晨重86.25，为10月建库以来最低（此前低点86.85于11-11、86.90于11-13/11-19/11-20）。相对11-24的87.80一夜-1.55kg，判断主要为钠水排出（11-24钠3594mg）与两练后糖原耗竭相关的水分，非脂肪。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 2328.5299999999997,
-    "intake_kcal_booked": 2328.5299999999997,
-    "protein_g_estimate": 162.07,
-    "fat_g_estimate": 73.03,
-    "carbs_g_estimate": 248.10000000000002,
-    "intake_kcal_estimate": 2328.5299999999997,
+    "intake_kcal_base_estimate": 2280.5499999999997,
+    "intake_kcal_booked": 2280.5499999999997,
+    "protein_g_estimate": 161.45999999999998,
+    "fat_g_estimate": 72.92,
+    "carbs_g_estimate": 236.88000000000002,
+    "intake_kcal_estimate": 2280.5499999999997,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 162.07,
-      "fat_g": 73.03,
-      "carbs_g": 248.10000000000002
+      "protein_g": 161.45999999999998,
+      "fat_g": 72.92,
+      "carbs_g": 236.88000000000002
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 101.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      2135.63,
-      2539.33
+      2087.65,
+      2491.35
     ],
     "exercise_active_kcal": 404.0,
     "exercise_adjusted_kcal": 303.0,
     "tdee_kcal_estimate": 2479.5,
-    "estimated_deficit_kcal": 150.97000000000025,
+    "estimated_deficit_kcal": 198.95000000000027,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -343,7 +353,7 @@
     "consumed_entries": 10,
     "protein_by_meal_g": {
       "breakfast": 29.490000000000002,
-      "dinner": 60.879999999999995,
+      "dinner": 60.269999999999996,
       "lunch": 68.5,
       "morning_snack": 1.6,
       "postworkout": 1.6
