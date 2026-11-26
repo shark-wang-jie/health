@@ -1,0 +1,172 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-26",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "饮食：午饭、晚饭、加餐尚未报告",
+    "训练：尚未报告"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 86.6,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 86.6,
+    "bmr_weight_date": "2026-11-26",
+    "bmr_kcal": 1817.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_yogurt_260ml_nov26",
+      "meal": "breakfast",
+      "description": "早餐悦鲜活自制酸奶1瓶260mL",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 260,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 178.35,
+      "kcal_booked": 178.35,
+      "kcal_range": [
+        171.5,
+        178.35
+      ],
+      "protein_g_estimate": 8.6,
+      "fat_g_estimate": 8.8,
+      "carbs_g_estimate": 12.5,
+      "sodium_mg_estimate": 104,
+      "basis": "用户2026-11-26报早饭一瓶悦鲜活做的酸奶；沿11-25同口径260mL=178.35kcal。",
+      "uncertainty": "若为发酵浓缩版热量更高；按原奶口径偏保守。"
+    },
+    {
+      "id": "breakfast_yeast_toast_2packs_nov26",
+      "meal": "breakfast",
+      "description": "早餐酵母蛋白吐司2包（暂按每包50g，共100g）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 264.1,
+      "kcal_booked": 264.1,
+      "kcal_range": [
+        220.0,
+        300.0
+      ],
+      "protein_g_estimate": 15.2,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 41.2,
+      "fiber_g_estimate": 10.0,
+      "sodium_mg_estimate": 292,
+      "basis": "用户2026-11-26报两包酵母蛋白吐司；沿本月同款标签1105kJ/100g（P15.2/F1.8/C41.2/纤维10.0/Na292），暂按每包50g计。",
+      "uncertainty": "「包」的克重未确认（可能单片50g或整袋含多片）；区间220–300对应80–110g。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-26 晨重86.60，较11-25的86.25回升0.35kg；11-25钠3663mg，判断为钠水回升，非脂肪（当日缺口为正199）。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 442.45000000000005,
+    "intake_kcal_booked": 442.45000000000005,
+    "protein_g_estimate": 23.799999999999997,
+    "fat_g_estimate": 10.600000000000001,
+    "carbs_g_estimate": 53.7,
+    "intake_kcal_estimate": 442.45000000000005,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 23.799999999999997,
+      "fat_g": 10.600000000000001,
+      "carbs_g": 53.7
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      391.5,
+      478.35
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2180.7,
+    "estimated_deficit_kcal": 1738.2499999999998,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 23.799999999999997
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": 10.0,
+    "fiber_g_entries_with_data": 1,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 396.0,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "energy_estimate_provisional": null
+}
