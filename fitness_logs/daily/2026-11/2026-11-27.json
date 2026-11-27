@@ -1,0 +1,178 @@
+{
+  "schema_version": 3,
+  "date": "2026-11-27",
+  "timezone": "Asia/Shanghai",
+  "record_status": "open",
+  "food_log_closed": false,
+  "closure_basis": null,
+  "food_coverage": "partial",
+  "training_status": "unknown",
+  "training_coverage": "unknown",
+  "missing_sections": [
+    "饮食：午饭、晚饭、加餐尚未报告",
+    "训练：尚未报告"
+  ],
+  "non_energy_pending_notes": [],
+  "trend_context": [],
+  "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
+  "plan_version": "2026-09-08-v3.2",
+  "morning_weight_kg": 86.8,
+  "profile_snapshot": {
+    "sex": "男性",
+    "age": 27,
+    "height_cm": 173,
+    "bmr_weight_kg": 86.8,
+    "bmr_weight_date": "2026-11-27",
+    "bmr_kcal": 1818.25
+  },
+  "energy_method": {
+    "algorithm": "tdee_v1",
+    "activity_factor": 1.2,
+    "training_factor": 0.75
+  },
+  "food_estimation_policy": "photo_margin_v1",
+  "targets": {
+    "rest_day_intake_kcal_range": [
+      1800,
+      1800
+    ],
+    "training_day_intake_kcal_range": [
+      1900,
+      2000
+    ],
+    "protein_target_g": 170,
+    "protein_practical_g_range": [
+      140,
+      180
+    ],
+    "carbohydrate_reference_g_range": [
+      150,
+      180
+    ],
+    "deficit_min_kcal": 400,
+    "deficit_max_kcal": 600
+  },
+  "intake_entries": [
+    {
+      "id": "breakfast_konjac_dumplings_half_nov27",
+      "meal": "breakfast",
+      "description": "早餐魔芋燕麦鸡胸肉蒸饺半包250g（约12–13个）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 250,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 282.03,
+      "kcal_booked": 282.03,
+      "kcal_range": [
+        270.0,
+        295.0
+      ],
+      "protein_g_estimate": 16.5,
+      "fat_g_estimate": 4.75,
+      "carbs_g_estimate": 42.5,
+      "sodium_mg_estimate": 1210,
+      "basis": "用户2026-11-27报早饭半包魔芋燕麦蒸饺；沿2026-10-16/17已核验同款标签（每100g 472kJ/P6.6/F1.9/C17/Na484，整包500g=564.05kcal），半包250g=282.03kcal。",
+      "uncertainty": "「半包」按重量250g计；若按个数（约12–13个）略有出入。",
+      "nutrition_per_100g": {
+        "energy_kj": 472,
+        "protein_g": 6.6,
+        "fat_g": 1.9,
+        "carbs_g": 17,
+        "sodium_mg": 484
+      }
+    },
+    {
+      "id": "breakfast_milk_260ml_nov27",
+      "meal": "breakfast",
+      "description": "早餐牛奶1瓶260mL",
+      "source_kind": "label_known_quantity",
+      "quantity_ml": 260,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 178.35,
+      "kcal_booked": 178.35,
+      "kcal_range": [
+        171.5,
+        178.35
+      ],
+      "protein_g_estimate": 8.6,
+      "fat_g_estimate": 8.8,
+      "carbs_g_estimate": 12.5,
+      "sodium_mg_estimate": 104,
+      "basis": "用户2026-11-27报一瓶牛奶；沿悦鲜活260mL/瓶口径178.35kcal。",
+      "uncertainty": "瓶装规格沿用260mL。"
+    }
+  ],
+  "exercise_entries": [],
+  "recovery": {
+    "hunger": null,
+    "sleep_hours": null,
+    "training_performance": null,
+    "fatigue_or_pain": null
+  },
+  "corrections": [],
+  "notes": [
+    "2026-11-27 晨重86.80，较11-26的86.60微升0.20kg；11-26钠3899mg（六号肠钠未计），判断为钠水，非脂肪。11-24至11-26三天账面净缺口1779kcal（约231g脂肪），体重仍在86.25–86.80区间波动。"
+  ],
+  "daily_summary": {
+    "intake_kcal_base_estimate": 460.38,
+    "intake_kcal_booked": 460.38,
+    "protein_g_estimate": 25.1,
+    "fat_g_estimate": 13.55,
+    "carbs_g_estimate": 55.0,
+    "intake_kcal_estimate": 460.38,
+    "food_margin_kcal": 0.0,
+    "base_macro_estimates": {
+      "protein_g": 25.1,
+      "fat_g": 13.55,
+      "carbs_g": 55.0
+    },
+    "completed_day_base_intake_balance_kcal": null,
+    "training_discount_kcal": 0.0,
+    "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
+    "intake_kcal_range": [
+      441.5,
+      473.35
+    ],
+    "exercise_active_kcal": 0.0,
+    "exercise_adjusted_kcal": 0.0,
+    "tdee_kcal_estimate": 2183.1,
+    "estimated_deficit_kcal": 1722.7199999999998,
+    "completed_day_estimated_deficit_kcal": null,
+    "energy_balance_scope": "provisional_recorded_balance",
+    "intake_target_kcal_range": [
+      1800.0,
+      1800.0
+    ],
+    "target_is_provisional": true,
+    "energy_estimate_provisional": true,
+    "consumed_entries": 2,
+    "protein_by_meal_g": {
+      "breakfast": 25.1
+    },
+    "warnings": [
+      "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
+      "饮食完整性未确认：合计仅含已记录摄入",
+      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
+      "存在影响能量解释或完整性的待确认项"
+    ],
+    "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
+    "protein_g_range": null,
+    "protein_g_entries_with_range": 0,
+    "protein_g_range_coverage_complete": false,
+    "fat_g_range": null,
+    "fat_g_entries_with_range": 0,
+    "fat_g_range_coverage_complete": false,
+    "carbs_g_range": null,
+    "carbs_g_entries_with_range": 0,
+    "carbs_g_range_coverage_complete": false,
+    "fiber_g_known_sum": null,
+    "fiber_g_entries_with_data": 0,
+    "fiber_g_coverage_complete": false,
+    "sodium_mg_known_sum": 1314.0,
+    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_coverage_complete": true,
+    "fruit_vegetable_g_known_sum": null,
+    "fruit_vegetable_g_entries_with_data": 0,
+    "fruit_vegetable_g_coverage_complete": false
+  },
+  "energy_estimate_provisional": null
+}
