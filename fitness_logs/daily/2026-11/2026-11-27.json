@@ -99,6 +99,45 @@
       "sodium_mg_estimate": 104,
       "basis": "用户2026-11-27报一瓶牛奶；沿悦鲜活260mL/瓶口径178.35kcal。",
       "uncertainty": "瓶装规格沿用260mL。"
+    },
+    {
+      "id": "lunch_shaxian_two_legs_nov27",
+      "meal": "lunch",
+      "description": "午饭沙县鸡腿饭（默认双去皮鸡腿+卤蛋1个+米饭250g+少油白菜300g）",
+      "source_kind": "matched_default",
+      "catalog_ref": "shaxian_two_skinless_legs",
+      "servings": 1,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 850.0,
+      "kcal_booked": 850.0,
+      "kcal_range": [
+        730.0,
+        980.0
+      ],
+      "protein_g_estimate": 68.5,
+      "fat_g_estimate": 27.5,
+      "carbs_g_estimate": 79.7,
+      "sodium_mg_estimate": 1700,
+      "protein_g_range": [
+        53,
+        84
+      ],
+      "fat_g_range": [
+        16,
+        42
+      ],
+      "carbs_g_range": [
+        69,
+        91
+      ],
+      "basis": "用户2026-11-27报午饭沙县鸡腿饭；沿 food_catalog.json 默认 shaxian_two_skinless_legs（850kcal，区间730–980）。",
+      "uncertainty": "未说明去皮/鸡腿数量；单腿版约655kcal/P40/钠约1200。",
+      "margin": {
+        "added_fat_g": 0,
+        "added_carbs_g": 0,
+        "already_in_base": true,
+        "reason": "默认条目已含油量"
+      }
     }
   ],
   "exercise_entries": [],
@@ -113,29 +152,29 @@
     "2026-11-27 晨重86.80，较11-26的86.60微升0.20kg；11-26钠3899mg（六号肠钠未计），判断为钠水，非脂肪。11-24至11-26三天账面净缺口1779kcal（约231g脂肪），体重仍在86.25–86.80区间波动。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 460.38,
-    "intake_kcal_booked": 460.38,
-    "protein_g_estimate": 25.1,
-    "fat_g_estimate": 13.55,
-    "carbs_g_estimate": 55.0,
-    "intake_kcal_estimate": 460.38,
+    "intake_kcal_base_estimate": 1310.38,
+    "intake_kcal_booked": 1310.38,
+    "protein_g_estimate": 93.6,
+    "fat_g_estimate": 41.05,
+    "carbs_g_estimate": 134.7,
+    "intake_kcal_estimate": 1310.38,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 25.1,
-      "fat_g": 13.55,
-      "carbs_g": 55.0
+      "protein_g": 93.6,
+      "fat_g": 41.05,
+      "carbs_g": 134.7
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      441.5,
-      473.35
+      1171.5,
+      1453.35
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2183.1,
-    "estimated_deficit_kcal": 1722.7199999999998,
+    "estimated_deficit_kcal": 872.7199999999998,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -144,9 +183,10 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 3,
     "protein_by_meal_g": {
-      "breakfast": 25.1
+      "breakfast": 25.1,
+      "lunch": 68.5
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -156,19 +196,19 @@
     ],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
-    "protein_g_entries_with_range": 0,
+    "protein_g_entries_with_range": 1,
     "protein_g_range_coverage_complete": false,
     "fat_g_range": null,
-    "fat_g_entries_with_range": 0,
+    "fat_g_entries_with_range": 1,
     "fat_g_range_coverage_complete": false,
     "carbs_g_range": null,
-    "carbs_g_entries_with_range": 0,
+    "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 1314.0,
-    "sodium_mg_entries_with_data": 2,
+    "sodium_mg_known_sum": 3014.0,
+    "sodium_mg_entries_with_data": 3,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
