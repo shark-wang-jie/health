@@ -138,6 +138,27 @@
         "already_in_base": true,
         "reason": "默认条目已含油量"
       }
+    },
+    {
+      "id": "preworkout_toast_2packs_nov27",
+      "meal": "preworkout",
+      "description": "练前酵母蛋白吐司2包（暂按每包50g，共100g）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 264.1,
+      "kcal_booked": 264.1,
+      "kcal_range": [
+        220.0,
+        300.0
+      ],
+      "protein_g_estimate": 15.2,
+      "fat_g_estimate": 1.8,
+      "carbs_g_estimate": 41.2,
+      "fiber_g_estimate": 10.0,
+      "sodium_mg_estimate": 292,
+      "basis": "用户2026-11-27报练前吃两包酵母蛋白吐司；沿同款标签1105kJ/100g（P15.2/F1.8/C41.2/纤维10/Na292），暂按每包50g。",
+      "uncertainty": "「包」克重仍未核实（本月第三次），区间220–300对应80–110g。"
     }
   ],
   "exercise_entries": [],
@@ -152,29 +173,29 @@
     "2026-11-27 晨重86.80，较11-26的86.60微升0.20kg；11-26钠3899mg（六号肠钠未计），判断为钠水，非脂肪。11-24至11-26三天账面净缺口1779kcal（约231g脂肪），体重仍在86.25–86.80区间波动。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1310.38,
-    "intake_kcal_booked": 1310.38,
-    "protein_g_estimate": 93.6,
-    "fat_g_estimate": 41.05,
-    "carbs_g_estimate": 134.7,
-    "intake_kcal_estimate": 1310.38,
+    "intake_kcal_base_estimate": 1574.48,
+    "intake_kcal_booked": 1574.48,
+    "protein_g_estimate": 108.8,
+    "fat_g_estimate": 42.849999999999994,
+    "carbs_g_estimate": 175.89999999999998,
+    "intake_kcal_estimate": 1574.48,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 93.6,
-      "fat_g": 41.05,
-      "carbs_g": 134.7
+      "protein_g": 108.8,
+      "fat_g": 42.849999999999994,
+      "carbs_g": 175.89999999999998
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1171.5,
-      1453.35
+      1391.5,
+      1753.35
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2183.1,
-    "estimated_deficit_kcal": 872.7199999999998,
+    "estimated_deficit_kcal": 608.6199999999999,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -183,10 +204,11 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 3,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
       "breakfast": 25.1,
-      "lunch": 68.5
+      "lunch": 68.5,
+      "preworkout": 15.2
     },
     "warnings": [
       "训练状态未确认：仅暂按基础活动估算，不等于确认休息",
@@ -204,11 +226,11 @@
     "carbs_g_range": null,
     "carbs_g_entries_with_range": 1,
     "carbs_g_range_coverage_complete": false,
-    "fiber_g_known_sum": null,
-    "fiber_g_entries_with_data": 0,
+    "fiber_g_known_sum": 10.0,
+    "fiber_g_entries_with_data": 1,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3014.0,
-    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_known_sum": 3306.0,
+    "sodium_mg_entries_with_data": 4,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
