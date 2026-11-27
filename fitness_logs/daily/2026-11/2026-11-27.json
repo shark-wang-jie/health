@@ -2,16 +2,13 @@
   "schema_version": 3,
   "date": "2026-11-27",
   "timezone": "Asia/Shanghai",
-  "record_status": "open",
-  "food_log_closed": false,
-  "closure_basis": null,
-  "food_coverage": "partial",
+  "record_status": "final",
+  "food_log_closed": true,
+  "closure_basis": "2026-11-27 用户「今天封账」。饮食：早餐半包蒸饺250g+牛奶260mL、午饭沙县鸡腿饭850、练前酵母蛋白吐司2包100g、晚饭剩余半包蒸饺250g+孜然鸡小胸生重215g；用户明确「酸奶没吃」，故不计。训练：传统力量（腿+手臂）1:18:56 动态524 + 室内步行41:05/2.85km 动态384，均按手表实测录入。注意：室内步行4.16km/h慢走的真实净耗能约150–200kcal，手表384kcal疑似高估约2倍，已在条目uncertainty标注；按手表口径缺口773.8，按保守口径约540。钠合计5623mg（孜然鸡小胸1030+/蒸饺1210+沙县1700），用户已声明钠不作为目标，仅记录。",
+  "food_coverage": "confirmed_complete",
   "training_status": "reported_training",
   "training_coverage": "confirmed_complete",
-  "missing_sections": [
-    "饮食：午饭、晚饭、加餐尚未报告",
-    "训练：尚未报告"
-  ],
+  "missing_sections": [],
   "non_energy_pending_notes": [],
   "trend_context": [],
   "weight_measurement_note": "用户报告11月18日早上空腹87.05kg，较11月17日87.50kg低0.45kg；两日累计-0.45kg，可能含水分与糖原波动，不等同脂肪变化。",
@@ -159,6 +156,46 @@
       "sodium_mg_estimate": 292,
       "basis": "用户2026-11-27报练前吃两包酵母蛋白吐司；沿同款标签1105kJ/100g（P15.2/F1.8/C41.2/纤维10/Na292），暂按每包50g。",
       "uncertainty": "「包」克重仍未核实（本月第三次），区间220–300对应80–110g。"
+    },
+    {
+      "id": "dinner_dumpling_half_nov27",
+      "meal": "dinner",
+      "description": "晚饭魔芋燕麦鸡胸肉蒸饺剩余半包250g（当日整包吃完）",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 250,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 282.03,
+      "kcal_booked": 282.03,
+      "kcal_range": [
+        282.03,
+        282.03
+      ],
+      "protein_g_estimate": 16.5,
+      "fat_g_estimate": 4.75,
+      "carbs_g_estimate": 42.5,
+      "sodium_mg_estimate": 1210,
+      "basis": "用户2026-11-27报「吃剩下蒸饺」；同款472kJ/100g（P6.6/F1.9/C17/Na484），整包500g，早半包+晚半包=当日整包。",
+      "uncertainty": "包装标注，误差小。"
+    },
+    {
+      "id": "dinner_chicken_215g_nov27",
+      "meal": "dinner",
+      "description": "晚饭孜然鸡小胸生重215g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 215,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 233.81,
+      "kcal_booked": 233.81,
+      "kcal_range": [
+        233.81,
+        233.81
+      ],
+      "protein_g_estimate": 47.09,
+      "fat_g_estimate": 3.23,
+      "carbs_g_estimate": 3.44,
+      "sodium_mg_estimate": 1107.25,
+      "basis": "用户2026-11-27报吃215g孜然鸡小胸（生重）；标签455kJ/100g（P21.9/F1.5/C1.6/Na515）。",
+      "uncertainty": "用户报重，按生重计。"
     }
   ],
   "exercise_entries": [
@@ -218,51 +255,49 @@
   },
   "corrections": [],
   "notes": [
-    "2026-11-27 晨重86.80，较11-26的86.60微升0.20kg；11-26钠3899mg（六号肠钠未计），判断为钠水，非脂肪。11-24至11-26三天账面净缺口1779kcal（约231g脂肪），体重仍在86.25–86.80区间波动。"
+    "2026-11-27 晨重86.80，较11-26的86.60微升0.20kg；11-26钠3899mg（六号肠钠未计），判断为钠水，非脂肪。11-24至11-26三天账面净缺口1779kcal（约231g脂肪），体重仍在86.25–86.80区间波动。",
+    "用户2026-11-27报「酸奶没吃」，故原计划的悦鲜活自制酸奶260mL不计入，全天无酸奶条目。"
   ],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1574.48,
-    "intake_kcal_booked": 1574.48,
-    "protein_g_estimate": 108.8,
-    "fat_g_estimate": 42.849999999999994,
-    "carbs_g_estimate": 175.89999999999998,
-    "intake_kcal_estimate": 1574.48,
+    "intake_kcal_base_estimate": 2090.32,
+    "intake_kcal_booked": 2090.32,
+    "protein_g_estimate": 172.39,
+    "fat_g_estimate": 50.82999999999999,
+    "carbs_g_estimate": 221.83999999999997,
+    "intake_kcal_estimate": 2090.32,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 108.8,
-      "fat_g": 42.849999999999994,
-      "carbs_g": 175.89999999999998
+      "protein_g": 172.39,
+      "fat_g": 50.82999999999999,
+      "carbs_g": 221.83999999999997
     },
-    "completed_day_base_intake_balance_kcal": null,
+    "completed_day_base_intake_balance_kcal": 773.7799999999997,
     "training_discount_kcal": 227.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      1391.5,
-      1753.35
+      1907.34,
+      2269.19
     ],
     "exercise_active_kcal": 908.0,
     "exercise_adjusted_kcal": 681.0,
     "tdee_kcal_estimate": 2864.1,
-    "estimated_deficit_kcal": 1289.62,
-    "completed_day_estimated_deficit_kcal": null,
-    "energy_balance_scope": "provisional_recorded_balance",
+    "estimated_deficit_kcal": 773.7799999999997,
+    "completed_day_estimated_deficit_kcal": 773.7799999999997,
+    "energy_balance_scope": "completed_day_estimate",
     "intake_target_kcal_range": [
       1900.0,
       2000.0
     ],
     "target_is_provisional": false,
-    "energy_estimate_provisional": true,
-    "consumed_entries": 4,
+    "energy_estimate_provisional": false,
+    "consumed_entries": 6,
     "protein_by_meal_g": {
       "breakfast": 25.1,
+      "dinner": 63.59,
       "lunch": 68.5,
       "preworkout": 15.2
     },
-    "warnings": [
-      "饮食完整性未确认：合计仅含已记录摄入",
-      "尚未封账：全天模型消耗减已记录摄入只是暂算差额",
-      "存在影响能量解释或完整性的待确认项"
-    ],
+    "warnings": [],
     "interpretation": "按偏高记账摄入估算的缺口；非实测值或真实缺口下限。食物范围不包含完整消耗误差。",
     "protein_g_range": null,
     "protein_g_entries_with_range": 1,
@@ -276,12 +311,12 @@
     "fiber_g_known_sum": 10.0,
     "fiber_g_entries_with_data": 1,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 3306.0,
-    "sodium_mg_entries_with_data": 4,
+    "sodium_mg_known_sum": 5623.25,
+    "sodium_mg_entries_with_data": 6,
     "sodium_mg_coverage_complete": true,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
   },
-  "energy_estimate_provisional": null
+  "energy_estimate_provisional": false
 }
