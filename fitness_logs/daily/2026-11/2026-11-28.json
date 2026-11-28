@@ -89,6 +89,47 @@
       "sodium_mg_estimate": 1900,
       "basis": "用户2026-11-28报「中午吃的单鸡腿沙县鸡腿饭」；沿 2026-11-14 已记录的单去皮鸡腿饭口径：655kcal、P40/F19/C79.7（双腿默认版850kcal减去一根去皮鸡腿约195kcal）。",
       "uncertainty": "单腿版为双腿默认版差额推算，非独立称重；米饭/白菜仍按250g/300g假设。"
+    },
+    {
+      "id": "snack_orange_2_nov28",
+      "meal": "afternoon_snack",
+      "description": "下午加餐脐橙2个（可食约360g）",
+      "source_kind": "database_estimate",
+      "quantity_g": 360,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 169.2,
+      "kcal_booked": 169.2,
+      "kcal_range": [
+        140.0,
+        200.0
+      ],
+      "protein_g_estimate": 3.2,
+      "fat_g_estimate": 0.4,
+      "carbs_g_estimate": 41.0,
+      "sugar_g_estimate": 32.0,
+      "sodium_mg_estimate": 4,
+      "basis": "用户2026-11-28报两个脐橙；按可食47kcal/100g、每果可食180g计360g=169.2kcal。",
+      "uncertainty": "未称重，按中等果估；区间140–200。"
+    },
+    {
+      "id": "snack_buckwheat_crisp_100g_nov28",
+      "meal": "afternoon_snack",
+      "description": "下午加餐荞麦锅巴约100g",
+      "source_kind": "label_known_quantity",
+      "quantity_g": 100,
+      "status": "consumed_estimated",
+      "kcal_base_estimate": 398.4,
+      "kcal_booked": 398.4,
+      "kcal_range": [
+        350.0,
+        440.0
+      ],
+      "protein_g_estimate": 5.6,
+      "fat_g_estimate": 2.8,
+      "carbs_g_estimate": 83.5,
+      "sodium_mg_estimate": null,
+      "basis": "用户2026-11-28报「大概100g荞麦锅巴」；沿本月同款标签1667kJ/100g（P5.6/F2.8/C83.5，无钠数据）。",
+      "uncertainty": "用户估重100g；本月第4次同类（11-11 200g、11-15 200g、11-19 216g、11-28 100g）。"
     }
   ],
   "exercise_entries": [],
@@ -101,29 +142,29 @@
   "corrections": [],
   "notes": [],
   "daily_summary": {
-    "intake_kcal_base_estimate": 1011.7,
-    "intake_kcal_booked": 1011.7,
-    "protein_g_estimate": 57.2,
-    "fat_g_estimate": 36.6,
-    "carbs_g_estimate": 104.7,
-    "intake_kcal_estimate": 1011.7,
+    "intake_kcal_base_estimate": 1579.3000000000002,
+    "intake_kcal_booked": 1579.3000000000002,
+    "protein_g_estimate": 66.0,
+    "fat_g_estimate": 39.8,
+    "carbs_g_estimate": 229.2,
+    "intake_kcal_estimate": 1579.3000000000002,
     "food_margin_kcal": 0.0,
     "base_macro_estimates": {
-      "protein_g": 57.2,
-      "fat_g": 36.6,
-      "carbs_g": 104.7
+      "protein_g": 66.0,
+      "fat_g": 39.8,
+      "carbs_g": 229.2
     },
     "completed_day_base_intake_balance_kcal": null,
     "training_discount_kcal": 0.0,
     "assumption_note": "基础宏量与记账宏量区分附加余量；两个摄入口径的能量差额是模型对照，不是可信区间或真实上下界。",
     "intake_kcal_range": [
-      900.0,
-      1140.0
+      1390.0,
+      1780.0
     ],
     "exercise_active_kcal": 0.0,
     "exercise_adjusted_kcal": 0.0,
     "tdee_kcal_estimate": 2183.1,
-    "estimated_deficit_kcal": 1171.3999999999999,
+    "estimated_deficit_kcal": 603.7999999999997,
     "completed_day_estimated_deficit_kcal": null,
     "energy_balance_scope": "provisional_recorded_balance",
     "intake_target_kcal_range": [
@@ -132,8 +173,9 @@
     ],
     "target_is_provisional": true,
     "energy_estimate_provisional": true,
-    "consumed_entries": 2,
+    "consumed_entries": 4,
     "protein_by_meal_g": {
+      "afternoon_snack": 8.8,
       "breakfast": 17.2,
       "lunch": 40.0
     },
@@ -155,9 +197,9 @@
     "fiber_g_known_sum": null,
     "fiber_g_entries_with_data": 0,
     "fiber_g_coverage_complete": false,
-    "sodium_mg_known_sum": 2108.0,
-    "sodium_mg_entries_with_data": 2,
-    "sodium_mg_coverage_complete": true,
+    "sodium_mg_known_sum": 2112.0,
+    "sodium_mg_entries_with_data": 3,
+    "sodium_mg_coverage_complete": false,
     "fruit_vegetable_g_known_sum": null,
     "fruit_vegetable_g_entries_with_data": 0,
     "fruit_vegetable_g_coverage_complete": false
